@@ -43,7 +43,6 @@ button{cursor:pointer}
 .brand{display:flex;align-items:center;gap:8px;background:var(--wine-d);color:#fff;padding:6px 14px 6px 10px;border-radius:999px;box-shadow:0 6px 18px #0003;height:46px}
 .brand b{font:700 24px "Cormorant Garamond",serif;letter-spacing:.2px}
 .brand b span{color:var(--gold)}
-.beta{font:700 11px "DM Sans",sans-serif;font-style:normal;background:var(--gold);color:#2a1a00;border-radius:999px;padding:2px 7px;letter-spacing:.3px}
 .search{position:relative;flex:1;max-width:380px}
 .search input{width:100%;height:46px;border-radius:999px;border:1px solid var(--line);background:var(--card);padding:0 16px 0 42px;font-size:16px;box-shadow:0 6px 18px #0002}
 .search svg{position:absolute;left:14px;top:13px;opacity:.55}
@@ -62,6 +61,10 @@ button{cursor:pointer}
 .menu button:hover{background:var(--soft)}
 .menu .who{padding:10px 12px;border-bottom:1px solid var(--line);margin-bottom:4px}
 .menu .who small{color:var(--mute);display:block}
+.menu .mnote{margin:4px 12px 8px;font-size:13px;color:var(--mute)}
+.gpill{font-weight:700}
+.gpill svg{flex:none}
+[hidden]{display:none!important}
 
 /* legend */
 .legend{position:fixed;left:12px;bottom:24px;z-index:900;background:var(--card);border-radius:14px;padding:10px 14px;box-shadow:0 6px 18px #0002;font-size:13px;display:flex;flex-wrap:wrap;gap:6px 14px;max-width:320px}
@@ -167,7 +170,7 @@ form h3{font-size:22px;margin-top:22px}
 <header class="bar">
   <div class="brand" aria-label="Winear.me">
     <svg width="22" height="34" viewBox="0 0 26 44" aria-hidden="true"><path d="M10 1h6v10c0 3 6 6 6 13v17a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V24c0-7 6-10 6-13z" fill="#d7ae4e"/><rect x="6" y="26" width="14" height="9" rx="1" fill="#4a0f24"/></svg>
-    <b>Winear<span>.me</span></b><em class="beta">beta</em>
+    <b>Winear<span>.me</span></b>
   </div>
   <div class="search">
     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg>
@@ -176,7 +179,8 @@ form h3{font-size:22px;margin-top:22px}
   </div>
   <div class="sp"></div>
   <button class="pill" id="evBtn" aria-label="Events calendar"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><span class="lbl">Events</span></button>
-  <button class="pill me" id="meBtn" aria-label="Account menu" aria-haspopup="true"><img id="meImg" alt=""><span id="adminBadge" class="badge" hidden></span></button>
+  <button class="pill gpill" id="gBtn" hidden><svg width="18" height="18" viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.5 0 6.6 1.2 9.1 3.6l6.8-6.8C35.8 2.4 30.3 0 24 0 14.6 0 6.6 5.4 2.6 13.2l7.9 6.2C12.4 13.6 17.7 9.5 24 9.5z"/><path fill="#4285F4" d="M46.1 24.6c0-1.6-.1-3.1-.4-4.6H24v9h12.4c-.5 2.9-2.2 5.3-4.6 6.9l7.4 5.8c4.3-4 6.9-9.9 6.9-17.1z"/><path fill="#FBBC05" d="M10.5 28.6c-.5-1.4-.8-3-.8-4.6s.3-3.2.8-4.6l-7.9-6.2C.9 16.5 0 20.1 0 24s.9 7.5 2.6 10.8l7.9-6.2z"/><path fill="#34A853" d="M24 48c6.5 0 11.9-2.1 15.9-5.8l-7.4-5.8c-2.1 1.4-4.8 2.3-8.5 2.3-6.3 0-11.6-4.1-13.5-9.8l-7.9 6.2C6.6 42.6 14.6 48 24 48z"/></svg><span class="lbl">Sign in with Google</span></button>
+  <button class="pill me" id="meBtn" hidden aria-label="Account menu" aria-haspopup="true"><img id="meImg" alt=""><span id="adminBadge" class="badge" hidden></span></button>
 </header>
 <div class="menu" id="menu" role="menu"></div>
 
@@ -198,6 +202,7 @@ form h3{font-size:22px;margin-top:22px}
 
 <script src="leaflet.js"></script>
 <script src="topojson-client.min.js"></script>
+<script src="firebase-config.js"></script>
 <script>
 {
 const $=s=>document.querySelector(s);
@@ -343,7 +348,7 @@ map.on("moveend",()=>{if(S.view==="events"&&S.inView)renderEvents()});
 
 /* ---------- plans ---------- */
 async function togglePlan(key){
-  if(!S.db||!S.id)return toast("Sign in to save events.");
+  if(!S.id)return toast("Sign in to save events.");if(!S.db)return toast("Saving events is coming soon.");
   const next=S.plans.includes(key)?S.plans.filter(k=>k!==key):[...S.plans,key];
   const prev=S.plans;S.plans=next;rerender();
   try{await S.db.doc(`data/users/${S.id}/plans`).set({items:next});toast(next.length>prev.length?"Saved to My plans":"Removed from My plans")}
@@ -359,6 +364,11 @@ function hideMenu(){$("#menu").style.display="none"}
 $("#meBtn").addEventListener("click",e=>{e.stopPropagation();const m=$("#menu");if(m.style.display==="block")return hideMenu();renderMenu();m.style.display="block"});
 document.addEventListener("click",e=>{if(!e.target.closest("#menu"))hideMenu()});
 async function renderMenu(){
+  if(S.fbUser){
+    const u=S.fbUser;
+    $("#menu").innerHTML=`<div class="who"><b></b><small></small></div><p class="mnote">Saving events and winery pages are coming soon.</p><button role="menuitem" data-m="signout">Sign out</button>`;
+    $("#menu .who b").textContent=u.displayName||"Signed in";$("#menu .who small").textContent=u.email||"";return;
+  }
   const me=S.user?await S.user.me():null;
   const pend=Object.values(S.requests).filter(r=>r.status==="pending").length;
   const isW=S.id&&S.approved.has(S.id);
@@ -373,7 +383,7 @@ async function renderMenu(){
   $("#menu .who small").textContent=me?.email||(S.owner?"Administrator":S.id?"":"Not signed in");
 }
 $("#menu").addEventListener("click",e=>{const b=e.target.closest("[data-m]");if(!b)return;hideMenu();
-  ({plans:renderPlans,winery:renderWineryArea,admin:renderAdmin})[b.dataset.m]()});
+  ({plans:renderPlans,winery:renderWineryArea,admin:renderAdmin,signout:()=>S.fb.signOut().then(()=>toast("Signed out"))})[b.dataset.m]()});
 
 /* ---------- winery request & editor ---------- */
 function renderWineryArea(){
@@ -506,7 +516,7 @@ const giveUp=setTimeout(()=>{if(!S.id){$("#gTxt").textContent="Sign-in unavailab
   const user=window.claude?await claude.use("user"):null;S.user=user;
   const me=user?await user.me():null;
   if(!me||!me.id){clearTimeout(giveUp);return}
-  clearTimeout(giveUp);S.id=me.id;S.owner=me.isOwner;
+  clearTimeout(giveUp);S.id=me.id;S.owner=me.isOwner;$("#meBtn").hidden=false;
   $("#meImg").src=me.avatarUrl;$("#gImg").src=me.avatarUrl;$("#gImg").hidden=false;
   $("#gTxt").textContent="Continue as "+(me.name||"you");$("#signin").disabled=false;
   $("#signin").onclick=()=>{$("#gate").hidden=true;try{sessionStorage.setItem("winear-in","1")}catch{}toast("Welcome"+(me.name?", "+me.name.split(" ")[0]:"")+"!")};
@@ -518,6 +528,31 @@ const giveUp=setTimeout(()=>{if(!S.id){$("#gTxt").textContent="Sign-in unavailab
   if(S.owner)db.collection("requests").onSnapshot(s=>{S.requests={};s.docs.forEach(d=>S.requests[d.id]=d.data());S.myReq=S.requests[S.id]||null;rerender()},err);
   else db.doc("requests/"+S.id).onSnapshot(s=>{S.myReq=s.exists?s.data():null;if(S.view==="request")renderWineryArea()},err);
 })();
+
+/* ---------- Google sign-in (Firebase) on winear.me ---------- */
+const FB=window.WINEAR_FIREBASE;
+const loadScript=src=>new Promise((ok,no)=>{const s=document.createElement("script");s.src=src;s.onload=ok;s.onerror=no;document.head.appendChild(s)});
+function renderAuth(){
+  const u=S.fbUser;
+  $("#gBtn").hidden=!!u;$("#meBtn").hidden=!u;
+  if(u){const ph=u.photoURL||"";if(/^https:\/\//.test(ph))$("#meImg").src=ph;$("#meImg").referrerPolicy="no-referrer"}
+  rerender();
+}
+if(!window.claude&&FB&&FB.apiKey){
+  (async()=>{
+    try{
+      await loadScript("https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js");
+      await loadScript("https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js");
+      firebase.initializeApp(FB);S.fb=firebase.auth();
+      S.fb.onAuthStateChanged(u=>{S.fbUser=u;S.id=u?u.uid:null;renderAuth()});
+      $("#gBtn").hidden=false;
+      $("#gBtn").onclick=()=>S.fb.signInWithPopup(new firebase.auth.GoogleAuthProvider())
+        .then(r=>toast("Welcome"+(r.user.displayName?", "+r.user.displayName.split(" ")[0]:"")+"!"))
+        .catch(e=>{if(e.code==="auth/popup-closed-by-user"||e.code==="auth/cancelled-popup-request")return;
+          toast(e.code==="auth/unauthorized-domain"?"This address isn't allowed in Firebase yet.":e.code==="auth/popup-blocked"?"Allow pop-ups for this site to sign in.":"Sign-in failed, please try again.")});
+    }catch{ /* sign-in unavailable: map keeps working */ }
+  })();
+}
 }
 </script>
 </body>

@@ -13,9 +13,33 @@
 {
 "name": "Santorini Assyrtiko",
 "type": "White",
-"price": "",
+"price": 35.15,
 "cur": "EUR",
-"notes": "Mineral and salty, with citrus and a long, firm finish."
+"notes": "Mineral and salty, with citrus and a long, firm finish.",
+"prices": [
+{
+"price": 35.15,
+"cur": "EUR",
+"shop": "MyCava",
+"url": "https://mycava.gr/product/2022-750ml-21/",
+"note": "2022 vintage"
+},
+{
+"price": 44.4,
+"cur": "EUR",
+"shop": "ekava.gr",
+"url": "https://www.ekava.gr/product/%CF%83%CE%B9%CE%B3%CE%B1%CE%BB%CE%B1-%CE%B1%CF%83%CF%85%CF%81%CF%84%CE%B9%CE%BA%CE%BF-%CF%83%CE%B1%CE%BD%CF%84%CE%BF%CF%81%CE%B9%CE%BD%CE%B7-%CE%BB%CE%B5%CF%85%CE%BA%CE%BF-750ml/",
+"note": ""
+},
+{
+"price": 47.0,
+"cur": "EUR",
+"shop": "Cava Katsonis",
+"url": "https://cavakatsoni.gr/krasia/ellhnikos-ampelwnas/leyka/santorinh-kthma-sigalas",
+"note": ""
+}
+],
+"checked": "24 Nov 2026"
 },
 {
 "name": "Kavalieros",
@@ -49,9 +73,19 @@
 {
 "name": "Santo Santorini",
 "type": "White",
-"price": "",
+"price": 19.41,
 "cur": "EUR",
-"notes": "Classic Assyrtiko: lemon, flint and sea salt."
+"notes": "Classic Assyrtiko: lemon, flint and sea salt.",
+"prices": [
+{
+"price": 19.41,
+"cur": "EUR",
+"shop": "MyCava",
+"url": "https://www.mycava.gr/gr/santo-wines-santorini-assyrtiko-2019.html",
+"note": "2021 vintage"
+}
+],
+"checked": "24 Nov 2026"
 },
 {
 "name": "Santo Nykteri",
@@ -66,6 +100,40 @@
 "price": "",
 "cur": "EUR",
 "notes": "Sun-dried grapes give raisin, caramel and bright acidity."
+},
+{
+"name": "Santo Selection Cuvée",
+"type": "White",
+"notes": "Selected Santorini Assyrtiko, fuller and more concentrated.",
+"prices": [
+{
+"price": 27.56,
+"cur": "EUR",
+"shop": "MyCava",
+"url": "https://mycava.gr/product/santo-wines-asyrtiko-selection-cuvee-2022/",
+"note": "2022 vintage"
+}
+],
+"price": 27.56,
+"cur": "EUR",
+"checked": "24 Nov 2026"
+},
+{
+"name": "Santo Sparkling Brut",
+"type": "Sparkling",
+"notes": "Traditional-method sparkling Assyrtiko.",
+"prices": [
+{
+"price": 26.56,
+"cur": "EUR",
+"shop": "MyCava",
+"url": "https://mycava.gr/attribute-wineproducer/santo-wines/",
+"note": "non-vintage"
+}
+],
+"price": 26.56,
+"cur": "EUR",
+"checked": "24 Nov 2026"
 }
 ],
 "events": [],
@@ -842,9 +910,40 @@
 {
 "name": "Ramnista",
 "type": "Red",
-"price": "",
+"price": 16.4,
 "cur": "EUR",
-"notes": "Xinomavro with cherry, tomato leaf and fine tannins."
+"notes": "Xinomavro with cherry, tomato leaf and fine tannins.",
+"prices": [
+{
+"price": 16.4,
+"cur": "EUR",
+"shop": "Cava Abatzis",
+"url": "https://cava-abatzis.com/product/%CE%BA%CF%84%CE%AE%CE%BC%CE%B1-%CE%BA%CF%85%CF%81-%CE%B3%CE%B9%CE%AC%CE%BD%CE%BD%CE%B7-%CF%81%CE%AC%CE%BC%CE%BD%CE%B9%CF%83%CF%84%CE%B1-2019/",
+"note": "2020 vintage"
+},
+{
+"price": 18.5,
+"cur": "EUR",
+"shop": "Kava Kelari",
+"url": "https://kavakelari.gr/product/ramnista-2020-ktima-kyr-gianni/",
+"note": "2020 vintage, sale price"
+},
+{
+"price": 19.85,
+"cur": "EUR",
+"shop": "Cava Kazakos",
+"url": "https://cava-kazakos.gr/product/11178/kthma-kyr-giannh-ramnista",
+"note": ""
+},
+{
+"price": 21.1,
+"cur": "EUR",
+"shop": "House of Wine",
+"url": "https://www.houseofwine.gr/how/ramnista.html",
+"note": "2020 vintage"
+}
+],
+"checked": "24 Nov 2026"
 },
 {
 "name": "Diaporos",
@@ -979,9 +1078,19 @@
 {
 "name": "Hedgehog Xinomavro",
 "type": "Red",
-"price": "",
+"price": 16.36,
 "cur": "EUR",
-"notes": "Single-vineyard Xinomavro, bright and spicy."
+"notes": "Single-vineyard Xinomavro, bright and spicy.",
+"prices": [
+{
+"price": 16.36,
+"cur": "EUR",
+"shop": "Kava Konstantakopoulos",
+"url": "https://www.kavakonstantakopoulos.gr/en/wine-red-wines-alpha-estate-xinomavro-750ml",
+"note": "2022 vintage"
+}
+],
+"checked": "24 Nov 2026"
 },
 {
 "name": "Alpha Estate Sauvignon Blanc",
@@ -1037,23 +1146,87 @@
 {
 "name": "Malagousia",
 "type": "White",
-"price": "",
+"price": 15.9,
 "cur": "EUR",
-"notes": "Peach, jasmine and citrus; the wine that revived the grape."
+"notes": "Peach, jasmine and citrus; the wine that revived the grape.",
+"prices": [
+{
+"price": 15.9,
+"cur": "EUR",
+"shop": "Cava Abatzis",
+"url": "https://cava-abatzis.com/product/%CE%BA%CF%84%CE%AE%CE%BC%CE%B1-%CE%B3%CE%B5%CF%81%CE%BF%CE%B2%CE%B1%CF%83%CE%B9%CE%BB%CE%B5%CE%AF%CE%BF%CF%85-%CE%BC%CE%B1%CE%BB%CE%B1%CE%B3%CE%BF%CF%85%CE%B6%CE%B9%CE%AC-2020/",
+"note": ""
+}
+],
+"checked": "24 Nov 2026"
 },
 {
 "name": "Ktima Gerovassiliou White",
 "type": "White",
-"price": "",
+"price": 13.8,
 "cur": "EUR",
-"notes": "Assyrtiko with Malagousia: fresh and aromatic."
+"notes": "Assyrtiko with Malagousia: fresh and aromatic.",
+"prices": [
+{
+"price": 13.8,
+"cur": "EUR",
+"shop": "Cava Abatzis",
+"url": "https://cava-abatzis.com/product/%CE%BA%CF%84%CE%AE%CE%BC%CE%B1-%CE%B3%CE%B5%CF%81%CE%BF%CE%B2%CE%B1%CF%83%CE%B9%CE%BB%CE%B5%CE%AF%CE%BF%CF%85-%CE%BA%CF%84%CE%AE%CE%BC%CE%B1-%CE%BB%CE%B5%CF%85%CE%BA%CF%8C%CF%82-2020/",
+"note": ""
+}
+],
+"checked": "24 Nov 2026"
 },
 {
 "name": "Avaton",
 "type": "Red",
-"price": "",
+"price": 35.18,
 "cur": "EUR",
-"notes": "Blend of rare local reds: dark fruit and spice."
+"notes": "Blend of rare local reds: dark fruit and spice.",
+"prices": [
+{
+"price": 35.18,
+"cur": "EUR",
+"shop": "MyCava",
+"url": "https://www.mycava.gr/en/avaton-2014.html",
+"note": "2014 vintage"
+}
+],
+"checked": "24 Nov 2026"
+},
+{
+"name": "Ktima Gerovassiliou Red",
+"type": "Red",
+"notes": "Syrah, Merlot and Limnio: one of Greece's best-known reds.",
+"prices": [
+{
+"price": 16.41,
+"cur": "EUR",
+"shop": "MyCava",
+"url": "https://www.mycava.gr/en/gerovasileiou-ktima-erithro-2018.html",
+"note": "2019 vintage"
+}
+],
+"price": 16.41,
+"cur": "EUR",
+"checked": "24 Nov 2026"
+},
+{
+"name": "Malagousia Late Harvest",
+"type": "Sweet",
+"notes": "Sweet wine from overripe Malagousia: honey, ripe fruit and nuts.",
+"prices": [
+{
+"price": 25.98,
+"cur": "EUR",
+"shop": "MyCava",
+"url": "https://www.mycava.gr/en/gerovasileiou-malagousia-2016.html",
+"note": "2021 vintage, 500 ml"
+}
+],
+"price": 25.98,
+"cur": "EUR",
+"checked": "24 Nov 2026"
 }
 ],
 "events": [],
@@ -1162,28 +1335,86 @@
 "lng": 24.12,
 "founded": "1998",
 "style": "white",
-"story": "Founded in 1998 by oenologists Vassilis Tsaktsarlis and Vangelis Kokkinos at the foot of Mount Pangeo. Its fresh white blends became modern Greek classics.",
+"story": "Founded in 1998 by oenologists Vassilis Tsaktsarlis and Vangelis Gerovassiliou on the slopes of Mount Pangeo, at Kokkinochori near Kavala. The vineyard is farmed organically, and its fresh white blends became modern Greek classics.",
 "wines": [
 {
 "name": "Biblia Chora White",
 "type": "White",
-"price": "",
+"price": 14.52,
 "cur": "EUR",
-"notes": "Sauvignon Blanc with Assyrtiko: crisp and aromatic."
+"notes": "Sauvignon Blanc with Assyrtiko: crisp and aromatic.",
+"prices": [
+{
+"price": 14.52,
+"cur": "EUR",
+"shop": "MyCava",
+"url": "https://www.mycava.gr/gr/vivlia-chora-lefko-2023.html",
+"note": "2023 vintage"
+},
+{
+"price": 15.25,
+"cur": "EUR",
+"shop": "Cava 800 Ioannina",
+"url": "https://www.cava800.gr/katastima/krasi/lefko/vivlia-chora-leykos/",
+"note": ""
+},
+{
+"price": 15.3,
+"cur": "EUR",
+"shop": "Cava Kazakos",
+"url": "https://cava-kazakos.gr/manufacturer/kthma-biblia-xwra",
+"note": ""
+},
+{
+"price": 16.16,
+"cur": "EUR",
+"shop": "Best Wines",
+"url": "https://bestwines.gr/shop/%CE%BA%CF%81%CE%B1%CF%83%CE%B9%CE%AC/%CE%BB%CE%B5%CF%85%CE%BA%CE%AC-%CE%BA%CF%81%CE%B1%CF%83%CE%B9%CE%AC/%CE%BA%CF%84%CE%AE%CE%BC%CE%B1-%CE%B2%CE%B9%CE%B2%CE%BB%CE%AF%CE%B1-%CF%87%CF%8E%CF%81%CE%B1-%CE%BB%CE%B5%CF%85%CE%BA%CF%8C%CF%82-750ml/",
+"note": "2025 vintage"
+},
+{
+"price": 16.8,
+"cur": "EUR",
+"shop": "Sklavenitis",
+"url": "https://www.sklavenitis.gr/kava/krasia-sampanies/leyka-krasia/vivlia-hora-leukos-oinos-750ml-226360/",
+"note": ""
+}
+],
+"checked": "24 Nov 2026"
 },
 {
 "name": "Ovilos",
 "type": "White",
-"price": "",
+"price": 28.7,
 "cur": "EUR",
-"notes": "Semillon and Assyrtiko, rich and oak-aged."
+"notes": "Semillon and Assyrtiko, rich and oak-aged.",
+"prices": [
+{
+"price": 28.7,
+"cur": "EUR",
+"shop": "Cava Kazakos",
+"url": "https://cava-kazakos.gr/manufacturer/kthma-biblia-xwra",
+"note": ""
+}
+],
+"checked": "24 Nov 2026"
 },
 {
 "name": "Areti",
 "type": "White",
-"price": "",
+"price": 23.6,
 "cur": "EUR",
-"notes": "Single-variety Assyrtiko."
+"notes": "Single-variety Assyrtiko.",
+"prices": [
+{
+"price": 23.6,
+"cur": "EUR",
+"shop": "Cava Kazakos",
+"url": "https://cava-kazakos.gr/manufacturer/kthma-biblia-xwra",
+"note": ""
+}
+],
+"checked": "24 Nov 2026"
 }
 ],
 "events": [],

@@ -93,6 +93,12 @@ button{cursor:pointer}
 .wine .pr{font-weight:700;white-space:nowrap;text-align:right}
 .wine .n{grid-column:2/4;color:var(--mute);font-size:15px}
 .wine .t{font-size:13px;color:var(--mute);display:block}
+.src{grid-column:2/4;margin-top:6px;font-size:14px;border-left:2px solid var(--line);padding-left:10px}
+.srow{display:flex;flex-wrap:wrap;gap:4px 8px;align-items:baseline;padding:2px 0}
+.srow .sp{font-weight:700;min-width:62px;white-space:nowrap}
+.srow a{color:var(--wine);text-decoration:none}
+.srow a:hover{text-decoration:underline}
+.snote{color:var(--mute);font-size:12.5px}
 .ev{border:1px solid var(--line);border-radius:14px;padding:14px;margin-bottom:12px}
 .ev h3{font:700 17px "DM Sans",sans-serif}
 .ev .when{color:var(--wine);font-weight:500;font-size:14px;margin:4px 0 6px}
@@ -260,7 +266,7 @@ const dfmt=new Intl.DateTimeFormat(undefined,{weekday:"short",day:"numeric",mont
 const tfmt=new Intl.DateTimeFormat(undefined,{hour:"2-digit",minute:"2-digit"});
 function when(e){const a=new Date(e.start),b=new Date(e.end||e.start);const same=a.toDateString()===b.toDateString();return same?`${dfmt.format(a)} · ${tfmt.format(a)}–${tfmt.format(b)}`:`${dfmt.format(a)} ${tfmt.format(a)} → ${dfmt.format(b)} ${tfmt.format(b)}`}
 const isLive=e=>new Date(e.start)<=NOW&&NOW<=new Date(e.end||e.start);
-function money(p,c){if(p===0||p==="0")return"Free";if(p===""||p==null)return"";try{return new Intl.NumberFormat(undefined,{style:"currency",currency:c||"EUR",maximumFractionDigits:0}).format(+p)}catch{return esc(p+" "+(c||""))}}
+function money(p,c){if(p===0||p==="0")return"Free";if(p===""||p==null)return"";try{return new Intl.NumberFormat(undefined,{style:"currency",currency:c||"EUR",minimumFractionDigits:(+p%1?2:0),maximumFractionDigits:2}).format(+p)}catch{return esc(p+" "+(c||""))}}
 const gdate=s=>{const d=new Date(s);const p=n=>String(n).padStart(2,"0");return`${d.getFullYear()}${p(d.getMonth()+1)}${p(d.getDate())}T${p(d.getHours())}${p(d.getMinutes())}00`};
 function gcal(w,e){const u=new URL("https://calendar.google.com/calendar/render");u.searchParams.set("action","TEMPLATE");u.searchParams.set("text",`${e.title} – ${w.name}`);u.searchParams.set("dates",gdate(e.start)+"/"+gdate(e.end||e.start));u.searchParams.set("details",(e.desc||"")+"\n\nFound on Winear.me");u.searchParams.set("location",`${w.name}, ${w.region}, ${w.country}`);return u.toString()}
 function allEvents(){const out=[];for(const w of all())for(const e of(w.events||[]))if(e&&e.start)out.push({w,e});return out.sort((a,b)=>new Date(a.e.start)-new Date(b.e.start))}
@@ -297,6 +303,11 @@ function openWinery(id,fly){
   S.open=id;S.tab="story";renderWinery();
   if(fly)map.flyTo([+w.lat,+w.lng],Math.max(map.getZoom(),13),{duration:.8});
 }
+function priceList(x){
+  if(!x.prices||!x.prices.length)return"";
+  return `<div class="src">${x.prices.map(q=>{const u=/^https:\/\//.test(q.url||"")?q.url:"";
+    return `<div class="srow"><span class="sp">${esc(money(q.price,q.cur))}</span>${u?`<a href="${esc(u)}" target="_blank" rel="noopener">${esc(q.shop)} ↗</a>`:esc(q.shop)}${q.note?` <span class="snote">· ${esc(q.note)}</span>`:""}</div>`}).join("")}<div class="snote">Shop prices as listed online${x.checked?", "+esc(x.checked):""}. Prices may have changed.</div></div>`;
+}
 function renderWinery(){
   const w=find(S.open);if(!w)return closePanel();
   const st=STYLES[w.style]||STYLES.red;
@@ -304,7 +315,7 @@ function renderWinery(){
   const tabs=[["story","Story"],["wines",`Wines (${(w.wines||[]).length})`],["events",`Events (${(w.events||[]).length})`]];
   let body="";
   if(S.tab==="story")body=`${String(w.story||"").split(/\n+/).map(p=>`<p>${esc(p)}</p>`).join("")||'<p class="empty">No story yet.</p>'}${w.user?"":w.real?'<p class="note">Listing prepared from public information; the map pin shows the approximate area. Is this your winery? Soon you will be able to claim this page and add your own story, wines, prices and events.</p>':'<p class="note">Sample winery for the prototype.</p>'}`;
-  if(S.tab==="wines")body=(w.wines||[]).length?(w.wines).map(x=>`<div class="wine"><i style="background:${TYPECOL[x.type]||"#999"}"></i><div><b>${esc(x.name)}</b><span class="t">${esc(x.type)}</span></div><div class="pr">${esc(money(x.price,x.cur))}</div><div class="n">${esc(x.notes)}</div></div>`).join(""):'<p class="empty">No wines listed yet.</p>';
+  if(S.tab==="wines")body=(w.wines||[]).length?(w.wines).map(x=>`<div class="wine"><i style="background:${TYPECOL[x.type]||"#999"}"></i><div><b>${esc(x.name)}</b><span class="t">${esc(x.type)}</span></div><div class="pr">${x.prices&&x.prices.length>1?"from ":""}${esc(money(x.price,x.cur))}</div><div class="n">${esc(x.notes)}</div>${priceList(x)}</div>`).join(""):'<p class="empty">No wines listed yet.</p>';
   if(S.tab==="events"){const evs=[...(w.events||[])].filter(e=>e&&e.start).sort((a,b)=>new Date(a.start)-new Date(b.start));const up=evs.filter(e=>new Date(e.end||e.start)>=NOW);body=up.length?up.map(e=>evCard(w,e,false)).join(""):'<p class="empty">No upcoming events.</p>'}
   show(head(esc(w.name),`${esc(w.region)} · ${esc(w.country)}`,meta)+`<div class="tabs" role="tablist">${tabs.map(([k,l])=>`<button role="tab" data-tab="${k}" aria-selected="${S.tab===k}">${l}</button>`).join("")}</div><div class="pb">${body}</div>`,"winery");
 }
@@ -494,7 +505,7 @@ q.addEventListener("keydown",e=>{if(e.key==="Enter"){res.querySelector("button")
 document.addEventListener("click",e=>{if(!e.target.closest(".search"))res.style.display="none"});
 
 /* ---------- data ---------- */
-fetch("wineries.json?v=20261124b",{cache:"no-cache"}).then(r=>r.json()).then(d=>{S.catalog=d;drawMarkers()}).catch(()=>toast("Sample wineries could not load."));
+fetch("wineries.json?v=20261124c",{cache:"no-cache"}).then(r=>r.json()).then(d=>{S.catalog=d;drawMarkers()}).catch(()=>toast("Sample wineries could not load."));
 
 /* ---------- sign-in ---------- */
 let entered=false;try{entered=sessionStorage.getItem("winear-in")==="1"}catch{}

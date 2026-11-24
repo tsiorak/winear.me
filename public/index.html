@@ -27,7 +27,7 @@ button,input,select,textarea{font:inherit;color:inherit}
 button{cursor:pointer}
 :focus-visible{outline:3px solid var(--gold);outline-offset:2px}
 #map{position:fixed;inset:0;background:var(--sea)}
-.leaflet-container{font:inherit;background:var(--sea)}
+.leaflet-container{font:inherit;background:#aad3df}
 .leaflet-tooltip{font:500 13px "DM Sans",sans-serif;border-radius:8px;border:0;box-shadow:0 4px 14px #0003;background:var(--card);color:var(--ink)}
 .leaflet-tooltip-top:before{border-top-color:var(--card)}
 .leaflet-control-zoom a{background:var(--card)!important;color:var(--ink)!important;border-color:var(--line)!important;width:40px!important;height:40px!important;line-height:40px!important}
@@ -213,21 +213,11 @@ const NOW=new Date();
 const S={catalog:[],mine:{},approved:new Set(),requests:{},myReq:null,plans:[],db:null,user:null,id:null,owner:false,guest:false,open:null,tab:"story",view:null,calMonth:new Date(NOW.getFullYear(),NOW.getMonth(),1),calDay:null,inView:false};
 
 /* ---------- map ---------- */
-const map=L.map("map",{zoomControl:false,worldCopyJump:true,minZoom:2,maxZoom:11,zoomSnap:.5,attributionControl:true}).setView([22,10],2.5);
+const map=L.map("map",{zoomControl:false,worldCopyJump:true,minZoom:2,maxZoom:17,zoomSnap:.5,attributionControl:true}).setView([22,10],2.5);
 L.control.zoom({position:"bottomright"}).addTo(map);
-map.attributionControl.setPrefix("Map data: Natural Earth");
-const renderer=L.canvas({padding:.5});
-let land=null;
-const probe=document.createElement("i");probe.style.display="none";document.body.appendChild(probe);
-const css=n=>{probe.style.color=`var(${n})`;return getComputedStyle(probe).color};
-function unwrap(g){const fix=r=>{let off=0;return r.map((c,i)=>{if(i){const d=c[0]+off-r[i-1][0]-(r[i-1].off||0);if(d>180)off-=360;else if(d<-180)off+=360}const o=[c[0]+off,c[1]];o.off=0;r[i].off=off;return o})};
-  if(g.type==="Polygon")g.coordinates=g.coordinates.map(fix);else if(g.type==="MultiPolygon")g.coordinates=g.coordinates.map(p=>p.map(fix));return g}
-function landStyle(){return{renderer,fillColor:css("--land")||"#f4efe9",fillOpacity:1,color:css("--border")||"#d6cbc3",weight:.8}}
-fetch("countries.json").then(r=>r.json()).then(t=>{const fc=topojson.feature(t,t.objects.countries);fc.features=fc.features.filter(f=>f.id!=="010").map(f=>(f.geometry&&unwrap(f.geometry),f));land=L.geoJSON(fc,{style:landStyle,interactive:false}).addTo(map);land.bringToBack()}).catch(()=>toast("The map outline could not load."));
-const restyle=()=>{if(land)land.setStyle(landStyle())};
-matchMedia("(prefers-color-scheme: dark)").addEventListener("change",restyle);
-new MutationObserver(restyle).observe(document.documentElement,{attributes:true,attributeFilter:["data-theme"]});
-
+map.attributionControl.setPrefix(false);
+L.tileLayer("https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png",{subdomains:"abc",maxZoom:17,detectRetina:false,crossOrigin:true,
+  attribution:'Map data: &copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors, SRTM | Map style: &copy; <a href="https://opentopomap.org" target="_blank" rel="noopener">OpenTopoMap</a> (CC-BY-SA)'}).addTo(map);
 function bottleSvg(c){return `<svg class="bottle" width="26" height="44" viewBox="0 0 26 44"><ellipse cx="13" cy="42.5" rx="9" ry="1.6" fill="#0003"/><path d="M10 1h6v10c0 3 6 6 6 13v17a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V24c0-7 6-10 6-13z" fill="${c}" stroke="#2a0d18" stroke-width="1.2"/><rect x="9.6" y=".6" width="6.8" height="4" rx="1" fill="#2a0d18"/><rect x="6" y="25" width="14" height="10" rx="1.2" fill="#fbf6ee" stroke="#2a0d18" stroke-width=".6"/><path d="M8 17c1.5-2 2.5-3 2.5-6" stroke="#fff8" stroke-width="1.6" fill="none" stroke-linecap="round"/></svg>`}
 const icons={};
 for(const k in STYLES)icons[k]=L.divIcon({className:"",html:bottleSvg(STYLES[k][1]),iconSize:[26,44],iconAnchor:[13,43],tooltipAnchor:[0,-42]});
@@ -305,7 +295,7 @@ panel.addEventListener("click",async ev=>{
 function openWinery(id,fly){
   const w=find(id);if(!w)return;
   S.open=id;S.tab="story";renderWinery();
-  if(fly)map.flyTo([+w.lat,+w.lng],Math.max(map.getZoom(),10.5),{duration:.8});
+  if(fly)map.flyTo([+w.lat,+w.lng],Math.max(map.getZoom(),13),{duration:.8});
 }
 function renderWinery(){
   const w=find(S.open);if(!w)return closePanel();

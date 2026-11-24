@@ -346,21 +346,62 @@
 "lng": 25.4316,
 "founded": "1947",
 "style": "white",
-"story": "Built in 1947 by the Venetsanos family above the port of Athinios, it was Santorini's first industrial winery. The multi-level building was designed to move wine by gravity, and its terrace looks straight over the caldera.",
+"story": "Built in 1947 by the Venetsanos family above the port of Athinios, it was Santorini's first industrial winery. The multi-level building was designed to move wine by gravity, and its terrace looks straight over the caldera. After decades closed, the winery was brought back to life and reopened in 2014.",
 "wines": [
 {
 "name": "Santorini Assyrtiko",
 "type": "White",
-"price": "",
+"price": 26.0,
 "cur": "EUR",
-"notes": "Crisp and saline, typical of the volcanic soil."
+"notes": "Crisp and saline, typical of the volcanic soil.",
+"prices": [
+{
+"price": 26.0,
+"cur": "EUR",
+"shop": "Cava Kazakos",
+"url": "https://cava-kazakos.gr/product/11808/oinopoieio-benetsanos-santorini-asyrtiko",
+"note": "older listing"
+},
+{
+"price": 28.0,
+"cur": "EUR",
+"shop": "Cava Romanos",
+"url": "https://www.cavaromanos.gr/index.php?route=product/product&product_id=931",
+"note": ""
+},
+{
+"price": 42.0,
+"cur": "EUR",
+"shop": "Canava",
+"url": "https://canava.gr/en/product/krasi-leyko-xiro-venetsanos-santorini-asyrtiko-2021-0-75l/",
+"note": "2023 vintage"
+},
+{
+"price": 43.5,
+"cur": "EUR",
+"shop": "House of Wine",
+"url": "https://www.houseofwine.gr/how/santorini-benetsanou.html",
+"note": "2024 vintage"
+}
+],
+"checked": "24 Nov 2026"
 },
 {
 "name": "Nykteri",
 "type": "White",
-"price": "",
+"price": 46.4,
 "cur": "EUR",
-"notes": "Oak-aged traditional style, rounder and nutty."
+"notes": "Oak-aged traditional style, rounder and nutty.",
+"prices": [
+{
+"price": 46.4,
+"cur": "EUR",
+"shop": "House of Wine",
+"url": "https://www.houseofwine.gr/how/nyhteri-venetsanou.html",
+"note": "2023 vintage"
+}
+],
+"checked": "24 Nov 2026"
 },
 {
 "name": "Vinsanto",
@@ -1196,9 +1237,54 @@
 {
 "name": "Grande Reserve Naoussa",
 "type": "Red",
-"price": "",
+"price": 14.9,
 "cur": "EUR",
-"notes": "Long-aged Xinomavro with leather and dried fruit."
+"notes": "Long-aged Xinomavro with leather and dried fruit.",
+"prices": [
+{
+"price": 14.9,
+"cur": "EUR",
+"shop": "Cava.gr (Winelaw)",
+"url": "https://www.cava.gr/gr/CATEGORY/%CE%9A%CE%A1%CE%91%CE%A3%CE%99%CE%91/%CE%95%CE%9B%CE%9B%CE%97%CE%9D%CE%99%CE%9A%CE%9F%CE%A3+%CE%91%CE%9C%CE%A0%CE%95%CE%9B%CE%A9%CE%9D%CE%91%CE%A3/%CE%9C%CE%A0%CE%9F%CE%A5%CE%A4%CE%91%CE%A1%CE%97+-+GRAND+RES/561420209259/",
+"note": "2013 vintage"
+},
+{
+"price": 15.65,
+"cur": "EUR",
+"shop": "Cava Maniatis",
+"url": "https://cavamaniatis.gr/mpoytari-grand-reserve-naoyssa-750ml/",
+"note": ""
+},
+{
+"price": 20.6,
+"cur": "EUR",
+"shop": "House of Wine",
+"url": "https://www.houseofwine.gr/how/mpoutaris-grande-reserve-naoussa.html",
+"note": "2013 vintage"
+},
+{
+"price": 20.6,
+"cur": "EUR",
+"shop": "Cava Kazakos",
+"url": "https://cava-kazakos.gr/product/38849/mpoytarhs-grande-reserve-naoussa-2013",
+"note": "2013 vintage"
+},
+{
+"price": 21.0,
+"cur": "EUR",
+"shop": "Kava Kelari",
+"url": "https://kavakelari.gr/product/grande-reserve-naoussa-2013-boutaris-oinopoiitiki/",
+"note": "2013 vintage"
+},
+{
+"price": 23.0,
+"cur": "EUR",
+"shop": "Oinolatris",
+"url": "https://oinolatris.gr/product/grande-reserve-%CE%BD%CE%AC%CE%BF%CF%85%CF%83%CF%83%CE%B1-2013-%CE%B5%CF%81%CF%85%CE%B8%CF%81%CF%8C%CF%82-%CE%BC%CF%80%CE%BF%CF%85%CF%84%CE%AC%CF%81%CE%B7-750ml/",
+"note": "2013 vintage"
+}
+],
+"checked": "24 Nov 2026"
 }
 ],
 "events": [],
@@ -1218,9 +1304,47 @@
 {
 "name": "Earth & Sky (Gi kai Ouranos)",
 "type": "Red",
-"price": "",
+"price": 18.7,
 "cur": "EUR",
-"notes": "Ripe, perfumed Xinomavro with fine tannins."
+"notes": "Ripe, perfumed Xinomavro with fine tannins.",
+"prices": [
+{
+"price": 18.7,
+"cur": "EUR",
+"shop": "Kava Gkafas (winepoems.gr)",
+"url": "https://winepoems.gr/product/%CE%B8%CF%85%CE%BC%CE%B9%CE%BF%CF%80%CE%BF%CF%85%CE%BB%CE%BF%CF%82-%CE%B3%CE%B7-%CE%BF%CF%85%CF%81%CE%B1%CE%BD%CE%BF%CF%82-0-7lt-2021/",
+"note": "2021 vintage"
+},
+{
+"price": 19.8,
+"cur": "EUR",
+"shop": "Canava",
+"url": "https://canava.gr/en/product/thymiopoulos_gi/",
+"note": "2024 vintage"
+},
+{
+"price": 19.98,
+"cur": "EUR",
+"shop": "Vinoteca",
+"url": "https://www.vinoteca.gr/gi-kai-ouranos-ampelones-thumiopoulou.html",
+"note": "2024 vintage"
+},
+{
+"price": 21.9,
+"cur": "EUR",
+"shop": "Oinognosia",
+"url": "https://www.oinognosia.wine/shop/gi-kai-ouranos-thymiopoulou-2023/",
+"note": "2023 vintage"
+},
+{
+"price": 23.9,
+"cur": "EUR",
+"shop": "Vinoultura",
+"url": "https://www.vinoultura.gr/products/%CE%B3%CE%B7-%CE%BA%CE%B1%CE%B9-%CE%BF%CF%85%CF%81%CE%B1%CE%BD%CF%8C%CF%82-2023",
+"note": "2023 vintage"
+}
+],
+"checked": "24 Nov 2026"
 },
 {
 "name": "Uranos",
@@ -1249,21 +1373,76 @@
 "lng": 22.07,
 "founded": "",
 "style": "red",
-"story": "A family winery in Naoussa run by Kostis Dalamaras, sixth generation of a winemaking family. Organic vineyards and traditional Xinomavro.",
+"story": "The Dalamaras family has made wine in Naoussa since 1840. Since 2000 the winery has been run by Kostis Dalamaras, the sixth generation, with organic vineyards, native yeasts and a fresh, pure style of Xinomavro.",
 "wines": [
 {
 "name": "Naoussa",
 "type": "Red",
-"price": "",
+"price": 18.0,
 "cur": "EUR",
-"notes": "Elegant, classic Xinomavro."
+"notes": "Elegant, classic Xinomavro.",
+"prices": [
+{
+"price": 18.0,
+"cur": "EUR",
+"shop": "Cavacava",
+"url": "https://cavacava.gr/oinopoieio/dalamaras/",
+"note": "2022 vintage"
+},
+{
+"price": 19.1,
+"cur": "EUR",
+"shop": "House of Wine",
+"url": "https://www.houseofwine.gr/how/naousa-dalamara.html",
+"note": "2023 vintage"
+},
+{
+"price": 20.0,
+"cur": "EUR",
+"shop": "Kava Gkafas (winepoems.gr)",
+"url": "https://winepoems.gr/product/%CE%B4%CE%B1%CE%BB%CE%B1%CE%BC%CE%B1%CF%81%CE%B1%CF%82-%CE%BD%CE%B1%CE%BF%CF%85%CF%83%CE%B1-0-75lt/",
+"note": ""
+}
+],
+"checked": "24 Nov 2026"
 },
 {
 "name": "Paliokalias",
 "type": "Red",
-"price": "",
+"price": 68.0,
 "cur": "EUR",
-"notes": "Single-vineyard Naoussa, structured and long-lived."
+"notes": "Single-vineyard Naoussa, structured and long-lived.",
+"prices": [
+{
+"price": 68.0,
+"cur": "EUR",
+"shop": "Cavacava",
+"url": "https://cavacava.gr/oinopoieio/dalamaras/",
+"note": "2021 vintage"
+},
+{
+"price": 68.0,
+"cur": "EUR",
+"shop": "Cava Rokos",
+"url": "https://www.cavarokos.gr/dalamaras-paliokalias-750ml-eruthro",
+"note": "not available"
+},
+{
+"price": 70.7,
+"cur": "EUR",
+"shop": "House of Wine",
+"url": "https://www.houseofwine.gr/how/paliokalias-oinopoieio-dalamaras.html",
+"note": "2021 vintage"
+},
+{
+"price": 78.0,
+"cur": "EUR",
+"shop": "Cava.gr (Winelaw)",
+"url": "https://www.cava.gr/gr/CATEGORY/%CE%9A%CE%A1%CE%91%CE%A3%CE%99%CE%91/%CE%95%CE%9B%CE%9B%CE%97%CE%9D%CE%99%CE%9A%CE%9F%CE%A3+%CE%91%CE%9C%CE%A0%CE%95%CE%9B%CE%A9%CE%9D%CE%91%CE%A3/%CE%94%CE%91%CE%9B%CE%91%CE%9C%CE%91%CE%A1%CE%91+-+%CE%A0%CE%91%CE%9B%CE%99%CE%9F%CE%9A%CE%91%CE%9B%CE%99/401920203306/",
+"note": "2021 vintage"
+}
+],
+"checked": "24 Nov 2026"
 }
 ],
 "events": [],
@@ -1532,16 +1711,43 @@
 {
 "name": "Château Porto Carras",
 "type": "Red",
-"price": "",
+"price": 36.89,
 "cur": "EUR",
-"notes": "Bordeaux-style blend, structured and age-worthy."
+"notes": "Bordeaux-style blend, structured and age-worthy.",
+"prices": [
+{
+"price": 36.89,
+"cur": "EUR",
+"shop": "House of Wine",
+"url": "https://www.houseofwine.gr/en/product/chateau-porto-carras",
+"note": "2016 vintage, sale price"
+},
+{
+"price": 40.0,
+"cur": "EUR",
+"shop": "Cava.gr (Winelaw)",
+"url": "https://www.cava.gr/gr/CATEGORY/%CE%9A%CE%A1%CE%91%CE%A3%CE%99%CE%91/%CE%95%CE%9B%CE%9B%CE%97%CE%9D%CE%99%CE%9A%CE%9F%CE%A3+%CE%91%CE%9C%CE%A0%CE%95%CE%9B%CE%A9%CE%9D%CE%91%CE%A3/CHATEAU+PORTO+CARRAS/401920202993/",
+"note": "2016 vintage"
+}
+],
+"checked": "24 Nov 2026"
 },
 {
 "name": "Limnio",
 "type": "Red",
-"price": "",
+"price": 12.67,
 "cur": "EUR",
-"notes": "An ancient Greek grape: herbs and red fruit."
+"notes": "An ancient Greek grape: herbs and red fruit.",
+"prices": [
+{
+"price": 12.67,
+"cur": "EUR",
+"shop": "House of Wine",
+"url": "https://www.houseofwine.gr/en/product/limnio-porto-carras",
+"note": "2022 vintage, sale price"
+}
+],
+"checked": "24 Nov 2026"
 },
 {
 "name": "Malagouzia",
@@ -1568,9 +1774,33 @@
 {
 "name": "Rapsani Reserve",
 "type": "Red",
-"price": "",
+"price": 15.13,
 "cur": "EUR",
-"notes": "Xinomavro, Krassato and Stavroto from Mount Olympus."
+"notes": "Xinomavro, Krassato and Stavroto from Mount Olympus.",
+"prices": [
+{
+"price": 15.13,
+"cur": "EUR",
+"shop": "MyCava",
+"url": "https://mycava.gr/product/reserve-2016-750ml/",
+"note": "2016 vintage"
+},
+{
+"price": 16.5,
+"cur": "EUR",
+"shop": "Cava Kazakos",
+"url": "https://cava-kazakos.gr/product/10464/kthma-tsantalhs-rapsanh-eryoro-epilegmeno",
+"note": "out of stock"
+},
+{
+"price": 24.0,
+"cur": "EUR",
+"shop": "Kava Oinotypo",
+"url": "https://oinotypo.gr/shop/krasi/emfialomenoi-oinoi/erythra-emfialomena/erythra-makras-palaiosis/%CF%84%CF%83%CE%AC%CE%BD%CF%84%CE%B1%CE%BB%CE%B7%CF%82-%CF%81%CE%B1%CF%88%CE%AC%CE%BD%CE%B7-reserve-2012-750ml-%CE%B5%CF%81%CF%85%CE%B8%CF%81%CF%8C%CF%82/",
+"note": "2012 vintage, sold out"
+}
+],
+"checked": "24 Nov 2026"
 },
 {
 "name": "Agioritikos",

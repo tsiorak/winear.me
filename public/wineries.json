@@ -882,16 +882,26 @@
 "country": "Greece",
 "lat": 37.809,
 "lng": 22.714,
-"founded": "",
+"founded": "1995",
 "style": "red",
-"story": "A family winery in Ancient Nemea with vineyards at different altitudes across the appellation. It focuses on Agiorgitiko in several styles, from fresh to oak-aged.",
+"story": "Started in 1995 by George Palivos in Ancient Nemea, close to the archaeological site, and now run with his daughters Vasiliki and Evangelia. The family farms about 30 hectares across the Nemea zone and was among the first to open its winery to visitors. Agiorgitiko is the focus, from fresh to oak-aged.",
 "wines": [
 {
 "name": "Nemea Agiorgitiko",
 "type": "Red",
-"price": "",
+"price": 12.6,
 "cur": "EUR",
-"notes": "Ripe red fruit with gentle oak."
+"notes": "Ripe red fruit with gentle oak.",
+"prices": [
+{
+"price": 12.6,
+"cur": "EUR",
+"shop": "House of Wine",
+"url": "https://www.houseofwine.gr/how/intl/ktima-palyvou-nemea.html",
+"note": "2024 vintage"
+}
+],
+"checked": "24 Nov 2026"
 },
 {
 "name": "Terra Leone",
@@ -899,6 +909,23 @@
 "price": "",
 "cur": "EUR",
 "notes": "Their top selection of Agiorgitiko."
+},
+{
+"type": "White",
+"notes": "Kydonitsa with wild yeasts and 4 months in oak: citrus, peach and honey.",
+"name": "Diaselo Kydonitsa Wild Yeast",
+"cur": "EUR",
+"prices": [
+{
+"price": 21.4,
+"cur": "EUR",
+"shop": "House of Wine",
+"url": "https://www.houseofwine.gr/en/product/diaselo-kudonitsa-wild-yeast",
+"note": "2025 vintage, sold out"
+}
+],
+"price": 21.4,
+"checked": "24 Nov 2026"
 }
 ],
 "events": [],
@@ -1171,16 +1198,26 @@
 "country": "Greece",
 "lat": 37.57,
 "lng": 22.4,
-"founded": "",
+"founded": "1991",
 "style": "white",
-"story": "A family estate on the Mantinia plateau and an early adopter of organic farming in Greece. Best known for Moschofilero in still and sparkling styles.",
+"story": "Five generations of the Spiropoulos family have grown vines in mountainous Arcadia. Their modern winery opened in Ancient Mantinia in 1991 and all family vineyards have been certified organic since 1994; a second winery followed in Nemea in 2007. Best known for Moschofilero in still and sparkling styles.",
 "wines": [
 {
 "name": "Mantinia Moschofilero",
 "type": "White",
-"price": "",
+"price": 13.1,
 "cur": "EUR",
-"notes": "Aromatic, light and crisp."
+"notes": "Aromatic, light and crisp.",
+"prices": [
+{
+"price": 13.1,
+"cur": "EUR",
+"shop": "Botilia",
+"url": "https://www.botilia.gr/en/p/white-wine/Mantineia-Spyropoulou",
+"note": "2024 vintage, sold out"
+}
+],
+"checked": "24 Nov 2026"
 },
 {
 "name": "Ode Panos",
@@ -1707,16 +1744,33 @@
 "country": "Greece",
 "lat": 37.885,
 "lng": 23.93,
-"founded": "",
+"founded": "1919",
 "style": "white",
-"story": "A family winery in Markopoulo, near Athens airport, whose roots go back to the early 1900s. Vassilis Papagiannakos was among the first to believe in Savatiano as a fine wine.",
+"story": "A family winery in Markopoulo, near Athens airport, founded in 1919 and now run by the third generation, Vassilis Papagiannakos. He was among the first to believe in Savatiano as a fine, age-worthy wine.",
 "wines": [
 {
 "name": "Savatiano",
 "type": "White",
-"price": "",
+"price": 10.2,
 "cur": "EUR",
-"notes": "Fresh citrus and herbs, the wine of Athens."
+"notes": "Fresh citrus and herbs, the wine of Athens.",
+"prices": [
+{
+"price": 10.2,
+"cur": "EUR",
+"shop": "Greece & Grapes",
+"url": "https://www.greeceandgrapes.com/en/white-savatiano-old-vineyards-2024-papagiannakos-domaine",
+"note": "Old Vines, 2024 vintage"
+},
+{
+"price": 21.95,
+"cur": "EUR",
+"shop": "The Corkscrew (Ireland)",
+"url": "https://thecorkscrew.ie/products/papagiannakos-savatiano-old-vines-pgi-markopoulo",
+"note": "Old Vines"
+}
+],
+"checked": "24 Nov 2026"
 },
 {
 "name": "Vientzi Savatiano",
@@ -1731,6 +1785,23 @@
 "price": "",
 "cur": "EUR",
 "notes": "Aromatic, peachy white."
+},
+{
+"type": "White",
+"notes": "Old-vine Savatiano with four months in oak: lemon, coconut and vanilla.",
+"name": "Savatiano Vareli",
+"cur": "EUR",
+"prices": [
+{
+"price": 14.2,
+"cur": "EUR",
+"shop": "House of Wine",
+"url": "https://www.houseofwine.gr/how/intl/papagiannakos-savvatiano-vareli.html",
+"note": "2024 vintage"
+}
+],
+"price": 14.2,
+"checked": "24 Nov 2026"
 }
 ],
 "events": [],
@@ -1745,14 +1816,31 @@
 "lng": 23.98,
 "founded": "1917",
 "style": "white",
-"story": "Started in 1917 by grandfather Antonis in Keratea, East Attica. Today the third generation runs a small modern winery focused on old-vine Savatiano.",
+"story": "Started in 1917 by grandfather Antonis, who made Savatiano in clay jars in Keratea, East Attica. Today brothers Stamatis, Antonis and Tasos run a small modern winery focused on old-vine Savatiano.",
 "wines": [
 {
 "name": "Savatiano",
 "type": "White",
-"price": "",
+"price": 9.3,
 "cur": "EUR",
-"notes": "Crisp apple and ripe lemon."
+"notes": "Crisp apple and ripe lemon.",
+"prices": [
+{
+"price": 9.3,
+"cur": "EUR",
+"shop": "Greece & Grapes",
+"url": "https://www.greeceandgrapes.com/en/white-savatiano-2022-mylonas-winery",
+"note": "2022 vintage"
+},
+{
+"price": 10.8,
+"cur": "EUR",
+"shop": "House of Wine",
+"url": "https://www.houseofwine.gr/how/intl/mylonas-savvatiano.html",
+"note": "2024 vintage"
+}
+],
+"checked": "24 Nov 2026"
 },
 {
 "name": "Naked Truth",
@@ -1767,6 +1855,23 @@
 "price": "",
 "cur": "EUR",
 "notes": "Traditional pine-resin wine, fresh and herbal."
+},
+{
+"type": "White",
+"notes": "Old-vine Savatiano built to age: ripe fruit and crisp acidity.",
+"name": "Cuvée Vouno Savatiano",
+"cur": "EUR",
+"prices": [
+{
+"price": 18.5,
+"cur": "EUR",
+"shop": "Botilia",
+"url": "https://www.botilia.gr/en/p/white-wine/Cuvee-Vouno-Savatiano-Mylonas-Winery",
+"note": "2021 vintage"
+}
+],
+"price": 18.5,
+"checked": "24 Nov 2026"
 }
 ],
 "events": [],
@@ -3002,7 +3107,7 @@
 "lng": 20.65,
 "founded": "",
 "style": "sparkling",
-"story": "Founded by Lefteris Glinavos, who studied winemaking in France and returned to his home village of Zitsa. Known for sparkling and semi-sparkling wines from the local Debina grape.",
+"story": "Founded by Lefteris Glinavos, who studied winemaking in France and returned to his home village of Zitsa. Known for sparkling and semi-sparkling wines from the local Debina grape. Naoussa winemaker Apostolos Thymiopoulos has recently invested in the estate, keeping the Glinavos name.",
 "wines": [
 {
 "name": "Zitsa Brut",
@@ -3017,6 +3122,23 @@
 "price": "",
 "cur": "EUR",
 "notes": "Semi-sparkling, slightly sweet orange wine: a cult classic."
+},
+{
+"type": "White",
+"notes": "Still Debina, wild-yeast fermented and 10 months on lees; elegant and fresh.",
+"name": "Fine Debina",
+"cur": "EUR",
+"prices": [
+{
+"price": 14.2,
+"cur": "EUR",
+"shop": "Botilia",
+"url": "https://www.botilia.gr/en/p/white-wine/Fine-Debina-Glinavos-Winery",
+"note": "2024 vintage"
+}
+],
+"price": 14.2,
+"checked": "24 Nov 2026"
 }
 ],
 "events": [],
@@ -3036,9 +3158,33 @@
 {
 "name": "Katogi Averoff",
 "type": "Red",
-"price": "",
+"price": 9.42,
 "cur": "EUR",
-"notes": "Cabernet-based mountain red."
+"notes": "Cabernet Sauvignon 40%, Merlot 30%, Agiorgitiko 30%, a year in oak: red fruit, spice and leather.",
+"prices": [
+{
+"price": 9.42,
+"cur": "EUR",
+"shop": "Siakos",
+"url": "https://siakos.gr/en/products/%CE%BA%CE%B1%CF%84%CF%8E%CE%B3%CE%B9-%CE%B1%CE%B2%CE%AD%CF%81%CF%89%CF%86-%CE%BA%CF%81%CE%B1%CF%83%CE%AF-%CE%B5%CF%81%CF%85%CE%B8%CF%81%CF%8C-%CE%BE%CE%B7%CF%81%CF%8C-750ml",
+"note": "sale, was €11.77"
+},
+{
+"price": 10.6,
+"cur": "EUR",
+"shop": "House of Wine",
+"url": "https://www.houseofwine.gr/how/intl/katogi-aberof-eruthros.html",
+"note": "2022 vintage"
+},
+{
+"price": 16.48,
+"cur": "EUR",
+"shop": "Greek Flavours",
+"url": "https://www.greekflavours.com/en-it/products/red-wine-katogi-averoff",
+"note": "ships abroad"
+}
+],
+"checked": "24 Nov 2026"
 },
 {
 "name": "Traminer",

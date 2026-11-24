@@ -3206,7 +3206,7 @@
 "lng": 22.29,
 "founded": "",
 "style": "red",
-"story": "A family winery in Tyrnavos, Thessaly, known for reviving the local Limniona grape. Christos Zafeirakis farms the vineyards organically.",
+"story": "A family winery in Tyrnavos, Thessaly, known for reviving the local Limniona grape. Christos Zafeirakis, the fifth generation, studied oenology in Milan, made his first Limniona in 2008 and farms all the vineyards organically.",
 "wines": [
 {
 "name": "Limniona",
@@ -3235,14 +3235,45 @@
 "lng": 25.16,
 "founded": "1966",
 "style": "white",
-"story": "A family winery founded in 1966 in central Crete. The Lyrarakis family brought forgotten Cretan grapes such as Plyto and Dafni back to life.",
+"story": "A family winery founded in 1966 at Alagni, in the hills south of Heraklion. The Lyrarakis family brought forgotten Cretan grapes such as Plyto and Dafni back to life; Dafni was saved by planting it in the Psarades vineyard at 480 m in the early 1990s.",
 "wines": [
 {
 "name": "Dafni",
 "type": "White",
-"price": "",
+"price": 15.4,
 "cur": "EUR",
-"notes": "Herbal, bay-leaf aromas from a rare Cretan grape."
+"notes": "Herbal, bay-leaf aromas from a rare Cretan grape.",
+"prices": [
+{
+"price": 15.4,
+"cur": "EUR",
+"shop": "Greece & Grapes",
+"url": "https://www.greeceandgrapes.com/en/white-dafni-psarades-2024-lyrarakis-wines",
+"note": "Psarades, 2024 vintage, was €16.12"
+},
+{
+"price": 16.7,
+"cur": "EUR",
+"shop": "Botilia",
+"url": "https://www.botilia.gr/en/p/white-wine/Psarades-Dafni-Lyrarakis-Winery",
+"note": "Psarades, 2025 vintage"
+},
+{
+"price": 17.4,
+"cur": "EUR",
+"shop": "House of Wine",
+"url": "https://www.houseofwine.gr/how/intl/lyrarakis-dafni-psarades.html",
+"note": "Psarades, 2025 vintage"
+},
+{
+"price": 22.95,
+"cur": "EUR",
+"shop": "Mitchell & Son (Ireland)",
+"url": "https://mitchellandson.com/products/lyrarakis-dafni",
+"note": "Psarades"
+}
+],
+"checked": "24 Nov 2026"
 },
 {
 "name": "Plyto",
@@ -3276,9 +3307,19 @@
 {
 "name": "Dafnios Vidiano",
 "type": "White",
-"price": "",
+"price": 10.2,
 "cur": "EUR",
-"notes": "Apricot, herbs and a round texture."
+"notes": "Apricot, herbs and a round texture.",
+"prices": [
+{
+"price": 10.2,
+"cur": "EUR",
+"shop": "House of Wine",
+"url": "https://www.houseofwine.gr/how/intl/douloufakis-dafnios-leukos.html",
+"note": "2025 vintage"
+}
+],
+"checked": "24 Nov 2026"
 },
 {
 "name": "Dafnios Red",
@@ -3286,6 +3327,23 @@
 "price": "",
 "cur": "EUR",
 "notes": "Liatiko: light, spicy Cretan red."
+},
+{
+"type": "White",
+"notes": "Barrel-aged Vidiano: stone fruit, white flowers, vanilla and nuts; the wine that put Vidiano on the map.",
+"name": "Aspros Lagos Vidiano",
+"cur": "EUR",
+"prices": [
+{
+"price": 21.7,
+"cur": "EUR",
+"shop": "House of Wine",
+"url": "https://www.houseofwine.gr/en/product/douloufakis-aspros-lagos-vidiano",
+"note": "2025 vintage"
+}
+],
+"price": 21.7,
+"checked": "24 Nov 2026"
 }
 ],
 "events": [],
@@ -3300,21 +3358,48 @@
 "lng": 25.07,
 "founded": "",
 "style": "white",
-"story": "A family winery in Venerato, below Mount Ida. It focuses on native Cretan grapes, especially Vidiano and Thrapsathiri.",
+"story": "Founded by oenologists Vassilis Laderos and Kalliopi Volitaki in Venerato, below Mount Ida, inside the Dafnes appellation. The family winery makes about 130,000 bottles a year from native Cretan grapes, especially Vidiano and Thrapsathiri.",
 "wines": [
 {
 "name": "Vidiano",
 "type": "White",
-"price": "",
+"price": 11.72,
 "cur": "EUR",
-"notes": "Stone fruit and herbs, full and fresh."
+"notes": "Stone fruit and herbs, full and fresh.",
+"prices": [
+{
+"price": 11.72,
+"cur": "EUR",
+"shop": "Greece & Grapes",
+"url": "https://www.greeceandgrapes.com/en/white-ocean-vidiano-2025-idaia-winery",
+"note": "Ocean Vidiano, 2025 vintage"
+}
+],
+"checked": "24 Nov 2026"
 },
 {
 "name": "Thrapsathiri",
 "type": "White",
-"price": "",
+"price": 12.3,
 "cur": "EUR",
-"notes": "Lemony, light and refreshing."
+"notes": "Lemony, light and refreshing.",
+"prices": [
+{
+"price": 12.3,
+"cur": "EUR",
+"shop": "Greece & Grapes",
+"url": "https://www.greeceandgrapes.com/en/white-idaia-ocean-thrapsathiri-2024",
+"note": "Ocean Thrapsathiri, 2024 vintage"
+},
+{
+"price": 13.6,
+"cur": "EUR",
+"shop": "House of Wine",
+"url": "https://www.houseofwine.gr/how/intl/ocean-thrapsathiri.html",
+"note": "Ocean Thrapsathiri, 2025 vintage"
+}
+],
+"checked": "24 Nov 2026"
 }
 ],
 "events": [],
@@ -3327,9 +3412,9 @@
 "country": "Greece",
 "lat": 35.22,
 "lng": 25.21,
-"founded": "",
+"founded": "1988",
 "style": "white",
-"story": "A family estate south-east of Heraklion, farmed organically. It makes wines from local grapes such as Vidiano and Kotsifali.",
+"story": "Founded in 1988 by Giorgos Paterianakis at Melesses, in the Peza zone south-east of Heraklion, and one of Crete's organic pioneers. Today sisters Emmanouela and Niki, the third generation, run the certified-organic estate, making wines from local grapes such as Vidiano and Kotsifali.",
 "wines": [
 {
 "name": "Vidiano",
@@ -3356,9 +3441,9 @@
 "country": "Greece",
 "lat": 35.07,
 "lng": 26.13,
-"founded": "",
+"founded": "1994",
 "style": "red",
-"story": "Yiannis Economou makes wine in the high village of Ziros in eastern Crete. Known for long-aged, traditional Sitia reds from Liatiko.",
+"story": "Yiannis Economou returned to Crete in 1994 after working in Germany, Bordeaux (Château Margaux) and Piedmont. On the high Ziros plateau in eastern Crete he farms mostly own-rooted native vines and releases his long-aged, traditional Sitia wines only when he thinks they are ready.",
 "wines": [
 {
 "name": "Sitia",

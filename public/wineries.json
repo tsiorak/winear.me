@@ -1202,21 +1202,76 @@
 "lng": 22.97,
 "founded": "",
 "style": "white",
-"story": "Founded by the Tsimbidis family near the medieval castle town of Monemvasia. It revived the historic local grapes behind the famous Malvasia wines of the Middle Ages.",
+"story": "Founded by the Tsimbidis family near the medieval castle town of Monemvasia. It revived the historic local grapes behind the famous Malvasia wines of the Middle Ages. The first modern Monemvasia-Malvasia, from the 2010 harvest, was bottled after 17 years of effort.",
 "wines": [
 {
 "name": "Monemvasia-Malvasia",
 "type": "Sweet",
-"price": "",
+"price": 37.7,
 "cur": "EUR",
-"notes": "Revival of the historic sweet wine: dried fruit, honey and spice."
+"notes": "Revival of the historic sweet wine: dried fruit, honey and spice.",
+"prices": [
+{
+"price": 37.7,
+"cur": "EUR",
+"shop": "Monemvasia Winery e-shop",
+"url": "https://www.monemvasiawinery.gr/en/shop/",
+"note": "375 ml"
+},
+{
+"price": 40.0,
+"cur": "EUR",
+"shop": "Monemvasia Deli",
+"url": "https://monemvasiadeli.gr/en/products/monemvasia-winery-tsimbidi/",
+"note": "375 ml"
+},
+{
+"price": 41.45,
+"cur": "EUR",
+"shop": "Best Wines",
+"url": "https://bestwines.gr/shop/%CE%BA%CF%81%CE%B1%CF%83%CE%B9%CE%AC/%CE%B5%CF%80%CE%B9%CE%B4%CF%8C%CF%81%CF%80%CE%B9%CE%B1-%CE%B3%CE%BB%CF%85%CE%BA%CE%AC-%CE%BA%CF%81%CE%B1%CF%83%CE%B9%CE%AC/monemvasia-winery-tsimpidis-monemvasia-malvasia-375ml/",
+"note": "2012, 375 ml"
+},
+{
+"price": 42.9,
+"cur": "EUR",
+"shop": "Cava Moutzouri",
+"url": "https://cavamoutzouri.gr/product/tsibidi-monemvasia-malvasia/",
+"note": "2012, 375 ml"
+},
+{
+"price": 48.4,
+"cur": "EUR",
+"shop": "Kava Oinotypo",
+"url": "https://oinotypo.gr/%CE%BC%CE%AC%CF%81%CE%BA%CE%B1/%CE%BF%CE%B9%CE%BD%CE%BF%CF%80%CE%BF%CE%B9%CE%B7%CF%84%CE%B9%CE%BA%CE%AE-%CE%BC%CE%BF%CE%BD%CE%B5%CE%BC%CE%B2%CE%B1%CF%83%CE%AF%CE%B1%CF%82-%CF%84%CF%83%CE%B9%CE%BC%CF%80%CE%AF%CE%B4%CE%B7%CF%82/",
+"note": "2012, 375 ml"
+}
+],
+"checked": "24 Nov 2026"
 },
 {
 "name": "Kydonitsa",
 "type": "White",
-"price": "",
+"price": 12.0,
 "cur": "EUR",
-"notes": "Quince-scented local white grape."
+"notes": "Quince-scented local white grape.",
+"prices": [
+{
+"price": 12.0,
+"cur": "EUR",
+"shop": "Monemvasia Winery e-shop",
+"url": "https://www.monemvasiawinery.gr/en/shop/",
+"note": ""
+},
+{
+"price": 13.0,
+"cur": "EUR",
+"shop": "Monemvasia Deli",
+"url": "https://monemvasiadeli.gr/en/products/monemvasia-winery-tsimbidi/",
+"note": ""
+}
+],
+"checked": "24 Nov 2026"
 },
 {
 "name": "Mavroudi",
@@ -1224,6 +1279,30 @@
 "price": "",
 "cur": "EUR",
 "notes": "Rare Laconian red variety."
+},
+{
+"name": "Monemvasia White",
+"type": "White",
+"notes": "Dry white from the local Monemvasia grape: pear, apricot and flowers.",
+"cur": "EUR",
+"prices": [
+{
+"price": 12.0,
+"cur": "EUR",
+"shop": "Monemvasia Winery e-shop",
+"url": "https://www.monemvasiawinery.gr/en/shop/",
+"note": ""
+},
+{
+"price": 13.7,
+"cur": "EUR",
+"shop": "Kava Gkafas (winepoems.gr)",
+"url": "https://winepoems.gr/product/%CF%84%CF%83%CE%B9%CE%BC%CF%80%CE%B9%CE%B4%CE%B7%CF%82-%CE%BC%CE%BF%CE%BD%CE%B5%CE%BC%CE%B2%CE%B1%CF%83%CE%B9%CE%B1-0-75lt/",
+"note": ""
+}
+],
+"price": 12.0,
+"checked": "24 Nov 2026"
 }
 ],
 "events": [],
@@ -1243,23 +1322,60 @@
 {
 "name": "Roditis",
 "type": "White",
-"price": "",
+"price": 11.9,
 "cur": "EUR",
-"notes": "Crisp, lemony mountain white."
+"notes": "Crisp, lemony mountain white.",
+"prices": [
+{
+"price": 11.9,
+"cur": "EUR",
+"shop": "Cava Maniatis",
+"url": "https://cavamaniatis.gr/tetramythos-roditis-750ml/",
+"note": "older listing"
+},
+{
+"price": 13.1,
+"cur": "EUR",
+"shop": "House of Wine",
+"url": "https://www.houseofwine.gr/en/product/tetramythos-leyko",
+"note": "2024"
+}
+],
+"checked": "24 Nov 2026"
 },
 {
 "name": "Malagousia",
 "type": "White",
-"price": "",
+"price": 11.4,
 "cur": "EUR",
-"notes": "Aromatic: peach and jasmine."
+"notes": "Aromatic: peach and jasmine.",
+"prices": [
+{
+"price": 11.4,
+"cur": "EUR",
+"shop": "Kava Oinotypo",
+"url": "https://oinotypo.gr/brand/%CE%BF%CE%B9%CE%BD%CE%BF%CF%80%CE%BF%CE%B9%CE%B5%CE%AF%CE%B1-%CF%84%CE%B5%CF%84%CF%81%CE%AC%CE%BC%CF%85%CE%B8%CE%BF%CF%82/",
+"note": ""
+}
+],
+"checked": "24 Nov 2026"
 },
 {
 "name": "Black of Kalavryta",
 "type": "Red",
-"price": "",
+"price": 11.0,
 "cur": "EUR",
-"notes": "Light, spicy red from a rare local grape."
+"notes": "Light, spicy red from a rare local grape.",
+"prices": [
+{
+"price": 11.0,
+"cur": "EUR",
+"shop": "Kava Oinotypo",
+"url": "https://oinotypo.gr/brand/%CE%BF%CE%B9%CE%BD%CE%BF%CF%80%CE%BF%CE%B9%CE%B5%CE%AF%CE%B1-%CF%84%CE%B5%CF%84%CF%81%CE%AC%CE%BC%CF%85%CE%B8%CE%BF%CF%82/",
+"note": ""
+}
+],
+"checked": "24 Nov 2026"
 }
 ],
 "events": [],
@@ -1272,16 +1388,33 @@
 "country": "Greece",
 "lat": 38.245,
 "lng": 21.735,
-"founded": "",
+"founded": "1974",
 "style": "white",
-"story": "A family winery founded by Athanasios Parparoussis in Patras. It is respected for bringing out the best of local grapes such as Sideritis and Mavrodaphne.",
+"story": "Founded in 1974 at Bozaitika, Patras, to make quality bottled wines. The family is respected for bringing out the best of local grapes such as Sideritis, Mavrodaphne and Muscat of Rio.",
 "wines": [
 {
 "name": "Sideritis Dons de Dionysos",
 "type": "White",
-"price": "",
+"price": 11.2,
 "cur": "EUR",
-"notes": "Delicate, fresh white from a rare pink-skinned grape."
+"notes": "Delicate, fresh white from a rare pink-skinned grape.",
+"prices": [
+{
+"price": 11.2,
+"cur": "EUR",
+"shop": "Cava Maniatis",
+"url": "https://cavamaniatis.gr/parparoysis-ta-dora-toy-dionysoy-sideritis-750ml/?lang=en",
+"note": ""
+},
+{
+"price": 11.7,
+"cur": "EUR",
+"shop": "Greece & Grapes",
+"url": "https://www.greeceandgrapes.com/white-ta-dora-tou-dionysou-2025-winery-parparoussis",
+"note": "2025"
+}
+],
+"checked": "24 Nov 2026"
 },
 {
 "name": "Taos Mavrodaphne",
@@ -1315,9 +1448,54 @@
 {
 "name": "Asprolithi",
 "type": "White",
-"price": "",
+"price": 7.2,
 "cur": "EUR",
-"notes": "Roditis from 'white stone' soils: crisp and mineral."
+"notes": "Roditis from stony mountain vineyards, first released in 1990: crisp, citrusy and mineral.",
+"prices": [
+{
+"price": 7.2,
+"cur": "EUR",
+"shop": "Cava Rokos",
+"url": "https://www.cavarokos.gr/rouvalis-asprolithi-750ml-leuko",
+"note": "not available"
+},
+{
+"price": 8.4,
+"cur": "EUR",
+"shop": "Cava Maniatis",
+"url": "https://cavamaniatis.gr/royvalis-asprolithi-750ml/",
+"note": ""
+},
+{
+"price": 8.6,
+"cur": "EUR",
+"shop": "Cava Kazakos",
+"url": "https://cava-kazakos.gr/product/10680/oinopoieio-roybalhs-asprolioi",
+"note": ""
+},
+{
+"price": 9.0,
+"cur": "EUR",
+"shop": "Cava Romanos",
+"url": "https://www.cavaromanos.gr/index.php?route=product/product&product_id=788",
+"note": ""
+},
+{
+"price": 9.5,
+"cur": "EUR",
+"shop": "House of Wine",
+"url": "https://www.houseofwine.gr/en/product/asprolithi",
+"note": "2025"
+},
+{
+"price": 10.2,
+"cur": "EUR",
+"shop": "Cava Arion",
+"url": "https://www.cavaarion.gr/krasi-2/leyka-krasia-68/asprolithi-13-401-001",
+"note": "2024"
+}
+],
+"checked": "24 Nov 2026"
 },
 {
 "name": "Lagorthi",
@@ -1344,9 +1522,54 @@
 {
 "name": "Domaine Mercouri Red",
 "type": "Red",
-"price": "",
+"price": 14.5,
 "cur": "EUR",
-"notes": "Refosco with Mavrodaphne: dark fruit and herbs."
+"notes": "Refosco with Mavrodaphne: dark fruit and herbs.",
+"prices": [
+{
+"price": 14.5,
+"cur": "EUR",
+"shop": "I Frati",
+"url": "https://www.frati.gr/shop/krasia-amp-sampanies/ktima-merkoyri-erythro-2021-750ml/",
+"note": "2021"
+},
+{
+"price": 14.9,
+"cur": "EUR",
+"shop": "e-winest",
+"url": "https://e-winest.gr/product/ktima-mercouri-2021/",
+"note": "2021"
+},
+{
+"price": 14.9,
+"cur": "EUR",
+"shop": "Wine Outlet",
+"url": "https://wineoutlet.gr/shop/ktima-merkouri-erythros-750ml/",
+"note": "sold out"
+},
+{
+"price": 16.4,
+"cur": "EUR",
+"shop": "e-winest",
+"url": "https://e-winest.gr/product/ktima-mercouri-2022/",
+"note": "2022"
+},
+{
+"price": 16.8,
+"cur": "EUR",
+"shop": "Top Greek Wines",
+"url": "https://www.topgreekwines.gr/%CE%BA%CF%84%CE%AE%CE%BC%CE%B1-%CE%BC%CE%B5%CF%81%CE%BA%CE%BF%CF%8D%CF%81%CE%B7-%CE%B5%CF%81%CF%85%CE%B8%CF%81%CF%8C-525.html",
+"note": ""
+},
+{
+"price": 19.0,
+"cur": "EUR",
+"shop": "Canava",
+"url": "https://canava.gr/product/ktima-merkouri/",
+"note": "2022"
+}
+],
+"checked": "24 Nov 2026"
 },
 {
 "name": "Foloi",
@@ -1354,6 +1577,30 @@
 "price": "",
 "cur": "EUR",
 "notes": "Roditis with Viognier, fresh and aromatic."
+},
+{
+"name": "Mercouri Cava",
+"type": "Red",
+"notes": "80% Refosco, 20% Mavrodaphne from the estate's best plots; aged and complex.",
+"cur": "EUR",
+"prices": [
+{
+"price": 19.22,
+"cur": "EUR",
+"shop": "Vinoteca",
+"url": "https://www.vinoteca.gr/red-wines/ktima-merkouri-cava-refosco-mayrodafni-ktima-merkouri.html",
+"note": "sale price"
+},
+{
+"price": 27.3,
+"cur": "EUR",
+"shop": "e-winest",
+"url": "https://e-winest.gr/product/cava-mercouri-2017/",
+"note": "2017"
+}
+],
+"price": 19.22,
+"checked": "24 Nov 2026"
 }
 ],
 "events": [],
@@ -1368,14 +1615,45 @@
 "lng": 21.79,
 "founded": "1861",
 "style": "sweet",
-"story": "Founded in 1861 by the Bavarian Gustav Clauss on a hill above Patras. Its stone cellars hold old barrels of Mavrodaphne, the region's famous sweet red, and the estate is a popular place to visit.",
+"story": "Founded in 1861 by the Bavarian Gustav Clauss on a hill above Patras. Its stone cellars hold old barrels of Mavrodaphne, the region's famous sweet red, and the estate is a popular place to visit. Clauss first made his sweet red in 1873 and named it Mavrodaphne, after Daphne, a dark-eyed young woman from Patras.",
 "wines": [
 {
 "name": "Mavrodaphne of Patras",
 "type": "Sweet",
-"price": "",
+"price": 9.6,
 "cur": "EUR",
-"notes": "Sweet fortified red: raisin, chocolate and coffee."
+"notes": "Sweet fortified red: raisin, chocolate and coffee.",
+"prices": [
+{
+"price": 9.6,
+"cur": "EUR",
+"shop": "Kava Kelari",
+"url": "https://kavakelari.gr/product/mafrodafni-patron-ktima-achaia-clauss/",
+"note": "sale price, sold out"
+},
+{
+"price": 9.8,
+"cur": "EUR",
+"shop": "Kava Karalis",
+"url": "https://www.kavakaralis.gr/kava-product/mayrodafni-patron-achaia-clauss-750ml/",
+"note": ""
+},
+{
+"price": 10.3,
+"cur": "EUR",
+"shop": "e-winest",
+"url": "https://e-winest.gr/product/mayrodafni-patron-601-achaia-clauss/",
+"note": ""
+},
+{
+"price": 11.0,
+"cur": "EUR",
+"shop": "Cava Lekkas",
+"url": "https://cavalekkas.gr/product/achaia-clauss-%CE%BC%CE%B1%CF%85%CF%81%CE%BF%CE%B4%CE%AC%CF%86%CE%BD%CE%B7-%CF%80%CE%B1%CF%84%CF%81%CF%8E%CE%BD-750ml/",
+"note": ""
+}
+],
+"checked": "24 Nov 2026"
 },
 {
 "name": "Demestica",
@@ -1383,6 +1661,40 @@
 "price": "",
 "cur": "EUR",
 "notes": "One of Greece's best-known everyday wines."
+},
+{
+"name": "Mavrodaphne \"601\" Reserve",
+"type": "Sweet",
+"notes": "Long-aged Mavrodaphne named after page 601 of Clauss's recipe book.",
+"cur": "EUR",
+"prices": [
+{
+"price": 55.0,
+"cur": "EUR",
+"shop": "Kava Karalis",
+"url": "https://www.kavakaralis.gr/kava-product/mayrodafni-patron-achaia-clauss-quot-601-quot-reserve-750ml/",
+"note": ""
+}
+],
+"price": 55.0,
+"checked": "24 Nov 2026"
+},
+{
+"name": "Mavrodaphne Grand Reserve",
+"type": "Sweet",
+"notes": "Very old Mavrodaphne from the historic cellars.",
+"cur": "EUR",
+"prices": [
+{
+"price": 97.1,
+"cur": "EUR",
+"shop": "House of Wine",
+"url": "https://www.houseofwine.gr/how/mayrodafni-grand-reserve-achaia-clauss.html",
+"note": "500 ml"
+}
+],
+"price": 97.1,
+"checked": "24 Nov 2026"
 }
 ],
 "events": [],

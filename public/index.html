@@ -252,7 +252,7 @@ map.on("zoomend",drawMarkers);
 const find=id=>all().find(w=>w.id===id);
 
 /* ---------- legend ---------- */
-$("#legend").innerHTML=Object.values(STYLES).map(([n,c])=>`<span><i style="background:${c}"></i>${n}</span>`).join("")+`<p>Bottle colour = the wine each estate is best known for. Sample wineries are fictional.</p>`;
+$("#legend").innerHTML=Object.values(STYLES).map(([n,c])=>`<span><i style="background:${c}"></i>${n}</span>`).join("")+`<p>Bottle colour = the wine each estate is best known for. Wineries outside Greece are fictional samples.</p>`;
 
 /* ---------- helpers ---------- */
 function toast(m){const t=$("#toast");t.textContent=m;t.classList.add("show");clearTimeout(toast.h);toast.h=setTimeout(()=>t.classList.remove("show"),2600)}
@@ -303,7 +303,7 @@ function renderWinery(){
   const meta=`<div class="meta">${w.founded?`<span>Since ${esc(w.founded)}</span>`:""}<span>${esc(st[0])} specialist</span>${w.hours?`<span>${esc(w.hours)}</span>`:""}</div>`;
   const tabs=[["story","Story"],["wines",`Wines (${(w.wines||[]).length})`],["events",`Events (${(w.events||[]).length})`]];
   let body="";
-  if(S.tab==="story")body=`${String(w.story||"").split(/\n+/).map(p=>`<p>${esc(p)}</p>`).join("")||'<p class="empty">No story yet.</p>'}${w.user?"":'<p class="note">Sample winery for the prototype.</p>'}`;
+  if(S.tab==="story")body=`${String(w.story||"").split(/\n+/).map(p=>`<p>${esc(p)}</p>`).join("")||'<p class="empty">No story yet.</p>'}${w.user?"":w.real?'<p class="note">Listing prepared from public information; the map pin shows the approximate area. Is this your winery? Soon you will be able to claim this page and add your own story, wines, prices and events.</p>':'<p class="note">Sample winery for the prototype.</p>'}`;
   if(S.tab==="wines")body=(w.wines||[]).length?(w.wines).map(x=>`<div class="wine"><i style="background:${TYPECOL[x.type]||"#999"}"></i><div><b>${esc(x.name)}</b><span class="t">${esc(x.type)}</span></div><div class="pr">${esc(money(x.price,x.cur))}</div><div class="n">${esc(x.notes)}</div></div>`).join(""):'<p class="empty">No wines listed yet.</p>';
   if(S.tab==="events"){const evs=[...(w.events||[])].filter(e=>e&&e.start).sort((a,b)=>new Date(a.start)-new Date(b.start));const up=evs.filter(e=>new Date(e.end||e.start)>=NOW);body=up.length?up.map(e=>evCard(w,e,false)).join(""):'<p class="empty">No upcoming events.</p>'}
   show(head(esc(w.name),`${esc(w.region)} · ${esc(w.country)}`,meta)+`<div class="tabs" role="tablist">${tabs.map(([k,l])=>`<button role="tab" data-tab="${k}" aria-selected="${S.tab===k}">${l}</button>`).join("")}</div><div class="pb">${body}</div>`,"winery");

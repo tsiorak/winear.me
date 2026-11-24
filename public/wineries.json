@@ -1,30 +1,2858 @@
 [
-{"id":"s-kaldera","name":"Kaldera Estate","region":"Santorini","country":"Greece","lat":36.392,"lng":25.459,"founded":1921,"style":"white","hours":"Daily 10:00–19:00","story":"Founded by a fisherman's family who planted Assyrtiko in the island's volcanic pumice. Vines are still trained in low basket-shaped 'kouloura' to shelter grapes from the meltemi winds.","wines":[{"name":"Kouloura Assyrtiko","type":"White","price":32,"cur":"EUR","notes":"Bone-dry and saline, with lemon zest and flint. Built to age ten years."},{"name":"Nykteri","type":"White","price":41,"cur":"EUR","notes":"Grapes picked at night and aged in old oak: richer, with honeyed citrus."},{"name":"Vinsanto 12 Years","type":"Sweet","price":68,"cur":"EUR","notes":"Sun-dried grapes give fig, caramel and coffee with bright acidity."}],"events":[{"id":"e1","title":"Sunset Assyrtiko tasting","start":"2026-11-24T16:00","end":"2026-11-24T19:00","price":35,"desc":"Six wines on the caldera terrace as the sun goes down."},{"id":"e2","title":"Vinsanto & dessert pairing","start":"2026-12-19T17:00","end":"2026-12-19T19:30","price":45,"desc":"Three vintages of Vinsanto with local sweets."}]},
-{"id":"s-pyrgos","name":"Pyrgos Hill Winery","region":"Santorini","country":"Greece","lat":36.383,"lng":25.449,"founded":1987,"style":"white","hours":"Tue–Sun 11:00–18:00","story":"A small cliffside cellar dug into a former tomato-paste factory. The second generation focuses on single-vineyard Assyrtiko from 100-year-old roots.","wines":[{"name":"Pyrgos Old Vines","type":"White","price":38,"cur":"EUR","notes":"Concentrated stone fruit and a long mineral finish."},{"name":"Mavrotragano","type":"Red","price":44,"cur":"EUR","notes":"A rare island red: dark cherry, smoke and firm tannins."},{"name":"Aidani","type":"White","price":24,"cur":"EUR","notes":"Floral and light, jasmine and white peach."}],"events":[{"id":"e1","title":"Open cellar weekend","start":"2026-12-05T11:00","end":"2026-12-06T18:00","price":0,"desc":"Free cellar tours every hour, barrel tasting included."}]},
-{"id":"s-nemea","name":"Ktima Agiorgitiko","region":"Nemea","country":"Greece","lat":37.818,"lng":22.661,"founded":1974,"style":"red","hours":"Mon–Sat 09:00–17:00","story":"Three brothers rebuilt their grandfather's stone winery among the ruins of ancient Nemea. Known for Agiorgitiko, 'the blood of Hercules'.","wines":[{"name":"Nemea Reserve","type":"Red","price":22,"cur":"EUR","notes":"Plum, sweet spice and velvety tannins after 18 months in oak."},{"name":"High Koutsi","type":"Red","price":34,"cur":"EUR","notes":"From 650 m vineyards: fresher red fruit and violet."},{"name":"Moschofilero Rosé","type":"Rosé","price":14,"cur":"EUR","notes":"Pale pink, rose petal and grapefruit."}],"events":[{"id":"e1","title":"Nemea Wine Festival warm-up","start":"2027-01-17T12:00","end":"2027-01-17T17:00","price":20,"desc":"Barrel samples, lamb on the spit and live music."}]},
-{"id":"s-naoussa","name":"Vermion Cellars","region":"Naoussa","country":"Greece","lat":40.629,"lng":22.068,"founded":1898,"style":"red","hours":"Daily 10:00–17:00","story":"One of the oldest family houses in Macedonia, surviving phylloxera and two wars. Xinomavro here is often compared to Nebbiolo.","wines":[{"name":"Xinomavro Grande Réserve","type":"Red","price":36,"cur":"EUR","notes":"Tomato leaf, sour cherry and olive; needs time."},{"name":"Rosé de Noir","type":"Rosé","price":15,"cur":"EUR","notes":"Crisp strawberry with a savoury edge."},{"name":"Vermion Sparkling","type":"Sparkling","price":26,"cur":"EUR","notes":"Traditional method Xinomavro blanc de noirs."}],"events":[{"id":"e1","title":"Carnival 'Genitsaroi' tasting","start":"2027-02-14T13:00","end":"2027-02-14T18:00","price":18,"desc":"Celebrate Naoussa's carnival with new vintage releases."}]},
-{"id":"s-crete","name":"Minoan Terraces","region":"Heraklion, Crete","country":"Greece","lat":35.233,"lng":25.159,"founded":2003,"style":"white","hours":"Mon–Sat 10:00–18:00","story":"A young estate reviving forgotten Cretan grapes like Vidiano and Liatiko on terraces first planted in Minoan times.","wines":[{"name":"Vidiano","type":"White","price":18,"cur":"EUR","notes":"Apricot, chamomile and a creamy texture."},{"name":"Liatiko","type":"Red","price":21,"cur":"EUR","notes":"Light and aromatic, like a Mediterranean Pinot."},{"name":"Malvasia di Candia","type":"Sweet","price":29,"cur":"EUR","notes":"Revived medieval sweet wine, orange peel and honey."}],"events":[{"id":"e1","title":"Cooking class & wine lunch","start":"2026-12-12T11:00","end":"2026-12-12T15:00","price":65,"desc":"Cook Cretan dishes with our chef, then eat them with our wines."}]},
-{"id":"s-margaux","name":"Château Lune Douce","region":"Bordeaux – Margaux","country":"France","lat":45.04,"lng":-0.674,"founded":1855,"style":"red","hours":"By appointment","story":"A classic Left Bank château whose gravel soils give perfumed Cabernet Sauvignon. The cellar still uses its original oak vats.","wines":[{"name":"Grand Vin","type":"Red","price":120,"cur":"EUR","notes":"Cassis, cedar and violet with fine-grained tannins."},{"name":"Second Lune","type":"Red","price":45,"cur":"EUR","notes":"Younger vines, more open fruit, drink in 5 years."},{"name":"Bordeaux Blanc","type":"White","price":30,"cur":"EUR","notes":"Sauvignon–Sémillon, citrus and beeswax."}],"events":[{"id":"e1","title":"En primeur preview","start":"2027-04-03T10:00","end":"2027-04-03T16:00","price":50,"desc":"Taste the 2026 vintage from barrel."}]},
-{"id":"s-stemilion","name":"Clos des Pierres","region":"Bordeaux – Saint-Émilion","country":"France","lat":44.894,"lng":-0.155,"founded":1932,"style":"red","hours":"Daily 10:00–18:00","story":"Limestone caves beneath the vineyard keep the wine cool all year. Merlot-led wines with a touch of Cabernet Franc.","wines":[{"name":"Clos des Pierres","type":"Red","price":58,"cur":"EUR","notes":"Plush plum, truffle and mocha."},{"name":"Les Caves","type":"Red","price":28,"cur":"EUR","notes":"Fresh, juicy, ready now."},{"name":"Crémant de Bordeaux","type":"Sparkling","price":19,"cur":"EUR","notes":"Fine bubbles, green apple and brioche."}],"events":[{"id":"e1","title":"Candlelit cave tour","start":"2026-12-20T18:00","end":"2026-12-20T20:00","price":30,"desc":"Walk the limestone caves by candlelight, three tastings."}]},
-{"id":"s-burgundy","name":"Domaine Côte d'Ambre","region":"Burgundy – Côte de Nuits","country":"France","lat":47.16,"lng":4.956,"founded":1790,"style":"red","hours":"Mon–Fri 09:00–12:00, 14:00–17:00","story":"Eight generations tending tiny parcels of Pinot Noir. Every climat is vinified separately to show its soil.","wines":[{"name":"Gevrey-Chambertin","type":"Red","price":75,"cur":"EUR","notes":"Dark cherry, earth and spice."},{"name":"Bourgogne Rouge","type":"Red","price":29,"cur":"EUR","notes":"Bright raspberry, easy and pure."},{"name":"Aligoté","type":"White","price":20,"cur":"EUR","notes":"Zesty, perfect for kir."}],"events":[{"id":"e1","title":"Saint-Vincent Tournante","start":"2027-01-23T10:00","end":"2027-01-24T18:00","price":25,"desc":"Join Burgundy's winter wine festival from our courtyard."}]},
-{"id":"s-champagne","name":"Maison Perlée","region":"Champagne – Épernay","country":"France","lat":49.041,"lng":3.958,"founded":1888,"style":"sparkling","hours":"Daily 10:00–17:30","story":"Four kilometres of chalk cellars beneath the Avenue de Champagne hold millions of bottles ageing on their lees.","wines":[{"name":"Brut Réserve","type":"Sparkling","price":42,"cur":"EUR","notes":"Toasted brioche, pear and fine mousse."},{"name":"Blanc de Blancs 2016","type":"Sparkling","price":89,"cur":"EUR","notes":"Pure Chardonnay, lemon curd and chalk."},{"name":"Rosé Saignée","type":"Sparkling","price":65,"cur":"EUR","notes":"Wild strawberry, deep colour, gastronomic."}],"events":[{"id":"e1","title":"New Year's Eve cellar party","start":"2026-12-31T21:00","end":"2027-01-01T01:00","price":150,"desc":"Midnight toast 30 metres underground."},{"id":"e2","title":"Disgorging workshop","start":"2026-11-28T14:00","end":"2026-11-28T16:00","price":60,"desc":"Open your own bottle 'à la volée' and take it home."}]},
-{"id":"s-rioja","name":"Bodegas Río Oja","region":"Rioja Alta","country":"Spain","lat":42.576,"lng":-2.85,"founded":1901,"style":"red","hours":"Tue–Sun 10:00–14:00","story":"Built next to the old railway station of Haro so barrels could ship to Bordeaux during phylloxera. Long ageing in American oak is the house style.","wines":[{"name":"Gran Reserva","type":"Red","price":48,"cur":"EUR","notes":"Dried cherry, leather, vanilla, silky."},{"name":"Crianza","type":"Red","price":16,"cur":"EUR","notes":"Fresh red fruit with a touch of oak."},{"name":"Viura Blanco","type":"White","price":13,"cur":"EUR","notes":"Crisp and herbal."}],"events":[{"id":"e1","title":"Tapas & Tempranillo night","start":"2027-02-27T19:00","end":"2027-02-27T22:00","price":40,"desc":"Pintxos from Haro's best bars with our reservas."}]},
-{"id":"s-douro","name":"Quinta do Socalco","region":"Douro Valley","country":"Portugal","lat":41.163,"lng":-7.536,"founded":1820,"style":"red","hours":"Daily 10:00–18:00","story":"Schist terraces drop steeply to the river. Grapes are still foot-trodden in granite lagares for the Port.","wines":[{"name":"20 Year Tawny","type":"Fortified","price":55,"cur":"EUR","notes":"Walnut, orange peel and caramel."},{"name":"Vintage Port 2017","type":"Fortified","price":95,"cur":"EUR","notes":"Blackberry and violets, decades ahead."},{"name":"Douro Tinto","type":"Red","price":19,"cur":"EUR","notes":"Touriga Nacional, bold and floral."}],"events":[{"id":"e1","title":"River boat & Port tasting","start":"2027-03-13T10:00","end":"2027-03-13T15:00","price":85,"desc":"Rabelo boat trip with lunch at the quinta."}]},
-{"id":"s-chianti","name":"Fattoria del Cipresso","region":"Chianti Classico, Tuscany","country":"Italy","lat":43.47,"lng":11.25,"founded":1910,"style":"red","hours":"Mon–Sat 10:00–18:00","story":"An old farmhouse among cypresses and olive groves. Sangiovese is aged in large Slavonian casks, never small new barrels.","wines":[{"name":"Chianti Classico Riserva","type":"Red","price":32,"cur":"EUR","notes":"Sour cherry, tea leaf and dried herbs."},{"name":"Gran Selezione","type":"Red","price":58,"cur":"EUR","notes":"Single vineyard, deep and structured."},{"name":"Vin Santo","type":"Sweet","price":40,"cur":"EUR","notes":"Hazelnut and dried apricot, for cantucci."}],"events":[{"id":"e1","title":"New olive oil & wine day","start":"2026-11-29T11:00","end":"2026-11-29T16:00","price":25,"desc":"Fresh 'olio nuovo' on bruschetta with this year's wine."}]},
-{"id":"s-barolo","name":"Cascina Nebbia","region":"Barolo, Piedmont","country":"Italy","lat":44.61,"lng":7.943,"founded":1949,"style":"red","hours":"By appointment","story":"Named after the autumn fog that gives Nebbiolo its name. A tiny estate making only three wines, all from the same hill.","wines":[{"name":"Barolo","type":"Red","price":62,"cur":"EUR","notes":"Tar and roses, firm tannins."},{"name":"Langhe Nebbiolo","type":"Red","price":26,"cur":"EUR","notes":"A gentler Barolo, ready younger."},{"name":"Dolcetto d'Alba","type":"Red","price":15,"cur":"EUR","notes":"Everyday red, plum and almond."}],"events":[{"id":"e1","title":"White truffle dinner","start":"2026-11-24T19:30","end":"2026-11-24T23:00","price":180,"desc":"Five courses with Alba truffle and our Barolo verticals."}]},
-{"id":"s-mosel","name":"Weingut Steilhang","region":"Mosel","country":"Germany","lat":49.917,"lng":7.065,"founded":1756,"style":"white","hours":"Wed–Sun 11:00–18:00","story":"Riesling vines on slate slopes so steep they are worked by hand with winches. Low alcohol, high tension.","wines":[{"name":"Riesling Kabinett","type":"White","price":18,"cur":"EUR","notes":"Off-dry, green apple and slate."},{"name":"Riesling GG","type":"White","price":42,"cur":"EUR","notes":"Dry, peach and smoke."},{"name":"Eiswein","type":"Sweet","price":95,"cur":"EUR","notes":"Grapes frozen on the vine: pure, electric sweetness."}],"events":[{"id":"e1","title":"Christmas market wine stand","start":"2026-12-11T15:00","end":"2026-12-13T21:00","price":0,"desc":"Glühwein made from our Riesling at the village market."}]},
-{"id":"s-tokaj","name":"Aszú Pince","region":"Tokaj","country":"Hungary","lat":48.122,"lng":21.41,"founded":1650,"style":"sweet","hours":"Daily 10:00–17:00","story":"Mould-covered tunnels carved into volcanic tuff. Tokaji Aszú, 'wine of kings, king of wines', is made from botrytised berries.","wines":[{"name":"Tokaji Aszú 6 Puttonyos","type":"Sweet","price":49,"cur":"EUR","notes":"Apricot, saffron and electric acidity."},{"name":"Furmint Dry","type":"White","price":17,"cur":"EUR","notes":"Quince, smoke, mineral."},{"name":"Szamorodni","type":"White","price":22,"cur":"EUR","notes":"Nutty, sherry-like, dry."}],"events":[{"id":"e1","title":"Cellar labyrinth tour","start":"2027-01-09T14:00","end":"2027-01-09T16:00","price":20,"desc":"Explore 17th-century tunnels with candle and glass."}]},
-{"id":"s-kakheti","name":"Qvevri House","region":"Kakheti","country":"Georgia","lat":41.92,"lng":45.47,"founded":1995,"style":"amber","hours":"Daily 10:00–20:00","story":"Wine is fermented in clay qvevri buried underground, an 8,000-year-old method listed by UNESCO.","wines":[{"name":"Rkatsiteli Amber","type":"Amber","price":20,"cur":"USD","notes":"Skin-contact white: dried apricot, tea, grip."},{"name":"Saperavi","type":"Red","price":18,"cur":"USD","notes":"Inky purple, blackberry and pepper."},{"name":"Mtsvane","type":"Amber","price":22,"cur":"USD","notes":"Floral, honey and walnut."}],"events":[{"id":"e1","title":"Supra feast","start":"2026-12-26T18:00","end":"2026-12-26T23:00","price":45,"desc":"Traditional Georgian table with toasts led by a tamada."}]},
-{"id":"s-napa","name":"Oak Knoll Ridge","region":"Napa Valley, California","country":"USA","lat":38.5,"lng":-122.39,"founded":1976,"style":"red","hours":"Daily 10:00–17:00","story":"Planted the year California beat France at the Judgment of Paris. Hillside Cabernet with views across the valley.","wines":[{"name":"Estate Cabernet Sauvignon","type":"Red","price":110,"cur":"USD","notes":"Blackcurrant, mocha, polished tannins."},{"name":"Chardonnay","type":"White","price":45,"cur":"USD","notes":"Ripe pear, butter and toasted oak."},{"name":"Sauvignon Blanc","type":"White","price":32,"cur":"USD","notes":"Grapefruit and fresh-cut grass."}],"events":[{"id":"e1","title":"Holiday open house","start":"2026-12-13T11:00","end":"2026-12-13T16:00","price":40,"desc":"Library wines, live jazz and wood-fired pizza."}]},
-{"id":"s-sonoma","name":"Fog Line Vineyards","region":"Sonoma Coast, California","country":"USA","lat":38.4,"lng":-122.9,"founded":1999,"style":"red","hours":"Thu–Mon 11:00–17:00","story":"Cool ocean fog rolls in each afternoon, giving slow-ripened Pinot Noir and Chardonnay.","wines":[{"name":"Pinot Noir","type":"Red","price":58,"cur":"USD","notes":"Raspberry, forest floor, silky."},{"name":"Blanc de Noirs","type":"Sparkling","price":48,"cur":"USD","notes":"Crisp red-apple bubbles."},{"name":"Coastal Chardonnay","type":"White","price":42,"cur":"USD","notes":"Lean and saline."}],"events":[{"id":"e1","title":"Crab & Pinot weekend","start":"2027-01-30T12:00","end":"2027-01-31T17:00","price":75,"desc":"Dungeness crab season meets our Pinot Noir."}]},
-{"id":"s-oregon","name":"Red Hills Cellars","region":"Willamette Valley, Oregon","country":"USA","lat":45.25,"lng":-123.06,"founded":1984,"style":"red","hours":"Daily 11:00–17:00","story":"Volcanic red Jory soil and a small, organic farm. Pinot Noir made with whole clusters and native yeast.","wines":[{"name":"Dundee Hills Pinot Noir","type":"Red","price":52,"cur":"USD","notes":"Cranberry, rose hip and spice."},{"name":"Pinot Gris","type":"White","price":24,"cur":"USD","notes":"Pear and melon, round."},{"name":"Rosé of Pinot","type":"Rosé","price":26,"cur":"USD","notes":"Watermelon and lime."}],"events":[{"id":"e1","title":"Thanksgiving weekend open house","start":"2026-11-27T11:00","end":"2026-11-29T17:00","price":30,"desc":"Annual valley-wide open house with barrel tastings."}]},
-{"id":"s-okanagan","name":"Lakeshore Ice Wines","region":"Okanagan Valley, BC","country":"Canada","lat":49.88,"lng":-119.48,"founded":1990,"style":"sweet","hours":"Daily 10:00–17:00","story":"Grapes are left on the vine until it hits −8 °C, then picked by headlamp at night.","wines":[{"name":"Riesling Icewine","type":"Sweet","price":65,"cur":"CAD","notes":"Lychee, honey, piercing acidity."},{"name":"Cabernet Franc Icewine","type":"Sweet","price":80,"cur":"CAD","notes":"Strawberry jam and rhubarb."},{"name":"Pinot Blanc","type":"White","price":22,"cur":"CAD","notes":"Fresh apple and lemon."}],"events":[{"id":"e1","title":"Icewine harvest night","start":"2026-12-17T22:00","end":"2026-12-18T03:00","price":0,"desc":"Volunteer pickers welcome (date depends on frost), hot soup at dawn."}]},
-{"id":"s-mendoza","name":"Bodega Altos Andes","region":"Mendoza","country":"Argentina","lat":-33.05,"lng":-68.87,"founded":1928,"style":"red","hours":"Mon–Sat 09:30–17:30","story":"Vineyards at 1,100 m under the snowy Andes, watered by snowmelt canals dug by Huarpe people centuries ago.","wines":[{"name":"Malbec Reserva","type":"Red","price":24,"cur":"USD","notes":"Plum, violet and cocoa."},{"name":"Gran Malbec","type":"Red","price":48,"cur":"USD","notes":"High altitude, dense and fresh."},{"name":"Torrontés","type":"White","price":14,"cur":"USD","notes":"Aromatic, rose and orange blossom."}],"events":[{"id":"e1","title":"Vendimia harvest festival","start":"2027-03-06T10:00","end":"2027-03-06T22:00","price":35,"desc":"Pick grapes in the morning, asado and dancing at night."}]},
-{"id":"s-maipo","name":"Viña Cordillera","region":"Maipo Valley","country":"Chile","lat":-33.65,"lng":-70.6,"founded":1885,"style":"red","hours":"Daily 10:00–18:00","story":"Old Bordeaux vines brought before phylloxera, never grafted. Carmenère was rediscovered here in 1994.","wines":[{"name":"Carmenère","type":"Red","price":18,"cur":"USD","notes":"Red pepper, blackberry, smooth."},{"name":"Cabernet Sauvignon Alto","type":"Red","price":40,"cur":"USD","notes":"Mint, cassis, firm."},{"name":"Sauvignon Blanc Costa","type":"White","price":13,"cur":"USD","notes":"Lime and sea breeze."}],"events":[{"id":"e1","title":"Summer bike & wine","start":"2027-01-10T09:00","end":"2027-01-10T14:00","price":55,"desc":"Cycle through the vineyards with tasting stops."}]},
-{"id":"s-barossa","name":"Gumtree Creek Estate","region":"Barossa Valley","country":"Australia","lat":-34.53,"lng":138.95,"founded":1847,"style":"red","hours":"Daily 10:00–17:00","story":"Silesian settlers planted Shiraz here in the 1840s. Some of those original vines still produce fruit.","wines":[{"name":"Ancestor Shiraz","type":"Red","price":90,"cur":"AUD","notes":"From 170-year-old vines: blackberry, licorice, dark chocolate."},{"name":"GSM Blend","type":"Red","price":32,"cur":"AUD","notes":"Grenache, Shiraz, Mourvèdre: juicy and spicy."},{"name":"Eden Valley Riesling","type":"White","price":28,"cur":"AUD","notes":"Lime and kerosene."}],"events":[{"id":"e1","title":"Christmas long-table lunch","start":"2026-12-20T12:00","end":"2026-12-20T16:00","price":120,"desc":"Summer Christmas under the gum trees."}]},
-{"id":"s-marlborough","name":"Wairau Stones","region":"Marlborough","country":"New Zealand","lat":-41.51,"lng":173.86,"founded":1985,"style":"white","hours":"Daily 10:30–16:30","story":"Stony river-bed soils and long sunny days made this valley the world capital of Sauvignon Blanc.","wines":[{"name":"Sauvignon Blanc","type":"White","price":24,"cur":"NZD","notes":"Passionfruit, gooseberry, zingy."},{"name":"Pinot Noir","type":"Red","price":39,"cur":"NZD","notes":"Cherry and spice."},{"name":"Méthode Traditionnelle","type":"Sparkling","price":42,"cur":"NZD","notes":"Citrus and toast."}],"events":[{"id":"e1","title":"Summer concert in the vines","start":"2027-02-06T16:00","end":"2027-02-06T22:00","price":60,"desc":"Bring a picnic blanket; wines by the glass."}]},
-{"id":"s-stellenbosch","name":"Klipkop Wine Farm","region":"Stellenbosch","country":"South Africa","lat":-33.93,"lng":18.86,"founded":1692,"style":"red","hours":"Daily 09:00–17:00","story":"A Cape Dutch homestead under granite mountains. Home of Pinotage, a South African cross of Pinot Noir and Cinsault.","wines":[{"name":"Pinotage","type":"Red","price":220,"cur":"ZAR","notes":"Mulberry, smoke and banana."},{"name":"Chenin Blanc Old Vine","type":"White","price":260,"cur":"ZAR","notes":"Quince, honey, textured."},{"name":"Cape Blend","type":"Red","price":380,"cur":"ZAR","notes":"Pinotage with Cabernet, structured."}],"events":[{"id":"e1","title":"Sunset picnic & live music","start":"2026-12-06T16:00","end":"2026-12-06T20:00","price":450,"desc":"Picnic baskets on the lawn and a local band."}]},
-{"id":"s-yamanashi","name":"Fuji Koshu Winery","region":"Yamanashi","country":"Japan","lat":35.66,"lng":138.66,"founded":1938,"style":"white","hours":"Daily 09:00–16:30","story":"Vines grow on high pergolas under Mount Fuji. Koshu is Japan's own grape, delicate and pink-skinned.","wines":[{"name":"Koshu Sur Lie","type":"White","price":2800,"cur":"JPY","notes":"Yuzu, white peach, gently savoury; made for sushi."},{"name":"Muscat Bailey A","type":"Red","price":2400,"cur":"JPY","notes":"Light, strawberry candy."},{"name":"Koshu Sparkling","type":"Sparkling","price":3600,"cur":"JPY","notes":"Fine bubbles and citrus."}],"events":[{"id":"e1","title":"Hanami in the vineyard","start":"2027-04-04T10:00","end":"2027-04-04T15:00","price":3000,"desc":"Cherry blossoms, bento and Koshu."}]},
-{"id":"s-lebanon","name":"Château Bekaa Cèdre","region":"Bekaa Valley","country":"Lebanon","lat":33.84,"lng":35.9,"founded":1857,"style":"red","hours":"Mon–Sat 09:00–16:00","story":"Jesuit monks first made wine here. Caves dug by the Romans keep barrels at a steady 12 °C.","wines":[{"name":"Grand Rouge","type":"Red","price":35,"cur":"USD","notes":"Cinsault–Cabernet blend, spice and dried fig."},{"name":"Obeideh Blanc","type":"White","price":20,"cur":"USD","notes":"Indigenous grape, almond and citrus."},{"name":"Rosé","type":"Rosé","price":16,"cur":"USD","notes":"Bright cherry and herbs."}],"events":[{"id":"e1","title":"Roman cave tasting","start":"2027-03-20T11:00","end":"2027-03-20T14:00","price":30,"desc":"Barrel tasting in the 2,000-year-old caves."}]},
-{"id":"s-cyprus","name":"Commandaria Ktima","region":"Troodos","country":"Cyprus","lat":34.82,"lng":32.93,"founded":1962,"style":"sweet","hours":"Daily 10:00–18:00","story":"Makes Commandaria, a sun-dried sweet wine the Knights Templar shipped across Europe.","wines":[{"name":"Commandaria","type":"Sweet","price":28,"cur":"EUR","notes":"Raisin, carob and spice."},{"name":"Xynisteri","type":"White","price":14,"cur":"EUR","notes":"Light, citrus and almond."},{"name":"Maratheftiko","type":"Red","price":22,"cur":"EUR","notes":"Wild berry and herbs."}],"events":[{"id":"e1","title":"Mountain village wine walk","start":"2026-11-24T10:00","end":"2026-11-24T17:00","price":15,"desc":"Guided walk between three village cellars."}]}
+{
+"id": "gr-sigalas",
+"name": "Domaine Sigalas",
+"region": "Oia, Santorini",
+"country": "Greece",
+"lat": 36.4655,
+"lng": 25.387,
+"founded": "1991",
+"style": "white",
+"story": "Founded in 1991 by Paris Sigalas in the flat vineyards of Oia, on the north of the island. The domaine is one of the names that made Santorini Assyrtiko famous abroad, working old vines trained in the island's basket-shaped 'kouloura' style.",
+"wines": [
+{
+"name": "Santorini Assyrtiko",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Mineral and salty, with citrus and a long, firm finish."
+},
+{
+"name": "Kavalieros",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Single-vineyard Assyrtiko from very old vines; deep and age-worthy."
+},
+{
+"name": "Mavrotragano",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "A rare red grape of the island: dark fruit and firm tannins."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "gr-santo",
+"name": "Santo Wines",
+"region": "Pyrgos, Santorini",
+"country": "Greece",
+"lat": 36.379,
+"lng": 25.447,
+"founded": "1947",
+"style": "white",
+"story": "The Union of Santorini Cooperatives, gathering the grapes of over a thousand island growers. Its winery and tasting terrace sit on the caldera edge near Pyrgos.",
+"wines": [
+{
+"name": "Santo Santorini",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Classic Assyrtiko: lemon, flint and sea salt."
+},
+{
+"name": "Santo Nykteri",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Traditionally harvested late and oak-aged; richer and rounder."
+},
+{
+"name": "Santo Vinsanto",
+"type": "Sweet",
+"price": "",
+"cur": "EUR",
+"notes": "Sun-dried grapes give raisin, caramel and bright acidity."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "gr-argyros",
+"name": "Estate Argyros",
+"region": "Episkopi Gonias, Santorini",
+"country": "Greece",
+"lat": 36.3718,
+"lng": 25.4665,
+"founded": "1903",
+"style": "white",
+"story": "A family estate tracing its winemaking to 1903, with some of the oldest vineyards on the island around Episkopi Gonias. Known for long-aged Vinsanto and serious Assyrtiko.",
+"wines": [
+{
+"name": "Estate Argyros Assyrtiko",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "From very old vines; concentrated, mineral, long-lived."
+},
+{
+"name": "Argyros Vinsanto",
+"type": "Sweet",
+"price": "",
+"cur": "EUR",
+"notes": "Aged for years in oak: dried fig, coffee and spice."
+},
+{
+"name": "Argyros Mavrotragano",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Dark, spicy island red."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "gr-hatzidakis",
+"name": "Hatzidakis Winery",
+"region": "Pyrgos, Santorini",
+"country": "Greece",
+"lat": 36.3843,
+"lng": 25.453,
+"founded": "1997",
+"style": "white",
+"story": "Started in 1997 by Haridimos Hatzidakis, a winery partly dug into the volcanic rock near Pyrgos. Farmed organically, it became a cult name for intense, natural-leaning Santorini wines.",
+"wines": [
+{
+"name": "Santorini Assyrtiko",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Powerful, saline and textured."
+},
+{
+"name": "Nykteri",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Fuller-bodied traditional style with ripe citrus and nuts."
+},
+{
+"name": "Aidani",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Floral and gentle, from another native island grape."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "gr-venetsanos",
+"name": "Venetsanos Winery",
+"region": "Megalochori, Santorini",
+"country": "Greece",
+"lat": 36.3827,
+"lng": 25.4316,
+"founded": "1947",
+"style": "white",
+"story": "Built in 1947 by the Venetsanos family above the port of Athinios, it was Santorini's first industrial winery. The multi-level building was designed to move wine by gravity, and its terrace looks straight over the caldera.",
+"wines": [
+{
+"name": "Santorini Assyrtiko",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Crisp and saline, typical of the volcanic soil."
+},
+{
+"name": "Nykteri",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Oak-aged traditional style, rounder and nutty."
+},
+{
+"name": "Vinsanto",
+"type": "Sweet",
+"price": "",
+"cur": "EUR",
+"notes": "Sweet wine from sun-dried grapes."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "gr-gaia-santorini",
+"name": "Gaia Wines Santorini",
+"region": "Exo Gonia, Santorini",
+"country": "Greece",
+"lat": 36.388,
+"lng": 25.4835,
+"founded": "1994",
+"style": "white",
+"story": "Gaia's island winery is housed in a stone tomato-processing factory from the early 1900s, right on the beach on the east coast. It focuses on Assyrtiko from old, own-rooted vines.",
+"wines": [
+{
+"name": "Thalassitis",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Their flagship Assyrtiko: lemon, flint and sea spray."
+},
+{
+"name": "Assyrtiko Wild Ferment",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Fermented with natural yeasts, partly in oak; layered and textured."
+},
+{
+"name": "Vinsanto",
+"type": "Sweet",
+"price": "",
+"cur": "EUR",
+"notes": "Traditional sweet wine of the island."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "gr-karamolegos",
+"name": "Artemis Karamolegos Winery",
+"region": "Exo Gonia, Santorini",
+"country": "Greece",
+"lat": 36.38,
+"lng": 25.468,
+"founded": "",
+"style": "white",
+"story": "A family winery between Kamari and Mesaria, run by Artemis Karamolegos, the third generation of a winemaking family. It has grown into one of the island's most respected producers, with a restaurant among the vines.",
+"wines": [
+{
+"name": "Santorini Assyrtiko",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Bright, mineral and saline."
+},
+{
+"name": "Pyritis",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Old-vine Assyrtiko with great concentration."
+},
+{
+"name": "Nykteri",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Traditional oak-aged style."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "gr-boutari-santorini",
+"name": "Boutari Santorini Winery",
+"region": "Megalochori, Santorini",
+"country": "Greece",
+"lat": 36.369,
+"lng": 25.43,
+"founded": "",
+"style": "white",
+"story": "The Santorini winery of the historic Boutari group, one of the first modern wineries on the island. It helped introduce Santorini Assyrtiko to wine lovers abroad.",
+"wines": [
+{
+"name": "Santorini",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Classic, crisp Assyrtiko."
+},
+{
+"name": "Kallisti",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Barrel-fermented Assyrtiko, rounder and richer."
+},
+{
+"name": "Vinsanto",
+"type": "Sweet",
+"price": "",
+"cur": "EUR",
+"notes": "Sweet wine from sun-dried grapes."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "gr-gaia-nemea",
+"name": "Gaia Estate",
+"region": "Koutsi, Nemea",
+"country": "Greece",
+"lat": 37.8505,
+"lng": 22.623,
+"founded": "1994",
+"style": "red",
+"story": "Founded in 1994 by oenologist Yiannis Paraskevopoulos and Leon Karatsalos, with vineyards high on the hills of Koutsi. Gaia helped show how elegant Agiorgitiko from Nemea can be.",
+"wines": [
+{
+"name": "Gaia Estate",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Their top Agiorgitiko: dark cherry, spice and fine tannins."
+},
+{
+"name": "Agiorgitiko by Gaia",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Juicy, fresh red fruit, easy to love."
+},
+{
+"name": "Notios Red",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Bright, everyday Agiorgitiko blend."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "gr-skouras",
+"name": "Domaine Skouras",
+"region": "Malandreni, Argos",
+"country": "Greece",
+"lat": 37.665,
+"lng": 22.776,
+"founded": "1986",
+"style": "red",
+"story": "Founded in 1986 by George Skouras, a Dijon-trained oenologist and one of the pioneers of modern Greek wine. Based near Argos, it works with Agiorgitiko and Moschofilero alongside international grapes.",
+"wines": [
+{
+"name": "Megas Oenos",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Agiorgitiko with Cabernet Sauvignon; structured and age-worthy."
+},
+{
+"name": "Grande Cuvée Nemea",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Rich, oak-aged Agiorgitiko."
+},
+{
+"name": "Moschofilero",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Floral and fresh, from the Arcadian highlands."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "gr-papaioannou",
+"name": "Papaioannou Estate",
+"region": "Ancient Nemea",
+"country": "Greece",
+"lat": 37.812,
+"lng": 22.7,
+"founded": "",
+"style": "red",
+"story": "A family estate in Ancient Nemea, among the first in the area to farm organically and bottle Nemea from single plots. Its old-vine Agiorgitiko is a reference for the region.",
+"wines": [
+{
+"name": "Palea Klimata Nemea",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "From old vines: deep, spicy and long."
+},
+{
+"name": "Nemea Agiorgitiko",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Classic plum and sweet spice."
+},
+{
+"name": "Moschofilero",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Light and aromatic."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "gr-palivou",
+"name": "Palivou Estate",
+"region": "Ancient Nemea",
+"country": "Greece",
+"lat": 37.809,
+"lng": 22.714,
+"founded": "",
+"style": "red",
+"story": "A family winery in Ancient Nemea with vineyards at different altitudes across the appellation. It focuses on Agiorgitiko in several styles, from fresh to oak-aged.",
+"wines": [
+{
+"name": "Nemea Agiorgitiko",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Ripe red fruit with gentle oak."
+},
+{
+"name": "Terra Leone",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Their top selection of Agiorgitiko."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "gr-semeli",
+"name": "Semeli Winery",
+"region": "Koutsi, Nemea",
+"country": "Greece",
+"lat": 37.846,
+"lng": 22.632,
+"founded": "",
+"style": "red",
+"story": "Semeli began in Attica and later built a modern winery in the hills of Nemea, with views over the vineyards. It makes Agiorgitiko from fresh to reserve styles.",
+"wines": [
+{
+"name": "Semeli Nemea Reserve",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Oak-aged Agiorgitiko: plum, vanilla and spice."
+},
+{
+"name": "Mountain Sun",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Fresh, fruity Agiorgitiko."
+},
+{
+"name": "Mountain Sun White",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Light, aromatic white blend."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "gr-tselepos",
+"name": "Domaine Tselepos",
+"region": "Rizes, Tegea",
+"country": "Greece",
+"lat": 37.431,
+"lng": 22.47,
+"founded": "1989",
+"style": "white",
+"story": "Founded in 1989 by Yiannis Tselepos on the high plateau of Arcadia. It is one of the leading names for Mantinia Moschofilero and also makes sparkling wine and a celebrated Merlot.",
+"wines": [
+{
+"name": "Mantinia Moschofilero",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Rose petal, citrus and lively acidity."
+},
+{
+"name": "Kokkinomylos Merlot",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Single-vineyard Merlot, rich and polished."
+},
+{
+"name": "Amalia Brut",
+"type": "Sparkling",
+"price": "",
+"cur": "EUR",
+"notes": "Traditional-method sparkling wine from Moschofilero."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "gr-troupis",
+"name": "Troupis Winery",
+"region": "Fteri, Mantinia",
+"country": "Greece",
+"lat": 37.56,
+"lng": 22.37,
+"founded": "",
+"style": "white",
+"story": "A family winery in the Fteri area of the Mantinia plateau, about 700 m high. Its 'Fteri' labels, launched in 2010, put Troupis on the map with pure, aromatic Moschofilero.",
+"wines": [
+{
+"name": "Fteri Moschofilero",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Intensely floral: jasmine, rose and citrus."
+},
+{
+"name": "Fteri Agiorgitiko",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Light, juicy red; lovely slightly chilled."
+},
+{
+"name": "Fteri Rosé",
+"type": "Rosé",
+"price": "",
+"cur": "EUR",
+"notes": "Fresh and fragrant."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "gr-spiropoulos",
+"name": "Domaine Spiropoulos",
+"region": "Artemisio, Mantinia",
+"country": "Greece",
+"lat": 37.57,
+"lng": 22.4,
+"founded": "",
+"style": "white",
+"story": "A family estate on the Mantinia plateau and an early adopter of organic farming in Greece. Best known for Moschofilero in still and sparkling styles.",
+"wines": [
+{
+"name": "Mantinia Moschofilero",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Aromatic, light and crisp."
+},
+{
+"name": "Ode Panos",
+"type": "Sparkling",
+"price": "",
+"cur": "EUR",
+"notes": "Sparkling Moschofilero, fresh and floral."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "gr-monemvasia",
+"name": "Monemvasia Winery",
+"region": "Velies, Laconia",
+"country": "Greece",
+"lat": 36.73,
+"lng": 22.97,
+"founded": "",
+"style": "white",
+"story": "Founded by the Tsimbidis family near the medieval castle town of Monemvasia. It revived the historic local grapes behind the famous Malvasia wines of the Middle Ages.",
+"wines": [
+{
+"name": "Monemvasia-Malvasia",
+"type": "Sweet",
+"price": "",
+"cur": "EUR",
+"notes": "Revival of the historic sweet wine: dried fruit, honey and spice."
+},
+{
+"name": "Kydonitsa",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Quince-scented local white grape."
+},
+{
+"name": "Mavroudi",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Rare Laconian red variety."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "gr-tetramythos",
+"name": "Tetramythos Winery",
+"region": "Ano Diakopto, Aigialeia",
+"country": "Greece",
+"lat": 38.15,
+"lng": 22.17,
+"founded": "",
+"style": "white",
+"story": "Set in the mountains above the Gulf of Corinth, Tetramythos farms high vineyards organically. It is known for fresh Roditis and for reviving the rare Mavro Kalavrytino grape.",
+"wines": [
+{
+"name": "Roditis",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Crisp, lemony mountain white."
+},
+{
+"name": "Malagousia",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Aromatic: peach and jasmine."
+},
+{
+"name": "Black of Kalavryta",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Light, spicy red from a rare local grape."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "gr-parparoussis",
+"name": "Parparoussis Winery",
+"region": "Patras, Achaia",
+"country": "Greece",
+"lat": 38.245,
+"lng": 21.735,
+"founded": "",
+"style": "white",
+"story": "A family winery founded by Athanasios Parparoussis in Patras. It is respected for bringing out the best of local grapes such as Sideritis and Mavrodaphne.",
+"wines": [
+{
+"name": "Sideritis Dons de Dionysos",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Delicate, fresh white from a rare pink-skinned grape."
+},
+{
+"name": "Taos Mavrodaphne",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "A dry Mavrodaphne: dark fruit and spice."
+},
+{
+"name": "Mavrodaphne of Patras",
+"type": "Sweet",
+"price": "",
+"cur": "EUR",
+"notes": "The classic sweet red of Patras."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "gr-rouvalis",
+"name": "Rouvalis Winery (Oenoforos)",
+"region": "Selinous, Aigio",
+"country": "Greece",
+"lat": 38.23,
+"lng": 22.07,
+"founded": "",
+"style": "white",
+"story": "Founded by oenologist Angelos Rouvalis in the mountains above Aigio. Its Roditis from high-altitude, stony vineyards helped change how Greeks saw the grape.",
+"wines": [
+{
+"name": "Asprolithi",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Roditis from 'white stone' soils: crisp and mineral."
+},
+{
+"name": "Lagorthi",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Rare local grape, citrusy and fresh."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "gr-mercouri",
+"name": "Mercouri Estate",
+"region": "Korakochori, Ilia",
+"country": "Greece",
+"lat": 37.67,
+"lng": 21.32,
+"founded": "1864",
+"style": "red",
+"story": "A historic family estate founded in 1864 near Pyrgos in western Peloponnese, with a 19th-century manor, gardens and a small museum. Known for its Refosco and Mavrodaphne red.",
+"wines": [
+{
+"name": "Domaine Mercouri Red",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Refosco with Mavrodaphne: dark fruit and herbs."
+},
+{
+"name": "Foloi",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Roditis with Viognier, fresh and aromatic."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "gr-achaia-clauss",
+"name": "Achaia Clauss",
+"region": "Patras, Achaia",
+"country": "Greece",
+"lat": 38.21,
+"lng": 21.79,
+"founded": "1861",
+"style": "sweet",
+"story": "Founded in 1861 by the Bavarian Gustav Clauss on a hill above Patras. Its stone cellars hold old barrels of Mavrodaphne, the region's famous sweet red, and the estate is a popular place to visit.",
+"wines": [
+{
+"name": "Mavrodaphne of Patras",
+"type": "Sweet",
+"price": "",
+"cur": "EUR",
+"notes": "Sweet fortified red: raisin, chocolate and coffee."
+},
+{
+"name": "Demestica",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "One of Greece's best-known everyday wines."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "gr-papagiannakos",
+"name": "Papagiannakos Winery",
+"region": "Markopoulo, Attica",
+"country": "Greece",
+"lat": 37.885,
+"lng": 23.93,
+"founded": "",
+"style": "white",
+"story": "A family winery in Markopoulo, near Athens airport, whose roots go back to the early 1900s. Vassilis Papagiannakos was among the first to believe in Savatiano as a fine wine.",
+"wines": [
+{
+"name": "Savatiano",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Fresh citrus and herbs, the wine of Athens."
+},
+{
+"name": "Vientzi Savatiano",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Single-vineyard Savatiano that ages beautifully."
+},
+{
+"name": "Malagousia",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Aromatic, peachy white."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "gr-mylonas",
+"name": "Mylonas Winery",
+"region": "Keratea, Attica",
+"country": "Greece",
+"lat": 37.8,
+"lng": 23.98,
+"founded": "1917",
+"style": "white",
+"story": "Started in 1917 by grandfather Antonis in Keratea, East Attica. Today the third generation runs a small modern winery focused on old-vine Savatiano.",
+"wines": [
+{
+"name": "Savatiano",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Crisp apple and ripe lemon."
+},
+{
+"name": "Naked Truth",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Orange-style Savatiano made with skin contact."
+},
+{
+"name": "Retsina",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Traditional pine-resin wine, fresh and herbal."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "gr-kir-yianni",
+"name": "Kir-Yianni",
+"region": "Yiannakohori, Naoussa",
+"country": "Greece",
+"lat": 40.64,
+"lng": 22.05,
+"founded": "1997",
+"style": "red",
+"story": "Founded in 1997 by Yiannis Boutaris on the slopes of Mount Vermio. A leading name for Xinomavro, with vineyards in Naoussa and Amyndeo.",
+"wines": [
+{
+"name": "Ramnista",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Xinomavro with cherry, tomato leaf and fine tannins."
+},
+{
+"name": "Diaporos",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Xinomavro with Syrah from a single vineyard; deep and spicy."
+},
+{
+"name": "Samaropetra",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Fresh, aromatic white from Amyndeo."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "gr-boutari-naoussa",
+"name": "Boutari Winery",
+"region": "Stenimachos, Naoussa",
+"country": "Greece",
+"lat": 40.62,
+"lng": 22.09,
+"founded": "1879",
+"style": "red",
+"story": "The Boutari family started making wine in Naoussa in 1879, and its Naoussa red is one of the best-known Greek wines. The winery offers tours and tastings.",
+"wines": [
+{
+"name": "Naoussa",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Classic Xinomavro: sour cherry, spice and firm tannins."
+},
+{
+"name": "Grande Reserve Naoussa",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Long-aged Xinomavro with leather and dried fruit."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "gr-thymiopoulos",
+"name": "Thymiopoulos Vineyards",
+"region": "Trilofo, Naoussa",
+"country": "Greece",
+"lat": 40.575,
+"lng": 22.06,
+"founded": "",
+"style": "red",
+"story": "Apostolos Thymiopoulos farms biodynamically in Trilofo and Fytia, on the southern side of the Naoussa appellation. His wines show a softer, fruitier side of Xinomavro.",
+"wines": [
+{
+"name": "Earth & Sky (Gi kai Ouranos)",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Ripe, perfumed Xinomavro with fine tannins."
+},
+{
+"name": "Uranos",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Old-vine single-plot Xinomavro."
+},
+{
+"name": "Young Vines",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Juicy, fresh Xinomavro."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "gr-dalamara",
+"name": "Domaine Dalamara",
+"region": "Naoussa",
+"country": "Greece",
+"lat": 40.63,
+"lng": 22.07,
+"founded": "",
+"style": "red",
+"story": "A family winery in Naoussa run by Kostis Dalamaras, sixth generation of a winemaking family. Organic vineyards and traditional Xinomavro.",
+"wines": [
+{
+"name": "Naoussa",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Elegant, classic Xinomavro."
+},
+{
+"name": "Paliokalias",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Single-vineyard Naoussa, structured and long-lived."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "gr-alpha-estate",
+"name": "Alpha Estate",
+"region": "Amyndeo",
+"country": "Greece",
+"lat": 40.675,
+"lng": 21.7,
+"founded": "1997",
+"style": "red",
+"story": "Founded in 1997 by Makis Mavridis and oenologist Angelos Iatridis on the cool, sandy plateau of Amyndeo, about 700 m high. Famous for old-vine Xinomavro and its modern blends.",
+"wines": [
+{
+"name": "Xinomavro Reserve Vieilles Vignes",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "From ungrafted old vines; deep and age-worthy."
+},
+{
+"name": "Hedgehog Xinomavro",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Single-vineyard Xinomavro, bright and spicy."
+},
+{
+"name": "Alpha Estate Sauvignon Blanc",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Crisp, aromatic and fresh."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "gr-karanika",
+"name": "Karanika",
+"region": "Amyndeo",
+"country": "Greece",
+"lat": 40.69,
+"lng": 21.67,
+"founded": "",
+"style": "sparkling",
+"story": "Started by Laurens Hartman and Annette van Zijl in cool, high Amyndeo. They specialise in traditional-method sparkling wine from Xinomavro and Assyrtiko.",
+"wines": [
+{
+"name": "Brut Cuvée Spéciale",
+"type": "Sparkling",
+"price": "",
+"cur": "EUR",
+"notes": "Fine bubbles, green apple and brioche."
+},
+{
+"name": "Brut Rosé",
+"type": "Sparkling",
+"price": "",
+"cur": "EUR",
+"notes": "Sparkling Xinomavro, red berries and freshness."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "gr-gerovassiliou",
+"name": "Ktima Gerovassiliou",
+"region": "Epanomi, Thessaloniki",
+"country": "Greece",
+"lat": 40.43,
+"lng": 22.93,
+"founded": "1981",
+"style": "white",
+"story": "Founded in 1981 by oenologist Evangelos Gerovassiliou on the coastal hills of Epanomi. He saved the Malagousia grape from near extinction, and the estate also has a well-known wine museum.",
+"wines": [
+{
+"name": "Malagousia",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Peach, jasmine and citrus; the wine that revived the grape."
+},
+{
+"name": "Ktima Gerovassiliou White",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Assyrtiko with Malagousia: fresh and aromatic."
+},
+{
+"name": "Avaton",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Blend of rare local reds: dark fruit and spice."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "gr-kechris",
+"name": "Domaine Kechris",
+"region": "Thessaloniki",
+"country": "Greece",
+"lat": 40.65,
+"lng": 22.87,
+"founded": "",
+"style": "white",
+"story": "A family winery near Thessaloniki that turned retsina into a fine wine. Its 'Tear of the Pine' showed that pine-resin wine can be elegant and age-worthy.",
+"wines": [
+{
+"name": "Tear of the Pine",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Assyrtiko retsina with pine, citrus and herbs."
+},
+{
+"name": "Kechribari",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Classic retsina, light and refreshing."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "gr-porto-carras",
+"name": "Domaine Porto Carras",
+"region": "Sithonia, Halkidiki",
+"country": "Greece",
+"lat": 40.105,
+"lng": 23.815,
+"founded": "",
+"style": "red",
+"story": "Created in the 1960s by shipowner John Carras, with vineyards on the slopes of Mount Meliton running down towards the sea. A landmark estate of northern Greece.",
+"wines": [
+{
+"name": "Château Porto Carras",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Bordeaux-style blend, structured and age-worthy."
+},
+{
+"name": "Limnio",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "An ancient Greek grape: herbs and red fruit."
+},
+{
+"name": "Malagouzia",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Aromatic, fresh white."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "gr-tsantali",
+"name": "Tsantali",
+"region": "Agios Pavlos, Halkidiki",
+"country": "Greece",
+"lat": 40.32,
+"lng": 23.1,
+"founded": "1890",
+"style": "red",
+"story": "Founded in 1890 by Evangelos Tsantalis, today one of Greece's largest wine companies. It also works vineyards on Mount Athos and in Rapsani on Mount Olympus.",
+"wines": [
+{
+"name": "Rapsani Reserve",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Xinomavro, Krassato and Stavroto from Mount Olympus."
+},
+{
+"name": "Agioritikos",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Wine from the vineyards of Mount Athos."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "gr-biblia-chora",
+"name": "Biblia Chora",
+"region": "Kokkinochori, Kavala",
+"country": "Greece",
+"lat": 40.93,
+"lng": 24.12,
+"founded": "1998",
+"style": "white",
+"story": "Founded in 1998 by oenologists Vassilis Tsaktsarlis and Vangelis Kokkinos at the foot of Mount Pangeo. Its fresh white blends became modern Greek classics.",
+"wines": [
+{
+"name": "Biblia Chora White",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Sauvignon Blanc with Assyrtiko: crisp and aromatic."
+},
+{
+"name": "Ovilos",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Semillon and Assyrtiko, rich and oak-aged."
+},
+{
+"name": "Areti",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Single-variety Assyrtiko."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "gr-pavlidis",
+"name": "Ktima Pavlidis",
+"region": "Kokkinogia, Drama",
+"country": "Greece",
+"lat": 41.15,
+"lng": 24.05,
+"founded": "",
+"style": "white",
+"story": "A modern estate in Drama, northern Greece, founded by Christoforos Pavlidis. Known for its 'Thema' range and wines from Greek and international grapes.",
+"wines": [
+{
+"name": "Thema White",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Assyrtiko with Sauvignon Blanc: fresh and aromatic."
+},
+{
+"name": "Thema Red",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Agiorgitiko with Syrah: round and fruity."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "gr-lazaridi",
+"name": "Domaine Costa Lazaridi",
+"region": "Adriani, Drama",
+"country": "Greece",
+"lat": 41.13,
+"lng": 24.23,
+"founded": "",
+"style": "red",
+"story": "Founded by Costas Lazaridis in Drama, with a striking winery and visitor centre. Its 'Amethystos' range is one of the best-known Greek wine labels.",
+"wines": [
+{
+"name": "Amethystos Red",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Cabernet-based blend, rich and round."
+},
+{
+"name": "Amethystos White",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Fresh blend with Sauvignon Blanc and Assyrtiko."
+},
+{
+"name": "Château Julia Assyrtiko",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Crisp, citrusy Assyrtiko."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "gr-wine-art",
+"name": "Wine Art Estate",
+"region": "Mikrochori, Drama",
+"country": "Greece",
+"lat": 41.18,
+"lng": 24.11,
+"founded": "",
+"style": "white",
+"story": "A boutique winery in Drama focused on careful, terroir-driven wines. Its 'Techni Alipias' blend is a favourite of Greek wine lovers.",
+"wines": [
+{
+"name": "Techni Alipias White",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Sauvignon Blanc with Assyrtiko: crisp and lively."
+},
+{
+"name": "Plano Malagousia",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Aromatic, fresh Malagousia."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "gr-chatzivaritis",
+"name": "Ktima Chatzivaritis",
+"region": "Goumenissa, Kilkis",
+"country": "Greece",
+"lat": 40.95,
+"lng": 22.45,
+"founded": "",
+"style": "red",
+"story": "A family estate in Goumenissa, at the foot of Mount Paiko, farmed organically. Goumenissa blends Xinomavro with the softer Negoska grape.",
+"wines": [
+{
+"name": "Goumenissa",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Xinomavro with Negoska: red fruit and spice."
+},
+{
+"name": "Negoska",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Soft, fruity local grape."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "gr-tatsis",
+"name": "Domaine Tatsis",
+"region": "Goumenissa, Kilkis",
+"country": "Greece",
+"lat": 40.94,
+"lng": 22.46,
+"founded": "",
+"style": "red",
+"story": "Brothers Periklis and Stergios Tatsis make low-intervention wines in Goumenissa, from organic vineyards. A pioneer of natural wine in Greece.",
+"wines": [
+{
+"name": "Goumenissa",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Xinomavro and Negoska, natural style."
+},
+{
+"name": "Malagousia",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Skin-contact, textured white."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "gr-glinavos",
+"name": "Domaine Glinavos",
+"region": "Zitsa, Ioannina",
+"country": "Greece",
+"lat": 39.75,
+"lng": 20.65,
+"founded": "",
+"style": "sparkling",
+"story": "Founded by Lefteris Glinavos, who studied winemaking in France and returned to his home village of Zitsa. Known for sparkling and semi-sparkling wines from the local Debina grape.",
+"wines": [
+{
+"name": "Zitsa Brut",
+"type": "Sparkling",
+"price": "",
+"cur": "EUR",
+"notes": "Light, crisp sparkling Debina."
+},
+{
+"name": "Paleokerisio",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Semi-sparkling, slightly sweet orange wine: a cult classic."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "gr-katogi-averoff",
+"name": "Katogi Averoff",
+"region": "Metsovo, Epirus",
+"country": "Greece",
+"lat": 39.77,
+"lng": 21.18,
+"founded": "",
+"style": "red",
+"story": "Founded by politician Evangelos Averoff in the mountain town of Metsovo, where he replanted vines in the 1950s. Its Katogi red was one of the first modern Greek wines.",
+"wines": [
+{
+"name": "Katogi Averoff",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Cabernet-based mountain red."
+},
+{
+"name": "Traminer",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Aromatic white from a high-altitude vineyard."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "gr-zafeirakis",
+"name": "Domaine Zafeirakis",
+"region": "Tyrnavos, Larissa",
+"country": "Greece",
+"lat": 39.74,
+"lng": 22.29,
+"founded": "",
+"style": "red",
+"story": "A family winery in Tyrnavos, Thessaly, known for reviving the local Limniona grape. Christos Zafeirakis farms the vineyards organically.",
+"wines": [
+{
+"name": "Limniona",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Fresh red fruit and herbs, elegant."
+},
+{
+"name": "Malagousia",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Fragrant, fresh white."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "gr-lyrarakis",
+"name": "Lyrarakis Wines",
+"region": "Alagni, Heraklion",
+"country": "Greece",
+"lat": 35.21,
+"lng": 25.16,
+"founded": "1966",
+"style": "white",
+"story": "A family winery founded in 1966 in central Crete. The Lyrarakis family brought forgotten Cretan grapes such as Plyto and Dafni back to life.",
+"wines": [
+{
+"name": "Dafni",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Herbal, bay-leaf aromas from a rare Cretan grape."
+},
+{
+"name": "Plyto",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Light, lemony and saline."
+},
+{
+"name": "Vilana",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Fresh, everyday Cretan white."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "gr-douloufakis",
+"name": "Douloufakis Winery",
+"region": "Dafnes, Heraklion",
+"country": "Greece",
+"lat": 35.24,
+"lng": 25.04,
+"founded": "1930",
+"style": "white",
+"story": "A family winery in Dafnes since 1930, now run by the third generation. It is known for Vidiano and the local Liatiko red.",
+"wines": [
+{
+"name": "Dafnios Vidiano",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Apricot, herbs and a round texture."
+},
+{
+"name": "Dafnios Red",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Liatiko: light, spicy Cretan red."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "gr-idaia",
+"name": "Idaia Winery",
+"region": "Venerato, Heraklion",
+"country": "Greece",
+"lat": 35.22,
+"lng": 25.07,
+"founded": "",
+"style": "white",
+"story": "A family winery in Venerato, below Mount Ida. It focuses on native Cretan grapes, especially Vidiano and Thrapsathiri.",
+"wines": [
+{
+"name": "Vidiano",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Stone fruit and herbs, full and fresh."
+},
+{
+"name": "Thrapsathiri",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Lemony, light and refreshing."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "gr-paterianakis",
+"name": "Domaine Paterianakis",
+"region": "Melesses, Heraklion",
+"country": "Greece",
+"lat": 35.22,
+"lng": 25.21,
+"founded": "",
+"style": "white",
+"story": "A family estate south-east of Heraklion, farmed organically. It makes wines from local grapes such as Vidiano and Kotsifali.",
+"wines": [
+{
+"name": "Vidiano",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Round, aromatic Cretan white."
+},
+{
+"name": "Kotsifali",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Soft, spicy local red."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "gr-economou",
+"name": "Domaine Economou",
+"region": "Ziros, Sitia",
+"country": "Greece",
+"lat": 35.07,
+"lng": 26.13,
+"founded": "",
+"style": "red",
+"story": "Yiannis Economou makes wine in the high village of Ziros in eastern Crete. Known for long-aged, traditional Sitia reds from Liatiko.",
+"wines": [
+{
+"name": "Sitia",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Liatiko with Mandilari, aged for years before release."
+},
+{
+"name": "Assyrtiko",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Mineral and textured."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "gr-manousakis",
+"name": "Manousakis Winery",
+"region": "Vatolakkos, Chania",
+"country": "Greece",
+"lat": 35.47,
+"lng": 23.93,
+"founded": "1993",
+"style": "red",
+"story": "Founded in 1993 by Ted Manousakis, who returned to his family's village near Chania. Known for Rhône grapes such as Syrah and Roussanne under the 'Nostos' label.",
+"wines": [
+{
+"name": "Nostos Blend",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Syrah, Grenache and Mourvèdre: ripe and spicy."
+},
+{
+"name": "Nostos Roussanne",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Rich, textured white."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "gr-sclavos",
+"name": "Domaine Sclavos",
+"region": "Lixouri, Kefalonia",
+"country": "Greece",
+"lat": 38.2,
+"lng": 20.43,
+"founded": "",
+"style": "white",
+"story": "A family estate on the Paliki peninsula of Kefalonia, farmed biodynamically. Known for Robola and other island grapes.",
+"wines": [
+{
+"name": "Robola of Kefalonia",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Crisp, lemony and mineral."
+},
+{
+"name": "Mavrodaphne",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Dry red from the island grape."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "gr-gentilini",
+"name": "Gentilini Winery",
+"region": "Minies, Kefalonia",
+"country": "Greece",
+"lat": 38.13,
+"lng": 20.5,
+"founded": "",
+"style": "white",
+"story": "Founded by Nicholas Cosmetatos near Argostoli, Gentilini was one of the first boutique wineries of modern Greece. Its Robola is a reference for the island.",
+"wines": [
+{
+"name": "Gentilini Robola",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Lemon, flint and freshness."
+},
+{
+"name": "Eclipse",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Mavrodaphne-based dry red."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "gr-robola-coop",
+"name": "Robola Cooperative of Kefalonia",
+"region": "Omala, Kefalonia",
+"country": "Greece",
+"lat": 38.13,
+"lng": 20.63,
+"founded": "",
+"style": "white",
+"story": "The winery of Kefalonian growers, set in the Omala valley below Mount Ainos. It is the largest producer of Robola of Kefalonia.",
+"wines": [
+{
+"name": "Robola of Kefalonia",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Fresh, citrusy island white."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "gr-moraitis",
+"name": "Moraitis Winery",
+"region": "Naoussa, Paros",
+"country": "Greece",
+"lat": 37.12,
+"lng": 25.24,
+"founded": "1910",
+"style": "white",
+"story": "A family winery on Paros, making wine since 1910. Its old stone cellars in Naoussa host a small museum and tastings.",
+"wines": [
+{
+"name": "Monemvasia",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Local grape: fresh and herbal."
+},
+{
+"name": "Mandilaria",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Island red with dark fruit."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "gr-t-oinos",
+"name": "T-Oinos",
+"region": "Falatados, Tinos",
+"country": "Greece",
+"lat": 37.59,
+"lng": 25.17,
+"founded": "",
+"style": "white",
+"story": "A small winery on the granite plateau of Tinos, among huge boulders. It quickly gained international praise for its Assyrtiko and Mavrotragano.",
+"wines": [
+{
+"name": "Clos Stegasta Assyrtiko",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Granite-grown Assyrtiko: tense and mineral."
+},
+{
+"name": "Mavrotragano",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Rare island red, deep and spicy."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "gr-emery",
+"name": "Emery Winery",
+"region": "Embona, Rhodes",
+"country": "Greece",
+"lat": 36.23,
+"lng": 27.85,
+"founded": "1923",
+"style": "white",
+"story": "A family winery founded in 1923 on the slopes of Mount Attavyros, Rhodes' highest mountain. Known for the local Athiri grape.",
+"wines": [
+{
+"name": "Villare",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Athiri: delicate, lemony and floral."
+},
+{
+"name": "Grand Rosé",
+"type": "Rosé",
+"price": "",
+"cur": "EUR",
+"notes": "Fresh island rosé."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "gr-samos-coop",
+"name": "Samos Wine Cooperative (UVS)",
+"region": "Malagari, Samos",
+"country": "Greece",
+"lat": 37.76,
+"lng": 26.98,
+"founded": "",
+"style": "sweet",
+"story": "The union of Samos growers, whose terraced vineyards climb the island's mountains. Its sweet Muscat of Samos has been famous for centuries.",
+"wines": [
+{
+"name": "Samos Vin Doux",
+"type": "Sweet",
+"price": "",
+"cur": "EUR",
+"notes": "Golden, honeyed Muscat."
+},
+{
+"name": "Samos Nectar",
+"type": "Sweet",
+"price": "",
+"cur": "EUR",
+"notes": "Made from sun-dried grapes: rich and aged."
+},
+{
+"name": "Samos Anthemis",
+"type": "Sweet",
+"price": "",
+"cur": "EUR",
+"notes": "Oak-aged Muscat, deep and complex."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "s-margaux",
+"name": "Château Lune Douce",
+"region": "Bordeaux – Margaux",
+"country": "France",
+"lat": 45.04,
+"lng": -0.674,
+"founded": 1855,
+"style": "red",
+"hours": "By appointment",
+"story": "A classic Left Bank château whose gravel soils give perfumed Cabernet Sauvignon. The cellar still uses its original oak vats.",
+"wines": [
+{
+"name": "Grand Vin",
+"type": "Red",
+"price": 120,
+"cur": "EUR",
+"notes": "Cassis, cedar and violet with fine-grained tannins."
+},
+{
+"name": "Second Lune",
+"type": "Red",
+"price": 45,
+"cur": "EUR",
+"notes": "Younger vines, more open fruit, drink in 5 years."
+},
+{
+"name": "Bordeaux Blanc",
+"type": "White",
+"price": 30,
+"cur": "EUR",
+"notes": "Sauvignon–Sémillon, citrus and beeswax."
+}
+],
+"events": [
+{
+"id": "e1",
+"title": "En primeur preview",
+"start": "2027-04-03T10:00",
+"end": "2027-04-03T16:00",
+"price": 50,
+"desc": "Taste the 2026 vintage from barrel."
+}
+]
+},
+{
+"id": "s-stemilion",
+"name": "Clos des Pierres",
+"region": "Bordeaux – Saint-Émilion",
+"country": "France",
+"lat": 44.894,
+"lng": -0.155,
+"founded": 1932,
+"style": "red",
+"hours": "Daily 10:00–18:00",
+"story": "Limestone caves beneath the vineyard keep the wine cool all year. Merlot-led wines with a touch of Cabernet Franc.",
+"wines": [
+{
+"name": "Clos des Pierres",
+"type": "Red",
+"price": 58,
+"cur": "EUR",
+"notes": "Plush plum, truffle and mocha."
+},
+{
+"name": "Les Caves",
+"type": "Red",
+"price": 28,
+"cur": "EUR",
+"notes": "Fresh, juicy, ready now."
+},
+{
+"name": "Crémant de Bordeaux",
+"type": "Sparkling",
+"price": 19,
+"cur": "EUR",
+"notes": "Fine bubbles, green apple and brioche."
+}
+],
+"events": [
+{
+"id": "e1",
+"title": "Candlelit cave tour",
+"start": "2026-12-20T18:00",
+"end": "2026-12-20T20:00",
+"price": 30,
+"desc": "Walk the limestone caves by candlelight, three tastings."
+}
+]
+},
+{
+"id": "s-burgundy",
+"name": "Domaine Côte d'Ambre",
+"region": "Burgundy – Côte de Nuits",
+"country": "France",
+"lat": 47.16,
+"lng": 4.956,
+"founded": 1790,
+"style": "red",
+"hours": "Mon–Fri 09:00–12:00, 14:00–17:00",
+"story": "Eight generations tending tiny parcels of Pinot Noir. Every climat is vinified separately to show its soil.",
+"wines": [
+{
+"name": "Gevrey-Chambertin",
+"type": "Red",
+"price": 75,
+"cur": "EUR",
+"notes": "Dark cherry, earth and spice."
+},
+{
+"name": "Bourgogne Rouge",
+"type": "Red",
+"price": 29,
+"cur": "EUR",
+"notes": "Bright raspberry, easy and pure."
+},
+{
+"name": "Aligoté",
+"type": "White",
+"price": 20,
+"cur": "EUR",
+"notes": "Zesty, perfect for kir."
+}
+],
+"events": [
+{
+"id": "e1",
+"title": "Saint-Vincent Tournante",
+"start": "2027-01-23T10:00",
+"end": "2027-01-24T18:00",
+"price": 25,
+"desc": "Join Burgundy's winter wine festival from our courtyard."
+}
+]
+},
+{
+"id": "s-champagne",
+"name": "Maison Perlée",
+"region": "Champagne – Épernay",
+"country": "France",
+"lat": 49.041,
+"lng": 3.958,
+"founded": 1888,
+"style": "sparkling",
+"hours": "Daily 10:00–17:30",
+"story": "Four kilometres of chalk cellars beneath the Avenue de Champagne hold millions of bottles ageing on their lees.",
+"wines": [
+{
+"name": "Brut Réserve",
+"type": "Sparkling",
+"price": 42,
+"cur": "EUR",
+"notes": "Toasted brioche, pear and fine mousse."
+},
+{
+"name": "Blanc de Blancs 2016",
+"type": "Sparkling",
+"price": 89,
+"cur": "EUR",
+"notes": "Pure Chardonnay, lemon curd and chalk."
+},
+{
+"name": "Rosé Saignée",
+"type": "Sparkling",
+"price": 65,
+"cur": "EUR",
+"notes": "Wild strawberry, deep colour, gastronomic."
+}
+],
+"events": [
+{
+"id": "e1",
+"title": "New Year's Eve cellar party",
+"start": "2026-12-31T21:00",
+"end": "2027-01-01T01:00",
+"price": 150,
+"desc": "Midnight toast 30 metres underground."
+},
+{
+"id": "e2",
+"title": "Disgorging workshop",
+"start": "2026-11-28T14:00",
+"end": "2026-11-28T16:00",
+"price": 60,
+"desc": "Open your own bottle 'à la volée' and take it home."
+}
+]
+},
+{
+"id": "s-rioja",
+"name": "Bodegas Río Oja",
+"region": "Rioja Alta",
+"country": "Spain",
+"lat": 42.576,
+"lng": -2.85,
+"founded": 1901,
+"style": "red",
+"hours": "Tue–Sun 10:00–14:00",
+"story": "Built next to the old railway station of Haro so barrels could ship to Bordeaux during phylloxera. Long ageing in American oak is the house style.",
+"wines": [
+{
+"name": "Gran Reserva",
+"type": "Red",
+"price": 48,
+"cur": "EUR",
+"notes": "Dried cherry, leather, vanilla, silky."
+},
+{
+"name": "Crianza",
+"type": "Red",
+"price": 16,
+"cur": "EUR",
+"notes": "Fresh red fruit with a touch of oak."
+},
+{
+"name": "Viura Blanco",
+"type": "White",
+"price": 13,
+"cur": "EUR",
+"notes": "Crisp and herbal."
+}
+],
+"events": [
+{
+"id": "e1",
+"title": "Tapas & Tempranillo night",
+"start": "2027-02-27T19:00",
+"end": "2027-02-27T22:00",
+"price": 40,
+"desc": "Pintxos from Haro's best bars with our reservas."
+}
+]
+},
+{
+"id": "s-douro",
+"name": "Quinta do Socalco",
+"region": "Douro Valley",
+"country": "Portugal",
+"lat": 41.163,
+"lng": -7.536,
+"founded": 1820,
+"style": "red",
+"hours": "Daily 10:00–18:00",
+"story": "Schist terraces drop steeply to the river. Grapes are still foot-trodden in granite lagares for the Port.",
+"wines": [
+{
+"name": "20 Year Tawny",
+"type": "Fortified",
+"price": 55,
+"cur": "EUR",
+"notes": "Walnut, orange peel and caramel."
+},
+{
+"name": "Vintage Port 2017",
+"type": "Fortified",
+"price": 95,
+"cur": "EUR",
+"notes": "Blackberry and violets, decades ahead."
+},
+{
+"name": "Douro Tinto",
+"type": "Red",
+"price": 19,
+"cur": "EUR",
+"notes": "Touriga Nacional, bold and floral."
+}
+],
+"events": [
+{
+"id": "e1",
+"title": "River boat & Port tasting",
+"start": "2027-03-13T10:00",
+"end": "2027-03-13T15:00",
+"price": 85,
+"desc": "Rabelo boat trip with lunch at the quinta."
+}
+]
+},
+{
+"id": "s-chianti",
+"name": "Fattoria del Cipresso",
+"region": "Chianti Classico, Tuscany",
+"country": "Italy",
+"lat": 43.47,
+"lng": 11.25,
+"founded": 1910,
+"style": "red",
+"hours": "Mon–Sat 10:00–18:00",
+"story": "An old farmhouse among cypresses and olive groves. Sangiovese is aged in large Slavonian casks, never small new barrels.",
+"wines": [
+{
+"name": "Chianti Classico Riserva",
+"type": "Red",
+"price": 32,
+"cur": "EUR",
+"notes": "Sour cherry, tea leaf and dried herbs."
+},
+{
+"name": "Gran Selezione",
+"type": "Red",
+"price": 58,
+"cur": "EUR",
+"notes": "Single vineyard, deep and structured."
+},
+{
+"name": "Vin Santo",
+"type": "Sweet",
+"price": 40,
+"cur": "EUR",
+"notes": "Hazelnut and dried apricot, for cantucci."
+}
+],
+"events": [
+{
+"id": "e1",
+"title": "New olive oil & wine day",
+"start": "2026-11-29T11:00",
+"end": "2026-11-29T16:00",
+"price": 25,
+"desc": "Fresh 'olio nuovo' on bruschetta with this year's wine."
+}
+]
+},
+{
+"id": "s-barolo",
+"name": "Cascina Nebbia",
+"region": "Barolo, Piedmont",
+"country": "Italy",
+"lat": 44.61,
+"lng": 7.943,
+"founded": 1949,
+"style": "red",
+"hours": "By appointment",
+"story": "Named after the autumn fog that gives Nebbiolo its name. A tiny estate making only three wines, all from the same hill.",
+"wines": [
+{
+"name": "Barolo",
+"type": "Red",
+"price": 62,
+"cur": "EUR",
+"notes": "Tar and roses, firm tannins."
+},
+{
+"name": "Langhe Nebbiolo",
+"type": "Red",
+"price": 26,
+"cur": "EUR",
+"notes": "A gentler Barolo, ready younger."
+},
+{
+"name": "Dolcetto d'Alba",
+"type": "Red",
+"price": 15,
+"cur": "EUR",
+"notes": "Everyday red, plum and almond."
+}
+],
+"events": [
+{
+"id": "e1",
+"title": "White truffle dinner",
+"start": "2026-11-24T19:30",
+"end": "2026-11-24T23:00",
+"price": 180,
+"desc": "Five courses with Alba truffle and our Barolo verticals."
+}
+]
+},
+{
+"id": "s-mosel",
+"name": "Weingut Steilhang",
+"region": "Mosel",
+"country": "Germany",
+"lat": 49.917,
+"lng": 7.065,
+"founded": 1756,
+"style": "white",
+"hours": "Wed–Sun 11:00–18:00",
+"story": "Riesling vines on slate slopes so steep they are worked by hand with winches. Low alcohol, high tension.",
+"wines": [
+{
+"name": "Riesling Kabinett",
+"type": "White",
+"price": 18,
+"cur": "EUR",
+"notes": "Off-dry, green apple and slate."
+},
+{
+"name": "Riesling GG",
+"type": "White",
+"price": 42,
+"cur": "EUR",
+"notes": "Dry, peach and smoke."
+},
+{
+"name": "Eiswein",
+"type": "Sweet",
+"price": 95,
+"cur": "EUR",
+"notes": "Grapes frozen on the vine: pure, electric sweetness."
+}
+],
+"events": [
+{
+"id": "e1",
+"title": "Christmas market wine stand",
+"start": "2026-12-11T15:00",
+"end": "2026-12-13T21:00",
+"price": 0,
+"desc": "Glühwein made from our Riesling at the village market."
+}
+]
+},
+{
+"id": "s-tokaj",
+"name": "Aszú Pince",
+"region": "Tokaj",
+"country": "Hungary",
+"lat": 48.122,
+"lng": 21.41,
+"founded": 1650,
+"style": "sweet",
+"hours": "Daily 10:00–17:00",
+"story": "Mould-covered tunnels carved into volcanic tuff. Tokaji Aszú, 'wine of kings, king of wines', is made from botrytised berries.",
+"wines": [
+{
+"name": "Tokaji Aszú 6 Puttonyos",
+"type": "Sweet",
+"price": 49,
+"cur": "EUR",
+"notes": "Apricot, saffron and electric acidity."
+},
+{
+"name": "Furmint Dry",
+"type": "White",
+"price": 17,
+"cur": "EUR",
+"notes": "Quince, smoke, mineral."
+},
+{
+"name": "Szamorodni",
+"type": "White",
+"price": 22,
+"cur": "EUR",
+"notes": "Nutty, sherry-like, dry."
+}
+],
+"events": [
+{
+"id": "e1",
+"title": "Cellar labyrinth tour",
+"start": "2027-01-09T14:00",
+"end": "2027-01-09T16:00",
+"price": 20,
+"desc": "Explore 17th-century tunnels with candle and glass."
+}
+]
+},
+{
+"id": "s-kakheti",
+"name": "Qvevri House",
+"region": "Kakheti",
+"country": "Georgia",
+"lat": 41.92,
+"lng": 45.47,
+"founded": 1995,
+"style": "amber",
+"hours": "Daily 10:00–20:00",
+"story": "Wine is fermented in clay qvevri buried underground, an 8,000-year-old method listed by UNESCO.",
+"wines": [
+{
+"name": "Rkatsiteli Amber",
+"type": "Amber",
+"price": 20,
+"cur": "USD",
+"notes": "Skin-contact white: dried apricot, tea, grip."
+},
+{
+"name": "Saperavi",
+"type": "Red",
+"price": 18,
+"cur": "USD",
+"notes": "Inky purple, blackberry and pepper."
+},
+{
+"name": "Mtsvane",
+"type": "Amber",
+"price": 22,
+"cur": "USD",
+"notes": "Floral, honey and walnut."
+}
+],
+"events": [
+{
+"id": "e1",
+"title": "Supra feast",
+"start": "2026-12-26T18:00",
+"end": "2026-12-26T23:00",
+"price": 45,
+"desc": "Traditional Georgian table with toasts led by a tamada."
+}
+]
+},
+{
+"id": "s-napa",
+"name": "Oak Knoll Ridge",
+"region": "Napa Valley, California",
+"country": "USA",
+"lat": 38.5,
+"lng": -122.39,
+"founded": 1976,
+"style": "red",
+"hours": "Daily 10:00–17:00",
+"story": "Planted the year California beat France at the Judgment of Paris. Hillside Cabernet with views across the valley.",
+"wines": [
+{
+"name": "Estate Cabernet Sauvignon",
+"type": "Red",
+"price": 110,
+"cur": "USD",
+"notes": "Blackcurrant, mocha, polished tannins."
+},
+{
+"name": "Chardonnay",
+"type": "White",
+"price": 45,
+"cur": "USD",
+"notes": "Ripe pear, butter and toasted oak."
+},
+{
+"name": "Sauvignon Blanc",
+"type": "White",
+"price": 32,
+"cur": "USD",
+"notes": "Grapefruit and fresh-cut grass."
+}
+],
+"events": [
+{
+"id": "e1",
+"title": "Holiday open house",
+"start": "2026-12-13T11:00",
+"end": "2026-12-13T16:00",
+"price": 40,
+"desc": "Library wines, live jazz and wood-fired pizza."
+}
+]
+},
+{
+"id": "s-sonoma",
+"name": "Fog Line Vineyards",
+"region": "Sonoma Coast, California",
+"country": "USA",
+"lat": 38.4,
+"lng": -122.9,
+"founded": 1999,
+"style": "red",
+"hours": "Thu–Mon 11:00–17:00",
+"story": "Cool ocean fog rolls in each afternoon, giving slow-ripened Pinot Noir and Chardonnay.",
+"wines": [
+{
+"name": "Pinot Noir",
+"type": "Red",
+"price": 58,
+"cur": "USD",
+"notes": "Raspberry, forest floor, silky."
+},
+{
+"name": "Blanc de Noirs",
+"type": "Sparkling",
+"price": 48,
+"cur": "USD",
+"notes": "Crisp red-apple bubbles."
+},
+{
+"name": "Coastal Chardonnay",
+"type": "White",
+"price": 42,
+"cur": "USD",
+"notes": "Lean and saline."
+}
+],
+"events": [
+{
+"id": "e1",
+"title": "Crab & Pinot weekend",
+"start": "2027-01-30T12:00",
+"end": "2027-01-31T17:00",
+"price": 75,
+"desc": "Dungeness crab season meets our Pinot Noir."
+}
+]
+},
+{
+"id": "s-oregon",
+"name": "Red Hills Cellars",
+"region": "Willamette Valley, Oregon",
+"country": "USA",
+"lat": 45.25,
+"lng": -123.06,
+"founded": 1984,
+"style": "red",
+"hours": "Daily 11:00–17:00",
+"story": "Volcanic red Jory soil and a small, organic farm. Pinot Noir made with whole clusters and native yeast.",
+"wines": [
+{
+"name": "Dundee Hills Pinot Noir",
+"type": "Red",
+"price": 52,
+"cur": "USD",
+"notes": "Cranberry, rose hip and spice."
+},
+{
+"name": "Pinot Gris",
+"type": "White",
+"price": 24,
+"cur": "USD",
+"notes": "Pear and melon, round."
+},
+{
+"name": "Rosé of Pinot",
+"type": "Rosé",
+"price": 26,
+"cur": "USD",
+"notes": "Watermelon and lime."
+}
+],
+"events": [
+{
+"id": "e1",
+"title": "Thanksgiving weekend open house",
+"start": "2026-11-27T11:00",
+"end": "2026-11-29T17:00",
+"price": 30,
+"desc": "Annual valley-wide open house with barrel tastings."
+}
+]
+},
+{
+"id": "s-okanagan",
+"name": "Lakeshore Ice Wines",
+"region": "Okanagan Valley, BC",
+"country": "Canada",
+"lat": 49.88,
+"lng": -119.48,
+"founded": 1990,
+"style": "sweet",
+"hours": "Daily 10:00–17:00",
+"story": "Grapes are left on the vine until it hits −8 °C, then picked by headlamp at night.",
+"wines": [
+{
+"name": "Riesling Icewine",
+"type": "Sweet",
+"price": 65,
+"cur": "CAD",
+"notes": "Lychee, honey, piercing acidity."
+},
+{
+"name": "Cabernet Franc Icewine",
+"type": "Sweet",
+"price": 80,
+"cur": "CAD",
+"notes": "Strawberry jam and rhubarb."
+},
+{
+"name": "Pinot Blanc",
+"type": "White",
+"price": 22,
+"cur": "CAD",
+"notes": "Fresh apple and lemon."
+}
+],
+"events": [
+{
+"id": "e1",
+"title": "Icewine harvest night",
+"start": "2026-12-17T22:00",
+"end": "2026-12-18T03:00",
+"price": 0,
+"desc": "Volunteer pickers welcome (date depends on frost), hot soup at dawn."
+}
+]
+},
+{
+"id": "s-mendoza",
+"name": "Bodega Altos Andes",
+"region": "Mendoza",
+"country": "Argentina",
+"lat": -33.05,
+"lng": -68.87,
+"founded": 1928,
+"style": "red",
+"hours": "Mon–Sat 09:30–17:30",
+"story": "Vineyards at 1,100 m under the snowy Andes, watered by snowmelt canals dug by Huarpe people centuries ago.",
+"wines": [
+{
+"name": "Malbec Reserva",
+"type": "Red",
+"price": 24,
+"cur": "USD",
+"notes": "Plum, violet and cocoa."
+},
+{
+"name": "Gran Malbec",
+"type": "Red",
+"price": 48,
+"cur": "USD",
+"notes": "High altitude, dense and fresh."
+},
+{
+"name": "Torrontés",
+"type": "White",
+"price": 14,
+"cur": "USD",
+"notes": "Aromatic, rose and orange blossom."
+}
+],
+"events": [
+{
+"id": "e1",
+"title": "Vendimia harvest festival",
+"start": "2027-03-06T10:00",
+"end": "2027-03-06T22:00",
+"price": 35,
+"desc": "Pick grapes in the morning, asado and dancing at night."
+}
+]
+},
+{
+"id": "s-maipo",
+"name": "Viña Cordillera",
+"region": "Maipo Valley",
+"country": "Chile",
+"lat": -33.65,
+"lng": -70.6,
+"founded": 1885,
+"style": "red",
+"hours": "Daily 10:00–18:00",
+"story": "Old Bordeaux vines brought before phylloxera, never grafted. Carmenère was rediscovered here in 1994.",
+"wines": [
+{
+"name": "Carmenère",
+"type": "Red",
+"price": 18,
+"cur": "USD",
+"notes": "Red pepper, blackberry, smooth."
+},
+{
+"name": "Cabernet Sauvignon Alto",
+"type": "Red",
+"price": 40,
+"cur": "USD",
+"notes": "Mint, cassis, firm."
+},
+{
+"name": "Sauvignon Blanc Costa",
+"type": "White",
+"price": 13,
+"cur": "USD",
+"notes": "Lime and sea breeze."
+}
+],
+"events": [
+{
+"id": "e1",
+"title": "Summer bike & wine",
+"start": "2027-01-10T09:00",
+"end": "2027-01-10T14:00",
+"price": 55,
+"desc": "Cycle through the vineyards with tasting stops."
+}
+]
+},
+{
+"id": "s-barossa",
+"name": "Gumtree Creek Estate",
+"region": "Barossa Valley",
+"country": "Australia",
+"lat": -34.53,
+"lng": 138.95,
+"founded": 1847,
+"style": "red",
+"hours": "Daily 10:00–17:00",
+"story": "Silesian settlers planted Shiraz here in the 1840s. Some of those original vines still produce fruit.",
+"wines": [
+{
+"name": "Ancestor Shiraz",
+"type": "Red",
+"price": 90,
+"cur": "AUD",
+"notes": "From 170-year-old vines: blackberry, licorice, dark chocolate."
+},
+{
+"name": "GSM Blend",
+"type": "Red",
+"price": 32,
+"cur": "AUD",
+"notes": "Grenache, Shiraz, Mourvèdre: juicy and spicy."
+},
+{
+"name": "Eden Valley Riesling",
+"type": "White",
+"price": 28,
+"cur": "AUD",
+"notes": "Lime and kerosene."
+}
+],
+"events": [
+{
+"id": "e1",
+"title": "Christmas long-table lunch",
+"start": "2026-12-20T12:00",
+"end": "2026-12-20T16:00",
+"price": 120,
+"desc": "Summer Christmas under the gum trees."
+}
+]
+},
+{
+"id": "s-marlborough",
+"name": "Wairau Stones",
+"region": "Marlborough",
+"country": "New Zealand",
+"lat": -41.51,
+"lng": 173.86,
+"founded": 1985,
+"style": "white",
+"hours": "Daily 10:30–16:30",
+"story": "Stony river-bed soils and long sunny days made this valley the world capital of Sauvignon Blanc.",
+"wines": [
+{
+"name": "Sauvignon Blanc",
+"type": "White",
+"price": 24,
+"cur": "NZD",
+"notes": "Passionfruit, gooseberry, zingy."
+},
+{
+"name": "Pinot Noir",
+"type": "Red",
+"price": 39,
+"cur": "NZD",
+"notes": "Cherry and spice."
+},
+{
+"name": "Méthode Traditionnelle",
+"type": "Sparkling",
+"price": 42,
+"cur": "NZD",
+"notes": "Citrus and toast."
+}
+],
+"events": [
+{
+"id": "e1",
+"title": "Summer concert in the vines",
+"start": "2027-02-06T16:00",
+"end": "2027-02-06T22:00",
+"price": 60,
+"desc": "Bring a picnic blanket; wines by the glass."
+}
+]
+},
+{
+"id": "s-stellenbosch",
+"name": "Klipkop Wine Farm",
+"region": "Stellenbosch",
+"country": "South Africa",
+"lat": -33.93,
+"lng": 18.86,
+"founded": 1692,
+"style": "red",
+"hours": "Daily 09:00–17:00",
+"story": "A Cape Dutch homestead under granite mountains. Home of Pinotage, a South African cross of Pinot Noir and Cinsault.",
+"wines": [
+{
+"name": "Pinotage",
+"type": "Red",
+"price": 220,
+"cur": "ZAR",
+"notes": "Mulberry, smoke and banana."
+},
+{
+"name": "Chenin Blanc Old Vine",
+"type": "White",
+"price": 260,
+"cur": "ZAR",
+"notes": "Quince, honey, textured."
+},
+{
+"name": "Cape Blend",
+"type": "Red",
+"price": 380,
+"cur": "ZAR",
+"notes": "Pinotage with Cabernet, structured."
+}
+],
+"events": [
+{
+"id": "e1",
+"title": "Sunset picnic & live music",
+"start": "2026-12-06T16:00",
+"end": "2026-12-06T20:00",
+"price": 450,
+"desc": "Picnic baskets on the lawn and a local band."
+}
+]
+},
+{
+"id": "s-yamanashi",
+"name": "Fuji Koshu Winery",
+"region": "Yamanashi",
+"country": "Japan",
+"lat": 35.66,
+"lng": 138.66,
+"founded": 1938,
+"style": "white",
+"hours": "Daily 09:00–16:30",
+"story": "Vines grow on high pergolas under Mount Fuji. Koshu is Japan's own grape, delicate and pink-skinned.",
+"wines": [
+{
+"name": "Koshu Sur Lie",
+"type": "White",
+"price": 2800,
+"cur": "JPY",
+"notes": "Yuzu, white peach, gently savoury; made for sushi."
+},
+{
+"name": "Muscat Bailey A",
+"type": "Red",
+"price": 2400,
+"cur": "JPY",
+"notes": "Light, strawberry candy."
+},
+{
+"name": "Koshu Sparkling",
+"type": "Sparkling",
+"price": 3600,
+"cur": "JPY",
+"notes": "Fine bubbles and citrus."
+}
+],
+"events": [
+{
+"id": "e1",
+"title": "Hanami in the vineyard",
+"start": "2027-04-04T10:00",
+"end": "2027-04-04T15:00",
+"price": 3000,
+"desc": "Cherry blossoms, bento and Koshu."
+}
+]
+},
+{
+"id": "s-lebanon",
+"name": "Château Bekaa Cèdre",
+"region": "Bekaa Valley",
+"country": "Lebanon",
+"lat": 33.84,
+"lng": 35.9,
+"founded": 1857,
+"style": "red",
+"hours": "Mon–Sat 09:00–16:00",
+"story": "Jesuit monks first made wine here. Caves dug by the Romans keep barrels at a steady 12 °C.",
+"wines": [
+{
+"name": "Grand Rouge",
+"type": "Red",
+"price": 35,
+"cur": "USD",
+"notes": "Cinsault–Cabernet blend, spice and dried fig."
+},
+{
+"name": "Obeideh Blanc",
+"type": "White",
+"price": 20,
+"cur": "USD",
+"notes": "Indigenous grape, almond and citrus."
+},
+{
+"name": "Rosé",
+"type": "Rosé",
+"price": 16,
+"cur": "USD",
+"notes": "Bright cherry and herbs."
+}
+],
+"events": [
+{
+"id": "e1",
+"title": "Roman cave tasting",
+"start": "2027-03-20T11:00",
+"end": "2027-03-20T14:00",
+"price": 30,
+"desc": "Barrel tasting in the 2,000-year-old caves."
+}
+]
+},
+{
+"id": "s-cyprus",
+"name": "Commandaria Ktima",
+"region": "Troodos",
+"country": "Cyprus",
+"lat": 34.82,
+"lng": 32.93,
+"founded": 1962,
+"style": "sweet",
+"hours": "Daily 10:00–18:00",
+"story": "Makes Commandaria, a sun-dried sweet wine the Knights Templar shipped across Europe.",
+"wines": [
+{
+"name": "Commandaria",
+"type": "Sweet",
+"price": 28,
+"cur": "EUR",
+"notes": "Raisin, carob and spice."
+},
+{
+"name": "Xynisteri",
+"type": "White",
+"price": 14,
+"cur": "EUR",
+"notes": "Light, citrus and almond."
+},
+{
+"name": "Maratheftiko",
+"type": "Red",
+"price": 22,
+"cur": "EUR",
+"notes": "Wild berry and herbs."
+}
+],
+"events": [
+{
+"id": "e1",
+"title": "Mountain village wine walk",
+"start": "2026-11-24T10:00",
+"end": "2026-11-24T17:00",
+"price": 15,
+"desc": "Guided walk between three village cellars."
+}
+]
+}
 ]

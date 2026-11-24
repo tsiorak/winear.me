@@ -30,7 +30,10 @@ http.createServer((req, res) => {
       });
     }
     const type = TYPES[path.extname(file).toLowerCase()] || "application/octet-stream";
-    const headers = { "Content-Type": type, "Cache-Control": type.startsWith("text/html") ? "no-cache" : "public, max-age=86400" };
+    // Site data and pages are always re-checked so updates show at once;
+    // only the map library (which never changes) is cached for a day.
+    const longCache = /leaflet|topojson/.test(path.basename(file));
+    const headers = { "Content-Type": type, "Cache-Control": longCache ? "public, max-age=86400" : "no-cache" };
     if (/\bgzip\b/.test(req.headers["accept-encoding"] || "") && /json|javascript|css|html/.test(type)) {
       headers["Content-Encoding"] = "gzip";
       res.writeHead(200, headers); return res.end(zlib.gzipSync(data));

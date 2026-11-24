@@ -153,16 +153,57 @@
 {
 "name": "Estate Argyros Assyrtiko",
 "type": "White",
-"price": "",
+"price": 28.55,
 "cur": "EUR",
-"notes": "From very old vines; concentrated, mineral, long-lived."
+"notes": "From very old vines; concentrated, mineral, long-lived.",
+"prices": [
+{
+"price": 28.55,
+"cur": "EUR",
+"shop": "Cava Maniatis",
+"url": "https://cavamaniatis.gr/ktima-argyroy-asyrtiko-750ml/",
+"note": ""
+},
+{
+"price": 31.5,
+"cur": "EUR",
+"shop": "Ipirotissa",
+"url": "https://ipirotissa.gr/el/brand/62--",
+"note": "2022 vintage, temporarily unavailable"
+},
+{
+"price": 34.0,
+"cur": "EUR",
+"shop": "Cava Kazakos",
+"url": "https://cava-kazakos.gr/product/10103/kthma-argyroy-santorinh-asyrtiko",
+"note": "2024 vintage"
+},
+{
+"price": 37.7,
+"cur": "EUR",
+"shop": "Kava Gkafas (winepoems.gr)",
+"url": "https://winepoems.gr/product/%CE%BA%CF%84%CE%B7%CE%BC%CE%B1-%CE%B1%CF%81%CE%B3%CF%85%CF%81%CE%BF%CF%82-%CF%83%CE%B1%CE%BD%CF%84%CE%BF%CF%81%CE%B9%CE%BD%CE%B7-0-75lt/",
+"note": ""
+}
+],
+"checked": "24 Nov 2026"
 },
 {
 "name": "Argyros Vinsanto",
 "type": "Sweet",
-"price": "",
+"price": 62.5,
 "cur": "EUR",
-"notes": "Aged for years in oak: dried fig, coffee and spice."
+"notes": "Aged for years in oak: dried fig, coffee and spice.",
+"prices": [
+{
+"price": 62.5,
+"cur": "EUR",
+"shop": "Ipirotissa",
+"url": "https://ipirotissa.gr/el/brand/62--",
+"note": "12 years old, 500 ml"
+}
+],
+"checked": "24 Nov 2026"
 },
 {
 "name": "Argyros Mavrotragano",
@@ -170,6 +211,40 @@
 "price": "",
 "cur": "EUR",
 "notes": "Dark, spicy island red."
+},
+{
+"name": "Cuvée Monsignori",
+"type": "White",
+"notes": "Old-vine Santorini Assyrtiko, powerful and long.",
+"cur": "EUR",
+"prices": [
+{
+"price": 48.0,
+"cur": "EUR",
+"shop": "Cava Kazakos",
+"url": "https://cava-kazakos.gr/manufacturer/kthma-argyroy",
+"note": ""
+}
+],
+"price": 48.0,
+"checked": "24 Nov 2026"
+},
+{
+"name": "Cuvée Palatia",
+"type": "White",
+"notes": "Balanced Assyrtiko with a long, fresh finish.",
+"cur": "EUR",
+"prices": [
+{
+"price": 43.8,
+"cur": "EUR",
+"shop": "House of Wine",
+"url": "https://www.houseofwine.gr/how/santorini-cuvee-palatia.html",
+"note": "2023 vintage"
+}
+],
+"price": 43.8,
+"checked": "24 Nov 2026"
 }
 ],
 "events": [],
@@ -196,9 +271,19 @@
 {
 "name": "Nykteri",
 "type": "White",
-"price": "",
+"price": 62.0,
 "cur": "EUR",
-"notes": "Fuller-bodied traditional style with ripe citrus and nuts."
+"notes": "Fuller-bodied traditional style with ripe citrus and nuts.",
+"prices": [
+{
+"price": 62.0,
+"cur": "EUR",
+"shop": "House of Wine",
+"url": "https://www.houseofwine.gr/how/santorini-nyhteri.html",
+"note": "2022 vintage"
+}
+],
+"checked": "24 Nov 2026"
 },
 {
 "name": "Aidani",
@@ -206,6 +291,47 @@
 "price": "",
 "cur": "EUR",
 "notes": "Floral and gentle, from another native island grape."
+},
+{
+"name": "Familia",
+"type": "White",
+"notes": "The winery's 'simplest' Santorini, still age-worthy.",
+"cur": "EUR",
+"prices": [
+{
+"price": 42.2,
+"cur": "EUR",
+"shop": "House of Wine",
+"url": "https://www.houseofwine.gr/how/hatzidaki-santorini-familia.html",
+"note": "2024 vintage, sold out"
+},
+{
+"price": 49.6,
+"cur": "EUR",
+"shop": "Kava Kelari",
+"url": "https://kavakelari.gr/product/santorini-familia-2024-oinopoieio-chatzidaki/",
+"note": "2025 vintage"
+}
+],
+"price": 42.2,
+"checked": "24 Nov 2026"
+},
+{
+"name": "Cuvée No. 15",
+"type": "White",
+"notes": "Tiny-production, low-intervention Assyrtiko.",
+"cur": "EUR",
+"prices": [
+{
+"price": 45.0,
+"cur": "EUR",
+"shop": "House of Wine",
+"url": "https://www.houseofwine.gr/how/santorini-cuvee-15.html",
+"note": "2022 vintage, sold out"
+}
+],
+"price": 45.0,
+"checked": "24 Nov 2026"
 }
 ],
 "events": [],
@@ -261,9 +387,40 @@
 {
 "name": "Thalassitis",
 "type": "White",
-"price": "",
+"price": 25.0,
 "cur": "EUR",
-"notes": "Their flagship Assyrtiko: lemon, flint and sea spray."
+"notes": "Their flagship Assyrtiko: lemon, flint and sea spray.",
+"prices": [
+{
+"price": 25.0,
+"cur": "EUR",
+"shop": "Cava Abatzis",
+"url": "https://cava-abatzis.com/product/%CE%B3%CE%B1%CE%AF%CE%B1-%CE%BF%CE%B9%CE%BD%CE%BF%CF%80%CE%BF%CE%B9%CE%B7%CF%84%CE%B9%CE%BA%CE%AE-%CE%B8%CE%B1%CE%BB%CE%B1%CF%83%CF%83%CE%AF%CF%84%CE%B7%CF%82/",
+"note": "older vintage"
+},
+{
+"price": 26.18,
+"cur": "EUR",
+"shop": "Cabernet.gr",
+"url": "https://www.cabernet.gr/product/gaia-thalassitis/",
+"note": "2021/2022 vintage"
+},
+{
+"price": 32.5,
+"cur": "EUR",
+"shop": "Canava",
+"url": "https://canava.gr/en/product/thalassitis-ktima-gaias/",
+"note": "2024 vintage, sold out"
+},
+{
+"price": 47.1,
+"cur": "EUR",
+"shop": "House of Wine",
+"url": "https://www.houseofwine.gr/how/thalassitis.html",
+"note": "2025 vintage"
+}
+],
+"checked": "24 Nov 2026"
 },
 {
 "name": "Assyrtiko Wild Ferment",
@@ -278,6 +435,23 @@
 "price": "",
 "cur": "EUR",
 "notes": "Traditional sweet wine of the island."
+},
+{
+"name": "Thalassitis Submerged",
+"type": "White",
+"notes": "Rare Assyrtiko aged for years on the Aegean sea bed.",
+"cur": "EUR",
+"prices": [
+{
+"price": 294.0,
+"cur": "EUR",
+"shop": "Kava Gkafas (winepoems.gr)",
+"url": "https://winepoems.gr/product/gaia-oinopoiitiki-thalassitis-vythism/",
+"note": "2019 vintage"
+}
+],
+"price": 294.0,
+"checked": "24 Nov 2026"
 }
 ],
 "events": [],
@@ -304,9 +478,47 @@
 {
 "name": "Pyritis",
 "type": "White",
-"price": "",
+"price": 47.13,
 "cur": "EUR",
-"notes": "Old-vine Assyrtiko with great concentration."
+"notes": "Old-vine Assyrtiko with great concentration.",
+"prices": [
+{
+"price": 47.13,
+"cur": "EUR",
+"shop": "Oak Cava",
+"url": "https://www.oakcava.gr/product/karamolegkos-piritis/",
+"note": "2021 vintage"
+},
+{
+"price": 47.5,
+"cur": "EUR",
+"shop": "Cava.gr (Winelaw)",
+"url": "https://www.cava.gr/gr/CATEGORY/%CE%9A%CE%A1%CE%91%CE%A3%CE%99%CE%91/%CE%95%CE%9B%CE%9B%CE%97%CE%9D%CE%99%CE%9A%CE%9F%CE%A3+%CE%91%CE%9C%CE%A0%CE%95%CE%9B%CE%A9%CE%9D%CE%91%CE%A3/ARTEMIS+KARAMOLEGOS+/1716202071032/",
+"note": "Grand Cuvée 2023"
+},
+{
+"price": 47.5,
+"cur": "EUR",
+"shop": "Cava Rokos",
+"url": "https://www.cavarokos.gr/karamolegkos-puritis-santorini-mega-cuvee-750ml",
+"note": "2023 vintage"
+},
+{
+"price": 49.9,
+"cur": "EUR",
+"shop": "GreekWineShop",
+"url": "https://greekwineshop.gr/product/karamolegkos-pyritis/",
+"note": ""
+},
+{
+"price": 56.0,
+"cur": "EUR",
+"shop": "Ellinikakrasia",
+"url": "https://ellinikakrasia.gr/product/pyritis-cuvee-2023-oinopoieio-artemis-karamolegkos/",
+"note": "2024 vintage"
+}
+],
+"checked": "24 Nov 2026"
 },
 {
 "name": "Nykteri",
@@ -1241,14 +1453,59 @@
 "lng": 22.87,
 "founded": "",
 "style": "white",
-"story": "A family winery near Thessaloniki that turned retsina into a fine wine. Its 'Tear of the Pine' showed that pine-resin wine can be elegant and age-worthy.",
+"story": "A family winery near Thessaloniki that turned retsina into a fine wine. Its 'Tear of the Pine', made from Assyrtiko grown in Goumenissa and aged in barrel with a touch of pine resin, showed that retsina can be elegant and age-worthy.",
 "wines": [
 {
 "name": "Tear of the Pine",
 "type": "White",
-"price": "",
+"price": 11.8,
 "cur": "EUR",
-"notes": "Assyrtiko retsina with pine, citrus and herbs."
+"notes": "Assyrtiko retsina with pine, citrus and herbs.",
+"prices": [
+{
+"price": 11.8,
+"cur": "EUR",
+"shop": "Top Greek Wines",
+"url": "https://www.topgreekwines.gr/%CE%BA%CE%B5%CF%87%CF%81%CE%AE-%CE%B4%CE%AC%CE%BA%CF%81%CF%85-%CF%84%CE%BF%CF%85-%CF%80%CE%B5%CF%8D%CE%BA%CE%BF%CF%85-%CE%BB%CE%B5%CF%85%CE%BA%CF%8C-724.html",
+"note": ""
+},
+{
+"price": 14.57,
+"cur": "EUR",
+"shop": "KalesTimes",
+"url": "https://www.kalestimes.gr/KEXRIS-DAKRY-PEFKOU-RETSINA-750ML",
+"note": "sale price"
+},
+{
+"price": 17.4,
+"cur": "EUR",
+"shop": "Cellier",
+"url": "https://www.cellier.gr/Product/Tear-of-the-Pine-Kehri",
+"note": ""
+},
+{
+"price": 17.7,
+"cur": "EUR",
+"shop": "Kava Gkafas (winepoems.gr)",
+"url": "https://winepoems.gr/product/%CE%BA%CE%B5%CF%87%CF%81%CE%B7%CF%82-%CE%B4%CE%B1%CE%BA%CF%81%CF%85-%CF%84%CE%BF%CF%85-%CF%80%CE%B5%CF%85%CE%BA%CE%BF%CF%85-0-75lt/",
+"note": ""
+},
+{
+"price": 18.72,
+"cur": "EUR",
+"shop": "MyCava",
+"url": "https://mycava.gr/product/kechris-dakri-tou-peukou-retsina-750ml/",
+"note": ""
+},
+{
+"price": 18.8,
+"cur": "EUR",
+"shop": "House of Wine",
+"url": "https://www.houseofwine.gr/en/product/to-dakry-tou-peykou",
+"note": "2024 vintage"
+}
+],
+"checked": "24 Nov 2026"
 },
 {
 "name": "Kechribari",

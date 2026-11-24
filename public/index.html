@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Winear.me</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="leaflet.css">
+<style>
+/* VOICE: warm, unhurried, a sommelier's map rather than a dashboard
+   IDEA: an old cellar map — the world as parchment-free stone, bottles standing where the wine is made
+   PICTURE: the full-screen map itself, bottles coloured by the wine each estate is known for
+   COLOUR and TYPE: deep bordeaux (dominant chrome), stone land, sea in dusk blue-grey; Cormorant Garamond titles + DM Sans
+   LAYOUT: map edge to edge; floating top bar; a right-hand cellar card (bottom sheet on phones) */
+:root{color-scheme:light dark;
+--bg:light-dark(#fbf8f6,#17121a);--ink:light-dark(#22171d,#f2eaee);--mute:light-dark(#6d5d65,#b5a6ad);
+--wine:light-dark(#6d1a36,#c9496f);--wine-d:#4a0f24;--gold:#d7ae4e;--line:light-dark(#e6dde1,#362a31);
+--card:light-dark(#ffffff,#211a21);--sea:light-dark(#cfd8dc,#0f1418);--land:light-dark(#f4efe9,#2a2429);--border:light-dark(#d6cbc3,#463c43);
+--soft:light-dark(#f5edf0,#2c2128)}
+:root[data-theme=light]{color-scheme:light}:root[data-theme=dark]{color-scheme:dark}
+*{box-sizing:border-box;min-width:0}
+html,body{height:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 "DM Sans",system-ui,sans-serif;overflow:hidden}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:700;line-height:1.05;margin:0;text-wrap:balance}
+button,input,select,textarea{font:inherit;color:inherit}
+button{cursor:pointer}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+#map{position:fixed;inset:0;background:var(--sea)}
+.leaflet-container{font:inherit;background:var(--sea)}
+.leaflet-tooltip{font:500 13px "DM Sans",sans-serif;border-radius:8px;border:0;box-shadow:0 4px 14px #0003;background:var(--card);color:var(--ink)}
+.leaflet-tooltip-top:before{border-top-color:var(--card)}
+.leaflet-control-zoom a{background:var(--card)!important;color:var(--ink)!important;border-color:var(--line)!important;width:40px!important;height:40px!important;line-height:40px!important}
+.leaflet-control-attribution{background:color-mix(in srgb,var(--card) 80%,transparent)!important;color:var(--mute)!important;font-size:11px}
+.bottle{filter:drop-shadow(0 3px 3px #0005);transition:transform .15s}
+.bottle:hover{transform:translateY(-3px) scale(1.08)}
+.cluster{display:grid;place-items:center;border-radius:50%;background:var(--wine);color:#fff;font-weight:700;font-size:14px;border:3px solid #fff;box-shadow:0 4px 12px #0004}
+.picking #map{cursor:crosshair}
+
+/* top bar */
+.bar{position:fixed;top:12px;left:12px;right:12px;z-index:1000;display:flex;gap:8px;align-items:center;pointer-events:none}
+.bar>*{pointer-events:auto}
+.brand{display:flex;align-items:center;gap:8px;background:var(--wine-d);color:#fff;padding:6px 14px 6px 10px;border-radius:999px;box-shadow:0 6px 18px #0003;height:46px}
+.brand b{font:700 24px "Cormorant Garamond",serif;letter-spacing:.2px}
+.brand b span{color:var(--gold)}
+.search{position:relative;flex:1;max-width:380px}
+.search input{width:100%;height:46px;border-radius:999px;border:1px solid var(--line);background:var(--card);padding:0 16px 0 42px;font-size:16px;box-shadow:0 6px 18px #0002}
+.search svg{position:absolute;left:14px;top:13px;opacity:.55}
+.results{position:absolute;top:52px;left:0;right:0;background:var(--card);border-radius:14px;box-shadow:0 10px 30px #0003;overflow:hidden;display:none}
+.results button{display:block;width:100%;text-align:left;border:0;background:none;padding:10px 16px;min-height:44px}
+.results button:hover,.results button:focus{background:var(--soft)}
+.results small{color:var(--mute);display:block}
+.sp{flex:1}
+.pill{height:46px;border-radius:999px;border:1px solid var(--line);background:var(--card);padding:0 16px;font-weight:500;box-shadow:0 6px 18px #0002;display:flex;align-items:center;gap:8px;white-space:nowrap}
+.pill:hover{border-color:var(--wine)}
+.me{padding:0 6px 0 6px}
+.me img{width:34px;height:34px;border-radius:50%}
+.badge{background:var(--gold);color:#2a1a00;border-radius:999px;font-size:12px;font-weight:700;padding:1px 7px}
+.menu{position:fixed;top:66px;right:12px;z-index:1001;background:var(--card);border-radius:14px;box-shadow:0 12px 34px #0004;min-width:240px;padding:6px;display:none}
+.menu button{display:flex;justify-content:space-between;align-items:center;width:100%;border:0;background:none;text-align:left;padding:10px 12px;border-radius:10px;min-height:44px}
+.menu button:hover{background:var(--soft)}
+.menu .who{padding:10px 12px;border-bottom:1px solid var(--line);margin-bottom:4px}
+.menu .who small{color:var(--mute);display:block}
+
+/* legend */
+.legend{position:fixed;left:12px;bottom:24px;z-index:900;background:var(--card);border-radius:14px;padding:10px 14px;box-shadow:0 6px 18px #0002;font-size:13px;display:flex;flex-wrap:wrap;gap:6px 14px;max-width:320px}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:5px;vertical-align:-1px;border:1px solid #0002}
+.legend p{margin:0;width:100%;color:var(--mute);font-size:12px}
+
+/* panel */
+.panel{position:fixed;top:70px;right:12px;bottom:12px;width:min(430px,calc(100vw - 24px));z-index:1000;background:var(--card);border-radius:20px;box-shadow:0 16px 44px #0005;display:flex;flex-direction:column;overflow:hidden;transform:translateX(110%);transition:transform .25s ease}
+.panel.open{transform:none}
+.ph{position:relative;padding:22px 22px 16px;background:var(--wine-d);color:#fff}
+.ph h2{font-size:34px}
+.ph .sub{color:#f0d9e1;font-size:14px;margin-top:6px}
+.ph .x{position:absolute;top:12px;right:12px;width:40px;height:40px;border-radius:50%;border:0;background:#ffffff22;color:#fff;font-size:22px;line-height:1}
+.ph .x:hover{background:#ffffff40}
+.ph .meta{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.ph .meta span{background:#ffffff1f;border-radius:999px;padding:3px 10px;font-size:13px}
+.tabs{display:flex;border-bottom:1px solid var(--line);padding:0 10px}
+.tabs button{border:0;background:none;padding:12px 12px;min-height:46px;font-weight:500;color:var(--mute);border-bottom:3px solid transparent}
+.tabs button[aria-selected=true]{color:var(--ink);border-bottom-color:var(--wine)}
+.pb{flex:1;overflow:auto;padding:18px 22px 26px}
+.pb p{margin:0 0 12px}
+.wine{display:grid;grid-template-columns:14px 1fr auto;gap:4px 12px;padding:14px 0;border-bottom:1px solid var(--line)}
+.wine:last-child{border-bottom:0}
+.wine i{width:12px;height:12px;border-radius:50%;margin-top:6px;border:1px solid #0002}
+.wine b{font-weight:700}
+.wine .pr{font-weight:700;white-space:nowrap;text-align:right}
+.wine .n{grid-column:2/4;color:var(--mute);font-size:15px}
+.wine .t{font-size:13px;color:var(--mute);display:block}
+.ev{border:1px solid var(--line);border-radius:14px;padding:14px;margin-bottom:12px}
+.ev h3{font:700 17px "DM Sans",sans-serif}
+.ev .when{color:var(--wine);font-weight:500;font-size:14px;margin:4px 0 6px}
+.ev .who{font-size:13px;color:var(--mute)}
+.ev p{font-size:15px;margin:6px 0 10px}
+.live{display:inline-block;background:#c62e4a;color:#fff;font-size:12px;font-weight:700;border-radius:999px;padding:2px 8px;margin-left:6px;vertical-align:2px}
+.acts{display:flex;flex-wrap:wrap;gap:8px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;min-height:40px;padding:0 14px;border-radius:999px;border:1px solid var(--line);background:var(--card);font-weight:500;font-size:14px;text-decoration:none;color:var(--ink)}
+.btn:hover{border-color:var(--wine)}
+.btn.pri{background:var(--wine);border-color:var(--wine);color:#fff}
+.btn.pri:hover{filter:brightness(1.1)}
+.btn.on{background:var(--soft);border-color:var(--wine)}
+.btn[disabled]{opacity:.5;cursor:default}
+.note{font-size:13px;color:var(--mute)}
+.empty{color:var(--mute);text-align:center;padding:30px 10px}
+
+/* calendar */
+.cal-h{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px}
+.cal-h h3{font-size:24px}
+.cal-h button{width:40px;height:40px;border-radius:50%;border:1px solid var(--line);background:var(--card)}
+.cal{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:3px;margin-bottom:16px}
+.cal .dow{font-size:12px;color:var(--mute);text-align:center;padding:4px 0}
+.cal button{height:42px;border:0;border-radius:10px;background:none;font-size:14px;position:relative;min-height:36px}
+.cal button:hover{background:var(--soft)}
+.cal button.has::after{content:"";position:absolute;left:50%;bottom:5px;width:6px;height:6px;margin-left:-3px;border-radius:50%;background:var(--wine)}
+.cal button.today{font-weight:700;outline:1px solid var(--gold)}
+.cal button.sel{background:var(--wine);color:#fff}
+.cal button.sel::after{background:#fff}
+.cal button.out{opacity:.35}
+.chk{display:flex;align-items:center;gap:8px;font-size:14px;margin-bottom:14px;min-height:32px}
+.chk input{width:18px;height:18px;accent-color:var(--wine)}
+
+/* forms */
+form label{display:block;font-size:14px;font-weight:500;margin:12px 0 4px}
+form input,form select,form textarea{width:100%;font-size:16px;padding:10px 12px;border-radius:10px;border:1px solid var(--border);background:var(--bg)}
+form textarea{min-height:90px;resize:vertical}
+.row{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.box{border:1px solid var(--line);border-radius:14px;padding:4px 12px 12px;margin-top:10px;position:relative}
+.box .rm{position:absolute;top:8px;right:8px;border:0;background:none;color:var(--mute);min-height:32px;font-size:13px}
+form h3{font-size:22px;margin-top:22px}
+.status{border-radius:14px;padding:14px;background:var(--soft);margin-bottom:12px}
+.req{border:1px solid var(--line);border-radius:14px;padding:14px;margin-bottom:12px}
+.req .person{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.req img{width:34px;height:34px;border-radius:50%}
+.req small{color:var(--mute);display:block}
+.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%) translateY(120px);background:var(--ink);color:var(--bg);padding:12px 18px;border-radius:12px;z-index:3000;transition:transform .25s;max-width:90vw}
+.toast.show{transform:translateX(-50%)}
+
+/* gate */
+.gate{position:fixed;inset:0;z-index:2000;display:grid;place-items:center;background:color-mix(in srgb,var(--wine-d) 55%,transparent);backdrop-filter:blur(3px);padding:16px}
+.gate[hidden]{display:none}
+.gcard{background:var(--card);border-radius:24px;max-width:440px;width:100%;padding:34px 30px 26px;box-shadow:0 30px 70px #0006;text-align:center}
+.gcard h1{font-size:46px;margin:12px 0 8px}
+.gcard h1 span{color:var(--wine)}
+.gcard p{color:var(--mute);margin:0 0 22px}
+.gbtn{display:flex;align-items:center;justify-content:center;gap:12px;width:100%;min-height:52px;border-radius:999px;border:1px solid var(--border);background:var(--card);font-weight:700;font-size:16px}
+.gbtn img{width:28px;height:28px;border-radius:50%}
+.gbtn:hover{border-color:var(--wine)}
+.guest{margin-top:12px;border:0;background:none;color:var(--mute);text-decoration:underline;min-height:40px}
+.proto{font-size:12px;color:var(--mute);margin-top:16px;line-height:1.4}
+
+@media(max-width:700px){
+ .brand b{display:none}.brand{padding:6px 10px}
+ .pill .lbl{display:none}.pill{padding:0 13px}
+ .panel{top:auto;left:0;right:0;bottom:0;width:100%;height:76vh;border-radius:20px 20px 0 0;transform:translateY(105%)}
+ .legend{display:none}
+ .search{max-width:none}.sp{display:none}
+}
+@media(prefers-reduced-motion:reduce){.panel,.toast,.bottle{transition:none}}
+</style>
+</head>
+<body>
+<div id="map" aria-label="World map of wineries"></div>
+
+<header class="bar">
+  <div class="brand" aria-label="Winear.me">
+    <svg width="22" height="34" viewBox="0 0 26 44" aria-hidden="true"><path d="M10 1h6v10c0 3 6 6 6 13v17a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V24c0-7 6-10 6-13z" fill="#d7ae4e"/><rect x="6" y="26" width="14" height="9" rx="1" fill="#4a0f24"/></svg>
+    <b>Winear<span>.me</span></b>
+  </div>
+  <div class="search">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg>
+    <input id="q" type="search" placeholder="Search wineries, regions, countries" autocomplete="off" aria-label="Search wineries">
+    <div class="results" id="results" role="listbox"></div>
+  </div>
+  <div class="sp"></div>
+  <button class="pill" id="evBtn" aria-label="Events calendar"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><span class="lbl">Events</span></button>
+  <button class="pill me" id="meBtn" aria-label="Account menu" aria-haspopup="true"><img id="meImg" alt=""><span id="adminBadge" class="badge" hidden></span></button>
+</header>
+<div class="menu" id="menu" role="menu"></div>
+
+<div class="legend" id="legend"></div>
+
+<aside class="panel" id="panel" aria-live="polite"></aside>
+<div class="toast" id="toast" role="status"></div>
+
+<div class="gate" id="gate" hidden>
+  <div class="gcard">
+    <svg width="40" height="66" viewBox="0 0 26 44" aria-hidden="true"><path d="M10 1h6v10c0 3 6 6 6 13v17a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V24c0-7 6-10 6-13z" fill="#6d1a36"/><rect x="6" y="26" width="14" height="9" rx="1" fill="#d7ae4e"/></svg>
+    <h1>Winear<span>.me</span></h1>
+    <p>Find wineries near you, read their stories, browse their wines and never miss a tasting.</p>
+    <button class="gbtn" id="signin" disabled><img id="gImg" alt="" hidden><span id="gTxt">Checking your account…</span></button>
+    <button class="guest" id="guestBtn">Just browse the map</button>
+    <div class="proto">Prototype: sign-in uses your Claude account. The live site will use “Sign in with Google”.</div>
+  </div>
+</div>
+
+<script src="leaflet.js"></script>
+<script src="topojson-client.min.js"></script>
+<script>
+{
+const $=s=>document.querySelector(s);
+const esc=v=>String(v??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const STYLES={red:["Red","#7b1e3a"],white:["White","#e6d27e"],rose:["Rosé","#ee9aac"],sparkling:["Sparkling","#f3e7b5"],sweet:["Sweet","#c98a2c"],amber:["Amber","#d0773a"]};
+const TYPECOL={Red:"#7b1e3a",White:"#e6d27e","Rosé":"#ee9aac",Sparkling:"#f3e7b5",Sweet:"#c98a2c",Amber:"#d0773a",Fortified:"#5a1a12"};
+const NOW=new Date();
+const S={catalog:[],mine:{},approved:new Set(),requests:{},myReq:null,plans:[],db:null,user:null,id:null,owner:false,guest:false,open:null,tab:"story",view:null,calMonth:new Date(NOW.getFullYear(),NOW.getMonth(),1),calDay:null,inView:false};
+
+/* ---------- map ---------- */
+const map=L.map("map",{zoomControl:false,worldCopyJump:true,minZoom:2,maxZoom:11,zoomSnap:.5,attributionControl:true}).setView([22,10],2.5);
+L.control.zoom({position:"bottomright"}).addTo(map);
+map.attributionControl.setPrefix("Map data: Natural Earth");
+const renderer=L.canvas({padding:.5});
+let land=null;
+const probe=document.createElement("i");probe.style.display="none";document.body.appendChild(probe);
+const css=n=>{probe.style.color=`var(${n})`;return getComputedStyle(probe).color};
+function unwrap(g){const fix=r=>{let off=0;return r.map((c,i)=>{if(i){const d=c[0]+off-r[i-1][0]-(r[i-1].off||0);if(d>180)off-=360;else if(d<-180)off+=360}const o=[c[0]+off,c[1]];o.off=0;r[i].off=off;return o})};
+  if(g.type==="Polygon")g.coordinates=g.coordinates.map(fix);else if(g.type==="MultiPolygon")g.coordinates=g.coordinates.map(p=>p.map(fix));return g}
+function landStyle(){return{renderer,fillColor:css("--land")||"#f4efe9",fillOpacity:1,color:css("--border")||"#d6cbc3",weight:.8}}
+fetch("countries.json").then(r=>r.json()).then(t=>{const fc=topojson.feature(t,t.objects.countries);fc.features=fc.features.filter(f=>f.id!=="010").map(f=>(f.geometry&&unwrap(f.geometry),f));land=L.geoJSON(fc,{style:landStyle,interactive:false}).addTo(map);land.bringToBack()}).catch(()=>toast("The map outline could not load."));
+const restyle=()=>{if(land)land.setStyle(landStyle())};
+matchMedia("(prefers-color-scheme: dark)").addEventListener("change",restyle);
+new MutationObserver(restyle).observe(document.documentElement,{attributes:true,attributeFilter:["data-theme"]});
+
+function bottleSvg(c){return `<svg class="bottle" width="26" height="44" viewBox="0 0 26 44"><ellipse cx="13" cy="42.5" rx="9" ry="1.6" fill="#0003"/><path d="M10 1h6v10c0 3 6 6 6 13v17a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V24c0-7 6-10 6-13z" fill="${c}" stroke="#2a0d18" stroke-width="1.2"/><rect x="9.6" y=".6" width="6.8" height="4" rx="1" fill="#2a0d18"/><rect x="6" y="25" width="14" height="10" rx="1.2" fill="#fbf6ee" stroke="#2a0d18" stroke-width=".6"/><path d="M8 17c1.5-2 2.5-3 2.5-6" stroke="#fff8" stroke-width="1.6" fill="none" stroke-linecap="round"/></svg>`}
+const icons={};
+for(const k in STYLES)icons[k]=L.divIcon({className:"",html:bottleSvg(STYLES[k][1]),iconSize:[26,44],iconAnchor:[13,43],tooltipAnchor:[0,-42]});
+const markers=L.layerGroup().addTo(map);
+
+function all(){
+  const mine=Object.entries(S.mine).filter(([id,w])=>S.approved.has(id)&&w.published!==false&&isFinite(+w.lat)&&isFinite(+w.lng)).map(([id,w])=>({...w,id,user:true}));
+  return S.catalog.concat(mine);
+}
+function drawMarkers(){
+  markers.clearLayers();
+  const list=all(),z=map.getZoom(),cell=z<6?56:0,groups=[];
+  for(const w of list){
+    const p=map.latLngToLayerPoint([+w.lat,+w.lng]);
+    let g=cell?groups.find(g=>Math.abs(g.p.x-p.x)<cell&&Math.abs(g.p.y-p.y)<cell):null;
+    if(g)g.items.push(w);else groups.push({p,items:[w]});
+  }
+  for(const g of groups){
+    if(g.items.length===1){
+      const w=g.items[0];
+      L.marker([+w.lat,+w.lng],{icon:icons[w.style]||icons.red,keyboard:true,title:w.name}).bindTooltip(esc(w.name),{direction:"top"}).on("click",()=>openWinery(w.id)).addTo(markers);
+    }else{
+      const n=g.items.length,sz=34+Math.min(20,n*3);
+      const b=L.latLngBounds(g.items.map(w=>[+w.lat,+w.lng]));
+      L.marker(b.getCenter(),{icon:L.divIcon({className:"",html:`<div class="cluster" style="width:${sz}px;height:${sz}px">${n}</div>`,iconSize:[sz,sz]}),title:n+" wineries"})
+        .bindTooltip(esc([...new Set(g.items.map(w=>w.region.split(/[–,]/)[0].trim()))].slice(0,3).join(", ")),{direction:"top"})
+        .on("click",()=>map.flyToBounds(b.pad(.6),{maxZoom:Math.max(z+2.5,7),duration:.8})).addTo(markers);
+    }
+  }
+}
+map.on("zoomend",drawMarkers);
+const find=id=>all().find(w=>w.id===id);
+
+/* ---------- legend ---------- */
+$("#legend").innerHTML=Object.values(STYLES).map(([n,c])=>`<span><i style="background:${c}"></i>${n}</span>`).join("")+`<p>Bottle colour = the wine each estate is best known for. Sample wineries are fictional.</p>`;
+
+/* ---------- helpers ---------- */
+function toast(m){const t=$("#toast");t.textContent=m;t.classList.add("show");clearTimeout(toast.h);toast.h=setTimeout(()=>t.classList.remove("show"),2600)}
+const dfmt=new Intl.DateTimeFormat(undefined,{weekday:"short",day:"numeric",month:"short"});
+const tfmt=new Intl.DateTimeFormat(undefined,{hour:"2-digit",minute:"2-digit"});
+function when(e){const a=new Date(e.start),b=new Date(e.end||e.start);const same=a.toDateString()===b.toDateString();return same?`${dfmt.format(a)} · ${tfmt.format(a)}–${tfmt.format(b)}`:`${dfmt.format(a)} ${tfmt.format(a)} → ${dfmt.format(b)} ${tfmt.format(b)}`}
+const isLive=e=>new Date(e.start)<=NOW&&NOW<=new Date(e.end||e.start);
+function money(p,c){if(p===0||p==="0")return"Free";if(p===""||p==null)return"";try{return new Intl.NumberFormat(undefined,{style:"currency",currency:c||"EUR",maximumFractionDigits:0}).format(+p)}catch{return esc(p+" "+(c||""))}}
+const gdate=s=>{const d=new Date(s);const p=n=>String(n).padStart(2,"0");return`${d.getFullYear()}${p(d.getMonth()+1)}${p(d.getDate())}T${p(d.getHours())}${p(d.getMinutes())}00`};
+function gcal(w,e){const u=new URL("https://calendar.google.com/calendar/render");u.searchParams.set("action","TEMPLATE");u.searchParams.set("text",`${e.title} – ${w.name}`);u.searchParams.set("dates",gdate(e.start)+"/"+gdate(e.end||e.start));u.searchParams.set("details",(e.desc||"")+"\n\nFound on Winear.me");u.searchParams.set("location",`${w.name}, ${w.region}, ${w.country}`);return u.toString()}
+function allEvents(){const out=[];for(const w of all())for(const e of(w.events||[]))if(e&&e.start)out.push({w,e});return out.sort((a,b)=>new Date(a.e.start)-new Date(b.e.start))}
+const planKey=(w,e)=>w.id+"|"+e.id;
+const saved=(w,e)=>S.plans.includes(planKey(w,e));
+
+/* ---------- panel ---------- */
+const panel=$("#panel");
+function show(html,view){panel.innerHTML=html;panel.classList.add("open");S.view=view;panel.querySelector(".x")?.addEventListener("click",closePanel)}
+function closePanel(){panel.classList.remove("open");S.view=null;S.open=null;stopPick()}
+document.addEventListener("keydown",e=>{if(e.key==="Escape"){if($("#menu").style.display==="block")hideMenu();else closePanel()}});
+const head=(t,sub,meta="")=>`<div class="ph"><button class="x" aria-label="Close">×</button><h2>${t}</h2>${sub?`<div class="sub">${sub}</div>`:""}${meta}</div>`;
+
+function evCard(w,e,showWinery){
+  const sv=saved(w,e);
+  return `<div class="ev"><h3>${esc(e.title)}${isLive(e)?'<span class="live">Happening now</span>':""}</h3>
+  <div class="when">${esc(when(e))}${e.price!==""&&e.price!=null?" · "+esc(money(e.price,(w.wines?.[0]?.cur)||"EUR")):""}</div>
+  ${showWinery?`<div class="who">${esc(w.name)} · ${esc(w.region)}, ${esc(w.country)}</div>`:""}
+  ${e.desc?`<p>${esc(e.desc)}</p>`:""}
+  <div class="acts">
+   <a class="btn" href="${esc(gcal(w,e))}" target="_blank" rel="noopener">＋ Google Calendar</a>
+   <button class="btn ${sv?"on":""}" data-save="${esc(planKey(w,e))}" ${S.id?"":"disabled title='Sign in to save'"}>${sv?"★ Saved":"☆ Save to my plans"}</button>
+   ${showWinery?`<button class="btn" data-open="${esc(w.id)}">View winery</button>`:""}
+  </div></div>`;
+}
+panel.addEventListener("click",async ev=>{
+  const s=ev.target.closest("[data-save]");if(s){togglePlan(s.dataset.save);return}
+  const o=ev.target.closest("[data-open]");if(o){openWinery(o.dataset.open,true);return}
+  const t=ev.target.closest("[data-tab]");if(t){S.tab=t.dataset.tab;renderWinery();return}
+});
+
+function openWinery(id,fly){
+  const w=find(id);if(!w)return;
+  S.open=id;S.tab="story";renderWinery();
+  if(fly)map.flyTo([+w.lat,+w.lng],Math.max(map.getZoom(),10.5),{duration:.8});
+}
+function renderWinery(){
+  const w=find(S.open);if(!w)return closePanel();
+  const st=STYLES[w.style]||STYLES.red;
+  const meta=`<div class="meta">${w.founded?`<span>Since ${esc(w.founded)}</span>`:""}<span>${esc(st[0])} specialist</span>${w.hours?`<span>${esc(w.hours)}</span>`:""}</div>`;
+  const tabs=[["story","Story"],["wines",`Wines (${(w.wines||[]).length})`],["events",`Events (${(w.events||[]).length})`]];
+  let body="";
+  if(S.tab==="story")body=`${String(w.story||"").split(/\n+/).map(p=>`<p>${esc(p)}</p>`).join("")||'<p class="empty">No story yet.</p>'}${w.user?"":'<p class="note">Sample winery for the prototype.</p>'}`;
+  if(S.tab==="wines")body=(w.wines||[]).length?(w.wines).map(x=>`<div class="wine"><i style="background:${TYPECOL[x.type]||"#999"}"></i><div><b>${esc(x.name)}</b><span class="t">${esc(x.type)}</span></div><div class="pr">${esc(money(x.price,x.cur))}</div><div class="n">${esc(x.notes)}</div></div>`).join(""):'<p class="empty">No wines listed yet.</p>';
+  if(S.tab==="events"){const evs=[...(w.events||[])].filter(e=>e&&e.start).sort((a,b)=>new Date(a.start)-new Date(b.start));const up=evs.filter(e=>new Date(e.end||e.start)>=NOW);body=up.length?up.map(e=>evCard(w,e,false)).join(""):'<p class="empty">No upcoming events.</p>'}
+  show(head(esc(w.name),`${esc(w.region)} · ${esc(w.country)}`,meta)+`<div class="tabs" role="tablist">${tabs.map(([k,l])=>`<button role="tab" data-tab="${k}" aria-selected="${S.tab===k}">${l}</button>`).join("")}</div><div class="pb">${body}</div>`,"winery");
+}
+
+/* ---------- events calendar ---------- */
+$("#evBtn").addEventListener("click",()=>{S.view==="events"?closePanel():renderEvents()});
+function renderEvents(){
+  let list=allEvents().filter(x=>new Date(x.e.end||x.e.start)>=new Date(NOW.getFullYear(),NOW.getMonth(),NOW.getDate()));
+  if(S.inView){const b=map.getBounds();list=list.filter(x=>b.contains([+x.w.lat,+x.w.lng]))}
+  const m=S.calMonth,y=m.getFullYear(),mo=m.getMonth();
+  const days=new Set(list.map(x=>new Date(x.e.start).toDateString()));
+  const first=(new Date(y,mo,1).getDay()+6)%7,start=new Date(y,mo,1-first);
+  let cells="";for(let i=0;i<42;i++){const d=new Date(start);d.setDate(start.getDate()+i);const k=d.toDateString();
+    cells+=`<button data-day="${d.getTime()}" class="${days.has(k)?"has ":""}${k===NOW.toDateString()?"today ":""}${S.calDay===k?"sel ":""}${d.getMonth()!==mo?"out":""}" aria-label="${dfmt.format(d)}">${d.getDate()}</button>`}
+  const shown=S.calDay?list.filter(x=>new Date(x.e.start).toDateString()===S.calDay||(isLive(x.e)&&S.calDay===NOW.toDateString())):list;
+  const live=list.filter(x=>isLive(x.e));
+  show(head("Wine events","Tastings, open cellars, festivals and dinners")+`<div class="pb">
+   <div class="cal-h"><button id="pm" aria-label="Previous month">‹</button><h3>${m.toLocaleString(undefined,{month:"long",year:"numeric"})}</h3><button id="nm" aria-label="Next month">›</button></div>
+   <div class="cal">${["Mo","Tu","We","Th","Fr","Sa","Su"].map(d=>`<div class="dow">${d}</div>`).join("")}${cells}</div>
+   <label class="chk"><input type="checkbox" id="inview" ${S.inView?"checked":""}> Only wineries in the visible map area</label>
+   ${!S.calDay&&live.length?`<h3 style="font-size:22px;margin:4px 0 10px">Happening now</h3>${live.map(x=>evCard(x.w,x.e,true)).join("")}<h3 style="font-size:22px;margin:18px 0 10px">Coming up</h3>`:`<h3 style="font-size:22px;margin:4px 0 10px">${S.calDay?esc(dfmt.format(new Date(S.calDay))):"Coming up"}${S.calDay?' <button class="btn" id="clr" style="margin-left:8px">Show all</button>':""}</h3>`}
+   ${(S.calDay?shown:shown.filter(x=>!isLive(x.e))).map(x=>evCard(x.w,x.e,true)).join("")||'<p class="empty">No events on this day.</p>'}
+  </div>`,"events");
+  $("#pm").onclick=()=>{S.calMonth=new Date(y,mo-1,1);renderEvents()};
+  $("#nm").onclick=()=>{S.calMonth=new Date(y,mo+1,1);renderEvents()};
+  $("#inview").onchange=e=>{S.inView=e.target.checked;renderEvents()};
+  $("#clr")?.addEventListener("click",()=>{S.calDay=null;renderEvents()});
+  panel.querySelectorAll("[data-day]").forEach(b=>b.onclick=()=>{const k=new Date(+b.dataset.day).toDateString();S.calDay=S.calDay===k?null:k;renderEvents()});
+}
+map.on("moveend",()=>{if(S.view==="events"&&S.inView)renderEvents()});
+
+/* ---------- plans ---------- */
+async function togglePlan(key){
+  if(!S.db||!S.id)return toast("Sign in to save events.");
+  const next=S.plans.includes(key)?S.plans.filter(k=>k!==key):[...S.plans,key];
+  const prev=S.plans;S.plans=next;rerender();
+  try{await S.db.doc(`data/users/${S.id}/plans`).set({items:next});toast(next.length>prev.length?"Saved to My plans":"Removed from My plans")}
+  catch(e){S.plans=prev;rerender();toast("Could not save. You may need Contributor access.")}
+}
+function renderPlans(){
+  const items=allEvents().filter(x=>saved(x.w,x.e));
+  show(head("My plans","Events you saved")+`<div class="pb">${items.map(x=>evCard(x.w,x.e,true)).join("")||'<p class="empty">Nothing saved yet. Open a winery or the Events calendar and tap “Save”.</p>'}</div>`,"plans");
+}
+
+/* ---------- account menu ---------- */
+function hideMenu(){$("#menu").style.display="none"}
+$("#meBtn").addEventListener("click",e=>{e.stopPropagation();const m=$("#menu");if(m.style.display==="block")return hideMenu();renderMenu();m.style.display="block"});
+document.addEventListener("click",e=>{if(!e.target.closest("#menu"))hideMenu()});
+async function renderMenu(){
+  const me=S.user?await S.user.me():null;
+  const pend=Object.values(S.requests).filter(r=>r.status==="pending").length;
+  const isW=S.id&&S.approved.has(S.id);
+  const items=[];
+  if(S.id){
+    items.push(["plans",`My plans <span class="badge">${S.plans.length}</span>`]);
+    items.push(["winery",isW?"My winery":(S.myReq?.status==="pending"?"Winery request · pending":"I’m a winery")]);
+    if(S.owner)items.push(["admin",`Admin · requests ${pend?`<span class="badge">${pend}</span>`:""}`]);
+  }
+  $("#menu").innerHTML=`<div class="who"><b></b><small></small></div>`+items.map(([k,l])=>`<button role="menuitem" data-m="${k}">${l}</button>`).join("");
+  $("#menu .who b").textContent=me?.name||(S.id?"Signed in":"Guest");
+  $("#menu .who small").textContent=me?.email||(S.owner?"Administrator":S.id?"":"Not signed in");
+}
+$("#menu").addEventListener("click",e=>{const b=e.target.closest("[data-m]");if(!b)return;hideMenu();
+  ({plans:renderPlans,winery:renderWineryArea,admin:renderAdmin})[b.dataset.m]()});
+
+/* ---------- winery request & editor ---------- */
+function renderWineryArea(){
+  if(S.approved.has(S.id))return renderEditor();
+  const r=S.myReq;
+  if(r&&r.status==="pending")return show(head("Request sent","Waiting for the administrator")+`<div class="pb"><div class="status"><b>${esc(r.wineryName)}</b><br><span class="note">Sent ${esc(new Date(r.at).toLocaleDateString())}. You can create your winery page as soon as it is approved.</span></div><button class="btn" id="cancelReq">Withdraw request</button></div>`,"request"),$("#cancelReq").onclick=async()=>{try{await S.db.doc("requests/"+S.id).delete();toast("Request withdrawn")}catch{toast("Could not withdraw.")}};
+  show(head("Are you a winery?","Ask to list your estate on Winear.me")+`<div class="pb">
+   ${r&&r.status==="rejected"?'<div class="status">Your previous request was not approved. You can send a new one with more details.</div>':""}
+   <p>Tell us about your winery. Once the administrator approves you, you can build your page: story, wines, prices and events.</p>
+   <form id="reqF">
+    <label for="rn">Winery name</label><input id="rn" required maxlength="80">
+    <div class="row"><div><label for="rr">Region</label><input id="rr" required maxlength="60"></div><div><label for="rc">Country</label><input id="rc" required maxlength="60"></div></div>
+    <label for="rw">Website or social page</label><input id="rw" maxlength="200" placeholder="https://">
+    <label for="rp">Phone</label><input id="rp" maxlength="40" inputmode="tel">
+    <label for="rm">Message to the administrator</label><textarea id="rm" maxlength="800" placeholder="Who you are, what you make, how we can verify you"></textarea>
+    <p style="margin-top:16px"><button class="btn pri" type="submit">Send request</button></p>
+   </form></div>`,"request");
+  $("#reqF").onsubmit=async e=>{e.preventDefault();if(!S.db||!S.id)return toast("Sign in first.");
+    const d={wineryName:$("#rn").value.trim(),region:$("#rr").value.trim(),country:$("#rc").value.trim(),website:$("#rw").value.trim(),phone:$("#rp").value.trim(),message:$("#rm").value.trim(),status:"pending",at:new Date().toISOString()};
+    try{await S.db.doc("requests/"+S.id).set(d);S.myReq=d;toast("Request sent");renderWineryArea()}catch{toast("Could not send. Ask the site owner for Contributor access.")}};
+}
+const blankWine=()=>({name:"",type:"Red",price:"",cur:"EUR",notes:""});
+const blankEv=()=>({id:"e"+Date.now().toString(36),title:"",start:"",end:"",price:"",desc:""});
+let draft=null,pickMarker=null;
+function renderEditor(){
+  const cur=S.mine[S.id];
+  if(!draft)draft=cur?JSON.parse(JSON.stringify(cur)):{name:S.myReq?.wineryName||"",region:S.myReq?.region||"",country:S.myReq?.country||"",founded:"",style:"red",hours:"",story:"",lat:"",lng:"",wines:[blankWine()],events:[],published:true};
+  const d=draft;
+  const opt=(o,v)=>o.map(([k,l])=>`<option value="${esc(k)}" ${k===v?"selected":""}>${esc(l)}</option>`).join("");
+  const types=["Red","White","Rosé","Sparkling","Sweet","Amber","Fortified"].map(t=>[t,t]);
+  show(head("My winery",cur?"Edit your page, changes go live when you save":"Create your page")+`<div class="pb"><form id="edF">
+   <label for="f-name">Winery name</label><input id="f-name" data-k="name" required maxlength="80">
+   <div class="row"><div><label for="f-region">Region</label><input id="f-region" data-k="region" required maxlength="60"></div><div><label for="f-country">Country</label><input id="f-country" data-k="country" required maxlength="60"></div></div>
+   <div class="row"><div><label for="f-founded">Founded</label><input id="f-founded" data-k="founded" inputmode="numeric" maxlength="4"></div><div><label for="f-style">Best known for</label><select id="f-style" data-k="style">${opt(Object.entries(STYLES).map(([k,v])=>[k,v[0]]),d.style)}</select></div></div>
+   <label for="f-hours">Opening hours</label><input id="f-hours" data-k="hours" maxlength="80" placeholder="e.g. Daily 10:00–18:00">
+   <label for="f-story">History and story</label><textarea id="f-story" data-k="story" maxlength="4000"></textarea>
+   <label>Location on the map</label>
+   <div class="row"><input id="f-lat" data-k="lat" placeholder="Latitude" inputmode="decimal" aria-label="Latitude"><input id="f-lng" data-k="lng" placeholder="Longitude" inputmode="decimal" aria-label="Longitude"></div>
+   <p style="margin-top:8px"><button type="button" class="btn" id="pick">📍 Pick on map</button> <span class="note" id="pickNote"></span></p>
+   <h3>Wines and prices</h3>
+   ${d.wines.map((x,i)=>`<div class="box"><button type="button" class="rm" data-rmw="${i}">Remove</button>
+     <label for="w${i}n">Wine name</label><input id="w${i}n" data-w="${i}" data-f="name" value="${esc(x.name)}" maxlength="80">
+     <div class="row"><div><label for="w${i}t">Type</label><select id="w${i}t" data-w="${i}" data-f="type">${opt(types,x.type)}</select></div><div class="row"><div><label for="w${i}p">Price</label><input id="w${i}p" data-w="${i}" data-f="price" value="${esc(x.price)}" inputmode="decimal"></div><div><label for="w${i}c">Currency</label><input id="w${i}c" data-w="${i}" data-f="cur" value="${esc(x.cur)}" maxlength="3"></div></div></div>
+     <label for="w${i}o">Tasting notes</label><textarea id="w${i}o" data-w="${i}" data-f="notes" maxlength="600">${esc(x.notes)}</textarea></div>`).join("")}
+   <p style="margin-top:10px"><button type="button" class="btn" id="addW">＋ Add a wine</button></p>
+   <h3>Events</h3>
+   ${d.events.map((x,i)=>`<div class="box"><button type="button" class="rm" data-rme="${i}">Remove</button>
+     <label for="e${i}t">Event title</label><input id="e${i}t" data-e="${i}" data-f="title" value="${esc(x.title)}" maxlength="100">
+     <div class="row"><div><label for="e${i}s">Starts</label><input type="datetime-local" id="e${i}s" data-e="${i}" data-f="start" value="${esc(x.start)}"></div><div><label for="e${i}e">Ends</label><input type="datetime-local" id="e${i}e" data-e="${i}" data-f="end" value="${esc(x.end)}"></div></div>
+     <label for="e${i}p">Price (0 = free)</label><input id="e${i}p" data-e="${i}" data-f="price" value="${esc(x.price)}" inputmode="decimal">
+     <label for="e${i}d">Description</label><textarea id="e${i}d" data-e="${i}" data-f="desc" maxlength="800">${esc(x.desc)}</textarea></div>`).join("")||'<p class="note">No events yet: open doors, tastings, harvest days…</p>'}
+   <p style="margin-top:10px"><button type="button" class="btn" id="addE">＋ Add an event</button></p>
+   <label class="chk" style="margin-top:18px"><input type="checkbox" id="f-pub" ${d.published!==false?"checked":""}> Show my winery on the map</label>
+   <p><button class="btn pri" type="submit">Save winery</button> ${cur?'<button type="button" class="btn" id="viewMine">View on map</button>':""}</p>
+  </form></div>`,"editor");
+  for(const k of["name","region","country","founded","hours","story","lat","lng"])$("#f-"+k).value=d[k]??"";
+  const f=$("#edF");
+  f.addEventListener("input",e=>{const t=e.target;if(t.dataset.k)d[t.dataset.k]=t.value;if(t.dataset.w)d.wines[+t.dataset.w][t.dataset.f]=t.value;if(t.dataset.e)d.events[+t.dataset.e][t.dataset.f]=t.value;if(t.id==="f-pub")d.published=t.checked});
+  f.addEventListener("change",e=>{const t=e.target;if(t.tagName==="SELECT"){if(t.dataset.k)d[t.dataset.k]=t.value;if(t.dataset.w)d.wines[+t.dataset.w].type=t.value}if(t.id==="f-pub")d.published=t.checked});
+  f.querySelectorAll("[data-rmw]").forEach(b=>b.onclick=()=>{d.wines.splice(+b.dataset.rmw,1);renderEditor()});
+  f.querySelectorAll("[data-rme]").forEach(b=>b.onclick=()=>{d.events.splice(+b.dataset.rme,1);renderEditor()});
+  $("#addW").onclick=()=>{d.wines.push(blankWine());renderEditor()};
+  $("#addE").onclick=()=>{d.events.push(blankEv());renderEditor()};
+  $("#pick").onclick=startPick;
+  $("#viewMine")?.addEventListener("click",()=>{draft=null;openWinery(S.id,true)});
+  f.onsubmit=async e=>{e.preventDefault();
+    const lat=+d.lat,lng=+d.lng;if(!d.lat||!d.lng||!isFinite(lat)||!isFinite(lng)||Math.abs(lat)>90||Math.abs(lng)>180)return toast("Set your location: tap “Pick on map”.");
+    const doc={name:d.name.trim(),region:d.region.trim(),country:d.country.trim(),founded:String(d.founded||"").trim(),style:STYLES[d.style]?d.style:"red",hours:d.hours.trim(),story:d.story.trim(),lat,lng,published:d.published!==false,
+      wines:d.wines.filter(w=>w.name.trim()).map(w=>({name:w.name.trim(),type:w.type,price:w.price===""?"":+w.price||0,cur:(w.cur||"EUR").toUpperCase().slice(0,3),notes:w.notes.trim()})),
+      events:d.events.filter(x=>x.title.trim()&&x.start).map(x=>({id:x.id,title:x.title.trim(),start:x.start,end:x.end||x.start,price:x.price===""?"":+x.price||0,desc:x.desc.trim()})),
+      updated:new Date().toISOString()};
+    try{await S.db.doc("wineries/"+S.id).set(doc);S.mine[S.id]=doc;drawMarkers();toast("Winery saved");draft=null;renderEditor()}catch{toast("Could not save. Check your access with the site owner.")}};
+}
+function startPick(){document.body.classList.add("picking");$("#pickNote").textContent="Click your winery’s spot on the map…";if(innerWidth<=700)panel.classList.remove("open");
+  map.once("click",e=>{stopPick();if(!draft)return;draft.lat=e.latlng.lat.toFixed(5);draft.lng=L.Util.wrapNum(e.latlng.lng,[-180,180]).toFixed(5);
+    if(pickMarker)pickMarker.remove();pickMarker=L.marker(e.latlng,{icon:icons[draft.style]||icons.red}).addTo(map);renderEditor();toast("Location set")})}
+function stopPick(){document.body.classList.remove("picking");if(S.view!=="editor"&&pickMarker){pickMarker.remove();pickMarker=null}}
+
+/* ---------- admin ---------- */
+async function renderAdmin(){
+  if(!S.owner)return;
+  const reqs=Object.entries(S.requests).sort((a,b)=>String(b[1].at).localeCompare(String(a[1].at)));
+  const ids=[...new Set([...reqs.map(r=>r[0]),...S.approved])];
+  const ps=ids.length&&S.user?await S.user.profiles(ids):{};
+  const person=id=>{const p=ps[id]||{};return`<div class="person"><img src="${esc(p.avatarUrl||"")}" alt=""><div><b>${esc(p.name||"Someone")}</b><small>${esc(p.email||"")}</small></div></div>`};
+  const pend=reqs.filter(r=>r[1].status==="pending"),done=reqs.filter(r=>r[1].status!=="pending");
+  const card=([id,r])=>`<div class="req">${person(id)}<b>${esc(r.wineryName)}</b> · ${esc(r.region)}, ${esc(r.country)}
+    ${r.website?`<small>${/^https:\/\//.test(r.website)?`<a href="${esc(r.website)}" target="_blank" rel="noopener">${esc(r.website)}</a>`:esc(r.website)}</small>`:""}${r.phone?`<small>${esc(r.phone)}</small>`:""}
+    ${r.message?`<p style="margin:8px 0">${esc(r.message)}</p>`:""}<small>Sent ${esc(new Date(r.at).toLocaleString())}${r.status!=="pending"?" · "+esc(r.status):""}</small>
+    <div class="acts" style="margin-top:10px">${S.approved.has(id)?`<button class="btn" data-revoke="${esc(id)}">Revoke winery access</button>`:`<button class="btn pri" data-approve="${esc(id)}">Approve</button>${r.status==="pending"?`<button class="btn" data-reject="${esc(id)}">Reject</button>`:""}`}</div></div>`;
+  show(head("Administrator","Winery requests and approvals")+`<div class="pb">
+   <h3 style="font-size:22px;margin-bottom:10px">Waiting (${pend.length})</h3>${pend.map(card).join("")||'<p class="empty">No pending requests.</p>'}
+   <h3 style="font-size:22px;margin:18px 0 10px">Handled</h3>${done.map(card).join("")||'<p class="note">Approved and rejected requests appear here.</p>'}
+  </div>`,"admin");
+  panel.querySelectorAll("[data-approve]").forEach(b=>b.onclick=()=>decide(b.dataset.approve,"approved"));
+  panel.querySelectorAll("[data-reject]").forEach(b=>b.onclick=()=>decide(b.dataset.reject,"rejected"));
+  panel.querySelectorAll("[data-revoke]").forEach(b=>b.onclick=()=>decide(b.dataset.revoke,"revoked"));
+}
+async function decide(id,st){
+  try{
+    if(st==="approved")await S.db.doc("approved/"+id).set({at:new Date().toISOString()});
+    else await S.db.doc("approved/"+id).delete();
+    if(S.requests[id])await S.db.doc("requests/"+id).update({status:st,decidedAt:new Date().toISOString()});
+    toast(st==="approved"?"Approved: they can now create their winery":st==="rejected"?"Request rejected":"Access revoked");
+  }catch{toast("Could not update.")}
+}
+
+function rerender(){updateBadge();if(S.view==="winery")renderWinery();else if(S.view==="events")renderEvents();else if(S.view==="plans")renderPlans();else if(S.view==="admin")renderAdmin()}
+function updateBadge(){const n=Object.values(S.requests).filter(r=>r.status==="pending").length;const b=$("#adminBadge");b.hidden=!(S.owner&&n);b.textContent=n}
+
+/* ---------- search ---------- */
+const q=$("#q"),res=$("#results");
+q.addEventListener("input",()=>{const t=q.value.trim().toLowerCase();if(!t){res.style.display="none";return}
+  const hits=all().filter(w=>[w.name,w.region,w.country].join(" ").toLowerCase().includes(t)).slice(0,7);
+  res.innerHTML=hits.map(w=>`<button data-open="${esc(w.id)}">${esc(w.name)}<small>${esc(w.region)}, ${esc(w.country)}</small></button>`).join("")||'<div class="empty" style="padding:14px">No matches</div>';res.style.display="block"});
+res.addEventListener("click",e=>{const b=e.target.closest("[data-open]");if(!b)return;res.style.display="none";q.value="";openWinery(b.dataset.open,true)});
+q.addEventListener("keydown",e=>{if(e.key==="Enter"){res.querySelector("button")?.click()}});
+document.addEventListener("click",e=>{if(!e.target.closest(".search"))res.style.display="none"});
+
+/* ---------- data ---------- */
+fetch("wineries.json").then(r=>r.json()).then(d=>{S.catalog=d;drawMarkers()}).catch(()=>toast("Sample wineries could not load."));
+
+/* ---------- sign-in ---------- */
+let entered=false;try{entered=sessionStorage.getItem("winear-in")==="1"}catch{}
+
+$("#guestBtn").onclick=()=>{S.guest=true;$("#gate").hidden=true};
+$("#meImg").src="data:image/svg+xml,"+encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34 34"><circle cx="17" cy="17" r="17" fill="#6d1a36"/><circle cx="17" cy="13" r="6" fill="#fff"/><path d="M6 29c2-6 6-8 11-8s9 2 11 8" fill="#fff"/></svg>');
+const giveUp=setTimeout(()=>{if(!S.id){$("#gTxt").textContent="Sign-in unavailable here";}},10000);
+(async()=>{
+  const user=window.claude?await claude.use("user"):null;S.user=user;
+  const me=user?await user.me():null;
+  if(!me||!me.id){clearTimeout(giveUp);return}
+  clearTimeout(giveUp);S.id=me.id;S.owner=me.isOwner;
+  $("#meImg").src=me.avatarUrl;$("#gImg").src=me.avatarUrl;$("#gImg").hidden=false;
+  $("#gTxt").textContent="Continue as "+(me.name||"you");$("#signin").disabled=false;
+  $("#signin").onclick=()=>{$("#gate").hidden=true;try{sessionStorage.setItem("winear-in","1")}catch{}toast("Welcome"+(me.name?", "+me.name.split(" ")[0]:"")+"!")};
+  const db=await claude.use("db");S.db=db;if(!db)return;
+  const err=()=>{};
+  db.collection("wineries").onSnapshot(s=>{S.mine={};s.docs.forEach(d=>S.mine[d.id]=d.data());drawMarkers();rerender()},err);
+  db.collection("approved").onSnapshot(s=>{S.approved=new Set(s.docs.map(d=>d.id));drawMarkers();rerender()},err);
+  db.doc(`data/users/${S.id}/plans`).onSnapshot(s=>{S.plans=(s.exists&&Array.isArray(s.data().items))?[...s.data().items]:[];rerender()},err);
+  if(S.owner)db.collection("requests").onSnapshot(s=>{S.requests={};s.docs.forEach(d=>S.requests[d.id]=d.data());S.myReq=S.requests[S.id]||null;rerender()},err);
+  else db.doc("requests/"+S.id).onSnapshot(s=>{S.myReq=s.exists?s.data():null;if(S.view==="request")renderWineryArea()},err);
+})();
+}
+</script>
+</body>
+</html>

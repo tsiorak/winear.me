@@ -1,0 +1,12 @@
+{
+  "name": "winear-me",
+  "version": "1.0.0",
+  "description": "Winear.me - wine map prototype",
+  "private": true,
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "build": "echo \"no build needed\""
+  },
+  "engines": { "node": ">=18" }
+}

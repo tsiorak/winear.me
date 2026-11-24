@@ -1508,9 +1508,68 @@
 {
 "name": "Brut Cuvée Spéciale",
 "type": "Sparkling",
-"price": "",
+"price": 16.18,
 "cur": "EUR",
-"notes": "Fine bubbles, green apple and brioche."
+"notes": "Traditional-method sparkling, mostly Xinomavro: fine bubbles, citrus, toast and hazelnut.",
+"prices": [
+{
+"price": 16.18,
+"cur": "EUR",
+"shop": "Cabernet.gr",
+"url": "https://www.cabernet.gr/product/karanika-brut-cuvee-speciale/",
+"note": ""
+},
+{
+"price": 17.8,
+"cur": "EUR",
+"shop": "Cava.gr (Winelaw)",
+"url": "https://www.cava.gr/gr/CATEGORY/%CE%9A%CE%A1%CE%91%CE%A3%CE%99%CE%91/%CE%A3%CE%91%CE%9C%CE%A0%CE%91%CE%9D%CE%99%CE%91+-+%CE%91%CE%A6%CE%A1%CE%A9%CE%94%CE%95%CE%99%CE%A3+%CE%9F%CE%99%CE%9D%CE%9F%CE%99/KARANIKA-BRUT-CUVEE-/58820202216/",
+"note": "2024"
+},
+{
+"price": 18.0,
+"cur": "EUR",
+"shop": "Cava Rokos",
+"url": "https://www.cavarokos.gr/karanikas-brut-cuvee-speciale-750ml-leuko",
+"note": "2021"
+},
+{
+"price": 19.0,
+"cur": "EUR",
+"shop": "City Drinks",
+"url": "https://citydrinks.gr/product/karanika-brut-cuvee-speciale-750ml/",
+"note": ""
+},
+{
+"price": 19.2,
+"cur": "EUR",
+"shop": "House of Wine",
+"url": "https://www.houseofwine.gr/how/karanika-brut-cuvee-speciale.html",
+"note": "2023"
+},
+{
+"price": 19.26,
+"cur": "EUR",
+"shop": "Oak Cava",
+"url": "https://www.oakcava.gr/product/karanika-brut-cuvee-speciale/",
+"note": ""
+},
+{
+"price": 21.1,
+"cur": "EUR",
+"shop": "Cava Tzortzatos",
+"url": "https://cavatzortzatos.gr/en/product/ktima-karanika-brut-cuvee-speciale-750ml/",
+"note": "2021"
+},
+{
+"price": 27.0,
+"cur": "EUR",
+"shop": "Tabak Hane",
+"url": "https://tabakhane.gr/product/karanika-afrodis-brut-cuvee-special/",
+"note": ""
+}
+],
+"checked": "24 Nov 2026"
 },
 {
 "name": "Brut Rosé",
@@ -1914,16 +1973,61 @@
 "country": "Greece",
 "lat": 41.15,
 "lng": 24.05,
-"founded": "",
+"founded": "1998",
 "style": "white",
-"story": "A modern estate in Drama, northern Greece, founded by Christoforos Pavlidis. Known for its 'Thema' range and wines from Greek and international grapes.",
+"story": "Created in 1998 by Christoforos Pavlidis, who searched for years before choosing this spot in Kokkinogia, Drama, for his vineyard and winery. Its 'Thema' white became one of Greece's best-selling quality wines.",
 "wines": [
 {
 "name": "Thema White",
 "type": "White",
-"price": "",
+"price": 12.6,
 "cur": "EUR",
-"notes": "Assyrtiko with Sauvignon Blanc: fresh and aromatic."
+"notes": "Assyrtiko with Sauvignon Blanc: fresh and aromatic.",
+"prices": [
+{
+"price": 12.6,
+"cur": "EUR",
+"shop": "Cava Abatzis",
+"url": "https://cava-abatzis.com/product/%CE%BA%CF%84%CE%AE%CE%BC%CE%B1-%CF%80%CE%B1%CF%85%CE%BB%CE%AF%CE%B4%CE%B7-thema-%CE%BB%CE%B5%CF%85%CE%BA%CF%8C%CF%82/",
+"note": ""
+},
+{
+"price": 14.45,
+"cur": "EUR",
+"shop": "Kava Sampani",
+"url": "https://kava-sampani.gr/el-gr/product/PAYLIDH_KTHMA_THEMA_LEYKO_750ml_06_25_0627",
+"note": ""
+},
+{
+"price": 14.55,
+"cur": "EUR",
+"shop": "Best Wines",
+"url": "https://bestwines.gr/shop/%CE%BA%CF%81%CE%B1%CF%83%CE%B9%CE%AC/%CE%BB%CE%B5%CF%85%CE%BA%CE%AC-%CE%BA%CF%81%CE%B1%CF%83%CE%B9%CE%AC/%CE%BA%CF%84%CE%AE%CE%BC%CE%B1-%CF%80%CE%B1%CF%85%CE%BB%CE%AF%CE%B4%CE%B7-thema-%CE%BB%CE%B5%CF%85%CE%BA%CF%8C%CF%82-750ml/",
+"note": "2023"
+},
+{
+"price": 15.0,
+"cur": "EUR",
+"shop": "Oak Cava",
+"url": "https://www.oakcava.gr/product/ktima-pavlidi-thema-lefkos/",
+"note": "2023"
+},
+{
+"price": 15.0,
+"cur": "EUR",
+"shop": "Cava Maniatis",
+"url": "https://cavamaniatis.gr/ktima-paylidi-thema-leykos-750ml/",
+"note": ""
+},
+{
+"price": 15.0,
+"cur": "EUR",
+"shop": "Oinolatris",
+"url": "https://oinolatris.gr/product/thema-750ml/",
+"note": "2022"
+}
+],
+"checked": "24 Nov 2026"
 },
 {
 "name": "Thema Red",
@@ -1950,9 +2054,33 @@
 {
 "name": "Amethystos Red",
 "type": "Red",
-"price": "",
+"price": 17.39,
 "cur": "EUR",
-"notes": "Cabernet-based blend, rich and round."
+"notes": "Cabernet-based blend, rich and round.",
+"prices": [
+{
+"price": 17.39,
+"cur": "EUR",
+"shop": "Cava Kazakos",
+"url": "https://cava-kazakos.gr/product/10612/kthma-kwsta-lazaridh-ameoystos-eryoro",
+"note": "2020, older listing"
+},
+{
+"price": 18.8,
+"cur": "EUR",
+"shop": "House of Wine",
+"url": "https://www.houseofwine.gr/how/amethustos-eruthros.html",
+"note": "2023"
+},
+{
+"price": 18.85,
+"cur": "EUR",
+"shop": "Cava Maniatis",
+"url": "https://cavamaniatis.gr/lazaridi-k-amethystos-erythros-750ml/",
+"note": ""
+}
+],
+"checked": "24 Nov 2026"
 },
 {
 "name": "Amethystos White",
@@ -1967,6 +2095,30 @@
 "price": "",
 "cur": "EUR",
 "notes": "Crisp, citrusy Assyrtiko."
+},
+{
+"name": "Amethystos Cava",
+"type": "Red",
+"notes": "Long-aged Cabernet Franc-based red, the top of the Amethystos range.",
+"cur": "EUR",
+"prices": [
+{
+"price": 39.0,
+"cur": "EUR",
+"shop": "Cava Rokos",
+"url": "https://www.cavarokos.gr/lazaridis-k-amethustos-cava-750ml-eruthro",
+"note": "2020"
+},
+{
+"price": 44.7,
+"cur": "EUR",
+"shop": "Top Greek Wines",
+"url": "https://www.topgreekwines.gr/lazaridi-cava-amethustos-erythro.html",
+"note": ""
+}
+],
+"price": 39.0,
+"checked": "24 Nov 2026"
 }
 ],
 "events": [],
@@ -1974,7 +2126,7 @@
 },
 {
 "id": "gr-wine-art",
-"name": "Wine Art Estate",
+"name": "Wine Art Estate (Ktima Techni Oinou)",
 "region": "Mikrochori, Drama",
 "country": "Greece",
 "lat": 41.18,
@@ -1986,9 +2138,61 @@
 {
 "name": "Techni Alipias White",
 "type": "White",
-"price": "",
+"price": 13.9,
 "cur": "EUR",
-"notes": "Sauvignon Blanc with Assyrtiko: crisp and lively."
+"notes": "Sauvignon Blanc with Assyrtiko: crisp and lively.",
+"prices": [
+{
+"price": 13.9,
+"cur": "EUR",
+"shop": "Greece & Grapes",
+"url": "https://www.greeceandgrapes.com/white-techni-alipias-2024-wine-art-estate",
+"note": "2024"
+},
+{
+"price": 14.5,
+"cur": "EUR",
+"shop": "e-winest",
+"url": "https://e-winest.gr/product/techni-alypias-white-ktima-techni-oinoy/",
+"note": "2024"
+},
+{
+"price": 14.5,
+"cur": "EUR",
+"shop": "Top Greek Wines",
+"url": "https://www.topgreekwines.gr/%CF%84%CE%AD%CF%87%CE%BD%CE%B7-%CE%B1%CE%BB%CF%85%CF%80%CE%AF%CE%B1%CF%82-%CE%BB%CE%B5%CF%85%CE%BA%CF%8C.html",
+"note": "2025"
+},
+{
+"price": 14.51,
+"cur": "EUR",
+"shop": "Vinoteca",
+"url": "https://www.vinoteca.gr/techni-alypias-leuko.html",
+"note": ""
+},
+{
+"price": 14.59,
+"cur": "EUR",
+"shop": "Cellier",
+"url": "https://www.cellier.gr/Product/Techni-Alipias-white",
+"note": "2023"
+},
+{
+"price": 14.6,
+"cur": "EUR",
+"shop": "Grapestore",
+"url": "https://www.grapestore.gr/product/techni-alupias-leukos-ktima-technis-oinou/",
+"note": "2025"
+},
+{
+"price": 14.6,
+"cur": "EUR",
+"shop": "Vinoultura",
+"url": "https://www.vinoultura.gr/products/%CF%84%CE%AD%CF%87%CE%BD%CE%B7-%CE%B1%CE%BB%CF%85%CF%80%CE%AF%CE%B1%CF%82-%CE%BB%CE%B5%CF%85%CE%BA%CF%8C-2024",
+"note": "2024"
+}
+],
+"checked": "24 Nov 2026"
 },
 {
 "name": "Plano Malagousia",
@@ -2015,9 +2219,54 @@
 {
 "name": "Goumenissa",
 "type": "Red",
-"price": "",
+"price": 16.19,
 "cur": "EUR",
-"notes": "Xinomavro with Negoska: red fruit and spice."
+"notes": "70% Xinomavro, 30% Negoska, 12 months in French oak: red berries, cherry and spice.",
+"prices": [
+{
+"price": 16.19,
+"cur": "EUR",
+"shop": "MyCava",
+"url": "https://mycava.gr/product/xatzivariti-goumenissa-21/",
+"note": "2021"
+},
+{
+"price": 16.8,
+"cur": "EUR",
+"shop": "Cava.gr (Winelaw)",
+"url": "https://www.cava.gr/gr/CATEGORY/%CE%9A%CE%A1%CE%91%CE%A3%CE%99%CE%91/%CE%95%CE%9B%CE%9B%CE%97%CE%9D%CE%99%CE%9A%CE%9F%CE%A3+%CE%91%CE%9C%CE%A0%CE%95%CE%9B%CE%A9%CE%9D%CE%91%CE%A3/%CE%9A%CE%A4%CE%97%CE%9C%CE%91+%CE%A7%CE%91%CE%A4%CE%96%CE%97%CE%92%CE%91%CE%A1%CE%A5%CE%A4%CE%97+-+/5911202062442/",
+"note": "2021"
+},
+{
+"price": 18.18,
+"cur": "EUR",
+"shop": "Best Wines",
+"url": "https://bestwines.gr/shop/%CE%BA%CF%81%CE%B1%CF%83%CE%B9%CE%AC/%CE%BA%CF%8C%CE%BA%CE%BA%CE%B9%CE%BD%CE%B1-%CE%BA%CF%81%CE%B1%CF%83%CE%B9%CE%AC/%CE%BA%CF%84%CE%AE%CE%BC%CE%B1-%CF%87%CE%B1%CF%84%CE%B6%CE%B7%CE%B2%CE%B1%CF%81%CF%8D%CF%84%CE%B7-%CE%B3%CE%BF%CF%85%CE%BC%CE%AD%CE%BD%CE%B9%CF%83%CF%83%CE%B1-750ml/",
+"note": "2021"
+},
+{
+"price": 18.6,
+"cur": "EUR",
+"shop": "House of Wine",
+"url": "https://www.houseofwine.gr/how/hatzivaryti-goumenissa.html",
+"note": "2021"
+},
+{
+"price": 18.6,
+"cur": "EUR",
+"shop": "Kava Kelari",
+"url": "https://kavakelari.gr/product/goumenissa-2021-ktima-chatzivaryti/",
+"note": "2021"
+},
+{
+"price": 19.0,
+"cur": "EUR",
+"shop": "Cava Kalomenidis",
+"url": "https://cavakalomenidis.gr/product/krasia/typos-krasiou/isycho-ipio/ktima-chatzivaryti-goumenissa-2020-750ml",
+"note": "2020, sold out"
+}
+],
+"checked": "24 Nov 2026"
 },
 {
 "name": "Negoska",
@@ -2044,9 +2293,54 @@
 {
 "name": "Goumenissa",
 "type": "Red",
-"price": "",
+"price": 12.2,
 "cur": "EUR",
-"notes": "Xinomavro and Negoska, natural style."
+"notes": "Xinomavro and Negoska, natural style.",
+"prices": [
+{
+"price": 12.2,
+"cur": "EUR",
+"shop": "Cava Abatzis",
+"url": "https://cava-abatzis.com/shop/%CE%BA%CF%84%CE%AE%CE%BC%CE%B1-%CF%84%CE%AC%CF%84%CF%83%CE%B7-%CE%B3%CE%BF%CF%85%CE%BC%CE%AD%CE%BD%CE%B9%CF%83%CF%83%CE%B1-2013/",
+"note": "2013, older listing"
+},
+{
+"price": 15.32,
+"cur": "EUR",
+"shop": "MyCava",
+"url": "https://www.mycava.gr/gr/tatsis-goumenissa-2014.html",
+"note": "2017"
+},
+{
+"price": 15.8,
+"cur": "EUR",
+"shop": "Cava.gr (Winelaw)",
+"url": "https://www.cava.gr/gr/CATEGORY/%CE%9A%CE%A1%CE%91%CE%A3%CE%99%CE%91/%CE%95%CE%9B%CE%9B%CE%97%CE%9D%CE%99%CE%9A%CE%9F%CE%A3+%CE%91%CE%9C%CE%A0%CE%95%CE%9B%CE%A9%CE%9D%CE%91%CE%A3/%CE%9A%CE%A4%CE%97%CE%9C%CE%91+%CE%A4%CE%91%CE%A4%CE%A3%CE%97+-+%CE%93%CE%9F%CE%A5%CE%9C%CE%95%CE%9D/101320204249/",
+"note": "2018"
+},
+{
+"price": 16.1,
+"cur": "EUR",
+"shop": "Botilia",
+"url": "https://www.botilia.gr/en/p/red-wine/Goumenissa-Domaine-Tatsis",
+"note": "2018"
+},
+{
+"price": 16.7,
+"cur": "EUR",
+"shop": "House of Wine",
+"url": "https://www.houseofwine.gr/how/goumenitsa-tatsi.html",
+"note": "2018"
+},
+{
+"price": 17.0,
+"cur": "EUR",
+"shop": "Oiniko",
+"url": "https://www.oiniko.gr/el-gr/kthma-tatshs",
+"note": ""
+}
+],
+"checked": "24 Nov 2026"
 },
 {
 "name": "Malagousia",
@@ -2054,6 +2348,23 @@
 "price": "",
 "cur": "EUR",
 "notes": "Skin-contact, textured white."
+},
+{
+"name": "Old Roots Xinomavro",
+"type": "Red",
+"notes": "Xinomavro from old vines, natural style.",
+"cur": "EUR",
+"prices": [
+{
+"price": 31.0,
+"cur": "EUR",
+"shop": "Oiniko",
+"url": "https://www.oiniko.gr/el-gr/kthma-tatshs",
+"note": ""
+}
+],
+"price": 31.0,
+"checked": "24 Nov 2026"
 }
 ],
 "events": [],

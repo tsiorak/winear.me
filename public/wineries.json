@@ -622,16 +622,85 @@
 {
 "name": "Gaia Estate",
 "type": "Red",
-"price": "",
+"price": 19.0,
 "cur": "EUR",
-"notes": "Their top Agiorgitiko: dark cherry, spice and fine tannins."
+"notes": "Their top Agiorgitiko: dark cherry, spice and fine tannins.",
+"prices": [
+{
+"price": 19.0,
+"cur": "EUR",
+"shop": "Cava Rokos",
+"url": "https://www.cavarokos.gr/gaia-ktima-nemea-750ml-eruthro",
+"note": "2017, not available"
+},
+{
+"price": 24.7,
+"cur": "EUR",
+"shop": "Kava Elloinon",
+"url": "https://www.kavaelloinon.gr/product-tag/ktima-gaias/",
+"note": ""
+},
+{
+"price": 24.75,
+"cur": "EUR",
+"shop": "Cava Maniatis",
+"url": "https://cavamaniatis.gr/ktima-gaias-nemea-p-o-p-agiorgitiko-750ml/",
+"note": ""
+},
+{
+"price": 30.0,
+"cur": "EUR",
+"shop": "Cava Romanos",
+"url": "https://www.cavaromanos.gr/index.php?route=product/product&product_id=1530",
+"note": ""
+},
+{
+"price": 31.3,
+"cur": "EUR",
+"shop": "Cellier",
+"url": "https://www.cellier.gr/Product/Gaia-Estate-red-Gaia-Wines",
+"note": ""
+},
+{
+"price": 34.9,
+"cur": "EUR",
+"shop": "Oinognosia",
+"url": "https://www.oinognosia.wine/producer/gaia-estate/",
+"note": "2017"
+}
+],
+"checked": "24 Nov 2026"
 },
 {
 "name": "Agiorgitiko by Gaia",
 "type": "Red",
-"price": "",
+"price": 9.8,
 "cur": "EUR",
-"notes": "Juicy, fresh red fruit, easy to love."
+"notes": "Juicy, fresh red fruit, easy to love.",
+"prices": [
+{
+"price": 9.8,
+"cur": "EUR",
+"shop": "Cava Maniatis",
+"url": "https://cavamaniatis.gr/ktima-gaia-agiorgitiko-tis-gaias-750ml/",
+"note": "older listing"
+},
+{
+"price": 10.5,
+"cur": "EUR",
+"shop": "Kava Elloinon",
+"url": "https://www.kavaelloinon.gr/product-tag/ktima-gaias/",
+"note": ""
+},
+{
+"price": 10.9,
+"cur": "EUR",
+"shop": "e-winest",
+"url": "https://e-winest.gr/product/agiorgitiko-tis-gaias-2021-ktima-gaia-nemea/",
+"note": "2021"
+}
+],
+"checked": "24 Nov 2026"
 },
 {
 "name": "Notios Red",
@@ -658,9 +727,47 @@
 {
 "name": "Megas Oenos",
 "type": "Red",
-"price": "",
+"price": 23.9,
 "cur": "EUR",
-"notes": "Agiorgitiko with Cabernet Sauvignon; structured and age-worthy."
+"notes": "Agiorgitiko with Cabernet Sauvignon; structured and age-worthy.",
+"prices": [
+{
+"price": 23.9,
+"cur": "EUR",
+"shop": "Cava Rokos",
+"url": "https://www.cavarokos.gr/skouras-megas-oinos-750ml-eruthro",
+"note": "2021"
+},
+{
+"price": 24.3,
+"cur": "EUR",
+"shop": "Kava Kelari",
+"url": "https://kavakelari.gr/product/megas-oinos-2020-ktima-skoura/",
+"note": "2022, sale price"
+},
+{
+"price": 26.0,
+"cur": "EUR",
+"shop": "Cava Aggeli",
+"url": "https://www.cava-aggeli.gr/krasia/kokkina/skoyras-megas-oinos",
+"note": "2017"
+},
+{
+"price": 27.0,
+"cur": "EUR",
+"shop": "House of Wine",
+"url": "https://www.houseofwine.gr/how/megas-oinos-skoura.html",
+"note": "2022"
+},
+{
+"price": 27.7,
+"cur": "EUR",
+"shop": "Kava Karalis",
+"url": "https://www.kavakaralis.gr/kava-product/ktima-skoyras-megas-oinos-2022-750ml/",
+"note": "2023"
+}
+],
+"checked": "24 Nov 2026"
 },
 {
 "name": "Grande Cuvée Nemea",
@@ -689,14 +796,66 @@
 "lng": 22.7,
 "founded": "",
 "style": "red",
-"story": "A family estate in Ancient Nemea, among the first in the area to farm organically and bottle Nemea from single plots. Its old-vine Agiorgitiko is a reference for the region.",
+"story": "A family estate in Ancient Nemea led by Thanasis Papaioannou, a pioneer of the region and among the first to farm organically and bottle Nemea from single plots. Its 'Palea Klimata', from Agiorgitiko vines over 40 years old, paved the way for age-worthy Nemea reds.",
 "wines": [
 {
 "name": "Palea Klimata Nemea",
 "type": "Red",
-"price": "",
+"price": 15.95,
 "cur": "EUR",
-"notes": "From old vines: deep, spicy and long."
+"notes": "From old vines: deep, spicy and long.",
+"prices": [
+{
+"price": 15.95,
+"cur": "EUR",
+"shop": "Oinognosia",
+"url": "https://www.oinognosia.wine/producer/papaioannou-vineyards/",
+"note": "2020"
+},
+{
+"price": 16.65,
+"cur": "EUR",
+"shop": "Akros",
+"url": "https://www.akros.gr/Product/11695-papaioannoy-palaia-klimata-pop-nemea-erythros-ksiros-agiorgitiko-2015-750ml-ktima-papaioannoy",
+"note": "2015"
+},
+{
+"price": 19.62,
+"cur": "EUR",
+"shop": "The Distiller",
+"url": "https://www.thedistiller.gr/p/ktima-papaioannou-palaia-klimata-2015-750ml",
+"note": "2015, sale price"
+},
+{
+"price": 22.1,
+"cur": "EUR",
+"shop": "House of Wine",
+"url": "https://www.houseofwine.gr/en/product/ktima-papa-oannou-palaia-klimata",
+"note": "2020"
+},
+{
+"price": 22.51,
+"cur": "EUR",
+"shop": "Cellier",
+"url": "https://www.cellier.gr/Product/Old-Vines-Nemea-Estate-Papaioannou",
+"note": "2020"
+},
+{
+"price": 23.2,
+"cur": "EUR",
+"shop": "Grapestore",
+"url": "https://www.grapestore.gr/product/palaia-klimata-ampelones-papaioannou/",
+"note": "2020"
+},
+{
+"price": 25.0,
+"cur": "EUR",
+"shop": "Kava Oinotypo",
+"url": "https://oinotypo.gr/shop/krasi/emfialomenoi-oinoi/erythra-emfialomena/παπαϊωάννου-παλιά-κλήματα/",
+"note": "2010"
+}
+],
+"checked": "24 Nov 2026"
 },
 {
 "name": "Nemea Agiorgitiko",
@@ -759,9 +918,61 @@
 {
 "name": "Semeli Nemea Reserve",
 "type": "Red",
-"price": "",
+"price": 9.2,
 "cur": "EUR",
-"notes": "Oak-aged Agiorgitiko: plum, vanilla and spice."
+"notes": "Oak-aged Agiorgitiko: plum, vanilla and spice.",
+"prices": [
+{
+"price": 9.2,
+"cur": "EUR",
+"shop": "Cava Rokos",
+"url": "https://www.cavarokos.gr/semeli-nemea-reserve-750ml-eruthro",
+"note": "not available"
+},
+{
+"price": 12.32,
+"cur": "EUR",
+"shop": "Cabernet.gr",
+"url": "https://www.cabernet.gr/product/semeli-nemea-reserve/",
+"note": "2016"
+},
+{
+"price": 12.52,
+"cur": "EUR",
+"shop": "The Distiller",
+"url": "https://www.thedistiller.gr/shop/pota-spirits/%CE%BA%CF%84%CE%AE%CE%BC%CE%B1-%CF%83%CE%B5%CE%BC%CE%AD%CE%BB%CE%B7-nemea-reserve-2017-%CE%B5%CF%81%CF%85%CE%B8%CF%81%CF%8C-%CE%BE%CE%B7%CF%81%CF%8C-%CE%BA%CF%81%CE%B1%CF%83%CE%AF-750ml-detail",
+"note": "2017"
+},
+{
+"price": 13.0,
+"cur": "EUR",
+"shop": "Top Greek Wines",
+"url": "https://www.topgreekwines.gr/semeli-nemea-reserve-erythro.html",
+"note": "offer price"
+},
+{
+"price": 14.3,
+"cur": "EUR",
+"shop": "House of Wine",
+"url": "https://www.houseofwine.gr/en/product/semeli-nemea-reserve",
+"note": "2022"
+},
+{
+"price": 14.3,
+"cur": "EUR",
+"shop": "Kava Karalis",
+"url": "https://www.kavakaralis.gr/kava-product/ktima-semeli-nemea-reserve-erythro-750ml/",
+"note": ""
+},
+{
+"price": 14.43,
+"cur": "EUR",
+"shop": "Vinoteca",
+"url": "https://www.vinoteca.gr/nemea-reserve-semeli.html",
+"note": ""
+}
+],
+"checked": "24 Nov 2026"
 },
 {
 "name": "Mountain Sun",
@@ -776,6 +987,30 @@
 "price": "",
 "cur": "EUR",
 "notes": "Light, aromatic white blend."
+},
+{
+"name": "Semeli Nemea Grande Reserve",
+"type": "Red",
+"notes": "Top Agiorgitiko from Koutsi at 650 m: 18 months in new oak, 24 in bottle.",
+"cur": "EUR",
+"prices": [
+{
+"price": 21.1,
+"cur": "EUR",
+"shop": "House of Wine",
+"url": "https://www.houseofwine.gr/how/semeli-nemea-grand-reserve-7636.html",
+"note": "2016"
+},
+{
+"price": 24.2,
+"cur": "EUR",
+"shop": "House of Wine",
+"url": "https://www.houseofwine.gr/how/semeli-nemea-grand-reserve.html",
+"note": "2019"
+}
+],
+"price": 21.1,
+"checked": "24 Nov 2026"
 }
 ],
 "events": [],
@@ -795,9 +1030,68 @@
 {
 "name": "Mantinia Moschofilero",
 "type": "White",
-"price": "",
+"price": 11.2,
 "cur": "EUR",
-"notes": "Rose petal, citrus and lively acidity."
+"notes": "Rose petal, citrus and lively acidity.",
+"prices": [
+{
+"price": 11.2,
+"cur": "EUR",
+"shop": "Paxos Wines",
+"url": "https://www.paxoswines.com/wines/white/estate-tselepou-mantineia-mosxofilero-white-dry-750ml.htm",
+"note": ""
+},
+{
+"price": 11.5,
+"cur": "EUR",
+"shop": "Cava Mikro Chorio",
+"url": "https://cavamikrohorio.com/shop/krasia/white-wines/tselepos-mantinia-750ml/",
+"note": "2021"
+},
+{
+"price": 11.66,
+"cur": "EUR",
+"shop": "Oak Cava",
+"url": "https://www.oakcava.gr/product/ktima-tselepou-mantinia/",
+"note": ""
+},
+{
+"price": 11.7,
+"cur": "EUR",
+"shop": "Cava Kazakos",
+"url": "https://cava-kazakos.gr/product/10574/kthma-tselepos-mantineia",
+"note": ""
+},
+{
+"price": 11.7,
+"cur": "EUR",
+"shop": "Kava Karalis",
+"url": "https://www.kavakaralis.gr/kava-product/ktima-tselepoy-mantineia-moschofilero-750ml/",
+"note": ""
+},
+{
+"price": 11.7,
+"cur": "EUR",
+"shop": "e-winest",
+"url": "https://e-winest.gr/product/mantineia-2024-ktima-tselepoy/",
+"note": "2024"
+},
+{
+"price": 11.7,
+"cur": "EUR",
+"shop": "House of Wine",
+"url": "https://www.houseofwine.gr/en/product/mantineia-tselepou",
+"note": "2025"
+},
+{
+"price": 12.0,
+"cur": "EUR",
+"shop": "Cava Maniatis",
+"url": "https://cavamaniatis.gr/tselepos-mantineia-moschofilero-750ml/",
+"note": ""
+}
+],
+"checked": "24 Nov 2026"
 },
 {
 "name": "Kokkinomylos Merlot",
@@ -831,9 +1125,26 @@
 {
 "name": "Fteri Moschofilero",
 "type": "White",
-"price": "",
+"price": 8.1,
 "cur": "EUR",
-"notes": "Intensely floral: jasmine, rose and citrus."
+"notes": "Intensely floral: jasmine, rose and citrus.",
+"prices": [
+{
+"price": 8.1,
+"cur": "EUR",
+"shop": "Grapestore",
+"url": "https://www.grapestore.gr/product/fteri-moschofilero-oinopoieio-troupi/",
+"note": "2024"
+},
+{
+"price": 8.4,
+"cur": "EUR",
+"shop": "Ellinikakrasia",
+"url": "https://ellinikakrasia.gr/product/fteri-moschofilero-oinopoieio-troupi/",
+"note": "2025; €7.60 for members"
+}
+],
+"checked": "24 Nov 2026"
 },
 {
 "name": "Fteri Agiorgitiko",

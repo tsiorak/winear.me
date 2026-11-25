@@ -1047,16 +1047,15 @@ const DZ_SVG=`<svg class="dz-fig" viewBox="40 40 240 400" role="img" aria-label=
   const el=document.createElement("div");el.className="dz";el.setAttribute("role","dialog");el.setAttribute("aria-modal","true");el.setAttribute("aria-label","Welcome from Dionysus");
   el.innerHTML=`<div class="dz-card"><button class="dz-skip" aria-label="Close welcome">×</button>${DZ_SVG}<div class="dz-talk"><div class="dz-bub" aria-live="polite"><p></p></div><div class="dz-dots">${LINES.map(()=>"<i></i>").join("")}</div><div class="dz-acts"><button class="pri" data-dz="next">Next</button></div></div></div>`;
   document.body.appendChild(el);
-  const p=el.querySelector(".dz-bub p"),dots=[...el.querySelectorAll(".dz-dots i")],acts=el.querySelector(".dz-acts");
+  const dots=[...el.querySelectorAll(".dz-dots i")],acts=el.querySelector(".dz-acts");
   let i=-1,timer=0,talk=0;
   function line(n){i=n;clearTimeout(timer);clearTimeout(talk);
-    p.outerHTML=`<p>${LINES[i]}</p>`;dots.forEach((d,k)=>d.classList.toggle("on",k<=i));
+    const bub=el.querySelector(".dz-bub");bub.innerHTML=`<p>${LINES[i]}</p>`;dots.forEach((d,k)=>d.classList.toggle("on",k<=i));
     el.classList.add("talking");talk=setTimeout(()=>el.classList.remove("talking"),Math.min(2600,700+LINES[i].length*28));
     if(i<LINES.length-1){timer=setTimeout(()=>line(i+1),3600)}
     else{acts.innerHTML=`<button class="pri" data-dz="enjoy">Enjoy!</button><button data-dz="ask">Ask Dionysus</button>`;acts.querySelector("button").focus()}}
-  const p0=()=>el.querySelector(".dz-bub p");
   function close(openAsk){clearTimeout(timer);clearTimeout(talk);lsSet("winear-welcome","1");el.remove();
-    if(openAsk)openChat();else{fab.classList.add("dz-hint");setTimeout(()=>fab.classList.remove("dz-hint"),3200);fab.focus()}}
+    try{if(openAsk)openChat();else{fab.classList.add("dz-hint");setTimeout(()=>fab.classList.remove("dz-hint"),3200);fab.focus()}}catch(e){console.error(e)}}
   el.addEventListener("click",e=>{const b=e.target.closest("[data-dz],.dz-skip");if(!b)return;
     if(b.classList.contains("dz-skip"))return close(false);
     const a=b.dataset.dz;if(a==="next")line(Math.min(i+1,LINES.length-1));else close(a==="ask")});

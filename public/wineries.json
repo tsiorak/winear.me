@@ -4088,27 +4088,27 @@
 "lat": 49.041,
 "lng": 3.958,
 "founded": 1888,
-"style": "sparkling",
+"style": "champagne",
 "hours": "Daily 10:00–17:30",
 "story": "Four kilometres of chalk cellars beneath the Avenue de Champagne hold millions of bottles ageing on their lees.",
 "wines": [
 {
 "name": "Brut Réserve",
-"type": "Sparkling",
+"type": "Champagne",
 "price": 42,
 "cur": "EUR",
 "notes": "Toasted brioche, pear and fine mousse."
 },
 {
 "name": "Blanc de Blancs 2016",
-"type": "Sparkling",
+"type": "Champagne",
 "price": 89,
 "cur": "EUR",
 "notes": "Pure Chardonnay, lemon curd and chalk."
 },
 {
 "name": "Rosé Saignée",
-"type": "Sparkling",
+"type": "Champagne",
 "price": 65,
 "cur": "EUR",
 "notes": "Wild strawberry, deep colour, gastronomic."

@@ -189,6 +189,9 @@ form h3{font-size:22px;margin-top:22px}
 .area:hover{background:var(--soft)}
 .area .sw{width:14px;height:14px;border-radius:4px;border:1.5px solid}
 .area small{grid-column:3;color:var(--mute);font-size:12.5px;line-height:1.35}
+.chip .n{font-size:11.5px;opacity:.7}
+.areg{font-size:11.5px;text-transform:uppercase;letter-spacing:.06em;color:var(--mute);padding:8px 2px 2px}
+.area em{font-style:normal;font-size:11px;color:var(--mute);border:1px solid var(--line);border-radius:5px;padding:0 4px;margin-left:4px}
 .fnote{font-size:12px;color:var(--mute);margin:10px 0 0}
 .ff{display:flex;gap:8px;align-items:center;padding:12px 18px;border-top:1px solid var(--line)}
 .ff .cnt{flex:1;font-size:14px;color:var(--mute)}
@@ -273,10 +276,10 @@ if(/WinearApp/.test(navigator.userAgent)) document.documentElement.classList.add
 {
 const $=s=>document.querySelector(s);
 const esc=v=>String(v??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
-const STYLES={red:["Red","#7b1e3a"],white:["White","#e6d27e"],rose:["Rosé","#ee9aac"],sparkling:["Sparkling","#f3e7b5"],sweet:["Sweet","#c98a2c"],amber:["Amber","#d0773a"]};
-const TYPECOL={Red:"#7b1e3a",White:"#e6d27e","Rosé":"#ee9aac",Sparkling:"#f3e7b5",Sweet:"#c98a2c",Amber:"#d0773a",Fortified:"#5a1a12"};
+const STYLES={red:["Red","#7b1e3a"],white:["White","#e6d27e"],rose:["Rosé","#ee9aac"],sparkling:["Sparkling","#f3e7b5"],sweet:["Sweet","#c98a2c"],amber:["Amber","#d0773a"],champagne:["Champagne","#24553a"]};
+const TYPECOL={Red:"#7b1e3a",White:"#e6d27e","Rosé":"#ee9aac",Sparkling:"#f3e7b5",Sweet:"#c98a2c",Amber:"#d0773a",Champagne:"#24553a",Fortified:"#5a1a12"};
 const NOW=new Date();
-const S={catalog:[],mine:{},approved:new Set(),requests:{},myReq:null,plans:[],db:null,user:null,id:null,owner:false,guest:false,open:null,tab:"story",view:null,calMonth:new Date(NOW.getFullYear(),NOW.getMonth(),1),calDay:null,inView:false,f:{areas:new Set(),showAll:false,cols:new Set(),prices:new Set()}};
+const S={catalog:[],mine:{},approved:new Set(),requests:{},myReq:null,plans:[],db:null,user:null,id:null,owner:false,guest:false,open:null,tab:"story",view:null,calMonth:new Date(NOW.getFullYear(),NOW.getMonth(),1),calDay:null,inView:false,f:{areas:new Set(),showAll:false,cols:new Set(),prices:new Set(),countries:new Set()}};
 
 /* ---------- map ---------- */
 const map=L.map("map",{zoomControl:false,worldCopyJump:true,minZoom:2,maxZoom:17,zoomSnap:.5,attributionControl:true}).setView([22,10],2.5);
@@ -284,9 +287,9 @@ L.control.zoom({position:"bottomright"}).addTo(map);
 map.attributionControl.setPrefix(false);
 L.tileLayer("https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png",{subdomains:"abc",maxZoom:17,detectRetina:false,crossOrigin:true,
   attribution:'Map data: &copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors, SRTM | Map style: &copy; <a href="https://opentopomap.org" target="_blank" rel="noopener">OpenTopoMap</a> (CC-BY-SA)'}).addTo(map);
-function bottleSvg(c){return `<svg class="bottle" width="26" height="44" viewBox="0 0 26 44"><ellipse cx="13" cy="42.5" rx="9" ry="1.6" fill="#0003"/><path d="M10 1h6v10c0 3 6 6 6 13v17a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V24c0-7 6-10 6-13z" fill="${c}" stroke="#2a0d18" stroke-width="1.2"/><rect x="9.6" y=".6" width="6.8" height="4" rx="1" fill="#2a0d18"/><rect x="6" y="25" width="14" height="10" rx="1.2" fill="#fbf6ee" stroke="#2a0d18" stroke-width=".6"/><path d="M8 17c1.5-2 2.5-3 2.5-6" stroke="#fff8" stroke-width="1.6" fill="none" stroke-linecap="round"/></svg>`}
+function bottleSvg(c,cap="#2a0d18"){return `<svg class="bottle" width="26" height="44" viewBox="0 0 26 44"><ellipse cx="13" cy="42.5" rx="9" ry="1.6" fill="#0003"/><path d="M10 1h6v10c0 3 6 6 6 13v17a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V24c0-7 6-10 6-13z" fill="${c}" stroke="#2a0d18" stroke-width="1.2"/><rect x="9.6" y=".6" width="6.8" height="${cap==="#2a0d18"?4:9}" rx="1" fill="${cap}"/><rect x="6" y="25" width="14" height="10" rx="1.2" fill="#fbf6ee" stroke="#2a0d18" stroke-width=".6"/><path d="M8 17c1.5-2 2.5-3 2.5-6" stroke="#fff8" stroke-width="1.6" fill="none" stroke-linecap="round"/></svg>`}
 const icons={};
-for(const k in STYLES)icons[k]=L.divIcon({className:"",html:bottleSvg(STYLES[k][1]),iconSize:[26,44],iconAnchor:[13,43],tooltipAnchor:[0,-42]});
+for(const k in STYLES)icons[k]=L.divIcon({className:"",html:bottleSvg(STYLES[k][1],k==="champagne"?"#d7ae4e":undefined),iconSize:[26,44],iconAnchor:[13,43],tooltipAnchor:[0,-42]});
 const markers=L.layerGroup().addTo(map);
 
 function all(){
@@ -321,8 +324,11 @@ const find=id=>all().find(w=>w.id===id);
 let ZONES=[];
 const zoneLayer=L.layerGroup().addTo(map);
 const REGIONS=["Macedonia","Thessaly","Epirus","Peloponnese","Ionian Islands","Aegean Islands","Crete"];
-const COLS=[["red","Red"],["white","White"],["rose","Rosé"],["sparkling","Sparkling"],["sweet","Sweet"],["amber","Amber"]];
-const TYPE2COL={Red:"red",White:"white","Rosé":"rose",Sparkling:"sparkling",Sweet:"sweet",Fortified:"sweet",Amber:"amber"};
+const zlabel=z=>(z.kind?z.kind+" ":"")+z.name;
+const ccmp=(a,b)=>(a==="Greece"?-1:b==="Greece"?1:a.localeCompare(b));
+const COLS=[["red","Red"],["white","White"],["rose","Rosé"],["sparkling","Sparkling"],["sweet","Sweet"],["amber","Amber"],["champagne","Champagne"]];
+const TYPE2COL={Red:"red",White:"white","Rosé":"rose",Sparkling:"sparkling",Sweet:"sweet",Fortified:"sweet",Amber:"amber",Champagne:"champagne"};
+const colOk=c=>S.f.cols.has(c)||(c==="champagne"&&S.f.cols.has("sparkling"));
 const PRICES=[["u10","Under €10",0,10],["10-20","€10–20",10,20],["20-40","€20–40",20,40],["40p","€40 and up",40,1e9]];
 const zcol=i=>`hsl(${Math.round(i*137.508)%360} 70% 42%)`;
 function inRing(x,y,r){let c=false;for(let i=0,j=r.length-1;i<r.length;j=i++){const[xi,yi]=r[i],[xj,yj]=r[j];if((yi>y)!==(yj>y)&&x<(xj-xi)*(y-yi)/(yj-yi)+xi)c=!c}return c}
@@ -332,23 +338,24 @@ function inZone(z,lat,lng){const b=z.bb;if(lng<b[0]||lng>b[2]||lat<b[1]||lat>b[3
 const zcache=new Map();
 function zonesOf(w){const k=w.id+"@"+w.lat+","+w.lng;if(!zcache.has(k))zcache.set(k,ZONES.filter(z=>inZone(z,+w.lat,+w.lng)));return zcache.get(k)}
 function wineOk(x){const f=S.f;
-  if(f.cols.size&&!f.cols.has(TYPE2COL[x.type]))return false;
+  if(f.cols.size&&!colOk(TYPE2COL[x.type]))return false;
   if(f.prices.size){const p=x.price;if(p===""||p==null||!isFinite(+p))return false;if(!PRICES.some(([k,,lo,hi])=>f.prices.has(k)&&+p>=lo&&+p<hi))return false}
   return true}
 function matches(w){const f=S.f;
+  if(f.countries.size&&!f.countries.has(w.country))return false;
   if(f.areas.size&&!zonesOf(w).some(z=>f.areas.has(z.id)))return false;
   if(f.cols.size||f.prices.size){const ws=w.wines||[];
-    if(!ws.length)return !f.prices.size&&f.cols.has(w.style);
+    if(!ws.length)return !f.prices.size&&(!f.cols.size||colOk(w.style));
     if(!ws.some(wineOk))return false}
   return true}
-const nActive=()=>S.f.areas.size+S.f.cols.size+S.f.prices.size;
+const nActive=()=>S.f.areas.size+S.f.cols.size+S.f.prices.size+S.f.countries.size;
 function drawZones(){
   zoneLayer.clearLayers();
-  const show=ZONES.filter(z=>S.f.showAll||S.f.areas.has(z.id));
+  const show=ZONES.filter(z=>S.f.areas.has(z.id)||(S.f.showAll&&(!S.f.countries.size||S.f.countries.has(z.country))));
   for(const z of show){
     const sel=S.f.areas.has(z.id);
     L.geoJSON(z.geometry,{style:{color:z.col,weight:sel?2.5:1.5,fillColor:z.col,fillOpacity:sel?.32:.2,opacity:.9}})
-      .bindTooltip(`<b>PDO ${esc(z.name)}</b><br>${esc(z.wines)}`,{sticky:true})
+      .bindTooltip(`<b>${esc(zlabel(z))}</b> · ${esc(z.country)}<br>${esc(z.wines)}`,{sticky:true})
       .on("click",()=>openArea(z.id)).addTo(zoneLayer);
   }
   $("#legendZones").hidden=!show.length;
@@ -356,6 +363,10 @@ function drawZones(){
 function fitAreas(){const sel=ZONES.filter(z=>S.f.areas.has(z.id));if(!sel.length)return;
   const b=L.latLngBounds([]);sel.forEach(z=>b.extend([[z.bb[1],z.bb[0]],[z.bb[3],z.bb[2]]]));
   map.flyToBounds(b.pad(.15),{maxZoom:11,duration:.8,paddingTopLeft:[0,60],paddingBottomRight:window.innerWidth>700&&!$("#fsheet").hidden?[420,0]:[0,0]})}
+function fitCountries(){const cs=S.f.countries;if(!cs.size)return;
+  const b=L.latLngBounds([]);all().filter(w=>cs.has(w.country)).forEach(w=>b.extend([+w.lat,+w.lng]));
+  ZONES.filter(z=>cs.has(z.country)).forEach(z=>b.extend([[z.bb[1],z.bb[0]],[z.bb[3],z.bb[2]]]));
+  if(b.isValid())map.flyToBounds(b.pad(.1),{maxZoom:9,duration:.8,paddingTopLeft:[0,60],paddingBottomRight:window.innerWidth>700&&!$("#fsheet").hidden?[420,0]:[0,0]})}
 function applyFilters(fit){
   drawZones();drawMarkers();
   const n=nActive(),b=$("#fBadge");b.hidden=!n;b.textContent=n;
@@ -365,19 +376,24 @@ function applyFilters(fit){
 }
 function renderFilters(){
   const f=S.f,list=all(),hit=list.filter(matches).length;
-  const byReg=REGIONS.map(r=>[r,ZONES.filter(z=>z.region===r)]);
+  const byC=[...new Set(ZONES.map(z=>z.country))].sort(ccmp).map(c=>[c,ZONES.filter(z=>z.country===c)]);
+  const nBy={};for(const w of list)nBy[w.country]=(nBy[w.country]||0)+1;
+  const ctry=[...new Set(Object.keys(nBy).concat(ZONES.map(z=>z.country)))].sort(ccmp);
+  const regOrd=c=>c==="Greece"?(a,b)=>REGIONS.indexOf(a.region)-REGIONS.indexOf(b.region):(a,b)=>a.region.localeCompare(b.region);
   const sheet=$("#fsheet");const scroll=sheet.querySelector(".fb")?.scrollTop||0;
   const openReg=new Set([...sheet.querySelectorAll("details[open]")].map(d=>d.dataset.reg));
   sheet.innerHTML=`<div class="fh"><h2>Filter the map</h2><button class="x" aria-label="Close filters">×</button></div>
   <div class="fb">
    <h3>Wine colour</h3><div class="chips">${COLS.map(([k,l])=>`<button class="chip" data-col="${k}" aria-pressed="${f.cols.has(k)}"><i style="background:${STYLES[k][1]}"></i>${l}</button>`).join("")}</div>
+   <h3>Country</h3><div class="chips">${ctry.map(c=>`<button class="chip" data-country="${esc(c)}" aria-pressed="${f.countries.has(c)}">${esc(c)}${nBy[c]?`<small class="n">${nBy[c]}</small>`:""}</button>`).join("")}</div>
    <h3>Price per bottle</h3><div class="chips">${PRICES.map(([k,l])=>`<button class="chip" data-price="${k}" aria-pressed="${f.prices.has(k)}">${l}</button>`).join("")}</div>
-   <h3>Wine areas · ${ZONES.length} PDO appellations</h3>
+   <h3>Wine areas · ${ZONES.length} areas in ${byC.length} countries</h3>
    <label class="showall"><input type="checkbox" id="fAll" ${f.showAll?"checked":""}>Show all areas on the map</label>
-   <div class="areas">${byReg.filter(([,zs])=>zs.length).map(([r,zs])=>{const on=zs.filter(z=>f.areas.has(z.id)).length;
-     return `<details data-reg="${esc(r)}" ${on||openReg.has(r)?"open":""}><summary>${esc(r)}<span>${on?on+" selected · ":""}${zs.length}</span></summary>
-     ${zs.map(z=>`<label class="area"><input type="checkbox" data-area="${z.id}" ${f.areas.has(z.id)?"checked":""}><span class="sw" style="background:color-mix(in srgb,${z.col} 35%,transparent);border-color:${z.col}"></span><span>${esc(z.name)}</span><small>${esc(z.wines)}</small></label>`).join("")}</details>`}).join("")}</div>
-   <p class="fnote">PDO = Protected Designation of Origin, Greece's top tier of wine appellations. Area outlines are approximate.</p>
+   <div class="areas">${byC.map(([c,zs])=>{const on=zs.filter(z=>f.areas.has(z.id)).length;let last="";
+     return `<details data-reg="${esc(c)}" ${on||openReg.has(c)?"open":""}><summary>${esc(c)}<span>${on?on+" selected · ":""}${zs.length}</span></summary>
+     ${[...zs].sort(regOrd(c)).map(z=>{const h=z.region!==last?`<div class="areg">${esc(z.region)}</div>`:"";last=z.region;
+       return h+`<label class="area"><input type="checkbox" data-area="${z.id}" ${f.areas.has(z.id)?"checked":""}><span class="sw" style="background:color-mix(in srgb,${z.col} 35%,transparent);border-color:${z.col}"></span><span>${esc(z.name)}${z.kind?` <em>${esc(z.kind)}</em>`:""}</span><small>${esc(z.wines)}</small></label>`}).join("")}</details>`}).join("")}</div>
+   <p class="fnote">Tap an area on the map for its wines and wineries. Labels show each country's appellation tier (AOC, DOCG, DO, PDO…). Outlines are approximate.</p>
   </div>
   <div class="ff"><span class="cnt"><b>${hit}</b> of ${list.length} wineries</span><button class="btn" id="fClear" ${nActive()||f.showAll?"":"disabled"}>Clear all</button><button class="btn pri" id="fDone">Show map</button></div>`;
   sheet.querySelector(".fb").scrollTop=scroll;
@@ -388,8 +404,9 @@ $("#fBtn").addEventListener("click",()=>$("#fsheet").hidden?openFilters():closeF
 $("#fsheet").addEventListener("click",e=>{
   const t=e.target;
   if(t.closest(".x")||t.closest("#fDone")){closeFilters();return}
-  if(t.closest("#fClear")){S.f.areas.clear();S.f.cols.clear();S.f.prices.clear();S.f.showAll=false;applyFilters();return}
+  if(t.closest("#fClear")){S.f.areas.clear();S.f.cols.clear();S.f.prices.clear();S.f.countries.clear();S.f.showAll=false;applyFilters();return}
   const c=t.closest("[data-col]");if(c){const k=c.dataset.col;S.f.cols.has(k)?S.f.cols.delete(k):S.f.cols.add(k);applyFilters();return}
+  const k2=t.closest("[data-country]");if(k2){const k=k2.dataset.country,cs=S.f.countries;cs.has(k)?cs.delete(k):cs.add(k);applyFilters();fitCountries();return}
   const p=t.closest("[data-price]");if(p){const k=p.dataset.price;S.f.prices.has(k)?S.f.prices.delete(k):S.f.prices.add(k);applyFilters();return}
 });
 $("#fsheet").addEventListener("change",e=>{
@@ -403,16 +420,17 @@ function renderArea(){
   const z=ZONES.find(z=>z.id===S.area);if(!z)return closePanel();
   const inside=all().filter(w=>zonesOf(w).includes(z)).sort((a,b)=>a.name.localeCompare(b.name));
   const sel=S.f.areas.has(z.id);
-  const meta=`<div class="meta">${z.styles.map(s=>`<span>${esc(STYLES[s]?.[0]||s)}</span>`).join("")}<span>${esc(z.region)}</span></div>`;
-  show(head("PDO "+esc(z.name),esc(z.el),meta)+`<div class="pb"><p>${esc(z.wines)}.</p>
+  const meta=`<div class="meta">${z.styles.map(s=>`<span>${esc(STYLES[s]?.[0]||s)}</span>`).join("")}<span>${esc(z.region)}, ${esc(z.country)}</span></div>`;
+  show(head(esc(zlabel(z)),z.el&&z.el!==z.name?esc(z.el):"",meta)+`<div class="pb"><p>${esc(z.wines)}.</p>
    <div class="acts" style="margin-bottom:14px"><button class="btn ${sel?"on":""}" data-areafilter="${z.id}">${sel?"✓ Showing only this area":"Show only wineries in this area"}</button></div>
    <h3 style="font-size:22px;margin:6px 0 4px">Wineries here (${inside.length})</h3>
    ${inside.map(w=>`<button class="alist" data-open="${esc(w.id)}">${esc(w.name)}<small>${esc(w.region)}</small></button>`).join("")||'<p class="empty">No wineries on the map in this area yet.</p>'}
-   <p class="note">${z.approx?"The shaded outline is approximate, drawn around the villages the appellation covers.":"The appellation covers the whole island."}</p></div>`,"area");
+   <p class="note">${z.approx?"The shaded outline is approximate, drawn around the main wine villages of the area.":"The appellation covers the whole island."}</p></div>`,"area");
 }
 $("#panel").addEventListener("click",e=>{const b=e.target.closest("[data-areafilter]");if(!b)return;const k=b.dataset.areafilter;
   if(S.f.areas.has(k))S.f.areas.delete(k);else S.f.areas.add(k);applyFilters(S.f.areas.has(k))});
-fetch("pdo.json?v=20261125a",{cache:"no-cache"}).then(r=>r.json()).then(d=>{
+Promise.all(["pdo.json?v=20261125a","areas-europe.json?v=20261125a"].map(u=>fetch(u,{cache:"no-cache"}).then(r=>r.json()).catch(()=>[]))).then(([gr,eu])=>{
+  const d=gr.map(z=>({kind:"PDO",country:"Greece",...z})).concat(eu);
   ZONES=d.map((z,i)=>{let x0=180,y0=90,x1=-180,y1=-90;const polys=z.geometry.type==="Polygon"?[z.geometry.coordinates]:z.geometry.coordinates;
     for(const p of polys)for(const[x,y]of p[0]){x0=Math.min(x0,x);x1=Math.max(x1,x);y0=Math.min(y0,y);y1=Math.max(y1,y)}
     return{...z,bb:[x0,y0,x1,y1],col:zcol(i)}});
@@ -420,7 +438,7 @@ fetch("pdo.json?v=20261125a",{cache:"no-cache"}).then(r=>r.json()).then(d=>{
 }).catch(()=>{});
 
 /* ---------- legend ---------- */
-$("#legend").innerHTML=Object.values(STYLES).map(([n,c])=>`<span><i style="background:${c}"></i>${n}</span>`).join("")+`<p>Bottle colour = the wine each estate is best known for. Wineries outside Greece are fictional samples.</p><p id="legendZones" hidden>Shaded areas: PDO wine appellations (approximate). Tap one for details.</p>`;
+$("#legend").innerHTML=Object.values(STYLES).map(([n,c])=>`<span><i style="background:${c}"></i>${n}</span>`).join("")+`<p>Bottle colour = the wine each estate is best known for. Wineries outside Greece are fictional samples.</p><p id="legendZones" hidden>Shaded areas: wine appellations (approximate). Tap one for details.</p>`;
 
 /* ---------- helpers ---------- */
 function toast(m){const t=$("#toast");t.textContent=m;t.classList.add("show");clearTimeout(toast.h);toast.h=setTimeout(()=>t.classList.remove("show"),2600)}
@@ -576,7 +594,7 @@ function renderEditor(){
   if(!draft)draft=cur?JSON.parse(JSON.stringify(cur)):{name:S.myReq?.wineryName||"",region:S.myReq?.region||"",country:S.myReq?.country||"",founded:"",style:"red",hours:"",story:"",lat:"",lng:"",wines:[blankWine()],events:[],published:true};
   const d=draft;
   const opt=(o,v)=>o.map(([k,l])=>`<option value="${esc(k)}" ${k===v?"selected":""}>${esc(l)}</option>`).join("");
-  const types=["Red","White","Rosé","Sparkling","Sweet","Amber","Fortified"].map(t=>[t,t]);
+  const types=["Red","White","Rosé","Sparkling","Champagne","Sweet","Amber","Fortified"].map(t=>[t,t]);
   show(head("My winery",cur?"Edit your page, changes go live when you save":"Create your page")+`<div class="pb"><form id="edF">
    <label for="f-name">Winery name</label><input id="f-name" data-k="name" required maxlength="80">
    <div class="row"><div><label for="f-region">Region</label><input id="f-region" data-k="region" required maxlength="60"></div><div><label for="f-country">Country</label><input id="f-country" data-k="country" required maxlength="60"></div></div>
@@ -667,7 +685,7 @@ q.addEventListener("keydown",e=>{if(e.key==="Enter"){res.querySelector("button")
 document.addEventListener("click",e=>{if(!e.target.closest(".search"))res.style.display="none"});
 
 /* ---------- data ---------- */
-fetch("wineries.json?v=20261125k",{cache:"no-cache"}).then(r=>r.json()).then(d=>{S.catalog=d;drawMarkers()}).catch(()=>toast("Sample wineries could not load."));
+fetch("wineries.json?v=20261125m",{cache:"no-cache"}).then(r=>r.json()).then(d=>{S.catalog=d;drawMarkers()}).catch(()=>toast("Sample wineries could not load."));
 
 /* ---------- sign-in ---------- */
 let entered=false;try{entered=sessionStorage.getItem("winear-in")==="1"}catch{}

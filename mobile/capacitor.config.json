@@ -1,0 +1,14 @@
+{
+  "appId": "me.winear.app",
+  "appName": "Winear.me",
+  "webDir": "www",
+  "server": {
+    "url": "https://winear.me",
+    "errorPath": "offline.html",
+    "androidScheme": "https"
+  },
+  "appendUserAgent": "WinearApp/1.0",
+  "backgroundColor": "#4a0f24",
+  "android": { "allowMixedContent": false },
+  "ios": { "contentInset": "never", "scrollEnabled": false }
+}

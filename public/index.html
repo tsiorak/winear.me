@@ -1041,6 +1041,7 @@ const DZ_SVG=`<svg class="dz-fig" viewBox="40 40 240 400" role="img" aria-label=
 
 /* ---------- welcome by Dionysus (first visit; again via ?welcome) ---------- */
 (function(){
+  const lsGet=k=>{try{return localStorage.getItem(k)}catch{return null}},lsSet=(k,v)=>{try{localStorage.setItem(k,v)}catch{}};
   const again=/[?&]welcome\b/.test(location.search);
   if(!again&&(lsGet("winear-welcome")||/WinearApp/.test(navigator.userAgent)&&lsGet("winear-welcome-app")))return;
   const LINES=[`<b>Χαίρε!</b> Welcome to Winear.me, friend!`,`One rule from the god of wine: <b>do not drink and drive.</b>`,`Now, please enjoy the wonderful world of wine!`,`I'm always here to help. Tap <b>Ask Dionysus</b> any time.`];

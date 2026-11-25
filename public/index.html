@@ -544,7 +544,7 @@ Promise.all(["pdo.json?v=20261125a","areas-europe.json?v=20261125a"].map(u=>fetc
 }).catch(()=>{});
 
 /* ---------- legend ---------- */
-$("#legend").innerHTML=Object.values(STYLES).map(([n,c])=>`<span><i style="background:${c}"></i>${n}</span>`).join("")+`<p>Bottle colour = the wine each estate is best known for. Wineries outside Greece are fictional samples.</p><p id="legendZones" hidden>Shaded areas: wine appellations (approximate). Tap one for details.</p>`;
+$("#legend").innerHTML=Object.values(STYLES).map(([n,c])=>`<span><i style="background:${c}"></i>${n}</span>`).join("")+`<p>Bottle colour = the wine each estate is best known for. Wineries outside Europe are fictional samples.</p><p id="legendZones" hidden>Shaded areas: wine appellations (approximate). Tap one for details.</p>`;
 
 /* ---------- helpers ---------- */
 function toast(m){const t=$("#toast");t.textContent=m;t.classList.add("show");clearTimeout(toast.h);toast.h=setTimeout(()=>t.classList.remove("show"),2600)}
@@ -1074,7 +1074,7 @@ function recommendNear(loc,near){
 window.dzLocate=dzLocate;
 
 /* ---------- data ---------- */
-fetch("wineries.json?v=20261125m",{cache:"no-cache"}).then(r=>r.json()).then(d=>{S.catalog=d;drawMarkers()}).catch(()=>toast("Sample wineries could not load."));
+fetch("wineries.json?v=20261125eu",{cache:"no-cache"}).then(r=>r.json()).then(d=>{S.catalog=d;drawMarkers()}).catch(()=>toast("Sample wineries could not load."));
 
 /* ---------- sign-in ---------- */
 let entered=false;try{entered=sessionStorage.getItem("winear-in")==="1"}catch{}

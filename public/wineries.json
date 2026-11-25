@@ -3946,141 +3946,6 @@
 "real": true
 },
 {
-"id": "s-mosel",
-"name": "Weingut Steilhang",
-"region": "Mosel",
-"country": "Germany",
-"lat": 49.917,
-"lng": 7.065,
-"founded": 1756,
-"style": "white",
-"hours": "Wed–Sun 11:00–18:00",
-"story": "Riesling vines on slate slopes so steep they are worked by hand with winches. Low alcohol, high tension.",
-"wines": [
-{
-"name": "Riesling Kabinett",
-"type": "White",
-"price": 18,
-"cur": "EUR",
-"notes": "Off-dry, green apple and slate."
-},
-{
-"name": "Riesling GG",
-"type": "White",
-"price": 42,
-"cur": "EUR",
-"notes": "Dry, peach and smoke."
-},
-{
-"name": "Eiswein",
-"type": "Sweet",
-"price": 95,
-"cur": "EUR",
-"notes": "Grapes frozen on the vine: pure, electric sweetness."
-}
-],
-"events": [
-{
-"id": "e1",
-"title": "Christmas market wine stand",
-"start": "2026-12-11T15:00",
-"end": "2026-12-13T21:00",
-"price": 0,
-"desc": "Glühwein made from our Riesling at the village market."
-}
-]
-},
-{
-"id": "s-tokaj",
-"name": "Aszú Pince",
-"region": "Tokaj",
-"country": "Hungary",
-"lat": 48.122,
-"lng": 21.41,
-"founded": 1650,
-"style": "sweet",
-"hours": "Daily 10:00–17:00",
-"story": "Mould-covered tunnels carved into volcanic tuff. Tokaji Aszú, 'wine of kings, king of wines', is made from botrytised berries.",
-"wines": [
-{
-"name": "Tokaji Aszú 6 Puttonyos",
-"type": "Sweet",
-"price": 49,
-"cur": "EUR",
-"notes": "Apricot, saffron and electric acidity."
-},
-{
-"name": "Furmint Dry",
-"type": "White",
-"price": 17,
-"cur": "EUR",
-"notes": "Quince, smoke, mineral."
-},
-{
-"name": "Szamorodni",
-"type": "White",
-"price": 22,
-"cur": "EUR",
-"notes": "Nutty, sherry-like, dry."
-}
-],
-"events": [
-{
-"id": "e1",
-"title": "Cellar labyrinth tour",
-"start": "2027-01-09T14:00",
-"end": "2027-01-09T16:00",
-"price": 20,
-"desc": "Explore 17th-century tunnels with candle and glass."
-}
-]
-},
-{
-"id": "s-kakheti",
-"name": "Qvevri House",
-"region": "Kakheti",
-"country": "Georgia",
-"lat": 41.92,
-"lng": 45.47,
-"founded": 1995,
-"style": "amber",
-"hours": "Daily 10:00–20:00",
-"story": "Wine is fermented in clay qvevri buried underground, an 8,000-year-old method listed by UNESCO.",
-"wines": [
-{
-"name": "Rkatsiteli Amber",
-"type": "Amber",
-"price": 20,
-"cur": "USD",
-"notes": "Skin-contact white: dried apricot, tea, grip."
-},
-{
-"name": "Saperavi",
-"type": "Red",
-"price": 18,
-"cur": "USD",
-"notes": "Inky purple, blackberry and pepper."
-},
-{
-"name": "Mtsvane",
-"type": "Amber",
-"price": 22,
-"cur": "USD",
-"notes": "Floral, honey and walnut."
-}
-],
-"events": [
-{
-"id": "e1",
-"title": "Supra feast",
-"start": "2026-12-26T18:00",
-"end": "2026-12-26T23:00",
-"price": 45,
-"desc": "Traditional Georgian table with toasts led by a tamada."
-}
-]
-},
-{
 "id": "s-napa",
 "name": "Oak Knoll Ridge",
 "region": "Napa Valley, California",
@@ -4572,51 +4437,6 @@
 "end": "2027-03-20T14:00",
 "price": 30,
 "desc": "Barrel tasting in the 2,000-year-old caves."
-}
-]
-},
-{
-"id": "s-cyprus",
-"name": "Commandaria Ktima",
-"region": "Troodos",
-"country": "Cyprus",
-"lat": 34.82,
-"lng": 32.93,
-"founded": 1962,
-"style": "sweet",
-"hours": "Daily 10:00–18:00",
-"story": "Makes Commandaria, a sun-dried sweet wine the Knights Templar shipped across Europe.",
-"wines": [
-{
-"name": "Commandaria",
-"type": "Sweet",
-"price": 28,
-"cur": "EUR",
-"notes": "Raisin, carob and spice."
-},
-{
-"name": "Xynisteri",
-"type": "White",
-"price": 14,
-"cur": "EUR",
-"notes": "Light, citrus and almond."
-},
-{
-"name": "Maratheftiko",
-"type": "Red",
-"price": 22,
-"cur": "EUR",
-"notes": "Wild berry and herbs."
-}
-],
-"events": [
-{
-"id": "e1",
-"title": "Mountain village wine walk",
-"start": "2026-11-24T10:00",
-"end": "2026-11-24T17:00",
-"price": 15,
-"desc": "Guided walk between three village cellars."
 }
 ]
 },
@@ -6849,19 +6669,19 @@
 "lat": 49.042,
 "lng": 3.959,
 "founded": "1743",
-"style": "sparkling",
+"style": "champagne",
 "story": "Founded by Claude Moët in 1743 on Épernay's Avenue de Champagne, with miles of chalk cellars beneath. Its prestige cuvée is Dom Pérignon.",
 "wines": [
 {
 "name": "Moët Impérial Brut",
-"type": "Sparkling",
+"type": "Champagne",
 "price": "",
 "cur": "EUR",
 "notes": "Fruity, fresh Champagne blend."
 },
 {
 "name": "Dom Pérignon",
-"type": "Sparkling",
+"type": "Champagne",
 "price": "",
 "cur": "EUR",
 "notes": "Vintage-only prestige Champagne."
@@ -6878,19 +6698,19 @@
 "lat": 49.245,
 "lng": 4.047,
 "founded": "1772",
-"style": "sparkling",
+"style": "champagne",
 "story": "Founded in 1772 and run from 1805 by the widow Barbe-Nicole Clicquot, who invented the riddling table in 1816 to clear Champagne of sediment.",
 "wines": [
 {
 "name": "Yellow Label Brut",
-"type": "Sparkling",
+"type": "Champagne",
 "price": "",
 "cur": "EUR",
 "notes": "Pinot Noir-led, toasty Champagne."
 },
 {
 "name": "La Grande Dame",
-"type": "Sparkling",
+"type": "Champagne",
 "price": "",
 "cur": "EUR",
 "notes": "Prestige vintage cuvée."
@@ -6907,19 +6727,19 @@
 "lat": 49.253,
 "lng": 4.028,
 "founded": "1843",
-"style": "sparkling",
+"style": "champagne",
 "story": "Founded by Joseph Krug in 1843, famous for its multi-vintage Grande Cuvée blended from well over a hundred wines.",
 "wines": [
 {
 "name": "Krug Grande Cuvée",
-"type": "Sparkling",
+"type": "Champagne",
 "price": "",
 "cur": "EUR",
 "notes": "Rich, complex, barrel-fermented blend."
 },
 {
 "name": "Clos du Mesnil",
-"type": "Sparkling",
+"type": "Champagne",
 "price": "",
 "cur": "EUR",
 "notes": "Single-walled-vineyard blanc de blancs."
@@ -6936,19 +6756,19 @@
 "lat": 49.0545,
 "lng": 4.004,
 "founded": "1829",
-"style": "sparkling",
+"style": "champagne",
 "story": "A family-owned house in Aÿ since 1829, known for Pinot Noir-rich Champagnes fermented in oak.",
 "wines": [
 {
 "name": "Special Cuvée",
-"type": "Sparkling",
+"type": "Champagne",
 "price": "",
 "cur": "EUR",
 "notes": "Full, toasty Pinot Noir-led blend."
 },
 {
 "name": "La Grande Année",
-"type": "Sparkling",
+"type": "Champagne",
 "price": "",
 "cur": "EUR",
 "notes": "Vintage Champagne."
@@ -6965,19 +6785,19 @@
 "lat": 49.262,
 "lng": 4.04,
 "founded": "1776",
-"style": "sparkling",
+"style": "champagne",
 "story": "An independent family house whose Cristal was first created in 1876 for Tsar Alexander II of Russia.",
 "wines": [
 {
 "name": "Collection",
-"type": "Sparkling",
+"type": "Champagne",
 "price": "",
 "cur": "EUR",
 "notes": "Multi-vintage Brut."
 },
 {
 "name": "Cristal",
-"type": "Sparkling",
+"type": "Champagne",
 "price": "",
 "cur": "EUR",
 "notes": "Prestige vintage Champagne in a clear bottle."
@@ -6994,19 +6814,19 @@
 "lat": 49.0395,
 "lng": 3.95,
 "founded": "1849",
-"style": "sparkling",
+"style": "champagne",
 "story": "A family house founded in 1849, beloved by Winston Churchill, after whom its prestige cuvée is named.",
 "wines": [
 {
 "name": "Brut Réserve",
-"type": "Sparkling",
+"type": "Champagne",
 "price": "",
 "cur": "EUR",
 "notes": "Elegant house blend."
 },
 {
 "name": "Cuvée Sir Winston Churchill",
-"type": "Sparkling",
+"type": "Champagne",
 "price": "",
 "cur": "EUR",
 "notes": "Pinot Noir-led prestige cuvée."
@@ -7023,19 +6843,19 @@
 "lat": 49.243,
 "lng": 4.045,
 "founded": "1729",
-"style": "sparkling",
+"style": "champagne",
 "story": "Founded in 1729, the oldest established Champagne house, with cellars in Gallo-Roman chalk pits under Reims.",
 "wines": [
 {
 "name": "Blanc de Blancs",
-"type": "Sparkling",
+"type": "Champagne",
 "price": "",
 "cur": "EUR",
 "notes": "Fresh, citrus Chardonnay Champagne."
 },
 {
 "name": "Dom Ruinart",
-"type": "Sparkling",
+"type": "Champagne",
 "price": "",
 "cur": "EUR",
 "notes": "Vintage blanc de blancs."
@@ -7052,19 +6872,19 @@
 "lat": 49.247,
 "lng": 4.043,
 "founded": "",
-"style": "sparkling",
+"style": "champagne",
 "story": "A family house with cellars in the chalk crayères of the old Saint-Nicaise abbey in Reims, known for Chardonnay-led Champagne.",
 "wines": [
 {
 "name": "Brut Réserve",
-"type": "Sparkling",
+"type": "Champagne",
 "price": "",
 "cur": "EUR",
 "notes": "Light, Chardonnay-rich blend."
 },
 {
 "name": "Comtes de Champagne",
-"type": "Sparkling",
+"type": "Champagne",
 "price": "",
 "cur": "EUR",
 "notes": "Vintage blanc de blancs."
@@ -7081,12 +6901,12 @@
 "lat": 48.948,
 "lng": 4.018,
 "founded": "",
-"style": "sparkling",
+"style": "champagne",
 "story": "A tiny house in Le Mesnil-sur-Oger making a single wine: a vintage blanc de blancs, released only in exceptional years.",
 "wines": [
 {
 "name": "Salon Le Mesnil",
-"type": "Sparkling",
+"type": "Champagne",
 "price": "",
 "cur": "EUR",
 "notes": "Long-aged Chardonnay Champagne."
@@ -10633,6 +10453,1934 @@
 "price": "",
 "cur": "EUR",
 "notes": "Salty, volcanic white."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "de-weingut-egon-muller-scharzhof",
+"name": "Weingut Egon Müller – Scharzhof",
+"region": "Wiltingen, Saar",
+"country": "Germany",
+"lat": 49.663,
+"lng": 6.6,
+"founded": "",
+"style": "white",
+"story": "The Müller family's Scharzhof below the steep Scharzhofberg vineyard, source of some of the world's most prized Rieslings, especially sweet Auslese and Eiswein.",
+"wines": [
+{
+"name": "Scharzhofberger Riesling Kabinett",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Delicate, racy Saar Riesling."
+},
+{
+"name": "Scharzhofberger Riesling Auslese",
+"type": "Sweet",
+"price": "",
+"cur": "EUR",
+"notes": "Rare, honeyed Riesling."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "de-weingut-joh-jos-prum",
+"name": "Weingut Joh. Jos. Prüm",
+"region": "Bernkastel-Wehlen, Mosel",
+"country": "Germany",
+"lat": 49.93,
+"lng": 7.04,
+"founded": "",
+"style": "white",
+"story": "A family estate famous for Riesling from the Wehlener Sonnenuhr, named after the sundial in the vineyard.",
+"wines": [
+{
+"name": "Wehlener Sonnenuhr Riesling Spätlese",
+"type": "Sweet",
+"price": "",
+"cur": "EUR",
+"notes": "Light, fruity, long-lived Riesling."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "de-weingut-dr-loosen",
+"name": "Weingut Dr. Loosen",
+"region": "Bernkastel-Kues, Mosel",
+"country": "Germany",
+"lat": 49.918,
+"lng": 7.065,
+"founded": "",
+"style": "white",
+"story": "Ernst Loosen's family estate with old, ungrafted vines in top Mosel sites such as Wehlener Sonnenuhr and Ürziger Würzgarten.",
+"wines": [
+{
+"name": "Dr. L Riesling",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Off-dry Mosel Riesling."
+},
+{
+"name": "Erdener Prälat Riesling Auslese",
+"type": "Sweet",
+"price": "",
+"cur": "EUR",
+"notes": "Rich, slate-grown Riesling."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "de-weingut-fritz-haag",
+"name": "Weingut Fritz Haag",
+"region": "Brauneberg, Mosel",
+"country": "Germany",
+"lat": 49.905,
+"lng": 6.98,
+"founded": "",
+"style": "white",
+"story": "A Brauneberg estate famous for Riesling from the Juffer and Juffer-Sonnenuhr vineyards.",
+"wines": [
+{
+"name": "Brauneberger Juffer-Sonnenuhr Riesling Spätlese",
+"type": "Sweet",
+"price": "",
+"cur": "EUR",
+"notes": "Elegant, fruity Riesling."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "de-weingut-clemens-busch",
+"name": "Weingut Clemens Busch",
+"region": "Pünderich, Mosel",
+"country": "Germany",
+"lat": 50.04,
+"lng": 7.13,
+"founded": "",
+"style": "white",
+"story": "An organic and biodynamic Mosel estate known for dry Rieslings from the Marienburg's red and grey slate plots.",
+"wines": [
+{
+"name": "Marienburg Riesling GG",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Dry, mineral Riesling."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "de-weingut-heymann-lowenstein",
+"name": "Weingut Heymann-Löwenstein",
+"region": "Winningen, Mosel",
+"country": "Germany",
+"lat": 50.32,
+"lng": 7.52,
+"founded": "",
+"style": "white",
+"story": "A Lower Mosel (Terrassenmosel) estate whose dry Rieslings come from steep, stone-terraced vineyards.",
+"wines": [
+{
+"name": "Uhlen Riesling",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Dry, terraced-vineyard Riesling."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "de-schloss-johannisberg",
+"name": "Schloss Johannisberg",
+"region": "Geisenheim, Rheingau",
+"country": "Germany",
+"lat": 49.996,
+"lng": 7.976,
+"founded": "",
+"style": "white",
+"story": "A hilltop castle estate where, according to tradition, late-harvest Spätlese was discovered in 1775 when the courier carrying permission to pick arrived late.",
+"wines": [
+{
+"name": "Riesling Gelblack",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Fruity estate Riesling."
+},
+{
+"name": "Riesling Grünlack Spätlese",
+"type": "Sweet",
+"price": "",
+"cur": "EUR",
+"notes": "Late-harvest Riesling."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "de-kloster-eberbach",
+"name": "Kloster Eberbach",
+"region": "Eltville, Rheingau",
+"country": "Germany",
+"lat": 50.043,
+"lng": 8.045,
+"founded": "",
+"style": "white",
+"story": "A Cistercian monastery founded in 1136, one of the great wine estates of medieval Europe; today the Hessian state winery.",
+"wines": [
+{
+"name": "Steinberger Riesling",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "From the monks' walled Steinberg vineyard."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "de-weingut-robert-weil",
+"name": "Weingut Robert Weil",
+"region": "Kiedrich, Rheingau",
+"country": "Germany",
+"lat": 50.04,
+"lng": 8.085,
+"founded": "1875",
+"style": "white",
+"story": "Founded in 1875, famous for Riesling from the steep Kiedricher Gräfenberg.",
+"wines": [
+{
+"name": "Kiedrich Gräfenberg Riesling GG",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Dry, powerful Riesling."
+},
+{
+"name": "Riesling Trockenbeerenauslese",
+"type": "Sweet",
+"price": "",
+"cur": "EUR",
+"notes": "Rare botrytis Riesling."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "de-weingut-keller",
+"name": "Weingut Keller",
+"region": "Flörsheim-Dalsheim, Rheinhessen",
+"country": "Germany",
+"lat": 49.69,
+"lng": 8.19,
+"founded": "",
+"style": "white",
+"story": "Klaus Peter Keller's family estate showed the world the potential of Rheinhessen's limestone, with cult dry Rieslings such as G-Max.",
+"wines": [
+{
+"name": "Riesling von der Fels",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Dry limestone Riesling."
+},
+{
+"name": "Abtserde Riesling GG",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Grand cru dry Riesling."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "de-weingut-wittmann",
+"name": "Weingut Wittmann",
+"region": "Westhofen, Rheinhessen",
+"country": "Germany",
+"lat": 49.7,
+"lng": 8.25,
+"founded": "",
+"style": "white",
+"story": "A biodynamic family estate in Westhofen, known for dry Rieslings from the Morstein vineyard.",
+"wines": [
+{
+"name": "Morstein Riesling GG",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Dry, structured Riesling."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "de-weingut-gunderloch",
+"name": "Weingut Gunderloch",
+"region": "Nackenheim, Rheinhessen",
+"country": "Germany",
+"lat": 49.915,
+"lng": 8.34,
+"founded": "",
+"style": "white",
+"story": "A family estate on the Roter Hang, the red slate slope above the Rhine at Nackenheim.",
+"wines": [
+{
+"name": "Nackenheim Rothenberg Riesling",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Riesling from red slate."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "de-weingut-donnhoff",
+"name": "Weingut Dönnhoff",
+"region": "Oberhausen, Nahe",
+"country": "Germany",
+"lat": 49.79,
+"lng": 7.76,
+"founded": "",
+"style": "white",
+"story": "A Nahe estate whose precise Rieslings from Hermannshöhle and other sites made the region famous.",
+"wines": [
+{
+"name": "Hermannshöhle Riesling GG",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Dry, mineral Riesling."
+},
+{
+"name": "Riesling Kabinett",
+"type": "Sweet",
+"price": "",
+"cur": "EUR",
+"notes": "Light, fruity Riesling."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "de-weingut-emrich-schonleber",
+"name": "Weingut Emrich-Schönleber",
+"region": "Monzingen, Nahe",
+"country": "Germany",
+"lat": 49.8,
+"lng": 7.6,
+"founded": "",
+"style": "white",
+"story": "A family estate in Monzingen known for the Halenberg and Frühlingsplätzchen vineyards.",
+"wines": [
+{
+"name": "Halenberg Riesling GG",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Dry, smoky Riesling."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "de-weingut-dr-burklin-wolf",
+"name": "Weingut Dr. Bürklin-Wolf",
+"region": "Wachenheim, Pfalz",
+"country": "Germany",
+"lat": 49.44,
+"lng": 8.18,
+"founded": "",
+"style": "white",
+"story": "A large, biodynamic Pfalz estate that classified its own vineyards into Burgundy-style crus.",
+"wines": [
+{
+"name": "Riesling Kirchenstück G.C.",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Dry Riesling."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "de-weingut-okonomierat-rebholz",
+"name": "Weingut Ökonomierat Rebholz",
+"region": "Siebeldingen, Pfalz",
+"country": "Germany",
+"lat": 49.21,
+"lng": 8.05,
+"founded": "",
+"style": "white",
+"story": "A southern Pfalz family estate known for bone-dry Rieslings and Pinot Blanc from the Kastanienbusch and Im Sonnenschein vineyards.",
+"wines": [
+{
+"name": "Kastanienbusch Riesling GG",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Dry, intense Riesling."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "de-weingut-bernhard-huber",
+"name": "Weingut Bernhard Huber",
+"region": "Malterdingen, Baden",
+"country": "Germany",
+"lat": 48.15,
+"lng": 7.88,
+"founded": "",
+"style": "red",
+"story": "The late Bernhard Huber made Malterdingen's Spätburgunder (Pinot Noir) famous; the estate is now run by his son Julian.",
+"wines": [
+{
+"name": "Malterdinger Spätburgunder",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Pinot Noir."
+},
+{
+"name": "Bienenberg Spätburgunder GG",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Top Pinot Noir."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "de-weingut-dr-heger",
+"name": "Weingut Dr. Heger",
+"region": "Ihringen, Kaiserstuhl",
+"country": "Germany",
+"lat": 48.04,
+"lng": 7.65,
+"founded": "",
+"style": "red",
+"story": "A Kaiserstuhl estate on volcanic soils, known for Pinot Noir and Pinot Gris from the Winklerberg.",
+"wines": [
+{
+"name": "Winklerberg Spätburgunder",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Volcanic-soil Pinot Noir."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "de-weingut-meyer-nakel",
+"name": "Weingut Meyer-Näkel",
+"region": "Dernau, Ahr",
+"country": "Germany",
+"lat": 50.53,
+"lng": 7.05,
+"founded": "",
+"style": "red",
+"story": "A family estate in the narrow Ahr valley, one of Germany's leading Pinot Noir producers.",
+"wines": [
+{
+"name": "Spätburgunder Blauschiefer",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Slate-grown Pinot Noir."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "de-weingut-rudolf-furst",
+"name": "Weingut Rudolf Fürst",
+"region": "Bürgstadt, Franken",
+"country": "Germany",
+"lat": 49.71,
+"lng": 9.27,
+"founded": "",
+"style": "red",
+"story": "A Franconian family estate on red sandstone, famous for Pinot Noir and Silvaner.",
+"wines": [
+{
+"name": "Centgrafenberg Spätburgunder GG",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Fine Pinot Noir."
+},
+{
+"name": "Silvaner",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Classic Franconian Silvaner."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "de-weingut-juliusspital",
+"name": "Weingut Juliusspital",
+"region": "Würzburg, Franken",
+"country": "Germany",
+"lat": 49.797,
+"lng": 9.935,
+"founded": "1576",
+"style": "white",
+"story": "A charitable hospital foundation established in 1576, today one of Germany's largest estates, with Silvaner in the round Bocksbeutel bottle.",
+"wines": [
+{
+"name": "Würzburger Stein Silvaner",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Mineral Silvaner."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "de-schloss-proschwitz",
+"name": "Schloss Proschwitz",
+"region": "Meissen, Saxony",
+"country": "Germany",
+"lat": 51.18,
+"lng": 13.48,
+"founded": "",
+"style": "white",
+"story": "The Prinz zur Lippe family's estate in Saxony, one of Europe's most northerly wine regions.",
+"wines": [
+{
+"name": "Weissburgunder",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Pinot Blanc."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "at-weingut-f-x-pichler",
+"name": "Weingut F.X. Pichler",
+"region": "Oberloiben, Wachau",
+"country": "Austria",
+"lat": 48.392,
+"lng": 15.535,
+"founded": "",
+"style": "white",
+"story": "A Wachau family estate famous for powerful Smaragd Grüner Veltliner and Riesling.",
+"wines": [
+{
+"name": "Grüner Veltliner Smaragd M",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Rich, peppery Grüner."
+},
+{
+"name": "Riesling Smaragd Kellerberg",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Dry, mineral Riesling."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "at-weingut-knoll",
+"name": "Weingut Knoll",
+"region": "Unterloiben, Wachau",
+"country": "Austria",
+"lat": 48.393,
+"lng": 15.525,
+"founded": "",
+"style": "white",
+"story": "A family estate whose baroque St Urban labels are a Wachau classic.",
+"wines": [
+{
+"name": "Riesling Smaragd Ried Schütt",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Dry Riesling."
+},
+{
+"name": "Grüner Veltliner Federspiel",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Light Grüner."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "at-domane-wachau",
+"name": "Domäne Wachau",
+"region": "Dürnstein, Wachau",
+"country": "Austria",
+"lat": 48.392,
+"lng": 15.51,
+"founded": "",
+"style": "white",
+"story": "A growers' cooperative in Dürnstein, below the ruined castle where Richard the Lionheart was held captive.",
+"wines": [
+{
+"name": "Grüner Veltliner Terrassen Federspiel",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Fresh, peppery Grüner."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "at-weingut-hirtzberger",
+"name": "Weingut Hirtzberger",
+"region": "Spitz, Wachau",
+"country": "Austria",
+"lat": 48.366,
+"lng": 15.418,
+"founded": "",
+"style": "white",
+"story": "A Spitz family estate known for intense Smaragd wines from Singerriedel and Honivogl.",
+"wines": [
+{
+"name": "Riesling Smaragd Singerriedel",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Dry, intense Riesling."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "at-nikolaihof",
+"name": "Nikolaihof",
+"region": "Mautern, Wachau",
+"country": "Austria",
+"lat": 48.392,
+"lng": 15.575,
+"founded": "",
+"style": "white",
+"story": "One of Austria's oldest wine estates, built on Roman foundations, and a biodynamic pioneer since 1971.",
+"wines": [
+{
+"name": "Vinothek Riesling",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Riesling aged many years in large cask."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "at-weingut-brundlmayer",
+"name": "Weingut Bründlmayer",
+"region": "Langenlois, Kamptal",
+"country": "Austria",
+"lat": 48.47,
+"lng": 15.68,
+"founded": "",
+"style": "white",
+"story": "A Kamptal family estate known for Riesling from the Zöbinger Heiligenstein and for sparkling wine.",
+"wines": [
+{
+"name": "Riesling Zöbinger Heiligenstein",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Dry Riesling."
+},
+{
+"name": "Brut Rosé",
+"type": "Sparkling",
+"price": "",
+"cur": "EUR",
+"notes": "Traditional-method rosé."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "at-schloss-gobelsburg",
+"name": "Schloss Gobelsburg",
+"region": "Gobelsburg, Kamptal",
+"country": "Austria",
+"lat": 48.45,
+"lng": 15.68,
+"founded": "",
+"style": "white",
+"story": "A castle estate run for centuries by the monks of Zwettl Abbey and today by Michael Moosbrugger.",
+"wines": [
+{
+"name": "Grüner Veltliner Ried Lamm",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Rich Grüner Veltliner."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "at-weingut-wieninger",
+"name": "Weingut Wieninger",
+"region": "Vienna",
+"country": "Austria",
+"lat": 48.3,
+"lng": 16.4,
+"founded": "",
+"style": "white",
+"story": "A Vienna estate that revived the city's traditional field blend, Wiener Gemischter Satz.",
+"wines": [
+{
+"name": "Wiener Gemischter Satz",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Field blend from Vienna's hills."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "at-weinlaubenhof-kracher",
+"name": "Weinlaubenhof Kracher",
+"region": "Illmitz, Burgenland",
+"country": "Austria",
+"lat": 47.76,
+"lng": 16.8,
+"founded": "",
+"style": "sweet",
+"story": "The late Alois Kracher made sweet wines from the misty shores of Lake Neusiedl world famous.",
+"wines": [
+{
+"name": "Trockenbeerenauslese",
+"type": "Sweet",
+"price": "",
+"cur": "EUR",
+"notes": "Botrytis sweet wine."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "at-weingut-ernst-triebaumer",
+"name": "Weingut Ernst Triebaumer",
+"region": "Rust, Burgenland",
+"country": "Austria",
+"lat": 47.8,
+"lng": 16.67,
+"founded": "",
+"style": "red",
+"story": "A Rust family estate known for Blaufränkisch and the town's traditional sweet Ausbruch.",
+"wines": [
+{
+"name": "Blaufränkisch Mariental",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Single-vineyard Blaufränkisch."
+},
+{
+"name": "Ruster Ausbruch",
+"type": "Sweet",
+"price": "",
+"cur": "EUR",
+"notes": "Traditional sweet wine."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "at-weingut-gesellmann",
+"name": "Weingut Gesellmann",
+"region": "Deutschkreutz, Burgenland",
+"country": "Austria",
+"lat": 47.6,
+"lng": 16.63,
+"founded": "",
+"style": "red",
+"story": "A Mittelburgenland family estate known for Blaufränkisch.",
+"wines": [
+{
+"name": "Blaufränkisch Hochberc",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Single-vineyard Blaufränkisch."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "at-weingut-tement",
+"name": "Weingut Tement",
+"region": "Berghausen, Südsteiermark",
+"country": "Austria",
+"lat": 46.69,
+"lng": 15.57,
+"founded": "",
+"style": "white",
+"story": "A Styrian family estate known for Sauvignon Blanc from the Zieregg vineyard on the Slovenian border.",
+"wines": [
+{
+"name": "Sauvignon Blanc Zieregg",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Mineral Sauvignon Blanc."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "hu-royal-tokaji",
+"name": "Royal Tokaji",
+"region": "Mád, Tokaj",
+"country": "Hungary",
+"lat": 48.192,
+"lng": 21.28,
+"founded": "1990",
+"style": "sweet",
+"story": "Founded in 1990 with wine writer Hugh Johnson among the partners, to revive Tokaji's single-vineyard Aszú wines.",
+"wines": [
+{
+"name": "Tokaji Aszú 5 Puttonyos",
+"type": "Sweet",
+"price": "",
+"cur": "EUR",
+"notes": "Botrytised Furmint."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "hu-disznoko",
+"name": "Disznókő",
+"region": "Mezőzombor, Tokaj",
+"country": "Hungary",
+"lat": 48.15,
+"lng": 21.25,
+"founded": "",
+"style": "sweet",
+"story": "A historic Tokaj estate whose vineyard was ranked First Growth in the 1772 Tokaj classification.",
+"wines": [
+{
+"name": "Tokaji Aszú 6 Puttonyos",
+"type": "Sweet",
+"price": "",
+"cur": "EUR",
+"notes": "Rich, honeyed Aszú."
+},
+{
+"name": "Dry Furmint",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Dry Furmint."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "hu-oremus",
+"name": "Oremus",
+"region": "Tolcsva, Tokaj",
+"country": "Hungary",
+"lat": 48.28,
+"lng": 21.45,
+"founded": "",
+"style": "sweet",
+"story": "A Tokaj estate named after the Oremus vineyard, where Aszú is said to have been first made in the 17th century.",
+"wines": [
+{
+"name": "Tokaji Aszú 5 Puttonyos",
+"type": "Sweet",
+"price": "",
+"cur": "EUR",
+"notes": "Classic Aszú."
+},
+{
+"name": "Mandolás Furmint",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Dry Furmint."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "hu-szepsy-istvan",
+"name": "Szepsy István",
+"region": "Mád, Tokaj",
+"country": "Hungary",
+"lat": 48.195,
+"lng": 21.285,
+"founded": "",
+"style": "white",
+"story": "István Szepsy, from a long line of Tokaj winemakers, is a leader of dry single-vineyard Furmint and great Aszú.",
+"wines": [
+{
+"name": "Szepsy Furmint",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Dry, mineral Furmint."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "hu-gere-attila",
+"name": "Gere Attila",
+"region": "Villány",
+"country": "Hungary",
+"lat": 45.87,
+"lng": 18.45,
+"founded": "",
+"style": "red",
+"story": "A family winery in Villány, Hungary's southern red-wine region.",
+"wines": [
+{
+"name": "Solus Merlot",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Rich Merlot."
+},
+{
+"name": "Kopar Cuvée",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Bordeaux-style blend."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "hu-bock-jozsef",
+"name": "Bock József",
+"region": "Villány",
+"country": "Hungary",
+"lat": 45.869,
+"lng": 18.452,
+"founded": "",
+"style": "red",
+"story": "A Villány family winery known for Cabernet Franc and blends.",
+"wines": [
+{
+"name": "Bock Cuvée",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Red blend."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "hu-st-andrea",
+"name": "St. Andrea",
+"region": "Eger",
+"country": "Hungary",
+"lat": 47.9,
+"lng": 20.38,
+"founded": "",
+"style": "red",
+"story": "An Eger winery known for modern Egri Bikavér (Bull's Blood).",
+"wines": [
+{
+"name": "Merengő Egri Bikavér Superior",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Kékfrankos-based blend."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "ch-domaine-louis-bovard",
+"name": "Domaine Louis Bovard",
+"region": "Cully, Lavaux",
+"country": "Switzerland",
+"lat": 46.49,
+"lng": 6.73,
+"founded": "",
+"style": "white",
+"story": "A family estate in the UNESCO-listed terraced vineyards of Lavaux above Lake Geneva, a reference for Chasselas.",
+"wines": [
+{
+"name": "Dézaley Médinette",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Chasselas from the Dézaley grand cru."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "ch-marie-therese-chappaz",
+"name": "Marie-Thérèse Chappaz",
+"region": "Fully, Valais",
+"country": "Switzerland",
+"lat": 46.14,
+"lng": 7.11,
+"founded": "",
+"style": "sweet",
+"story": "A biodynamic Valais grower famous for late-harvest Petite Arvine and Marsanne.",
+"wines": [
+{
+"name": "Petite Arvine Grain par Grain",
+"type": "Sweet",
+"price": "",
+"cur": "EUR",
+"notes": "Late-harvest Petite Arvine."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "ch-domaine-du-mont-d-or",
+"name": "Domaine du Mont d'Or",
+"region": "Pont-de-la-Morge, Valais",
+"country": "Switzerland",
+"lat": 46.23,
+"lng": 7.31,
+"founded": "1848",
+"style": "white",
+"story": "Founded in 1848 on steep terraces near Sion, known for Johannisberg (Sylvaner) and late-harvest wines.",
+"wines": [
+{
+"name": "Johannisberg",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Valais Sylvaner."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "ch-provins-valais",
+"name": "Provins Valais",
+"region": "Sion, Valais",
+"country": "Switzerland",
+"lat": 46.23,
+"lng": 7.36,
+"founded": "",
+"style": "white",
+"story": "Switzerland's largest wine cooperative, gathering thousands of Valais growers.",
+"wines": [
+{
+"name": "Fendant",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Chasselas."
+},
+{
+"name": "Cornalin",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Native Valais red."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "ch-weingut-gantenbein",
+"name": "Weingut Gantenbein",
+"region": "Fläsch, Graubünden",
+"country": "Switzerland",
+"lat": 47.03,
+"lng": 9.52,
+"founded": "",
+"style": "red",
+"story": "Daniel and Martha Gantenbein's small estate in the Bündner Herrschaft, celebrated for Pinot Noir.",
+"wines": [
+{
+"name": "Pinot Noir",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Fine, Burgundy-style Pinot Noir."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "si-movia",
+"name": "Movia",
+"region": "Ceglo, Goriška Brda",
+"country": "Slovenia",
+"lat": 45.99,
+"lng": 13.53,
+"founded": "",
+"style": "white",
+"story": "The Kristančič family's biodynamic estate straddling the Italian border, known for the unfiltered sparkling Puro.",
+"wines": [
+{
+"name": "Puro",
+"type": "Sparkling",
+"price": "",
+"cur": "EUR",
+"notes": "Sparkling wine disgorged by the buyer."
+},
+{
+"name": "Lunar",
+"type": "Amber",
+"price": "",
+"cur": "EUR",
+"notes": "Skin-fermented Rebula."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "si-marjan-simcic",
+"name": "Marjan Simčič",
+"region": "Ceglo, Goriška Brda",
+"country": "Slovenia",
+"lat": 45.985,
+"lng": 13.525,
+"founded": "",
+"style": "white",
+"story": "A Brda family estate known for Rebula and single-vineyard Opoka wines.",
+"wines": [
+{
+"name": "Opoka Rebula",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Single-vineyard Rebula."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "si-klinec",
+"name": "Klinec",
+"region": "Medana, Goriška Brda",
+"country": "Slovenia",
+"lat": 46.0,
+"lng": 13.5,
+"founded": "",
+"style": "amber",
+"story": "A small family estate in Medana making natural, skin-contact wines aged in acacia barrels.",
+"wines": [
+{
+"name": "Ortodox",
+"type": "Amber",
+"price": "",
+"cur": "EUR",
+"notes": "Skin-contact white blend."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "si-batic",
+"name": "Batič",
+"region": "Šempas, Vipava",
+"country": "Slovenia",
+"lat": 45.92,
+"lng": 13.75,
+"founded": "",
+"style": "amber",
+"story": "A Vipava valley family estate making natural, skin-contact wines.",
+"wines": [
+{
+"name": "Zaria",
+"type": "Amber",
+"price": "",
+"cur": "EUR",
+"notes": "Skin-macerated white blend."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "si-ptujska-klet",
+"name": "Ptujska Klet",
+"region": "Ptuj, Štajerska",
+"country": "Slovenia",
+"lat": 46.42,
+"lng": 15.87,
+"founded": "",
+"style": "white",
+"story": "A historic cellar in Ptuj, often called Slovenia's oldest, whose archive holds the 1917 'Zlata trta' bottle.",
+"wines": [
+{
+"name": "Šipon",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Furmint (Šipon)."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "hr-grgic-vina",
+"name": "Grgić Vina",
+"region": "Trstenik, Pelješac",
+"country": "Croatia",
+"lat": 42.915,
+"lng": 17.395,
+"founded": "",
+"style": "red",
+"story": "Founded by Croatian-born Miljenko 'Mike' Grgich, whose Chardonnay won the 1976 Judgment of Paris, on his native Pelješac peninsula.",
+"wines": [
+{
+"name": "Plavac Mali",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Dalmatian red."
+},
+{
+"name": "Pošip",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Korčula white."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "hr-bibich",
+"name": "Bibich",
+"region": "Plastovo, Skradin",
+"country": "Croatia",
+"lat": 43.84,
+"lng": 15.95,
+"founded": "",
+"style": "red",
+"story": "A family estate near Krka national park in northern Dalmatia, reviving native grapes such as Debit and Lasin.",
+"wines": [
+{
+"name": "R6 Riserva",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Babić blend."
+},
+{
+"name": "Debit",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Native white."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "hr-kozlovic",
+"name": "Kozlović",
+"region": "Momjan, Istria",
+"country": "Croatia",
+"lat": 45.43,
+"lng": 13.7,
+"founded": "",
+"style": "white",
+"story": "A family winery in northern Istria known for Malvazija Istarska and sweet Momjan Muscat.",
+"wines": [
+{
+"name": "Santa Lucia Malvazija",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Single-vineyard Malvazija."
+},
+{
+"name": "Muškat Momjanski",
+"type": "Sweet",
+"price": "",
+"cur": "EUR",
+"notes": "Sweet Muscat."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "hr-krauthaker",
+"name": "Krauthaker",
+"region": "Kutjevo, Slavonia",
+"country": "Croatia",
+"lat": 45.42,
+"lng": 17.88,
+"founded": "",
+"style": "white",
+"story": "A Kutjevo family estate known for Graševina (Welschriesling), including sweet wines.",
+"wines": [
+{
+"name": "Graševina Mitrovac",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Single-vineyard Graševina."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "hr-stina",
+"name": "Stina",
+"region": "Bol, Brač",
+"country": "Croatia",
+"lat": 43.27,
+"lng": 16.65,
+"founded": "",
+"style": "red",
+"story": "A winery in an old cooperative building on the island of Brač, working Plavac Mali and Pošip.",
+"wines": [
+{
+"name": "Plavac Mali",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Dalmatian red."
+},
+{
+"name": "Pošip",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Island white."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "uk-nyetimber",
+"name": "Nyetimber",
+"region": "West Chiltington, West Sussex",
+"country": "United Kingdom",
+"lat": 50.95,
+"lng": -0.45,
+"founded": "1988",
+"style": "sparkling",
+"story": "Planted in 1988 with Chardonnay, Pinot Noir and Pinot Meunier, a pioneer of English sparkling wine.",
+"wines": [
+{
+"name": "Classic Cuvée",
+"type": "Sparkling",
+"price": "",
+"cur": "EUR",
+"notes": "Traditional-method English sparkling."
+},
+{
+"name": "Tillington Single Vineyard",
+"type": "Sparkling",
+"price": "",
+"cur": "EUR",
+"notes": "Single-vineyard sparkling."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "uk-ridgeview",
+"name": "Ridgeview",
+"region": "Ditchling Common, East Sussex",
+"country": "United Kingdom",
+"lat": 50.94,
+"lng": -0.1,
+"founded": "1995",
+"style": "sparkling",
+"story": "A family estate founded in 1995 at the foot of the South Downs, making only sparkling wine.",
+"wines": [
+{
+"name": "Bloomsbury",
+"type": "Sparkling",
+"price": "",
+"cur": "EUR",
+"notes": "Chardonnay-led sparkling."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "uk-chapel-down",
+"name": "Chapel Down",
+"region": "Tenterden, Kent",
+"country": "United Kingdom",
+"lat": 51.045,
+"lng": 0.695,
+"founded": "",
+"style": "sparkling",
+"story": "One of England's best-known wineries, in the Kent countryside.",
+"wines": [
+{
+"name": "Brut",
+"type": "Sparkling",
+"price": "",
+"cur": "EUR",
+"notes": "English sparkling."
+},
+{
+"name": "Bacchus",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Aromatic English white."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "uk-gusbourne",
+"name": "Gusbourne",
+"region": "Appledore, Kent",
+"country": "United Kingdom",
+"lat": 51.03,
+"lng": 0.78,
+"founded": "",
+"style": "sparkling",
+"story": "An estate on south-facing slopes near Appledore, known for vintage sparkling wine.",
+"wines": [
+{
+"name": "Blanc de Blancs",
+"type": "Sparkling",
+"price": "",
+"cur": "EUR",
+"notes": "Chardonnay sparkling."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "uk-hambledon-vineyard",
+"name": "Hambledon Vineyard",
+"region": "Hambledon, Hampshire",
+"country": "United Kingdom",
+"lat": 50.93,
+"lng": -1.08,
+"founded": "1952",
+"style": "sparkling",
+"story": "Planted in 1952, England's first commercial vineyard of the modern era.",
+"wines": [
+{
+"name": "Classic Cuvée",
+"type": "Sparkling",
+"price": "",
+"cur": "EUR",
+"notes": "Chalk-grown sparkling."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "uk-rathfinny-wine-estate",
+"name": "Rathfinny Wine Estate",
+"region": "Alfriston, East Sussex",
+"country": "United Kingdom",
+"lat": 50.8,
+"lng": 0.15,
+"founded": "",
+"style": "sparkling",
+"story": "A large estate on the chalk of the South Downs near the sea, planted from 2012.",
+"wines": [
+{
+"name": "Classic Cuvée",
+"type": "Sparkling",
+"price": "",
+"cur": "EUR",
+"notes": "Sussex sparkling."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "uk-camel-valley",
+"name": "Camel Valley",
+"region": "Bodmin, Cornwall",
+"country": "United Kingdom",
+"lat": 50.46,
+"lng": -4.74,
+"founded": "",
+"style": "sparkling",
+"story": "A Cornish family vineyard on the slopes of the Camel valley.",
+"wines": [
+{
+"name": "Cornwall Brut",
+"type": "Sparkling",
+"price": "",
+"cur": "EUR",
+"notes": "Fresh Cornish sparkling."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "ro-cramele-recas",
+"name": "Cramele Recaș",
+"region": "Recaș, Banat",
+"country": "Romania",
+"lat": 45.8,
+"lng": 21.5,
+"founded": "",
+"style": "white",
+"story": "One of Romania's largest wineries, in the western Banat region.",
+"wines": [
+{
+"name": "Sole Fetească Albă",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Native Romanian white."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "ro-davino",
+"name": "Davino",
+"region": "Ceptura, Dealu Mare",
+"country": "Romania",
+"lat": 45.03,
+"lng": 26.32,
+"founded": "",
+"style": "red",
+"story": "A Dealu Mare family estate, known for Fetească Neagră blends.",
+"wines": [
+{
+"name": "Flamboyant",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Fetească Neagră blend."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "ro-liliac",
+"name": "Liliac",
+"region": "Batoș, Transylvania",
+"country": "Romania",
+"lat": 46.89,
+"lng": 24.65,
+"founded": "",
+"style": "white",
+"story": "A Transylvanian winery making cool-climate whites.",
+"wines": [
+{
+"name": "Fetească Regală",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Native white."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "bg-villa-melnik",
+"name": "Villa Melnik",
+"region": "Harsovo, Melnik",
+"country": "Bulgaria",
+"lat": 41.47,
+"lng": 23.37,
+"founded": "",
+"style": "red",
+"story": "A family winery in the Struma valley near Melnik, known for the local Melnik grape.",
+"wines": [
+{
+"name": "Melnik",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Broad-leaved Melnik."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "bg-bessa-valley",
+"name": "Bessa Valley",
+"region": "Ognyanovo, Pazardzhik",
+"country": "Bulgaria",
+"lat": 42.13,
+"lng": 24.43,
+"founded": "",
+"style": "red",
+"story": "A Thracian valley estate known for Bordeaux-style reds.",
+"wines": [
+{
+"name": "Enira",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Merlot-led blend."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "md-milestii-mici",
+"name": "Mileștii Mici",
+"region": "Mileștii Mici",
+"country": "Moldova",
+"lat": 46.91,
+"lng": 28.83,
+"founded": "",
+"style": "red",
+"story": "State-owned underground cellars in old limestone galleries, holding a wine collection recognised by Guinness World Records as the world's largest.",
+"wines": [
+{
+"name": "Collection Wines",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Aged reds from the galleries."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "md-cricova",
+"name": "Cricova",
+"region": "Cricova",
+"country": "Moldova",
+"lat": 47.14,
+"lng": 28.86,
+"founded": "",
+"style": "sparkling",
+"story": "An underground 'wine city' of limestone tunnels north of Chișinău, famous for traditional-method sparkling wine.",
+"wines": [
+{
+"name": "Cricova Brut",
+"type": "Sparkling",
+"price": "",
+"cur": "EUR",
+"notes": "Traditional-method sparkling."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "cz-znovin-znojmo",
+"name": "Znovín Znojmo",
+"region": "Znojmo, Moravia",
+"country": "Czechia",
+"lat": 48.86,
+"lng": 16.05,
+"founded": "",
+"style": "white",
+"story": "A Moravian winery near the Austrian border, with cellars beneath Znojmo.",
+"wines": [
+{
+"name": "Grüner Veltliner",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Moravian Veltlínské zelené."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "cz-sonberk",
+"name": "Sonberk",
+"region": "Popice, Moravia",
+"country": "Czechia",
+"lat": 48.93,
+"lng": 16.67,
+"founded": "",
+"style": "white",
+"story": "A modern winery on the slopes below the Pálava hills.",
+"wines": [
+{
+"name": "Riesling",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Moravian Riesling."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "mk-tikves-winery",
+"name": "Tikveš Winery",
+"region": "Kavadarci, Tikveš",
+"country": "North Macedonia",
+"lat": 41.43,
+"lng": 22.01,
+"founded": "1885",
+"style": "red",
+"story": "Founded in 1885, the largest winery in the Balkans, in the Tikveš wine region.",
+"wines": [
+{
+"name": "Vranec",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Native Vranec."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "rs-zvonko-bogdan-winery",
+"name": "Zvonko Bogdan Winery",
+"region": "Palić, Subotica",
+"country": "Serbia",
+"lat": 46.1,
+"lng": 19.77,
+"founded": "",
+"style": "white",
+"story": "A winery near Lake Palić named after the famous Serbian singer.",
+"wines": [
+{
+"name": "Cuvée No. 1",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "White blend."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "cy-kyperounda-winery",
+"name": "Kyperounda Winery",
+"region": "Kyperounda, Troodos",
+"country": "Cyprus",
+"lat": 34.933,
+"lng": 33.1,
+"founded": "",
+"style": "white",
+"story": "One of Europe's highest wineries, in the Troodos mountains.",
+"wines": [
+{
+"name": "Petritis",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Native Xynisteri."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "cy-tsiakkas-winery",
+"name": "Tsiakkas Winery",
+"region": "Pelendri, Troodos",
+"country": "Cyprus",
+"lat": 34.89,
+"lng": 32.97,
+"founded": "",
+"style": "red",
+"story": "A family winery in the Pitsilia hills, working native Maratheftiko.",
+"wines": [
+{
+"name": "Maratheftiko",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Native Cypriot red."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "lu-domaine-alice-hartmann",
+"name": "Domaine Alice Hartmann",
+"region": "Wormeldange, Moselle",
+"country": "Luxembourg",
+"lat": 49.615,
+"lng": 6.38,
+"founded": "",
+"style": "white",
+"story": "A Luxembourg Moselle estate known for Riesling and Crémant.",
+"wines": [
+{
+"name": "Riesling Koeppchen",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Dry Moselle Riesling."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "mt-meridiana-wine-estate",
+"name": "Meridiana Wine Estate",
+"region": "Ta' Qali",
+"country": "Malta",
+"lat": 35.89,
+"lng": 14.42,
+"founded": "",
+"style": "red",
+"story": "A Maltese estate on an old airfield in the centre of the island.",
+"wines": [
+{
+"name": "Isis Chardonnay",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Mediterranean Chardonnay."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "ge-pheasant-s-tears",
+"name": "Pheasant's Tears",
+"region": "Sighnaghi, Kakheti",
+"country": "Georgia",
+"lat": 41.62,
+"lng": 45.92,
+"founded": "2007",
+"style": "amber",
+"story": "Founded in 2007 in Sighnaghi to make traditional qvevri wines from Georgian grapes.",
+"wines": [
+{
+"name": "Rkatsiteli",
+"type": "Amber",
+"price": "",
+"cur": "EUR",
+"notes": "Skin-fermented qvevri white."
+},
+{
+"name": "Saperavi",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Qvevri red."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "ge-chateau-mukhrani",
+"name": "Château Mukhrani",
+"region": "Mukhrani, Kartli",
+"country": "Georgia",
+"lat": 41.93,
+"lng": 44.57,
+"founded": "1876",
+"style": "red",
+"story": "A royal estate founded in 1876 by Prince Ivane Mukhranbatoni, restored in the 2000s.",
+"wines": [
+{
+"name": "Saperavi",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Georgian red."
 }
 ],
 "events": [],

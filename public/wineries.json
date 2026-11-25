@@ -3946,96 +3946,6 @@
 "real": true
 },
 {
-"id": "s-rioja",
-"name": "Bodegas Río Oja",
-"region": "Rioja Alta",
-"country": "Spain",
-"lat": 42.576,
-"lng": -2.85,
-"founded": 1901,
-"style": "red",
-"hours": "Tue–Sun 10:00–14:00",
-"story": "Built next to the old railway station of Haro so barrels could ship to Bordeaux during phylloxera. Long ageing in American oak is the house style.",
-"wines": [
-{
-"name": "Gran Reserva",
-"type": "Red",
-"price": 48,
-"cur": "EUR",
-"notes": "Dried cherry, leather, vanilla, silky."
-},
-{
-"name": "Crianza",
-"type": "Red",
-"price": 16,
-"cur": "EUR",
-"notes": "Fresh red fruit with a touch of oak."
-},
-{
-"name": "Viura Blanco",
-"type": "White",
-"price": 13,
-"cur": "EUR",
-"notes": "Crisp and herbal."
-}
-],
-"events": [
-{
-"id": "e1",
-"title": "Tapas & Tempranillo night",
-"start": "2027-02-27T19:00",
-"end": "2027-02-27T22:00",
-"price": 40,
-"desc": "Pintxos from Haro's best bars with our reservas."
-}
-]
-},
-{
-"id": "s-douro",
-"name": "Quinta do Socalco",
-"region": "Douro Valley",
-"country": "Portugal",
-"lat": 41.163,
-"lng": -7.536,
-"founded": 1820,
-"style": "red",
-"hours": "Daily 10:00–18:00",
-"story": "Schist terraces drop steeply to the river. Grapes are still foot-trodden in granite lagares for the Port.",
-"wines": [
-{
-"name": "20 Year Tawny",
-"type": "Fortified",
-"price": 55,
-"cur": "EUR",
-"notes": "Walnut, orange peel and caramel."
-},
-{
-"name": "Vintage Port 2017",
-"type": "Fortified",
-"price": 95,
-"cur": "EUR",
-"notes": "Blackberry and violets, decades ahead."
-},
-{
-"name": "Douro Tinto",
-"type": "Red",
-"price": 19,
-"cur": "EUR",
-"notes": "Touriga Nacional, bold and floral."
-}
-],
-"events": [
-{
-"id": "e1",
-"title": "River boat & Port tasting",
-"start": "2027-03-13T10:00",
-"end": "2027-03-13T15:00",
-"price": 85,
-"desc": "Rabelo boat trip with lunch at the quinta."
-}
-]
-},
-{
 "id": "s-mosel",
 "name": "Weingut Steilhang",
 "region": "Mosel",
@@ -9339,6 +9249,1390 @@
 "price": "",
 "cur": "EUR",
 "notes": "Carignano del Sulcis Superiore."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "es-vega-sicilia",
+"name": "Vega Sicilia",
+"region": "Valbuena de Duero, Ribera del Duero",
+"country": "Spain",
+"lat": 41.635,
+"lng": -4.292,
+"founded": "1864",
+"style": "red",
+"story": "Founded in 1864, Spain's most famous estate. Its Único, mostly Tempranillo (Tinto Fino), is aged for about a decade before release.",
+"wines": [
+{
+"name": "Único",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Long-aged Tempranillo with Cabernet."
+},
+{
+"name": "Valbuena 5º",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Released in its fifth year."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "es-tinto-pesquera-alejandro-fernandez",
+"name": "Tinto Pesquera – Alejandro Fernández",
+"region": "Pesquera de Duero, Ribera del Duero",
+"country": "Spain",
+"lat": 41.638,
+"lng": -4.16,
+"founded": "",
+"style": "red",
+"story": "Alejandro Fernández's Pesquera helped put Ribera del Duero on the world map in the 1980s.",
+"wines": [
+{
+"name": "Tinto Pesquera Crianza",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Pure Tempranillo."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "es-dominio-de-pingus",
+"name": "Dominio de Pingus",
+"region": "Quintanilla de Onésimo, Ribera del Duero",
+"country": "Spain",
+"lat": 41.625,
+"lng": -4.36,
+"founded": "1995",
+"style": "red",
+"story": "Danish winemaker Peter Sisseck's cult estate, founded in 1995, making tiny amounts of old-vine Tempranillo.",
+"wines": [
+{
+"name": "Pingus",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Dense, old-vine Tinto Fino."
+},
+{
+"name": "Flor de Pingus",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Second wine."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "es-bodegas-emilio-moro",
+"name": "Bodegas Emilio Moro",
+"region": "Pesquera de Duero, Ribera del Duero",
+"country": "Spain",
+"lat": 41.636,
+"lng": -4.15,
+"founded": "",
+"style": "red",
+"story": "A family winery in Pesquera de Duero working Ribera's Tinto Fino for three generations.",
+"wines": [
+{
+"name": "Emilio Moro",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Tempranillo."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "es-r-lopez-de-heredia-vina-tondonia",
+"name": "R. López de Heredia – Viña Tondonia",
+"region": "Haro, Rioja",
+"country": "Spain",
+"lat": 42.578,
+"lng": -2.853,
+"founded": "1877",
+"style": "red",
+"story": "Founded in 1877 by Haro's railway station, famous for very long-aged traditional Rioja released when ready.",
+"wines": [
+{
+"name": "Viña Tondonia Reserva",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Long-aged Tempranillo blend."
+},
+{
+"name": "Viña Tondonia Blanco Reserva",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Oxidative, long-aged Viura."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "es-la-rioja-alta",
+"name": "La Rioja Alta",
+"region": "Haro, Rioja",
+"country": "Spain",
+"lat": 42.5775,
+"lng": -2.857,
+"founded": "1890",
+"style": "red",
+"story": "Founded in 1890 in Haro's Barrio de la Estación, known for classic Gran Reservas such as 904 and 890.",
+"wines": [
+{
+"name": "Viña Ardanza Reserva",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Tempranillo–Garnacha."
+},
+{
+"name": "Gran Reserva 904",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Long-aged Tempranillo."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "es-cvne",
+"name": "CVNE",
+"region": "Haro, Rioja",
+"country": "Spain",
+"lat": 42.577,
+"lng": -2.855,
+"founded": "1879",
+"style": "red",
+"story": "Compañía Vinícola del Norte de España, founded in 1879 in Haro, makers of Imperial and Viña Real.",
+"wines": [
+{
+"name": "Imperial Reserva",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Classic Rioja Alta Tempranillo."
+},
+{
+"name": "Monopole",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Viura."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "es-bodegas-muga",
+"name": "Bodegas Muga",
+"region": "Haro, Rioja",
+"country": "Spain",
+"lat": 42.5785,
+"lng": -2.851,
+"founded": "1932",
+"style": "red",
+"story": "Founded in 1932 in Haro, still using its own cooperage and oak fermenting vats.",
+"wines": [
+{
+"name": "Muga Reserva",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Tempranillo-led Rioja."
+},
+{
+"name": "Prado Enea Gran Reserva",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Long-aged flagship."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "es-bodegas-roda",
+"name": "Bodegas Roda",
+"region": "Haro, Rioja",
+"country": "Spain",
+"lat": 42.579,
+"lng": -2.856,
+"founded": "",
+"style": "red",
+"story": "A modern Rioja winery set above the Ebro in Haro's station district, focused on old-vine Tempranillo.",
+"wines": [
+{
+"name": "Roda Reserva",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Tempranillo."
+},
+{
+"name": "Cirsion",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Top cuvée."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "es-marques-de-riscal",
+"name": "Marqués de Riscal",
+"region": "Elciego, Rioja Alavesa",
+"country": "Spain",
+"lat": 42.515,
+"lng": -2.619,
+"founded": "1858",
+"style": "red",
+"story": "Founded in 1858, one of Rioja's pioneering wineries; its 'City of Wine' includes a hotel designed by Frank Gehry.",
+"wines": [
+{
+"name": "Reserva",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Classic Tempranillo."
+},
+{
+"name": "Rueda Verdejo",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Crisp Verdejo."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "es-marques-de-murrieta",
+"name": "Marqués de Murrieta",
+"region": "Logroño, Rioja",
+"country": "Spain",
+"lat": 42.433,
+"lng": -2.419,
+"founded": "1852",
+"style": "red",
+"story": "Founded in 1852 by Luciano de Murrieta, a pioneer of Rioja's ageing tradition, based at the Castillo Ygay estate.",
+"wines": [
+{
+"name": "Castillo Ygay Gran Reserva Especial",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Long-aged flagship."
+},
+{
+"name": "Capellanía",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Barrel-aged Viura."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "es-artadi",
+"name": "Artadi",
+"region": "Laguardia, Rioja Alavesa",
+"country": "Spain",
+"lat": 42.552,
+"lng": -2.585,
+"founded": "",
+"style": "red",
+"story": "A Laguardia winery focused on single-vineyard Tempranillo below the Sierra de Cantabria.",
+"wines": [
+{
+"name": "Viña El Pisón",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Single-vineyard Tempranillo."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "es-alvaro-palacios",
+"name": "Álvaro Palacios",
+"region": "Gratallops, Priorat",
+"country": "Spain",
+"lat": 41.193,
+"lng": 0.775,
+"founded": "",
+"style": "red",
+"story": "One of the pioneers who revived Priorat in 1989; his L'Ermita comes from old Garnacha on steep slate (llicorella).",
+"wines": [
+{
+"name": "L'Ermita",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Old-vine Garnacha."
+},
+{
+"name": "Camins del Priorat",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Village blend."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "es-clos-mogador",
+"name": "Clos Mogador",
+"region": "Gratallops, Priorat",
+"country": "Spain",
+"lat": 41.19,
+"lng": 0.78,
+"founded": "",
+"style": "red",
+"story": "René Barbier's estate, one of the five founding 'Clos' of modern Priorat.",
+"wines": [
+{
+"name": "Clos Mogador",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Garnacha, Cariñena, Syrah and Cabernet."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "es-celler-de-capcanes",
+"name": "Celler de Capçanes",
+"region": "Capçanes, Montsant",
+"country": "Spain",
+"lat": 41.088,
+"lng": 0.789,
+"founded": "",
+"style": "red",
+"story": "A growers' cooperative in Montsant, known for old Garnacha and for making Barcelona's kosher wines.",
+"wines": [
+{
+"name": "Mas Donís",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Garnacha-led red."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "es-codorniu",
+"name": "Codorníu",
+"region": "Sant Sadurní d'Anoia, Penedès",
+"country": "Spain",
+"lat": 41.428,
+"lng": 1.78,
+"founded": "",
+"style": "sparkling",
+"story": "A family house where Josep Raventós made Spain's first traditional-method Cava in 1872. Its modernist cellars are a national monument.",
+"wines": [
+{
+"name": "Anna de Codorníu",
+"type": "Sparkling",
+"price": "",
+"cur": "EUR",
+"notes": "Chardonnay-led Cava."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "es-freixenet",
+"name": "Freixenet",
+"region": "Sant Sadurní d'Anoia, Penedès",
+"country": "Spain",
+"lat": 41.427,
+"lng": 1.786,
+"founded": "",
+"style": "sparkling",
+"story": "The Ferrer family's Cava house, known worldwide for its black-bottled Cordon Negro.",
+"wines": [
+{
+"name": "Cordon Negro Brut",
+"type": "Sparkling",
+"price": "",
+"cur": "EUR",
+"notes": "Classic Cava."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "es-gramona",
+"name": "Gramona",
+"region": "Sant Sadurní d'Anoia, Penedès",
+"country": "Spain",
+"lat": 41.424,
+"lng": 1.788,
+"founded": "",
+"style": "sparkling",
+"story": "A family house famous for long-aged sparkling wines, now part of the Corpinnat group.",
+"wines": [
+{
+"name": "III Lustros",
+"type": "Sparkling",
+"price": "",
+"cur": "EUR",
+"notes": "Long-aged Xarel·lo and Macabeo."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "es-recaredo",
+"name": "Recaredo",
+"region": "Sant Sadurní d'Anoia, Penedès",
+"country": "Spain",
+"lat": 41.42,
+"lng": 1.79,
+"founded": "",
+"style": "sparkling",
+"story": "A biodynamic family house making only long-aged, bone-dry vintage sparkling wines.",
+"wines": [
+{
+"name": "Terrers Brut Nature",
+"type": "Sparkling",
+"price": "",
+"cur": "EUR",
+"notes": "Xarel·lo-led sparkling."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "es-raventos-i-blanc",
+"name": "Raventós i Blanc",
+"region": "Sant Sadurní d'Anoia, Penedès",
+"country": "Spain",
+"lat": 41.43,
+"lng": 1.779,
+"founded": "",
+"style": "sparkling",
+"story": "A family estate that left the Cava appellation in 2012 to create Conca del Riu Anoia, with stricter rules for its own sparkling wines.",
+"wines": [
+{
+"name": "De Nit",
+"type": "Sparkling",
+"price": "",
+"cur": "EUR",
+"notes": "Sparkling rosé."
+},
+{
+"name": "Blanc de Blancs",
+"type": "Sparkling",
+"price": "",
+"cur": "EUR",
+"notes": "Xarel·lo-led."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "es-familia-torres",
+"name": "Familia Torres",
+"region": "Pacs del Penedès, Catalonia",
+"country": "Spain",
+"lat": 41.36,
+"lng": 1.67,
+"founded": "1870",
+"style": "red",
+"story": "Founded in 1870, one of Spain's best-known wine families, with vineyards across Catalonia.",
+"wines": [
+{
+"name": "Mas La Plana",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Cabernet Sauvignon."
+},
+{
+"name": "Viña Esmeralda",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Moscatel and Gewürztraminer."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "es-martin-codax",
+"name": "Martín Códax",
+"region": "Cambados, Rías Baixas",
+"country": "Spain",
+"lat": 42.513,
+"lng": -8.814,
+"founded": "1986",
+"style": "white",
+"story": "A growers' winery founded in 1986 in Cambados, named after a medieval Galician troubadour, devoted to Albariño.",
+"wines": [
+{
+"name": "Albariño",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Crisp, saline Albariño."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "es-pazo-de-senorans",
+"name": "Pazo de Señoráns",
+"region": "Meis, Rías Baixas",
+"country": "Spain",
+"lat": 42.51,
+"lng": -8.73,
+"founded": "",
+"style": "white",
+"story": "A historic Galician manor house turned winery, known for age-worthy Albariño.",
+"wines": [
+{
+"name": "Albariño",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Peach and citrus."
+},
+{
+"name": "Selección de Añada",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Long-aged Albariño."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "es-descendientes-de-j-palacios",
+"name": "Descendientes de J. Palacios",
+"region": "Corullón, Bierzo",
+"country": "Spain",
+"lat": 42.58,
+"lng": -6.82,
+"founded": "",
+"style": "red",
+"story": "Ricardo Pérez Palacios and his uncle Álvaro Palacios revived old Mencía vines on Bierzo's steep slate slopes.",
+"wines": [
+{
+"name": "Pétalos",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Mencía."
+},
+{
+"name": "La Faraona",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Tiny single-vineyard Mencía."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "es-gonzalez-byass",
+"name": "González Byass",
+"region": "Jerez de la Frontera, Andalusia",
+"country": "Spain",
+"lat": 36.68,
+"lng": -6.14,
+"founded": "1835",
+"style": "sweet",
+"story": "Founded in 1835 in Jerez, the home of Tío Pepe fino.",
+"wines": [
+{
+"name": "Tío Pepe",
+"type": "Fortified",
+"price": "",
+"cur": "EUR",
+"notes": "Bone-dry fino sherry."
+},
+{
+"name": "Noé Pedro Ximénez 30 Years",
+"type": "Sweet",
+"price": "",
+"cur": "EUR",
+"notes": "Very old sweet sherry."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "es-bodegas-lustau",
+"name": "Bodegas Lustau",
+"region": "Jerez de la Frontera, Andalusia",
+"country": "Spain",
+"lat": 36.685,
+"lng": -6.13,
+"founded": "1896",
+"style": "sweet",
+"story": "A Jerez house founded in 1896, known for its range of sherries from all three sherry towns.",
+"wines": [
+{
+"name": "Almacenista Amontillado",
+"type": "Fortified",
+"price": "",
+"cur": "EUR",
+"notes": "Nutty, dry amontillado."
+},
+{
+"name": "East India Solera",
+"type": "Sweet",
+"price": "",
+"cur": "EUR",
+"notes": "Rich oloroso and PX blend."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "es-bodegas-hidalgo-la-gitana",
+"name": "Bodegas Hidalgo – La Gitana",
+"region": "Sanlúcar de Barrameda, Andalusia",
+"country": "Spain",
+"lat": 36.778,
+"lng": -6.353,
+"founded": "1792",
+"style": "white",
+"story": "A family house founded in 1792 in Sanlúcar, where sea breezes give manzanilla its salty tang.",
+"wines": [
+{
+"name": "La Gitana Manzanilla",
+"type": "Fortified",
+"price": "",
+"cur": "EUR",
+"notes": "Light, saline manzanilla."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "es-toro-albala",
+"name": "Toro Albalá",
+"region": "Aguilar de la Frontera, Montilla-Moriles",
+"country": "Spain",
+"lat": 37.514,
+"lng": -4.656,
+"founded": "",
+"style": "sweet",
+"story": "A Montilla-Moriles house known for very old Pedro Ximénez sweet wines.",
+"wines": [
+{
+"name": "Don PX Gran Reserva",
+"type": "Sweet",
+"price": "",
+"cur": "EUR",
+"notes": "Long-aged Pedro Ximénez."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "es-bodega-numanthia",
+"name": "Bodega Numanthia",
+"region": "Valdefinjas, Toro",
+"country": "Spain",
+"lat": 41.453,
+"lng": -5.45,
+"founded": "",
+"style": "red",
+"story": "A Toro winery making powerful reds from old, ungrafted Tinta de Toro vines.",
+"wines": [
+{
+"name": "Numanthia",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Dense old-vine Tinta de Toro."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "es-bodegas-jose-pariente",
+"name": "Bodegas José Pariente",
+"region": "La Seca, Rueda",
+"country": "Spain",
+"lat": 41.42,
+"lng": -4.95,
+"founded": "",
+"style": "white",
+"story": "Victoria Pariente's family winery, a reference for Rueda Verdejo.",
+"wines": [
+{
+"name": "Verdejo",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Herbal, crisp Verdejo."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "es-txomin-etxaniz",
+"name": "Txomin Etxaniz",
+"region": "Getaria, Basque Country",
+"country": "Spain",
+"lat": 43.3,
+"lng": -2.21,
+"founded": "",
+"style": "white",
+"story": "A family estate on the steep sea-facing slopes of Getaria, producer of the Basque Country's lightly fizzy Txakoli.",
+"wines": [
+{
+"name": "Txakoli",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Light, spritzy Hondarrabi Zuri."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "es-bodegas-el-grifo",
+"name": "Bodegas El Grifo",
+"region": "San Bartolomé, Lanzarote",
+"country": "Spain",
+"lat": 29.0,
+"lng": -13.63,
+"founded": "1775",
+"style": "white",
+"story": "Founded in 1775, among the oldest wineries in the Canary Islands, with vines planted in pits dug in volcanic ash.",
+"wines": [
+{
+"name": "Malvasía Volcánica Seco",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Dry, smoky Malvasía."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "es-suertes-del-marques",
+"name": "Suertes del Marqués",
+"region": "La Orotava, Tenerife",
+"country": "Spain",
+"lat": 28.38,
+"lng": -16.52,
+"founded": "",
+"style": "red",
+"story": "A Tenerife estate reviving old braided vines (cordón trenzado) of Listán on volcanic soils in the Orotava valley.",
+"wines": [
+{
+"name": "7 Fuentes",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Listán Negro."
+},
+{
+"name": "Trenzado",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Listán Blanco."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "pt-taylor-s",
+"name": "Taylor's",
+"region": "Vila Nova de Gaia, Porto",
+"country": "Portugal",
+"lat": 41.137,
+"lng": -8.613,
+"founded": "1692",
+"style": "sweet",
+"story": "Founded in 1692, one of the oldest Port houses, with lodges in Vila Nova de Gaia and Quinta de Vargellas in the Douro.",
+"wines": [
+{
+"name": "Vintage Port",
+"type": "Fortified",
+"price": "",
+"cur": "EUR",
+"notes": "Rich, long-lived Port."
+},
+{
+"name": "20 Year Old Tawny",
+"type": "Fortified",
+"price": "",
+"cur": "EUR",
+"notes": "Nutty aged tawny."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "pt-graham-s",
+"name": "Graham's",
+"region": "Vila Nova de Gaia, Porto",
+"country": "Portugal",
+"lat": 41.1335,
+"lng": -8.6175,
+"founded": "1820",
+"style": "sweet",
+"story": "A Port house founded in 1820, known for rich vintage Port from Quinta dos Malvedos.",
+"wines": [
+{
+"name": "Six Grapes",
+"type": "Fortified",
+"price": "",
+"cur": "EUR",
+"notes": "Ruby reserve Port."
+},
+{
+"name": "Vintage Port",
+"type": "Fortified",
+"price": "",
+"cur": "EUR",
+"notes": "Rich vintage Port."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "pt-fonseca",
+"name": "Fonseca",
+"region": "Vila Nova de Gaia, Porto",
+"country": "Portugal",
+"lat": 41.138,
+"lng": -8.611,
+"founded": "1815",
+"style": "sweet",
+"story": "A Port house dating to 1815, celebrated for powerful vintage Ports and Bin 27.",
+"wines": [
+{
+"name": "Bin 27",
+"type": "Fortified",
+"price": "",
+"cur": "EUR",
+"notes": "Reserve ruby Port."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "pt-sandeman",
+"name": "Sandeman",
+"region": "Vila Nova de Gaia, Porto",
+"country": "Portugal",
+"lat": 41.1395,
+"lng": -8.612,
+"founded": "1790",
+"style": "sweet",
+"story": "Founded in London in 1790 by George Sandeman; its caped 'Don' silhouette is one of the oldest wine logos.",
+"wines": [
+{
+"name": "20 Year Old Tawny",
+"type": "Fortified",
+"price": "",
+"cur": "EUR",
+"notes": "Aged tawny Port."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "pt-ramos-pinto",
+"name": "Ramos Pinto",
+"region": "Vila Nova de Gaia, Porto",
+"country": "Portugal",
+"lat": 41.1385,
+"lng": -8.6105,
+"founded": "1880",
+"style": "sweet",
+"story": "Founded in 1880 by Adriano Ramos Pinto, famous for its art-nouveau posters and Douro research.",
+"wines": [
+{
+"name": "Quinta do Bom Retiro 20 Year Tawny",
+"type": "Fortified",
+"price": "",
+"cur": "EUR",
+"notes": "Single-estate tawny."
+},
+{
+"name": "Duas Quintas",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Douro red."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "pt-quinta-do-noval",
+"name": "Quinta do Noval",
+"region": "Pinhão, Douro",
+"country": "Portugal",
+"lat": 41.19,
+"lng": -7.535,
+"founded": "",
+"style": "sweet",
+"story": "A Douro estate above the Pinhão valley, famous for Nacional, made from a small plot of ungrafted, pre-phylloxera vines.",
+"wines": [
+{
+"name": "Vintage Port",
+"type": "Fortified",
+"price": "",
+"cur": "EUR",
+"notes": "Classic Noval Port."
+},
+{
+"name": "Nacional",
+"type": "Fortified",
+"price": "",
+"cur": "EUR",
+"notes": "Rare Port from ungrafted vines."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "pt-niepoort",
+"name": "Niepoort",
+"region": "Vale de Mendiz, Douro",
+"country": "Portugal",
+"lat": 41.205,
+"lng": -7.56,
+"founded": "1842",
+"style": "red",
+"story": "A Dutch-origin Port house founded in 1842, which under Dirk Niepoort also became a leader in dry Douro wines.",
+"wines": [
+{
+"name": "Redoma",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Douro red."
+},
+{
+"name": "10 Year Tawny",
+"type": "Fortified",
+"price": "",
+"cur": "EUR",
+"notes": "Aged tawny Port."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "pt-quinta-do-crasto",
+"name": "Quinta do Crasto",
+"region": "Gouvinhas, Douro",
+"country": "Portugal",
+"lat": 41.163,
+"lng": -7.618,
+"founded": "",
+"style": "red",
+"story": "A Douro quinta with a famous infinity pool over the river, known for old-vine field blends.",
+"wines": [
+{
+"name": "Vinha Maria Teresa",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Field blend from 100-year-old vines."
+},
+{
+"name": "Crasto Douro",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Douro red."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "pt-quinta-do-vallado",
+"name": "Quinta do Vallado",
+"region": "Peso da Régua, Douro",
+"country": "Portugal",
+"lat": 41.17,
+"lng": -7.77,
+"founded": "1716",
+"style": "red",
+"story": "Founded in 1716 by Dona Antónia Ferreira's family, a Douro estate making Port and dry wines.",
+"wines": [
+{
+"name": "Vallado Douro Tinto",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Touriga Nacional blend."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "pt-casa-ferreirinha-quinta-da-leda",
+"name": "Casa Ferreirinha – Quinta da Leda",
+"region": "Almendra, Douro Superior",
+"country": "Portugal",
+"lat": 41.03,
+"lng": -7.08,
+"founded": "",
+"style": "red",
+"story": "Home of Barca Velha, the Douro's legendary dry red, first made in 1952 and released only in great years.",
+"wines": [
+{
+"name": "Barca Velha",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Long-aged Douro red."
+},
+{
+"name": "Quinta da Leda",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Douro Superior red."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "pt-herdade-do-esporao",
+"name": "Herdade do Esporão",
+"region": "Reguengos de Monsaraz, Alentejo",
+"country": "Portugal",
+"lat": 38.39,
+"lng": -7.53,
+"founded": "",
+"style": "red",
+"story": "A large organic Alentejo estate near Reguengos de Monsaraz, with olive groves and a restaurant.",
+"wines": [
+{
+"name": "Esporão Reserva",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Alentejo blend."
+},
+{
+"name": "Verdelho",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Fresh white."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "pt-herdade-do-mouchao",
+"name": "Herdade do Mouchão",
+"region": "Casa Branca, Alentejo",
+"country": "Portugal",
+"lat": 38.95,
+"lng": -7.86,
+"founded": "",
+"style": "red",
+"story": "A traditional Alentejo estate famous for Alicante Bouschet reds trodden in stone lagares.",
+"wines": [
+{
+"name": "Mouchão",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Alicante Bouschet."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "pt-quinta-da-aveleda",
+"name": "Quinta da Aveleda",
+"region": "Penafiel, Vinho Verde",
+"country": "Portugal",
+"lat": 41.21,
+"lng": -8.29,
+"founded": "",
+"style": "white",
+"story": "A family estate with romantic gardens, among the best-known Vinho Verde producers.",
+"wines": [
+{
+"name": "Aveleda Loureiro & Alvarinho",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Fresh, lightly spritzy white."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "pt-soalheiro",
+"name": "Soalheiro",
+"region": "Melgaço, Vinho Verde",
+"country": "Portugal",
+"lat": 42.12,
+"lng": -8.25,
+"founded": "1982",
+"style": "white",
+"story": "The first Alvarinho brand in Melgaço, created in 1982 by the Cerdeira family.",
+"wines": [
+{
+"name": "Alvarinho",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Citrus and peach."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "pt-anselmo-mendes",
+"name": "Anselmo Mendes",
+"region": "Melgaço, Vinho Verde",
+"country": "Portugal",
+"lat": 42.11,
+"lng": -8.26,
+"founded": "",
+"style": "white",
+"story": "Oenologist Anselmo Mendes, nicknamed 'Mr Alvarinho', explores the grape in many styles.",
+"wines": [
+{
+"name": "Contacto Alvarinho",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Skin-contact Alvarinho."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "pt-luis-pato",
+"name": "Luís Pato",
+"region": "Óis do Bairro, Bairrada",
+"country": "Portugal",
+"lat": 40.43,
+"lng": -8.52,
+"founded": "",
+"style": "red",
+"story": "Luís Pato champions Bairrada's Baga grape, from sparkling to long-lived reds.",
+"wines": [
+{
+"name": "Vinhas Velhas Tinto",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Old-vine Baga."
+},
+{
+"name": "Maria Gomes Bruto",
+"type": "Sparkling",
+"price": "",
+"cur": "EUR",
+"notes": "Sparkling white."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "pt-casa-de-santar",
+"name": "Casa de Santar",
+"region": "Santar, Dão",
+"country": "Portugal",
+"lat": 40.57,
+"lng": -7.86,
+"founded": "",
+"style": "red",
+"story": "A noble Dão estate around a 17th-century manor house.",
+"wines": [
+{
+"name": "Casa de Santar Reserva",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Touriga Nacional blend."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "pt-jose-maria-da-fonseca",
+"name": "José Maria da Fonseca",
+"region": "Azeitão, Setúbal",
+"country": "Portugal",
+"lat": 38.52,
+"lng": -9.01,
+"founded": "1834",
+"style": "sweet",
+"story": "A family house founded in 1834 in Azeitão, known for Moscatel de Setúbal and Periquita, one of Portugal's oldest red brands.",
+"wines": [
+{
+"name": "Moscatel de Setúbal",
+"type": "Fortified",
+"price": "",
+"cur": "EUR",
+"notes": "Orange-peel sweet Muscat."
+},
+{
+"name": "Periquita",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Castelão red."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "pt-blandy-s",
+"name": "Blandy's",
+"region": "Funchal, Madeira",
+"country": "Portugal",
+"lat": 32.648,
+"lng": -16.91,
+"founded": "1811",
+"style": "sweet",
+"story": "A family house in Funchal since 1811, with its old Lodge in the town centre.",
+"wines": [
+{
+"name": "10 Year Old Malmsey",
+"type": "Fortified",
+"price": "",
+"cur": "EUR",
+"notes": "Rich, tangy Madeira."
+},
+{
+"name": "5 Year Old Verdelho",
+"type": "Fortified",
+"price": "",
+"cur": "EUR",
+"notes": "Medium-dry Madeira."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "pt-henriques-henriques",
+"name": "Henriques & Henriques",
+"region": "Câmara de Lobos, Madeira",
+"country": "Portugal",
+"lat": 32.65,
+"lng": -16.98,
+"founded": "1850",
+"style": "sweet",
+"story": "A Madeira house founded in 1850 in Câmara de Lobos.",
+"wines": [
+{
+"name": "15 Year Old Sercial",
+"type": "Fortified",
+"price": "",
+"cur": "EUR",
+"notes": "Dry, tangy Madeira."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "pt-azores-wine-company",
+"name": "Azores Wine Company",
+"region": "Madalena, Pico (Azores)",
+"country": "Portugal",
+"lat": 38.53,
+"lng": -28.52,
+"founded": "2014",
+"style": "white",
+"story": "Founded in 2014 to revive the volcanic vineyards of Pico, a UNESCO World Heritage landscape of stone-walled plots.",
+"wines": [
+{
+"name": "Arinto dos Açores",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Salty, volcanic white."
 }
 ],
 "events": [],

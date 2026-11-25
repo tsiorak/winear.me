@@ -579,23 +579,43 @@
 "country": "Greece",
 "lat": 36.369,
 "lng": 25.43,
-"founded": "",
+"founded": "1989",
 "style": "white",
-"story": "The Santorini winery of the historic Boutari group, one of the first modern wineries on the island. It helped introduce Santorini Assyrtiko to wine lovers abroad.",
+"story": "Boutari began exploring Santorini's vineyards in the late 1980s and made its first harvest at Megalochori in 1989; Santorini Boutari helped make Assyrtiko famous abroad. In September 2024 the historic Megalochori winery was bought by Alpha Estate (Ktima Alfa).",
 "wines": [
 {
 "name": "Santorini",
 "type": "White",
-"price": "",
+"price": 31.9,
 "cur": "EUR",
-"notes": "Classic, crisp Assyrtiko."
+"notes": "Classic, crisp Assyrtiko.",
+"prices": [
+{
+"price": 31.9,
+"cur": "EUR",
+"shop": "Botilia",
+"url": "https://www.botilia.gr/en/p/white-wine/Santorini-Boutari",
+"note": "2022 vintage, sold out"
+}
+],
+"checked": "25 Nov 2026"
 },
 {
 "name": "Kallisti",
 "type": "White",
-"price": "",
+"price": 39.7,
 "cur": "EUR",
-"notes": "Barrel-fermented Assyrtiko, rounder and richer."
+"notes": "Barrel-fermented Assyrtiko, rounder and richer.",
+"prices": [
+{
+"price": 39.7,
+"cur": "EUR",
+"shop": "House of Wine",
+"url": "https://www.houseofwine.gr/how/intl/kallisti-reserve.html",
+"note": "Kallisti Reserve, 2023 vintage"
+}
+],
+"checked": "25 Nov 2026"
 },
 {
 "name": "Vinsanto",
@@ -3521,20 +3541,6 @@
 "story": "A small family estate on the Paliki peninsula in western Kefalonia, run since 2015 by Evriviadis (Vladis) Sclavos and Spiros Zisimatos. Biodynamic farming, native yeasts and minimal sulfites; some vines are ungrafted survivors of phylloxera.",
 "wines": [
 {
-"name": "Robola of Kefalonia",
-"type": "White",
-"price": "",
-"cur": "EUR",
-"notes": "Crisp, lemony and mineral."
-},
-{
-"name": "Mavrodaphne",
-"type": "Red",
-"price": "",
-"cur": "EUR",
-"notes": "Dry red from the island grape."
-},
-{
 "type": "White",
 "notes": "'Wine of the stone': salty, mineral Robola from limestone slopes, made with minimal intervention.",
 "name": "Vino di Sasso Robola",
@@ -3550,6 +3556,13 @@
 ],
 "price": 18.5,
 "checked": "25 Nov 2026"
+},
+{
+"name": "Mavrodaphne",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Dry red from the island grape."
 }
 ],
 "events": [],
@@ -3754,7 +3767,7 @@
 "lng": 27.85,
 "founded": "1923",
 "style": "white",
-"story": "A family winery founded in 1923 on the slopes of Mount Attavyros, Rhodes' highest mountain. Known for the local Athiri grape.",
+"story": "One of Rhodes' oldest wineries, founded in 1923 in the mountain village of Embonas and named after Emery d'Amboise, a Grand Master of the Knights of St John. The Triantafillou family runs it, working the local Athiri and Amorgiano (Mandilaria) grapes from the slopes of Mount Attaviros.",
 "wines": [
 {
 "name": "Villare",
@@ -3783,14 +3796,24 @@
 "lng": 26.98,
 "founded": "",
 "style": "sweet",
-"story": "The union of Samos growers, whose terraced vineyards climb the island's mountains. Its sweet Muscat of Samos has been famous for centuries.",
+"story": "The Union of Winemaking Cooperatives of Samos gathers the island's growers, who farm white Muscat on steep mountain terraces. Its Vin Doux, a fortified sweet Muscat, made Samos wines famous around the world.",
 "wines": [
 {
 "name": "Samos Vin Doux",
 "type": "Sweet",
-"price": "",
+"price": 10.0,
 "cur": "EUR",
-"notes": "Golden, honeyed Muscat."
+"notes": "Golden, honeyed Muscat.",
+"prices": [
+{
+"price": 10.0,
+"cur": "EUR",
+"shop": "House of Wine",
+"url": "https://www.houseofwine.gr/how/intl/samos-vin-doux.html",
+"note": "2024 vintage"
+}
+],
+"checked": "25 Nov 2026"
 },
 {
 "name": "Samos Nectar",

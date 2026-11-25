@@ -5100,5 +5100,242 @@
 ],
 "events": [],
 "real": true
+},
+{
+"id": "gr-antonopoulos",
+"name": "Antonopoulos Vineyards",
+"region": "Vassiliko, Achaia",
+"country": "Greece",
+"lat": 38.17,
+"lng": 21.8,
+"founded": "1983",
+"style": "white",
+"story": "Konstantinos Antonopoulos planted his first vines in 1983 high in the mountains of Achaia, ringed by Panachaikos, Helmos and Erymanthos, and helped establish the area as a wine zone. Since 1994 the company has been owned by the Chalkias family; vineyards run from 150 to 950 m.",
+"wines": [
+{
+"name": "Adoli Ghis White",
+"type": "White",
+"price": 16.2,
+"cur": "EUR",
+"notes": "Lagorthi, Roditis and Chardonnay from 750-900 m: fresh yellow fruit and chamomile.",
+"prices": [
+{
+"price": 16.2,
+"cur": "EUR",
+"shop": "Greece & Grapes",
+"url": "https://www.greeceandgrapes.com/en/white-adoli-ghis-2025-antonopoulos-vineyards",
+"note": "2025 vintage"
+}
+],
+"checked": "25 Nov 2026"
+},
+{
+"name": "Anax Chardonnay",
+"type": "White",
+"price": 53.0,
+"cur": "EUR",
+"notes": "Barrel-fermented mountain Chardonnay, rich and concentrated.",
+"prices": [
+{
+"price": 53.0,
+"cur": "EUR",
+"shop": "Greece & Grapes",
+"url": "https://www.greeceandgrapes.com/en/white-anax-chardonnay-2021-antonopoulos-vineyards",
+"note": "2021 vintage"
+}
+],
+"checked": "25 Nov 2026"
+},
+{
+"name": "Morfeas",
+"type": "Red",
+"price": 26.3,
+"cur": "EUR",
+"notes": "Their age-worthy red blend.",
+"prices": [
+{
+"price": 26.3,
+"cur": "EUR",
+"shop": "Greece & Grapes",
+"url": "https://www.greeceandgrapes.com/en/red-greek-morfeas-2020-antonopoulos-vineyards",
+"note": "2020 vintage, was €34.10"
+}
+],
+"checked": "25 Nov 2026"
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "gr-aivalis",
+"name": "Aivalis Winery",
+"region": "Nemea",
+"country": "Greece",
+"lat": 37.815,
+"lng": 22.645,
+"founded": "",
+"style": "red",
+"story": "Christos Aivalis makes some of Nemea's most sought-after reds. He farms without fertiliser or irrigation so roots dig deep, vinifies each vineyard separately and bottles unfined and unfiltered. Monopati, from vines over 50 years old, was his first top wine.",
+"wines": [
+{
+"name": "Monopati",
+"type": "Red",
+"price": 21.08,
+"cur": "EUR",
+"notes": "Agiorgitiko from 50+ year-old vines: concentrated, oak-aged and long-lived.",
+"prices": [
+{
+"price": 21.08,
+"cur": "EUR",
+"shop": "Botilia",
+"url": "https://www.botilia.gr/en/p/red-wine/Monopati-Aivalis-Winery",
+"note": "2023 vintage, was €24.80"
+}
+],
+"checked": "25 Nov 2026"
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "gr-mitravelas",
+"name": "Mitravelas Estate",
+"region": "Nemea",
+"country": "Greece",
+"lat": 37.821,
+"lng": 22.661,
+"founded": "1913",
+"style": "red",
+"story": "One of Nemea's oldest wine families, recorded since 1828; the first family winery opened in the centre of Nemea in 1913. Today they farm about 10 ha of their own plus growers' vineyards in Ahladi, Tzintari, Agios Dimitrios and Koutsi.",
+"wines": [
+{
+"name": "Red on Black",
+"type": "Red",
+"price": 10.4,
+"cur": "EUR",
+"notes": "Fresh, unoaked Agiorgitiko: a cherry bomb in the glass.",
+"prices": [
+{
+"price": 10.4,
+"cur": "EUR",
+"shop": "Botilia",
+"url": "https://www.botilia.gr/en/p/red-wine/Kokkino-Se-Mavro-Estate-Mitravelas",
+"note": "2025 vintage, sold out"
+},
+{
+"price": 10.7,
+"cur": "EUR",
+"shop": "Greece & Grapes",
+"url": "https://www.greeceandgrapes.com/en/red-greek-red-in-black-2025-mitravelas-estate",
+"note": "2025 vintage"
+}
+],
+"checked": "25 Nov 2026"
+},
+{
+"name": "Nemea",
+"type": "Red",
+"price": 16.2,
+"cur": "EUR",
+"notes": "Classic Agiorgitiko: red fruit jam, pepper, leather and vanilla.",
+"prices": [
+{
+"price": 16.2,
+"cur": "EUR",
+"shop": "Greece & Grapes",
+"url": "https://www.greeceandgrapes.com/en/red-nemea-2024-estate-mitravelas",
+"note": "2024 vintage"
+}
+],
+"checked": "25 Nov 2026"
+},
+{
+"name": "Nemea Old Vines",
+"type": "Red",
+"price": 59.5,
+"cur": "EUR",
+"notes": "Ultra-concentrated Agiorgitiko from two vineyards over 55 years old.",
+"prices": [
+{
+"price": 59.5,
+"cur": "EUR",
+"shop": "Greece & Grapes",
+"url": "https://www.greeceandgrapes.com/en/red-nemea-old-vines-2019-mitravelas-estate",
+"note": "2019 vintage, was €62.00"
+}
+],
+"checked": "25 Nov 2026"
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "gr-moropoulos",
+"name": "Moropoulos Winery",
+"region": "Neochori, Mantinia (Arcadia)",
+"country": "Greece",
+"lat": 37.6,
+"lng": 22.37,
+"founded": "2015",
+"style": "white",
+"story": "A grape-growing family from Neochori in the Mantinia plateau who began bottling their own wine in 2015, led by siblings Georgia and Kostas. They explore Moschofilero in many styles, from fresh and rosé to late-release, sparkling and the single-vineyard '72'.",
+"wines": [
+{
+"name": "Mantinia Moschofilero",
+"type": "White",
+"price": 9.8,
+"cur": "EUR",
+"notes": "Rich, concentrated Moschofilero with sharp acidity.",
+"prices": [
+{
+"price": 9.8,
+"cur": "EUR",
+"shop": "Greece & Grapes",
+"url": "https://www.greeceandgrapes.com/en/white-mantinia-moschofilero-2025-moropoulos-winery",
+"note": "2025 vintage, was €11.20"
+}
+],
+"checked": "25 Nov 2026"
+},
+{
+"name": "Moschofilero Rosé",
+"type": "Rosé",
+"price": 10.0,
+"cur": "EUR",
+"notes": "Moschofilero made as a rosé: cherries, raspberries and lift.",
+"prices": [
+{
+"price": 10.0,
+"cur": "EUR",
+"shop": "Greece & Grapes",
+"url": "https://www.greeceandgrapes.com/en/rose-moschofilero-2025-moropoulos-winery",
+"note": "2025 vintage, was €11.80"
+}
+],
+"checked": "25 Nov 2026"
+},
+{
+"name": "72 Mantinia",
+"type": "White",
+"price": 19.6,
+"cur": "EUR",
+"notes": "Single vineyard planted in 1972, part aged in amphora and acacia.",
+"prices": [
+{
+"price": 19.6,
+"cur": "EUR",
+"shop": "Greece & Grapes",
+"url": "https://www.greeceandgrapes.com/en/white-noemvris-late-harvest-2023-winery-moropoulos-1",
+"note": "2021 vintage"
+}
+],
+"checked": "25 Nov 2026"
+}
+],
+"events": [],
+"real": true
 }
 ]

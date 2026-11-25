@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 460" role="img" aria-label="Dionysus, god of wine">
+<ellipse cx="150" cy="420" rx="90" ry="9" fill="#2A1A1E" opacity="0.08"/>
+<path d="M92 150 L86 416" stroke="#8A5A3A" stroke-width="5" stroke-linecap="round"/>
+<ellipse cx="92" cy="136" rx="11" ry="18" fill="#C9A34E"/>
+<path d="M83 128 L101 144 M83 140 L101 128 M84 150 L100 136" stroke="#A8843A" stroke-width="1.5"/>
+<path d="M92 156 Q80 160 78 172 Q88 170 92 160 Z M92 156 Q104 160 106 172 Q96 170 92 160 Z" fill="#4E7A3A"/>
+<path d="M128 332 L124 404 H140 L146 332 Z" fill="#D59B72"/>
+<path d="M154 332 L160 404 H176 L172 332 Z" fill="#D59B72"/>
+<path d="M118 402 H144 A5 5 0 0 1 144 412 H114 A5 5 0 0 1 118 402 Z" fill="#7A4E30"/>
+<path d="M156 402 H182 A5 5 0 0 1 186 412 H156 A5 5 0 0 1 156 402 Z" fill="#7A4E30"/>
+<path d="M126 386 L142 380 M126 394 L142 388 M158 380 L174 386 M158 388 L174 394" stroke="#7A4E30" stroke-width="2.5"/>
+<path d="M110 188 Q150 178 190 188 L198 336 Q150 346 102 336 Z" fill="#FFFDF8" stroke="#E2D8C6" stroke-width="2"/>
+<path d="M128 290 L124 336 M150 292 V340 M172 290 L176 336" stroke="#E2D8C6" stroke-width="2"/>
+<path d="M108 186 Q96 240 104 304 L119 300 Q112 240 122 196 Z" fill="#8E1219"/>
+<path d="M112 182 Q128 175 142 180 L198 300 Q192 322 176 324 L116 210 Z" fill="#B3141F"/>
+<path d="M130 196 L178 300 M146 186 L192 286" stroke="#8E1219" stroke-width="2" opacity="0.6"/>
+<path d="M106 262 Q150 271 196 262 L196 271 Q150 280 106 271 Z" fill="#C9A34E"/>
+<path d="M112 196 Q94 230 92 270" stroke="#D59B72" stroke-width="17" stroke-linecap="round" fill="none"/>
+<circle cx="92" cy="276" r="10" fill="#D59B72"/>
+<path d="M188 194 Q220 180 230 138" stroke="#D59B72" stroke-width="17" stroke-linecap="round" fill="none"/>
+<path d="M212 92 H250 Q248 118 231 121 Q214 118 212 92 Z" fill="#C9A34E"/>
+<ellipse cx="231" cy="93" rx="19" ry="4" fill="#8E1219"/>
+<path d="M213 97 Q200 96 202 106 Q204 114 215 110 M249 97 Q262 96 260 106 Q258 114 247 110" stroke="#C9A34E" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+<rect x="228" y="120" width="6" height="7" fill="#A8843A"/>
+<ellipse cx="231" cy="128" rx="10" ry="3" fill="#A8843A"/>
+<circle cx="231" cy="134" r="10" fill="#D59B72"/>
+<rect x="140" y="148" width="20" height="26" fill="#C48A62"/>
+<ellipse cx="150" cy="118" rx="30" ry="34" fill="#D59B72"/>
+<circle cx="124" cy="100" r="12" fill="#4A2E22"/>
+<circle cx="135" cy="86" r="12" fill="#4A2E22"/>
+<circle cx="150" cy="82" r="13" fill="#4A2E22"/>
+<circle cx="165" cy="86" r="12" fill="#4A2E22"/>
+<circle cx="176" cy="100" r="12" fill="#4A2E22"/>
+<circle cx="121" cy="116" r="9" fill="#4A2E22"/>
+<circle cx="179" cy="116" r="9" fill="#4A2E22"/>
+<path d="M122 122 Q123 158 150 162 Q177 158 178 122 Q170 142 150 144 Q130 142 122 122 Z" fill="#4A2E22"/>
+<path d="M134 108 Q140 105 146 108 M154 108 Q160 105 166 108" stroke="#4A2E22" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+<path d="M136 116 Q140 112 144 116 M156 116 Q160 112 164 116" stroke="#2A1A1E" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+<path d="M150 116 Q147 125 152 127" stroke="#B07A54" stroke-width="2" fill="none" stroke-linecap="round"/>
+<circle cx="133" cy="128" r="5" fill="#D9735E" opacity="0.35"/>
+<circle cx="167" cy="128" r="5" fill="#D9735E" opacity="0.35"/>
+<path d="M140 136 Q150 144 160 136" stroke="#F7F1E6" stroke-width="3" fill="none" stroke-linecap="round"/>
+<path d="M118 94 Q150 74 182 94" stroke="#3E6B30" stroke-width="3" fill="none"/>
+<path d="M120 92 Q112 80 120 74 Q126 84 120 92 Z" fill="#4E7A3A"/>
+<path d="M134 82 Q128 68 138 64 Q142 76 134 82 Z" fill="#5E8C46"/>
+<path d="M150 78 Q146 63 154 60 Q158 72 150 78 Z" fill="#4E7A3A"/>
+<path d="M166 82 Q162 68 172 66 Q174 78 166 82 Z" fill="#5E8C46"/>
+<path d="M180 92 Q182 78 190 76 Q190 88 180 92 Z" fill="#4E7A3A"/>
+<circle cx="114" cy="104" r="4" fill="#5B2A6B"/>
+<circle cx="120" cy="106" r="4" fill="#6E3A80"/>
+<circle cx="116" cy="111" r="4" fill="#5B2A6B"/>
+<circle cx="111" cy="98" r="4" fill="#6E3A80"/>
+<circle cx="117" cy="99" r="4" fill="#5B2A6B"/>
+<circle cx="184" cy="104" r="4" fill="#5B2A6B"/>
+<circle cx="189" cy="98" r="4" fill="#6E3A80"/>
+<circle cx="183" cy="98" r="4" fill="#5B2A6B"/>
+<circle cx="182" cy="110" r="4" fill="#6E3A80"/>
+</svg>

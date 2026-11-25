@@ -223,8 +223,11 @@ path.leaflet-interactive:focus{outline:none}
  .fsheet{top:auto;padding-bottom:env(safe-area-inset-bottom)}
 }
 /* wine chat */
-.fab{position:fixed;right:calc(12px + env(safe-area-inset-right));bottom:calc(24px + env(safe-area-inset-bottom));z-index:950;height:56px;padding:0 20px 0 16px;border-radius:999px;border:0;background:#B3141F;color:#F7F1E6;display:flex;align-items:center;gap:8px;font-weight:700;font-size:16px;box-shadow:0 10px 26px #0005}
+.fab{position:fixed;right:calc(12px + env(safe-area-inset-right));bottom:calc(24px + env(safe-area-inset-bottom));z-index:950;height:56px;padding:0 20px 0 6px;border-radius:999px;border:0;background:#B3141F;color:#F7F1E6;display:flex;align-items:center;gap:8px;font-weight:700;font-size:16px;box-shadow:0 10px 26px #0005}
 .fab:hover{filter:brightness(1.08)}
+.ava{flex:none;border-radius:50%;background:#F7F1E6;border:2px solid #E0BC62;object-fit:cover}
+.fab .ava{width:44px;height:44px}.chh .ava{width:48px;height:48px}
+.hello{display:flex;gap:12px;align-items:flex-end}.hello img{flex:none;width:72px;height:110px}
 .leaflet-bottom.leaflet-right .leaflet-control-zoom{margin-bottom:76px}
 .chat{position:fixed;right:12px;bottom:calc(24px + env(safe-area-inset-bottom));z-index:1002;width:min(390px,calc(100vw - 24px));height:min(600px,calc(100vh - 110px));background:var(--card);border-radius:20px;box-shadow:0 16px 44px #0005;display:flex;flex-direction:column;overflow:hidden}
 .chh{display:flex;align-items:center;gap:8px;padding:14px 12px 12px 18px;background:#B3141F;color:#F7F1E6}
@@ -249,7 +252,7 @@ path.leaflet-interactive:focus{outline:none}
 .fids{display:flex;align-items:center;gap:10px;background:var(--soft);border-radius:12px;padding:10px 12px;margin-top:12px;font-size:14px}.fids span{flex:1}
 @media(max-width:700px){
  .chat{left:0;right:0;bottom:0;width:100%;height:82vh;border-radius:20px 20px 0 0;padding-bottom:env(safe-area-inset-bottom)}
- .fab{padding:0 16px}.fab span{display:none}.fab{width:56px;justify-content:center}
+ .fab span{display:none}.fab{width:56px;padding:0;justify-content:center}
 }
 @media(min-width:701px){.panel.open~.chat{right:calc(min(430px,100vw - 24px) + 24px)}}
 /* inside the Android / iPhone app Google sign-in is not available yet */
@@ -839,19 +842,19 @@ function describe(q){
 
 const chat={open:false,log:[],busy:false,loc:null};
 const SUGG=["Sparkling under €20 in Greece","Assyrtiko from Santorini","Events this weekend","Red wines near me","Premium French reds"];
-const chatEl=document.createElement("section");chatEl.className="chat";chatEl.id="chat";chatEl.hidden=true;chatEl.setAttribute("aria-label","Wine chat");
-chatEl.innerHTML=`<div class="chh"><div><h2>Ask Winear</h2><small>Wineries, wines and events on the map</small></div><button class="x" aria-label="Close chat">×</button></div>
+const chatEl=document.createElement("section");chatEl.className="chat";chatEl.id="chat";chatEl.hidden=true;chatEl.setAttribute("aria-label","Chat with Dionysus");
+chatEl.innerHTML=`<div class="chh"><img class="ava" src="/icons/dionysus-face.svg" alt=""><div><h2>Dionysus</h2><small>God of wine · your guide to wineries, wines and events</small></div><button class="x" aria-label="Close chat">×</button></div>
  <div class="clog" id="clog" aria-live="polite"></div>
  <form class="cin" id="cin"><input id="cq" autocomplete="off" maxlength="200" placeholder="e.g. white wines under €15 in Crete" aria-label="Ask about wines, wineries or events"><button class="btn pri" aria-label="Send"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></form>`;
 document.body.appendChild(chatEl);
-const fab=document.createElement("button");fab.className="fab";fab.id="chatBtn";fab.setAttribute("aria-label","Ask Winear: chat about wines and events");fab.setAttribute("aria-expanded","false");
-fab.innerHTML=`<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"/><path d="M9 9.5h6M9 12.5h4" stroke-linecap="round"/></svg><span>Ask</span>`;
+const fab=document.createElement("button");fab.className="fab";fab.id="chatBtn";fab.setAttribute("aria-label","Ask Dionysus: chat about wines, wineries and events");fab.setAttribute("aria-expanded","false");
+fab.innerHTML=`<img class="ava" src="/icons/dionysus-face.svg" alt=""><span>Ask Dionysus</span>`;
 document.body.appendChild(fab);
 const clog=chatEl.querySelector("#clog");
 function say(html,who="bot"){const d=document.createElement("div");d.className="msg "+who;d.innerHTML=html;clog.appendChild(d);clog.scrollTop=clog.scrollHeight;return d}
 const chips=list=>`<div class="csug">${list.map(s=>`<button type="button" class="chip" data-ask="${esc(s)}">${esc(s)}</button>`).join("")}</div>`;
 function openChat(){chatEl.hidden=false;chat.open=true;fab.setAttribute("aria-expanded","true");fab.hidden=true;
-  if(!clog.children.length)say(`<p>Hi! I can find wineries, wines and events for you. Try asking about a <b>colour</b>, <b>price</b>, <b>grape</b>, <b>country</b> or <b>wine area</b>, or about <b>events</b> on certain dates.</p>${chips(SUGG)}`);
+  if(!clog.children.length)say(`<div class="hello"><img src="/dionysus.svg" alt=""><div><p><b>Χαίρε!</b> I'm Dionysus, god of wine.</p><p>Tell me what you'd like to drink and I'll find the wineries, wines and feasts on the map. Ask about a <b>colour</b>, <b>price</b>, <b>grape</b>, <b>country</b> or <b>wine area</b>, or about <b>events</b> on certain dates.</p></div></div>${chips(SUGG)}`);
   if(innerWidth<=700)closeFilters();setTimeout(()=>$("#cq").focus(),50)}
 function closeChat(){chatEl.hidden=true;chat.open=false;fab.hidden=false;fab.setAttribute("aria-expanded","false")}
 fab.addEventListener("click",openChat);
@@ -864,7 +867,7 @@ const SHOWN=new Map();let shownN=0;
 async function ask(text){
   say(esc(text),"me");
   const q=parseAsk(text);
-  if(q.help||q.hello)return say(`<p>${q.hello?"Hello! ":""}Ask me things like:</p><ul><li>“sweet wines from Samos”</li><li>“Xinomavro under €25”</li><li>“wineries in Nemea”</li><li>“tastings next week in Crete”</li><li>“champagne near me”</li></ul><p class="note">I'm a simple helper: I understand colours, prices, grapes, countries, wine areas, winery names and dates.</p>`);
+  if(q.help||q.hello)return say(`<p>${q.hello?"Hello! ":""}Ask me things like:</p><ul><li>“sweet wines from Samos”</li><li>“Xinomavro under €25”</li><li>“wineries in Nemea”</li><li>“tastings next week in Crete”</li><li>“champagne near me”</li></ul><p class="note">Even a god keeps it simple here: I understand colours, prices, grapes, countries, wine areas, winery names and dates.</p>`);
   if(q.winery&&!q.events&&!q.cols.size&&q.lo==null&&q.hi==null&&!q.grapes.length){
     const w=q.winery;say(`<p>Here's <b>${esc(w.name)}</b> in ${esc(w.region)}, ${esc(w.country)}. ${(w.wines||[]).length} wines, ${(w.events||[]).filter(e=>new Date(e.end||e.start)>=NOW).length} upcoming events.</p><div class="acts"><button class="btn pri" data-copen="${esc(w.id)}">Open winery</button></div>`);
     if(innerWidth<=700)closeChat();openWinery(w.id,true);return}

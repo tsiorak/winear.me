@@ -5428,7 +5428,7 @@
 "country": "Greece",
 "lat": 39.93,
 "lng": 22.3,
-"founded": "1985",
+"founded": "1980s",
 "style": "red",
 "story": "Doctor Dimitris Katsaros and his wife Stella revived winegrowing at Krania, 700 m up on the eastern slopes of Mount Olympus, in the 1980s, planting Cabernet Sauvignon, Merlot and Chardonnay. Their first wine came out in 1987, and the red is often called the 'Greek Bordeaux'.",
 "wines": [
@@ -5562,6 +5562,302 @@
 "shop": "Greece & Grapes",
 "url": "https://www.greeceandgrapes.com/en/rose-xinomavro-2025-estate-theopetra",
 "note": "2025 vintage"
+}
+],
+"checked": "25 Nov 2026"
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "gr-karydas",
+"name": "Karydas Estate",
+"region": "Ano Gastra, Naoussa",
+"country": "Greece",
+"lat": 40.62,
+"lng": 22.1,
+"founded": "1994",
+"style": "red",
+"story": "Konstantinos Karydas and his son Petros farm a 2.6 ha hillside vineyard at Ano Gastra, one of Naoussa's most respected sites, planted in 1980. They began making their own wine in 1994 in a small winery on the estate, aiming for long-lived Xinomavro.",
+"wines": [
+{
+"name": "Xinomavro",
+"type": "Red",
+"price": 22.9,
+"cur": "EUR",
+"notes": "Typical Naoussa: tomato paste, quince, olive, forest fruit and tobacco.",
+"prices": [
+{
+"price": 22.9,
+"cur": "EUR",
+"shop": "Greece & Grapes",
+"url": "https://www.greeceandgrapes.com/en/red-xinomavro-2022-estate-karyda",
+"note": "2022 vintage"
+}
+],
+"checked": "25 Nov 2026"
+},
+{
+"name": "Syllektiko",
+"type": "Red",
+"price": 23.9,
+"cur": "EUR",
+"notes": "Xinomavro with a little Cabernet and Merlot, 24 months in barrel.",
+"prices": [
+{
+"price": 23.9,
+"cur": "EUR",
+"shop": "Greece & Grapes",
+"url": "https://www.greeceandgrapes.com/en/red-syllektiko-collective-2021-estate-karyda",
+"note": "2021 vintage"
+}
+],
+"checked": "25 Nov 2026"
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "gr-vaeni",
+"name": "Vaeni Naoussa",
+"region": "Naoussa",
+"country": "Greece",
+"lat": 40.63,
+"lng": 22.07,
+"founded": "",
+"style": "red",
+"story": "The growers' cooperative winery of Naoussa, known for traditional, great-value Xinomavro from everyday Naoussa to long-aged Grande Reserve.",
+"wines": [
+{
+"name": "Naoussa",
+"type": "Red",
+"price": 8.0,
+"cur": "EUR",
+"notes": "Red fruit, sun-dried tomato, olive and cedar; firm tannins.",
+"prices": [
+{
+"price": 8.0,
+"cur": "EUR",
+"shop": "Greece & Grapes",
+"url": "https://www.greeceandgrapes.com/en/red-xinomavro-naoussa-2023-vaeni-winery",
+"note": "2023 vintage"
+}
+],
+"checked": "25 Nov 2026"
+},
+{
+"name": "Naoussa Grande Reserve",
+"type": "Red",
+"price": 10.5,
+"cur": "EUR",
+"notes": "24 months in French oak and 24 in bottle: vanilla, spice, velvety.",
+"prices": [
+{
+"price": 10.5,
+"cur": "EUR",
+"shop": "Greece & Grapes",
+"url": "https://www.greeceandgrapes.com/en/red-xinomavro-grande-reserve-2020-vaeni",
+"note": "2020 vintage, was €12.00"
+}
+],
+"checked": "25 Nov 2026"
+},
+{
+"name": "Damascenos",
+"type": "Red",
+"price": 12.6,
+"cur": "EUR",
+"notes": "Robust Xinomavro: dried fruit, tomato, olive and plum.",
+"prices": [
+{
+"price": 12.6,
+"cur": "EUR",
+"shop": "Greece & Grapes",
+"url": "https://www.greeceandgrapes.com/en/red-damascenos-2020-vaeni-winery",
+"note": "2020 vintage, was €13.00"
+}
+],
+"checked": "25 Nov 2026"
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "gr-foundi",
+"name": "Ktima Foundi",
+"region": "Naoussa",
+"country": "Greece",
+"lat": 40.6,
+"lng": 22.12,
+"founded": "1992",
+"style": "red",
+"story": "The Foundis family were refugees from Strantza in eastern Thrace who settled near Naoussa in the 1920s. They planted their first vineyard in 1930 and built their first winery in 1992, focusing on Xinomavro.",
+"wines": [
+{
+"name": "Naoussea",
+"type": "Red",
+"price": 14.2,
+"cur": "EUR",
+"notes": "Onion-skin red; sun-dried tomato, pepper and ripe plum, soft tannins.",
+"prices": [
+{
+"price": 14.2,
+"cur": "EUR",
+"shop": "Greece & Grapes",
+"url": "https://www.greeceandgrapes.com/en/red-naoussea-2019-foundi-ktima",
+"note": "2019 vintage"
+}
+],
+"checked": "25 Nov 2026"
+},
+{
+"name": "Foundi Red",
+"type": "Red",
+"price": 20.5,
+"cur": "EUR",
+"notes": "Estate Xinomavro.",
+"prices": [
+{
+"price": 20.5,
+"cur": "EUR",
+"shop": "Greece & Grapes",
+"url": "https://www.greeceandgrapes.com/en/red-2021-estate-xinomavro-foundi-ktima",
+"note": "2021 vintage"
+}
+],
+"checked": "25 Nov 2026"
+},
+{
+"name": "Trygias",
+"type": "White",
+"price": 12.5,
+"cur": "EUR",
+"notes": "Their white wine.",
+"prices": [
+{
+"price": 12.5,
+"cur": "EUR",
+"shop": "Greece & Grapes",
+"url": "https://www.greeceandgrapes.com/en/white-ktima-foundi-trygias-2024",
+"note": "2024 vintage, was €14.88"
+}
+],
+"checked": "25 Nov 2026"
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "gr-ligas",
+"name": "Ktima Ligas",
+"region": "Pella (Macedonia)",
+"country": "Greece",
+"lat": 40.79,
+"lng": 22.41,
+"founded": "",
+"style": "white",
+"story": "A family estate in Pella known for natural wines: native-yeast fermentations, long ageing in old barrels and bottling without filtration, from Roditis, Xinomavro, Kydonitsa, Assyrtiko and a pine-scented Retsina.",
+"wines": [
+{
+"name": "Roditis Barrique",
+"type": "White",
+"price": 42.4,
+"cur": "EUR",
+"notes": "Native-yeast Roditis, 8-12 months in old large oak, unfiltered.",
+"prices": [
+{
+"price": 42.4,
+"cur": "EUR",
+"shop": "Greece & Grapes",
+"url": "https://www.greeceandgrapes.com/en/white-roditis-barrique-2021-ktima-ligas",
+"note": "2021 vintage, was €44.60"
+}
+],
+"checked": "25 Nov 2026"
+},
+{
+"name": "Yomatari",
+"type": "White",
+"price": 31.9,
+"cur": "EUR",
+"notes": "A serious Retsina: citrus, kumquat and pine.",
+"prices": [
+{
+"price": 31.9,
+"cur": "EUR",
+"shop": "Greece & Grapes",
+"url": "https://www.greeceandgrapes.com/en/white-yomatari-2022-ktima-ligas",
+"note": "2022 vintage"
+}
+],
+"checked": "25 Nov 2026"
+},
+{
+"name": "Bucephale",
+"type": "Red",
+"price": 48.9,
+"cur": "EUR",
+"notes": "Old-vine Xinomavro, made only in top years, 18 months in French oak.",
+"prices": [
+{
+"price": 48.9,
+"cur": "EUR",
+"shop": "Greece & Grapes",
+"url": "https://www.greeceandgrapes.com/en/red-bucephale-2021-ktima-ligas",
+"note": "2021 vintage, was €50.80"
+}
+],
+"checked": "25 Nov 2026"
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "gr-dougos",
+"name": "Dougos Winery",
+"region": "Rapsani (Thessaly)",
+"country": "Greece",
+"lat": 39.9,
+"lng": 22.57,
+"founded": "",
+"style": "red",
+"story": "Thanos and Louisa Dougos farm certified-organic vineyards at Prosilia, Rapsani, at 450-500 m on the slopes of Mount Olympus. Alongside Xinomavro, Krassato and Stavroto they grow rare local grapes and French varieties.",
+"wines": [
+{
+"name": "Rapsani",
+"type": "Red",
+"price": 12.9,
+"cur": "EUR",
+"notes": "Xinomavro, Krassato and Stavroto: tomato, pepper, plum and tobacco.",
+"prices": [
+{
+"price": 12.9,
+"cur": "EUR",
+"shop": "Greece & Grapes",
+"url": "https://www.greeceandgrapes.com/en/red-rapsani-2023-dougos-winery",
+"note": "2023 vintage, only 1 left"
+}
+],
+"checked": "25 Nov 2026"
+},
+{
+"name": "Rapsani Old Vines",
+"type": "Red",
+"price": 21.0,
+"cur": "EUR",
+"notes": "Old-vine Rapsani: red fruit, tobacco, pepper, fine and spicy.",
+"prices": [
+{
+"price": 21.0,
+"cur": "EUR",
+"shop": "Greece & Grapes",
+"url": "https://www.greeceandgrapes.com/en/red-rapsani-old-vines-2023-dougos-winery",
+"note": "2023 vintage"
 }
 ],
 "checked": "25 Nov 2026"

@@ -3472,7 +3472,7 @@
 "lng": 23.93,
 "founded": "1993",
 "style": "red",
-"story": "Founded in 1993 by Ted Manousakis, who returned to his family's village near Chania. Known for Rhône grapes such as Syrah and Roussanne under the 'Nostos' label.",
+"story": "Ted Manousakis came home to Vatolakkos near Chania in 1993 and planted Rhône varieties; 'Nostos' means homecoming. His daughter Alexandra has made the wines since 2007, and the vineyards are certified organic.",
 "wines": [
 {
 "name": "Nostos Blend",
@@ -3484,9 +3484,26 @@
 {
 "name": "Nostos Roussanne",
 "type": "White",
-"price": "",
+"price": 31.1,
 "cur": "EUR",
-"notes": "Rich, textured white."
+"notes": "Rich, textured white.",
+"prices": [
+{
+"price": 31.1,
+"cur": "EUR",
+"shop": "Botilia",
+"url": "https://www.botilia.gr/en/p/white-wine/Nostos-Roussanne-2018-Manousakis",
+"note": "2025 vintage"
+},
+{
+"price": 31.3,
+"cur": "EUR",
+"shop": "Greece & Grapes",
+"url": "https://www.greeceandgrapes.com/en/white-nostos-roussanne-2022-winery-manousakis",
+"note": "2022 vintage"
+}
+],
+"checked": "25 Nov 2026"
 }
 ],
 "events": [],
@@ -3501,7 +3518,7 @@
 "lng": 20.43,
 "founded": "",
 "style": "white",
-"story": "A family estate on the Paliki peninsula of Kefalonia, farmed biodynamically. Known for Robola and other island grapes.",
+"story": "A small family estate on the Paliki peninsula in western Kefalonia, run since 2015 by Evriviadis (Vladis) Sclavos and Spiros Zisimatos. Biodynamic farming, native yeasts and minimal sulfites; some vines are ungrafted survivors of phylloxera.",
 "wines": [
 {
 "name": "Robola of Kefalonia",
@@ -3516,6 +3533,23 @@
 "price": "",
 "cur": "EUR",
 "notes": "Dry red from the island grape."
+},
+{
+"type": "White",
+"notes": "'Wine of the stone': salty, mineral Robola from limestone slopes, made with minimal intervention.",
+"name": "Vino di Sasso Robola",
+"cur": "EUR",
+"prices": [
+{
+"price": 18.5,
+"cur": "EUR",
+"shop": "Botilia",
+"url": "https://botilia.gr/en/p/white-wine/Vino-Di-Sasso-Sclavos-Wines",
+"note": "2024 vintage"
+}
+],
+"price": 18.5,
+"checked": "25 Nov 2026"
 }
 ],
 "events": [],
@@ -3528,16 +3562,26 @@
 "country": "Greece",
 "lat": 38.13,
 "lng": 20.5,
-"founded": "",
+"founded": "1984",
 "style": "white",
-"story": "Founded by Nicholas Cosmetatos near Argostoli, Gentilini was one of the first boutique wineries of modern Greece. Its Robola is a reference for the island.",
+"story": "Founded in 1984 on Kefalonia and known early on for pioneering winemaking on the island. Since 2002 Petros Markantonatos has led the estate and moved it toward organic farming. Robola comes from high, stony vineyards on Mount Ainos at 650 m and above.",
 "wines": [
 {
 "name": "Gentilini Robola",
 "type": "White",
-"price": "",
+"price": 25.6,
 "cur": "EUR",
-"notes": "Lemon, flint and freshness."
+"notes": "Lemon, flint and freshness.",
+"prices": [
+{
+"price": 25.6,
+"cur": "EUR",
+"shop": "Botilia",
+"url": "https://www.botilia.gr/en/p/white-wine/Robola-Gentilini",
+"note": "2025 vintage"
+}
+],
+"checked": "25 Nov 2026"
 },
 {
 "name": "Eclipse",
@@ -3545,6 +3589,23 @@
 "price": "",
 "cur": "EUR",
 "notes": "Mavrodaphne-based dry red."
+},
+{
+"type": "White",
+"notes": "Robola from their oldest vineyard at 850 m, part barrel-fermented: mineral and complex with age.",
+"name": "Robola Wild Paths",
+"cur": "EUR",
+"prices": [
+{
+"price": 32.3,
+"cur": "EUR",
+"shop": "House of Wine",
+"url": "https://www.houseofwine.gr/how/intl/gentilini-rompola-kefallonias-wild-paths.html",
+"note": "2025 vintage"
+}
+],
+"price": 32.3,
+"checked": "25 Nov 2026"
 }
 ],
 "events": [],
@@ -3557,16 +3618,33 @@
 "country": "Greece",
 "lat": 38.13,
 "lng": 20.63,
-"founded": "",
+"founded": "1982",
 "style": "white",
-"story": "The winery of Kefalonian growers, set in the Omala valley below Mount Ainos. It is the largest producer of Robola of Kefalonia.",
+"story": "Orealios Gaea, the Robola cooperative of Kefalonia, was founded in 1982 and brings together about 300 growers. Their San Gerasimo Robola comes from mountain vineyards on the slopes of Mount Ainos, at up to 800 m.",
 "wines": [
 {
 "name": "Robola of Kefalonia",
 "type": "White",
-"price": "",
+"price": 14.4,
 "cur": "EUR",
-"notes": "Fresh, citrusy island white."
+"notes": "Fresh, citrusy island white.",
+"prices": [
+{
+"price": 14.4,
+"cur": "EUR",
+"shop": "Botilia",
+"url": "https://www.botilia.gr/en/p/white-wine/Robola-Orealios-Gaia-San-Gerasimo",
+"note": "San Gerasimo, 2024 vintage, almost gone"
+},
+{
+"price": 17.28,
+"cur": "EUR",
+"shop": "Siakos",
+"url": "https://siakos.gr/en/products/orealios-gaea-%ce%ba%cf%81%ce%b1%cf%83%ce%af-san-gerasimo-%cf%81%ce%bf%ce%bc%cf%80%cf%8c%ce%bb%ce%b1-%ce%bb%ce%b5%cf%85%ce%ba%cf%8c-%ce%be%ce%b7%cf%81%cf%8c-750ml",
+"note": "San Gerasimo"
+}
+],
+"checked": "25 Nov 2026"
 }
 ],
 "events": [],
@@ -3586,9 +3664,19 @@
 {
 "name": "Monemvasia",
 "type": "White",
-"price": "",
+"price": 14.9,
 "cur": "EUR",
-"notes": "Local grape: fresh and herbal."
+"notes": "Local grape: fresh and herbal.",
+"prices": [
+{
+"price": 14.9,
+"cur": "EUR",
+"shop": "Botilia",
+"url": "https://www.botilia.gr/en/p/white-wine/Monemvasia-Oinopoieio-Moraiti",
+"note": "2025 vintage"
+}
+],
+"checked": "25 Nov 2026"
 },
 {
 "name": "Mandilaria",
@@ -3596,6 +3684,23 @@
 "price": "",
 "cur": "EUR",
 "notes": "Island red with dark fruit."
+},
+{
+"type": "White",
+"notes": "A special, salty, intense Monemvasia from old vines.",
+"name": "Thapsana",
+"cur": "EUR",
+"prices": [
+{
+"price": 34.6,
+"cur": "EUR",
+"shop": "Botilia",
+"url": "https://www.botilia.gr/en/p/white-wine/Thapsana-Oinopoieio-Moraiti",
+"note": "2021 vintage"
+}
+],
+"price": 34.6,
+"checked": "25 Nov 2026"
 }
 ],
 "events": [],
@@ -3615,9 +3720,19 @@
 {
 "name": "Clos Stegasta Assyrtiko",
 "type": "White",
-"price": "",
+"price": 116.6,
 "cur": "EUR",
-"notes": "Granite-grown Assyrtiko: tense and mineral."
+"notes": "Granite-grown Assyrtiko: tense and mineral.",
+"prices": [
+{
+"price": 116.6,
+"cur": "EUR",
+"shop": "Greece & Grapes",
+"url": "https://www.greeceandgrapes.com/en/white-t-oinos-clos-stegasta-assyrtiko-2024-tiniakoi-ampelones",
+"note": "2024 vintage, sold out"
+}
+],
+"checked": "25 Nov 2026"
 },
 {
 "name": "Mavrotragano",

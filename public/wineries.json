@@ -6097,5 +6097,203 @@
 ],
 "events": [],
 "real": true
+},
+{
+"id": "gr-sarris",
+"name": "Sarris Winery",
+"region": "Kefalonia",
+"country": "Greece",
+"lat": 38.15,
+"lng": 20.58,
+"founded": "",
+"style": "white",
+"story": "A Kefalonian winery working with the island's own grapes: Robola, the rare Vostilidi and Mavrodaphne. Its Panochori Old Vines comes from centuries-old, ungrafted Robola vines in the mountain area of Panochori.",
+"wines": [
+{
+"name": "Robola of Cephalonia",
+"type": "White",
+"price": 17.6,
+"cur": "EUR",
+"notes": "Green apple, pear and lemon zest with flinty minerality.",
+"prices": [
+{
+"price": 17.6,
+"cur": "EUR",
+"shop": "Greece & Grapes",
+"url": "https://www.greeceandgrapes.com/en/white-robola-of-kefalonia-2025-sarris-winery",
+"note": "2025 vintage, sold out"
+}
+],
+"checked": "25 Nov 2026"
+},
+{
+"name": "Panochori Old Vines",
+"type": "White",
+"price": 23.8,
+"cur": "EUR",
+"notes": "Robola from very old, ungrafted mountain vines: deep and complex.",
+"prices": [
+{
+"price": 23.8,
+"cur": "EUR",
+"shop": "Greece & Grapes",
+"url": "https://www.greeceandgrapes.com/en/white-sarris-winery-panochori-old-vines-2025",
+"note": "2025 vintage"
+}
+],
+"checked": "25 Nov 2026"
+},
+{
+"name": "V for Vostilidi",
+"type": "White",
+"price": 20.4,
+"cur": "EUR",
+"notes": "The rare Kefalonian Vostilidi grape.",
+"prices": [
+{
+"price": 20.4,
+"cur": "EUR",
+"shop": "Greece & Grapes",
+"url": "https://www.greeceandgrapes.com/en/white-v-for-vostilidi-2025-sarris-winery",
+"note": "2025 vintage"
+}
+],
+"checked": "25 Nov 2026"
+},
+{
+"name": "Megali Petra",
+"type": "Red",
+"price": 20.0,
+"cur": "EUR",
+"notes": "Dry Mavrodaphne.",
+"prices": [
+{
+"price": 20.0,
+"cur": "EUR",
+"shop": "Greece & Grapes",
+"url": "https://www.greeceandgrapes.com/en/red-megali-petra-2024-sarris-winery",
+"note": "2024 vintage, was €21.08"
+}
+],
+"checked": "25 Nov 2026"
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "gr-haritatos",
+"name": "Haritatos Vineyard",
+"region": "Kefalonia",
+"country": "Greece",
+"lat": 38.18,
+"lng": 20.5,
+"founded": "",
+"style": "white",
+"story": "A young organic estate on Kefalonia with 4 ha of vines, mainly Muscat and Mavrodaphne, on clay and limestone soils. Some labels honour grandfather Hariton.",
+"wines": [
+{
+"name": "Typaldo White",
+"type": "White",
+"price": 16.06,
+"cur": "EUR",
+"notes": "Dry Muscat: lavender, jasmine, lemon zest, herbs and apricot.",
+"prices": [
+{
+"price": 16.06,
+"cur": "EUR",
+"shop": "Greece & Grapes",
+"url": "https://www.greeceandgrapes.com/en/white-wine-typaldo-2025-haritatos-vineyard",
+"note": "2025 vintage, was €17.40"
+}
+],
+"checked": "25 Nov 2026"
+},
+{
+"name": "Hariton Vostilidi",
+"type": "White",
+"price": 17.3,
+"cur": "EUR",
+"notes": "Vostilidi: bright lemon, stone fruit and herbs.",
+"prices": [
+{
+"price": 17.3,
+"cur": "EUR",
+"shop": "Greece & Grapes",
+"url": "https://www.greeceandgrapes.com/en/white-wine-hariton-vostilidi-2025-haritatos-vineyard",
+"note": "2025 vintage"
+}
+],
+"checked": "25 Nov 2026"
+},
+{
+"name": "Mademoiselle Haritatou",
+"type": "Red",
+"price": 16.7,
+"cur": "EUR",
+"notes": "Mavrodaphne red.",
+"prices": [
+{
+"price": 16.7,
+"cur": "EUR",
+"shop": "Greece & Grapes",
+"url": "https://www.greeceandgrapes.com/en/red-wine-mademoiselle-hatitatou-2025-haritatos-vineyard",
+"note": "2025 vintage"
+}
+],
+"checked": "25 Nov 2026"
+},
+{
+"name": "Rosé de Haritatos",
+"type": "Rosé",
+"price": 14.9,
+"cur": "EUR",
+"notes": "Red fruit, flowers and herbs, lively acidity.",
+"prices": [
+{
+"price": 14.9,
+"cur": "EUR",
+"shop": "Greece & Grapes",
+"url": "https://www.greeceandgrapes.com/en/rose-wine-rose-de-haritatos-2025-haritatos-vineyard",
+"note": "2025 vintage"
+}
+],
+"checked": "25 Nov 2026"
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "gr-zoinos",
+"name": "Zoinos Winery",
+"region": "Zitsa (Epirus)",
+"country": "Greece",
+"lat": 39.75,
+"lng": 20.65,
+"founded": "1973",
+"style": "sparkling",
+"story": "The Zitsa winery, founded in 1973, makes wine from its growers' Debina grapes, grown at about 700 m on steep limestone slopes in six villages around Zitsa, 27 km from Ioannina. Zitsa is Greece's home of sparkling Debina.",
+"wines": [
+{
+"name": "Aurelia Sparkling",
+"type": "Sparkling",
+"price": 9.0,
+"cur": "EUR",
+"notes": "Off-dry sparkling rosé: Debina with local Vlahiko and Bekari, cherry and strawberry.",
+"prices": [
+{
+"price": 9.0,
+"cur": "EUR",
+"shop": "Greece & Grapes",
+"url": "https://www.greeceandgrapes.com/en/sparkling-rose-aurelia-zoinos-winery-zitsa",
+"note": "2018 vintage"
+}
+],
+"checked": "25 Nov 2026"
+}
+],
+"events": [],
+"real": true
 }
 ]

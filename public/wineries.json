@@ -3155,10 +3155,51 @@
 "shop": "Botilia",
 "url": "https://www.botilia.gr/en/p/white-wine/Fine-Debina-Glinavos-Winery",
 "note": "2024 vintage"
+},
+{
+"price": 16.85,
+"cur": "EUR",
+"shop": "Greece & Grapes",
+"url": "https://www.greeceandgrapes.com/en/white-domaine-glinavos-fine-debina-2024",
+"note": "2024 vintage"
 }
 ],
 "price": 14.2,
-"checked": "24 Nov 2026"
+"checked": "25 Nov 2026"
+},
+{
+"type": "Sparkling",
+"notes": "Semi-sparkling Debina with Xinomavro, made by Apostolos Thymiopoulos.",
+"name": "Poème de Nature Blanc",
+"cur": "EUR",
+"prices": [
+{
+"price": 14.0,
+"cur": "EUR",
+"shop": "Greece & Grapes",
+"url": "https://www.greeceandgrapes.com/en/sparkling-domaine-glinavos-poeme-de-nature-blanc",
+"note": ""
+}
+],
+"price": 14.0,
+"checked": "25 Nov 2026"
+},
+{
+"type": "Sparkling",
+"notes": "Semi-sparkling pale pink Xinomavro and Debina.",
+"name": "Poème de Nature Rosé",
+"cur": "EUR",
+"prices": [
+{
+"price": 14.0,
+"cur": "EUR",
+"shop": "Greece & Grapes",
+"url": "https://www.greeceandgrapes.com/en/sparkling-domaine-glinavos-poeme-de-nature-rose",
+"note": ""
+}
+],
+"price": 14.0,
+"checked": "25 Nov 2026"
 }
 ],
 "events": [],
@@ -3226,21 +3267,92 @@
 "lng": 22.29,
 "founded": "",
 "style": "red",
-"story": "A family winery in Tyrnavos, Thessaly, known for reviving the local Limniona grape. Christos Zafeirakis, the fifth generation, studied oenology in Milan, made his first Limniona in 2008 and farms all the vineyards organically.",
+"story": "A family winery at Palaiomylos, Tyrnavos (Thessaly), known for reviving the local Limniona grape. Christos Zafeirakis, the fifth generation, studied oenology in Milan, made his first Limniona in 2008 and farms all the vineyards organically.",
 "wines": [
 {
 "name": "Limniona",
 "type": "Red",
-"price": "",
+"price": 28.5,
 "cur": "EUR",
-"notes": "Fresh red fruit and herbs, elegant."
+"notes": "Fresh red fruit and herbs, elegant.",
+"prices": [
+{
+"price": 28.5,
+"cur": "EUR",
+"shop": "Greece & Grapes",
+"url": "https://www.greeceandgrapes.com/en/red-limniona-2023-zafeirakis-domaine",
+"note": "2023 vintage, sold out"
+}
+],
+"checked": "25 Nov 2026"
 },
 {
 "name": "Malagousia",
 "type": "White",
-"price": "",
+"price": 13.0,
 "cur": "EUR",
-"notes": "Fragrant, fresh white."
+"notes": "Fragrant, fresh white.",
+"prices": [
+{
+"price": 13.0,
+"cur": "EUR",
+"shop": "Greece & Grapes",
+"url": "https://www.greeceandgrapes.com/en/white-malagousia-2025-zafeirakis-domaine",
+"note": "2025 vintage"
+}
+],
+"checked": "25 Nov 2026"
+},
+{
+"type": "Red",
+"notes": "Limniona from younger vines: juicy, berry-led and lightly spiced.",
+"name": "Limniona Young Vineyards",
+"cur": "EUR",
+"prices": [
+{
+"price": 16.7,
+"cur": "EUR",
+"shop": "Greece & Grapes",
+"url": "https://www.greeceandgrapes.com/en/red-limniona-new-age-2023-zafeirakis-domaine",
+"note": "2023 vintage"
+}
+],
+"price": 16.7,
+"checked": "25 Nov 2026"
+},
+{
+"type": "Rosé",
+"notes": "Salmon pink: strawberry, cherry, white flowers and herbs.",
+"name": "Limniona Rosé",
+"cur": "EUR",
+"prices": [
+{
+"price": 14.6,
+"cur": "EUR",
+"shop": "Greece & Grapes",
+"url": "https://www.greeceandgrapes.com/en/rose-limniona-2025-zafeirakis-domaine",
+"note": "2025 vintage"
+}
+],
+"price": 14.6,
+"checked": "25 Nov 2026"
+},
+{
+"type": "Red",
+"notes": "Organic Limniona, native yeasts, 18 months in amphora.",
+"name": "Terracotta Limniona",
+"cur": "EUR",
+"prices": [
+{
+"price": 37.0,
+"cur": "EUR",
+"shop": "Greece & Grapes",
+"url": "https://www.greeceandgrapes.com/en/red-terracotta-limniona-2021-zafeirakis-domaine",
+"note": "2021 vintage"
+}
+],
+"price": 37.0,
+"checked": "25 Nov 2026"
 }
 ],
 "events": [],

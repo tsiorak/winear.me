@@ -4036,96 +4036,6 @@
 ]
 },
 {
-"id": "s-chianti",
-"name": "Fattoria del Cipresso",
-"region": "Chianti Classico, Tuscany",
-"country": "Italy",
-"lat": 43.47,
-"lng": 11.25,
-"founded": 1910,
-"style": "red",
-"hours": "Mon–Sat 10:00–18:00",
-"story": "An old farmhouse among cypresses and olive groves. Sangiovese is aged in large Slavonian casks, never small new barrels.",
-"wines": [
-{
-"name": "Chianti Classico Riserva",
-"type": "Red",
-"price": 32,
-"cur": "EUR",
-"notes": "Sour cherry, tea leaf and dried herbs."
-},
-{
-"name": "Gran Selezione",
-"type": "Red",
-"price": 58,
-"cur": "EUR",
-"notes": "Single vineyard, deep and structured."
-},
-{
-"name": "Vin Santo",
-"type": "Sweet",
-"price": 40,
-"cur": "EUR",
-"notes": "Hazelnut and dried apricot, for cantucci."
-}
-],
-"events": [
-{
-"id": "e1",
-"title": "New olive oil & wine day",
-"start": "2026-11-29T11:00",
-"end": "2026-11-29T16:00",
-"price": 25,
-"desc": "Fresh 'olio nuovo' on bruschetta with this year's wine."
-}
-]
-},
-{
-"id": "s-barolo",
-"name": "Cascina Nebbia",
-"region": "Barolo, Piedmont",
-"country": "Italy",
-"lat": 44.61,
-"lng": 7.943,
-"founded": 1949,
-"style": "red",
-"hours": "By appointment",
-"story": "Named after the autumn fog that gives Nebbiolo its name. A tiny estate making only three wines, all from the same hill.",
-"wines": [
-{
-"name": "Barolo",
-"type": "Red",
-"price": 62,
-"cur": "EUR",
-"notes": "Tar and roses, firm tannins."
-},
-{
-"name": "Langhe Nebbiolo",
-"type": "Red",
-"price": 26,
-"cur": "EUR",
-"notes": "A gentler Barolo, ready younger."
-},
-{
-"name": "Dolcetto d'Alba",
-"type": "Red",
-"price": 15,
-"cur": "EUR",
-"notes": "Everyday red, plum and almond."
-}
-],
-"events": [
-{
-"id": "e1",
-"title": "White truffle dinner",
-"start": "2026-11-24T19:30",
-"end": "2026-11-24T23:00",
-"price": 180,
-"desc": "Five courses with Alba truffle and our Barolo verticals."
-}
-]
-},
-{
 "id": "s-mosel",
 "name": "Weingut Steilhang",
 "region": "Mosel",
@@ -7910,6 +7820,1525 @@
 "price": "",
 "cur": "EUR",
 "notes": "Vermentinu."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-gaja",
+"name": "Gaja",
+"region": "Barbaresco, Piedmont",
+"country": "Italy",
+"lat": 44.7255,
+"lng": 8.0815,
+"founded": "1859",
+"style": "red",
+"story": "Founded in Barbaresco in 1859. Angelo Gaja, the fourth generation, brought Barbaresco world fame with single-vineyard Nebbiolo such as Sorì San Lorenzo and Sorì Tildìn.",
+"wines": [
+{
+"name": "Barbaresco",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Nebbiolo: roses, cherries, tar and firm tannins."
+},
+{
+"name": "Gaia & Rey",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Chardonnay, first planted in Langhe in 1979."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-giacomo-conterno",
+"name": "Giacomo Conterno",
+"region": "Monforte d'Alba, Piedmont",
+"country": "Italy",
+"lat": 44.583,
+"lng": 7.97,
+"founded": "",
+"style": "red",
+"story": "A traditionalist Barolo house whose Monfortino Riserva, from the Cascina Francia vineyard in Serralunga, is among Italy's most revered wines.",
+"wines": [
+{
+"name": "Barolo Cascina Francia",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Classic long-macerated Nebbiolo."
+},
+{
+"name": "Barolo Monfortino Riserva",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Long-aged flagship Barolo."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-bartolo-mascarello",
+"name": "Bartolo Mascarello",
+"region": "Barolo, Piedmont",
+"country": "Italy",
+"lat": 44.611,
+"lng": 7.943,
+"founded": "",
+"style": "red",
+"story": "A small cellar in Barolo village that kept to traditional blended Barolo, made by the late Bartolo Mascarello and now his daughter Maria Teresa.",
+"wines": [
+{
+"name": "Barolo",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Blend of four Barolo crus, aged in large old casks."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-giuseppe-rinaldi",
+"name": "Giuseppe Rinaldi",
+"region": "Barolo, Piedmont",
+"country": "Italy",
+"lat": 44.6125,
+"lng": 7.94,
+"founded": "",
+"style": "red",
+"story": "A traditional family Barolo cellar, famous for blends of great crus such as Brunate and Le Coste.",
+"wines": [
+{
+"name": "Barolo Brunate",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Perfumed, firm Nebbiolo."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-bruno-giacosa",
+"name": "Bruno Giacosa",
+"region": "Neive, Piedmont",
+"country": "Italy",
+"lat": 44.7255,
+"lng": 8.1155,
+"founded": "",
+"style": "red",
+"story": "A legendary Neive producer of Barbaresco and Barolo; its red-label Riservas, like Asili and Falletto, are collectors' wines.",
+"wines": [
+{
+"name": "Barbaresco Asili",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Graceful, perfumed Nebbiolo."
+},
+{
+"name": "Roero Arneis",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Fresh local white."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-vietti",
+"name": "Vietti",
+"region": "Castiglione Falletto, Piedmont",
+"country": "Italy",
+"lat": 44.623,
+"lng": 7.9765,
+"founded": "",
+"style": "red",
+"story": "A Castiglione Falletto cellar that helped revive the white Arneis grape in the 1960s and makes a range of single-cru Barolos.",
+"wines": [
+{
+"name": "Barolo Castiglione",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Village blend Barolo."
+},
+{
+"name": "Roero Arneis",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Pear, almond and flowers."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-pio-cesare",
+"name": "Pio Cesare",
+"region": "Alba, Piedmont",
+"country": "Italy",
+"lat": 44.7,
+"lng": 8.035,
+"founded": "1881",
+"style": "red",
+"story": "Founded in 1881 by Cesare Pio inside Alba's old Roman walls, still run by the family.",
+"wines": [
+{
+"name": "Barolo",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Classic multi-vineyard Barolo."
+},
+{
+"name": "Barbaresco",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Elegant Nebbiolo."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-produttori-del-barbaresco",
+"name": "Produttori del Barbaresco",
+"region": "Barbaresco, Piedmont",
+"country": "Italy",
+"lat": 44.7265,
+"lng": 8.0825,
+"founded": "1958",
+"style": "red",
+"story": "A growers' cooperative founded in 1958 in Barbaresco village, famous for its traditional single-cru Riservas.",
+"wines": [
+{
+"name": "Barbaresco",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Great-value classic Barbaresco."
+},
+{
+"name": "Langhe Nebbiolo",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Young, juicy Nebbiolo."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-braida",
+"name": "Braida",
+"region": "Rocchetta Tanaro, Piedmont",
+"country": "Italy",
+"lat": 44.859,
+"lng": 8.342,
+"founded": "",
+"style": "red",
+"story": "Giacomo Bologna's family estate, which turned Barbera d'Asti into a fine wine with Bricco dell'Uccellone in the 1980s.",
+"wines": [
+{
+"name": "Bricco dell'Uccellone",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Oak-aged Barbera d'Asti."
+},
+{
+"name": "Brachetto d'Acqui",
+"type": "Sparkling",
+"price": "",
+"cur": "EUR",
+"notes": "Sweet, fizzy red."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-marchesi-di-barolo",
+"name": "Marchesi di Barolo",
+"region": "Barolo, Piedmont",
+"country": "Italy",
+"lat": 44.61,
+"lng": 7.944,
+"founded": "",
+"style": "red",
+"story": "A historic cellar opposite the Falletti castle in Barolo, linked to the Marchesa Giulia Falletti, who promoted Barolo in the 19th century.",
+"wines": [
+{
+"name": "Barolo del Comune di Barolo",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Classic Barolo."
+},
+{
+"name": "Barbera d'Alba",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Juicy Barbera."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-marchesi-antinori",
+"name": "Marchesi Antinori",
+"region": "San Casciano in Val di Pesa, Tuscany",
+"country": "Italy",
+"lat": 43.6235,
+"lng": 11.188,
+"founded": "1385",
+"style": "red",
+"story": "Winemakers since 1385. In the 1970s Piero Antinori launched Tignanello, a founding Super Tuscan; the striking cellar at Bargino opened in 2012.",
+"wines": [
+{
+"name": "Tignanello",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Sangiovese with Cabernet."
+},
+{
+"name": "Solaia",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Cabernet-led Super Tuscan."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-tenuta-san-guido",
+"name": "Tenuta San Guido",
+"region": "Bolgheri, Tuscany",
+"country": "Italy",
+"lat": 43.241,
+"lng": 10.563,
+"founded": "",
+"style": "red",
+"story": "The home of Sassicaia, the Cabernet that started the Super Tuscan movement and later gained its own DOC, Bolgheri Sassicaia.",
+"wines": [
+{
+"name": "Sassicaia",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Cabernet Sauvignon and Franc: cedar and finesse."
+},
+{
+"name": "Guidalberto",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Younger Cabernet–Merlot."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-tenuta-dell-ornellaia",
+"name": "Tenuta dell'Ornellaia",
+"region": "Castagneto Carducci, Bolgheri",
+"country": "Italy",
+"lat": 43.211,
+"lng": 10.594,
+"founded": "1981",
+"style": "red",
+"story": "Founded in 1981 in Bolgheri; its Ornellaia and pure-Merlot Masseto became icons of the Tuscan coast.",
+"wines": [
+{
+"name": "Ornellaia",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Bordeaux-style blend."
+},
+{
+"name": "Le Serre Nuove",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Second wine."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-biondi-santi-tenuta-greppo",
+"name": "Biondi-Santi Tenuta Greppo",
+"region": "Montalcino, Tuscany",
+"country": "Italy",
+"lat": 43.041,
+"lng": 11.502,
+"founded": "",
+"style": "red",
+"story": "The family estate where Ferruccio Biondi-Santi created Brunello di Montalcino in the late 19th century from a selected Sangiovese clone.",
+"wines": [
+{
+"name": "Brunello di Montalcino",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Austere, long-lived Sangiovese."
+},
+{
+"name": "Rosso di Montalcino",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Younger Sangiovese."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-castello-banfi",
+"name": "Castello Banfi",
+"region": "Montalcino, Tuscany",
+"country": "Italy",
+"lat": 42.973,
+"lng": 11.438,
+"founded": "1978",
+"style": "red",
+"story": "A large estate around the medieval Poggio alle Mura castle south of Montalcino, founded in 1978.",
+"wines": [
+{
+"name": "Brunello di Montalcino",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Ripe, polished Sangiovese."
+},
+{
+"name": "Rosso di Montalcino",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Fresh Sangiovese."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-fontodi",
+"name": "Fontodi",
+"region": "Panzano in Chianti, Tuscany",
+"country": "Italy",
+"lat": 43.545,
+"lng": 11.31,
+"founded": "",
+"style": "red",
+"story": "An organic estate in the Conca d'Oro, the golden amphitheatre of vines below Panzano.",
+"wines": [
+{
+"name": "Chianti Classico",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Pure Sangiovese."
+},
+{
+"name": "Flaccianello della Pieve",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Single-vineyard Sangiovese."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-castello-di-ama",
+"name": "Castello di Ama",
+"region": "Gaiole in Chianti, Tuscany",
+"country": "Italy",
+"lat": 43.43,
+"lng": 11.43,
+"founded": "",
+"style": "red",
+"story": "An estate-hamlet in Chianti Classico that also hosts a celebrated collection of site-specific contemporary art.",
+"wines": [
+{
+"name": "Chianti Classico Ama",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Bright Sangiovese."
+},
+{
+"name": "L'Apparita",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Merlot."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-barone-ricasoli-castello-di-brolio",
+"name": "Barone Ricasoli – Castello di Brolio",
+"region": "Gaiole in Chianti, Tuscany",
+"country": "Italy",
+"lat": 43.4085,
+"lng": 11.456,
+"founded": "",
+"style": "red",
+"story": "Brolio castle, in the Ricasoli family for centuries. Baron Bettino Ricasoli wrote down the Chianti grape formula in 1872.",
+"wines": [
+{
+"name": "Chianti Classico Brolio",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Sangiovese-led Chianti."
+},
+{
+"name": "Castello di Brolio Gran Selezione",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Top Chianti Classico."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-isole-e-olena",
+"name": "Isole e Olena",
+"region": "Barberino Tavarnelle, Tuscany",
+"country": "Italy",
+"lat": 43.53,
+"lng": 11.22,
+"founded": "",
+"style": "red",
+"story": "Paolo De Marchi built this Chianti Classico estate's name with Cepparello, one of the first pure-Sangiovese Super Tuscans.",
+"wines": [
+{
+"name": "Cepparello",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Pure Sangiovese."
+},
+{
+"name": "Chianti Classico",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Classic Chianti."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-frescobaldi-castello-di-nipozzano",
+"name": "Frescobaldi – Castello di Nipozzano",
+"region": "Pelago, Tuscany",
+"country": "Italy",
+"lat": 43.772,
+"lng": 11.479,
+"founded": "",
+"style": "red",
+"story": "A castle estate in Chianti Rufina belonging to the Frescobaldi family, Florentine winemakers for some 700 years.",
+"wines": [
+{
+"name": "Nipozzano Riserva",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Sangiovese from Chianti Rufina."
+},
+{
+"name": "Mormoreto",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Bordeaux-style blend."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-avignonesi",
+"name": "Avignonesi",
+"region": "Montepulciano, Tuscany",
+"country": "Italy",
+"lat": 43.167,
+"lng": 11.865,
+"founded": "",
+"style": "red",
+"story": "A biodynamic Montepulciano estate known for Vino Nobile and a famous Vin Santo aged ten years in small barrels.",
+"wines": [
+{
+"name": "Vino Nobile di Montepulciano",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Prugnolo Gentile (Sangiovese)."
+},
+{
+"name": "Vin Santo",
+"type": "Sweet",
+"price": "",
+"cur": "EUR",
+"notes": "Rare, long-aged sweet wine."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-poliziano",
+"name": "Poliziano",
+"region": "Montepulciano, Tuscany",
+"country": "Italy",
+"lat": 43.122,
+"lng": 11.82,
+"founded": "",
+"style": "red",
+"story": "A family estate named after the Renaissance poet from Montepulciano, a leading Vino Nobile producer.",
+"wines": [
+{
+"name": "Vino Nobile di Montepulciano Asinone",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Single-vineyard Vino Nobile."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-tua-rita",
+"name": "Tua Rita",
+"region": "Suvereto, Tuscany",
+"country": "Italy",
+"lat": 43.06,
+"lng": 10.68,
+"founded": "",
+"style": "red",
+"story": "A small estate on the Tuscan coast whose pure-Merlot Redigaffi won worldwide attention in the 1990s.",
+"wines": [
+{
+"name": "Redigaffi",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Opulent Merlot."
+},
+{
+"name": "Giusto di Notri",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Bordeaux blend."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-allegrini",
+"name": "Allegrini",
+"region": "Fumane, Veneto",
+"country": "Italy",
+"lat": 45.545,
+"lng": 10.885,
+"founded": "",
+"style": "red",
+"story": "A family estate in Valpolicella Classico that helped make Amarone famous, with the La Poja Corvina vineyard.",
+"wines": [
+{
+"name": "Amarone della Valpolicella Classico",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Dried-grape red: rich and velvety."
+},
+{
+"name": "Palazzo della Torre",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Ripasso-style blend."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-masi",
+"name": "Masi",
+"region": "Gargagnago, Veneto",
+"country": "Italy",
+"lat": 45.51,
+"lng": 10.86,
+"founded": "",
+"style": "red",
+"story": "A Valpolicella family house famous for Amarone and for Campofiorin, which helped launch the ripasso style in 1964.",
+"wines": [
+{
+"name": "Costasera Amarone",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Classic Amarone."
+},
+{
+"name": "Campofiorin",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Refermented on Amarone skins."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-giuseppe-quintarelli",
+"name": "Giuseppe Quintarelli",
+"region": "Negrar, Veneto",
+"country": "Italy",
+"lat": 45.535,
+"lng": 10.93,
+"founded": "",
+"style": "red",
+"story": "The late Giuseppe Quintarelli made legendary, slowly aged Amarone and Recioto in the hills above Negrar.",
+"wines": [
+{
+"name": "Amarone della Valpolicella Classico",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Long-aged, hand-made Amarone."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-romano-dal-forno",
+"name": "Romano Dal Forno",
+"region": "Cellore d'Illasi, Veneto",
+"country": "Italy",
+"lat": 45.505,
+"lng": 11.165,
+"founded": "",
+"style": "red",
+"story": "Romano Dal Forno makes famously intense Valpolicella and Amarone outside the classic zone, in the Illasi valley.",
+"wines": [
+{
+"name": "Amarone della Valpolicella",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Dense, powerful Amarone."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-pieropan",
+"name": "Pieropan",
+"region": "Soave, Veneto",
+"country": "Italy",
+"lat": 45.42,
+"lng": 11.248,
+"founded": "",
+"style": "white",
+"story": "A family estate in the walled town of Soave that showed Garganega could make fine, age-worthy whites.",
+"wines": [
+{
+"name": "Soave Classico Calvarino",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Garganega and Trebbiano."
+},
+{
+"name": "La Rocca",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Barrel-aged Garganega."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-nino-franco",
+"name": "Nino Franco",
+"region": "Valdobbiadene, Veneto",
+"country": "Italy",
+"lat": 45.898,
+"lng": 11.999,
+"founded": "1919",
+"style": "sparkling",
+"story": "Founded in 1919 in Valdobbiadene, the heart of Prosecco Superiore's steep hills.",
+"wines": [
+{
+"name": "Rustico",
+"type": "Sparkling",
+"price": "",
+"cur": "EUR",
+"notes": "Prosecco Superiore."
+},
+{
+"name": "Primo Franco",
+"type": "Sparkling",
+"price": "",
+"cur": "EUR",
+"notes": "Off-dry Prosecco."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-gravner",
+"name": "Gravner",
+"region": "Oslavia, Friuli",
+"country": "Italy",
+"lat": 45.9705,
+"lng": 13.604,
+"founded": "",
+"style": "amber",
+"story": "Josko Gravner turned to long skin-contact whites aged in Georgian clay qvevri around 2000, helping start the modern amber wine movement.",
+"wines": [
+{
+"name": "Ribolla",
+"type": "Amber",
+"price": "",
+"cur": "EUR",
+"notes": "Skin-fermented Ribolla Gialla from amphora."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-radikon",
+"name": "Radikon",
+"region": "Oslavia, Friuli",
+"country": "Italy",
+"lat": 45.968,
+"lng": 13.6,
+"founded": "",
+"style": "amber",
+"story": "A family estate on the Slovenian border known for long-macerated, unsulfured orange wines from Ribolla Gialla.",
+"wines": [
+{
+"name": "Ribolla Gialla",
+"type": "Amber",
+"price": "",
+"cur": "EUR",
+"notes": "Skin-contact Ribolla."
+},
+{
+"name": "Oslavje",
+"type": "Amber",
+"price": "",
+"cur": "EUR",
+"notes": "Blend of Chardonnay, Sauvignon and Pinot Grigio."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-jermann",
+"name": "Jermann",
+"region": "Dolegna del Collio, Friuli",
+"country": "Italy",
+"lat": 45.981,
+"lng": 13.486,
+"founded": "",
+"style": "white",
+"story": "Silvio Jermann's Friuli estate, known for the white blend Vintage Tunina.",
+"wines": [
+{
+"name": "Vintage Tunina",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Field blend white."
+},
+{
+"name": "Pinot Grigio",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Crisp Friuli white."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-livio-felluga",
+"name": "Livio Felluga",
+"region": "Brazzano di Cormons, Friuli",
+"country": "Italy",
+"lat": 45.951,
+"lng": 13.47,
+"founded": "",
+"style": "white",
+"story": "A Friuli pioneer whose map-shaped labels and Terre Alte white blend became symbols of the region.",
+"wines": [
+{
+"name": "Terre Alte",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Friulano, Pinot Bianco and Sauvignon."
+},
+{
+"name": "Friulano",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Almond-scented local white."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-alois-lageder",
+"name": "Alois Lageder",
+"region": "Magrè, Alto Adige",
+"country": "Italy",
+"lat": 46.288,
+"lng": 11.212,
+"founded": "",
+"style": "white",
+"story": "A biodynamic family estate in Alto Adige, run by the Lageder family since the 19th century.",
+"wines": [
+{
+"name": "Pinot Grigio",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Alpine Pinot Grigio."
+},
+{
+"name": "Löwengang Chardonnay",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Barrel-aged Chardonnay."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-cantina-terlano",
+"name": "Cantina Terlano",
+"region": "Terlano, Alto Adige",
+"country": "Italy",
+"lat": 46.532,
+"lng": 11.247,
+"founded": "1893",
+"style": "white",
+"story": "A cooperative founded in 1893, famous for whites that age for decades, from its own library of old vintages.",
+"wines": [
+{
+"name": "Terlaner Classico",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Pinot Bianco, Chardonnay, Sauvignon."
+},
+{
+"name": "Vorberg Pinot Bianco Riserva",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Long-aged Pinot Bianco."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-j-hofstatter",
+"name": "J. Hofstätter",
+"region": "Tramin, Alto Adige",
+"country": "Italy",
+"lat": 46.343,
+"lng": 11.242,
+"founded": "",
+"style": "white",
+"story": "A family estate in Tramin, the village said to have given Gewürztraminer its name.",
+"wines": [
+{
+"name": "Kolbenhof Gewürztraminer",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Aromatic single-vineyard Gewürztraminer."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-ferrari-trento",
+"name": "Ferrari Trento",
+"region": "Trento, Trentino",
+"country": "Italy",
+"lat": 46.051,
+"lng": 11.13,
+"founded": "1902",
+"style": "sparkling",
+"story": "Founded by Giulio Ferrari in 1902, a pioneer of Italian traditional-method sparkling wine, run by the Lunelli family since 1952.",
+"wines": [
+{
+"name": "Ferrari Brut",
+"type": "Sparkling",
+"price": "",
+"cur": "EUR",
+"notes": "Chardonnay sparkling."
+},
+{
+"name": "Giulio Ferrari Riserva del Fondatore",
+"type": "Sparkling",
+"price": "",
+"cur": "EUR",
+"notes": "Long-aged prestige cuvée."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-ca-del-bosco",
+"name": "Ca' del Bosco",
+"region": "Erbusco, Lombardy",
+"country": "Italy",
+"lat": 45.601,
+"lng": 9.965,
+"founded": "",
+"style": "sparkling",
+"story": "Founded by Maurizio Zanella, a leading Franciacorta house known for its Cuvée Prestige and Annamaria Clementi.",
+"wines": [
+{
+"name": "Cuvée Prestige",
+"type": "Sparkling",
+"price": "",
+"cur": "EUR",
+"notes": "Franciacorta blend."
+},
+{
+"name": "Annamaria Clementi",
+"type": "Sparkling",
+"price": "",
+"cur": "EUR",
+"notes": "Long-aged vintage Franciacorta."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-guido-berlucchi",
+"name": "Guido Berlucchi",
+"region": "Borgonato, Lombardy",
+"country": "Italy",
+"lat": 45.618,
+"lng": 10.0,
+"founded": "",
+"style": "sparkling",
+"story": "The house that made the first Franciacorta sparkling wine in 1961.",
+"wines": [
+{
+"name": "Berlucchi '61 Brut",
+"type": "Sparkling",
+"price": "",
+"cur": "EUR",
+"notes": "Classic Franciacorta."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-cleto-chiarli",
+"name": "Cleto Chiarli",
+"region": "Modena, Emilia-Romagna",
+"country": "Italy",
+"lat": 44.64,
+"lng": 10.925,
+"founded": "1860",
+"style": "red",
+"story": "Founded in 1860, the oldest Lambrusco producer of Emilia-Romagna.",
+"wines": [
+{
+"name": "Lambrusco di Sorbara del Fondatore",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Pale, dry, sparkling Lambrusco."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-umani-ronchi",
+"name": "Umani Ronchi",
+"region": "Osimo, Marche",
+"country": "Italy",
+"lat": 43.48,
+"lng": 13.48,
+"founded": "",
+"style": "white",
+"story": "A Marche family winery known for Verdicchio dei Castelli di Jesi and Conero reds.",
+"wines": [
+{
+"name": "Casal di Serra Verdicchio",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Fresh, almond-tinged Verdicchio."
+},
+{
+"name": "Cumaro Conero Riserva",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Montepulciano."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-valentini",
+"name": "Valentini",
+"region": "Loreto Aprutino, Abruzzo",
+"country": "Italy",
+"lat": 42.433,
+"lng": 13.984,
+"founded": "",
+"style": "white",
+"story": "A secretive Abruzzo estate that made Trebbiano d'Abruzzo into a world-class, long-lived white.",
+"wines": [
+{
+"name": "Trebbiano d'Abruzzo",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Rare, long-lived Trebbiano."
+},
+{
+"name": "Montepulciano d'Abruzzo",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Traditional red."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-emidio-pepe",
+"name": "Emidio Pepe",
+"region": "Torano Nuovo, Abruzzo",
+"country": "Italy",
+"lat": 42.823,
+"lng": 13.781,
+"founded": "",
+"style": "red",
+"story": "A family estate where grapes are still crushed by hand and foot, known for long-lived Montepulciano d'Abruzzo.",
+"wines": [
+{
+"name": "Montepulciano d'Abruzzo",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Natural, long-lived red."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-mastroberardino",
+"name": "Mastroberardino",
+"region": "Atripalda, Campania",
+"country": "Italy",
+"lat": 40.92,
+"lng": 14.83,
+"founded": "",
+"style": "red",
+"story": "An Irpinia family winery that preserved Aglianico, Fiano and Greco and made Taurasi famous.",
+"wines": [
+{
+"name": "Radici Taurasi",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Aglianico."
+},
+{
+"name": "Fiano di Avellino",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Honeyed, nutty white."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-feudi-di-san-gregorio",
+"name": "Feudi di San Gregorio",
+"region": "Sorbo Serpico, Campania",
+"country": "Italy",
+"lat": 40.917,
+"lng": 14.889,
+"founded": "",
+"style": "white",
+"story": "A modern Irpinia winery known for Fiano, Greco and Aglianico.",
+"wines": [
+{
+"name": "Greco di Tufo",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Mineral, pear-scented white."
+},
+{
+"name": "Taurasi",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Aglianico."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-elena-fucci",
+"name": "Elena Fucci",
+"region": "Barile, Basilicata",
+"country": "Italy",
+"lat": 40.948,
+"lng": 15.67,
+"founded": "",
+"style": "red",
+"story": "A single-vineyard estate on the slopes of the extinct Monte Vulture volcano, making Aglianico del Vulture.",
+"wines": [
+{
+"name": "Titolo",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Aglianico del Vulture."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-cantine-san-marzano",
+"name": "Cantine San Marzano",
+"region": "San Marzano di San Giuseppe, Puglia",
+"country": "Italy",
+"lat": 40.455,
+"lng": 17.504,
+"founded": "1962",
+"style": "red",
+"story": "A growers' cooperative founded in 1962 in Salento, known for Primitivo di Manduria.",
+"wines": [
+{
+"name": "Sessantanni Primitivo di Manduria",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Primitivo from 60-year-old vines."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-arnaldo-caprai",
+"name": "Arnaldo Caprai",
+"region": "Montefalco, Umbria",
+"country": "Italy",
+"lat": 42.892,
+"lng": 12.646,
+"founded": "",
+"style": "red",
+"story": "The estate that led the revival of Umbria's tannic Sagrantino grape.",
+"wines": [
+{
+"name": "Sagrantino di Montefalco 25 Anni",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Powerful, tannic Sagrantino."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-planeta",
+"name": "Planeta",
+"region": "Menfi, Sicily",
+"country": "Italy",
+"lat": 37.607,
+"lng": 12.969,
+"founded": "",
+"style": "white",
+"story": "A Sicilian family with estates across the island; its barrel-fermented Chardonnay put modern Sicilian wine on the map in the 1990s.",
+"wines": [
+{
+"name": "Chardonnay",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Rich, oak-aged Chardonnay."
+},
+{
+"name": "Cerasuolo di Vittoria",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Nero d'Avola and Frappato."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-donnafugata",
+"name": "Donnafugata",
+"region": "Marsala, Sicily",
+"country": "Italy",
+"lat": 37.799,
+"lng": 12.437,
+"founded": "",
+"style": "white",
+"story": "A Sicilian family winery with cellars in Marsala and vineyards on Pantelleria for its sweet Ben Ryé.",
+"wines": [
+{
+"name": "Ben Ryé",
+"type": "Sweet",
+"price": "",
+"cur": "EUR",
+"notes": "Passito di Pantelleria from dried Zibibbo."
+},
+{
+"name": "Mille e una Notte",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Nero d'Avola blend."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-benanti",
+"name": "Benanti",
+"region": "Viagrande, Etna",
+"country": "Italy",
+"lat": 37.611,
+"lng": 15.1,
+"founded": "",
+"style": "white",
+"story": "A family estate that helped lead the revival of Mount Etna's volcanic wines from the late 1980s.",
+"wines": [
+{
+"name": "Pietramarina Etna Bianco Superiore",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Carricante: saline and long-lived."
+},
+{
+"name": "Etna Rosso",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Nerello Mascalese."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-tasca-d-almerita-regaleali",
+"name": "Tasca d'Almerita – Regaleali",
+"region": "Sclafani Bagni, Sicily",
+"country": "Italy",
+"lat": 37.77,
+"lng": 13.85,
+"founded": "",
+"style": "red",
+"story": "The Tasca family's historic inland estate in central Sicily, famous for Rosso del Conte.",
+"wines": [
+{
+"name": "Rosso del Conte",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Nero d'Avola-based red."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-cos",
+"name": "COS",
+"region": "Vittoria, Sicily",
+"country": "Italy",
+"lat": 36.953,
+"lng": 14.528,
+"founded": "",
+"style": "red",
+"story": "Founded by three friends in 1980, known for amphora-aged Cerasuolo di Vittoria and natural farming.",
+"wines": [
+{
+"name": "Cerasuolo di Vittoria Classico",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Nero d'Avola and Frappato."
+},
+{
+"name": "Pithos Bianco",
+"type": "Amber",
+"price": "",
+"cur": "EUR",
+"notes": "Grecanico aged in amphora."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-marco-de-bartoli",
+"name": "Marco De Bartoli",
+"region": "Marsala, Sicily",
+"country": "Italy",
+"lat": 37.77,
+"lng": 12.5,
+"founded": "",
+"style": "sweet",
+"story": "Marco De Bartoli revived old-style, unfortified Marsala with Vecchio Samperi, aged in a solera.",
+"wines": [
+{
+"name": "Vecchio Samperi",
+"type": "Fortified",
+"price": "",
+"cur": "EUR",
+"notes": "Solera-aged Grillo."
+},
+{
+"name": "Bukkuram",
+"type": "Sweet",
+"price": "",
+"cur": "EUR",
+"notes": "Passito di Pantelleria."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-argiolas",
+"name": "Argiolas",
+"region": "Serdiana, Sardinia",
+"country": "Italy",
+"lat": 39.37,
+"lng": 9.16,
+"founded": "",
+"style": "red",
+"story": "A Sardinian family winery known for native grapes such as Cannonau, Carignano and Vermentino.",
+"wines": [
+{
+"name": "Turriga",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Cannonau-led flagship red."
+},
+{
+"name": "Costamolino Vermentino",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Fresh Vermentino."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-cantina-santadi",
+"name": "Cantina Santadi",
+"region": "Santadi, Sardinia",
+"country": "Italy",
+"lat": 39.092,
+"lng": 8.713,
+"founded": "",
+"style": "red",
+"story": "A cooperative in south-west Sardinia, famous for old-vine Carignano del Sulcis.",
+"wines": [
+{
+"name": "Terre Brune",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Carignano del Sulcis Superiore."
 }
 ],
 "events": [],

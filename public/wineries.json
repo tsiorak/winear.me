@@ -4875,5 +4875,230 @@
 "desc": "Guided walk between three village cellars."
 }
 ]
+},
+{
+"id": "gr-dourakis",
+"name": "Dourakis Winery",
+"region": "Alikampos, Chania (Crete)",
+"country": "Greece",
+"lat": 35.318,
+"lng": 24.205,
+"founded": "1988",
+"style": "white",
+"story": "Oenologist Andreas Dourakis founded the winery in 1988 on the hills of Alikampos, about 40 km from Chania, farming organically. Lihnos Vidiano honours his grandfather, who checked his barrels in the dark cellar by the light of a traditional Cretan oil lamp.",
+"wines": [
+{
+"name": "Lihnos Vidiano",
+"type": "White",
+"price": 13.45,
+"cur": "EUR",
+"notes": "Organic Vidiano, part oak-aged: peach, apricot, honey and acacia, full and velvety.",
+"prices": [
+{
+"price": 13.45,
+"cur": "EUR",
+"shop": "Greece & Grapes",
+"url": "https://www.greeceandgrapes.com/en/white-lihnos-vidiano-2023-dourakis-winery",
+"note": "2023 vintage"
+},
+{
+"price": 13.6,
+"cur": "EUR",
+"shop": "House of Wine",
+"url": "https://www.houseofwine.gr/en/product/luchnos-bidiano",
+"note": "2023 vintage"
+}
+],
+"checked": "25 Nov 2026"
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "gr-diamantakis",
+"name": "Diamantakis Winery",
+"region": "Asites, Heraklion (Crete)",
+"country": "Greece",
+"lat": 35.226,
+"lng": 24.997,
+"founded": "",
+"style": "white",
+"story": "A family winery in Asites, in the hills west of Heraklion, devoted to native Cretan grapes such as Vidiano and Mandilari. Its Vidiano, first made in 2011, has won major international medals.",
+"wines": [
+{
+"name": "Vidiano",
+"type": "White",
+"price": 9.3,
+"cur": "EUR",
+"notes": "Peach, saffron, lemon leaves and pepper; creamy with good acidity.",
+"prices": [
+{
+"price": 9.3,
+"cur": "EUR",
+"shop": "Greece & Grapes",
+"url": "https://www.greeceandgrapes.com/en/white-vidiano-2024-winery-diamantakis",
+"note": "2024 vintage"
+},
+{
+"price": 11.5,
+"cur": "EUR",
+"shop": "Greece & Grapes",
+"url": "https://www.greeceandgrapes.com/en/white-vidiano-2025-winery-diamantakis",
+"note": "2025 vintage"
+}
+],
+"checked": "25 Nov 2026"
+},
+{
+"name": "Petali Red",
+"type": "Red",
+"price": 12.4,
+"cur": "EUR",
+"notes": "Liatiko: soft red colour, ripe fruit and firm tannins.",
+"prices": [
+{
+"price": 12.4,
+"cur": "EUR",
+"shop": "Greece & Grapes",
+"url": "https://www.greeceandgrapes.com/en/red-petali-liatiko-2021-diamantakis-winery",
+"note": "2021 vintage"
+}
+],
+"checked": "25 Nov 2026"
+},
+{
+"name": "Diamantopetra Red",
+"type": "Red",
+"price": 13.2,
+"cur": "EUR",
+"notes": "Syrah and Mandilari, 12 months in oak: cherry, plum, violet and spice.",
+"prices": [
+{
+"price": 13.2,
+"cur": "EUR",
+"shop": "Botilia",
+"url": "https://www.botilia.gr/en/p/red-wine/Diamantopetra-Red-Diamantakis",
+"note": "2020 vintage, was €15.30"
+}
+],
+"checked": "25 Nov 2026"
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "gr-silva-daskalaki",
+"name": "Silva Daskalaki Winery",
+"region": "Siva, Heraklion (Crete)",
+"country": "Greece",
+"lat": 35.195,
+"lng": 25.035,
+"founded": "1920",
+"style": "white",
+"story": "The Daskalakis family has grown vines in the village of Siva, inside the Dafnes appellation, since 1920. In 1998 Irini Daskalaki began reviving the family vineyards, now farmed organically at 400-600 m; the name Silva comes from the village.",
+"wines": [
+{
+"name": "Vorinos White",
+"type": "White",
+"price": 11.8,
+"cur": "EUR",
+"notes": "Fresh, organic Vidiano bursting with ripe nectarine.",
+"prices": [
+{
+"price": 11.8,
+"cur": "EUR",
+"shop": "Botilia",
+"url": "https://www.botilia.gr/en/p/white-wine/Vorinos-White-Silva-Daskalaki",
+"note": "2025 vintage"
+}
+],
+"checked": "25 Nov 2026"
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "gr-toplou",
+"name": "Toplou Estate",
+"region": "Toplou Monastery, Sitia (Crete)",
+"country": "Greece",
+"lat": 35.221,
+"lng": 26.216,
+"founded": "",
+"style": "white",
+"story": "The vineyards of the historic Toplou Monastery at the far eastern tip of Crete, farmed organically. The estate revived the ancient Thrapsathiri grape and also grows Vilana, Liatiko, Kotsifali, Assyrtiko and Syrah in windswept, dry conditions.",
+"wines": [
+{
+"name": "Gerto Thrapsathiri",
+"type": "White",
+"price": 13.1,
+"cur": "EUR",
+"notes": "Organic Thrapsathiri: lemon blossom, grapefruit, pineapple and mango.",
+"prices": [
+{
+"price": 13.1,
+"cur": "EUR",
+"shop": "Botilia",
+"url": "https://www.botilia.gr/en/p/white-wine/Gerto-Toplou",
+"note": "2025 vintage, sold out"
+}
+],
+"checked": "25 Nov 2026"
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "gr-theros",
+"name": "Th{eros} Wines Collectiva",
+"region": "Heraklion (Crete)",
+"country": "Greece",
+"lat": 35.24,
+"lng": 25.13,
+"founded": "2020",
+"style": "white",
+"story": "A wine collective started in 2020 by Konstantinos Manouras to showcase native Cretan grapes and the vineyards that grow them, such as Plyto, Thrapsathiri, Vidiano and Mandilari.",
+"wines": [
+{
+"name": "Thrapsathiri",
+"type": "White",
+"price": 20.5,
+"cur": "EUR",
+"notes": "Native Cretan white from a single variety.",
+"prices": [
+{
+"price": 20.5,
+"cur": "EUR",
+"shop": "Greece & Grapes",
+"url": "https://www.greeceandgrapes.com/en/white-thrapsathiri-2023-theros-wines-collectiva",
+"note": "2023 vintage, was €22.32"
+}
+],
+"checked": "25 Nov 2026"
+},
+{
+"name": "Φ-Low Mandilari Nouveau",
+"type": "Red",
+"price": 15.2,
+"cur": "EUR",
+"notes": "Light, early-release Mandilari.",
+"prices": [
+{
+"price": 15.2,
+"cur": "EUR",
+"shop": "Greece & Grapes",
+"url": "https://www.greeceandgrapes.com/en/red-φ-low-flow-mandilari-nouveau-2024-theros-wines-collectiva",
+"note": "2024 vintage, was €15.87"
+}
+],
+"checked": "25 Nov 2026"
+}
+],
+"events": [],
+"real": true
 }
 ]

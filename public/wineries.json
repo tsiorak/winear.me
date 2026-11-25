@@ -6295,5 +6295,188 @@
 ],
 "events": [],
 "real": true
+},
+{
+"id": "gr-athanasiou",
+"name": "Athanasiou Winery",
+"region": "Nemea",
+"country": "Greece",
+"lat": 37.8,
+"lng": 22.63,
+"founded": "",
+"style": "red",
+"story": "A rising Nemea winery led by Michalis Athanasiou, farming organically and picking by hand. Its Thronos Agiorgitiko is known for value; whites come from mountain vineyards in Mantinia, and Fleur d'Amour was the first traditional-method sparkling rosé Agiorgitiko from Nemea.",
+"wines": [
+{
+"name": "Thronos Nemea",
+"type": "Red",
+"price": 11.9,
+"cur": "EUR",
+"notes": "Fruity, charming organic Agiorgitiko.",
+"prices": [
+{
+"price": 11.9,
+"cur": "EUR",
+"shop": "Greece & Grapes",
+"url": "https://www.greeceandgrapes.com/en/red-thronos-2024-nemea-athanasiou-winery",
+"note": "2024 vintage"
+}
+],
+"checked": "25 Nov 2026"
+},
+{
+"name": "Gi Fotos",
+"type": "Red",
+"price": 22.3,
+"cur": "EUR",
+"notes": "Agiorgitiko from 40-year-old vines, 12 months in French oak.",
+"prices": [
+{
+"price": 22.3,
+"cur": "EUR",
+"shop": "Greece & Grapes",
+"url": "https://www.greeceandgrapes.com/en/red-gi-fotos-2021-athanasiou-winery",
+"note": "2021 vintage"
+}
+],
+"checked": "25 Nov 2026"
+},
+{
+"name": "Principessa Rosa",
+"type": "Rosé",
+"price": 11.5,
+"cur": "EUR",
+"notes": "Lively dry Agiorgitiko rosé from vines at 650 m.",
+"prices": [
+{
+"price": 11.5,
+"cur": "EUR",
+"shop": "Greece & Grapes",
+"url": "https://www.greeceandgrapes.com/en/rose-principessa-rosa-2025-athanasiou-winery",
+"note": "2025 vintage"
+}
+],
+"checked": "25 Nov 2026"
+},
+{
+"name": "Assyrtiko",
+"type": "White",
+"price": 14.4,
+"cur": "EUR",
+"notes": "Intense fruit, sharp acidity and stony minerality.",
+"prices": [
+{
+"price": 14.4,
+"cur": "EUR",
+"shop": "Greece & Grapes",
+"url": "https://www.greeceandgrapes.com/en/white-assyrtiko-2024-athanasiou-winery",
+"note": "2024 vintage"
+}
+],
+"checked": "25 Nov 2026"
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "gr-petrakopoulos",
+"name": "Petrakopoulos Winery",
+"region": "Thiramonas, Kefalonia",
+"country": "Greece",
+"lat": 38.11,
+"lng": 20.62,
+"founded": "",
+"style": "white",
+"story": "In the village of Thiramonas in southern Kefalonia, Nikos Petrakopoulos continues a centuries-old family tradition with winemaker Kiki Siameli. They farm organically with minimal intervention, working Robola, Mavrodaphne, Vostilidi, Muscat and Zakynthino.",
+"wines": [
+{
+"name": "Robola Orina Armakia",
+"type": "White",
+"price": 29.7,
+"cur": "EUR",
+"notes": "Mountain Robola from stone terraces.",
+"prices": [
+{
+"price": 29.7,
+"cur": "EUR",
+"shop": "Greece & Grapes",
+"url": "https://www.greeceandgrapes.com/en/white-robola-orina-armakia-2024-petrakopoulos-wines",
+"note": "2024 vintage, was €31.00"
+}
+],
+"checked": "25 Nov 2026"
+},
+{
+"name": "Robola Thymari Petras",
+"type": "White",
+"price": 45.5,
+"cur": "EUR",
+"notes": "Top single-site Robola.",
+"prices": [
+{
+"price": 45.5,
+"cur": "EUR",
+"shop": "Greece & Grapes",
+"url": "https://www.greeceandgrapes.com/en/white-wine-robola-kefalonia-thymari-petras-2024-petrakopoulos-wines",
+"note": "2024 vintage"
+}
+],
+"checked": "25 Nov 2026"
+},
+{
+"name": "Gold",
+"type": "White",
+"price": 25.0,
+"cur": "EUR",
+"notes": "Flowers, ripe peach and apricot.",
+"prices": [
+{
+"price": 25.0,
+"cur": "EUR",
+"shop": "Greece & Grapes",
+"url": "https://www.greeceandgrapes.com/en/white-gold-2023-petrakopoulos-wines",
+"note": "2023 vintage, was €28.02"
+}
+],
+"checked": "25 Nov 2026"
+},
+{
+"name": "Roz",
+"type": "Rosé",
+"price": 23.0,
+"cur": "EUR",
+"notes": "Dry-farmed Mavrodaphne rosé: roses and cherries.",
+"prices": [
+{
+"price": 23.0,
+"cur": "EUR",
+"shop": "Greece & Grapes",
+"url": "https://www.greeceandgrapes.com/en/rose-roz-2025-petrakopoulos-wines",
+"note": "2025 vintage"
+}
+],
+"checked": "25 Nov 2026"
+},
+{
+"name": "Mavro",
+"type": "Red",
+"price": 35.8,
+"cur": "EUR",
+"notes": "Mavrodaphne: black cherry, spice and tea.",
+"prices": [
+{
+"price": 35.8,
+"cur": "EUR",
+"shop": "Greece & Grapes",
+"url": "https://www.greeceandgrapes.com/en/red-mavro-2023-petrakopoulos-wines",
+"note": "2023 vintage"
+}
+],
+"checked": "25 Nov 2026"
+}
+],
+"events": [],
+"real": true
 }
 ]

@@ -3946,194 +3946,6 @@
 "real": true
 },
 {
-"id": "s-margaux",
-"name": "Château Lune Douce",
-"region": "Bordeaux – Margaux",
-"country": "France",
-"lat": 45.04,
-"lng": -0.674,
-"founded": 1855,
-"style": "red",
-"hours": "By appointment",
-"story": "A classic Left Bank château whose gravel soils give perfumed Cabernet Sauvignon. The cellar still uses its original oak vats.",
-"wines": [
-{
-"name": "Grand Vin",
-"type": "Red",
-"price": 120,
-"cur": "EUR",
-"notes": "Cassis, cedar and violet with fine-grained tannins."
-},
-{
-"name": "Second Lune",
-"type": "Red",
-"price": 45,
-"cur": "EUR",
-"notes": "Younger vines, more open fruit, drink in 5 years."
-},
-{
-"name": "Bordeaux Blanc",
-"type": "White",
-"price": 30,
-"cur": "EUR",
-"notes": "Sauvignon–Sémillon, citrus and beeswax."
-}
-],
-"events": [
-{
-"id": "e1",
-"title": "En primeur preview",
-"start": "2027-04-03T10:00",
-"end": "2027-04-03T16:00",
-"price": 50,
-"desc": "Taste the 2026 vintage from barrel."
-}
-]
-},
-{
-"id": "s-stemilion",
-"name": "Clos des Pierres",
-"region": "Bordeaux – Saint-Émilion",
-"country": "France",
-"lat": 44.894,
-"lng": -0.155,
-"founded": 1932,
-"style": "red",
-"hours": "Daily 10:00–18:00",
-"story": "Limestone caves beneath the vineyard keep the wine cool all year. Merlot-led wines with a touch of Cabernet Franc.",
-"wines": [
-{
-"name": "Clos des Pierres",
-"type": "Red",
-"price": 58,
-"cur": "EUR",
-"notes": "Plush plum, truffle and mocha."
-},
-{
-"name": "Les Caves",
-"type": "Red",
-"price": 28,
-"cur": "EUR",
-"notes": "Fresh, juicy, ready now."
-},
-{
-"name": "Crémant de Bordeaux",
-"type": "Sparkling",
-"price": 19,
-"cur": "EUR",
-"notes": "Fine bubbles, green apple and brioche."
-}
-],
-"events": [
-{
-"id": "e1",
-"title": "Candlelit cave tour",
-"start": "2026-12-20T18:00",
-"end": "2026-12-20T20:00",
-"price": 30,
-"desc": "Walk the limestone caves by candlelight, three tastings."
-}
-]
-},
-{
-"id": "s-burgundy",
-"name": "Domaine Côte d'Ambre",
-"region": "Burgundy – Côte de Nuits",
-"country": "France",
-"lat": 47.16,
-"lng": 4.956,
-"founded": 1790,
-"style": "red",
-"hours": "Mon–Fri 09:00–12:00, 14:00–17:00",
-"story": "Eight generations tending tiny parcels of Pinot Noir. Every climat is vinified separately to show its soil.",
-"wines": [
-{
-"name": "Gevrey-Chambertin",
-"type": "Red",
-"price": 75,
-"cur": "EUR",
-"notes": "Dark cherry, earth and spice."
-},
-{
-"name": "Bourgogne Rouge",
-"type": "Red",
-"price": 29,
-"cur": "EUR",
-"notes": "Bright raspberry, easy and pure."
-},
-{
-"name": "Aligoté",
-"type": "White",
-"price": 20,
-"cur": "EUR",
-"notes": "Zesty, perfect for kir."
-}
-],
-"events": [
-{
-"id": "e1",
-"title": "Saint-Vincent Tournante",
-"start": "2027-01-23T10:00",
-"end": "2027-01-24T18:00",
-"price": 25,
-"desc": "Join Burgundy's winter wine festival from our courtyard."
-}
-]
-},
-{
-"id": "s-champagne",
-"name": "Maison Perlée",
-"region": "Champagne – Épernay",
-"country": "France",
-"lat": 49.041,
-"lng": 3.958,
-"founded": 1888,
-"style": "champagne",
-"hours": "Daily 10:00–17:30",
-"story": "Four kilometres of chalk cellars beneath the Avenue de Champagne hold millions of bottles ageing on their lees.",
-"wines": [
-{
-"name": "Brut Réserve",
-"type": "Champagne",
-"price": 42,
-"cur": "EUR",
-"notes": "Toasted brioche, pear and fine mousse."
-},
-{
-"name": "Blanc de Blancs 2016",
-"type": "Champagne",
-"price": 89,
-"cur": "EUR",
-"notes": "Pure Chardonnay, lemon curd and chalk."
-},
-{
-"name": "Rosé Saignée",
-"type": "Champagne",
-"price": 65,
-"cur": "EUR",
-"notes": "Wild strawberry, deep colour, gastronomic."
-}
-],
-"events": [
-{
-"id": "e1",
-"title": "New Year's Eve cellar party",
-"start": "2026-12-31T21:00",
-"end": "2027-01-01T01:00",
-"price": 150,
-"desc": "Midnight toast 30 metres underground."
-},
-{
-"id": "e2",
-"title": "Disgorging workshop",
-"start": "2026-11-28T14:00",
-"end": "2026-11-28T16:00",
-"price": 60,
-"desc": "Open your own bottle 'à la volée' and take it home."
-}
-]
-},
-{
 "id": "s-rioja",
 "name": "Bodegas Río Oja",
 "region": "Rioja Alta",
@@ -6586,6 +6398,1518 @@
 }
 ],
 "checked": "25 Nov 2026"
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-chateau-margaux",
+"name": "Château Margaux",
+"region": "Margaux, Bordeaux",
+"country": "France",
+"lat": 45.0445,
+"lng": -0.6685,
+"founded": "",
+"style": "red",
+"story": "One of Bordeaux's four original First Growths of the 1855 classification. The neoclassical château, built in 1810–1816, stands among vineyards on the gravel of the Médoc's Margaux appellation.",
+"wines": [
+{
+"name": "Château Margaux",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Cabernet Sauvignon-led Grand Vin: perfumed, silky and long-lived."
+},
+{
+"name": "Pavillon Blanc",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Rare Sauvignon Blanc from the estate's own white vineyard."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-chateau-lafite-rothschild",
+"name": "Château Lafite Rothschild",
+"region": "Pauillac, Bordeaux",
+"country": "France",
+"lat": 45.2265,
+"lng": -0.7695,
+"founded": "",
+"style": "red",
+"story": "A Pauillac First Growth, ranked first in the 1855 classification and owned by the Rothschild family since 1868. Famous for elegant, long-ageing Cabernet Sauvignon.",
+"wines": [
+{
+"name": "Château Lafite Rothschild",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Cabernet Sauvignon with Merlot: cedar, graphite and finesse."
+},
+{
+"name": "Carruades de Lafite",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "The estate's second wine."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-chateau-latour",
+"name": "Château Latour",
+"region": "Pauillac, Bordeaux",
+"country": "France",
+"lat": 45.1795,
+"lng": -0.7455,
+"founded": "",
+"style": "red",
+"story": "A First Growth named after the old tower that still stands among its vines beside the Gironde estuary. Known for powerful, deeply structured Pauillac.",
+"wines": [
+{
+"name": "Château Latour",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Massive, long-lived Cabernet Sauvignon."
+},
+{
+"name": "Les Forts de Latour",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "The second wine, from dedicated parcels."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-chateau-mouton-rothschild",
+"name": "Château Mouton Rothschild",
+"region": "Pauillac, Bordeaux",
+"country": "France",
+"lat": 45.213,
+"lng": -0.77,
+"founded": "",
+"style": "red",
+"story": "Bought by Nathaniel de Rothschild in 1853 and promoted to First Growth in 1973, the only change ever made to the 1855 ranking. Since 1945 every vintage carries a label by a famous artist.",
+"wines": [
+{
+"name": "Château Mouton Rothschild",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Opulent, cassis-rich Cabernet Sauvignon."
+},
+{
+"name": "Aile d'Argent",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Sauvignon Blanc and Sémillon from the Médoc."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-chateau-haut-brion",
+"name": "Château Haut-Brion",
+"region": "Pessac, Bordeaux",
+"country": "France",
+"lat": 44.8135,
+"lng": -0.6105,
+"founded": "",
+"style": "red",
+"story": "The only First Growth outside the Médoc, now inside the city of Bordeaux. Samuel Pepys wrote of drinking 'Ho Bryan' in London in 1663.",
+"wines": [
+{
+"name": "Château Haut-Brion",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Smoky, earthy Graves red of great finesse."
+},
+{
+"name": "Château Haut-Brion Blanc",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Rare Sémillon–Sauvignon white."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-chateau-cheval-blanc",
+"name": "Château Cheval Blanc",
+"region": "Saint-Émilion, Bordeaux",
+"country": "France",
+"lat": 44.9195,
+"lng": -0.1905,
+"founded": "",
+"style": "red",
+"story": "A Right Bank legend on the border with Pomerol, where gravel and clay soils give an unusually high share of Cabernet Franc.",
+"wines": [
+{
+"name": "Château Cheval Blanc",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Cabernet Franc and Merlot: floral, spicy and velvety."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-chateau-ausone",
+"name": "Château Ausone",
+"region": "Saint-Émilion, Bordeaux",
+"country": "France",
+"lat": 44.8905,
+"lng": -0.159,
+"founded": "",
+"style": "red",
+"story": "A tiny estate on the limestone slopes beside Saint-Émilion, named after the Roman poet Ausonius, who is said to have owned vines here.",
+"wines": [
+{
+"name": "Château Ausone",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Cabernet Franc and Merlot from limestone: mineral and long-lived."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-petrus",
+"name": "Pétrus",
+"region": "Pomerol, Bordeaux",
+"country": "France",
+"lat": 44.9315,
+"lng": -0.201,
+"founded": "",
+"style": "red",
+"story": "A small Pomerol estate on a rise of rare blue clay, making almost pure Merlot that is among the world's most sought-after wines.",
+"wines": [
+{
+"name": "Pétrus",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Merlot from blue clay: dense, plush and very long."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-chateau-d-yquem",
+"name": "Château d'Yquem",
+"region": "Sauternes, Bordeaux",
+"country": "France",
+"lat": 44.5465,
+"lng": -0.333,
+"founded": "",
+"style": "sweet",
+"story": "The only estate ranked Premier Cru Supérieur in 1855. Botrytised Sémillon and Sauvignon Blanc are picked grape by grape over several passes through the vines.",
+"wines": [
+{
+"name": "Château d'Yquem",
+"type": "Sweet",
+"price": "",
+"cur": "EUR",
+"notes": "Golden, honeyed Sauternes that can age for a century."
+},
+{
+"name": "Y d'Yquem",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "A dry white from the same vineyards."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-chateau-palmer",
+"name": "Château Palmer",
+"region": "Margaux, Bordeaux",
+"country": "France",
+"lat": 45.0455,
+"lng": -0.66,
+"founded": "",
+"style": "red",
+"story": "A Third Growth in Margaux named after British general Charles Palmer, who bought it in 1814. Today farmed biodynamically, with a high share of Merlot.",
+"wines": [
+{
+"name": "Château Palmer",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Perfumed, silky Margaux."
+},
+{
+"name": "Alter Ego",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "The estate's fruitier second wine."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-chateau-leoville-las-cases",
+"name": "Château Léoville Las Cases",
+"region": "Saint-Julien, Bordeaux",
+"country": "France",
+"lat": 45.172,
+"lng": -0.7425,
+"founded": "",
+"style": "red",
+"story": "A Second Growth whose walled Grand Enclos vineyard borders Château Latour. Known for intense, classic Saint-Julien.",
+"wines": [
+{
+"name": "Château Léoville Las Cases",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Concentrated, structured Cabernet blend."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-chateau-cos-d-estournel",
+"name": "Château Cos d'Estournel",
+"region": "Saint-Estèphe, Bordeaux",
+"country": "France",
+"lat": 45.236,
+"lng": -0.773,
+"founded": "",
+"style": "red",
+"story": "A Second Growth whose oriental-style pagoda towers were built by Louis-Gaspard d'Estournel, who sold his wine as far as India in the early 19th century.",
+"wines": [
+{
+"name": "Château Cos d'Estournel",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Exotic, spicy and powerful Saint-Estèphe."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-chateau-pichon-baron",
+"name": "Château Pichon Baron",
+"region": "Pauillac, Bordeaux",
+"country": "France",
+"lat": 45.184,
+"lng": -0.7505,
+"founded": "",
+"style": "red",
+"story": "A turreted Second Growth facing Château Latour across the road, making dense, dark Pauillac.",
+"wines": [
+{
+"name": "Château Pichon Baron",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Dark-fruited, firm Cabernet Sauvignon."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-chateau-smith-haut-lafitte",
+"name": "Château Smith Haut Lafitte",
+"region": "Martillac, Pessac-Léognan",
+"country": "France",
+"lat": 44.7335,
+"lng": -0.5555,
+"founded": "",
+"style": "red",
+"story": "A Pessac-Léognan Grand Cru Classé with its own cooperage, known for both red and white wines.",
+"wines": [
+{
+"name": "Château Smith Haut Lafitte Rouge",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Cabernet-led Graves red."
+},
+{
+"name": "Château Smith Haut Lafitte Blanc",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Sauvignon Blanc-led, barrel-fermented white."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-de-la-romanee-conti",
+"name": "Domaine de la Romanée-Conti",
+"region": "Vosne-Romanée, Burgundy",
+"country": "France",
+"lat": 47.1607,
+"lng": 4.9541,
+"founded": "",
+"style": "red",
+"story": "Burgundy's most famous estate, owner of the Romanée-Conti and La Tâche Grand Cru monopoles in Vosne-Romanée.",
+"wines": [
+{
+"name": "Romanée-Conti Grand Cru",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Tiny-production Pinot Noir of legendary finesse."
+},
+{
+"name": "La Tâche Grand Cru",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Spicy, profound Pinot Noir."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-leflaive",
+"name": "Domaine Leflaive",
+"region": "Puligny-Montrachet, Burgundy",
+"country": "France",
+"lat": 46.9465,
+"lng": 4.749,
+"founded": "",
+"style": "white",
+"story": "A reference for white Burgundy in Puligny-Montrachet. Under Anne-Claude Leflaive it became an early champion of biodynamic farming in the 1990s.",
+"wines": [
+{
+"name": "Puligny-Montrachet",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Chardonnay: citrus, hazelnut and chalk."
+},
+{
+"name": "Chevalier-Montrachet Grand Cru",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Taut, mineral, long-lived Chardonnay."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-armand-rousseau",
+"name": "Domaine Armand Rousseau",
+"region": "Gevrey-Chambertin, Burgundy",
+"country": "France",
+"lat": 47.2265,
+"lng": 4.9665,
+"founded": "",
+"style": "red",
+"story": "A family estate in Gevrey-Chambertin built up by Armand Rousseau in the early 20th century, famous for Chambertin and Clos de Bèze.",
+"wines": [
+{
+"name": "Chambertin Grand Cru",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Powerful yet silky Pinot Noir."
+},
+{
+"name": "Gevrey-Chambertin",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Village Pinot Noir."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-maison-joseph-drouhin",
+"name": "Maison Joseph Drouhin",
+"region": "Beaune, Burgundy",
+"country": "France",
+"lat": 47.0245,
+"lng": 4.838,
+"founded": "1880",
+"style": "red",
+"story": "Founded in Beaune in 1880 and still family-run, with cellars dating back to the 13th century and organic vineyards from Chablis to the Côte de Beaune.",
+"wines": [
+{
+"name": "Clos des Mouches Beaune Premier Cru",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Elegant Pinot Noir."
+},
+{
+"name": "Chablis",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Crisp Chardonnay."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-maison-louis-jadot",
+"name": "Maison Louis Jadot",
+"region": "Beaune, Burgundy",
+"country": "France",
+"lat": 47.03,
+"lng": 4.845,
+"founded": "1859",
+"style": "red",
+"story": "A Beaune négociant founded in 1859, with vineyards across the Côte d'Or and Beaujolais.",
+"wines": [
+{
+"name": "Beaune Premier Cru Clos des Ursules",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Pinot Noir from a Jadot monopole."
+},
+{
+"name": "Meursault",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Rich, nutty Chardonnay."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-bouchard-pere-fils",
+"name": "Bouchard Père & Fils",
+"region": "Beaune, Burgundy",
+"country": "France",
+"lat": 47.022,
+"lng": 4.836,
+"founded": "1731",
+"style": "red",
+"story": "Founded in 1731, with cellars in the 15th-century Château de Beaune and one of the largest holdings of Premier and Grand Cru vineyards in the Côte d'Or.",
+"wines": [
+{
+"name": "Beaune Grèves Vigne de l'Enfant Jésus",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Famous Premier Cru Pinot Noir."
+},
+{
+"name": "Meursault Genevrières",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Premier Cru Chardonnay."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-comte-georges-de-vogue",
+"name": "Domaine Comte Georges de Vogüé",
+"region": "Chambolle-Musigny, Burgundy",
+"country": "France",
+"lat": 47.1855,
+"lng": 4.9545,
+"founded": "",
+"style": "red",
+"story": "An ancient Chambolle-Musigny estate and the largest owner of the Musigny Grand Cru.",
+"wines": [
+{
+"name": "Musigny Grand Cru Vieilles Vignes",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Ethereal, fragrant Pinot Noir."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-william-fevre",
+"name": "Domaine William Fèvre",
+"region": "Chablis, Burgundy",
+"country": "France",
+"lat": 47.8145,
+"lng": 3.799,
+"founded": "",
+"style": "white",
+"story": "A leading Chablis estate with a large share of the Grand Cru slope, making pure, mineral Chardonnay.",
+"wines": [
+{
+"name": "Chablis Grand Cru Les Clos",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Steely, saline Chardonnay."
+},
+{
+"name": "Chablis",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Fresh, chalky Chardonnay."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-maison-louis-latour",
+"name": "Maison Louis Latour",
+"region": "Aloxe-Corton, Burgundy",
+"country": "France",
+"lat": 47.064,
+"lng": 4.862,
+"founded": "1797",
+"style": "white",
+"story": "A family house since 1797, with a winery at Château Corton Grancey and large holdings on the hill of Corton.",
+"wines": [
+{
+"name": "Corton-Charlemagne Grand Cru",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Powerful Chardonnay."
+},
+{
+"name": "Château Corton Grancey",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Grand Cru Pinot Noir."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-moet-chandon",
+"name": "Moët & Chandon",
+"region": "Épernay, Champagne",
+"country": "France",
+"lat": 49.042,
+"lng": 3.959,
+"founded": "1743",
+"style": "sparkling",
+"story": "Founded by Claude Moët in 1743 on Épernay's Avenue de Champagne, with miles of chalk cellars beneath. Its prestige cuvée is Dom Pérignon.",
+"wines": [
+{
+"name": "Moët Impérial Brut",
+"type": "Sparkling",
+"price": "",
+"cur": "EUR",
+"notes": "Fruity, fresh Champagne blend."
+},
+{
+"name": "Dom Pérignon",
+"type": "Sparkling",
+"price": "",
+"cur": "EUR",
+"notes": "Vintage-only prestige Champagne."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-veuve-clicquot",
+"name": "Veuve Clicquot",
+"region": "Reims, Champagne",
+"country": "France",
+"lat": 49.245,
+"lng": 4.047,
+"founded": "1772",
+"style": "sparkling",
+"story": "Founded in 1772 and run from 1805 by the widow Barbe-Nicole Clicquot, who invented the riddling table in 1816 to clear Champagne of sediment.",
+"wines": [
+{
+"name": "Yellow Label Brut",
+"type": "Sparkling",
+"price": "",
+"cur": "EUR",
+"notes": "Pinot Noir-led, toasty Champagne."
+},
+{
+"name": "La Grande Dame",
+"type": "Sparkling",
+"price": "",
+"cur": "EUR",
+"notes": "Prestige vintage cuvée."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-krug",
+"name": "Krug",
+"region": "Reims, Champagne",
+"country": "France",
+"lat": 49.253,
+"lng": 4.028,
+"founded": "1843",
+"style": "sparkling",
+"story": "Founded by Joseph Krug in 1843, famous for its multi-vintage Grande Cuvée blended from well over a hundred wines.",
+"wines": [
+{
+"name": "Krug Grande Cuvée",
+"type": "Sparkling",
+"price": "",
+"cur": "EUR",
+"notes": "Rich, complex, barrel-fermented blend."
+},
+{
+"name": "Clos du Mesnil",
+"type": "Sparkling",
+"price": "",
+"cur": "EUR",
+"notes": "Single-walled-vineyard blanc de blancs."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-bollinger",
+"name": "Bollinger",
+"region": "Aÿ, Champagne",
+"country": "France",
+"lat": 49.0545,
+"lng": 4.004,
+"founded": "1829",
+"style": "sparkling",
+"story": "A family-owned house in Aÿ since 1829, known for Pinot Noir-rich Champagnes fermented in oak.",
+"wines": [
+{
+"name": "Special Cuvée",
+"type": "Sparkling",
+"price": "",
+"cur": "EUR",
+"notes": "Full, toasty Pinot Noir-led blend."
+},
+{
+"name": "La Grande Année",
+"type": "Sparkling",
+"price": "",
+"cur": "EUR",
+"notes": "Vintage Champagne."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-louis-roederer",
+"name": "Louis Roederer",
+"region": "Reims, Champagne",
+"country": "France",
+"lat": 49.262,
+"lng": 4.04,
+"founded": "1776",
+"style": "sparkling",
+"story": "An independent family house whose Cristal was first created in 1876 for Tsar Alexander II of Russia.",
+"wines": [
+{
+"name": "Collection",
+"type": "Sparkling",
+"price": "",
+"cur": "EUR",
+"notes": "Multi-vintage Brut."
+},
+{
+"name": "Cristal",
+"type": "Sparkling",
+"price": "",
+"cur": "EUR",
+"notes": "Prestige vintage Champagne in a clear bottle."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-pol-roger",
+"name": "Pol Roger",
+"region": "Épernay, Champagne",
+"country": "France",
+"lat": 49.0395,
+"lng": 3.95,
+"founded": "1849",
+"style": "sparkling",
+"story": "A family house founded in 1849, beloved by Winston Churchill, after whom its prestige cuvée is named.",
+"wines": [
+{
+"name": "Brut Réserve",
+"type": "Sparkling",
+"price": "",
+"cur": "EUR",
+"notes": "Elegant house blend."
+},
+{
+"name": "Cuvée Sir Winston Churchill",
+"type": "Sparkling",
+"price": "",
+"cur": "EUR",
+"notes": "Pinot Noir-led prestige cuvée."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-ruinart",
+"name": "Ruinart",
+"region": "Reims, Champagne",
+"country": "France",
+"lat": 49.243,
+"lng": 4.045,
+"founded": "1729",
+"style": "sparkling",
+"story": "Founded in 1729, the oldest established Champagne house, with cellars in Gallo-Roman chalk pits under Reims.",
+"wines": [
+{
+"name": "Blanc de Blancs",
+"type": "Sparkling",
+"price": "",
+"cur": "EUR",
+"notes": "Fresh, citrus Chardonnay Champagne."
+},
+{
+"name": "Dom Ruinart",
+"type": "Sparkling",
+"price": "",
+"cur": "EUR",
+"notes": "Vintage blanc de blancs."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-taittinger",
+"name": "Taittinger",
+"region": "Reims, Champagne",
+"country": "France",
+"lat": 49.247,
+"lng": 4.043,
+"founded": "",
+"style": "sparkling",
+"story": "A family house with cellars in the chalk crayères of the old Saint-Nicaise abbey in Reims, known for Chardonnay-led Champagne.",
+"wines": [
+{
+"name": "Brut Réserve",
+"type": "Sparkling",
+"price": "",
+"cur": "EUR",
+"notes": "Light, Chardonnay-rich blend."
+},
+{
+"name": "Comtes de Champagne",
+"type": "Sparkling",
+"price": "",
+"cur": "EUR",
+"notes": "Vintage blanc de blancs."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-champagne-salon",
+"name": "Champagne Salon",
+"region": "Le Mesnil-sur-Oger, Champagne",
+"country": "France",
+"lat": 48.948,
+"lng": 4.018,
+"founded": "",
+"style": "sparkling",
+"story": "A tiny house in Le Mesnil-sur-Oger making a single wine: a vintage blanc de blancs, released only in exceptional years.",
+"wines": [
+{
+"name": "Salon Le Mesnil",
+"type": "Sparkling",
+"price": "",
+"cur": "EUR",
+"notes": "Long-aged Chardonnay Champagne."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-chateau-de-beaucastel",
+"name": "Château de Beaucastel",
+"region": "Courthézon, Châteauneuf-du-Pape",
+"country": "France",
+"lat": 44.0885,
+"lng": 4.86,
+"founded": "",
+"style": "red",
+"story": "The Perrin family's Châteauneuf-du-Pape estate, farmed organically and famous for using all 13 permitted grape varieties.",
+"wines": [
+{
+"name": "Château de Beaucastel Rouge",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Mourvèdre-rich Châteauneuf: dark, spicy, long-lived."
+},
+{
+"name": "Roussanne Vieilles Vignes",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Rich white from old Roussanne."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-chateau-rayas",
+"name": "Château Rayas",
+"region": "Châteauneuf-du-Pape, Rhône",
+"country": "France",
+"lat": 44.0615,
+"lng": 4.899,
+"founded": "",
+"style": "red",
+"story": "A secretive estate in the woods of Châteauneuf-du-Pape, making ethereal reds from old Grenache on sandy soils.",
+"wines": [
+{
+"name": "Château Rayas",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Pure, perfumed Grenache."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-du-vieux-telegraphe",
+"name": "Domaine du Vieux Télégraphe",
+"region": "Bédarrides, Châteauneuf-du-Pape",
+"country": "France",
+"lat": 44.042,
+"lng": 4.893,
+"founded": "",
+"style": "red",
+"story": "The Brunier family's estate on the stony La Crau plateau, named after a 1790s optical telegraph tower that stood here.",
+"wines": [
+{
+"name": "La Crau",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Grenache-led, garrigue-scented Châteauneuf."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-e-guigal",
+"name": "E. Guigal",
+"region": "Ampuis, Côte-Rôtie",
+"country": "France",
+"lat": 45.4895,
+"lng": 4.8075,
+"founded": "1946",
+"style": "red",
+"story": "Founded by Étienne Guigal in Ampuis in 1946. Its single-vineyard Côte-Rôties La Mouline, La Landonne and La Turque became icons of the Northern Rhône.",
+"wines": [
+{
+"name": "Côtes du Rhône Rouge",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Classic, great-value Rhône blend."
+},
+{
+"name": "Côte-Rôtie Brune et Blonde",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Syrah with a little Viognier."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-m-chapoutier",
+"name": "M. Chapoutier",
+"region": "Tain-l'Hermitage, Rhône",
+"country": "France",
+"lat": 45.0715,
+"lng": 4.846,
+"founded": "1808",
+"style": "red",
+"story": "A Hermitage house dating to 1808, farmed biodynamically, and the first to print Braille on its labels.",
+"wines": [
+{
+"name": "Hermitage Monier de la Sizeranne",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Powerful Syrah."
+},
+{
+"name": "Hermitage De l'Orée",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Rich Marsanne."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-paul-jaboulet-aine",
+"name": "Paul Jaboulet Aîné",
+"region": "Tain-l'Hermitage, Rhône",
+"country": "France",
+"lat": 45.067,
+"lng": 4.844,
+"founded": "1834",
+"style": "red",
+"story": "A Northern Rhône house founded in 1834, famous for Hermitage La Chapelle, named after the little chapel on top of the hill.",
+"wines": [
+{
+"name": "Hermitage La Chapelle",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Legendary long-lived Syrah."
+},
+{
+"name": "Crozes-Hermitage Domaine de Thalabert",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Spicy Syrah."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-huet",
+"name": "Domaine Huet",
+"region": "Vouvray, Loire",
+"country": "France",
+"lat": 47.413,
+"lng": 0.803,
+"founded": "1928",
+"style": "white",
+"story": "Founded in 1928, a benchmark for Vouvray Chenin Blanc from three famous vineyards, farmed biodynamically since 1990.",
+"wines": [
+{
+"name": "Le Haut-Lieu Sec",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Dry Chenin Blanc."
+},
+{
+"name": "Clos du Bourg Moelleux",
+"type": "Sweet",
+"price": "",
+"cur": "EUR",
+"notes": "Sweet, long-lived Chenin."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-didier-dagueneau",
+"name": "Domaine Didier Dagueneau",
+"region": "Saint-Andelain, Pouilly-Fumé",
+"country": "France",
+"lat": 47.32,
+"lng": 2.948,
+"founded": "",
+"style": "white",
+"story": "The late Didier Dagueneau's estate redefined Pouilly-Fumé with intense, barrel-fermented Sauvignon Blanc; his son Louis-Benjamin continues it.",
+"wines": [
+{
+"name": "Silex",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Mineral, smoky Sauvignon Blanc from flint soils."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-henri-bourgeois",
+"name": "Domaine Henri Bourgeois",
+"region": "Chavignol, Sancerre",
+"country": "France",
+"lat": 47.331,
+"lng": 2.824,
+"founded": "",
+"style": "white",
+"story": "A family estate in the goat's-cheese village of Chavignol, making Sancerre from chalky and flinty slopes.",
+"wines": [
+{
+"name": "Sancerre Les Baronnes",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Crisp Sauvignon Blanc."
+},
+{
+"name": "Sancerre Rouge",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Light Pinot Noir."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-clos-rougeard",
+"name": "Clos Rougeard",
+"region": "Chacé, Saumur",
+"country": "France",
+"lat": 47.215,
+"lng": -0.073,
+"founded": "",
+"style": "red",
+"story": "A cult estate built by the Foucault family in Chacé, making long-lived Cabernet Franc in Saumur-Champigny.",
+"wines": [
+{
+"name": "Saumur-Champigny Le Clos",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Pure, fine Cabernet Franc."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-zind-humbrecht",
+"name": "Domaine Zind-Humbrecht",
+"region": "Turckheim, Alsace",
+"country": "France",
+"lat": 48.0875,
+"lng": 7.276,
+"founded": "",
+"style": "white",
+"story": "A leading Alsace family estate, farmed biodynamically, with Grand Cru vineyards such as Rangen and Hengst.",
+"wines": [
+{
+"name": "Riesling",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Rich, dry Alsace Riesling."
+},
+{
+"name": "Gewurztraminer",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Exotic, spicy Gewurztraminer."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-maison-trimbach",
+"name": "Maison Trimbach",
+"region": "Ribeauvillé, Alsace",
+"country": "France",
+"lat": 48.195,
+"lng": 7.319,
+"founded": "1626",
+"style": "white",
+"story": "Winemakers in Alsace since 1626, known for bone-dry Riesling, including the famous Clos Sainte Hune.",
+"wines": [
+{
+"name": "Riesling Clos Sainte Hune",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Taut, long-lived Riesling."
+},
+{
+"name": "Pinot Gris Réserve",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Smoky Pinot Gris."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-famille-hugel",
+"name": "Famille Hugel",
+"region": "Riquewihr, Alsace",
+"country": "France",
+"lat": 48.1665,
+"lng": 7.2975,
+"founded": "1639",
+"style": "white",
+"story": "Based in the medieval village of Riquewihr since 1639, and pioneers of the late-harvest Vendange Tardive rules.",
+"wines": [
+{
+"name": "Gentil",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Classic Alsace blend."
+},
+{
+"name": "Gewurztraminer Vendange Tardive",
+"type": "Sweet",
+"price": "",
+"cur": "EUR",
+"notes": "Late-harvest Gewurztraminer."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-weinbach",
+"name": "Domaine Weinbach",
+"region": "Kaysersberg, Alsace",
+"country": "France",
+"lat": 48.1405,
+"lng": 7.27,
+"founded": "",
+"style": "white",
+"story": "An estate at the foot of the Schlossberg Grand Cru, set around the Clos des Capucins, a walled vineyard founded by Capuchin monks in 1612.",
+"wines": [
+{
+"name": "Riesling Schlossberg Grand Cru",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Floral, mineral Riesling."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-tempier",
+"name": "Domaine Tempier",
+"region": "Le Plan du Castellet, Bandol",
+"country": "France",
+"lat": 43.2105,
+"lng": 5.765,
+"founded": "",
+"style": "red",
+"story": "The Peyraud family's estate that led Bandol's revival and its rules from the 1940s, making Mourvèdre reds and a famous rosé.",
+"wines": [
+{
+"name": "Bandol Rouge",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Mourvèdre: dark fruit, leather and herbs."
+},
+{
+"name": "Bandol Rosé",
+"type": "Rosé",
+"price": "",
+"cur": "EUR",
+"notes": "Structured, food-friendly rosé."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-chateau-d-esclans",
+"name": "Château d'Esclans",
+"region": "La Motte, Provence",
+"country": "France",
+"lat": 43.4905,
+"lng": 6.534,
+"founded": "",
+"style": "rose",
+"story": "A Provence estate bought by Sacha Lichine in 2006, whose Whispering Angel helped make pale Provence rosé a global trend.",
+"wines": [
+{
+"name": "Whispering Angel",
+"type": "Rosé",
+"price": "",
+"cur": "EUR",
+"notes": "Pale, crisp Provence rosé."
+},
+{
+"name": "Garrus",
+"type": "Rosé",
+"price": "",
+"cur": "EUR",
+"notes": "Barrel-aged old-vine Grenache rosé."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-chateau-simone",
+"name": "Château Simone",
+"region": "Meyreuil, Palette",
+"country": "France",
+"lat": 43.49,
+"lng": 5.503,
+"founded": "",
+"style": "red",
+"story": "A family estate that makes most of the tiny Palette appellation near Aix-en-Provence, with cellars dug by monks.",
+"wines": [
+{
+"name": "Palette Rouge",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Grenache-Mourvèdre blend."
+},
+{
+"name": "Palette Blanc",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Clairette-led white."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-mas-de-daumas-gassac",
+"name": "Mas de Daumas Gassac",
+"region": "Aniane, Languedoc",
+"country": "France",
+"lat": 43.681,
+"lng": 3.581,
+"founded": "1978",
+"style": "red",
+"story": "Founded by Aimé Guibert in 1978 on rare glacial soils in the Gassac valley; its red was soon nicknamed the 'Lafite of the Languedoc'.",
+"wines": [
+{
+"name": "Rouge",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Cabernet Sauvignon-led, long-lived red."
+},
+{
+"name": "Blanc",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Aromatic blend of many varieties."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-gerard-bertrand-chateau-l-hospitalet",
+"name": "Gérard Bertrand – Château l'Hospitalet",
+"region": "Narbonne, Languedoc",
+"country": "France",
+"lat": 43.158,
+"lng": 3.125,
+"founded": "",
+"style": "red",
+"story": "Former rugby player Gérard Bertrand's flagship estate on the La Clape massif near Narbonne, farmed biodynamically.",
+"wines": [
+{
+"name": "Château l'Hospitalet La Clape",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Syrah, Grenache and Mourvèdre."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-jean-macle",
+"name": "Domaine Jean Macle",
+"region": "Château-Chalon, Jura",
+"country": "France",
+"lat": 46.753,
+"lng": 5.627,
+"founded": "",
+"style": "white",
+"story": "A family estate in the hilltop village of Château-Chalon, a reference for Jura's vin jaune, aged under a veil of yeast for over six years.",
+"wines": [
+{
+"name": "Château-Chalon",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Vin jaune: walnut, curry and spice."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-chateau-montus",
+"name": "Château Montus",
+"region": "Castelnau-Rivière-Basse, Madiran",
+"country": "France",
+"lat": 43.583,
+"lng": 0.029,
+"founded": "",
+"style": "red",
+"story": "Alain Brumont's estate that showed the world Madiran's Tannat could age like great Bordeaux.",
+"wines": [
+{
+"name": "Montus",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Dark, powerful Tannat."
+},
+{
+"name": "Pacherenc du Vic-Bilh",
+"type": "Sweet",
+"price": "",
+"cur": "EUR",
+"notes": "Late-harvest Petit Manseng."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-chateau-du-cedre",
+"name": "Château du Cèdre",
+"region": "Vire-sur-Lot, Cahors",
+"country": "France",
+"lat": 44.488,
+"lng": 1.106,
+"founded": "",
+"style": "red",
+"story": "The Verhaeghe brothers' organic estate, a leading name for Cahors Malbec.",
+"wines": [
+{
+"name": "Le Cèdre",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Dense, spicy Malbec."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-cauhape",
+"name": "Domaine Cauhapé",
+"region": "Monein, Jurançon",
+"country": "France",
+"lat": 43.324,
+"lng": -0.588,
+"founded": "",
+"style": "sweet",
+"story": "Henri Ramonteu's estate in the Pyrenean foothills, champion of Jurançon's dry and sweet Petit and Gros Manseng.",
+"wines": [
+{
+"name": "Noblesse du Temps",
+"type": "Sweet",
+"price": "",
+"cur": "EUR",
+"notes": "Late-harvest Petit Manseng."
+},
+{
+"name": "Chant des Vignes",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Dry Jurançon."
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-comte-abbatucci",
+"name": "Domaine Comte Abbatucci",
+"region": "Casalabriva, Corsica",
+"country": "France",
+"lat": 41.76,
+"lng": 8.94,
+"founded": "",
+"style": "red",
+"story": "A biodynamic estate in southern Corsica that has rescued many forgotten native Corsican grape varieties.",
+"wines": [
+{
+"name": "Faustine Rouge",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": "Sciaccarellu and Niellucciu."
+},
+{
+"name": "Faustine Blanc",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": "Vermentinu."
 }
 ],
 "events": [],

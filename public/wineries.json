@@ -5337,5 +5337,237 @@
 ],
 "events": [],
 "real": true
+},
+{
+"id": "gr-avantis",
+"name": "Avantis Estate",
+"region": "Afrati, Central Evia",
+"country": "Greece",
+"lat": 38.5,
+"lng": 23.76,
+"founded": "",
+"style": "white",
+"story": "The family's story begins in the 19th century, when Anastasios Mountrichas bought land at Afrati in central Evia. Today oenologists Apostolos Mountrichas and his wife Lenga farm about 20 ha on steep south-east slopes at 250-500 m, from Malagousia and Assyrtiko to Syrah and Gewurztraminer.",
+"wines": [
+{
+"name": "Lenga Gewurztraminer",
+"type": "White",
+"price": 16.9,
+"cur": "EUR",
+"notes": "Aromatic, slightly off-dry Gewurztraminer: acacia, geranium, ginger.",
+"prices": [
+{
+"price": 16.9,
+"cur": "EUR",
+"shop": "Greece & Grapes",
+"url": "https://www.greeceandgrapes.com/en/white-lenga-2025-gewurztraminer-avantis-estate",
+"note": "2025 vintage"
+}
+],
+"checked": "25 Nov 2026"
+},
+{
+"name": "Lenga Pink",
+"type": "Rosé",
+"price": 12.4,
+"cur": "EUR",
+"notes": "Mavrokountoura with Gewurztraminer, salmon pink and perfumed.",
+"prices": [
+{
+"price": 12.4,
+"cur": "EUR",
+"shop": "Greece & Grapes",
+"url": "https://www.greeceandgrapes.com/en/rose-lenga-pink-2025-avantis-estate",
+"note": "2025 vintage, was €15.38"
+}
+],
+"checked": "25 Nov 2026"
+},
+{
+"name": "Sauvignon Blanc",
+"type": "White",
+"price": 13.2,
+"cur": "EUR",
+"notes": "Lemon, apple and lime; easy and cool.",
+"prices": [
+{
+"price": 13.2,
+"cur": "EUR",
+"shop": "Greece & Grapes",
+"url": "https://www.greeceandgrapes.com/en/white-sauvignon-blanc-2024-avantis-estate",
+"note": "2024 vintage, only 1 left"
+}
+],
+"checked": "25 Nov 2026"
+},
+{
+"name": "Agios Chronos Red",
+"type": "Red",
+"price": 27.9,
+"cur": "EUR",
+"notes": "Syrah with a touch of Viognier, a year in new French oak.",
+"prices": [
+{
+"price": 27.9,
+"cur": "EUR",
+"shop": "Greece & Grapes",
+"url": "https://www.greeceandgrapes.com/en/red-agios-chronos-blessed-time-2023-avantis-estate",
+"note": "2023 vintage"
+}
+],
+"checked": "25 Nov 2026"
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "gr-katsaros",
+"name": "Domaine Katsaros",
+"region": "Krania, Mount Olympus (Thessaly)",
+"country": "Greece",
+"lat": 39.93,
+"lng": 22.3,
+"founded": "1985",
+"style": "red",
+"story": "Doctor Dimitris Katsaros and his wife Stella revived winegrowing at Krania, 700 m up on the eastern slopes of Mount Olympus, in the 1980s, planting Cabernet Sauvignon, Merlot and Chardonnay. Their first wine came out in 1987, and the red is often called the 'Greek Bordeaux'.",
+"wines": [
+{
+"name": "Katsaros Red",
+"type": "Red",
+"price": 24.5,
+"cur": "EUR",
+"notes": "Cabernet Sauvignon and Merlot from 700 m: cherry, raspberry and fine oak.",
+"prices": [
+{
+"price": 24.5,
+"cur": "EUR",
+"shop": "Greece & Grapes",
+"url": "https://www.greeceandgrapes.com/en/red-2022-estate-katsaros",
+"note": "2022 vintage, was €24.80"
+}
+],
+"checked": "25 Nov 2026"
+},
+{
+"name": "Chardonnay",
+"type": "White",
+"price": 22.6,
+"cur": "EUR",
+"notes": "Mountain Chardonnay from the eastern foothills of Olympus.",
+"prices": [
+{
+"price": 22.6,
+"cur": "EUR",
+"shop": "Greece & Grapes",
+"url": "https://www.greeceandgrapes.com/en/white-chardonnay-2025-domaine-katsaros",
+"note": "2025 vintage"
+}
+],
+"checked": "25 Nov 2026"
+},
+{
+"name": "Valos",
+"type": "Red",
+"price": 15.6,
+"cur": "EUR",
+"notes": "Their younger red.",
+"prices": [
+{
+"price": 15.6,
+"cur": "EUR",
+"shop": "Greece & Grapes",
+"url": "https://www.greeceandgrapes.com/en/red-valos-2020-katsaros-domaine",
+"note": "2020 vintage"
+}
+],
+"checked": "25 Nov 2026"
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "gr-theopetra",
+"name": "Theopetra Estate (Tsililis)",
+"region": "Theopetra, Meteora (Thessaly)",
+"country": "Greece",
+"lat": 39.68,
+"lng": 21.68,
+"founded": "1995",
+"style": "red",
+"story": "The Tsililis family replanted the phylloxera-hit vineyards of Meteora in 1995, on the slopes around the prehistoric Theopetra cave, where ancient grape seeds have been found. Today about 10 ha are farmed organically, with local Limniona alongside Xinomavro and international grapes.",
+"wines": [
+{
+"name": "Limniona",
+"type": "Red",
+"price": 22.0,
+"cur": "EUR",
+"notes": "Crimson jam, prunes, violet and spice; firm tannins, sharp acidity.",
+"prices": [
+{
+"price": 22.0,
+"cur": "EUR",
+"shop": "Greece & Grapes",
+"url": "https://www.greeceandgrapes.com/en/red-limniona-2022-estate-theopetra",
+"note": "2022 vintage"
+}
+],
+"checked": "25 Nov 2026"
+},
+{
+"name": "Theopetra Red",
+"type": "Red",
+"price": 18.5,
+"cur": "EUR",
+"notes": "Cabernet Sauvignon, Syrah and Limniona: blackcurrant, sour cherry and pepper.",
+"prices": [
+{
+"price": 18.5,
+"cur": "EUR",
+"shop": "Greece & Grapes",
+"url": "https://www.greeceandgrapes.com/en/red-2023-theopetra-estate",
+"note": "2023 vintage"
+}
+],
+"checked": "25 Nov 2026"
+},
+{
+"name": "Theopetra Rosé",
+"type": "Rosé",
+"price": 15.4,
+"cur": "EUR",
+"notes": "Cherry, strawberry, rose and spice.",
+"prices": [
+{
+"price": 15.4,
+"cur": "EUR",
+"shop": "Greece & Grapes",
+"url": "https://www.greeceandgrapes.com/en/rose-2025-theopetra-estate",
+"note": "2025 vintage"
+}
+],
+"checked": "25 Nov 2026"
+},
+{
+"name": "Xinomavro Rosé",
+"type": "Rosé",
+"price": 17.5,
+"cur": "EUR",
+"notes": "Organic Xinomavro rosé, 40 days on lees.",
+"prices": [
+{
+"price": 17.5,
+"cur": "EUR",
+"shop": "Greece & Grapes",
+"url": "https://www.greeceandgrapes.com/en/rose-xinomavro-2025-estate-theopetra",
+"note": "2025 vintage"
+}
+],
+"checked": "25 Nov 2026"
+}
+],
+"events": [],
+"real": true
 }
 ]

@@ -280,7 +280,13 @@ path.leaflet-interactive:focus{outline:none}
 @keyframes dzSwirl{0%,100%{transform:rotate(0)}25%{transform:rotate(-16deg)}50%{transform:rotate(4deg)}75%{transform:rotate(14deg)}}
 @keyframes dzPulse{50%{transform:scale(1.12);box-shadow:0 0 0 10px #B3141F40}}
 @media(max-width:700px){.dz-card{flex-direction:column;align-items:center;padding:24px 18px 0}.dz-fig{order:2;width:min(220px,58vw);margin-bottom:-6px}.dz-talk{padding-bottom:4px;width:100%}.dz-bub::before{left:50%;bottom:-15px;border:12px solid transparent;border-top-color:#B3141F;border-bottom:0;margin-left:-12px}}
-@media(prefers-reduced-motion:reduce){.dz-fig,.dz-cup,.dz.talking .dz-mouth,.fab.dz-hint,.dz-bub p{animation:none!important}}
+.dz-here{display:flex;flex-direction:column;align-items:center;animation:dzBob 2.4s ease-in-out infinite}
+.dz-here img{width:58px;height:58px;border-radius:50%;background:#F7F1E6;border:3px solid #B3141F;box-shadow:0 6px 16px #0005}
+.dz-here span{margin-top:4px;background:#B3141F;color:#F7F1E6;font:700 11px/1 DM Sans,system-ui,sans-serif;padding:5px 8px;border-radius:999px;white-space:nowrap;box-shadow:0 3px 8px #0004}
+.dz-pop .leaflet-popup-content-wrapper{border-radius:18px;border:2px solid #B3141F}.dz-pop .leaflet-popup-content{margin:14px 14px 12px;font:15px/1.45 DM Sans,system-ui,sans-serif}
+.dz-pt{display:flex;gap:10px;align-items:flex-start}.dz-pt img{flex:none;width:44px;height:44px;border-radius:50%;border:2px solid #E0BC62;background:#F7F1E6}.dz-pt p{margin:0}
+.dz-pa{display:flex;gap:8px;margin-top:10px}.dz-pa .btn{min-height:40px}
+@media(prefers-reduced-motion:reduce){.dz-here,.dz-fig,.dz-cup,.dz.talking .dz-mouth,.fab.dz-hint,.dz-bub p{animation:none!important}}
 /* inside the Android / iPhone app Google sign-in is not available yet */
 .inapp #gBtn{display:none!important}
 @media(prefers-reduced-motion:reduce){.panel,.toast,.bottle{transition:none}}
@@ -986,6 +992,43 @@ chatEl.addEventListener("click",e=>{
   if(e.target.closest("[data-cal]")){if(innerWidth<=700)closeChat();S.calDay=null;renderEvents()}
 });
 
+/* ---------- Dionysus shows where the visitor is (after the welcome) ---------- */
+let dzHere=null;
+async function dzLocate(){
+  if(!navigator.geolocation)return;
+  const loc=await getLoc();
+  if(!loc){toast("Dionysus couldn't see where you are. Allow location to get wineries near you, or just ask him in the chat.");return}
+  if(dzHere)dzHere.remove();
+  dzHere=L.marker(loc,{zIndexOffset:2000,keyboard:false,title:"You are here",icon:L.divIcon({className:"",iconSize:[70,92],iconAnchor:[35,90],
+    html:`<div class="dz-here"><img src="/icons/dionysus-face.svg" alt=""><span>You are here</span></div>`})}).addTo(map);
+  closePanel();
+  map.flyTo(loc,10,{duration:2.2});
+  map.once("moveend",()=>setTimeout(()=>{
+    const near=nearbyWineries(loc);
+    const pop=L.popup({className:"dz-pop",offset:[0,-86],maxWidth:280,autoPanPadding:[20,80]}).setLatLng(loc)
+      .setContent(`<div class="dz-pt"><img src="/icons/dionysus-face.svg" alt=""><p><b>Here you are!</b> ${near.list.length?`I know <b>${near.list.length}</b> ${near.list.length===1?"winery":"wineries"} ${near.label}.`:"There are no wineries close by on my map yet."} Shall I recommend some for you?</p></div><div class="dz-pa"><button class="btn pri" data-dzy>Yes, please</button><button class="btn" data-dzn>No, thanks</button></div>`).openOn(map);
+    const el=pop.getElement();
+    el.querySelector("[data-dzy]").onclick=()=>{map.closePopup(pop);recommendNear(loc,near)};
+    el.querySelector("[data-dzn]").onclick=()=>{map.closePopup(pop);toast("Enjoy! Dionysus is in the chat whenever you need him.")};
+    el.querySelector("[data-dzy]").focus();
+  },300));
+}
+function nearbyWineries(loc){
+  const ws=all().map(w=>({w,hits:[],d:distKm(loc[0],loc[1],+w.lat,+w.lng)})).filter(x=>isFinite(x.d)).sort((a,b)=>a.d-b.d);
+  for(const km of[50,100,200]){const l=ws.filter(x=>x.d<=km);if(l.length)return{list:l,label:`within ${km} km`,km}}
+  return{list:ws.slice(0,6),label:"",km:null};
+}
+function recommendNear(loc,near){
+  openChat();
+  const list=near.list;
+  if(!list.length)return;
+  const top=list.slice(0,6),id="s"+(++shownN);SHOWN.set(id,{ids:list.map(x=>x.w.id),label:near.km?`wineries within ${near.km} km of you`:"the wineries closest to you"});
+  const li=top.map(({w,d})=>{const best=(w.wines||[]).filter(x=>x.price!==""&&x.price!=null).sort((a,b)=>+a.price-+b.price)[0];
+    return `<button class="cres" data-copen="${esc(w.id)}"><i style="background:${(STYLES[w.style]||STYLES.red)[1]}"></i><span><b>${esc(w.name)}</b><small>${esc(w.region)} · ${d<10?d.toFixed(1):Math.round(d)} km</small>${best?`<small class="cw">${esc(best.name)} · ${esc(money(best.price,best.cur))}</small>`:""}</span></button>`}).join("");
+  say(`<p>${near.km?`Here are my favourites ${near.label} of you`:`Nothing within 200 km yet, so here are the closest ones I know`}:</p><div class="clist">${li}</div><div class="acts"><button class="btn pri" data-cmap="${id}">Show ${list.length===1?"it":"all "+list.length} on the map</button></div><p class="note">Tap a winery to see its story, wines and events. And remember: do not drink and drive!</p>`);
+}
+window.dzLocate=dzLocate;
+
 /* ---------- data ---------- */
 fetch("wineries.json?v=20261125m",{cache:"no-cache"}).then(r=>r.json()).then(d=>{S.catalog=d;drawMarkers()}).catch(()=>toast("Sample wineries could not load."));
 
@@ -1056,6 +1099,7 @@ const DZ_SVG=`<svg class="dz-fig" viewBox="40 40 240 400" role="img" aria-label=
     if(i<LINES.length-1){timer=setTimeout(()=>line(i+1),3600)}
     else{acts.innerHTML=`<button class="pri" data-dz="enjoy">Enjoy!</button><button data-dz="ask">Ask Dionysus</button>`;acts.querySelector("button").focus()}}
   function close(openAsk){clearTimeout(timer);clearTimeout(talk);lsSet("winear-welcome","1");el.remove();
+    setTimeout(()=>{try{window.dzLocate&&window.dzLocate()}catch(e){console.error(e)}},3000);
     try{if(openAsk)openChat();else{fab.classList.add("dz-hint");setTimeout(()=>fab.classList.remove("dz-hint"),3200);fab.focus()}}catch(e){console.error(e)}}
   el.addEventListener("click",e=>{const b=e.target.closest("[data-dz],.dz-skip");if(!b)return;
     if(b.classList.contains("dz-skip"))return close(false);

@@ -840,8 +840,11 @@ function describe(q){
   return s;
 }
 
-const chat={open:false,log:[],busy:false,loc:null};
+const chat={open:false,log:[],busy:false,loc:null,ai:false,hist:[],n:0,fb:""};
+fetch("/api/chat").then(r=>r.ok?r.json():{}).then(d=>{chat.ai=!!d.ai}).catch(()=>{});
+const lsGet=k=>{try{return localStorage.getItem(k)}catch{return null}},lsSet=(k,v)=>{try{localStorage.setItem(k,v)}catch{}};
 const SUGG=["Sparkling under €20 in Greece","Assyrtiko from Santorini","Events this weekend","Red wines near me","Premium French reds"];
+const FB_ASK="Share feedback about the site";
 const chatEl=document.createElement("section");chatEl.className="chat";chatEl.id="chat";chatEl.hidden=true;chatEl.setAttribute("aria-label","Chat with Dionysus");
 chatEl.innerHTML=`<div class="chh"><img class="ava" src="/icons/dionysus-face.svg" alt=""><div><h2>Dionysus</h2><small>God of wine · your guide to wineries, wines and events</small></div><button class="x" aria-label="Close chat">×</button></div>
  <div class="clog" id="clog" aria-live="polite"></div>
@@ -851,10 +854,11 @@ const fab=document.createElement("button");fab.className="fab";fab.id="chatBtn";
 fab.innerHTML=`<img class="ava" src="/icons/dionysus-face.svg" alt=""><span>Ask Dionysus</span>`;
 document.body.appendChild(fab);
 const clog=chatEl.querySelector("#clog");
-function say(html,who="bot"){const d=document.createElement("div");d.className="msg "+who;d.innerHTML=html;clog.appendChild(d);clog.scrollTop=clog.scrollHeight;return d}
+function say(html,who="bot",keep=true){const d=document.createElement("div");d.className="msg "+who;d.innerHTML=html;clog.appendChild(d);clog.scrollTop=clog.scrollHeight;
+  if(keep){chat.hist.push({role:who==="me"?"user":"assistant",content:d.textContent.replace(/\s+/g," ").trim().slice(0,800)});if(chat.hist.length>16)chat.hist.splice(0,chat.hist.length-16)}return d}
 const chips=list=>`<div class="csug">${list.map(s=>`<button type="button" class="chip" data-ask="${esc(s)}">${esc(s)}</button>`).join("")}</div>`;
 function openChat(){chatEl.hidden=false;chat.open=true;fab.setAttribute("aria-expanded","true");fab.hidden=true;
-  if(!clog.children.length)say(`<div class="hello"><img src="/dionysus.svg" alt=""><div><p><b>Χαίρε!</b> I'm Dionysus, god of wine.</p><p>Tell me what you'd like to drink and I'll find the wineries, wines and feasts on the map. Ask about a <b>colour</b>, <b>price</b>, <b>grape</b>, <b>country</b> or <b>wine area</b>, or about <b>events</b> on certain dates.</p></div></div>${chips(SUGG)}`);
+  if(!clog.children.length)say(`<div class="hello"><img src="/dionysus.svg" alt=""><div><p><b>Χαίρε!</b> I'm Dionysus, god of wine.</p><p>Tell me what you'd like to drink and I'll find the wineries, wines and feasts on the map. Ask about a <b>colour</b>, <b>price</b>, <b>grape</b>, <b>country</b> or <b>wine area</b>, or about <b>events</b> on certain dates.</p></div></div>${chips([...SUGG,FB_ASK])}`,"bot",false);
   if(innerWidth<=700)closeFilters();setTimeout(()=>$("#cq").focus(),50)}
 function closeChat(){chatEl.hidden=true;chat.open=false;fab.hidden=false;fab.setAttribute("aria-expanded","false")}
 fab.addEventListener("click",openChat);
@@ -865,8 +869,44 @@ const getLoc=()=>new Promise(ok=>{if(chat.loc)return ok(chat.loc);if(!navigator.
   navigator.geolocation.getCurrentPosition(p=>ok(chat.loc=[p.coords.latitude,p.coords.longitude]),()=>ok(null),{timeout:9000,maximumAge:600000})});
 const SHOWN=new Map();let shownN=0;
 async function ask(text){
-  say(esc(text),"me");
+  if(text===FB_ASK){say(esc(text),"me");chat.fb="asked";return say(`<p>Gladly! I'm all ears. What do you like, what would you change, and which winery or feature is missing? Write anything, it goes straight to the Winear.me team.</p>`)}
+  if(text==="Not now"&&chat.fb==="asked"){say(esc(text),"me");chat.fb="done";lsSet("winear-fb","skipped");return say(`<p>Of course. Back to the wine, then!</p>`)}
+  say(esc(text),"me");chat.n++;
   const q=parseAsk(text);
+  if(chat.fb==="asked"){const has0=q.cols.size||q.lo!=null||q.hi!=null||q.countries.size||q.areas.length||q.grapes.length||q.near||q.events;
+    if(!has0)return sendFeedback(text);chat.fb=""}
+  const chatty=/\b(why|how|what|which|who|recommend|suggest|pair|pairing|match|goes? with|food|dish|dinner with|gift|present|difference|tell me|explain|best|should i|would you|do you|can you|is it|τι|ποι[οα]|πως|γιατι|προτειν)\b/.test(q.t);
+  const has1=q.cols.size||q.lo!=null||q.hi!=null||q.countries.size||q.areas.length||q.places.length||q.grapes.length||q.near||q.view||q.winery;
+  if(chat.ai&&!q.events&&!q.near&&!q.view&&(q.hello||!has1||chatty)){await askAI();return maybeAskFeedback()}
+  await askRules(text,q);maybeAskFeedback();
+}
+function maybeAskFeedback(){
+  if(chat.n<3||chat.fb||lsGet("winear-fb"))return;
+  chat.fb="asked";
+  say(`<p>May I ask a small favour? How do you find <b>Winear.me</b> so far? Tell me what you'd change, or a winery we should add, and I'll pass it to the team.</p>${chips(["Not now"])}`);
+}
+async function sendFeedback(text){
+  chat.fb="done";lsSet("winear-fb","sent");
+  let ok=false;try{ok=(await fetch("/api/feedback",{method:"POST",headers:{"content-type":"application/json"},body:JSON.stringify({text,kind:"chat"})})).ok}catch{}
+  say(ok?`<p>Thank you, friend! Your words are on their way to the team. Ask me anything else about wine whenever you like.</p>`:`<p>My messenger stumbled and your note didn't arrive. Could you try again in a moment?</p>`);
+  if(!ok)chat.fb="asked";
+}
+const rich=t=>t.split(/\n{2,}|\n(?=[-•] )/).map(par=>`<p>${esc(par.trim()).replace(/\*\*(.+?)\*\*/g,"<b>$1</b>").replace(/\n/g,"<br>")}</p>`).join("");
+async function askAI(){
+  const wait=say(`<p class="note">Dionysus is thinking…</p>`,"bot",false);
+  try{
+    const r=await fetch("/api/chat",{method:"POST",headers:{"content-type":"application/json"},body:JSON.stringify({messages:chat.hist})});
+    const d=await r.json().catch(()=>({}));wait.remove();
+    if(!r.ok||!d.reply){say(`<p>${esc(d.error||"Dionysus is resting.")} Meanwhile I can still search the map for you:</p>${chips(SUGG.slice(0,3))}`,"bot",false);return}
+    const ws=(d.ids||[]).map(id=>all().find(w=>w.id===id)).filter(Boolean);
+    let extra="";
+    if(ws.length){const id="s"+(++shownN);SHOWN.set(id,{ids:ws.map(w=>w.id),label:"Dionysus's picks"});
+      extra=`<div class="clist">${ws.map(w=>`<button class="cres" data-copen="${esc(w.id)}"><i style="background:${(STYLES[w.style]||STYLES.red)[1]}"></i><span><b>${esc(w.name)}</b><small>${esc(w.region)}, ${esc(w.country)}</small></span></button>`).join("")}</div><div class="acts"><button class="btn pri" data-cmap="${id}">Show ${ws.length===1?"it":"all "+ws.length} on the map</button></div>`}
+    say(rich(d.reply)+extra);
+    if(d.feedback){chat.fb="done";lsSet("winear-fb","sent")}
+  }catch{wait.remove();say(`<p>Dionysus is resting. Meanwhile I can still search the map for you:</p>${chips(SUGG.slice(0,3))}`,"bot",false)}
+}
+async function askRules(text,q){
   if(q.help||q.hello)return say(`<p>${q.hello?"Hello! ":""}Ask me things like:</p><ul><li>“sweet wines from Samos”</li><li>“Xinomavro under €25”</li><li>“wineries in Nemea”</li><li>“tastings next week in Crete”</li><li>“champagne near me”</li></ul><p class="note">Even a god keeps it simple here: I understand colours, prices, grapes, countries, wine areas, winery names and dates.</p>`);
   if(q.winery&&!q.events&&!q.cols.size&&q.lo==null&&q.hi==null&&!q.grapes.length){
     const w=q.winery;say(`<p>Here's <b>${esc(w.name)}</b> in ${esc(w.region)}, ${esc(w.country)}. ${(w.wines||[]).length} wines, ${(w.events||[]).filter(e=>new Date(e.end||e.start)>=NOW).length} upcoming events.</p><div class="acts"><button class="btn pri" data-copen="${esc(w.id)}">Open winery</button></div>`);

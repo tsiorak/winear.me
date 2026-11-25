@@ -505,7 +505,7 @@ q.addEventListener("keydown",e=>{if(e.key==="Enter"){res.querySelector("button")
 document.addEventListener("click",e=>{if(!e.target.closest(".search"))res.style.display="none"});
 
 /* ---------- data ---------- */
-fetch("wineries.json?v=20261125f",{cache:"no-cache"}).then(r=>r.json()).then(d=>{S.catalog=d;drawMarkers()}).catch(()=>toast("Sample wineries could not load."));
+fetch("wineries.json?v=20261125g",{cache:"no-cache"}).then(r=>r.json()).then(d=>{S.catalog=d;drawMarkers()}).catch(()=>toast("Sample wineries could not load."));
 
 /* ---------- sign-in ---------- */
 let entered=false;try{entered=sessionStorage.getItem("winear-in")==="1"}catch{}

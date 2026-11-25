@@ -5865,5 +5865,237 @@
 ],
 "events": [],
 "real": true
+},
+{
+"id": "gr-gavalas",
+"name": "Gavalas Winery",
+"region": "Megalochori, Santorini",
+"country": "Greece",
+"lat": 36.372,
+"lng": 25.427,
+"founded": "",
+"style": "white",
+"story": "One of Santorini's oldest wineries, George Gavalas's traditional canava in Megalochori. The family farms about 1.8 ha of native grapes, including Assyrtiko, Athiri and Aidani and rare local varieties such as Katsano, Gaidouria, Mavrotragano and Voudomato.",
+"wines": [
+{
+"name": "Santorini Natural Ferment",
+"type": "White",
+"price": 55.5,
+"cur": "EUR",
+"notes": "Wild-yeast Assyrtiko: tea leaf, bread crumb, lemon and flint.",
+"prices": [
+{
+"price": 55.5,
+"cur": "EUR",
+"shop": "Greece & Grapes",
+"url": "https://www.greeceandgrapes.com/en/white-wine-santorini-natural-ferment-2024-gavalas-winery",
+"note": "2024 vintage"
+}
+],
+"checked": "25 Nov 2026"
+},
+{
+"name": "Nykteri",
+"type": "White",
+"price": 61.2,
+"cur": "EUR",
+"notes": "Traditional oak-aged Santorini.",
+"prices": [
+{
+"price": 61.2,
+"cur": "EUR",
+"shop": "Greece & Grapes",
+"url": "https://www.greeceandgrapes.com/en/white-nykteri-2024-winery-gavalas",
+"note": "2024 vintage"
+}
+],
+"checked": "25 Nov 2026"
+},
+{
+"name": "Katsano",
+"type": "White",
+"price": 64.48,
+"cur": "EUR",
+"notes": "A rare Santorini grape bottled on its own.",
+"prices": [
+{
+"price": 64.48,
+"cur": "EUR",
+"shop": "Greece & Grapes",
+"url": "https://www.greeceandgrapes.com/en/white-katsano-2024-winery-gavalas",
+"note": "2024 vintage"
+}
+],
+"checked": "25 Nov 2026"
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "gr-volacus",
+"name": "Volacus Winery",
+"region": "Falatados, Tinos",
+"country": "Greece",
+"lat": 37.59,
+"lng": 25.17,
+"founded": "",
+"style": "white",
+"story": "A tiny family winery run by Michalis Kontizas and his wife Irene at Falatados, Tinos, on terraces at 440 m scattered with huge granite boulders (volakes). They make only a few thousand bottles, exploring Tinos grapes alongside Malagousia and Assyrtiko.",
+"wines": [
+{
+"name": "Malagousia",
+"type": "White",
+"price": 22.9,
+"cur": "EUR",
+"notes": "Mountain Malagousia from granite: apple, peach and green tea.",
+"prices": [
+{
+"price": 22.9,
+"cur": "EUR",
+"shop": "Greece & Grapes",
+"url": "https://www.greeceandgrapes.com/en/white-malagousia-2025-volacus-winery",
+"note": "2025 vintage"
+}
+],
+"checked": "25 Nov 2026"
+},
+{
+"name": "Assyrtiko",
+"type": "White",
+"price": 26.7,
+"cur": "EUR",
+"notes": "Island Assyrtiko: peach, citrus and granite minerality.",
+"prices": [
+{
+"price": 26.7,
+"cur": "EUR",
+"shop": "Greece & Grapes",
+"url": "https://www.greeceandgrapes.com/en/white-assyrtiko-2025-volacus-winery",
+"note": "2025 vintage"
+}
+],
+"checked": "25 Nov 2026"
+},
+{
+"name": "Rozaki",
+"type": "Rosé",
+"price": 20.9,
+"cur": "EUR",
+"notes": "The local Rozaki grape.",
+"prices": [
+{
+"price": 20.9,
+"cur": "EUR",
+"shop": "Greece & Grapes",
+"url": "https://www.greeceandgrapes.com/en/rose-rozaki-2025-volacus-winery",
+"note": "2025 vintage"
+}
+],
+"checked": "25 Nov 2026"
+},
+{
+"name": "Mavrotragano",
+"type": "Red",
+"price": 55.8,
+"cur": "EUR",
+"notes": "Native-yeast Mavrotragano, 24 months in oak, unfiltered.",
+"prices": [
+{
+"price": 55.8,
+"cur": "EUR",
+"shop": "Greece & Grapes",
+"url": "https://www.greeceandgrapes.com/en/red-mavrotragano-2023-volacus-winery",
+"note": "2023 vintage"
+}
+],
+"checked": "25 Nov 2026"
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "gr-chatzigeorgiou",
+"name": "Chatzigeorgiou Estate",
+"region": "Karpasi, Lemnos",
+"country": "Greece",
+"lat": 39.9,
+"lng": 25.27,
+"founded": "",
+"style": "white",
+"story": "A family estate at Karpasi on volcanic Lemnos, an island praised for its wine since Aristotle's time. They make dry, sweet and sparkling wines from the island's Muscat of Alexandria and the ancient red Limnio.",
+"wines": [
+{
+"name": "Limnia Ghi White",
+"type": "White",
+"price": 10.02,
+"cur": "EUR",
+"notes": "Dry Muscat of Alexandria from Lemnos.",
+"prices": [
+{
+"price": 10.02,
+"cur": "EUR",
+"shop": "Greece & Grapes",
+"url": "https://www.greeceandgrapes.com/en/white-limnia-ghi-2025-chatzigeorgiou-estate",
+"note": "2025 vintage"
+}
+],
+"checked": "25 Nov 2026"
+},
+{
+"name": "Limnia Ghi Red",
+"type": "Red",
+"price": 10.8,
+"cur": "EUR",
+"notes": "Limnio: forest fruits and herbs.",
+"prices": [
+{
+"price": 10.8,
+"cur": "EUR",
+"shop": "Greece & Grapes",
+"url": "https://www.greeceandgrapes.com/en/red-chatzigeorgiou-estate-limnia-ghi-red-2023",
+"note": "2023 vintage"
+}
+],
+"checked": "25 Nov 2026"
+},
+{
+"name": "Limnia Ghi Rosé",
+"type": "Rosé",
+"price": 10.5,
+"cur": "EUR",
+"notes": "Limnio with Muscat: flowers, orange zest, bergamot.",
+"prices": [
+{
+"price": 10.5,
+"cur": "EUR",
+"shop": "Greece & Grapes",
+"url": "https://www.greeceandgrapes.com/en/rose-limnia-ghi-2025-chatzigeorgiou-estate",
+"note": "2025 vintage"
+}
+],
+"checked": "25 Nov 2026"
+},
+{
+"name": "Muscat of Lemnos",
+"type": "Sweet",
+"price": 10.7,
+"cur": "EUR",
+"notes": "Gently sweet Muscat: rosewater and bergamot.",
+"prices": [
+{
+"price": 10.7,
+"cur": "EUR",
+"shop": "Greece & Grapes",
+"url": "https://www.greeceandgrapes.com/en/sweet-wine-moschato-limnou-2023-estate-chatzigeorgiou",
+"note": "2023 vintage"
+}
+],
+"checked": "25 Nov 2026"
+}
+],
+"events": [],
+"real": true
 }
 ]

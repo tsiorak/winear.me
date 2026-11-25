@@ -66,6 +66,26 @@ button{cursor:pointer}
 .me{padding:0 6px 0 6px}
 .me img{width:34px;height:34px;border-radius:50%}
 .badge{background:var(--gold);color:#2a1a00;border-radius:999px;font-size:12px;font-weight:700;padding:1px 7px}
+.role{display:inline-block;margin-left:6px;font-size:11px;font-weight:700;border-radius:999px;padding:1px 8px;vertical-align:1px;background:var(--gold);color:#2a1a00}
+.menu button[disabled]{opacity:.6;cursor:default}
+.adm{position:fixed;inset:0;z-index:1500;background:var(--bg);display:flex;flex-direction:column;overflow:auto}
+.adm[hidden]{display:none}
+.adm-bar{display:flex;align-items:center;gap:12px;padding:14px max(5vw,16px);background:var(--wine-d);color:#fff}
+.adm-bar h1{font-size:30px;flex:1}
+.adm-bar button{min-height:44px;border-radius:999px;border:1px solid #ffffff55;background:#ffffff1a;color:#fff;padding:0 16px;font-weight:500}
+.adm-bar button:hover{background:#ffffff33}
+.adm-body{padding:clamp(24px,4vw,48px) max(5vw,16px);max-width:1000px;width:100%;margin:0 auto}
+.adm-empty{border:2px dashed var(--line);border-radius:20px;padding:48px 24px;text-align:center;color:var(--mute)}
+.adm-empty h2{font-size:28px;color:var(--ink);margin-bottom:8px}
+.dlg{position:fixed;inset:0;z-index:1600;display:grid;place-items:center;padding:16px;background:color-mix(in srgb,var(--wine-d) 50%,transparent)}
+.dlg[hidden]{display:none}
+.dlg form{background:var(--card);border-radius:20px;max-width:480px;width:100%;padding:26px 24px 20px;box-shadow:0 30px 70px #0006}
+.dlg h2{font-size:30px;margin-bottom:6px}
+.dlg p{color:var(--mute);margin:0 0 14px;font-size:15px}
+.dlg label{display:block;font-weight:500;font-size:14px;margin:10px 0 4px}
+.dlg textarea{width:100%;min-height:130px;font-size:16px;padding:10px 12px;border-radius:12px;border:1px solid var(--border);background:var(--bg);resize:vertical}
+.dlg .cnt{font-size:12px;color:var(--mute);text-align:right;margin-top:2px}
+.dlg .acts{display:flex;justify-content:flex-end;gap:8px;margin-top:14px}
 .menu{position:fixed;top:66px;right:12px;z-index:1001;background:var(--card);border-radius:14px;box-shadow:0 12px 34px #0004;min-width:240px;padding:6px;display:none}
 .menu button{display:flex;justify-content:space-between;align-items:center;width:100%;border:0;background:none;text-align:left;padding:10px 12px;border-radius:10px;min-height:44px}
 .menu button:hover{background:var(--soft)}
@@ -320,6 +340,20 @@ if(/WinearApp/.test(navigator.userAgent)) document.documentElement.classList.add
   <button class="pill me" id="meBtn" hidden aria-label="Account menu" aria-haspopup="true"><img id="meImg" alt=""><span id="adminBadge" class="badge" hidden></span></button>
 </header>
 <div class="menu" id="menu" role="menu"></div>
+<section class="adm" id="adminPage" hidden aria-labelledby="admTitle">
+  <div class="adm-bar"><h1 id="admTitle">Administrator</h1><button type="button" id="admClose">← Back to the map</button></div>
+  <div class="adm-body"><div class="adm-empty"><h2>Your admin area</h2><p>Nothing here yet. Winery requests and site tools will appear on this page.</p></div></div>
+</section>
+<div class="dlg" id="wineryDlg" hidden role="dialog" aria-modal="true" aria-labelledby="wdTitle">
+  <form id="wdForm">
+    <h2 id="wdTitle">I am a winery</h2>
+    <p>Tell the administrator about your winery. Your account will be marked as a winery account.</p>
+    <label for="wdMsg">Message to the administrator</label>
+    <textarea id="wdMsg" required maxlength="1000" placeholder="e.g. I am the owner of Ktima … in Nemea. Please give me a winery account."></textarea>
+    <div class="cnt"><span id="wdCnt">0</span>/1000</div>
+    <div class="acts"><button type="button" class="btn" id="wdCancel">Cancel</button><button type="submit" class="btn pri" id="wdSend">Send</button></div>
+  </form>
+</div>
 
 <div class="legend" id="legend"></div>
 <div class="fsheet" id="fsheet" role="dialog" aria-label="Filter the map" hidden></div>
@@ -619,7 +653,11 @@ document.addEventListener("click",e=>{if(!e.target.closest("#menu"))hideMenu()})
 async function renderMenu(){
   if(S.fbUser){
     const u=S.fbUser;
-    $("#menu").innerHTML=`<div class="who"><b></b><small></small></div><p class="mnote">Saving events and winery pages are coming soon.</p><button role="menuitem" data-m="signout">Sign out</button>`;
+    const adm=isAdminUser(u),win=S.role==="winery";
+    const items=adm?[`<button role="menuitem" data-m="fbadmin">Administrator</button>`]
+      :win?[`<button role="menuitem" disabled>Winery account ✓</button>`]
+      :[`<button role="menuitem" data-m="fbwinery">I am a winery</button>`];
+    $("#menu").innerHTML=`<div class="who"><b></b>${adm?'<span class="role">Admin</span>':win?'<span class="role">Winery</span>':""}<small></small></div>${items.join("")}<button role="menuitem" data-m="signout">Sign out</button>`;
     $("#menu .who b").textContent=u.displayName||"Signed in";$("#menu .who small").textContent=u.email||"";return;
   }
   const me=S.user?await S.user.me():null;
@@ -636,7 +674,7 @@ async function renderMenu(){
   $("#menu .who small").textContent=me?.email||(S.owner?"Administrator":S.id?"":"Not signed in");
 }
 $("#menu").addEventListener("click",e=>{const b=e.target.closest("[data-m]");if(!b)return;hideMenu();
-  ({plans:renderPlans,winery:renderWineryArea,admin:renderAdmin,signout:()=>S.fb.signOut().then(()=>toast("Signed out"))})[b.dataset.m]()});
+  ({plans:renderPlans,winery:renderWineryArea,admin:renderAdmin,fbadmin:openAdmin,fbwinery:openWineryDlg,signout:()=>S.fb.signOut().then(()=>toast("Signed out"))})[b.dataset.m]()});
 
 /* ---------- winery request & editor ---------- */
 function renderWineryArea(){
@@ -1063,6 +1101,46 @@ const giveUp=setTimeout(()=>{if(!S.id){$("#gTxt").textContent="Sign-in unavailab
 
 /* ---------- Google sign-in (Firebase) on winear.me ---------- */
 const FB=window.WINEAR_FIREBASE;
+// Administrator accounts (also enforced in the Firestore security rules)
+const ADMIN_EMAILS=["tsiorak@gmail.com"];
+const isAdminUser=u=>!!(u&&u.emailVerified&&ADMIN_EMAILS.includes(String(u.email||"").toLowerCase()));
+S.role=null;
+async function loadRole(u){
+  S.role=null;if(!u||!S.fs)return;
+  try{
+    const ref=S.fs.collection("users").doc(u.uid),snap=await ref.get();
+    if(snap.exists){S.role=snap.data().role||"user"}
+    else{S.role="user";await ref.set({email:u.email||"",name:u.displayName||"",role:"user",createdAt:firebase.firestore.FieldValue.serverTimestamp()})}
+  }catch(e){console.warn("role",e.code||e)}
+}
+function openAdmin(){
+  if(!isAdminUser(S.fbUser))return toast("Administrators only.");
+  $("#adminPage").hidden=false;$("#admClose").focus();
+  if(location.hash!=="#admin")history.replaceState(null,"","#admin");
+}
+function closeAdmin(){$("#adminPage").hidden=true;if(location.hash==="#admin")history.replaceState(null,"",location.pathname+location.search)}
+$("#admClose").onclick=closeAdmin;
+addEventListener("hashchange",()=>{if(location.hash==="#admin")openAdmin();else if(!$("#adminPage").hidden)closeAdmin()});
+const wd=$("#wineryDlg");
+function openWineryDlg(){if(!S.fbUser)return;$("#wdMsg").value="";$("#wdCnt").textContent="0";wd.hidden=false;$("#wdMsg").focus()}
+const closeWd=()=>{wd.hidden=true};
+$("#wdCancel").onclick=closeWd;
+wd.addEventListener("click",e=>{if(e.target===wd)closeWd()});
+document.addEventListener("keydown",e=>{if(e.key==="Escape"){if(!wd.hidden)closeWd();else if(!$("#adminPage").hidden)closeAdmin()}});
+$("#wdMsg").addEventListener("input",e=>{$("#wdCnt").textContent=e.target.value.length});
+$("#wdForm").onsubmit=async e=>{
+  e.preventDefault();const u=S.fbUser,msg=$("#wdMsg").value.trim();
+  if(!u||!S.fs)return toast("Sign-in or database isn't ready yet.");
+  if(!msg)return $("#wdMsg").focus();
+  const btn=$("#wdSend");btn.disabled=true;
+  try{
+    const now=firebase.firestore.FieldValue.serverTimestamp();
+    await S.fs.collection("wineryRequests").doc(u.uid).set({uid:u.uid,email:u.email||"",name:u.displayName||"",message:msg,status:"new",createdAt:now});
+    await S.fs.collection("users").doc(u.uid).set({email:u.email||"",name:u.displayName||"",role:"winery",updatedAt:now},{merge:true});
+    S.role="winery";closeWd();toast("Thank you! Your account is now a winery account.");
+  }catch(err){console.warn(err);toast(err&&err.code==="permission-denied"?"Not allowed: please try signing in again.":"Couldn't send right now. Please try again later.")}
+  finally{btn.disabled=false}
+};
 const loadScript=src=>new Promise((ok,no)=>{const s=document.createElement("script");s.src=src;s.onload=ok;s.onerror=no;document.head.appendChild(s)});
 function renderAuth(){
   const u=S.fbUser;
@@ -1076,7 +1154,9 @@ if(!window.claude&&FB&&FB.apiKey){
       await loadScript("https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js");
       await loadScript("https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js");
       firebase.initializeApp(FB);S.fb=firebase.auth();
-      S.fb.onAuthStateChanged(u=>{S.fbUser=u;S.id=u?u.uid:null;renderAuth()});
+      try{await loadScript("https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore-compat.js");S.fs=firebase.firestore()}catch{S.fs=null}
+      S.fb.onAuthStateChanged(async u=>{S.fbUser=u;S.id=u?u.uid:null;renderAuth();
+        if(u){await loadRole(u);if(location.hash==="#admin"&&isAdminUser(u))openAdmin()}else{S.role=null;closeAdmin()}});
       $("#gBtn").hidden=false;
       $("#gBtn").onclick=()=>S.fb.signInWithPopup(new firebase.auth.GoogleAuthProvider())
         .then(r=>toast("Welcome"+(r.user.displayName?", "+r.user.displayName.split(" ")[0]:"")+"!"))

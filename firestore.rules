@@ -1,0 +1,33 @@
+rules_version = '2';
+// Winear.me Firestore security rules.
+// Paste into Firebase console → Firestore Database → Rules → Publish.
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function signedIn() { return request.auth != null; }
+    function isAdmin() {
+      return signedIn()
+        && request.auth.token.email_verified == true
+        && request.auth.token.email in ['tsiorak@gmail.com'];
+    }
+
+    // One document per signed-in person: { email, name, role: "user" | "winery" }
+    match /users/{uid} {
+      allow read: if signedIn() && (request.auth.uid == uid || isAdmin());
+      allow create, update: if isAdmin()
+        || (signedIn() && request.auth.uid == uid
+            && request.resource.data.role in ['user', 'winery']);
+      allow delete: if isAdmin();
+    }
+
+    // "I am a winery" messages to the administrator, one per person
+    match /wineryRequests/{uid} {
+      allow read: if signedIn() && (request.auth.uid == uid || isAdmin());
+      allow create, update: if signedIn() && request.auth.uid == uid
+        && request.resource.data.message is string
+        && request.resource.data.message.size() > 0
+        && request.resource.data.message.size() <= 1000;
+      allow delete: if isAdmin();
+    }
+  }
+}

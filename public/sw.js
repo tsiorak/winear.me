@@ -1,7 +1,7 @@
 // Winear.me service worker: makes the site installable and opens it fast.
 // Pages and data: network first (always fresh), saved copy when offline.
 // Map library and icons: saved copy first. Map tiles are not stored.
-const CACHE = "winear-v1";
+const CACHE = "winear-v2";
 const CORE = ["/", "/offline.html", "/leaflet.js", "/leaflet.css", "/topojson-client.min.js", "/icons/icon-192.png"];
 
 self.addEventListener("install", e => {

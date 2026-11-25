@@ -1,10 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2732 2732">
-  <rect width="2732" height="2732" fill="#4a0f24"/>
-  <g transform="translate(1366 1250) scale(16) translate(-13 -22)">
-    <path d="M10 1h6v10c0 3 6 6 6 13v17a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V24c0-7 6-10 6-13z" fill="#d7ae4e"/>
-    <rect x="9.6" y=".4" width="6.8" height="3.6" rx="1" fill="#2a0d18"/>
-    <rect x="6" y="25" width="14" height="10" rx="1.2" fill="#6d1a36"/>
-    <circle cx="13" cy="30" r="2.2" fill="#d7ae4e"/>
-  </g>
-  <text x="1366" y="1780" text-anchor="middle" font-family="Georgia, serif" font-weight="700" font-size="190" fill="#f2eaee">Winear<tspan fill="#d7ae4e">.me</tspan></text>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2732 2732"><rect width="2732" height="2732" fill="#B3141F"/><g transform="translate(854.0 1250) scale(16)"><path d="M28.5 8 H35.5 V15 C35.5 21 47 23.5 47 32 V45 L32 62 L17 45 V32 C17 23.5 28.5 21 28.5 15 Z" fill="#C9A34E"/><path d="M28.5 8 H35.5 V15 C35.5 17.5 37 19.5 39 21 H25 C27 19.5 28.5 17.5 28.5 15 Z" fill="#F7F1E6"/><path d="M27.5 8.5 C27.5 3.5 36.5 3.5 36.5 8.5 Z" fill="#F7F1E6"/><circle cx="42" cy="10" r="1.7" fill="#F7F1E6"/><circle cx="45.5" cy="5" r="1.2" fill="#F7F1E6"/><circle cx="41" cy="2.6" r="0.9" fill="#F7F1E6"/><circle cx="21.5" cy="6.5" r="1.1" fill="#F7F1E6"/><circle cx="32" cy="36" r="6" fill="#B3141F"/></g><text x="1366.0" y="2440" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-weight="700" font-size="190" fill="#F7F1E6">Winear<tspan fill="#C9A34E">.me</tspan></text></svg>

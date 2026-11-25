@@ -5,7 +5,7 @@
   "description": "Winear.me Android and iPhone apps (Capacitor shell that opens https://winear.me)",
   "scripts": {
     "sync": "cap sync",
-    "assets": "capacitor-assets generate --iconBackgroundColor '#4a0f24' --iconBackgroundColorDark '#4a0f24' --splashBackgroundColor '#4a0f24' --splashBackgroundColorDark '#4a0f24'",
+    "assets": "capacitor-assets generate --iconBackgroundColor '#B3141F' --iconBackgroundColorDark '#B3141F' --splashBackgroundColor '#B3141F' --splashBackgroundColorDark '#B3141F'",
     "android": "cap open android",
     "ios": "cap open ios"
   },

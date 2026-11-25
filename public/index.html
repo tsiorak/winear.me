@@ -222,6 +222,36 @@ path.leaflet-interactive:focus{outline:none}
  .panel{top:auto;bottom:0;padding-bottom:env(safe-area-inset-bottom)}
  .fsheet{top:auto;padding-bottom:env(safe-area-inset-bottom)}
 }
+/* wine chat */
+.fab{position:fixed;right:calc(12px + env(safe-area-inset-right));bottom:calc(24px + env(safe-area-inset-bottom));z-index:950;height:56px;padding:0 20px 0 16px;border-radius:999px;border:0;background:#B3141F;color:#F7F1E6;display:flex;align-items:center;gap:8px;font-weight:700;font-size:16px;box-shadow:0 10px 26px #0005}
+.fab:hover{filter:brightness(1.08)}
+.leaflet-bottom.leaflet-right .leaflet-control-zoom{margin-bottom:76px}
+.chat{position:fixed;right:12px;bottom:calc(24px + env(safe-area-inset-bottom));z-index:1002;width:min(390px,calc(100vw - 24px));height:min(600px,calc(100vh - 110px));background:var(--card);border-radius:20px;box-shadow:0 16px 44px #0005;display:flex;flex-direction:column;overflow:hidden}
+.chh{display:flex;align-items:center;gap:8px;padding:14px 12px 12px 18px;background:#B3141F;color:#F7F1E6}
+.chh div{flex:1}.chh h2{font:600 24px Fraunces,Georgia,serif}.chh small{opacity:.85;font-size:13px}
+.chh .x{width:40px;height:40px;border-radius:50%;border:0;background:#ffffff26;color:#fff;font-size:22px;line-height:1}
+.clog{flex:1;overflow:auto;padding:14px;display:flex;flex-direction:column;gap:10px}
+.msg{max-width:92%;border-radius:16px;padding:10px 13px;font-size:15px;line-height:1.45}
+.msg p{margin:0 0 6px}.msg p:last-child{margin:0}.msg ul{margin:4px 0 8px;padding-left:20px}
+.msg.bot{background:var(--soft);align-self:flex-start;border-bottom-left-radius:4px}
+.msg.me{background:var(--wine);color:#fff;align-self:flex-end;border-bottom-right-radius:4px}
+.msg .acts{margin-top:8px}.msg .note{margin-top:6px}
+.csug{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}.csug .chip{min-height:36px;font-size:13.5px;background:var(--card)}
+.clist{display:flex;flex-direction:column;gap:6px;margin:6px 0}
+.cres{display:flex;gap:10px;align-items:flex-start;text-align:left;border:1px solid var(--line);background:var(--card);border-radius:12px;padding:9px 11px;min-height:44px}
+.cres:hover{border-color:var(--wine)}
+.cres i{flex:none;width:11px;height:11px;border-radius:50%;margin-top:6px;border:1px solid #0003}
+.cres small,.cev small{display:block;color:var(--mute);font-size:13px}.cres .cw{color:var(--ink)}
+.cev{border:1px solid var(--line);background:var(--card);border-radius:12px;padding:9px 11px}.cev .acts{margin-top:6px}.cev .btn{min-height:36px}
+.cin{display:flex;gap:8px;padding:10px 12px;border-top:1px solid var(--line)}
+.cin input{flex:1;height:46px;border-radius:999px;border:1px solid var(--border);background:var(--bg);padding:0 16px;font-size:16px}
+.cin .btn{width:46px;height:46px;padding:0}
+.fids{display:flex;align-items:center;gap:10px;background:var(--soft);border-radius:12px;padding:10px 12px;margin-top:12px;font-size:14px}.fids span{flex:1}
+@media(max-width:700px){
+ .chat{left:0;right:0;bottom:0;width:100%;height:82vh;border-radius:20px 20px 0 0;padding-bottom:env(safe-area-inset-bottom)}
+ .fab{padding:0 16px}.fab span{display:none}.fab{width:56px;justify-content:center}
+}
+@media(min-width:701px){.panel.open~.chat{right:calc(min(430px,100vw - 24px) + 24px)}}
 /* inside the Android / iPhone app Google sign-in is not available yet */
 .inapp #gBtn{display:none!important}
 @media(prefers-reduced-motion:reduce){.panel,.toast,.bottle{transition:none}}
@@ -343,13 +373,14 @@ function wineOk(x){const f=S.f;
   if(f.prices.size){const p=x.price;if(p===""||p==null||!isFinite(+p))return false;if(!PRICES.some(([k,,lo,hi])=>f.prices.has(k)&&+p>=lo&&+p<hi))return false}
   return true}
 function matches(w){const f=S.f;
+  if(f.ids&&!f.ids.has(w.id))return false;
   if(f.countries.size&&!f.countries.has(w.country))return false;
   if(f.areas.size&&!zonesOf(w).some(z=>f.areas.has(z.id)))return false;
   if(f.cols.size||f.prices.size){const ws=w.wines||[];
     if(!ws.length)return !f.prices.size&&(!f.cols.size||colOk(w.style));
     if(!ws.some(wineOk))return false}
   return true}
-const nActive=()=>S.f.areas.size+S.f.cols.size+S.f.prices.size+S.f.countries.size;
+const nActive=()=>S.f.areas.size+S.f.cols.size+S.f.prices.size+S.f.countries.size+(S.f.ids?1:0);
 function drawZones(){
   zoneLayer.clearLayers();
   const show=ZONES.filter(z=>S.f.areas.has(z.id)||(S.f.showAll&&(!S.f.countries.size||S.f.countries.has(z.country))));
@@ -385,6 +416,7 @@ function renderFilters(){
   const openReg=new Set([...sheet.querySelectorAll("details[open]")].map(d=>d.dataset.reg));
   sheet.innerHTML=`<div class="fh"><h2>Filter the map</h2><button class="x" aria-label="Close filters">×</button></div>
   <div class="fb">
+   ${f.ids?`<div class="fids"><span>From the chat: <b>${esc(f.idsLabel||"selected wineries")}</b></span><button class="btn" id="fIds">Remove</button></div>`:""}
    <h3>Wine colour</h3><div class="chips">${COLS.map(([k,l])=>`<button class="chip" data-col="${k}" aria-pressed="${f.cols.has(k)}"><i style="background:${STYLES[k][1]}"></i>${l}</button>`).join("")}</div>
    <h3>Country</h3><div class="chips">${ctry.map(c=>`<button class="chip" data-country="${esc(c)}" aria-pressed="${f.countries.has(c)}">${esc(c)}${nBy[c]?`<small class="n">${nBy[c]}</small>`:""}</button>`).join("")}</div>
    <h3>Price per bottle</h3><div class="chips">${PRICES.map(([k,l])=>`<button class="chip" data-price="${k}" aria-pressed="${f.prices.has(k)}">${l}</button>`).join("")}</div>
@@ -405,7 +437,8 @@ $("#fBtn").addEventListener("click",()=>$("#fsheet").hidden?openFilters():closeF
 $("#fsheet").addEventListener("click",e=>{
   const t=e.target;
   if(t.closest(".x")||t.closest("#fDone")){closeFilters();return}
-  if(t.closest("#fClear")){S.f.areas.clear();S.f.cols.clear();S.f.prices.clear();S.f.countries.clear();S.f.showAll=false;applyFilters();return}
+  if(t.closest("#fClear")){S.f.areas.clear();S.f.cols.clear();S.f.prices.clear();S.f.countries.clear();S.f.showAll=false;S.f.ids=null;applyFilters();return}
+  if(t.closest("#fIds")){S.f.ids=null;applyFilters();return}
   const c=t.closest("[data-col]");if(c){const k=c.dataset.col;S.f.cols.has(k)?S.f.cols.delete(k):S.f.cols.add(k);applyFilters();return}
   const k2=t.closest("[data-country]");if(k2){const k=k2.dataset.country,cs=S.f.countries;cs.has(k)?cs.delete(k):cs.add(k);applyFilters();fitCountries();return}
   const p=t.closest("[data-price]");if(p){const k=p.dataset.price;S.f.prices.has(k)?S.f.prices.delete(k):S.f.prices.add(k);applyFilters();return}
@@ -684,6 +717,205 @@ q.addEventListener("input",()=>{const t=q.value.trim().toLowerCase();if(!t){res.
 res.addEventListener("click",e=>{const b=e.target.closest("[data-open]");if(!b)return;res.style.display="none";q.value="";openWinery(b.dataset.open,true)});
 q.addEventListener("keydown",e=>{if(e.key==="Enter"){res.querySelector("button")?.click()}});
 document.addEventListener("click",e=>{if(!e.target.closest(".search"))res.style.display="none"});
+
+/* ---------- wine chat (rule-based helper, runs in the browser, no AI service) ---------- */
+const norm=s=>String(s??"").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,"").replace(/[’‘`]/g,"'");
+const wordRe=alts=>new RegExp("(^|[^\\p{L}\\d])("+alts.join("|")+")(?=[^\\p{L}\\d]|$)","u");
+const COLWORDS={
+  red:["reds?","rouge","rosso","tinto","κοκκιν\\p{L}*","ερυθρ\\p{L}*"],
+  white:["whites?","blanc","bianco","blanco","weiss\\p{L}*","λευκ\\p{L}*"],
+  rose:["roses?","rosato","rosado","pink","ροζε"],
+  sparkling:["sparkling","bubbl\\p{L}*","fizz\\p{L}*","prosecco","cava","cremant","sekt","pet[- ]?nat","αφρωδ\\p{L}*"],
+  sweet:["sweet","dessert","fortified","port","sherry","vinsanto","vin santo","madeira","tokaji","γλυκ\\p{L}*"],
+  amber:["amber","orange wines?","orange","skin[- ]contact","πορτοκαλ\\p{L}*"],
+  champagne:["champagnes?","σαμπαν\\p{L}*"]};
+const COLRE=Object.fromEntries(Object.entries(COLWORDS).map(([k,v])=>[k,wordRe(v)]));
+const CALIAS={greek:"Greece",greece:"Greece",ελλαδα:"Greece",ελληνικ:"Greece",french:"France",italian:"Italy",spanish:"Spain",portuguese:"Portugal",german:"Germany",austrian:"Austria",hungarian:"Hungary",georgian:"Georgia",
+  american:"USA",america:"USA","united states":"USA",us:"USA",californian:"USA",california:"USA",canadian:"Canada",argentinian:"Argentina",argentine:"Argentina",chilean:"Chile",australian:"Australia",aussie:"Australia",
+  "new zealand":"New Zealand",kiwi:"New Zealand","south african":"South Africa",japanese:"Japan",lebanese:"Lebanon",cypriot:"Cyprus",swiss:"Switzerland",slovenian:"Slovenia",croatian:"Croatia",bulgarian:"Bulgaria",
+  romanian:"Romania",moldovan:"Moldova",armenian:"Armenia",czech:"Czechia",slovak:"Slovakia",british:"United Kingdom",english:"United Kingdom",uk:"United Kingdom",england:"United Kingdom",serbian:"Serbia",
+  albanian:"Albania",maltese:"Malta",ukrainian:"Ukraine",montenegrin:"Montenegro","north macedonian":"North Macedonia",bosnian:"Bosnia and Herzegovina",luxembourgish:"Luxembourg"};
+const GRAPES=["assyrtiko","xinomavro","agiorgitiko","malagousia","moschofilero","vidiano","mavrodaphne","muscat","moscato","savatiano","robola","mandilaria","limnio","roditis","kotsifali","liatiko","athiri","aidani","mavrotragano","vilana","debina","kidonitsa","monemvasia","malvasia","retsina",
+  "chardonnay","sauvignon","merlot","cabernet","syrah","shiraz","pinot","riesling","nebbiolo","sangiovese","tempranillo","grenache","garnacha","malbec","furmint","saperavi","chenin","zinfandel","gewurztraminer","gruner","albarino","touriga","carmenere","pinotage","koshu","obeidi","xynisteri","barbera","aglianico","primitivo","verdejo","viognier","semillon","gamay","mourvedre","carignan","tannat"];
+const STOP=new Set("the a an and or of for to in on at with near me my i you is are any some show find what whats where which who wine wines winery wineries please want like looking good best nice can could get give bottle bottles around about from under over this that there here".split(" "));
+const MONTHS=["january","february","march","april","may","june","july","august","september","october","november","december"];
+
+function parseAsk(raw){
+  const t=norm(raw),q={raw,t,cols:new Set(),lo:null,hi:null,countries:new Set(),areas:[],places:[],grapes:[],winery:null,near:false,view:false,events:false,from:null,to:null,when:""};
+  for(const k in COLRE)if(COLRE[k].test(t))q.cols.add(k);
+  if(q.cols.has("champagne")&&/champagne area|champagne region|in champagne/.test(t))q.cols.delete("champagne");
+  // price
+  const n=s=>+String(s).replace(",",".");
+  let m;
+  if((m=t.match(/(?:€|eur|euro)?\s*(\d+(?:[.,]\d+)?)\s*(?:€|eur|euros?)?\s*(?:-|–|to|and)\s*(?:€|eur)?\s*(\d+(?:[.,]\d+)?)\s*(?:€|eur|euros?)?/))&&(/€|eur|price|cost|between/.test(t))){q.lo=n(m[1]);q.hi=n(m[2])}
+  else{
+    if((m=t.match(/(?:under|below|less than|cheaper than|max(?:imum)?|up to|no more than|at most|within|<|κατω απο|μεχρι)\s*(?:€|eur|euros?)?\s*(\d+(?:[.,]\d+)?)/)))q.hi=n(m[1]);
+    if((m=t.match(/(?:over|above|more than|at least|min(?:imum)?|>|πανω απο)\s*(?:€|eur|euros?)?\s*(\d+(?:[.,]\d+)?)/)))q.lo=n(m[1]);
+    if(q.lo==null&&q.hi==null&&(m=t.match(/(?:€\s*(\d+(?:[.,]\d+)?)|(\d+(?:[.,]\d+)?)\s*(?:€|eur\b|euros?))/)))q.hi=n(m[1]||m[2]);
+  }
+  if(q.hi==null&&/\b(cheap|budget|affordable|inexpensive|bargain|value|φθην)/.test(t))q.hi=15;
+  if(q.lo==null&&/\b(premium|expensive|splurge|fancy|luxury|special occasion|top end|high end|ακριβ)/.test(t))q.lo=40;
+  // countries
+  const countries=[...new Set(all().map(w=>w.country).concat(ZONES.map(z=>z.country)))];
+  for(const c of countries)if(wordRe([norm(c).replace(/[.*+?^${}()|[\]\\]/g,"\\$&")]).test(t))q.countries.add(c);
+  for(const[a,c]of Object.entries(CALIAS))if(wordRe([a+(a.length>4?"\\p{L}*":"")]).test(t))q.countries.add(c);
+  if(q.countries.has("USA")&&/\bus\b/.test(t)&&!/\b(usa|american|america|united states|california)/.test(t)&&!/\b(in|from) (the )?us\b/.test(t))q.countries.delete("USA");
+  // wine areas (longest name first) and winery regions
+  let rest=" "+t+" ";
+  const keys=[];
+  for(const z of ZONES){const names=new Set([z.name,z.el||""]);z.name.split(/\s*(?:&|:|,|\/|–)\s*/).forEach(p=>names.add(p));
+    for(const nm of names){const k=norm(nm).trim();if(k.length>=4&&!["muscat","malvasia","mavrodaphne","rhodes"].includes(k)||k===norm(z.name))keys.push([k,z])}}
+  keys.sort((a,b)=>b[0].length-a[0].length);
+  // winery by name first
+  const ws=all();
+  const strip=s=>norm(s).replace(/\b(domaine|ktima|chateau|estate|winery|wines|cellars?|bodegas?|cantina|tenuta|weingut|maison|κτημα|οινοποιειο)\b/g,"").trim();
+  const wn=ws.map(w=>[w,[norm(w.name),strip(w.name)].filter(s=>s.length>=4)]).flatMap(([w,ns])=>ns.map(s=>[s,w])).sort((a,b)=>b[0].length-a[0].length);
+  for(const[k,w]of wn)if(rest.includes(k)&&wordRe([k.replace(/[.*+?^${}()|[\]\\]/g,"\\$&")]).test(rest)){q.winery=w;rest=rest.replace(k," ");break}
+  for(const[k,z]of keys){const re=wordRe([k.replace(/[.*+?^${}()|[\]\\]/g,"\\$&")]);if(re.test(rest)&&!q.areas.includes(z)){
+    if(k==="champagne"&&q.cols.has("champagne")&&!/in champagne|champagne (area|region)/.test(t))continue;
+    q.areas.push(z);rest=rest.replace(re,"$1 ")}}
+  const regs=new Set();for(const w of ws)for(const p of String(w.region).split(/\s*[,–()]\s*/))if(p&&norm(p).length>=4)regs.add(norm(p));
+  if(q.cols.has("champagne")&&!/in champagne|champagne (area|region)/.test(t))regs.delete("champagne");
+  for(const r of[...regs].sort((a,b)=>b.length-a.length))if(wordRe([r.replace(/[.*+?^${}()|[\]\\]/g,"\\$&")]).test(rest)){q.places.push(r);rest=rest.replace(r," ")}
+  q.places=q.places.filter(p=>!q.countries.has(countries.find(c=>norm(c)===p)));
+  for(const g of GRAPES)if(wordRe([g+"s?"]).test(t))q.grapes.push(g);
+  // where
+  q.near=/near me|nearby|close to me|around me|closest|nearest|close by|κοντα μου|κοντινο/.test(t);
+  q.view=/on (the|my) (map|screen)|in view|visible|this area|around here|on screen/.test(t);
+  // events and dates
+  q.events=/event|tasting|festival|dinner|what'?s on|happening|open (cellar|day|door)|harvest|tour|visit|party|workshop|class|masterclass|εκδηλωσ|γευσιγνωσ|γιορτ/.test(t);
+  const d0=new Date(NOW.getFullYear(),NOW.getMonth(),NOW.getDate()),add=(d,k)=>{const x=new Date(d);x.setDate(x.getDate()+k);return x};
+  const set=(a,b,l)=>{q.from=a;q.to=b;q.when=l;q.events=true};
+  if(/\b(today|tonight|σημερα|αποψε)/.test(t))set(d0,add(d0,1),"today");
+  else if(/\b(tomorrow|αυριο)/.test(t))set(add(d0,1),add(d0,2),"tomorrow");
+  else if(/weekend|σαββατοκυριακο/.test(t)){const dow=d0.getDay(),sat=add(d0,dow===0?-1:(6-dow)%7);const s=/next weekend/.test(t)?add(sat,7):sat;set(dow===0&&!/next/.test(t)?d0:s,add(s,2),/next/.test(t)?"next weekend":"this weekend")}
+  else if(/next week/.test(t)){const mon=add(d0,((8-d0.getDay())%7)||7);set(mon,add(mon,7),"next week")}
+  else if(/this week|εβδομαδα/.test(t)){const sun=add(d0,(7-d0.getDay())%7+1);set(d0,sun,"this week")}
+  else if(/next month/.test(t)){const a=new Date(d0.getFullYear(),d0.getMonth()+1,1);set(a,new Date(a.getFullYear(),a.getMonth()+1,1),a.toLocaleString(undefined,{month:"long"}))}
+  else if(/this month/.test(t))set(d0,new Date(d0.getFullYear(),d0.getMonth()+1,1),"this month");
+  else{const mi=MONTHS.findIndex(mo=>wordRe([mo,mo.slice(0,3)]).test(t)&&!(mo==="may"&&!/\bin may\b|\bmay \d/.test(t))&&!(mo==="march"&&/\bmarch\b/.test(t)&&!/in march|march \d/.test(t)));
+    if(mi>=0){let y=d0.getFullYear();if(mi<d0.getMonth())y++;const a=new Date(y,mi,1);set(a<d0?d0:a,new Date(y,mi+1,1),a.toLocaleString(undefined,{month:"long",year:"numeric"}))}}
+  if(/^(hi|hello|hey|yo|γεια|καλησπερα|καλημερα)\b/.test(t)&&t.split(/\s+/).length<=3)q.hello=true;
+  if(/^(help|\?|what can you do|how does this work|βοηθεια)/.test(t))q.help=true;
+  q.keywords=rest.split(/[^\p{L}\d]+/u).filter(x=>x.length>=5&&!STOP.has(x)&&!/^\d+$/.test(x));
+  return q;
+}
+function wineFits(x,q){
+  if(q.cols.size){const c=TYPE2COL[x.type];if(!(q.cols.has(c)||(c==="champagne"&&q.cols.has("sparkling"))||(x.type==="Fortified"&&q.cols.has("sweet"))))return false}
+  if(q.lo!=null||q.hi!=null){const p=+x.price;if(x.price===""||x.price==null||!isFinite(p))return false;if(q.lo!=null&&p<q.lo)return false;if(q.hi!=null&&p>q.hi)return false}
+  if(q.grapes.length){const s=norm(x.name+" "+x.notes);if(!q.grapes.some(g=>s.includes(g)))return false}
+  return true}
+const distKm=(a,b,c,d)=>{const r=Math.PI/180,x=Math.sin((c-a)*r/2)**2+Math.cos(a*r)*Math.cos(c*r)*Math.sin((d-b)*r/2)**2;return 12742*Math.asin(Math.sqrt(x))};
+function placeOk(w,q){
+  if(q.countries.size&&!q.countries.has(w.country))return false;
+  if(q.areas.length&&!zonesOf(w).some(z=>q.areas.includes(z)))return false;
+  if(q.places.length&&!q.places.some(p=>norm(w.region).includes(p)))return false;
+  if(q.view&&!map.getBounds().contains([+w.lat,+w.lng]))return false;
+  return true}
+function searchWineries(q,loc){
+  const wineQ=q.cols.size||q.lo!=null||q.hi!=null||q.grapes.length;
+  let out=[];
+  for(const w of all()){
+    if(!placeOk(w,q))continue;
+    let hits=[];
+    if(wineQ){hits=(w.wines||[]).filter(x=>wineFits(x,q));
+      if(!hits.length){if((w.wines||[]).length||q.lo!=null||q.hi!=null||q.grapes.length)continue;if(!q.cols.has(w.style))continue}}
+    if(q.kw){const s=norm([w.name,w.region,w.country,w.story,...(w.wines||[]).map(x=>x.name+" "+x.notes)].join(" "));if(!q.kw.every(k=>s.includes(k)))continue}
+    out.push({w,hits,d:loc?distKm(loc[0],loc[1],+w.lat,+w.lng):null});
+  }
+  if(loc)out.sort((a,b)=>a.d-b.d);
+  else out.sort((a,b)=>b.hits.length-a.hits.length||(b.w.real?1:0)-(a.w.real?1:0)||a.w.name.localeCompare(b.w.name));
+  return out;
+}
+function describe(q){
+  const cl=[...q.cols].map(c=>STYLES[c][0].toLowerCase());
+  let s=(cl.length?cl.join(" or ")+" ":"")+(q.grapes.length?q.grapes.map(g=>g[0].toUpperCase()+g.slice(1)).join("/")+" ":"")+"wines";
+  if(q.lo!=null&&q.hi!=null)s+=` €${q.lo}–${q.hi}`;else if(q.hi!=null)s+=` up to €${q.hi}`;else if(q.lo!=null)s+=` from €${q.lo}`;
+  const where=[...q.areas.map(zlabel),...q.places.map(p=>p.replace(/\b\p{L}/gu,c=>c.toUpperCase())),...q.countries];
+  if(where.length)s+=" in "+where.join(", ");
+  if(q.near)s+=" near you";if(q.view)s+=" in the visible map area";
+  return s;
+}
+
+const chat={open:false,log:[],busy:false,loc:null};
+const SUGG=["Sparkling under €20 in Greece","Assyrtiko from Santorini","Events this weekend","Red wines near me","Premium French reds"];
+const chatEl=document.createElement("section");chatEl.className="chat";chatEl.id="chat";chatEl.hidden=true;chatEl.setAttribute("aria-label","Wine chat");
+chatEl.innerHTML=`<div class="chh"><div><h2>Ask Winear</h2><small>Wineries, wines and events on the map</small></div><button class="x" aria-label="Close chat">×</button></div>
+ <div class="clog" id="clog" aria-live="polite"></div>
+ <form class="cin" id="cin"><input id="cq" autocomplete="off" maxlength="200" placeholder="e.g. white wines under €15 in Crete" aria-label="Ask about wines, wineries or events"><button class="btn pri" aria-label="Send"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></form>`;
+document.body.appendChild(chatEl);
+const fab=document.createElement("button");fab.className="fab";fab.id="chatBtn";fab.setAttribute("aria-label","Ask Winear: chat about wines and events");fab.setAttribute("aria-expanded","false");
+fab.innerHTML=`<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"/><path d="M9 9.5h6M9 12.5h4" stroke-linecap="round"/></svg><span>Ask</span>`;
+document.body.appendChild(fab);
+const clog=chatEl.querySelector("#clog");
+function say(html,who="bot"){const d=document.createElement("div");d.className="msg "+who;d.innerHTML=html;clog.appendChild(d);clog.scrollTop=clog.scrollHeight;return d}
+const chips=list=>`<div class="csug">${list.map(s=>`<button type="button" class="chip" data-ask="${esc(s)}">${esc(s)}</button>`).join("")}</div>`;
+function openChat(){chatEl.hidden=false;chat.open=true;fab.setAttribute("aria-expanded","true");fab.hidden=true;
+  if(!clog.children.length)say(`<p>Hi! I can find wineries, wines and events for you. Try asking about a <b>colour</b>, <b>price</b>, <b>grape</b>, <b>country</b> or <b>wine area</b>, or about <b>events</b> on certain dates.</p>${chips(SUGG)}`);
+  if(innerWidth<=700)closeFilters();setTimeout(()=>$("#cq").focus(),50)}
+function closeChat(){chatEl.hidden=true;chat.open=false;fab.hidden=false;fab.setAttribute("aria-expanded","false")}
+fab.addEventListener("click",openChat);
+chatEl.querySelector(".x").addEventListener("click",()=>{closeChat();fab.focus()});
+document.addEventListener("keydown",e=>{if(e.key==="Escape"&&chat.open){e.stopImmediatePropagation();closeChat();fab.focus()}},true);
+chatEl.querySelector("#cin").addEventListener("submit",e=>{e.preventDefault();const v=$("#cq").value.trim();if(!v)return;$("#cq").value="";ask(v)});
+const getLoc=()=>new Promise(ok=>{if(chat.loc)return ok(chat.loc);if(!navigator.geolocation)return ok(null);
+  navigator.geolocation.getCurrentPosition(p=>ok(chat.loc=[p.coords.latitude,p.coords.longitude]),()=>ok(null),{timeout:9000,maximumAge:600000})});
+const SHOWN=new Map();let shownN=0;
+async function ask(text){
+  say(esc(text),"me");
+  const q=parseAsk(text);
+  if(q.help||q.hello)return say(`<p>${q.hello?"Hello! ":""}Ask me things like:</p><ul><li>“sweet wines from Samos”</li><li>“Xinomavro under €25”</li><li>“wineries in Nemea”</li><li>“tastings next week in Crete”</li><li>“champagne near me”</li></ul><p class="note">I'm a simple helper: I understand colours, prices, grapes, countries, wine areas, winery names and dates.</p>`);
+  if(q.winery&&!q.events&&!q.cols.size&&q.lo==null&&q.hi==null&&!q.grapes.length){
+    const w=q.winery;say(`<p>Here's <b>${esc(w.name)}</b> in ${esc(w.region)}, ${esc(w.country)}. ${(w.wines||[]).length} wines, ${(w.events||[]).filter(e=>new Date(e.end||e.start)>=NOW).length} upcoming events.</p><div class="acts"><button class="btn pri" data-copen="${esc(w.id)}">Open winery</button></div>`);
+    if(innerWidth<=700)closeChat();openWinery(w.id,true);return}
+  let loc=null;
+  if(q.near){const wait=say(`<p class="note">Finding your location…</p>`);loc=await getLoc();wait.remove();
+    if(!loc)q.near=false;if(!loc)say(`<p class="note">I couldn't get your location, so I'll search everywhere. Allow location access in your browser to use “near me”.</p>`)}
+  const has=q.cols.size||q.lo!=null||q.hi!=null||q.countries.size||q.areas.length||q.places.length||q.grapes.length||q.near||q.view||q.winery;
+  if(q.events)return answerEvents(q,loc);
+  if(!has){
+    if(q.keywords.length){q.kw=q.keywords;const r=searchWineries(q,null);if(r.length)return answerWineries(q,r,null,`wineries mentioning “${esc(q.keywords.join(" "))}”`)}
+    return say(`<p>Sorry, I didn't catch that. I understand wine colours, prices, grapes, countries, wine areas, winery names and dates. Try one of these:</p>${chips(SUGG)}`);
+  }
+  const r=searchWineries(q,loc);
+  if(!r.length){
+    const loose={...q,lo:null,hi:null,grapes:[]};const r2=(q.lo!=null||q.hi!=null||q.grapes.length)?searchWineries(loose,loc):[];
+    return say(`<p>I found no ${esc(describe(q))} on the map yet.</p>${r2.length?`<p>Without the price or grape limit there are <b>${r2.length}</b>.</p><div class="acts"><button class="btn" data-ask="${esc(describe(loose))}">Show those</button></div>`:chips(SUGG.slice(0,3))}`);
+  }
+  answerWineries(q,r,loc);
+}
+function answerWineries(q,r,loc,label){
+  const id="s"+(++shownN);SHOWN.set(id,{ids:r.map(x=>x.w.id),label:label||describe(q)});
+  const top=r.slice(0,6);
+  const li=top.map(({w,hits,d})=>{const best=[...hits].sort((a,b)=>(+a.price||1e9)-(+b.price||1e9))[0];
+    return `<button class="cres" data-copen="${esc(w.id)}"><i style="background:${(STYLES[w.style]||STYLES.red)[1]}"></i><span><b>${esc(w.name)}</b><small>${esc(w.region)}, ${esc(w.country)}${d!=null?` · ${d<10?d.toFixed(1):Math.round(d)} km`:""}</small>${best?`<small class="cw">${esc(best.name)}${best.price!==""&&best.price!=null?" · "+esc(money(best.price,best.cur)):""}${hits.length>1?` · +${hits.length-1} more`:""}</small>`:""}</span></button>`}).join("");
+  const wineQ=q.cols.size||q.lo!=null||q.hi!=null||q.grapes.length,desc=label||esc(describe(q));
+  say(`<p>${wineQ||label?(r.length===1?"1 winery has":`<b>${r.length}</b> wineries have`)+" "+desc:(r.length===1?"1 winery":`<b>${r.length}</b> wineries`)+" "+desc.replace(/^wines ?/,"")}${r.length>top.length?`. Here are ${loc?"the closest":"the top"} ${top.length}`:""}:</p><div class="clist">${li}</div>
+   <div class="acts"><button class="btn pri" data-cmap="${id}">Show ${r.length===1?"it":"all "+r.length} on the map</button></div>`);
+}
+function answerEvents(q,loc){
+  const from=q.from||new Date(NOW.getFullYear(),NOW.getMonth(),NOW.getDate()),to=q.to||new Date(8e15);
+  let list=allEvents().filter(({w,e})=>{const a=new Date(e.start),b=new Date(e.end||e.start);return b>=from&&a<to&&b>=NOW&&placeOk(w,q)&&(!q.winery||w.id===q.winery.id)});
+  if(loc)list.sort((a,b)=>distKm(loc[0],loc[1],+a.w.lat,+a.w.lng)-distKm(loc[0],loc[1],+b.w.lat,+b.w.lng));
+  const where=describe({...q,cols:new Set(),lo:null,hi:null,grapes:[]}).replace(/^wines ?/,"");
+  const what=`events${q.winery?" at "+esc(q.winery.name):""}${where?" "+esc(where):""}${q.when?(/^(today|tomorrow|this|next)/.test(q.when)?" ":" in ")+esc(q.when):""}`;
+  if(!list.length)return say(`<p>No ${what} on the map right now.</p><div class="acts"><button class="btn" data-cal="1">Open the events calendar</button></div>`);
+  const top=list.slice(0,5);
+  say(`<p><b>${list.length}</b> ${what}${list.length>top.length?`. The ${loc?"closest":"next"} ${top.length}`:""}:</p><div class="clist">${top.map(({w,e})=>`<div class="cev"><b>${esc(e.title)}</b>${isLive(e)?'<span class="live">Now</span>':""}<small>${esc(when(e))}</small><small>${esc(w.name)} · ${esc(w.region)}</small>
+    <div class="acts"><button class="btn" data-copen="${esc(w.id)}" data-ctab="events">View</button><a class="btn" href="${esc(gcal(w,e))}" target="_blank" rel="noopener">＋ Calendar</a></div></div>`).join("")}</div>
+    <div class="acts"><button class="btn pri" data-cal="1">Open the events calendar</button></div>`);
+}
+chatEl.addEventListener("click",e=>{
+  const a=e.target.closest("[data-ask]");if(a){ask(a.dataset.ask);return}
+  const o=e.target.closest("[data-copen]");if(o){if(innerWidth<=700)closeChat();openWinery(o.dataset.copen,true);if(o.dataset.ctab){S.tab=o.dataset.ctab;renderWinery()}return}
+  const m=e.target.closest("[data-cmap]");if(m){const s=SHOWN.get(m.dataset.cmap);if(!s)return;
+    S.f={...S.f,areas:new Set(),cols:new Set(),prices:new Set(),countries:new Set()};S.f.ids=new Set(s.ids);S.f.idsLabel=s.label;applyFilters();
+    const b=L.latLngBounds(all().filter(w=>S.f.ids.has(w.id)).map(w=>[+w.lat,+w.lng]));
+    if(innerWidth<=700)closeChat();closePanel();
+    if(b.isValid())map.flyToBounds(b.pad(.2),{maxZoom:12,duration:.8,paddingTopLeft:[0,60],paddingBottomRight:innerWidth>700&&chat.open?[400,0]:[0,0]});
+    toast(`Showing ${s.ids.length} ${s.ids.length===1?"winery":"wineries"} from the chat · Filters → Clear to see all`);return}
+  if(e.target.closest("[data-cal]")){if(innerWidth<=700)closeChat();S.calDay=null;renderEvents()}
+});
 
 /* ---------- data ---------- */
 fetch("wineries.json?v=20261125m",{cache:"no-cache"}).then(r=>r.json()).then(d=>{S.catalog=d;drawMarkers()}).catch(()=>toast("Sample wineries could not load."));

@@ -44319,5 +44319,1633 @@
 ],
 "events": [],
 "real": true
+},
+{
+"id": "gr-kanakaris-winery",
+"name": "Kanakaris Winery",
+"region": "Peloponnese – Nemea",
+"country": "Greece",
+"lat": 37.83,
+"lng": 22.66,
+"founded": "",
+"style": "red",
+"story": "Nemea family winery.",
+"wines": [
+{
+"name": "Agiorgitiko",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "gr-domaine-barafakas",
+"name": "Domaine Barafakas",
+"region": "Peloponnese – Nemea",
+"country": "Greece",
+"lat": 37.81,
+"lng": 22.65,
+"founded": "",
+"style": "red",
+"story": "Nemea family estate.",
+"wines": [
+{
+"name": "Agiorgitiko",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "gr-lantides-winery",
+"name": "Lantides Winery",
+"region": "Peloponnese – Nemea",
+"country": "Greece",
+"lat": 37.8,
+"lng": 22.68,
+"founded": "",
+"style": "white",
+"story": "Nemea winery.",
+"wines": [
+{
+"name": "Moschofilero",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "gr-domaine-chrysostomou",
+"name": "Domaine Chrysostomou",
+"region": "Peloponnese – Nemea",
+"country": "Greece",
+"lat": 37.835,
+"lng": 22.655,
+"founded": "",
+"style": "red",
+"story": "Nemea estate.",
+"wines": [
+{
+"name": "Agiorgitiko",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "gr-markovitis-winery",
+"name": "Markovitis Winery",
+"region": "Macedonia – Naoussa",
+"country": "Greece",
+"lat": 40.65,
+"lng": 22.08,
+"founded": "",
+"style": "red",
+"story": "Naoussa family winery.",
+"wines": [
+{
+"name": "Xinomavro",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "gr-garalis-winery",
+"name": "Garalis Winery",
+"region": "Lemnos – Myrina",
+"country": "Greece",
+"lat": 39.88,
+"lng": 25.09,
+"founded": "",
+"style": "white",
+"story": "Lemnos Muscat producer.",
+"wines": [
+{
+"name": "Muscat of Lemnos",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "gr-callinico-winery",
+"name": "Callinico Winery",
+"region": "Cephalonia – Kourkoumelata",
+"country": "Greece",
+"lat": 38.13,
+"lng": 20.53,
+"founded": "",
+"style": "white",
+"story": "Cephalonian Robola producer.",
+"wines": [
+{
+"name": "Robola",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "gr-vriniotis-winery",
+"name": "Vriniotis Winery",
+"region": "Evia – Lichada",
+"country": "Greece",
+"lat": 38.5,
+"lng": 23.45,
+"founded": "",
+"style": "red",
+"story": "Evia winery.",
+"wines": [
+{
+"name": "Avgoustiatis",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "gr-karipidis-winery",
+"name": "Karipidis Winery",
+"region": "Thessaly – Larissa",
+"country": "Greece",
+"lat": 39.64,
+"lng": 22.42,
+"founded": "",
+"style": "red",
+"story": "Larissa family winery.",
+"wines": [
+{
+"name": "Limniona",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "gr-domaine-migas",
+"name": "Domaine Migas",
+"region": "Macedonia – Naoussa",
+"country": "Greece",
+"lat": 40.64,
+"lng": 22.06,
+"founded": "",
+"style": "red",
+"story": "Naoussa estate.",
+"wines": [
+{
+"name": "Xinomavro",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "gr-oenops-wines",
+"name": "Oenops Wines",
+"region": "Macedonia – Drama",
+"country": "Greece",
+"lat": 41.15,
+"lng": 24.13,
+"founded": "",
+"style": "white",
+"story": "Nikos Karatzas' Drama project.",
+"wines": [
+{
+"name": "Xinomavro",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "gr-markou-vineyards",
+"name": "Markou Vineyards",
+"region": "Attica – Peania",
+"country": "Greece",
+"lat": 37.95,
+"lng": 23.85,
+"founded": "",
+"style": "white",
+"story": "Mesogeia family winery.",
+"wines": [
+{
+"name": "Savatiano",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "gr-mpougiouris-winery",
+"name": "Mpougiouris Winery",
+"region": "Peloponnese – Achaia",
+"country": "Greece",
+"lat": 38.22,
+"lng": 21.73,
+"founded": "",
+"style": "white",
+"story": "Patras-area winery.",
+"wines": [
+{
+"name": "Mavrodaphne",
+"type": "Sweet",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "gr-domaine-papargyriou",
+"name": "Domaine Papargyriou",
+"region": "Peloponnese – Corinthia",
+"country": "Greece",
+"lat": 37.85,
+"lng": 22.62,
+"founded": "",
+"style": "red",
+"story": "Nemea-area winery.",
+"wines": [
+{
+"name": "Agiorgitiko",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "gr-ktima-evharis",
+"name": "Ktima Evharis",
+"region": "Attica – Megara",
+"country": "Greece",
+"lat": 38.05,
+"lng": 23.27,
+"founded": "",
+"style": "red",
+"story": "West Attica estate.",
+"wines": [
+{
+"name": "Evharis Red",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "gr-domaine-vassiliou",
+"name": "Domaine Vassiliou",
+"region": "Attica – Koropi",
+"country": "Greece",
+"lat": 37.9,
+"lng": 23.87,
+"founded": "",
+"style": "white",
+"story": "Koropi family estate.",
+"wines": [
+{
+"name": "Savatiano",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "gr-ktima-bosinakis",
+"name": "Ktima Bosinakis",
+"region": "Peloponnese – Mantinia",
+"country": "Greece",
+"lat": 37.555,
+"lng": 22.385,
+"founded": "",
+"style": "white",
+"story": "Mantinia family estate.",
+"wines": [
+{
+"name": "Moschofilero",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "gr-ktima-nasiakos",
+"name": "Ktima Nasiakos",
+"region": "Peloponnese – Mantinia",
+"country": "Greece",
+"lat": 37.57,
+"lng": 22.39,
+"founded": "",
+"style": "white",
+"story": "Mantinia family estate.",
+"wines": [
+{
+"name": "Moschofilero",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "gr-domaine-lykos",
+"name": "Domaine Lykos",
+"region": "Evia – Malakonta",
+"country": "Greece",
+"lat": 38.45,
+"lng": 23.65,
+"founded": "",
+"style": "white",
+"story": "Evia winery.",
+"wines": [
+{
+"name": "Malagousia",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "gr-ktima-kitrvs",
+"name": "Ktima Kitrvs",
+"region": "Macedonia – Pieria",
+"country": "Greece",
+"lat": 40.23,
+"lng": 22.48,
+"founded": "",
+"style": "red",
+"story": "Pieria estate near Mount Olympus.",
+"wines": [
+{
+"name": "Kitrvs Red",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "gr-ktima-nikolaou",
+"name": "Ktima Nikolaou",
+"region": "Peloponnese – Corinthia",
+"country": "Greece",
+"lat": 37.88,
+"lng": 22.7,
+"founded": "",
+"style": "white",
+"story": "Corinthian estate.",
+"wines": [
+{
+"name": "Assyrtiko",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "gr-domaine-kokkinos",
+"name": "Domaine Kokkinos",
+"region": "Attica – Kalyvia",
+"country": "Greece",
+"lat": 37.855,
+"lng": 23.945,
+"founded": "",
+"style": "white",
+"story": "Attica family estate.",
+"wines": [
+{
+"name": "Savatiano",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "gr-domaine-stilianou",
+"name": "Domaine Stilianou",
+"region": "Crete – Kounavi",
+"country": "Greece",
+"lat": 35.24,
+"lng": 25.21,
+"founded": "",
+"style": "white",
+"story": "Peza-area organic estate.",
+"wines": [
+{
+"name": "Vidiano",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "gr-iliana-malihin",
+"name": "Iliana Malihin",
+"region": "Crete – Agios Thomas",
+"country": "Greece",
+"lat": 35.13,
+"lng": 25.03,
+"founded": "",
+"style": "white",
+"story": "Mountain Crete estate.",
+"wines": [
+{
+"name": "Vidiano",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "gr-domaine-zacharioudakis",
+"name": "Domaine Zacharioudakis",
+"region": "Crete – Plouti",
+"country": "Greece",
+"lat": 35.03,
+"lng": 24.85,
+"founded": "",
+"style": "white",
+"story": "Southern Crete estate.",
+"wines": [
+{
+"name": "Vidiano",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "gr-domaine-karavitakis",
+"name": "Domaine Karavitakis",
+"region": "Crete – Chania",
+"country": "Greece",
+"lat": 35.48,
+"lng": 23.85,
+"founded": "",
+"style": "white",
+"story": "Chania family estate.",
+"wines": [
+{
+"name": "Vidiano",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "gr-klados-winery",
+"name": "Klados Winery",
+"region": "Crete – Chania",
+"country": "Greece",
+"lat": 35.48,
+"lng": 23.92,
+"founded": "",
+"style": "white",
+"story": "Chania winery.",
+"wines": [
+{
+"name": "Assyrtiko",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "cy-tsangarides-winery",
+"name": "Tsangarides Winery",
+"region": "Paphos – Lemona",
+"country": "Cyprus",
+"lat": 34.856,
+"lng": 32.506,
+"founded": "",
+"style": "red",
+"story": "Organic Paphos estate.",
+"wines": [
+{
+"name": "Shiraz",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "cy-ezousa-winery",
+"name": "Ezousa Winery",
+"region": "Paphos – Kannaviou",
+"country": "Cyprus",
+"lat": 34.92,
+"lng": 32.58,
+"founded": "",
+"style": "white",
+"story": "Ezousa valley winery.",
+"wines": [
+{
+"name": "Xynisteri",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "cy-domaine-nelion",
+"name": "Domaine Nelion",
+"region": "Larnaca – Kalavasos",
+"country": "Cyprus",
+"lat": 34.77,
+"lng": 33.29,
+"founded": "",
+"style": "white",
+"story": "Kalavasos estate.",
+"wines": [
+{
+"name": "Xynisteri",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "cy-kamanterena-winery-sodap",
+"name": "Kamanterena Winery (SODAP)",
+"region": "Paphos – Stroumbi",
+"country": "Cyprus",
+"lat": 34.89,
+"lng": 32.49,
+"founded": "",
+"style": "white",
+"story": "Paphos cooperative winery.",
+"wines": [
+{
+"name": "Xynisteri",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "hu-dobogo",
+"name": "Dobogó",
+"region": "Tokaj – Tokaj",
+"country": "Hungary",
+"lat": 48.124,
+"lng": 21.41,
+"founded": "",
+"style": "sweet",
+"story": "Tokaj town family estate.",
+"wines": [
+{
+"name": "Aszú 6 Puttonyos",
+"type": "Sweet",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "hu-kikelet",
+"name": "Kikelet",
+"region": "Tokaj – Tarcal",
+"country": "Hungary",
+"lat": 48.131,
+"lng": 21.35,
+"founded": "",
+"style": "white",
+"story": "Small Tarcal estate.",
+"wines": [
+{
+"name": "Hárslevelű",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "hu-demeter-zoltan",
+"name": "Demeter Zoltán",
+"region": "Tokaj – Tokaj",
+"country": "Hungary",
+"lat": 48.125,
+"lng": 21.408,
+"founded": "",
+"style": "white",
+"story": "Tokaj grower.",
+"wines": [
+{
+"name": "Szerelmi Hárslevelű",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "hu-arvay",
+"name": "Árvay",
+"region": "Tokaj – Rátka",
+"country": "Hungary",
+"lat": 48.21,
+"lng": 21.23,
+"founded": "",
+"style": "sweet",
+"story": "Family estate.",
+"wines": [
+{
+"name": "Aszú",
+"type": "Sweet",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "hu-grand-tokaj",
+"name": "Grand Tokaj",
+"region": "Tokaj – Tolcsva",
+"country": "Hungary",
+"lat": 48.28,
+"lng": 21.45,
+"founded": "",
+"style": "sweet",
+"story": "State-owned Tokaj producer.",
+"wines": [
+{
+"name": "Aszú 5 Puttonyos",
+"type": "Sweet",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "hu-fuleky",
+"name": "Füleky",
+"region": "Tokaj – Bodrogkeresztúr",
+"country": "Hungary",
+"lat": 48.162,
+"lng": 21.361,
+"founded": "",
+"style": "white",
+"story": "Bodrogkeresztúr estate.",
+"wines": [
+{
+"name": "Pallas Furmint",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "hu-tornai-pinceszet",
+"name": "Tornai Pincészet",
+"region": "Somló – Somlóvásárhely",
+"country": "Hungary",
+"lat": 47.12,
+"lng": 17.38,
+"founded": "",
+"style": "white",
+"story": "Somló producer.",
+"wines": [
+{
+"name": "Juhfark",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "hu-csetvei-pince",
+"name": "Csetvei Pince",
+"region": "Mór",
+"country": "Hungary",
+"lat": 47.37,
+"lng": 18.2,
+"founded": "",
+"style": "white",
+"story": "Mór Ezerjó producer.",
+"wines": [
+{
+"name": "Ezerjó",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "hu-bott-pince",
+"name": "Bott Pince",
+"region": "Tokaj – Bodrogkeresztúr",
+"country": "Hungary",
+"lat": 48.163,
+"lng": 21.362,
+"founded": "",
+"style": "white",
+"story": "Small Tokaj estate.",
+"wines": [
+{
+"name": "Furmint",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "hu-vida-csaladi-borbirtok",
+"name": "Vida Családi Borbirtok",
+"region": "Szekszárd",
+"country": "Hungary",
+"lat": 46.352,
+"lng": 18.702,
+"founded": "",
+"style": "red",
+"story": "Szekszárd family estate.",
+"wines": [
+{
+"name": "Bikavér",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "hu-eszterbauer",
+"name": "Eszterbauer",
+"region": "Szekszárd",
+"country": "Hungary",
+"lat": 46.353,
+"lng": 18.703,
+"founded": "",
+"style": "red",
+"story": "Szekszárd family estate.",
+"wines": [
+{
+"name": "Kadarka Nagyapám",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "hu-polgar-pince",
+"name": "Polgár Pince",
+"region": "Villány",
+"country": "Hungary",
+"lat": 45.871,
+"lng": 18.451,
+"founded": "",
+"style": "red",
+"story": "Villány family estate.",
+"wines": [
+{
+"name": "Polgár Kékfrankos",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "hu-tiffan-ede",
+"name": "Tiffán Ede",
+"region": "Villány",
+"country": "Hungary",
+"lat": 45.872,
+"lng": 18.452,
+"founded": "",
+"style": "red",
+"story": "Villány family estate.",
+"wines": [
+{
+"name": "Grand Selection",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "hu-wassmann",
+"name": "Wassmann",
+"region": "Villány – Siklós",
+"country": "Hungary",
+"lat": 45.855,
+"lng": 18.3,
+"founded": "",
+"style": "red",
+"story": "Organic Villány estate.",
+"wines": [
+{
+"name": "Blaufränkisch",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "hu-st-donat",
+"name": "St. Donát",
+"region": "Balaton – Csopak",
+"country": "Hungary",
+"lat": 46.98,
+"lng": 17.92,
+"founded": "",
+"style": "white",
+"story": "Csopak estate.",
+"wines": [
+{
+"name": "Olaszrizling",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "hu-pannonhalma-archabbey-winery",
+"name": "Pannonhalma Archabbey Winery",
+"region": "Pannonhalma",
+"country": "Hungary",
+"lat": 47.55,
+"lng": 17.75,
+"founded": "",
+"style": "white",
+"story": "Benedictine archabbey winery.",
+"wines": [
+{
+"name": "Tricollis",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "hu-etyeki-kuria",
+"name": "Etyeki Kúria",
+"region": "Etyek",
+"country": "Hungary",
+"lat": 47.45,
+"lng": 18.75,
+"founded": "",
+"style": "white",
+"story": "Etyek estate near Budapest.",
+"wines": [
+{
+"name": "Sauvignon Blanc",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "hu-kovacs-nimrod",
+"name": "Kovács Nimród",
+"region": "Eger",
+"country": "Hungary",
+"lat": 47.902,
+"lng": 20.382,
+"founded": "",
+"style": "red",
+"story": "Eger estate.",
+"wines": [
+{
+"name": "Monopole Rhapsody",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "hu-bolyki",
+"name": "Bolyki",
+"region": "Eger",
+"country": "Hungary",
+"lat": 47.903,
+"lng": 20.383,
+"founded": "",
+"style": "red",
+"story": "Eger estate in a quarry.",
+"wines": [
+{
+"name": "Bikavér",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "si-ferdinand",
+"name": "Ferdinand",
+"region": "Goriška Brda – Kojsko",
+"country": "Slovenia",
+"lat": 46.01,
+"lng": 13.56,
+"founded": "",
+"style": "white",
+"story": "Brda family estate.",
+"wines": [
+{
+"name": "Rebula",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "si-gasper",
+"name": "Gašper",
+"region": "Goriška Brda – Medana",
+"country": "Slovenia",
+"lat": 45.99,
+"lng": 13.51,
+"founded": "",
+"style": "white",
+"story": "Brda producer.",
+"wines": [
+{
+"name": "Rebula",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "si-dolfo",
+"name": "Dolfo",
+"region": "Goriška Brda – Ceglo",
+"country": "Slovenia",
+"lat": 45.996,
+"lng": 13.525,
+"founded": "",
+"style": "sparkling",
+"story": "Brda family estate.",
+"wines": [
+{
+"name": "Spirito Brut",
+"type": "Sparkling",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "si-erzetic",
+"name": "Erzetič",
+"region": "Goriška Brda – Višnjevik",
+"country": "Slovenia",
+"lat": 46.02,
+"lng": 13.54,
+"founded": "",
+"style": "white",
+"story": "Brda family estate.",
+"wines": [
+{
+"name": "Rebula",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "si-pasji-rep",
+"name": "Pasji Rep",
+"region": "Vipava Valley – Vrhpolje",
+"country": "Slovenia",
+"lat": 45.84,
+"lng": 13.96,
+"founded": "",
+"style": "white",
+"story": "Vipava estate.",
+"wines": [
+{
+"name": "Zelen",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "si-mlecnik",
+"name": "Mlečnik",
+"region": "Vipava Valley – Bukovica",
+"country": "Slovenia",
+"lat": 45.89,
+"lng": 13.68,
+"founded": "",
+"style": "amber",
+"story": "Natural Vipava estate.",
+"wines": [
+{
+"name": "Ana",
+"type": "Amber",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "si-stoka",
+"name": "Štoka",
+"region": "Karst – Krajna vas",
+"country": "Slovenia",
+"lat": 45.77,
+"lng": 13.77,
+"founded": "",
+"style": "red",
+"story": "Karst Teran producer.",
+"wines": [
+{
+"name": "Teran",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "si-vina-kogl",
+"name": "Vina Kogl",
+"region": "Štajerska – Velika Nedelja",
+"country": "Slovenia",
+"lat": 46.42,
+"lng": 16.11,
+"founded": "",
+"style": "white",
+"story": "Hilltop Štajerska estate.",
+"wines": [
+{
+"name": "Furmint",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "si-marof",
+"name": "Marof",
+"region": "Prekmurje – Mačkovci",
+"country": "Slovenia",
+"lat": 46.75,
+"lng": 16.16,
+"founded": "",
+"style": "white",
+"story": "Prekmurje estate.",
+"wines": [
+{
+"name": "Breg Chardonnay",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "si-joannes-protner",
+"name": "Joannes Protner",
+"region": "Štajerska – Vosek",
+"country": "Slovenia",
+"lat": 46.62,
+"lng": 15.68,
+"founded": "",
+"style": "sparkling",
+"story": "Štajerska sekt producer.",
+"wines": [
+{
+"name": "Penina",
+"type": "Sparkling",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "hr-galic",
+"name": "Galić",
+"region": "Slavonia – Kutjevo",
+"country": "Croatia",
+"lat": 45.426,
+"lng": 17.886,
+"founded": "",
+"style": "white",
+"story": "Kutjevo estate.",
+"wines": [
+{
+"name": "Graševina",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "hr-ilocki-podrumi",
+"name": "Iločki Podrumi",
+"region": "Srijem – Ilok",
+"country": "Croatia",
+"lat": 45.22,
+"lng": 19.37,
+"founded": "1450",
+"style": "white",
+"story": "Cellars in Ilok with a centuries-old tradition.",
+"wines": [
+{
+"name": "Traminac",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "hr-josic",
+"name": "Josić",
+"region": "Baranja – Zmajevac",
+"country": "Croatia",
+"lat": 45.81,
+"lng": 18.82,
+"founded": "",
+"style": "red",
+"story": "Baranja estate with restaurant.",
+"wines": [
+{
+"name": "Frankovka",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "hr-coronica",
+"name": "Coronica",
+"region": "Istria – Umag",
+"country": "Croatia",
+"lat": 45.421,
+"lng": 13.57,
+"founded": "",
+"style": "white",
+"story": "Istrian estate.",
+"wines": [
+{
+"name": "Gran Malvazija",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "hr-cattunar",
+"name": "Cattunar",
+"region": "Istria – Brtonigla",
+"country": "Croatia",
+"lat": 45.38,
+"lng": 13.64,
+"founded": "",
+"style": "white",
+"story": "Istrian family estate.",
+"wines": [
+{
+"name": "Malvazija",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "hr-meneghetti",
+"name": "Meneghetti",
+"region": "Istria – Bale",
+"country": "Croatia",
+"lat": 45.04,
+"lng": 13.79,
+"founded": "",
+"style": "white",
+"story": "Istrian estate and hotel.",
+"wines": [
+{
+"name": "Meneghetti White",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "hr-piquentum",
+"name": "Piquentum",
+"region": "Istria – Buzet",
+"country": "Croatia",
+"lat": 45.41,
+"lng": 13.97,
+"founded": "",
+"style": "white",
+"story": "Natural Istrian producer.",
+"wines": [
+{
+"name": "Malvazija",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "hr-kabola",
+"name": "Kabola",
+"region": "Istria – Momjan",
+"country": "Croatia",
+"lat": 45.44,
+"lng": 13.7,
+"founded": "",
+"style": "white",
+"story": "Momjan family estate.",
+"wines": [
+{
+"name": "Malvazija Amfora",
+"type": "Amber",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "hr-gracin",
+"name": "Gracin",
+"region": "Dalmatia – Primošten",
+"country": "Croatia",
+"lat": 43.59,
+"lng": 15.93,
+"founded": "",
+"style": "red",
+"story": "Babić specialist.",
+"wines": [
+{
+"name": "Babić",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "hr-testament",
+"name": "Testament",
+"region": "Dalmatia – Šibenik",
+"country": "Croatia",
+"lat": 43.73,
+"lng": 15.93,
+"founded": "",
+"style": "red",
+"story": "Dalmatian estate.",
+"wines": [
+{
+"name": "Babić",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "hr-plenkovic",
+"name": "Plenković",
+"region": "Dalmatia – Hvar",
+"country": "Croatia",
+"lat": 43.165,
+"lng": 16.7,
+"founded": "",
+"style": "red",
+"story": "Hvar family estate.",
+"wines": [
+{
+"name": "Zlatan Plavac",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "hr-milos",
+"name": "Miloš",
+"region": "Dalmatia – Pelješac",
+"country": "Croatia",
+"lat": 42.93,
+"lng": 17.45,
+"founded": "",
+"style": "red",
+"story": "Ponikve family estate.",
+"wines": [
+{
+"name": "Stagnum",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "hr-matusko",
+"name": "Matuško",
+"region": "Dalmatia – Pelješac",
+"country": "Croatia",
+"lat": 42.985,
+"lng": 17.2,
+"founded": "",
+"style": "red",
+"story": "Pelješac family winery.",
+"wines": [
+{
+"name": "Dingač",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "hr-toreta",
+"name": "Toreta",
+"region": "Dalmatia – Korčula",
+"country": "Croatia",
+"lat": 42.955,
+"lng": 16.88,
+"founded": "",
+"style": "white",
+"story": "Smokvica Pošip producer.",
+"wines": [
+{
+"name": "Pošip",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
 }
 ]

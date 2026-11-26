@@ -308,6 +308,11 @@ form h3{font-size:22px;margin-top:22px}
 .showall{display:flex;align-items:center;gap:10px;padding:8px 0 4px;font-size:14.5px;cursor:pointer}
 .showall input,.area input{width:18px;height:18px;margin:0;accent-color:var(--wine);flex:none}
 .areas details{border-top:1px solid var(--line)}
+.fsel{position:relative}
+.fsel select{width:100%;appearance:none;-webkit-appearance:none;font:inherit;font-size:16px;padding:10px 40px 10px 14px;border-radius:12px;border:1px solid var(--line);background:var(--bg);color:var(--ink);min-height:46px;cursor:pointer}
+.fsel select:focus-visible{outline:2px solid var(--wine);outline-offset:1px}
+.fsel::after{content:"";position:absolute;right:16px;top:50%;width:8px;height:8px;border-right:2px solid var(--mute);border-bottom:2px solid var(--mute);transform:translateY(-70%) rotate(45deg);pointer-events:none}
+.areas.one{border-top:1px solid var(--line);padding-top:4px}
 .areas summary{padding:11px 2px;cursor:pointer;font-weight:700;font-size:15px;list-style-position:inside}
 .areas summary span{float:right;font-weight:400;color:var(--mute);font-size:13px}
 .area{display:grid;grid-template-columns:18px 14px 1fr;gap:1px 10px;align-items:center;padding:6px 2px;cursor:pointer;border-radius:8px}
@@ -633,14 +638,20 @@ function renderFilters(){
    ${f.ids?`<div class="fids"><span>From the chat: <b>${esc(f.idsLabel||"selected wineries")}</b></span><button class="btn" id="fIds">Remove</button></div>`:""}
    <h3>Visiting</h3><div class="chips"><button class="chip" data-opennow aria-pressed="${!!f.openNow}"><i style="background:#2e8b57"></i>Open now<small class="n">${list.filter(isOpenNow).length}</small></button></div>
    <h3>Wine colour</h3><div class="chips">${COLS.map(([k,l])=>`<button class="chip" data-col="${k}" aria-pressed="${f.cols.has(k)}"><i style="background:${STYLES[k][1]}"></i>${l}</button>`).join("")}</div>
-   <h3>Country</h3><div class="chips">${ctry.map(c=>`<button class="chip" data-country="${esc(c)}" aria-pressed="${f.countries.has(c)}">${esc(c)}${nBy[c]?`<small class="n">${nBy[c]}</small>`:""}</button>`).join("")}</div>
    <h3>Price per bottle</h3><div class="chips">${PRICES.map(([k,l])=>`<button class="chip" data-price="${k}" aria-pressed="${f.prices.has(k)}">${l}</button>`).join("")}</div>
-   <h3>Wine areas · ${ZONES.length} areas in ${byC.length} countries</h3>
+   <h3><label for="fCountry">Country</label></h3><div class="fsel"><select id="fCountry"><option value="">All countries (${list.length} wineries)</option>${f.countries.size>1?`<option value="*" selected>${f.countries.size} countries selected</option>`:""}${ctry.map(c=>`<option value="${esc(c)}" ${f.countries.size===1&&f.countries.has(c)?"selected":""}>${esc(c)} (${nBy[c]||0})</option>`).join("")}</select></div>
+   ${(()=>{const one=f.countries.size===1?[...f.countries][0]:null,zs1=one?(byC.find(x=>x[0]===one)||[one,[]])[1]:null;
+   if(one){let last="";return`<h3>Wine areas in ${esc(one)} · ${zs1.length}</h3>
+   ${zs1.length?`<label class="showall"><input type="checkbox" id="fAll" ${f.showAll?"checked":""}>Show all ${esc(one)} areas on the map</label>
+   <div class="areas one">${[...zs1].sort(regOrd(one)).map(z=>{const h=z.region!==last?`<div class="areg">${esc(z.region)}</div>`:"";last=z.region;
+       return h+`<label class="area"><input type="checkbox" data-area="${z.id}" ${f.areas.has(z.id)?"checked":""}><span class="sw" style="background:color-mix(in srgb,${z.col} 35%,transparent);border-color:${z.col}"></span><span>${esc(z.name)}${z.kind?` <em>${esc(z.kind)}</em>`:""}</span><small>${esc(z.wines)}</small></label>`}).join("")}</div>`:'<p class="fnote">No wine areas drawn for this country yet.</p>'}`}
+   return`<h3>Wine areas · ${ZONES.length} areas in ${byC.length} countries</h3>
+   <p class="fnote" style="margin:0 0 8px">Choose a country above to see only its areas.</p>
    <label class="showall"><input type="checkbox" id="fAll" ${f.showAll?"checked":""}>Show all areas on the map</label>
    <div class="areas">${byC.map(([c,zs])=>{const on=zs.filter(z=>f.areas.has(z.id)).length;let last="";
      return `<details data-reg="${esc(c)}" ${on||openReg.has(c)?"open":""}><summary>${esc(c)}<span>${on?on+" selected · ":""}${zs.length}</span></summary>
      ${[...zs].sort(regOrd(c)).map(z=>{const h=z.region!==last?`<div class="areg">${esc(z.region)}</div>`:"";last=z.region;
-       return h+`<label class="area"><input type="checkbox" data-area="${z.id}" ${f.areas.has(z.id)?"checked":""}><span class="sw" style="background:color-mix(in srgb,${z.col} 35%,transparent);border-color:${z.col}"></span><span>${esc(z.name)}${z.kind?` <em>${esc(z.kind)}</em>`:""}</span><small>${esc(z.wines)}</small></label>`}).join("")}</details>`}).join("")}</div>
+       return h+`<label class="area"><input type="checkbox" data-area="${z.id}" ${f.areas.has(z.id)?"checked":""}><span class="sw" style="background:color-mix(in srgb,${z.col} 35%,transparent);border-color:${z.col}"></span><span>${esc(z.name)}${z.kind?` <em>${esc(z.kind)}</em>`:""}</span><small>${esc(z.wines)}</small></label>`}).join("")}</details>`}).join("")}</div>`})()}
    <p class="fnote">Tap an area on the map for its wines and wineries. Labels show each country's appellation tier (AOC, DOCG, DO, PDO…). Outlines are approximate.</p>
   </div>
   <div class="ff"><span class="cnt"><b>${hit}</b> of ${list.length} wineries</span><button class="btn" id="fClear" ${nActive()||f.showAll?"":"disabled"}>Clear all</button><button class="btn pri" id="fDone">Show map</button></div>`;
@@ -662,6 +673,9 @@ $("#fsheet").addEventListener("click",e=>{
 $("#fsheet").addEventListener("change",e=>{
   const t=e.target;
   if(t.id==="fAll"){S.f.showAll=t.checked;applyFilters();return}
+  if(t.id==="fCountry"){const v=t.value;if(v==="*")return;const cs=S.f.countries;cs.clear();if(v)cs.add(v);
+    if(v)for(const id of[...S.f.areas]){const z=ZONES.find(z=>z.id===id);if(z&&z.country!==v)S.f.areas.delete(id)}
+    applyFilters();if(v)fitCountries();const sel=$("#fCountry");if(sel)sel.focus();return}
   if(t.dataset.area){const k=t.dataset.area;t.checked?S.f.areas.add(k):S.f.areas.delete(k);applyFilters(t.checked)}
 });
 document.addEventListener("keydown",e=>{if(e.key==="Escape"&&!$("#fsheet").hidden){e.stopImmediatePropagation();closeFilters();$("#fBtn").focus()}},true);

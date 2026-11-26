@@ -1256,7 +1256,7 @@ function recommendNear(loc,near){
 window.dzLocate=dzLocate;
 
 /* ---------- data ---------- */
-fetch("wineries.json?v=202611261515",{cache:"no-cache"}).then(r=>r.json()).then(d=>{S.catalog=d;drawMarkers()}).catch(()=>toast("Sample wineries could not load."));
+fetch("wineries.json?v=202611261516",{cache:"no-cache"}).then(r=>r.json()).then(d=>{S.catalog=d;drawMarkers()}).catch(()=>toast("Sample wineries could not load."));
 
 /* ---------- sign-in ---------- */
 let entered=false;try{entered=sessionStorage.getItem("winear-in")==="1"}catch{}

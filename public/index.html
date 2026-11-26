@@ -85,6 +85,38 @@ button{cursor:pointer}
 .dlg label{display:block;font-weight:500;font-size:14px;margin:10px 0 4px}
 .dlg textarea{width:100%;min-height:130px;font-size:16px;padding:10px 12px;border-radius:12px;border:1px solid var(--border);background:var(--bg);resize:vertical}
 .dlg .cnt{font-size:12px;color:var(--mute);text-align:right;margin-top:2px}
+.dlg input[type=text],.dlg input[type=tel],.dlg select{width:100%;font-size:16px;padding:9px 12px;border-radius:12px;border:1px solid var(--border);background:var(--bg);min-height:44px}
+.dlg .radios{display:flex;flex-wrap:wrap;gap:8px;margin:4px 0 2px}
+.dlg .radios label{display:flex;align-items:center;gap:8px;margin:0;border:1px solid var(--line);border-radius:12px;padding:8px 12px;font-weight:500;cursor:pointer}
+.dlg .radios input{accent-color:var(--wine);width:18px;height:18px}
+.acct{max-width:560px!important;max-height:calc(100dvh - 32px);overflow:auto}
+.acct .top{display:flex;align-items:center;gap:14px;margin-bottom:8px}
+.acct .top img{width:56px;height:56px;border-radius:50%;flex:none}
+.acct .top h2{margin:0;font-size:28px}
+.acct .top small{display:block;color:var(--mute);font-size:14px}
+.acct .grid{display:grid;grid-template-columns:1fr 1fr;gap:0 12px}
+.acct .grid .full{grid-column:1/-1}
+.acct textarea{min-height:90px!important}
+.acct h3{font-size:20px;margin:22px 0 6px;padding-top:14px;border-top:1px solid var(--line)}
+.acct .slist{list-style:none;margin:0;padding:0}
+.acct .slist li{display:flex;align-items:center;gap:10px;padding:6px 0;border-bottom:1px solid var(--line)}
+.acct .slist li:last-child{border-bottom:0}
+.acct .slist i{width:10px;height:10px;border-radius:50%;flex:none;border:1px solid #0002}
+.acct .slist button.go{flex:1;text-align:left;border:0;background:none;padding:6px 0;min-height:40px;color:var(--ink)}
+.acct .slist button.go:hover b{color:var(--wine)}
+.acct .slist small{display:block;color:var(--mute);font-size:13px}
+.acct .slist button.rm{border:0;background:none;width:40px;height:40px;border-radius:50%;font-size:20px;color:var(--mute)}
+.acct .slist button.rm:hover{background:var(--soft);color:var(--wine)}
+.acct .empty{color:var(--mute);font-size:14px;margin:4px 0}
+.acct .wbox{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px;margin-top:22px;padding:14px;border-radius:14px;background:var(--soft)}
+.acct .wbox p{margin:0;color:var(--ink);font-size:14px;flex:1;min-width:200px}
+.svbtn{border:0;background:none;font-size:20px;line-height:1;width:36px;height:36px;border-radius:50%;color:var(--mute);align-self:start}
+.svbtn:hover{background:var(--soft)}.svbtn.on{color:var(--gold)}
+.wine.sv{grid-template-columns:14px 1fr auto auto}
+.wine.sv .n,.wine.sv .src{grid-column:2/5}
+.ph .meta button.svw{background:#ffffff1f;border:0;color:#fff;border-radius:999px;padding:3px 12px;font-size:13px;min-height:28px}
+.ph .meta button.svw.on{background:var(--gold);color:#2a1a00}
+@media(max-width:520px){.acct .grid{grid-template-columns:1fr}}
 .dlg .acts{display:flex;justify-content:flex-end;gap:8px;margin-top:14px}
 .menu{position:fixed;top:66px;right:12px;z-index:1001;background:var(--card);border-radius:14px;box-shadow:0 12px 34px #0004;min-width:240px;padding:6px;display:none}
 .menu button{display:flex;justify-content:space-between;align-items:center;width:100%;border:0;background:none;text-align:left;padding:10px 12px;border-radius:10px;min-height:44px}
@@ -344,12 +376,38 @@ if(/WinearApp/.test(navigator.userAgent)) document.documentElement.classList.add
   <div class="adm-bar"><h1 id="admTitle">Administrator</h1><button type="button" id="admClose">← Back to the map</button></div>
   <div class="adm-body"><div class="adm-empty"><h2>Your admin area</h2><p>Nothing here yet. Winery requests and site tools will appear on this page.</p></div></div>
 </section>
+<div class="dlg" id="acctDlg" hidden role="dialog" aria-modal="true" aria-labelledby="acTitle">
+  <form id="acctForm" class="acct">
+    <div class="top"><img id="acImg" alt="" referrerpolicy="no-referrer"><div><h2 id="acTitle">Your account</h2><small id="acEmail"></small></div></div>
+    <div class="grid">
+      <div class="full"><label for="acName">Name shown on Winear.me</label><input type="text" id="acName" maxlength="100" autocomplete="name"></div>
+      <div><label for="acFirst">First name</label><input type="text" id="acFirst" maxlength="100" autocomplete="given-name"></div>
+      <div><label for="acLast">Last name</label><input type="text" id="acLast" maxlength="100" autocomplete="family-name"></div>
+      <div class="full"><label for="acOrg">Organization</label><input type="text" id="acOrg" maxlength="150" autocomplete="organization" placeholder="Company, restaurant, wine club…"></div>
+      <div><label for="acPhone">Phone</label><input type="tel" id="acPhone" maxlength="40" autocomplete="tel"></div>
+      <div><label for="acPlace">City and country</label><input type="text" id="acPlace" maxlength="100" placeholder="e.g. Athens, Greece"></div>
+      <div class="full"><label for="acAbout">About me</label><textarea id="acAbout" maxlength="1000" placeholder="Favourite wines, what you are looking for…"></textarea></div>
+    </div>
+    <div class="acts"><button type="button" class="btn" id="acClose">Close</button><button type="submit" class="btn pri" id="acSave">Save details</button></div>
+    <h3>Saved wineries <span class="badge" id="acWyN">0</span></h3>
+    <ul class="slist" id="acWy"></ul>
+    <h3>Saved wines <span class="badge" id="acWnN">0</span></h3>
+    <ul class="slist" id="acWn"></ul>
+    <div class="wbox"><p id="acWStat">Do you make wine? Ask the administrator to link your account to your winery.</p><button type="button" class="btn pri" id="acWinery">I’m a winery</button></div>
+  </form>
+</div>
 <div class="dlg" id="wineryDlg" hidden role="dialog" aria-modal="true" aria-labelledby="wdTitle">
   <form id="wdForm">
-    <h2 id="wdTitle">I am a winery</h2>
-    <p>Tell the administrator about your winery. Your account will be marked as a winery account.</p>
+    <h2 id="wdTitle">I’m a winery</h2>
+    <p>Send a message to the administrator. They will link your account to your winery so you can manage its page.</p>
+    <div class="radios" role="radiogroup" aria-label="Your winery">
+      <label><input type="radio" name="wdKind" value="existing" checked> My winery is on the map</label>
+      <label><input type="radio" name="wdKind" value="new"> It is a new winery</label>
+    </div>
+    <div id="wdExisting"><label for="wdPick">Your winery</label><input type="text" id="wdPick" list="wdList" maxlength="200" placeholder="Start typing the winery name" autocomplete="off"><datalist id="wdList"></datalist></div>
+    <div id="wdNew" hidden><label for="wdName">Winery name</label><input type="text" id="wdName" maxlength="200"><label for="wdPlace">Town, region and country</label><input type="text" id="wdPlace" maxlength="200" placeholder="e.g. Nemea, Peloponnese, Greece"></div>
     <label for="wdMsg">Message to the administrator</label>
-    <textarea id="wdMsg" required maxlength="1000" placeholder="e.g. I am the owner of Ktima … in Nemea. Please give me a winery account."></textarea>
+    <textarea id="wdMsg" maxlength="1000" placeholder="e.g. I am the owner of this winery. You can reach me at …"></textarea>
     <div class="cnt"><span id="wdCnt">0</span>/1000</div>
     <div class="acts"><button type="button" class="btn" id="wdCancel">Cancel</button><button type="submit" class="btn pri" id="wdSend">Send</button></div>
   </form>
@@ -580,6 +638,8 @@ function evCard(w,e,showWinery){
 }
 panel.addEventListener("click",async ev=>{
   const s=ev.target.closest("[data-save]");if(s){togglePlan(s.dataset.save);return}
+  const sw=ev.target.closest("[data-svw]");if(sw){toggleSaved("savedWineries",sw.dataset.svw);return}
+  const sn=ev.target.closest("[data-svwine]");if(sn){toggleSaved("savedWines",sn.dataset.svwine);return}
   const o=ev.target.closest("[data-open]");if(o){openWinery(o.dataset.open,true);return}
   const t=ev.target.closest("[data-tab]");if(t){S.tab=t.dataset.tab;renderWinery();return}
 });
@@ -597,11 +657,12 @@ function priceList(x){
 function renderWinery(){
   const w=find(S.open);if(!w)return closePanel();
   const st=STYLES[w.style]||STYLES.red;
-  const meta=`<div class="meta">${w.founded?`<span>Since ${esc(w.founded)}</span>`:""}<span>${esc(st[0])} specialist</span>${w.hours?`<span>${esc(w.hours)}</span>`:""}</div>`;
+  const fbS=!!S.fbUser,svW=fbS&&isSavedW(w.id);
+  const meta=`<div class="meta">${w.founded?`<span>Since ${esc(w.founded)}</span>`:""}<span>${esc(st[0])} specialist</span>${w.hours?`<span>${esc(w.hours)}</span>`:""}${fbS?`<button class="svw ${svW?"on":""}" data-svw="${esc(w.id)}" aria-pressed="${svW}">${svW?"★ Saved":"☆ Save winery"}</button>`:""}</div>`;
   const tabs=[["story","Story"],["wines",`Wines (${(w.wines||[]).length})`],["events",`Events (${(w.events||[]).length})`]];
   let body="";
   if(S.tab==="story")body=`${String(w.story||"").split(/\n+/).map(p=>`<p>${esc(p)}</p>`).join("")||'<p class="empty">No story yet.</p>'}${w.user?"":w.real?'<p class="note">Listing prepared from public information; the map pin shows the approximate area. Is this your winery? Soon you will be able to claim this page and add your own story, wines, prices and events.</p>':'<p class="note">Sample winery for the prototype.</p>'}`;
-  if(S.tab==="wines")body=(w.wines||[]).length?(w.wines).map(x=>`<div class="wine"><i style="background:${TYPECOL[x.type]||"#999"}"></i><div><b>${esc(x.name)}</b><span class="t">${esc(x.type)}</span></div><div class="pr">${x.prices&&x.prices.length>1?"from ":""}${esc(money(x.price,x.cur))}</div><div class="n">${esc(x.notes)}</div>${priceList(x)}</div>`).join(""):'<p class="empty">No wines listed yet.</p>';
+  if(S.tab==="wines")body=(w.wines||[]).length?(w.wines).map(x=>{const k=wineKey(w,x),on=fbS&&isSavedWine(k);return`<div class="wine${fbS?" sv":""}"><i style="background:${TYPECOL[x.type]||"#999"}"></i><div><b>${esc(x.name)}</b><span class="t">${esc(x.type)}</span></div><div class="pr">${x.prices&&x.prices.length>1?"from ":""}${esc(money(x.price,x.cur))}</div>${fbS?`<button class="svbtn ${on?"on":""}" data-svwine="${esc(k)}" aria-pressed="${on}" aria-label="${on?"Remove from":"Save to"} my account: ${esc(x.name)}" title="${on?"Saved":"Save wine"}">${on?"★":"☆"}</button>`:""}<div class="n">${esc(x.notes)}</div>${priceList(x)}</div>`}).join(""):'<p class="empty">No wines listed yet.</p>';
   if(S.tab==="events"){const evs=[...(w.events||[])].filter(e=>e&&e.start).sort((a,b)=>new Date(a.start)-new Date(b.start));const up=evs.filter(e=>new Date(e.end||e.start)>=NOW);body=up.length?up.map(e=>evCard(w,e,false)).join(""):'<p class="empty">No upcoming events.</p>'}
   show(head(esc(w.name),`${esc(w.region)} · ${esc(w.country)}`,meta)+`<div class="tabs" role="tablist">${tabs.map(([k,l])=>`<button role="tab" data-tab="${k}" aria-selected="${S.tab===k}">${l}</button>`).join("")}</div><div class="pb">${body}</div>`,"winery");
 }
@@ -654,11 +715,11 @@ async function renderMenu(){
   if(S.fbUser){
     const u=S.fbUser;
     const adm=isAdminUser(u),win=S.role==="winery";
-    const items=adm?[`<button role="menuitem" data-m="fbadmin">Administrator</button>`]
-      :win?[`<button role="menuitem" disabled>Winery account ✓</button>`]
-      :[`<button role="menuitem" data-m="fbwinery">I am a winery</button>`];
+    const n=svList("savedWineries").length+svList("savedWines").length;
+    const items=[`<button role="menuitem" data-m="account">Account${n?` <span class="badge">${n}</span>`:""}</button>`];
+    if(adm)items.push(`<button role="menuitem" data-m="fbadmin">Administrator</button>`);
     $("#menu").innerHTML=`<div class="who"><b></b>${adm?'<span class="role">Admin</span>':win?'<span class="role">Winery</span>':""}<small></small></div>${items.join("")}<button role="menuitem" data-m="signout">Sign out</button>`;
-    $("#menu .who b").textContent=u.displayName||"Signed in";$("#menu .who small").textContent=u.email||"";return;
+    $("#menu .who b").textContent=(S.profile&&S.profile.name)||u.displayName||"Signed in";$("#menu .who small").textContent=u.email||"";return;
   }
   const me=S.user?await S.user.me():null;
   const pend=Object.values(S.requests).filter(r=>r.status==="pending").length;
@@ -674,7 +735,7 @@ async function renderMenu(){
   $("#menu .who small").textContent=me?.email||(S.owner?"Administrator":S.id?"":"Not signed in");
 }
 $("#menu").addEventListener("click",e=>{const b=e.target.closest("[data-m]");if(!b)return;hideMenu();
-  ({plans:renderPlans,winery:renderWineryArea,admin:renderAdmin,fbadmin:openAdmin,fbwinery:openWineryDlg,signout:()=>S.fb.signOut().then(()=>toast("Signed out"))})[b.dataset.m]()});
+  ({plans:renderPlans,winery:renderWineryArea,admin:renderAdmin,fbadmin:openAdmin,account:openAccount,signout:()=>S.fb.signOut().then(()=>toast("Signed out"))})[b.dataset.m]()});
 
 /* ---------- winery request & editor ---------- */
 function renderWineryArea(){
@@ -1104,14 +1165,16 @@ const FB=window.WINEAR_FIREBASE;
 // Administrator accounts (also enforced in the Firestore security rules)
 const ADMIN_EMAILS=["tsiorak@gmail.com"];
 const isAdminUser=u=>!!(u&&u.emailVerified&&ADMIN_EMAILS.includes(String(u.email||"").toLowerCase()));
-S.role=null;
+S.role=null;S.profile=null;
+const FV=()=>firebase.firestore.FieldValue;
 async function loadRole(u){
-  S.role=null;if(!u||!S.fs)return;
+  S.role=null;S.profile=null;if(!u||!S.fs)return;
   try{
     const ref=S.fs.collection("users").doc(u.uid),snap=await ref.get();
-    if(snap.exists){S.role=snap.data().role||"user"}
-    else{S.role="user";await ref.set({email:u.email||"",name:u.displayName||"",role:"user",createdAt:firebase.firestore.FieldValue.serverTimestamp()})}
+    if(snap.exists){S.profile=snap.data();S.role=S.profile.role||"user"}
+    else{S.role="user";S.profile={email:u.email||"",name:u.displayName||"",role:"user"};await ref.set({...S.profile,createdAt:FV().serverTimestamp()})}
   }catch(e){console.warn("role",e.code||e)}
+  rerender();
 }
 function openAdmin(){
   if(!isAdminUser(S.fbUser))return toast("Administrators only.");
@@ -1121,23 +1184,112 @@ function openAdmin(){
 function closeAdmin(){$("#adminPage").hidden=true;if(location.hash==="#admin")history.replaceState(null,"",location.pathname+location.search)}
 $("#admClose").onclick=closeAdmin;
 addEventListener("hashchange",()=>{if(location.hash==="#admin")openAdmin();else if(!$("#adminPage").hidden)closeAdmin()});
+/* ---------- saved wineries & wines (winear.me) ---------- */
+const wineKey=(w,x)=>w.id+"|"+x.name;
+const svList=k=>(S.profile&&Array.isArray(S.profile[k]))?S.profile[k]:[];
+const isSavedW=id=>svList("savedWineries").includes(id);
+const isSavedWine=key=>svList("savedWines").includes(key);
+async function toggleSaved(field,key){
+  const u=S.fbUser;if(!u)return toast("Sign in to save.");if(!S.fs||!S.profile)return toast("Your account isn't ready yet, try again in a moment.");
+  const had=svList(field).includes(key),prev=svList(field);
+  if(!had&&prev.length>=500)return toast("You can save up to 500.");
+  S.profile[field]=had?prev.filter(k=>k!==key):[...prev,key];rerender();if(!ac.hidden)renderSaved();
+  try{await S.fs.collection("users").doc(u.uid).update({[field]:had?FV().arrayRemove(key):FV().arrayUnion(key),updatedAt:FV().serverTimestamp()});
+    toast(had?"Removed from your account":field==="savedWines"?"Wine saved to your account":"Winery saved to your account")}
+  catch(e){console.warn(e);S.profile[field]=prev;rerender();if(!ac.hidden)renderSaved();toast("Couldn't save right now. Please try again.")}
+}
+
+/* ---------- account window ---------- */
+const ac=$("#acctDlg");
+const AC_FIELDS={acName:"name",acFirst:"firstName",acLast:"lastName",acOrg:"organization",acPhone:"phone",acPlace:"place",acAbout:"about"};
+function openAccount(){
+  const u=S.fbUser;if(!u)return;const p=S.profile||{};
+  const parts=String(u.displayName||"").trim().split(/\s+/);
+  $("#acImg").src=/^https:\/\//.test(u.photoURL||"")?u.photoURL:"/icons/favicon.svg";
+  $("#acEmail").textContent=u.email||"";
+  for(const [id,f] of Object.entries(AC_FIELDS))$("#"+id).value=p[f]??"";
+  if(!$("#acName").value)$("#acName").value=u.displayName||"";
+  if(!p.firstName&&!p.lastName&&parts[0]){$("#acFirst").value=parts[0];$("#acLast").value=parts.slice(1).join(" ")}
+  renderSaved();renderWinerySection();ac.hidden=false;$("#acName").focus();
+  if(S.fs)S.fs.collection("wineryRequests").doc(u.uid).get().then(d=>{S.fbReq=d.exists?d.data():null;renderWinerySection()}).catch(()=>{});
+}
+const closeAccount=()=>{ac.hidden=true};
+function renderSaved(){
+  const wy=svList("savedWineries").map(id=>({id,w:find(id)}));
+  $("#acWyN").textContent=wy.length;
+  $("#acWy").innerHTML=wy.map(({id,w})=>w?`<li><i style="background:${(STYLES[w.style]||STYLES.red)[1]||"var(--wine)"}"></i><button type="button" class="go" data-go="${esc(id)}"><b>${esc(w.name)}</b><small>${esc(w.region)} · ${esc(w.country)}</small></button><button type="button" class="rm" data-rmw="${esc(id)}" aria-label="Remove ${esc(w.name)}">×</button></li>`
+    :`<li><button type="button" class="go" disabled><b>Winery no longer listed</b></button><button type="button" class="rm" data-rmw="${esc(id)}" aria-label="Remove">×</button></li>`).join("")||'<li class="empty">No wineries yet. Open a winery on the map and tap “☆ Save winery”.</li>';
+  const wn=svList("savedWines").map(k=>{const i=k.indexOf("|"),w=find(k.slice(0,i)),x=w&&(w.wines||[]).find(v=>v.name===k.slice(i+1));return{k,w,x}});
+  $("#acWnN").textContent=wn.length;
+  $("#acWn").innerHTML=wn.map(({k,w,x})=>x?`<li><i style="background:${TYPECOL[x.type]||"#999"}"></i><button type="button" class="go" data-gowine="${esc(w.id)}"><b>${esc(x.name)}</b><small>${esc(x.type)} · ${esc(w.name)}${x.price!=null&&x.price!==""?" · "+esc(money(x.price,x.cur)):""}</small></button><button type="button" class="rm" data-rmwine="${esc(k)}" aria-label="Remove ${esc(x.name)}">×</button></li>`
+    :`<li><button type="button" class="go" disabled><b>${esc(k.split("|").slice(1).join("|"))}</b><small>No longer listed</small></button><button type="button" class="rm" data-rmwine="${esc(k)}" aria-label="Remove">×</button></li>`).join("")||'<li class="empty">No wines yet. In a winery’s Wines tab, tap ☆ next to a wine.</li>';
+}
+function renderWinerySection(){
+  const r=S.fbReq,btn=$("#acWinery"),st=$("#acWStat"),p=S.profile||{};
+  if(S.role==="winery"){const w=p.wineryId&&find(p.wineryId);st.textContent=w?`Winery account ✓ · ${w.name}`:"Winery account ✓";btn.hidden=true;return}
+  btn.hidden=false;
+  if(r&&r.status==="new"){st.textContent=`Request sent for “${r.wineryName||"your winery"}”. The administrator will link your account soon.`;btn.textContent="Edit request"}
+  else if(r&&r.status==="rejected"){st.textContent="Your last winery request was not approved. You can send a new one.";btn.textContent="I’m a winery"}
+  else{st.textContent="Do you make wine? Ask the administrator to link your account to your winery.";btn.textContent="I’m a winery"}
+}
+$("#acClose").onclick=closeAccount;
+ac.addEventListener("click",e=>{if(e.target===ac)return closeAccount();
+  const g=e.target.closest("[data-go]");if(g){closeAccount();openWinery(g.dataset.go,true);return}
+  const gw=e.target.closest("[data-gowine]");if(gw){closeAccount();openWinery(gw.dataset.gowine,true);S.tab="wines";renderWinery();return}
+  const r1=e.target.closest("[data-rmw]");if(r1){toggleSaved("savedWineries",r1.dataset.rmw);return}
+  const r2=e.target.closest("[data-rmwine]");if(r2){toggleSaved("savedWines",r2.dataset.rmwine);return}
+});
+$("#acWinery").onclick=()=>openWineryDlg();
+$("#acctForm").onsubmit=async e=>{
+  e.preventDefault();const u=S.fbUser;if(!u||!S.fs)return toast("Sign-in or database isn't ready yet.");
+  const data={};for(const [id,f] of Object.entries(AC_FIELDS))data[f]=$("#"+id).value.trim();
+  const btn=$("#acSave");btn.disabled=true;
+  try{await S.fs.collection("users").doc(u.uid).set({...data,email:u.email||"",updatedAt:FV().serverTimestamp()},{merge:true});
+    S.profile={...(S.profile||{}),...data};toast("Your details are saved.")}
+  catch(err){console.warn(err);toast(err&&err.code==="permission-denied"?"Not allowed: please sign in again.":"Couldn't save right now. Please try again.")}
+  finally{btn.disabled=false}
+};
+
+/* ---------- "I'm a winery" request ---------- */
 const wd=$("#wineryDlg");
-function openWineryDlg(){if(!S.fbUser)return;$("#wdMsg").value="";$("#wdCnt").textContent="0";wd.hidden=false;$("#wdMsg").focus()}
+const wdKind=()=>wd.querySelector("input[name=wdKind]:checked").value;
+function wdSync(){const ex=wdKind()==="existing";$("#wdExisting").hidden=!ex;$("#wdNew").hidden=ex}
+wd.querySelectorAll("input[name=wdKind]").forEach(r=>r.onchange=()=>{wdSync();(wdKind()==="existing"?$("#wdPick"):$("#wdName")).focus()});
+function openWineryDlg(){
+  if(!S.fbUser)return;const r=S.fbReq;
+  $("#wdList").innerHTML=all().slice().sort((a,b)=>a.name.localeCompare(b.name)).map(w=>`<option value="${esc(w.name)}">${esc(w.region)} · ${esc(w.country)}</option>`).join("");
+  const k=r&&r.status==="new"?r.kind:"existing";
+  wd.querySelector(`input[name=wdKind][value=${k==="new"?"new":"existing"}]`).checked=true;
+  $("#wdPick").value=r&&r.status==="new"&&r.kind==="existing"?r.wineryName||"":"";
+  $("#wdName").value=r&&r.status==="new"&&r.kind==="new"?r.wineryName||"":"";
+  $("#wdPlace").value=r&&r.status==="new"?r.wineryPlace||"":"";
+  $("#wdMsg").value=r&&r.status==="new"?r.message||"":"";$("#wdCnt").textContent=$("#wdMsg").value.length;
+  wdSync();wd.hidden=false;(k==="new"?$("#wdName"):$("#wdPick")).focus();
+}
 const closeWd=()=>{wd.hidden=true};
 $("#wdCancel").onclick=closeWd;
 wd.addEventListener("click",e=>{if(e.target===wd)closeWd()});
-document.addEventListener("keydown",e=>{if(e.key==="Escape"){if(!wd.hidden)closeWd();else if(!$("#adminPage").hidden)closeAdmin()}});
+document.addEventListener("keydown",e=>{if(e.key==="Escape"){if(!wd.hidden)closeWd();else if(!ac.hidden)closeAccount();else if(!$("#adminPage").hidden)closeAdmin()}});
 $("#wdMsg").addEventListener("input",e=>{$("#wdCnt").textContent=e.target.value.length});
 $("#wdForm").onsubmit=async e=>{
-  e.preventDefault();const u=S.fbUser,msg=$("#wdMsg").value.trim();
+  e.preventDefault();const u=S.fbUser,msg=$("#wdMsg").value.trim(),kind=wdKind();
   if(!u||!S.fs)return toast("Sign-in or database isn't ready yet.");
-  if(!msg)return $("#wdMsg").focus();
+  let wineryName,wineryId="",wineryPlace="";
+  if(kind==="existing"){
+    const t=$("#wdPick").value.trim();if(!t){toast("Type the name of your winery.");return $("#wdPick").focus()}
+    const w=all().find(x=>x.name.toLowerCase()===t.toLowerCase());
+    if(!w){toast("Pick your winery from the list, or choose “It is a new winery”.");return $("#wdPick").focus()}
+    wineryName=w.name;wineryId=w.id;wineryPlace=`${w.region}, ${w.country}`;
+  }else{
+    wineryName=$("#wdName").value.trim();wineryPlace=$("#wdPlace").value.trim();
+    if(!wineryName){toast("Type the name of your winery.");return $("#wdName").focus()}
+    if(!wineryPlace){toast("Tell us where the winery is.");return $("#wdPlace").focus()}
+  }
   const btn=$("#wdSend");btn.disabled=true;
   try{
-    const now=firebase.firestore.FieldValue.serverTimestamp();
-    await S.fs.collection("wineryRequests").doc(u.uid).set({uid:u.uid,email:u.email||"",name:u.displayName||"",message:msg,status:"new",createdAt:now});
-    await S.fs.collection("users").doc(u.uid).set({email:u.email||"",name:u.displayName||"",role:"winery",updatedAt:now},{merge:true});
-    S.role="winery";closeWd();toast("Thank you! Your account is now a winery account.");
+    const req={uid:u.uid,email:u.email||"",name:(S.profile&&S.profile.name)||u.displayName||"",kind,wineryId,wineryName,wineryPlace,message:msg,status:"new",createdAt:FV().serverTimestamp()};
+    await S.fs.collection("wineryRequests").doc(u.uid).set(req);
+    S.fbReq=req;renderWinerySection();closeWd();toast("Sent! The administrator will link your account to your winery.");
   }catch(err){console.warn(err);toast(err&&err.code==="permission-denied"?"Not allowed: please try signing in again.":"Couldn't send right now. Please try again later.")}
   finally{btn.disabled=false}
 };
@@ -1156,7 +1308,7 @@ if(!window.claude&&FB&&FB.apiKey){
       firebase.initializeApp(FB);S.fb=firebase.auth();
       try{await loadScript("https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore-compat.js");S.fs=firebase.firestore()}catch{S.fs=null}
       S.fb.onAuthStateChanged(async u=>{S.fbUser=u;S.id=u?u.uid:null;renderAuth();
-        if(u){await loadRole(u);if(location.hash==="#admin"&&isAdminUser(u))openAdmin()}else{S.role=null;closeAdmin()}});
+        if(u){await loadRole(u);if(location.hash==="#admin"&&isAdminUser(u))openAdmin()}else{S.role=null;S.profile=null;S.fbReq=null;closeAdmin();closeAccount();closeWd()}});
       $("#gBtn").hidden=false;
       $("#gBtn").onclick=()=>S.fb.signInWithPopup(new firebase.auth.GoogleAuthProvider())
         .then(r=>toast("Welcome"+(r.user.displayName?", "+r.user.displayName.split(" ")[0]:"")+"!"))

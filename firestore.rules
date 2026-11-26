@@ -10,23 +10,54 @@ service cloud.firestore {
         && request.auth.token.email_verified == true
         && request.auth.token.email in ['tsiorak@gmail.com'];
     }
+    function optStr(d, k, max) { return !(k in d) || (d[k] is string && d[k].size() <= max); }
+    function optList(d, k) { return !(k in d) || (d[k] is list && d[k].size() <= 500); }
 
-    // One document per signed-in person: { email, name, role: "user" | "winery" }
+    // What a person may write in their own account document
+    function profileOk(d) {
+      return d.keys().hasOnly(['email', 'name', 'role', 'createdAt', 'updatedAt',
+          'firstName', 'lastName', 'organization', 'phone', 'place', 'about',
+          'savedWineries', 'savedWines', 'wineryId'])
+        && optStr(d, 'name', 100) && optStr(d, 'firstName', 100) && optStr(d, 'lastName', 100)
+        && optStr(d, 'organization', 150) && optStr(d, 'phone', 40) && optStr(d, 'place', 100)
+        && optStr(d, 'about', 1000)
+        && optList(d, 'savedWineries') && optList(d, 'savedWines');
+    }
+
+    // One document per signed-in person: profile, saved wineries/wines, role.
+    // Only the administrator can change role ("user" | "winery") or wineryId.
     match /users/{uid} {
       allow read: if signedIn() && (request.auth.uid == uid || isAdmin());
-      allow create, update: if isAdmin()
+      allow create: if isAdmin()
         || (signedIn() && request.auth.uid == uid
-            && request.resource.data.role in ['user', 'winery']);
+            && request.resource.data.role == 'user'
+            && !('wineryId' in request.resource.data)
+            && profileOk(request.resource.data));
+      allow update: if isAdmin()
+        || (signedIn() && request.auth.uid == uid
+            && request.resource.data.role == resource.data.role
+            && request.resource.data.get('wineryId', null) == resource.data.get('wineryId', null)
+            && profileOk(request.resource.data));
       allow delete: if isAdmin();
     }
 
-    // "I am a winery" messages to the administrator, one per person
+    // "I'm a winery" messages to the administrator, one per person.
+    // kind "existing" = a winery already on the map (wineryId), "new" = not listed yet.
     match /wineryRequests/{uid} {
       allow read: if signedIn() && (request.auth.uid == uid || isAdmin());
-      allow create, update: if signedIn() && request.auth.uid == uid
-        && request.resource.data.message is string
-        && request.resource.data.message.size() > 0
-        && request.resource.data.message.size() <= 1000;
+      allow create, update: if isAdmin()
+        || (signedIn() && request.auth.uid == uid
+            && request.resource.data.keys().hasOnly(['uid', 'email', 'name', 'kind', 'wineryId',
+                'wineryName', 'wineryPlace', 'message', 'status', 'createdAt'])
+            && request.resource.data.status == 'new'
+            && request.resource.data.kind in ['existing', 'new']
+            && request.resource.data.wineryName is string
+            && request.resource.data.wineryName.size() > 0
+            && request.resource.data.wineryName.size() <= 200
+            && optStr(request.resource.data, 'wineryId', 100)
+            && optStr(request.resource.data, 'wineryPlace', 200)
+            && request.resource.data.message is string
+            && request.resource.data.message.size() <= 1000);
       allow delete: if isAdmin();
     }
   }

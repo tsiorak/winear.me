@@ -34881,5 +34881,4031 @@
 ],
 "events": [],
 "real": true
+},
+{
+"id": "fr-champagne-ulysse-collin",
+"name": "Champagne Ulysse Collin",
+"region": "Champagne – Congy",
+"country": "France",
+"lat": 48.88,
+"lng": 3.83,
+"founded": "",
+"style": "champagne",
+"story": "Grower in the Coteaux du Petit Morin making single-vineyard Champagne.",
+"wines": [
+{
+"name": "Les Pierrières",
+"type": "Champagne",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-champagne-bereche-fils",
+"name": "Champagne Bérêche & Fils",
+"region": "Champagne – Ludes",
+"country": "France",
+"lat": 49.15,
+"lng": 4.08,
+"founded": "",
+"style": "champagne",
+"story": "Montagne de Reims family grower.",
+"wines": [
+{
+"name": "Brut Réserve",
+"type": "Champagne",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-champagne-chartogne-taillet",
+"name": "Champagne Chartogne-Taillet",
+"region": "Champagne – Merfy",
+"country": "France",
+"lat": 49.3,
+"lng": 3.96,
+"founded": "",
+"style": "champagne",
+"story": "Massif de Saint-Thierry grower.",
+"wines": [
+{
+"name": "Sainte Anne",
+"type": "Champagne",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-champagne-marguet",
+"name": "Champagne Marguet",
+"region": "Champagne – Ambonnay",
+"country": "France",
+"lat": 49.082,
+"lng": 4.172,
+"founded": "",
+"style": "champagne",
+"story": "Biodynamic Ambonnay grower.",
+"wines": [
+{
+"name": "Shaman",
+"type": "Champagne",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-champagne-paul-bara",
+"name": "Champagne Paul Bara",
+"region": "Champagne – Bouzy",
+"country": "France",
+"lat": 49.08,
+"lng": 4.145,
+"founded": "",
+"style": "champagne",
+"story": "Bouzy grand cru family house.",
+"wines": [
+{
+"name": "Brut Réserve",
+"type": "Champagne",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-champagne-andre-clouet",
+"name": "Champagne André Clouet",
+"region": "Champagne – Bouzy",
+"country": "France",
+"lat": 49.081,
+"lng": 4.146,
+"founded": "",
+"style": "champagne",
+"story": "Bouzy Pinot Noir specialist.",
+"wines": [
+{
+"name": "Grande Réserve",
+"type": "Champagne",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-champagne-gaston-chiquet",
+"name": "Champagne Gaston Chiquet",
+"region": "Champagne – Dizy",
+"country": "France",
+"lat": 49.066,
+"lng": 3.964,
+"founded": "",
+"style": "champagne",
+"story": "Dizy family grower.",
+"wines": [
+{
+"name": "Blanc de Blancs d'Aÿ",
+"type": "Champagne",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-champagne-georges-laval",
+"name": "Champagne Georges Laval",
+"region": "Champagne – Cumières",
+"country": "France",
+"lat": 49.075,
+"lng": 3.925,
+"founded": "",
+"style": "champagne",
+"story": "Organic Cumières grower.",
+"wines": [
+{
+"name": "Cumières Brut Nature",
+"type": "Champagne",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-champagne-pierre-gimonnet-fils",
+"name": "Champagne Pierre Gimonnet & Fils",
+"region": "Champagne – Cuis",
+"country": "France",
+"lat": 49.0,
+"lng": 3.97,
+"founded": "",
+"style": "champagne",
+"story": "Côte des Blancs Chardonnay grower.",
+"wines": [
+{
+"name": "Cuis 1er Cru",
+"type": "Champagne",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-champagne-diebolt-vallois",
+"name": "Champagne Diebolt-Vallois",
+"region": "Champagne – Cramant",
+"country": "France",
+"lat": 49.015,
+"lng": 3.985,
+"founded": "",
+"style": "champagne",
+"story": "Cramant family grower.",
+"wines": [
+{
+"name": "Fleur de Passion",
+"type": "Champagne",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-champagne-lilbert-fils",
+"name": "Champagne Lilbert-Fils",
+"region": "Champagne – Cramant",
+"country": "France",
+"lat": 49.016,
+"lng": 3.986,
+"founded": "",
+"style": "champagne",
+"story": "Small Cramant grower.",
+"wines": [
+{
+"name": "Blanc de Blancs Grand Cru",
+"type": "Champagne",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-champagne-jacques-lassaigne",
+"name": "Champagne Jacques Lassaigne",
+"region": "Champagne – Montgueux",
+"country": "France",
+"lat": 48.31,
+"lng": 3.98,
+"founded": "",
+"style": "champagne",
+"story": "Montgueux Chardonnay grower near Troyes.",
+"wines": [
+{
+"name": "Le Cotet",
+"type": "Champagne",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-champagne-fleury",
+"name": "Champagne Fleury",
+"region": "Champagne – Courteron",
+"country": "France",
+"lat": 48.03,
+"lng": 4.44,
+"founded": "",
+"style": "champagne",
+"story": "Biodynamic pioneer in the Côte des Bar.",
+"wines": [
+{
+"name": "Blanc de Noirs",
+"type": "Champagne",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-champagne-devaux",
+"name": "Champagne Devaux",
+"region": "Champagne – Bar-sur-Seine",
+"country": "France",
+"lat": 48.11,
+"lng": 4.38,
+"founded": "",
+"style": "champagne",
+"story": "Côte des Bar house.",
+"wines": [
+{
+"name": "Cuvée D",
+"type": "Champagne",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-champagne-alfred-gratien",
+"name": "Champagne Alfred Gratien",
+"region": "Champagne – Épernay",
+"country": "France",
+"lat": 49.041,
+"lng": 3.958,
+"founded": "1864",
+"style": "champagne",
+"story": "Épernay house fermenting in small oak casks.",
+"wines": [
+{
+"name": "Brut Classique",
+"type": "Champagne",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-champagne-boizel",
+"name": "Champagne Boizel",
+"region": "Champagne – Épernay",
+"country": "France",
+"lat": 49.04,
+"lng": 3.962,
+"founded": "1834",
+"style": "champagne",
+"story": "Family house on the Avenue de Champagne.",
+"wines": [
+{
+"name": "Joyau de France",
+"type": "Champagne",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-champagne-mercier",
+"name": "Champagne Mercier",
+"region": "Champagne – Épernay",
+"country": "France",
+"lat": 49.038,
+"lng": 3.968,
+"founded": "1858",
+"style": "champagne",
+"story": "Épernay house with an 18 km cellar tour by train.",
+"wines": [
+{
+"name": "Brut",
+"type": "Champagne",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-champagne-de-venoge",
+"name": "Champagne de Venoge",
+"region": "Champagne – Épernay",
+"country": "France",
+"lat": 49.042,
+"lng": 3.963,
+"founded": "1837",
+"style": "champagne",
+"story": "Épernay house.",
+"wines": [
+{
+"name": "Louis XV",
+"type": "Champagne",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-champagne-ayala",
+"name": "Champagne Ayala",
+"region": "Champagne – Aÿ",
+"country": "France",
+"lat": 49.054,
+"lng": 4.007,
+"founded": "1860",
+"style": "champagne",
+"story": "Aÿ house known for low-dosage styles.",
+"wines": [
+{
+"name": "Brut Majeur",
+"type": "Champagne",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-champagne-canard-duchene",
+"name": "Champagne Canard-Duchêne",
+"region": "Champagne – Ludes",
+"country": "France",
+"lat": 49.152,
+"lng": 4.082,
+"founded": "1868",
+"style": "champagne",
+"story": "Montagne de Reims house.",
+"wines": [
+{
+"name": "Charles VII",
+"type": "Champagne",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-champagne-mumm",
+"name": "Champagne Mumm",
+"region": "Champagne – Reims",
+"country": "France",
+"lat": 49.26,
+"lng": 4.035,
+"founded": "1827",
+"style": "champagne",
+"story": "Reims house with the red-ribbon Cordon Rouge.",
+"wines": [
+{
+"name": "Cordon Rouge",
+"type": "Champagne",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-champagne-veuve-fourny",
+"name": "Champagne Veuve Fourny",
+"region": "Champagne – Vertus",
+"country": "France",
+"lat": 48.907,
+"lng": 4.002,
+"founded": "",
+"style": "champagne",
+"story": "Vertus family grower.",
+"wines": [
+{
+"name": "Blanc de Blancs",
+"type": "Champagne",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-jean-grivot",
+"name": "Domaine Jean Grivot",
+"region": "Burgundy – Vosne-Romanée",
+"country": "France",
+"lat": 47.1605,
+"lng": 4.955,
+"founded": "",
+"style": "red",
+"story": "Vosne family domaine.",
+"wines": [
+{
+"name": "Vosne-Romanée Les Beaux Monts",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-emmanuel-rouget",
+"name": "Domaine Emmanuel Rouget",
+"region": "Burgundy – Flagey-Échézeaux",
+"country": "France",
+"lat": 47.165,
+"lng": 4.98,
+"founded": "",
+"style": "red",
+"story": "Heir to Henri Jayer's vineyards.",
+"wines": [
+{
+"name": "Cros Parantoux",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-gros-frere-et-sur",
+"name": "Domaine Gros Frère et Sœur",
+"region": "Burgundy – Vosne-Romanée",
+"country": "France",
+"lat": 47.1585,
+"lng": 4.9555,
+"founded": "",
+"style": "red",
+"story": "Vosne family domaine.",
+"wines": [
+{
+"name": "Grands-Échézeaux",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-hudelot-noellat",
+"name": "Domaine Hudelot-Noëllat",
+"region": "Burgundy – Chambolle-Musigny",
+"country": "France",
+"lat": 47.183,
+"lng": 4.956,
+"founded": "",
+"style": "red",
+"story": "Family domaine with Richebourg and Romanée-Saint-Vivant.",
+"wines": [
+{
+"name": "Romanée-Saint-Vivant",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-ghislaine-barthod",
+"name": "Domaine Ghislaine Barthod",
+"region": "Burgundy – Chambolle-Musigny",
+"country": "France",
+"lat": 47.1845,
+"lng": 4.9535,
+"founded": "",
+"style": "red",
+"story": "Chambolle premier cru specialist.",
+"wines": [
+{
+"name": "Chambolle Les Cras",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-amiot-servelle",
+"name": "Domaine Amiot-Servelle",
+"region": "Burgundy – Chambolle-Musigny",
+"country": "France",
+"lat": 47.1835,
+"lng": 4.9545,
+"founded": "",
+"style": "red",
+"story": "Organic Chambolle domaine.",
+"wines": [
+{
+"name": "Les Amoureuses",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-denis-mortet",
+"name": "Domaine Denis Mortet",
+"region": "Burgundy – Gevrey-Chambertin",
+"country": "France",
+"lat": 47.2275,
+"lng": 4.9655,
+"founded": "",
+"style": "red",
+"story": "Gevrey family domaine.",
+"wines": [
+{
+"name": "Mes Cinq Terroirs",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-rossignol-trapet",
+"name": "Domaine Rossignol-Trapet",
+"region": "Burgundy – Gevrey-Chambertin",
+"country": "France",
+"lat": 47.2265,
+"lng": 4.967,
+"founded": "",
+"style": "red",
+"story": "Biodynamic Gevrey domaine.",
+"wines": [
+{
+"name": "Latricières-Chambertin",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-duroche",
+"name": "Domaine Duroché",
+"region": "Burgundy – Gevrey-Chambertin",
+"country": "France",
+"lat": 47.2285,
+"lng": 4.966,
+"founded": "",
+"style": "red",
+"story": "Gevrey family domaine.",
+"wines": [
+{
+"name": "Clos Saint-Jacques",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-joseph-roty",
+"name": "Domaine Joseph Roty",
+"region": "Burgundy – Gevrey-Chambertin",
+"country": "France",
+"lat": 47.229,
+"lng": 4.965,
+"founded": "",
+"style": "red",
+"story": "Old-vine Gevrey domaine.",
+"wines": [
+{
+"name": "Charmes-Chambertin",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-robert-chevillon",
+"name": "Domaine Robert Chevillon",
+"region": "Burgundy – Nuits-Saint-Georges",
+"country": "France",
+"lat": 47.137,
+"lng": 4.949,
+"founded": "",
+"style": "red",
+"story": "Nuits premier cru specialist.",
+"wines": [
+{
+"name": "Les Vaucrains",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-prieure-roch",
+"name": "Domaine Prieuré Roch",
+"region": "Burgundy – Nuits-Saint-Georges",
+"country": "France",
+"lat": 47.135,
+"lng": 4.95,
+"founded": "",
+"style": "red",
+"story": "Henry-Frédéric Roch's natural-leaning domaine.",
+"wines": [
+{
+"name": "Clos Goillotte",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-jacques-prieur",
+"name": "Domaine Jacques Prieur",
+"region": "Burgundy – Meursault",
+"country": "France",
+"lat": 46.98,
+"lng": 4.769,
+"founded": "",
+"style": "white",
+"story": "Meursault domaine with holdings from Montrachet to Musigny.",
+"wines": [
+{
+"name": "Montrachet",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-arnaud-ente",
+"name": "Domaine Arnaud Ente",
+"region": "Burgundy – Meursault",
+"country": "France",
+"lat": 46.979,
+"lng": 4.77,
+"founded": "",
+"style": "white",
+"story": "Small, sought-after Meursault grower.",
+"wines": [
+{
+"name": "Meursault Clos des Ambres",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-pierre-morey",
+"name": "Domaine Pierre Morey",
+"region": "Burgundy – Meursault",
+"country": "France",
+"lat": 46.9815,
+"lng": 4.7705,
+"founded": "",
+"style": "white",
+"story": "Biodynamic Meursault domaine.",
+"wines": [
+{
+"name": "Meursault Perrières",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-jean-philippe-fichet",
+"name": "Domaine Jean-Philippe Fichet",
+"region": "Burgundy – Meursault",
+"country": "France",
+"lat": 46.9825,
+"lng": 4.769,
+"founded": "",
+"style": "white",
+"story": "Meursault village-wine specialist.",
+"wines": [
+{
+"name": "Meursault Les Chevalières",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-buisson-charles",
+"name": "Domaine Buisson-Charles",
+"region": "Burgundy – Meursault",
+"country": "France",
+"lat": 46.981,
+"lng": 4.7725,
+"founded": "",
+"style": "white",
+"story": "Meursault family domaine.",
+"wines": [
+{
+"name": "Meursault Goutte d'Or",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-jean-chartron",
+"name": "Domaine Jean Chartron",
+"region": "Burgundy – Puligny-Montrachet",
+"country": "France",
+"lat": 46.9455,
+"lng": 4.7495,
+"founded": "",
+"style": "white",
+"story": "Puligny domaine with Clos du Cailleret.",
+"wines": [
+{
+"name": "Clos du Cailleret",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-olivier-leflaive",
+"name": "Olivier Leflaive",
+"region": "Burgundy – Puligny-Montrachet",
+"country": "France",
+"lat": 46.9465,
+"lng": 4.7505,
+"founded": "",
+"style": "white",
+"story": "Négociant house of Olivier Leflaive with a hotel.",
+"wines": [
+{
+"name": "Puligny-Montrachet",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-marc-colin",
+"name": "Domaine Marc Colin",
+"region": "Burgundy – Saint-Aubin",
+"country": "France",
+"lat": 46.9505,
+"lng": 4.701,
+"founded": "",
+"style": "white",
+"story": "Saint-Aubin family domaine.",
+"wines": [
+{
+"name": "Saint-Aubin La Chatenière",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-jean-noel-gagnard",
+"name": "Domaine Jean-Noël Gagnard",
+"region": "Burgundy – Chassagne-Montrachet",
+"country": "France",
+"lat": 46.9365,
+"lng": 4.732,
+"founded": "",
+"style": "white",
+"story": "Chassagne family domaine.",
+"wines": [
+{
+"name": "Bâtard-Montrachet",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-morey-coffinet",
+"name": "Domaine Morey-Coffinet",
+"region": "Burgundy – Chassagne-Montrachet",
+"country": "France",
+"lat": 46.937,
+"lng": 4.73,
+"founded": "",
+"style": "white",
+"story": "Chassagne family domaine.",
+"wines": [
+{
+"name": "La Romanée",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-lucien-le-moine",
+"name": "Domaine Lucien Le Moine",
+"region": "Burgundy – Beaune",
+"country": "France",
+"lat": 47.024,
+"lng": 4.838,
+"founded": "",
+"style": "red",
+"story": "Small Beaune négociant.",
+"wines": [
+{
+"name": "Grands Crus",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-maison-camille-giroud",
+"name": "Maison Camille Giroud",
+"region": "Burgundy – Beaune",
+"country": "France",
+"lat": 47.025,
+"lng": 4.84,
+"founded": "1865",
+"style": "red",
+"story": "Beaune négociant founded in 1865.",
+"wines": [
+{
+"name": "Beaune 1er Cru",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-des-croix",
+"name": "Domaine des Croix",
+"region": "Burgundy – Beaune",
+"country": "France",
+"lat": 47.026,
+"lng": 4.839,
+"founded": "",
+"style": "red",
+"story": "David Croix's Beaune domaine.",
+"wines": [
+{
+"name": "Corton-Charlemagne",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-benjamin-leroux",
+"name": "Domaine Benjamin Leroux",
+"region": "Burgundy – Beaune",
+"country": "France",
+"lat": 47.0235,
+"lng": 4.8395,
+"founded": "",
+"style": "red",
+"story": "Beaune négociant-domaine.",
+"wines": [
+{
+"name": "Volnay",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-follin-arbelet",
+"name": "Domaine Follin-Arbelet",
+"region": "Burgundy – Aloxe-Corton",
+"country": "France",
+"lat": 47.065,
+"lng": 4.865,
+"founded": "",
+"style": "red",
+"story": "Aloxe-Corton family domaine.",
+"wines": [
+{
+"name": "Romanée-Saint-Vivant",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-henri-boillot",
+"name": "Domaine Henri Boillot",
+"region": "Burgundy – Meursault",
+"country": "France",
+"lat": 46.982,
+"lng": 4.768,
+"founded": "",
+"style": "white",
+"story": "Meursault domaine and négociant.",
+"wines": [
+{
+"name": "Puligny Clos de la Mouchère",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-patrick-piuze",
+"name": "Domaine Patrick Piuze",
+"region": "Burgundy – Chablis",
+"country": "France",
+"lat": 47.8145,
+"lng": 3.7985,
+"founded": "",
+"style": "white",
+"story": "Chablis micro-négociant from Quebec.",
+"wines": [
+{
+"name": "Terroir de Fleys",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-pattes-loup",
+"name": "Domaine Pattes Loup",
+"region": "Burgundy – Chablis",
+"country": "France",
+"lat": 47.8,
+"lng": 3.84,
+"founded": "",
+"style": "white",
+"story": "Organic Chablis grower.",
+"wines": [
+{
+"name": "Butteaux",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-samuel-billaud",
+"name": "Domaine Samuel Billaud",
+"region": "Burgundy – Chablis",
+"country": "France",
+"lat": 47.8135,
+"lng": 3.7995,
+"founded": "",
+"style": "white",
+"story": "Chablis grower.",
+"wines": [
+{
+"name": "Les Clos",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-long-depaquit",
+"name": "Domaine Long-Depaquit",
+"region": "Burgundy – Chablis",
+"country": "France",
+"lat": 47.8125,
+"lng": 3.799,
+"founded": "",
+"style": "white",
+"story": "Owner of La Moutonne.",
+"wines": [
+{
+"name": "La Moutonne",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-jean-marc-brocard",
+"name": "Domaine Jean-Marc Brocard",
+"region": "Burgundy – Chablis",
+"country": "France",
+"lat": 47.8,
+"lng": 3.76,
+"founded": "",
+"style": "white",
+"story": "Préhy family domaine.",
+"wines": [
+{
+"name": "Chablis Sainte-Claire",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-michel-juillot",
+"name": "Domaine Michel Juillot",
+"region": "Burgundy – Mercurey",
+"country": "France",
+"lat": 46.841,
+"lng": 4.719,
+"founded": "",
+"style": "red",
+"story": "Mercurey family domaine.",
+"wines": [
+{
+"name": "Clos des Barraults",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-joblot",
+"name": "Domaine Joblot",
+"region": "Burgundy – Givry",
+"country": "France",
+"lat": 46.78,
+"lng": 4.75,
+"founded": "",
+"style": "red",
+"story": "Givry premier cru specialist.",
+"wines": [
+{
+"name": "Clos du Cellier aux Moines",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-valette",
+"name": "Domaine Valette",
+"region": "Burgundy – Chaintré",
+"country": "France",
+"lat": 46.26,
+"lng": 4.77,
+"founded": "",
+"style": "white",
+"story": "Pouilly-Fuissé grower.",
+"wines": [
+{
+"name": "Clos de Monsieur Noly",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-chateau-fuisse",
+"name": "Château-Fuissé",
+"region": "Burgundy – Fuissé",
+"country": "France",
+"lat": 46.283,
+"lng": 4.745,
+"founded": "",
+"style": "white",
+"story": "Vincent family estate in Fuissé.",
+"wines": [
+{
+"name": "Le Clos",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-bret-brothers",
+"name": "Domaine Bret Brothers",
+"region": "Burgundy – Mâconnais",
+"country": "France",
+"lat": 46.35,
+"lng": 4.82,
+"founded": "",
+"style": "white",
+"story": "Mâconnais grower-négociant.",
+"wines": [
+{
+"name": "Pouilly-Fuissé",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-heritiers-du-comte-lafon",
+"name": "Domaine Héritiers du Comte Lafon",
+"region": "Burgundy – Milly-Lamartine",
+"country": "France",
+"lat": 46.355,
+"lng": 4.7,
+"founded": "",
+"style": "white",
+"story": "Lafon's Mâconnais estate.",
+"wines": [
+{
+"name": "Mâcon-Milly-Lamartine",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-guy-breton",
+"name": "Domaine Guy Breton",
+"region": "Beaujolais – Villié-Morgon",
+"country": "France",
+"lat": 46.162,
+"lng": 4.668,
+"founded": "",
+"style": "red",
+"story": "One of the 'gang of four' natural Beaujolais growers.",
+"wines": [
+{
+"name": "Morgon",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-jean-paul-thevenet",
+"name": "Domaine Jean-Paul Thévenet",
+"region": "Beaujolais – Villié-Morgon",
+"country": "France",
+"lat": 46.161,
+"lng": 4.669,
+"founded": "",
+"style": "red",
+"story": "Natural Morgon grower.",
+"wines": [
+{
+"name": "Morgon Vieilles Vignes",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-yvon-metras",
+"name": "Domaine Yvon Métras",
+"region": "Beaujolais – Fleurie",
+"country": "France",
+"lat": 46.192,
+"lng": 4.697,
+"founded": "",
+"style": "red",
+"story": "Natural Fleurie grower.",
+"wines": [
+{
+"name": "Fleurie",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-chateau-de-poncie",
+"name": "Château de Poncié",
+"region": "Beaujolais – Fleurie",
+"country": "France",
+"lat": 46.2,
+"lng": 4.68,
+"founded": "",
+"style": "red",
+"story": "Fleurie château estate.",
+"wines": [
+{
+"name": "Fleurie Le Pré Roi",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-chignard",
+"name": "Domaine Chignard",
+"region": "Beaujolais – Fleurie",
+"country": "France",
+"lat": 46.198,
+"lng": 4.695,
+"founded": "",
+"style": "red",
+"story": "Fleurie Les Moriers grower.",
+"wines": [
+{
+"name": "Fleurie Les Moriers",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-daniel-bouland",
+"name": "Domaine Daniel Bouland",
+"region": "Beaujolais – Morgon",
+"country": "France",
+"lat": 46.165,
+"lng": 4.67,
+"founded": "",
+"style": "red",
+"story": "Old-vine Morgon and Chiroubles grower.",
+"wines": [
+{
+"name": "Morgon Corcelette",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-chateau-du-moulin-a-vent",
+"name": "Château du Moulin-à-Vent",
+"region": "Beaujolais – Moulin-à-Vent",
+"country": "France",
+"lat": 46.188,
+"lng": 4.728,
+"founded": "",
+"style": "red",
+"story": "Estate near the appellation's windmill.",
+"wines": [
+{
+"name": "Moulin-à-Vent",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-paul-janin",
+"name": "Domaine Paul Janin",
+"region": "Beaujolais – Moulin-à-Vent",
+"country": "France",
+"lat": 46.189,
+"lng": 4.729,
+"founded": "",
+"style": "red",
+"story": "Moulin-à-Vent family grower.",
+"wines": [
+{
+"name": "Clos du Tremblay",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-de-la-grange-tiphaine",
+"name": "Domaine de la Grange Tiphaine",
+"region": "Loire – Montlouis",
+"country": "France",
+"lat": 47.385,
+"lng": 0.835,
+"founded": "",
+"style": "white",
+"story": "Amboise family domaine.",
+"wines": [
+{
+"name": "Clef de Sol",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-catherine-et-pierre-breton",
+"name": "Domaine Catherine et Pierre Breton",
+"region": "Loire – Bourgueil",
+"country": "France",
+"lat": 47.275,
+"lng": 0.165,
+"founded": "",
+"style": "red",
+"story": "Organic Bourgueil grower.",
+"wines": [
+{
+"name": "Les Perrières",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-olga-raffault",
+"name": "Domaine Olga Raffault",
+"region": "Loire – Chinon",
+"country": "France",
+"lat": 47.15,
+"lng": 0.2,
+"founded": "",
+"style": "red",
+"story": "Traditional Chinon domaine.",
+"wines": [
+{
+"name": "Les Picasses",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-couly-dutheil",
+"name": "Couly-Dutheil",
+"region": "Loire – Chinon",
+"country": "France",
+"lat": 47.167,
+"lng": 0.241,
+"founded": "",
+"style": "red",
+"story": "Chinon house with Clos de l'Écho.",
+"wines": [
+{
+"name": "Clos de l'Écho",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-mosse",
+"name": "Domaine Mosse",
+"region": "Loire – Anjou",
+"country": "France",
+"lat": 47.305,
+"lng": -0.56,
+"founded": "",
+"style": "white",
+"story": "Natural Anjou grower.",
+"wines": [
+{
+"name": "Initial",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-patrick-baudouin",
+"name": "Domaine Patrick Baudouin",
+"region": "Loire – Anjou",
+"country": "France",
+"lat": 47.32,
+"lng": -0.64,
+"founded": "",
+"style": "sweet",
+"story": "Chaudefonds-sur-Layon grower.",
+"wines": [
+{
+"name": "Coteaux du Layon Après Minuit",
+"type": "Sweet",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-chateau-pierre-bise",
+"name": "Château Pierre-Bise",
+"region": "Loire – Anjou",
+"country": "France",
+"lat": 47.315,
+"lng": -0.62,
+"founded": "",
+"style": "white",
+"story": "Beaulieu-sur-Layon estate.",
+"wines": [
+{
+"name": "Savennières Clos de Coulaine",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-lucien-crochet",
+"name": "Domaine Lucien Crochet",
+"region": "Loire – Sancerre",
+"country": "France",
+"lat": 47.351,
+"lng": 2.805,
+"founded": "",
+"style": "white",
+"story": "Bué family domaine.",
+"wines": [
+{
+"name": "Sancerre Le Chêne",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-henri-pelle",
+"name": "Domaine Henri Pellé",
+"region": "Loire – Menetou-Salon",
+"country": "France",
+"lat": 47.23,
+"lng": 2.49,
+"founded": "",
+"style": "white",
+"story": "Menetou-Salon family domaine.",
+"wines": [
+{
+"name": "Morogues",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-jonathan-didier-pabiot",
+"name": "Domaine Jonathan Didier Pabiot",
+"region": "Loire – Pouilly-Fumé",
+"country": "France",
+"lat": 47.285,
+"lng": 2.965,
+"founded": "",
+"style": "white",
+"story": "Pouilly-Fumé grower.",
+"wines": [
+{
+"name": "Aubaine",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-jo-landron",
+"name": "Domaine Jo Landron",
+"region": "Loire – Muscadet",
+"country": "France",
+"lat": 47.15,
+"lng": -1.4,
+"founded": "",
+"style": "white",
+"story": "Organic Muscadet grower.",
+"wines": [
+{
+"name": "Amphibolite",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-belargus",
+"name": "Domaine Belargus",
+"region": "Loire – Anjou",
+"country": "France",
+"lat": 47.33,
+"lng": -0.68,
+"founded": "",
+"style": "white",
+"story": "Chenin estate including Quarts de Chaume.",
+"wines": [
+{
+"name": "Quarts de Chaume",
+"type": "Sweet",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-sylvain-gaudron",
+"name": "Domaine Sylvain Gaudron",
+"region": "Loire – Vouvray",
+"country": "France",
+"lat": 47.41,
+"lng": 0.82,
+"founded": "",
+"style": "white",
+"story": "Vernou family grower.",
+"wines": [
+{
+"name": "Vouvray",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-valentin-zusslin",
+"name": "Domaine Valentin Zusslin",
+"region": "Alsace – Orschwihr",
+"country": "France",
+"lat": 47.936,
+"lng": 7.232,
+"founded": "",
+"style": "white",
+"story": "Biodynamic Orschwihr domaine with Clos Liebenberg.",
+"wines": [
+{
+"name": "Riesling Pfingstberg",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-kientzler",
+"name": "Domaine Kientzler",
+"region": "Alsace – Ribeauvillé",
+"country": "France",
+"lat": 48.194,
+"lng": 7.319,
+"founded": "",
+"style": "white",
+"story": "Ribeauvillé family domaine.",
+"wines": [
+{
+"name": "Riesling Geisberg",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-bott-geyl",
+"name": "Domaine Bott-Geyl",
+"region": "Alsace – Beblenheim",
+"country": "France",
+"lat": 48.16,
+"lng": 7.33,
+"founded": "",
+"style": "white",
+"story": "Beblenheim family domaine.",
+"wines": [
+{
+"name": "Schoenenbourg",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-rolly-gassmann",
+"name": "Domaine Rolly Gassmann",
+"region": "Alsace – Rorschwihr",
+"country": "France",
+"lat": 48.215,
+"lng": 7.36,
+"founded": "",
+"style": "white",
+"story": "Rorschwihr family domaine.",
+"wines": [
+{
+"name": "Gewurztraminer",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-agape",
+"name": "Domaine Agapé",
+"region": "Alsace – Riquewihr",
+"country": "France",
+"lat": 48.165,
+"lng": 7.298,
+"founded": "",
+"style": "white",
+"story": "Riquewihr domaine.",
+"wines": [
+{
+"name": "Riesling Rosacker",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-gerard-schueller",
+"name": "Domaine Gérard Schueller",
+"region": "Alsace – Husseren-les-Châteaux",
+"country": "France",
+"lat": 48.035,
+"lng": 7.29,
+"founded": "",
+"style": "white",
+"story": "Natural Alsace grower.",
+"wines": [
+{
+"name": "Riesling",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-rieffel",
+"name": "Domaine Rieffel",
+"region": "Alsace – Mittelbergheim",
+"country": "France",
+"lat": 48.395,
+"lng": 7.445,
+"founded": "",
+"style": "white",
+"story": "Mittelbergheim grower.",
+"wines": [
+{
+"name": "Zotzenberg",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-pfister",
+"name": "Domaine Pfister",
+"region": "Alsace – Dahlenheim",
+"country": "France",
+"lat": 48.58,
+"lng": 7.51,
+"founded": "",
+"style": "white",
+"story": "Northern Alsace family domaine.",
+"wines": [
+{
+"name": "Riesling Engelberg",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-laurent-barth",
+"name": "Domaine Laurent Barth",
+"region": "Alsace – Bennwihr",
+"country": "France",
+"lat": 48.145,
+"lng": 7.32,
+"founded": "",
+"style": "white",
+"story": "Bennwihr organic grower.",
+"wines": [
+{
+"name": "Riesling Marckrain",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-giovanni-rosso",
+"name": "Giovanni Rosso",
+"region": "Piedmont – Serralunga d'Alba",
+"country": "Italy",
+"lat": 44.605,
+"lng": 8.0,
+"founded": "",
+"style": "red",
+"story": "Serralunga family estate.",
+"wines": [
+{
+"name": "Barolo Vigna Rionda",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-ettore-germano",
+"name": "Ettore Germano",
+"region": "Piedmont – Serralunga d'Alba",
+"country": "Italy",
+"lat": 44.602,
+"lng": 8.005,
+"founded": "",
+"style": "red",
+"story": "Serralunga estate also making Riesling.",
+"wines": [
+{
+"name": "Barolo Lazzarito",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-luigi-pira",
+"name": "Luigi Pira",
+"region": "Piedmont – Serralunga d'Alba",
+"country": "Italy",
+"lat": 44.608,
+"lng": 7.998,
+"founded": "",
+"style": "red",
+"story": "Serralunga family estate.",
+"wines": [
+{
+"name": "Barolo Marenca",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-schiavenza",
+"name": "Schiavenza",
+"region": "Piedmont – Serralunga d'Alba",
+"country": "Italy",
+"lat": 44.607,
+"lng": 8.001,
+"founded": "",
+"style": "red",
+"story": "Traditional Serralunga producer.",
+"wines": [
+{
+"name": "Barolo Prapò",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-ca-viola",
+"name": "Ca' Viola",
+"region": "Piedmont – Montelupo Albese",
+"country": "Italy",
+"lat": 44.625,
+"lng": 8.05,
+"founded": "",
+"style": "red",
+"story": "Beppe Caviola's estate.",
+"wines": [
+{
+"name": "Barolo Sottocastello",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-rocche-dei-manzoni",
+"name": "Rocche dei Manzoni",
+"region": "Piedmont – Monforte d'Alba",
+"country": "Italy",
+"lat": 44.58,
+"lng": 7.96,
+"founded": "",
+"style": "red",
+"story": "Monforte estate making Barolo and sparkling.",
+"wines": [
+{
+"name": "Barolo Big 'd Big",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-conterno-fantino",
+"name": "Conterno Fantino",
+"region": "Piedmont – Monforte d'Alba",
+"country": "Italy",
+"lat": 44.585,
+"lng": 7.965,
+"founded": "",
+"style": "red",
+"story": "Monforte estate on Ginestra.",
+"wines": [
+{
+"name": "Barolo Sorì Ginestra",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-fratelli-alessandria",
+"name": "Fratelli Alessandria",
+"region": "Piedmont – Verduno",
+"country": "Italy",
+"lat": 44.666,
+"lng": 7.931,
+"founded": "",
+"style": "red",
+"story": "Verduno family estate.",
+"wines": [
+{
+"name": "Barolo Monvigliero",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-mauro-veglio",
+"name": "Mauro Veglio",
+"region": "Piedmont – La Morra",
+"country": "Italy",
+"lat": 44.635,
+"lng": 7.94,
+"founded": "",
+"style": "red",
+"story": "La Morra estate.",
+"wines": [
+{
+"name": "Barolo Arborina",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-renato-ratti",
+"name": "Renato Ratti",
+"region": "Piedmont – La Morra",
+"country": "Italy",
+"lat": 44.642,
+"lng": 7.955,
+"founded": "",
+"style": "red",
+"story": "Annunziata estate of Barolo pioneer Renato Ratti.",
+"wines": [
+{
+"name": "Barolo Marcenasco",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-trediberri",
+"name": "Trediberri",
+"region": "Piedmont – La Morra",
+"country": "Italy",
+"lat": 44.66,
+"lng": 7.92,
+"founded": "",
+"style": "red",
+"story": "Young La Morra estate.",
+"wines": [
+{
+"name": "Barolo Rocche dell'Annunziata",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-cascina-delle-rose",
+"name": "Cascina Delle Rose",
+"region": "Piedmont – Barbaresco",
+"country": "Italy",
+"lat": 44.72,
+"lng": 8.075,
+"founded": "",
+"style": "red",
+"story": "Small Barbaresco family estate.",
+"wines": [
+{
+"name": "Barbaresco Rio Sordo",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-roagna",
+"name": "Roagna",
+"region": "Piedmont – Barbaresco",
+"country": "Italy",
+"lat": 44.723,
+"lng": 8.08,
+"founded": "",
+"style": "red",
+"story": "Traditional long-macerating Barbaresco house.",
+"wines": [
+{
+"name": "Barbaresco Pajè",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-cantina-del-pino",
+"name": "Cantina del Pino",
+"region": "Piedmont – Barbaresco",
+"country": "Italy",
+"lat": 44.718,
+"lng": 8.085,
+"founded": "",
+"style": "red",
+"story": "Barbaresco family estate.",
+"wines": [
+{
+"name": "Barbaresco Ovello",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-ca-del-baio",
+"name": "Ca' del Baio",
+"region": "Piedmont – Treiso",
+"country": "Italy",
+"lat": 44.69,
+"lng": 8.09,
+"founded": "",
+"style": "red",
+"story": "Treiso family estate.",
+"wines": [
+{
+"name": "Barbaresco Asili",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-fiorenzo-nada",
+"name": "Fiorenzo Nada",
+"region": "Piedmont – Treiso",
+"country": "Italy",
+"lat": 44.688,
+"lng": 8.088,
+"founded": "",
+"style": "red",
+"story": "Treiso estate.",
+"wines": [
+{
+"name": "Barbaresco Rombone",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-moccagatta",
+"name": "Moccagatta",
+"region": "Piedmont – Barbaresco",
+"country": "Italy",
+"lat": 44.721,
+"lng": 8.082,
+"founded": "",
+"style": "red",
+"story": "Barbaresco family estate.",
+"wines": [
+{
+"name": "Barbaresco Bric Balin",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-hilberg-pasquero",
+"name": "Hilberg-Pasquero",
+"region": "Piedmont – Roero",
+"country": "Italy",
+"lat": 44.76,
+"lng": 7.94,
+"founded": "",
+"style": "red",
+"story": "Natural Roero producer.",
+"wines": [
+{
+"name": "Nebbiolo d'Alba",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-cascina-corte",
+"name": "Cascina Corte",
+"region": "Piedmont – Dogliani",
+"country": "Italy",
+"lat": 44.53,
+"lng": 7.94,
+"founded": "",
+"style": "red",
+"story": "Organic Dolcetto estate.",
+"wines": [
+{
+"name": "Dogliani",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-san-fereolo",
+"name": "San Fereolo",
+"region": "Piedmont – Dogliani",
+"country": "Italy",
+"lat": 44.52,
+"lng": 7.94,
+"founded": "",
+"style": "red",
+"story": "Biodynamic Dogliani estate.",
+"wines": [
+{
+"name": "Dogliani Superiore",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-pecchenino",
+"name": "Pecchenino",
+"region": "Piedmont – Dogliani",
+"country": "Italy",
+"lat": 44.535,
+"lng": 7.935,
+"founded": "",
+"style": "red",
+"story": "Dogliani family estate.",
+"wines": [
+{
+"name": "Sirì d'Jermu",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-iuli",
+"name": "Iuli",
+"region": "Piedmont – Monferrato",
+"country": "Italy",
+"lat": 45.07,
+"lng": 8.32,
+"founded": "",
+"style": "red",
+"story": "Monferrato estate.",
+"wines": [
+{
+"name": "Barbera Barabba",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-cascina-tavijn",
+"name": "Cascina Tavijn",
+"region": "Piedmont – Scurzolengo",
+"country": "Italy",
+"lat": 44.96,
+"lng": 8.27,
+"founded": "",
+"style": "red",
+"story": "Natural Ruchè producer.",
+"wines": [
+{
+"name": "Ruchè",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-luca-ferraris",
+"name": "Luca Ferraris",
+"region": "Piedmont – Castagnole Monferrato",
+"country": "Italy",
+"lat": 44.958,
+"lng": 8.305,
+"founded": "",
+"style": "red",
+"story": "Ruchè specialist.",
+"wines": [
+{
+"name": "Ruchè Vigna del Parroco",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-la-raia",
+"name": "La Raia",
+"region": "Piedmont – Gavi",
+"country": "Italy",
+"lat": 44.7,
+"lng": 8.8,
+"founded": "",
+"style": "white",
+"story": "Biodynamic Gavi estate.",
+"wines": [
+{
+"name": "Gavi Pisè",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-nervi-conterno",
+"name": "Nervi-Conterno",
+"region": "Piedmont – Gattinara",
+"country": "Italy",
+"lat": 45.618,
+"lng": 8.368,
+"founded": "",
+"style": "red",
+"story": "Historic Gattinara estate owned by Roberto Conterno.",
+"wines": [
+{
+"name": "Gattinara Molsino",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-colombera-garella",
+"name": "Colombera & Garella",
+"region": "Piedmont – Bramaterra",
+"country": "Italy",
+"lat": 45.63,
+"lng": 8.23,
+"founded": "",
+"style": "red",
+"story": "Alto Piemonte estate.",
+"wines": [
+{
+"name": "Bramaterra",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-proprieta-sperino",
+"name": "Proprietà Sperino",
+"region": "Piedmont – Lessona",
+"country": "Italy",
+"lat": 45.58,
+"lng": 8.2,
+"founded": "",
+"style": "red",
+"story": "Lessona estate of the De Marchi family.",
+"wines": [
+{
+"name": "Lessona",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-tenuta-sant-antonio",
+"name": "Tenuta Sant'Antonio",
+"region": "Veneto – Valpolicella",
+"country": "Italy",
+"lat": 45.48,
+"lng": 11.12,
+"founded": "",
+"style": "red",
+"story": "Valpolicella estate in Mezzane.",
+"wines": [
+{
+"name": "Amarone Campo dei Gigli",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-musella",
+"name": "Musella",
+"region": "Veneto – Valpolicella",
+"country": "Italy",
+"lat": 45.45,
+"lng": 11.08,
+"founded": "",
+"style": "red",
+"story": "Biodynamic estate in San Martino Buon Albergo.",
+"wines": [
+{
+"name": "Amarone",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-monte-dall-ora",
+"name": "Monte dall'Ora",
+"region": "Veneto – Valpolicella",
+"country": "Italy",
+"lat": 45.535,
+"lng": 10.88,
+"founded": "",
+"style": "red",
+"story": "Organic Valpolicella Classico estate.",
+"wines": [
+{
+"name": "Saseti",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-corte-sant-alda",
+"name": "Corte Sant'Alda",
+"region": "Veneto – Valpolicella",
+"country": "Italy",
+"lat": 45.5,
+"lng": 11.11,
+"founded": "",
+"style": "red",
+"story": "Biodynamic Mezzane estate.",
+"wines": [
+{
+"name": "Amarone Valmezzane",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-marion",
+"name": "Marion",
+"region": "Veneto – Valpolicella",
+"country": "Italy",
+"lat": 45.44,
+"lng": 11.1,
+"founded": "",
+"style": "red",
+"story": "Marcellise estate.",
+"wines": [
+{
+"name": "Amarone",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-viviani",
+"name": "Viviani",
+"region": "Veneto – Valpolicella",
+"country": "Italy",
+"lat": 45.56,
+"lng": 10.95,
+"founded": "",
+"style": "red",
+"story": "Mazzano estate.",
+"wines": [
+{
+"name": "Amarone Casa dei Bepi",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-brigaldara",
+"name": "Brigaldara",
+"region": "Veneto – Valpolicella",
+"country": "Italy",
+"lat": 45.53,
+"lng": 10.92,
+"founded": "",
+"style": "red",
+"story": "San Floriano estate.",
+"wines": [
+{
+"name": "Amarone Case Vecie",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-cantina-valpolicella-negrar",
+"name": "Cantina Valpolicella Negrar",
+"region": "Veneto – Valpolicella",
+"country": "Italy",
+"lat": 45.53,
+"lng": 10.94,
+"founded": "",
+"style": "red",
+"story": "Valpolicella cooperative.",
+"wines": [
+{
+"name": "Domìni Veneti Amarone",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-suavia",
+"name": "Suavia",
+"region": "Veneto – Soave",
+"country": "Italy",
+"lat": 45.45,
+"lng": 11.29,
+"founded": "",
+"style": "white",
+"story": "Fittà family Soave estate.",
+"wines": [
+{
+"name": "Monte Carbonare",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-filippi",
+"name": "Filippi",
+"region": "Veneto – Soave",
+"country": "Italy",
+"lat": 45.45,
+"lng": 11.27,
+"founded": "",
+"style": "white",
+"story": "Castelcerino Soave estate.",
+"wines": [
+{
+"name": "Castelcerino",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-ca-rugate",
+"name": "Ca' Rugate",
+"region": "Veneto – Soave",
+"country": "Italy",
+"lat": 45.425,
+"lng": 11.28,
+"founded": "",
+"style": "white",
+"story": "Montecchia di Crosara estate.",
+"wines": [
+{
+"name": "Monte Fiorentine",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-graziano-pra",
+"name": "Graziano Prà",
+"region": "Veneto – Soave",
+"country": "Italy",
+"lat": 45.418,
+"lng": 11.265,
+"founded": "",
+"style": "white",
+"story": "Monteforte family estate.",
+"wines": [
+{
+"name": "Staforte",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-le-fraghe",
+"name": "Le Fraghe",
+"region": "Veneto – Bardolino",
+"country": "Italy",
+"lat": 45.55,
+"lng": 10.76,
+"founded": "",
+"style": "red",
+"story": "Cavaion estate for Bardolino.",
+"wines": [
+{
+"name": "Bardolino",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-guerrieri-rizzardi",
+"name": "Guerrieri Rizzardi",
+"region": "Veneto – Bardolino",
+"country": "Italy",
+"lat": 45.54,
+"lng": 10.73,
+"founded": "",
+"style": "red",
+"story": "Historic Bardolino estate.",
+"wines": [
+{
+"name": "Bardolino Classico Tacchetto",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-casa-coste-piane",
+"name": "Casa Coste Piane",
+"region": "Veneto – Valdobbiadene",
+"country": "Italy",
+"lat": 45.91,
+"lng": 12.02,
+"founded": "",
+"style": "sparkling",
+"story": "Col fondo Prosecco grower.",
+"wines": [
+{
+"name": "Prosecco sui lieviti",
+"type": "Sparkling",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-ruggeri",
+"name": "Ruggeri",
+"region": "Veneto – Valdobbiadene",
+"country": "Italy",
+"lat": 45.898,
+"lng": 12.005,
+"founded": "",
+"style": "sparkling",
+"story": "Valdobbiadene house.",
+"wines": [
+{
+"name": "Vecchie Viti",
+"type": "Sparkling",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-silvano-follador",
+"name": "Silvano Follador",
+"region": "Veneto – Valdobbiadene",
+"country": "Italy",
+"lat": 45.905,
+"lng": 12.01,
+"founded": "",
+"style": "sparkling",
+"story": "Cartizze grower.",
+"wines": [
+{
+"name": "Brut Nature",
+"type": "Sparkling",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-villa-sandi",
+"name": "Villa Sandi",
+"region": "Veneto – Crocetta del Montello",
+"country": "Italy",
+"lat": 45.835,
+"lng": 12.03,
+"founded": "",
+"style": "sparkling",
+"story": "Palladian villa estate.",
+"wines": [
+{
+"name": "Prosecco",
+"type": "Sparkling",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-loredan-gasparini",
+"name": "Loredan Gasparini",
+"region": "Veneto – Montello",
+"country": "Italy",
+"lat": 45.8,
+"lng": 12.07,
+"founded": "",
+"style": "red",
+"story": "Venegazzù estate.",
+"wines": [
+{
+"name": "Capo di Stato",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-ronco-del-gelso",
+"name": "Ronco del Gelso",
+"region": "Friuli – Isonzo",
+"country": "Italy",
+"lat": 45.915,
+"lng": 13.41,
+"founded": "",
+"style": "white",
+"story": "Cormons estate.",
+"wines": [
+{
+"name": "Toc Bas Friulano",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-borgo-del-tiglio",
+"name": "Borgo del Tiglio",
+"region": "Friuli – Collio",
+"country": "Italy",
+"lat": 45.97,
+"lng": 13.47,
+"founded": "",
+"style": "white",
+"story": "Brazzano estate.",
+"wines": [
+{
+"name": "Ronco della Chiesa",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-ronco-dei-tassi",
+"name": "Ronco dei Tassi",
+"region": "Friuli – Collio",
+"country": "Italy",
+"lat": 45.965,
+"lng": 13.475,
+"founded": "",
+"style": "white",
+"story": "Cormons family estate.",
+"wines": [
+{
+"name": "Fosarin",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-ronco-severo",
+"name": "Ronco Severo",
+"region": "Friuli – Colli Orientali",
+"country": "Italy",
+"lat": 46.02,
+"lng": 13.43,
+"founded": "",
+"style": "amber",
+"story": "Natural Prepotto estate.",
+"wines": [
+{
+"name": "Ribolla",
+"type": "Amber",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-doro-princic",
+"name": "Doro Princic",
+"region": "Friuli – Collio",
+"country": "Italy",
+"lat": 45.96,
+"lng": 13.5,
+"founded": "",
+"style": "white",
+"story": "Pradis family estate.",
+"wines": [
+{
+"name": "Malvasia",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-paolo-caccese",
+"name": "Paolo Caccese",
+"region": "Friuli – Collio",
+"country": "Italy",
+"lat": 45.962,
+"lng": 13.498,
+"founded": "",
+"style": "white",
+"story": "Pradis family estate.",
+"wines": [
+{
+"name": "Malvasia",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-ronchi-di-manzano",
+"name": "Ronchi di Manzano",
+"region": "Friuli – Colli Orientali",
+"country": "Italy",
+"lat": 46.0,
+"lng": 13.39,
+"founded": "",
+"style": "white",
+"story": "Manzano estate.",
+"wines": [
+{
+"name": "Ellégri",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-bastianich",
+"name": "Bastianich",
+"region": "Friuli – Colli Orientali",
+"country": "Italy",
+"lat": 46.08,
+"lng": 13.45,
+"founded": "",
+"style": "white",
+"story": "Cividale-area estate.",
+"wines": [
+{
+"name": "Vespa Bianco",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-tenuta-stella",
+"name": "Tenuta Stella",
+"region": "Friuli – Collio",
+"country": "Italy",
+"lat": 46.01,
+"lng": 13.45,
+"founded": "",
+"style": "white",
+"story": "Dolegna estate.",
+"wines": [
+{
+"name": "Ribolla",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-castello-di-spessa",
+"name": "Castello di Spessa",
+"region": "Friuli – Collio",
+"country": "Italy",
+"lat": 45.95,
+"lng": 13.52,
+"founded": "",
+"style": "white",
+"story": "Castle estate near Capriva.",
+"wines": [
+{
+"name": "Pinot Bianco",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-kellerei-cantina-andrian",
+"name": "Kellerei Cantina Andrian",
+"region": "Alto Adige – Andriano",
+"country": "Italy",
+"lat": 46.52,
+"lng": 11.24,
+"founded": "1893",
+"style": "white",
+"story": "Andriano cooperative.",
+"wines": [
+{
+"name": "Sauvignon Floreado",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-cantina-girlan",
+"name": "Cantina Girlan",
+"region": "Alto Adige – Cornaiano",
+"country": "Italy",
+"lat": 46.472,
+"lng": 11.285,
+"founded": "1923",
+"style": "red",
+"story": "Girlan cooperative known for Schiava.",
+"wines": [
+{
+"name": "Gschleier Schiava",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-kellerei-st-pauls",
+"name": "Kellerei St. Pauls",
+"region": "Alto Adige – San Paolo",
+"country": "Italy",
+"lat": 46.49,
+"lng": 11.26,
+"founded": "1907",
+"style": "white",
+"story": "San Paolo cooperative.",
+"wines": [
+{
+"name": "Pinot Bianco",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-cantina-nals-margreid",
+"name": "Cantina Nals Margreid",
+"region": "Alto Adige – Nalles",
+"country": "Italy",
+"lat": 46.545,
+"lng": 11.205,
+"founded": "",
+"style": "white",
+"story": "Cooperative of Nals and Margreid.",
+"wines": [
+{
+"name": "Pinot Bianco Sirmian",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-kellerei-bozen",
+"name": "Kellerei Bozen",
+"region": "Alto Adige – Bolzano",
+"country": "Italy",
+"lat": 46.495,
+"lng": 11.36,
+"founded": "",
+"style": "red",
+"story": "Bolzano cooperative.",
+"wines": [
+{
+"name": "Lagrein Taber",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-pacherhof",
+"name": "Pacherhof",
+"region": "Alto Adige – Novacella",
+"country": "Italy",
+"lat": 46.735,
+"lng": 11.64,
+"founded": "",
+"style": "white",
+"story": "Isarco valley estate.",
+"wines": [
+{
+"name": "Kerner",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-strasserhof",
+"name": "Strasserhof",
+"region": "Alto Adige – Novacella",
+"country": "Italy",
+"lat": 46.738,
+"lng": 11.645,
+"founded": "",
+"style": "white",
+"story": "Isarco valley estate.",
+"wines": [
+{
+"name": "Sylvaner",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-tiefenbrunner",
+"name": "Tiefenbrunner",
+"region": "Alto Adige – Cortaccia",
+"country": "Italy",
+"lat": 46.31,
+"lng": 11.23,
+"founded": "",
+"style": "white",
+"story": "Castle estate known for Feldmarschall Müller-Thurgau.",
+"wines": [
+{
+"name": "Feldmarschall",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-peter-zemmer",
+"name": "Peter Zemmer",
+"region": "Alto Adige – Cortina",
+"country": "Italy",
+"lat": 46.27,
+"lng": 11.22,
+"founded": "",
+"style": "white",
+"story": "Cortina family estate.",
+"wines": [
+{
+"name": "Pinot Grigio",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-castel-sallegg",
+"name": "Castel Sallegg",
+"region": "Alto Adige – Caldaro",
+"country": "Italy",
+"lat": 46.405,
+"lng": 11.26,
+"founded": "",
+"style": "sweet",
+"story": "Caldaro castle estate.",
+"wines": [
+{
+"name": "Moscato Rosa",
+"type": "Sweet",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-cantina-roeno",
+"name": "Cantina Roeno",
+"region": "Trentino – Belluno Veronese",
+"country": "Italy",
+"lat": 45.72,
+"lng": 10.93,
+"founded": "",
+"style": "white",
+"story": "Valdadige family estate.",
+"wines": [
+{
+"name": "Enantio",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-maso-furli",
+"name": "Maso Furli",
+"region": "Trentino – Lavis",
+"country": "Italy",
+"lat": 46.14,
+"lng": 11.11,
+"founded": "",
+"style": "white",
+"story": "Small Lavis estate.",
+"wines": [
+{
+"name": "Traminer",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-eugenio-rosi",
+"name": "Eugenio Rosi",
+"region": "Trentino – Volano",
+"country": "Italy",
+"lat": 45.92,
+"lng": 11.06,
+"founded": "",
+"style": "red",
+"story": "Natural Marzemino producer.",
+"wines": [
+{
+"name": "Esegesi",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-letrari",
+"name": "Letrari",
+"region": "Trentino – Rovereto",
+"country": "Italy",
+"lat": 45.89,
+"lng": 11.03,
+"founded": "",
+"style": "sparkling",
+"story": "Trento DOC house.",
+"wines": [
+{
+"name": "Riserva del Fondatore",
+"type": "Sparkling",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-cesarini-sforza",
+"name": "Cesarini Sforza",
+"region": "Trentino – Trento",
+"country": "Italy",
+"lat": 46.07,
+"lng": 11.12,
+"founded": "",
+"style": "sparkling",
+"story": "Trento sparkling house.",
+"wines": [
+{
+"name": "Aquila Reale",
+"type": "Sparkling",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-rotari",
+"name": "Rotari",
+"region": "Trentino – Mezzocorona",
+"country": "Italy",
+"lat": 46.21,
+"lng": 11.12,
+"founded": "",
+"style": "sparkling",
+"story": "Trento DOC brand of Mezzacorona.",
+"wines": [
+{
+"name": "Flavio",
+"type": "Sparkling",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-uberti",
+"name": "Uberti",
+"region": "Lombardy – Franciacorta",
+"country": "Italy",
+"lat": 45.602,
+"lng": 10.028,
+"founded": "",
+"style": "sparkling",
+"story": "Erbusco family estate.",
+"wines": [
+{
+"name": "Comarì del Salem",
+"type": "Sparkling",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-cavalleri",
+"name": "Cavalleri",
+"region": "Lombardy – Franciacorta",
+"country": "Italy",
+"lat": 45.601,
+"lng": 10.027,
+"founded": "",
+"style": "sparkling",
+"story": "Erbusco family estate.",
+"wines": [
+{
+"name": "Collezione",
+"type": "Sparkling",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-conti-sertoli-salis",
+"name": "Conti Sertoli Salis",
+"region": "Lombardy – Valtellina",
+"country": "Italy",
+"lat": 46.17,
+"lng": 10.1,
+"founded": "",
+"style": "red",
+"story": "Tirano Valtellina house.",
+"wines": [
+{
+"name": "Canua",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-rainoldi",
+"name": "Rainoldi",
+"region": "Lombardy – Valtellina",
+"country": "Italy",
+"lat": 46.178,
+"lng": 10.04,
+"founded": "",
+"style": "red",
+"story": "Chiuro family house.",
+"wines": [
+{
+"name": "Sfursat Fruttaio Ca' Rizzieri",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-le-strette",
+"name": "Le Strette",
+"region": "Lombardy – Valtellina",
+"country": "Italy",
+"lat": 46.16,
+"lng": 9.85,
+"founded": "",
+"style": "red",
+"story": "Small Valtellina producer.",
+"wines": [
+{
+"name": "Sassella",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-fattoria-san-lorenzo",
+"name": "Fattoria San Lorenzo",
+"region": "Marche – Montecarotto",
+"country": "Italy",
+"lat": 43.53,
+"lng": 13.07,
+"founded": "",
+"style": "white",
+"story": "Natural Verdicchio estate.",
+"wines": [
+{
+"name": "Le Oche",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-pievalta",
+"name": "Pievalta",
+"region": "Marche – Maiolati Spontini",
+"country": "Italy",
+"lat": 43.48,
+"lng": 13.12,
+"founded": "",
+"style": "white",
+"story": "Biodynamic Verdicchio estate.",
+"wines": [
+{
+"name": "Tre Ripe",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-garofoli",
+"name": "Garofoli",
+"region": "Marche – Loreto",
+"country": "Italy",
+"lat": 43.44,
+"lng": 13.6,
+"founded": "1871",
+"style": "white",
+"story": "Historic Marche house.",
+"wines": [
+{
+"name": "Podium",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-velenosi",
+"name": "Velenosi",
+"region": "Marche – Ascoli Piceno",
+"country": "Italy",
+"lat": 42.86,
+"lng": 13.58,
+"founded": "",
+"style": "red",
+"story": "Piceno estate.",
+"wines": [
+{
+"name": "Ludi",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-fattoria-coroncino",
+"name": "Fattoria Coroncino",
+"region": "Marche – Staffolo",
+"country": "Italy",
+"lat": 43.43,
+"lng": 13.18,
+"founded": "",
+"style": "white",
+"story": "Staffolo Verdicchio estate.",
+"wines": [
+{
+"name": "Gaiospino",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-collestefano",
+"name": "Collestefano",
+"region": "Marche – Castelraimondo",
+"country": "Italy",
+"lat": 43.21,
+"lng": 13.05,
+"founded": "",
+"style": "white",
+"story": "Matelica estate.",
+"wines": [
+{
+"name": "Verdicchio di Matelica",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-belisario",
+"name": "Belisario",
+"region": "Marche – Matelica",
+"country": "Italy",
+"lat": 43.255,
+"lng": 13.005,
+"founded": "",
+"style": "white",
+"story": "Matelica cooperative.",
+"wines": [
+{
+"name": "Cambrugiano",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-tabarrini",
+"name": "Tabarrini",
+"region": "Umbria – Montefalco",
+"country": "Italy",
+"lat": 42.92,
+"lng": 12.63,
+"founded": "",
+"style": "red",
+"story": "Montefalco family estate.",
+"wines": [
+{
+"name": "Colle alle Macchie",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-scacciadiavoli",
+"name": "Scacciadiavoli",
+"region": "Umbria – Montefalco",
+"country": "Italy",
+"lat": 42.88,
+"lng": 12.61,
+"founded": "",
+"style": "red",
+"story": "Historic Montefalco estate.",
+"wines": [
+{
+"name": "Sagrantino",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-barberani",
+"name": "Barberani",
+"region": "Umbria – Orvieto",
+"country": "Italy",
+"lat": 42.75,
+"lng": 12.17,
+"founded": "",
+"style": "white",
+"story": "Orvieto family estate.",
+"wines": [
+{
+"name": "Calcaia",
+"type": "Sweet",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-francesco-cirelli",
+"name": "Francesco Cirelli",
+"region": "Abruzzo – Atri",
+"country": "Italy",
+"lat": 42.575,
+"lng": 13.985,
+"founded": "",
+"style": "red",
+"story": "Organic Atri farm making amphora wines.",
+"wines": [
+{
+"name": "Montepulciano d'Abruzzo",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-cataldi-madonna",
+"name": "Cataldi Madonna",
+"region": "Abruzzo – Ofena",
+"country": "Italy",
+"lat": 42.33,
+"lng": 13.76,
+"founded": "",
+"style": "rose",
+"story": "Ofena estate famed for Cerasuolo.",
+"wines": [
+{
+"name": "Piè delle Vigne",
+"type": "Rosé",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-de-fermo",
+"name": "De Fermo",
+"region": "Abruzzo – Loreto Aprutino",
+"country": "Italy",
+"lat": 42.435,
+"lng": 13.985,
+"founded": "",
+"style": "red",
+"story": "Loreto Aprutino estate.",
+"wines": [
+{
+"name": "Prologo",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-praesidium",
+"name": "Praesidium",
+"region": "Abruzzo – Prezza",
+"country": "Italy",
+"lat": 42.05,
+"lng": 13.83,
+"founded": "",
+"style": "red",
+"story": "Peligna valley family estate.",
+"wines": [
+{
+"name": "Montepulciano Riserva",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
 }
 ]

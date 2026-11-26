@@ -22182,5 +22182,4198 @@
 ],
 "events": [],
 "real": true
+},
+{
+"id": "de-weingut-markus-molitor",
+"name": "Weingut Markus Molitor",
+"region": "Mosel – Bernkastel-Wehlen",
+"country": "Germany",
+"lat": 49.94,
+"lng": 7.04,
+"founded": "",
+"style": "white",
+"story": "Mosel estate at Haus Klosterberg with vineyards up and down the river.",
+"wines": [
+{
+"name": "Zeltinger Sonnenuhr Riesling",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+},
+{
+"name": "Brauneberger Klostergarten Pinot Noir",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "de-weingut-selbach-oster",
+"name": "Weingut Selbach-Oster",
+"region": "Mosel – Zeltingen-Rachtig",
+"country": "Germany",
+"lat": 49.955,
+"lng": 7.01,
+"founded": "",
+"style": "white",
+"story": "Zeltingen family estate.",
+"wines": [
+{
+"name": "Zeltinger Schlossberg Riesling",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "de-weingut-willi-schaefer",
+"name": "Weingut Willi Schaefer",
+"region": "Mosel – Graach",
+"country": "Germany",
+"lat": 49.93,
+"lng": 7.065,
+"founded": "",
+"style": "white",
+"story": "Small Graach estate.",
+"wines": [
+{
+"name": "Graacher Domprobst Riesling Spätlese",
+"type": "Sweet",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "de-weingut-schloss-lieser",
+"name": "Weingut Schloss Lieser",
+"region": "Mosel – Lieser",
+"country": "Germany",
+"lat": 49.915,
+"lng": 7.03,
+"founded": "",
+"style": "white",
+"story": "Thomas Haag's estate in Lieser.",
+"wines": [
+{
+"name": "Niederberg Helden Riesling",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "de-weingut-dr-h-thanisch",
+"name": "Weingut Dr. H. Thanisch",
+"region": "Mosel – Bernkastel-Kues",
+"country": "Germany",
+"lat": 49.915,
+"lng": 7.07,
+"founded": "",
+"style": "white",
+"story": "Estate owning part of the Bernkasteler Doctor.",
+"wines": [
+{
+"name": "Bernkasteler Doctor Riesling",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "de-weingut-reinhold-haart",
+"name": "Weingut Reinhold Haart",
+"region": "Mosel – Piesport",
+"country": "Germany",
+"lat": 49.885,
+"lng": 6.92,
+"founded": "",
+"style": "white",
+"story": "Piesport family estate.",
+"wines": [
+{
+"name": "Piesporter Goldtröpfchen Riesling",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "de-weingut-grans-fassian",
+"name": "Weingut Grans-Fassian",
+"region": "Mosel – Leiwen",
+"country": "Germany",
+"lat": 49.82,
+"lng": 6.89,
+"founded": "",
+"style": "white",
+"story": "Leiwen family estate.",
+"wines": [
+{
+"name": "Trittenheimer Apotheke Riesling",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "de-weingut-carl-loewen",
+"name": "Weingut Carl Loewen",
+"region": "Mosel – Leiwen",
+"country": "Germany",
+"lat": 49.818,
+"lng": 6.885,
+"founded": "",
+"style": "white",
+"story": "Leiwen estate with a 1896-planted ungrafted vineyard.",
+"wines": [
+{
+"name": "Riesling 1896",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "de-weingut-a-j-adam",
+"name": "Weingut A.J. Adam",
+"region": "Mosel – Dhron",
+"country": "Germany",
+"lat": 49.86,
+"lng": 6.93,
+"founded": "",
+"style": "white",
+"story": "Revived family estate in Dhron.",
+"wines": [
+{
+"name": "Dhroner Hofberg Riesling",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "de-weingut-maximin-grunhaus",
+"name": "Weingut Maximin Grünhaus",
+"region": "Ruwer – Mertesdorf",
+"country": "Germany",
+"lat": 49.77,
+"lng": 6.73,
+"founded": "",
+"style": "white",
+"story": "Ruwer estate of the von Schubert family.",
+"wines": [
+{
+"name": "Abtsberg Riesling",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "de-weingut-karthauserhof",
+"name": "Weingut Karthäuserhof",
+"region": "Ruwer – Eitelsbach",
+"country": "Germany",
+"lat": 49.785,
+"lng": 6.71,
+"founded": "",
+"style": "white",
+"story": "Ruwer estate famous for its neck-only label.",
+"wines": [
+{
+"name": "Karthäuserhofberg Riesling",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "de-weingut-von-othegraven",
+"name": "Weingut von Othegraven",
+"region": "Saar – Kanzem",
+"country": "Germany",
+"lat": 49.665,
+"lng": 6.565,
+"founded": "",
+"style": "white",
+"story": "Kanzem estate owned by TV host Günther Jauch.",
+"wines": [
+{
+"name": "Kanzem Altenberg Riesling",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "de-weingut-zilliken",
+"name": "Weingut Zilliken",
+"region": "Saar – Saarburg",
+"country": "Germany",
+"lat": 49.605,
+"lng": 6.55,
+"founded": "",
+"style": "white",
+"story": "Saarburg estate for Rausch Riesling.",
+"wines": [
+{
+"name": "Saarburger Rausch Riesling",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "de-weingut-van-volxem",
+"name": "Weingut Van Volxem",
+"region": "Saar – Wiltingen",
+"country": "Germany",
+"lat": 49.655,
+"lng": 6.59,
+"founded": "",
+"style": "white",
+"story": "Revived Saar estate with a new winery on the Wiltinger Schlangengraben.",
+"wines": [
+{
+"name": "Scharzhofberger Pergentsknopp",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "de-weingut-peter-lauer",
+"name": "Weingut Peter Lauer",
+"region": "Saar – Ayl",
+"country": "Germany",
+"lat": 49.625,
+"lng": 6.55,
+"founded": "",
+"style": "white",
+"story": "Ayl estate bottling Fass numbers.",
+"wines": [
+{
+"name": "Ayler Kupp Riesling",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "de-weingut-hermann-ludes",
+"name": "Weingut Hermann Ludes",
+"region": "Mosel – Thörnich",
+"country": "Germany",
+"lat": 49.86,
+"lng": 6.88,
+"founded": "",
+"style": "white",
+"story": "Thörnich family estate.",
+"wines": [
+{
+"name": "Thörnicher Ritsch Riesling",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "de-weingut-knebel",
+"name": "Weingut Knebel",
+"region": "Mosel – Winningen",
+"country": "Germany",
+"lat": 50.315,
+"lng": 7.505,
+"founded": "",
+"style": "white",
+"story": "Terraced Mosel estate in Winningen.",
+"wines": [
+{
+"name": "Röttgen Riesling",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "de-weingut-georg-breuer",
+"name": "Weingut Georg Breuer",
+"region": "Rheingau – Rüdesheim",
+"country": "Germany",
+"lat": 49.98,
+"lng": 7.925,
+"founded": "",
+"style": "white",
+"story": "Rüdesheim estate of Theresa Breuer.",
+"wines": [
+{
+"name": "Berg Schlossberg Riesling",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "de-weingut-peter-jakob-kuhn",
+"name": "Weingut Peter Jakob Kühn",
+"region": "Rheingau – Oestrich",
+"country": "Germany",
+"lat": 50.005,
+"lng": 8.03,
+"founded": "",
+"style": "white",
+"story": "Biodynamic Oestrich estate.",
+"wines": [
+{
+"name": "Doosberg Riesling",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "de-weingut-leitz",
+"name": "Weingut Leitz",
+"region": "Rheingau – Rüdesheim",
+"country": "Germany",
+"lat": 49.979,
+"lng": 7.93,
+"founded": "",
+"style": "white",
+"story": "Rüdesheim estate known for Eins Zwei Dry.",
+"wines": [
+{
+"name": "Rottland Riesling",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "de-weingut-august-kesseler",
+"name": "Weingut August Kesseler",
+"region": "Rheingau – Assmannshausen",
+"country": "Germany",
+"lat": 49.99,
+"lng": 7.865,
+"founded": "",
+"style": "red",
+"story": "Assmannshausen estate for Pinot Noir.",
+"wines": [
+{
+"name": "Assmannshäuser Höllenberg Spätburgunder",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "de-schloss-vollrads",
+"name": "Schloss Vollrads",
+"region": "Rheingau – Oestrich-Winkel",
+"country": "Germany",
+"lat": 50.015,
+"lng": 8.005,
+"founded": "",
+"style": "white",
+"story": "Historic castle estate with records back to 1211.",
+"wines": [
+{
+"name": "Schloss Vollrads Riesling",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "de-weingut-kunstler",
+"name": "Weingut Künstler",
+"region": "Rheingau – Hochheim",
+"country": "Germany",
+"lat": 50.01,
+"lng": 8.355,
+"founded": "",
+"style": "white",
+"story": "Hochheim family estate.",
+"wines": [
+{
+"name": "Hochheimer Hölle Riesling",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "de-weingut-spreitzer",
+"name": "Weingut Spreitzer",
+"region": "Rheingau – Oestrich",
+"country": "Germany",
+"lat": 50.005,
+"lng": 8.025,
+"founded": "",
+"style": "white",
+"story": "Oestrich family estate.",
+"wines": [
+{
+"name": "Rosengarten Riesling",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "de-weingut-battenfeld-spanier",
+"name": "Weingut Battenfeld-Spanier",
+"region": "Rheinhessen – Hohen-Sülzen",
+"country": "Germany",
+"lat": 49.62,
+"lng": 8.22,
+"founded": "",
+"style": "white",
+"story": "Biodynamic estate around Hohen-Sülzen.",
+"wines": [
+{
+"name": "Frauenberg Riesling",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "de-weingut-kuhling-gillot",
+"name": "Weingut Kühling-Gillot",
+"region": "Rheinhessen – Bodenheim",
+"country": "Germany",
+"lat": 49.93,
+"lng": 8.32,
+"founded": "",
+"style": "white",
+"story": "Estate on the Roter Hang of Nierstein.",
+"wines": [
+{
+"name": "Pettenthal Riesling",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "de-weingut-st-antony",
+"name": "Weingut St. Antony",
+"region": "Rheinhessen – Nierstein",
+"country": "Germany",
+"lat": 49.87,
+"lng": 8.335,
+"founded": "",
+"style": "white",
+"story": "Nierstein estate on red slate.",
+"wines": [
+{
+"name": "Orbel Riesling",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "de-weingut-wagner-stempel",
+"name": "Weingut Wagner-Stempel",
+"region": "Rheinhessen – Siefersheim",
+"country": "Germany",
+"lat": 49.805,
+"lng": 7.96,
+"founded": "",
+"style": "white",
+"story": "Porphyry-soil estate in Siefersheim.",
+"wines": [
+{
+"name": "Höllberg Riesling",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "de-weingut-schatzel",
+"name": "Weingut Schätzel",
+"region": "Rheinhessen – Nierstein",
+"country": "Germany",
+"lat": 49.871,
+"lng": 8.337,
+"founded": "",
+"style": "white",
+"story": "Nierstein natural-leaning estate.",
+"wines": [
+{
+"name": "Pettenthal Riesling",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "de-weingut-schlossgut-diel",
+"name": "Weingut Schlossgut Diel",
+"region": "Nahe – Burg Layen",
+"country": "Germany",
+"lat": 49.905,
+"lng": 7.86,
+"founded": "",
+"style": "white",
+"story": "Castle estate of the Diel family.",
+"wines": [
+{
+"name": "Pittermännchen Riesling",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "de-weingut-schafer-frohlich",
+"name": "Weingut Schäfer-Fröhlich",
+"region": "Nahe – Bockenau",
+"country": "Germany",
+"lat": 49.84,
+"lng": 7.69,
+"founded": "",
+"style": "white",
+"story": "Bockenau estate.",
+"wines": [
+{
+"name": "Felseneck Riesling",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "de-weingut-kruger-rumpf",
+"name": "Weingut Kruger-Rumpf",
+"region": "Nahe – Münster-Sarmsheim",
+"country": "Germany",
+"lat": 49.945,
+"lng": 7.895,
+"founded": "",
+"style": "white",
+"story": "Family estate near Bingen.",
+"wines": [
+{
+"name": "Dautenpflänzer Riesling",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "de-weingut-tesch",
+"name": "Weingut Tesch",
+"region": "Nahe – Langenlonsheim",
+"country": "Germany",
+"lat": 49.9,
+"lng": 7.9,
+"founded": "",
+"style": "white",
+"story": "Langenlonsheim estate with rock-music branding.",
+"wines": [
+{
+"name": "Riesling Unplugged",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "de-weingut-a-christmann",
+"name": "Weingut A. Christmann",
+"region": "Pfalz – Gimmeldingen",
+"country": "Germany",
+"lat": 49.38,
+"lng": 8.16,
+"founded": "",
+"style": "white",
+"story": "Biodynamic Gimmeldingen estate.",
+"wines": [
+{
+"name": "Idig Riesling",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "de-weingut-von-winning",
+"name": "Weingut von Winning",
+"region": "Pfalz – Deidesheim",
+"country": "Germany",
+"lat": 49.41,
+"lng": 8.185,
+"founded": "",
+"style": "white",
+"story": "Deidesheim estate.",
+"wines": [
+{
+"name": "Pechstein Riesling",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "de-weingut-reichsrat-von-buhl",
+"name": "Weingut Reichsrat von Buhl",
+"region": "Pfalz – Deidesheim",
+"country": "Germany",
+"lat": 49.409,
+"lng": 8.187,
+"founded": "1849",
+"style": "white",
+"story": "Historic Deidesheim estate.",
+"wines": [
+{
+"name": "Forster Jesuitengarten Riesling",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "de-weingut-friedrich-becker",
+"name": "Weingut Friedrich Becker",
+"region": "Pfalz – Schweigen",
+"country": "Germany",
+"lat": 49.05,
+"lng": 7.955,
+"founded": "",
+"style": "red",
+"story": "Southern Pfalz estate famous for Pinot Noir.",
+"wines": [
+{
+"name": "Kammerberg Spätburgunder",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "de-weingut-knipser",
+"name": "Weingut Knipser",
+"region": "Pfalz – Laumersheim",
+"country": "Germany",
+"lat": 49.56,
+"lng": 8.2,
+"founded": "",
+"style": "red",
+"story": "Laumersheim estate for reds and whites.",
+"wines": [
+{
+"name": "Kirschgarten Spätburgunder",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "de-weingut-philipp-kuhn",
+"name": "Weingut Philipp Kuhn",
+"region": "Pfalz – Laumersheim",
+"country": "Germany",
+"lat": 49.562,
+"lng": 8.198,
+"founded": "",
+"style": "red",
+"story": "Laumersheim family estate.",
+"wines": [
+{
+"name": "Steinbuckel Riesling",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "de-weingut-dr-wehrheim",
+"name": "Weingut Dr. Wehrheim",
+"region": "Pfalz – Birkweiler",
+"country": "Germany",
+"lat": 49.205,
+"lng": 8.04,
+"founded": "",
+"style": "white",
+"story": "Birkweiler organic estate.",
+"wines": [
+{
+"name": "Kastanienbusch Riesling",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "de-weingut-mosbacher",
+"name": "Weingut Mosbacher",
+"region": "Pfalz – Forst",
+"country": "Germany",
+"lat": 49.425,
+"lng": 8.195,
+"founded": "",
+"style": "white",
+"story": "Forst family estate.",
+"wines": [
+{
+"name": "Forster Ungeheuer Riesling",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "de-weingut-furst-lowenstein",
+"name": "Weingut Fürst Löwenstein",
+"region": "Franken – Kreuzwertheim",
+"country": "Germany",
+"lat": 49.765,
+"lng": 9.52,
+"founded": "",
+"style": "white",
+"story": "Princely Franconian estate.",
+"wines": [
+{
+"name": "Homburger Kallmuth Silvaner",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "de-burgerspital-zum-heiligen-geist",
+"name": "Bürgerspital zum Heiligen Geist",
+"region": "Franken – Würzburg",
+"country": "Germany",
+"lat": 49.795,
+"lng": 9.935,
+"founded": "1316",
+"style": "white",
+"story": "Würzburg charitable foundation estate.",
+"wines": [
+{
+"name": "Würzburger Stein Silvaner",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "de-staatlicher-hofkeller-wurzburg",
+"name": "Staatlicher Hofkeller Würzburg",
+"region": "Franken – Würzburg",
+"country": "Germany",
+"lat": 49.793,
+"lng": 9.938,
+"founded": "1128",
+"style": "white",
+"story": "Bavarian state estate beneath the Würzburg Residenz.",
+"wines": [
+{
+"name": "Würzburger Stein Riesling",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "de-weingut-horst-sauer",
+"name": "Weingut Horst Sauer",
+"region": "Franken – Escherndorf",
+"country": "Germany",
+"lat": 49.86,
+"lng": 10.175,
+"founded": "",
+"style": "white",
+"story": "Escherndorf estate on the Lump vineyard.",
+"wines": [
+{
+"name": "Escherndorfer Lump Silvaner",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "de-weingut-hans-wirsching",
+"name": "Weingut Hans Wirsching",
+"region": "Franken – Iphofen",
+"country": "Germany",
+"lat": 49.705,
+"lng": 10.265,
+"founded": "1630",
+"style": "white",
+"story": "Iphofen family estate since 1630.",
+"wines": [
+{
+"name": "Julius-Echter-Berg Silvaner",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "de-weingut-salwey",
+"name": "Weingut Salwey",
+"region": "Baden – Oberrotweil",
+"country": "Germany",
+"lat": 48.09,
+"lng": 7.66,
+"founded": "",
+"style": "red",
+"story": "Kaiserstuhl estate.",
+"wines": [
+{
+"name": "Henkenberg Spätburgunder",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "de-weingut-franz-keller",
+"name": "Weingut Franz Keller",
+"region": "Baden – Oberbergen",
+"country": "Germany",
+"lat": 48.095,
+"lng": 7.655,
+"founded": "",
+"style": "red",
+"story": "Kaiserstuhl estate and restaurant family.",
+"wines": [
+{
+"name": "Oberbergener Bassgeige",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "de-weingut-enderle-moll",
+"name": "Weingut Enderle & Moll",
+"region": "Baden – Münchweier",
+"country": "Germany",
+"lat": 48.25,
+"lng": 7.8,
+"founded": "",
+"style": "red",
+"story": "Small cult Pinot Noir producer.",
+"wines": [
+{
+"name": "Pinot Noir Buntsandstein",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "de-weingut-schloss-neuweier",
+"name": "Weingut Schloss Neuweier",
+"region": "Baden – Baden-Baden",
+"country": "Germany",
+"lat": 48.735,
+"lng": 8.155,
+"founded": "",
+"style": "white",
+"story": "Ortenau estate with Bocksbeutel tradition.",
+"wines": [
+{
+"name": "Mauerberg Riesling",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "de-weingut-aldinger",
+"name": "Weingut Aldinger",
+"region": "Württemberg – Fellbach",
+"country": "Germany",
+"lat": 48.81,
+"lng": 9.275,
+"founded": "",
+"style": "red",
+"story": "Fellbach family estate.",
+"wines": [
+{
+"name": "Lämmler Spätburgunder",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "de-weingut-rainer-schnaitmann",
+"name": "Weingut Rainer Schnaitmann",
+"region": "Württemberg – Fellbach",
+"country": "Germany",
+"lat": 48.812,
+"lng": 9.278,
+"founded": "",
+"style": "red",
+"story": "Fellbach estate for Lemberger and Pinot.",
+"wines": [
+{
+"name": "Lämmler Lemberger",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "de-weingut-jean-stodden",
+"name": "Weingut Jean Stodden",
+"region": "Ahr – Rech",
+"country": "Germany",
+"lat": 50.515,
+"lng": 7.035,
+"founded": "",
+"style": "red",
+"story": "Ahr valley Pinot Noir estate.",
+"wines": [
+{
+"name": "Recher Herrenberg Spätburgunder",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "de-weingut-klaus-zimmerling",
+"name": "Weingut Klaus Zimmerling",
+"region": "Sachsen – Dresden-Pillnitz",
+"country": "Germany",
+"lat": 51.008,
+"lng": 13.87,
+"founded": "",
+"style": "white",
+"story": "Small Saxon estate with art-sculpture labels.",
+"wines": [
+{
+"name": "Riesling",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "de-weingut-lutzkendorf",
+"name": "Weingut Lützkendorf",
+"region": "Saale-Unstrut – Bad Kösen",
+"country": "Germany",
+"lat": 51.135,
+"lng": 11.72,
+"founded": "",
+"style": "white",
+"story": "Saale-Unstrut family estate.",
+"wines": [
+{
+"name": "Hohe Gräte Riesling",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "at-weingut-prager",
+"name": "Weingut Prager",
+"region": "Wachau – Weißenkirchen",
+"country": "Austria",
+"lat": 48.4,
+"lng": 15.465,
+"founded": "",
+"style": "white",
+"story": "Weißenkirchen estate known for Achleiten.",
+"wines": [
+{
+"name": "Riesling Achleiten",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "at-weingut-alzinger",
+"name": "Weingut Alzinger",
+"region": "Wachau – Unterloiben",
+"country": "Austria",
+"lat": 48.396,
+"lng": 15.535,
+"founded": "",
+"style": "white",
+"story": "Unterloiben estate for Loibenberg.",
+"wines": [
+{
+"name": "Riesling Loibenberg",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "at-weingut-rudi-pichler",
+"name": "Weingut Rudi Pichler",
+"region": "Wachau – Wösendorf",
+"country": "Austria",
+"lat": 48.385,
+"lng": 15.42,
+"founded": "",
+"style": "white",
+"story": "Wösendorf estate.",
+"wines": [
+{
+"name": "Grüner Veltliner Achleiten",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "at-weingut-jamek",
+"name": "Weingut Jamek",
+"region": "Wachau – Joching",
+"country": "Austria",
+"lat": 48.39,
+"lng": 15.44,
+"founded": "",
+"style": "white",
+"story": "Joching estate with a famous restaurant.",
+"wines": [
+{
+"name": "Riesling Ried Klaus",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "at-weingut-nigl",
+"name": "Weingut Nigl",
+"region": "Kremstal – Senftenberg",
+"country": "Austria",
+"lat": 48.435,
+"lng": 15.55,
+"founded": "",
+"style": "white",
+"story": "Senftenberg estate below the castle ruins.",
+"wines": [
+{
+"name": "Riesling Piri",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "at-weingut-malat",
+"name": "Weingut Malat",
+"region": "Kremstal – Palt",
+"country": "Austria",
+"lat": 48.395,
+"lng": 15.625,
+"founded": "",
+"style": "white",
+"story": "Palt family estate.",
+"wines": [
+{
+"name": "Grüner Veltliner Gottschelle",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "at-weingut-salomon-undhof",
+"name": "Weingut Salomon-Undhof",
+"region": "Kremstal – Stein",
+"country": "Austria",
+"lat": 48.405,
+"lng": 15.585,
+"founded": "",
+"style": "white",
+"story": "Krems-Stein estate.",
+"wines": [
+{
+"name": "Riesling Kögl",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "at-weingut-hiedler",
+"name": "Weingut Hiedler",
+"region": "Kamptal – Langenlois",
+"country": "Austria",
+"lat": 48.475,
+"lng": 15.68,
+"founded": "",
+"style": "white",
+"story": "Langenlois estate.",
+"wines": [
+{
+"name": "Grüner Veltliner Thal",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "at-weingut-loimer",
+"name": "Weingut Loimer",
+"region": "Kamptal – Langenlois",
+"country": "Austria",
+"lat": 48.47,
+"lng": 15.675,
+"founded": "",
+"style": "white",
+"story": "Biodynamic Langenlois estate.",
+"wines": [
+{
+"name": "Riesling Steinmassl",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "at-weingut-hirsch",
+"name": "Weingut Hirsch",
+"region": "Kamptal – Kammern",
+"country": "Austria",
+"lat": 48.48,
+"lng": 15.71,
+"founded": "",
+"style": "white",
+"story": "Kammern estate known for Heiligenstein.",
+"wines": [
+{
+"name": "Riesling Heiligenstein",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "at-weingut-ott",
+"name": "Weingut Ott",
+"region": "Wagram – Feuersbrunn",
+"country": "Austria",
+"lat": 48.425,
+"lng": 15.79,
+"founded": "",
+"style": "white",
+"story": "Feuersbrunn Grüner Veltliner specialist.",
+"wines": [
+{
+"name": "Rosenberg Grüner Veltliner",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "at-weingut-fritsch",
+"name": "Weingut Fritsch",
+"region": "Wagram – Oberstockstall",
+"country": "Austria",
+"lat": 48.42,
+"lng": 15.84,
+"founded": "",
+"style": "white",
+"story": "Biodynamic Wagram estate.",
+"wines": [
+{
+"name": "Schlossberg Grüner Veltliner",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "at-weingut-mayer-am-pfarrplatz",
+"name": "Weingut Mayer am Pfarrplatz",
+"region": "Vienna – Heiligenstadt",
+"country": "Austria",
+"lat": 48.255,
+"lng": 16.35,
+"founded": "",
+"style": "white",
+"story": "Heuriger estate where Beethoven once lodged.",
+"wines": [
+{
+"name": "Wiener Gemischter Satz",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "at-weingut-zahel",
+"name": "Weingut Zahel",
+"region": "Vienna – Mauer",
+"country": "Austria",
+"lat": 48.15,
+"lng": 16.27,
+"founded": "",
+"style": "white",
+"story": "Vienna estate for Gemischter Satz.",
+"wines": [
+{
+"name": "Gemischter Satz Nussberg",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "at-weingut-stift-klosterneuburg",
+"name": "Weingut Stift Klosterneuburg",
+"region": "Thermenregion – Klosterneuburg",
+"country": "Austria",
+"lat": 48.305,
+"lng": 16.325,
+"founded": "1114",
+"style": "red",
+"story": "Augustinian monastery estate, one of Austria's oldest.",
+"wines": [
+{
+"name": "St. Laurent",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "at-weingut-stadlmann",
+"name": "Weingut Stadlmann",
+"region": "Thermenregion – Traiskirchen",
+"country": "Austria",
+"lat": 48.015,
+"lng": 16.29,
+"founded": "",
+"style": "white",
+"story": "Specialist in Zierfandler and Rotgipfler.",
+"wines": [
+{
+"name": "Zierfandler Mandel-Höh",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "at-weingut-johanneshof-reinisch",
+"name": "Weingut Johanneshof Reinisch",
+"region": "Thermenregion – Tattendorf",
+"country": "Austria",
+"lat": 47.955,
+"lng": 16.305,
+"founded": "",
+"style": "red",
+"story": "Tattendorf estate for St. Laurent and Pinot.",
+"wines": [
+{
+"name": "St. Laurent Frauenfeld",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "at-weingut-moric",
+"name": "Weingut Moric",
+"region": "Burgenland – Großhöflein",
+"country": "Austria",
+"lat": 47.835,
+"lng": 16.49,
+"founded": "",
+"style": "red",
+"story": "Roland Velich's Blaufränkisch project.",
+"wines": [
+{
+"name": "Blaufränkisch Neckenmarkt",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "at-weingut-uwe-schiefer",
+"name": "Weingut Uwe Schiefer",
+"region": "Burgenland – Welgersdorf",
+"country": "Austria",
+"lat": 47.27,
+"lng": 16.32,
+"founded": "",
+"style": "red",
+"story": "Eisenberg Blaufränkisch estate.",
+"wines": [
+{
+"name": "Reihburg Blaufränkisch",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "at-weingut-paul-achs",
+"name": "Weingut Paul Achs",
+"region": "Burgenland – Gols",
+"country": "Austria",
+"lat": 47.9,
+"lng": 16.91,
+"founded": "",
+"style": "red",
+"story": "Biodynamic Gols estate.",
+"wines": [
+{
+"name": "Blaufränkisch Ungerberg",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "at-weingut-gernot-und-heike-heinrich",
+"name": "Weingut Gernot und Heike Heinrich",
+"region": "Burgenland – Gols",
+"country": "Austria",
+"lat": 47.898,
+"lng": 16.915,
+"founded": "",
+"style": "red",
+"story": "Biodynamic Gols estate.",
+"wines": [
+{
+"name": "Blaufränkisch Leithaberg",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "at-weingut-claus-preisinger",
+"name": "Weingut Claus Preisinger",
+"region": "Burgenland – Gols",
+"country": "Austria",
+"lat": 47.899,
+"lng": 16.912,
+"founded": "",
+"style": "red",
+"story": "Gols estate with natural-leaning wines.",
+"wines": [
+{
+"name": "Pinot Noir",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "at-weingut-umathum",
+"name": "Weingut Umathum",
+"region": "Burgenland – Frauenkirchen",
+"country": "Austria",
+"lat": 47.835,
+"lng": 16.925,
+"founded": "",
+"style": "red",
+"story": "Frauenkirchen biodynamic estate.",
+"wines": [
+{
+"name": "Zweigelt Hallebühl",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "at-weingut-feiler-artinger",
+"name": "Weingut Feiler-Artinger",
+"region": "Burgenland – Rust",
+"country": "Austria",
+"lat": 47.8,
+"lng": 16.67,
+"founded": "",
+"style": "sweet",
+"story": "Rust estate for Ruster Ausbruch.",
+"wines": [
+{
+"name": "Ruster Ausbruch",
+"type": "Sweet",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "at-weingut-heidi-schrock",
+"name": "Weingut Heidi Schröck",
+"region": "Burgenland – Rust",
+"country": "Austria",
+"lat": 47.802,
+"lng": 16.672,
+"founded": "",
+"style": "sweet",
+"story": "Rust estate famed for Ausbruch.",
+"wines": [
+{
+"name": "Ruster Ausbruch",
+"type": "Sweet",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "at-weingut-prieler",
+"name": "Weingut Prieler",
+"region": "Burgenland – Schützen am Gebirge",
+"country": "Austria",
+"lat": 47.855,
+"lng": 16.62,
+"founded": "",
+"style": "red",
+"story": "Leithaberg estate.",
+"wines": [
+{
+"name": "Blaufränkisch Goldberg",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "at-weingut-wenzel",
+"name": "Weingut Wenzel",
+"region": "Burgenland – Rust",
+"country": "Austria",
+"lat": 47.801,
+"lng": 16.673,
+"founded": "",
+"style": "sweet",
+"story": "Rust estate reviving Furmint.",
+"wines": [
+{
+"name": "Furmint Ruster Ausbruch",
+"type": "Sweet",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "at-weingut-kollwentz",
+"name": "Weingut Kollwentz",
+"region": "Burgenland – Großhöflein",
+"country": "Austria",
+"lat": 47.836,
+"lng": 16.496,
+"founded": "",
+"style": "red",
+"story": "Leithaberg family estate.",
+"wines": [
+{
+"name": "Steinzeiler",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "at-weingut-velich",
+"name": "Weingut Velich",
+"region": "Burgenland – Apetlon",
+"country": "Austria",
+"lat": 47.745,
+"lng": 16.83,
+"founded": "",
+"style": "sweet",
+"story": "Seewinkel estate for sweet wines.",
+"wines": [
+{
+"name": "TBA",
+"type": "Sweet",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "at-weingut-sattlerhof",
+"name": "Weingut Sattlerhof",
+"region": "Südsteiermark – Gamlitz",
+"country": "Austria",
+"lat": 46.71,
+"lng": 15.56,
+"founded": "",
+"style": "white",
+"story": "Gamlitz estate for Sauvignon Blanc.",
+"wines": [
+{
+"name": "Sauvignon Kranachberg",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "at-weingut-gross",
+"name": "Weingut Gross",
+"region": "Südsteiermark – Ratsch",
+"country": "Austria",
+"lat": 46.68,
+"lng": 15.58,
+"founded": "",
+"style": "white",
+"story": "Ratsch family estate.",
+"wines": [
+{
+"name": "Sauvignon Nussberg",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "at-weingut-polz",
+"name": "Weingut Polz",
+"region": "Südsteiermark – Spielfeld",
+"country": "Austria",
+"lat": 46.705,
+"lng": 15.63,
+"founded": "",
+"style": "white",
+"story": "Spielfeld estate.",
+"wines": [
+{
+"name": "Sauvignon Hochgrassnitzberg",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "at-weingut-sepp-muster",
+"name": "Weingut Sepp Muster",
+"region": "Südsteiermark – Leutschach",
+"country": "Austria",
+"lat": 46.66,
+"lng": 15.47,
+"founded": "",
+"style": "amber",
+"story": "Biodynamic Leutschach estate.",
+"wines": [
+{
+"name": "Gräfin",
+"type": "Amber",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "at-weingut-neumeister",
+"name": "Weingut Neumeister",
+"region": "Vulkanland Steiermark – Straden",
+"country": "Austria",
+"lat": 46.81,
+"lng": 15.87,
+"founded": "",
+"style": "white",
+"story": "Straden estate on volcanic soils.",
+"wines": [
+{
+"name": "Sauvignon Moarfeitl",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "at-weingut-winkler-hermaden",
+"name": "Weingut Winkler-Hermaden",
+"region": "Vulkanland Steiermark – Kapfenstein",
+"country": "Austria",
+"lat": 46.885,
+"lng": 15.975,
+"founded": "",
+"style": "white",
+"story": "Castle estate in Kapfenstein.",
+"wines": [
+{
+"name": "Olivin Zweigelt",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "at-weingut-lackner-tinnacher",
+"name": "Weingut Lackner-Tinnacher",
+"region": "Südsteiermark – Gamlitz",
+"country": "Austria",
+"lat": 46.715,
+"lng": 15.55,
+"founded": "",
+"style": "white",
+"story": "Gamlitz family estate.",
+"wines": [
+{
+"name": "Sauvignon Welles",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "at-weingut-pichler-krutzler",
+"name": "Weingut Pichler-Krutzler",
+"region": "Wachau – Rossatz",
+"country": "Austria",
+"lat": 48.39,
+"lng": 15.52,
+"founded": "",
+"style": "white",
+"story": "Estate of Elisabeth Pichler-Krutzler and Erich Krutzler on both banks of the Danube.",
+"wines": [
+{
+"name": "Riesling Kellerberg",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "pt-quinta-do-vesuvio",
+"name": "Quinta do Vesúvio",
+"region": "Douro – Numão",
+"country": "Portugal",
+"lat": 41.06,
+"lng": -7.2,
+"founded": "",
+"style": "red",
+"story": "Symington-owned Douro Superior quinta, historic Port estate.",
+"wines": [
+{
+"name": "Quinta do Vesúvio Douro",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "pt-quinta-do-vale-meao",
+"name": "Quinta do Vale Meão",
+"region": "Douro – Vila Nova de Foz Côa",
+"country": "Portugal",
+"lat": 41.095,
+"lng": -7.11,
+"founded": "",
+"style": "red",
+"story": "Former Ferreirinha estate, original source of Barca Velha.",
+"wines": [
+{
+"name": "Quinta do Vale Meão",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "pt-quinta-do-portal",
+"name": "Quinta do Portal",
+"region": "Douro – Sabrosa",
+"country": "Portugal",
+"lat": 41.24,
+"lng": -7.58,
+"founded": "",
+"style": "red",
+"story": "Sabrosa estate with a Siza Vieira-designed cellar.",
+"wines": [
+{
+"name": "Quinta do Portal Grande Reserva",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "pt-quinta-da-romaneira",
+"name": "Quinta da Romaneira",
+"region": "Douro – Cotas",
+"country": "Portugal",
+"lat": 41.195,
+"lng": -7.545,
+"founded": "",
+"style": "red",
+"story": "Large historic quinta on the Douro.",
+"wines": [
+{
+"name": "Romaneira Vintage Port",
+"type": "Fortified",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "pt-quinta-do-infantado",
+"name": "Quinta do Infantado",
+"region": "Douro – Gontelho",
+"country": "Portugal",
+"lat": 41.19,
+"lng": -7.61,
+"founded": "",
+"style": "red",
+"story": "Pioneer of single-quinta Port.",
+"wines": [
+{
+"name": "Infantado Vintage",
+"type": "Fortified",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "pt-quinta-da-gaivosa",
+"name": "Quinta da Gaivosa",
+"region": "Douro – Santa Marta de Penaguião",
+"country": "Portugal",
+"lat": 41.215,
+"lng": -7.79,
+"founded": "",
+"style": "red",
+"story": "Alves de Sousa family estate.",
+"wines": [
+{
+"name": "Abandonado",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "pt-quinta-do-passadouro",
+"name": "Quinta do Passadouro",
+"region": "Douro – Pinhão valley",
+"country": "Portugal",
+"lat": 41.205,
+"lng": -7.545,
+"founded": "",
+"style": "red",
+"story": "Pinhão valley quinta.",
+"wines": [
+{
+"name": "Passadouro Reserva",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "pt-quinta-da-pellada",
+"name": "Quinta da Pellada",
+"region": "Dão – Seia",
+"country": "Portugal",
+"lat": 40.43,
+"lng": -7.72,
+"founded": "",
+"style": "red",
+"story": "Álvaro Castro's Dão estate.",
+"wines": [
+{
+"name": "Pape",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "pt-quinta-dos-roques",
+"name": "Quinta dos Roques",
+"region": "Dão – Nelas",
+"country": "Portugal",
+"lat": 40.53,
+"lng": -7.86,
+"founded": "",
+"style": "red",
+"story": "Dão family estate.",
+"wines": [
+{
+"name": "Touriga Nacional",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "pt-quinta-da-falorca",
+"name": "Quinta da Falorca",
+"region": "Dão – Silgueiros",
+"country": "Portugal",
+"lat": 40.61,
+"lng": -7.94,
+"founded": "",
+"style": "red",
+"story": "Dão estate.",
+"wines": [
+{
+"name": "Garrafeira",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "pt-filipa-pato",
+"name": "Filipa Pato",
+"region": "Bairrada – Óis do Bairro",
+"country": "Portugal",
+"lat": 40.47,
+"lng": -8.5,
+"founded": "",
+"style": "white",
+"story": "Bairrada grower making 'authentic wines without make-up'.",
+"wines": [
+{
+"name": "Nossa Calcário Bical",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "pt-caves-sao-joao",
+"name": "Caves São João",
+"region": "Bairrada – São João de Azenha",
+"country": "Portugal",
+"lat": 40.475,
+"lng": -8.485,
+"founded": "1920",
+"style": "red",
+"story": "Bairrada house known for aged reserves.",
+"wines": [
+{
+"name": "Frei João Reserva",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "pt-quinta-das-bageiras",
+"name": "Quinta das Bágeiras",
+"region": "Bairrada – Fogueira",
+"country": "Portugal",
+"lat": 40.43,
+"lng": -8.47,
+"founded": "",
+"style": "red",
+"story": "Traditional Bairrada estate.",
+"wines": [
+{
+"name": "Garrafeira",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "pt-casa-da-passarella",
+"name": "Casa da Passarella",
+"region": "Dão – Lagarinhos",
+"country": "Portugal",
+"lat": 40.44,
+"lng": -7.76,
+"founded": "",
+"style": "red",
+"story": "Historic Dão estate.",
+"wines": [
+{
+"name": "O Fugitivo Encruzado",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "pt-herdade-dos-coelheiros",
+"name": "Herdade dos Coelheiros",
+"region": "Alentejo – Igrejinha",
+"country": "Portugal",
+"lat": 38.66,
+"lng": -7.93,
+"founded": "",
+"style": "red",
+"story": "Arraiolos estate.",
+"wines": [
+{
+"name": "Tapada de Coelheiros",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "pt-herdade-do-rocim",
+"name": "Herdade do Rocim",
+"region": "Alentejo – Cuba",
+"country": "Portugal",
+"lat": 38.18,
+"lng": -7.91,
+"founded": "",
+"style": "red",
+"story": "Vidigueira estate using talha clay pots.",
+"wines": [
+{
+"name": "Amphora Tinto",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "pt-cartuxa-fundacao-eugenio-de-almeida",
+"name": "Cartuxa – Fundação Eugénio de Almeida",
+"region": "Alentejo – Évora",
+"country": "Portugal",
+"lat": 38.58,
+"lng": -7.92,
+"founded": "",
+"style": "red",
+"story": "Évora foundation estate, home of Pêra-Manca.",
+"wines": [
+{
+"name": "Pêra-Manca",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+},
+{
+"name": "Cartuxa Reserva",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "pt-joao-portugal-ramos",
+"name": "João Portugal Ramos",
+"region": "Alentejo – Estremoz",
+"country": "Portugal",
+"lat": 38.84,
+"lng": -7.59,
+"founded": "1997",
+"style": "red",
+"story": "Estremoz winery of a leading oenologist.",
+"wines": [
+{
+"name": "Marquês de Borba",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "pt-herdade-do-malhadinha-nova",
+"name": "Herdade do Malhadinha Nova",
+"region": "Alentejo – Albernoa",
+"country": "Portugal",
+"lat": 37.86,
+"lng": -7.98,
+"founded": "",
+"style": "red",
+"story": "Beja estate and country hotel.",
+"wines": [
+{
+"name": "Malhadinha",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "pt-quinta-do-mouro",
+"name": "Quinta do Mouro",
+"region": "Alentejo – Estremoz",
+"country": "Portugal",
+"lat": 38.83,
+"lng": -7.58,
+"founded": "",
+"style": "red",
+"story": "Estremoz estate of Miguel Louro.",
+"wines": [
+{
+"name": "Quinta do Mouro",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "pt-adega-de-borba",
+"name": "Adega de Borba",
+"region": "Alentejo – Borba",
+"country": "Portugal",
+"lat": 38.805,
+"lng": -7.455,
+"founded": "1955",
+"style": "red",
+"story": "Borba cooperative.",
+"wines": [
+{
+"name": "Adega de Borba Reserva",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "pt-herdade-do-peso",
+"name": "Herdade do Peso",
+"region": "Alentejo – Vidigueira",
+"country": "Portugal",
+"lat": 38.2,
+"lng": -7.8,
+"founded": "",
+"style": "red",
+"story": "Sogrape's Vidigueira estate.",
+"wines": [
+{
+"name": "Herdade do Peso",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "pt-quinta-da-bacalhoa",
+"name": "Quinta da Bacalhôa",
+"region": "Setúbal – Azeitão",
+"country": "Portugal",
+"lat": 38.52,
+"lng": -8.98,
+"founded": "",
+"style": "red",
+"story": "Renaissance palace estate in Azeitão.",
+"wines": [
+{
+"name": "Palácio da Bacalhôa",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "pt-horacio-simoes",
+"name": "Horácio Simões",
+"region": "Setúbal – Quinta do Anjo",
+"country": "Portugal",
+"lat": 38.56,
+"lng": -8.94,
+"founded": "",
+"style": "sweet",
+"story": "Moscatel de Setúbal family producer.",
+"wines": [
+{
+"name": "Moscatel Roxo",
+"type": "Sweet",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "pt-quinta-de-chocapalha",
+"name": "Quinta de Chocapalha",
+"region": "Lisboa – Alenquer",
+"country": "Portugal",
+"lat": 39.06,
+"lng": -9.01,
+"founded": "",
+"style": "red",
+"story": "Alenquer family estate.",
+"wines": [
+{
+"name": "Chocapalha Reserva",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "pt-casal-figueira",
+"name": "Casal Figueira",
+"region": "Lisboa – Vermelha",
+"country": "Portugal",
+"lat": 39.24,
+"lng": -9.05,
+"founded": "",
+"style": "white",
+"story": "Vital grape specialist.",
+"wines": [
+{
+"name": "Vital",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "pt-adega-de-colares",
+"name": "Adega de Colares",
+"region": "Lisboa – Colares",
+"country": "Portugal",
+"lat": 38.8,
+"lng": -9.45,
+"founded": "1931",
+"style": "red",
+"story": "Cooperative for ungrafted Ramisco in sand.",
+"wines": [
+{
+"name": "Arenae Ramisco",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "pt-quinta-de-sant-ana",
+"name": "Quinta de Sant'Ana",
+"region": "Lisboa – Mafra",
+"country": "Portugal",
+"lat": 38.95,
+"lng": -9.31,
+"founded": "",
+"style": "white",
+"story": "Gradil estate.",
+"wines": [
+{
+"name": "Riesling",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "pt-quinta-do-ameal",
+"name": "Quinta do Ameal",
+"region": "Vinho Verde – Ponte de Lima",
+"country": "Portugal",
+"lat": 41.73,
+"lng": -8.56,
+"founded": "",
+"style": "white",
+"story": "Loureiro specialist estate.",
+"wines": [
+{
+"name": "Ameal Loureiro",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "pt-quinta-do-regueiro",
+"name": "Quinta do Regueiro",
+"region": "Vinho Verde – Melgaço",
+"country": "Portugal",
+"lat": 42.095,
+"lng": -8.29,
+"founded": "",
+"style": "white",
+"story": "Melgaço Alvarinho family estate.",
+"wines": [
+{
+"name": "Alvarinho Reserva",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "pt-quinta-da-lixa",
+"name": "Quinta da Lixa",
+"region": "Vinho Verde – Felgueiras",
+"country": "Portugal",
+"lat": 41.34,
+"lng": -8.15,
+"founded": "",
+"style": "white",
+"story": "Felgueiras estate.",
+"wines": [
+{
+"name": "Pouco Comum Alvarinho",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "pt-casa-de-mouraz",
+"name": "Casa de Mouraz",
+"region": "Dão – Tondela",
+"country": "Portugal",
+"lat": 40.53,
+"lng": -8.1,
+"founded": "",
+"style": "red",
+"story": "Organic Dão estate.",
+"wines": [
+{
+"name": "Mouraz Tinto",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "pt-barbeito",
+"name": "Barbeito",
+"region": "Madeira – Câmara de Lobos",
+"country": "Portugal",
+"lat": 32.65,
+"lng": -16.975,
+"founded": "1946",
+"style": "sweet",
+"story": "Madeira house of Ricardo Diogo Freitas.",
+"wines": [
+{
+"name": "Malvasia 20 Years",
+"type": "Fortified",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "pt-justino-s-madeira",
+"name": "Justino's Madeira",
+"region": "Madeira – Caniço",
+"country": "Portugal",
+"lat": 32.65,
+"lng": -16.85,
+"founded": "1870",
+"style": "sweet",
+"story": "Large Madeira producer.",
+"wines": [
+{
+"name": "Colheita",
+"type": "Fortified",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "pt-pereira-d-oliveira",
+"name": "Pereira d'Oliveira",
+"region": "Madeira – Funchal",
+"country": "Portugal",
+"lat": 32.65,
+"lng": -16.91,
+"founded": "1850",
+"style": "sweet",
+"story": "Family house with very old vintage stocks.",
+"wines": [
+{
+"name": "Boal Frasqueira",
+"type": "Fortified",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "pt-cockburn-s",
+"name": "Cockburn's",
+"region": "Douro – Vila Nova de Gaia",
+"country": "Portugal",
+"lat": 41.136,
+"lng": -8.615,
+"founded": "1815",
+"style": "sweet",
+"story": "Gaia Port lodge with a cooperage.",
+"wines": [
+{
+"name": "Special Reserve",
+"type": "Fortified",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "pt-warre-s",
+"name": "Warre's",
+"region": "Douro – Vila Nova de Gaia",
+"country": "Portugal",
+"lat": 41.137,
+"lng": -8.613,
+"founded": "1670",
+"style": "sweet",
+"story": "The oldest British Port company.",
+"wines": [
+{
+"name": "Warre's Vintage Port",
+"type": "Fortified",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "pt-dow-s",
+"name": "Dow's",
+"region": "Douro – Vila Nova de Gaia",
+"country": "Portugal",
+"lat": 41.138,
+"lng": -8.614,
+"founded": "1798",
+"style": "sweet",
+"story": "Symington house known for drier-style Vintage Port.",
+"wines": [
+{
+"name": "Dow's Vintage Port",
+"type": "Fortified",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "pt-croft",
+"name": "Croft",
+"region": "Douro – Vila Nova de Gaia",
+"country": "Portugal",
+"lat": 41.135,
+"lng": -8.61,
+"founded": "1588",
+"style": "sweet",
+"story": "Among the oldest Port houses, with Quinta da Roêda.",
+"wines": [
+{
+"name": "Croft Pink",
+"type": "Fortified",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "pt-kopke",
+"name": "Kopke",
+"region": "Douro – Vila Nova de Gaia",
+"country": "Portugal",
+"lat": 41.139,
+"lng": -8.616,
+"founded": "1638",
+"style": "sweet",
+"story": "Claimed to be the oldest Port house, known for Colheitas.",
+"wines": [
+{
+"name": "Colheita",
+"type": "Fortified",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "pt-churchill-s",
+"name": "Churchill's",
+"region": "Douro – Vila Nova de Gaia",
+"country": "Portugal",
+"lat": 41.134,
+"lng": -8.617,
+"founded": "1981",
+"style": "sweet",
+"story": "Independent Port house founded 1981.",
+"wines": [
+{
+"name": "Churchill's Vintage",
+"type": "Fortified",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "hu-kiralyudvar",
+"name": "Királyudvar",
+"region": "Tokaj – Tarcal",
+"country": "Hungary",
+"lat": 48.13,
+"lng": 21.35,
+"founded": "",
+"style": "sweet",
+"story": "Biodynamic Tokaj estate in an old royal court building.",
+"wines": [
+{
+"name": "Tokaji Aszú 6 Puttonyos",
+"type": "Sweet",
+"price": "",
+"cur": "EUR",
+"notes": ""
+},
+{
+"name": "Furmint Sec",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "hu-chateau-dereszla",
+"name": "Château Dereszla",
+"region": "Tokaj – Bodrogkeresztúr",
+"country": "Hungary",
+"lat": 48.16,
+"lng": 21.36,
+"founded": "",
+"style": "sweet",
+"story": "Tokaj estate with historic cellars.",
+"wines": [
+{
+"name": "Aszú 5 Puttonyos",
+"type": "Sweet",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "hu-pajzos-megyer",
+"name": "Pajzos-Megyer",
+"region": "Tokaj – Sárospatak",
+"country": "Hungary",
+"lat": 48.32,
+"lng": 21.57,
+"founded": "",
+"style": "sweet",
+"story": "Northern Tokaj estates.",
+"wines": [
+{
+"name": "Megyer Aszú",
+"type": "Sweet",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "hu-tokaj-hetszolo",
+"name": "Tokaj Hétszőlő",
+"region": "Tokaj – Tokaj",
+"country": "Hungary",
+"lat": 48.125,
+"lng": 21.405,
+"founded": "",
+"style": "sweet",
+"story": "Estate on the Kopasz hill.",
+"wines": [
+{
+"name": "Aszú 6 Puttonyos",
+"type": "Sweet",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "hu-chateau-pajzos",
+"name": "Château Pajzos",
+"region": "Tokaj – Sárospatak",
+"country": "Hungary",
+"lat": 48.315,
+"lng": 21.565,
+"founded": "",
+"style": "sweet",
+"story": "Sárospatak estate.",
+"wines": [
+{
+"name": "Aszú",
+"type": "Sweet",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "hu-samuel-tinon",
+"name": "Samuel Tinon",
+"region": "Tokaj – Olaszliszka",
+"country": "Hungary",
+"lat": 48.245,
+"lng": 21.43,
+"founded": "",
+"style": "sweet",
+"story": "French-born winemaker's Szamorodni focus.",
+"wines": [
+{
+"name": "Szamorodni",
+"type": "Sweet",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "hu-patricius",
+"name": "Patricius",
+"region": "Tokaj – Bodrogkisfalud",
+"country": "Hungary",
+"lat": 48.175,
+"lng": 21.37,
+"founded": "",
+"style": "sweet",
+"story": "Bodrogkisfalud estate.",
+"wines": [
+{
+"name": "Patricius Aszú",
+"type": "Sweet",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "hu-barta",
+"name": "Barta",
+"region": "Tokaj – Mád",
+"country": "Hungary",
+"lat": 48.19,
+"lng": 21.28,
+"founded": "",
+"style": "white",
+"story": "Mád estate on the steep Öreg Király-dűlő.",
+"wines": [
+{
+"name": "Öreg Király Furmint",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "hu-holdvolgy",
+"name": "Holdvölgy",
+"region": "Tokaj – Mád",
+"country": "Hungary",
+"lat": 48.192,
+"lng": 21.282,
+"founded": "",
+"style": "white",
+"story": "Mád estate with labyrinth cellars.",
+"wines": [
+{
+"name": "Vision",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "hu-kreinbacher",
+"name": "Kreinbacher",
+"region": "Somló",
+"country": "Hungary",
+"lat": 47.145,
+"lng": 17.37,
+"founded": "",
+"style": "white",
+"story": "Somló estate for sparkling and Juhfark.",
+"wines": [
+{
+"name": "Kreinbacher Brut",
+"type": "Sparkling",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "hu-kolonics",
+"name": "Kolonics",
+"region": "Somló",
+"country": "Hungary",
+"lat": 47.15,
+"lng": 17.375,
+"founded": "",
+"style": "white",
+"story": "Small Somló family estate.",
+"wines": [
+{
+"name": "Juhfark",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "hu-figula",
+"name": "Figula",
+"region": "Balaton – Balatonszőlős",
+"country": "Hungary",
+"lat": 46.96,
+"lng": 17.83,
+"founded": "",
+"style": "white",
+"story": "Balatonfüred-Csopak family estate.",
+"wines": [
+{
+"name": "Olaszrizling Sóskút",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "hu-laposa",
+"name": "Laposa",
+"region": "Badacsony",
+"country": "Hungary",
+"lat": 46.795,
+"lng": 17.5,
+"founded": "",
+"style": "white",
+"story": "Badacsony estate on volcanic soils.",
+"wines": [
+{
+"name": "Bazalt Bor",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "hu-szeremley",
+"name": "Szeremley",
+"region": "Badacsony",
+"country": "Hungary",
+"lat": 46.79,
+"lng": 17.505,
+"founded": "",
+"style": "white",
+"story": "Badacsony estate reviving Kéknyelű.",
+"wines": [
+{
+"name": "Kéknyelű",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "hu-takler",
+"name": "Takler",
+"region": "Szekszárd",
+"country": "Hungary",
+"lat": 46.35,
+"lng": 18.7,
+"founded": "",
+"style": "red",
+"story": "Szekszárd family estate.",
+"wines": [
+{
+"name": "Regnum",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "hu-heimann",
+"name": "Heimann",
+"region": "Szekszárd",
+"country": "Hungary",
+"lat": 46.355,
+"lng": 18.705,
+"founded": "",
+"style": "red",
+"story": "Szekszárd family estate for Kadarka.",
+"wines": [
+{
+"name": "Kadarka",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "hu-vylyan",
+"name": "Vylyan",
+"region": "Villány – Kisharsány",
+"country": "Hungary",
+"lat": 45.86,
+"lng": 18.36,
+"founded": "",
+"style": "red",
+"story": "Villány estate.",
+"wines": [
+{
+"name": "Duennium",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "hu-sauska",
+"name": "Sauska",
+"region": "Villány",
+"country": "Hungary",
+"lat": 45.87,
+"lng": 18.45,
+"founded": "",
+"style": "red",
+"story": "Villány and Tokaj estates.",
+"wines": [
+{
+"name": "Cuvée 7",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "hu-thummerer",
+"name": "Thummerer",
+"region": "Eger – Noszvaj",
+"country": "Hungary",
+"lat": 47.93,
+"lng": 20.47,
+"founded": "",
+"style": "red",
+"story": "Eger family estate.",
+"wines": [
+{
+"name": "Egri Bikavér Superior",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "hu-gal-tibor",
+"name": "Gál Tibor",
+"region": "Eger",
+"country": "Hungary",
+"lat": 47.9,
+"lng": 20.38,
+"founded": "",
+"style": "red",
+"story": "Eger estate.",
+"wines": [
+{
+"name": "Egri Bikavér",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "si-edi-simcic",
+"name": "Edi Simčič",
+"region": "Goriška Brda – Vipolže",
+"country": "Slovenia",
+"lat": 45.99,
+"lng": 13.54,
+"founded": "",
+"style": "white",
+"story": "Brda family estate.",
+"wines": [
+{
+"name": "Duet Lex",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+},
+{
+"name": "Rebula",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "si-scurek",
+"name": "Ščurek",
+"region": "Goriška Brda – Plešivo",
+"country": "Slovenia",
+"lat": 45.995,
+"lng": 13.53,
+"founded": "",
+"style": "white",
+"story": "Brda family estate.",
+"wines": [
+{
+"name": "Rebula",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "si-kabaj",
+"name": "Kabaj",
+"region": "Goriška Brda – Šlovrenc",
+"country": "Slovenia",
+"lat": 46.0,
+"lng": 13.52,
+"founded": "",
+"style": "amber",
+"story": "Brda estate for skin-contact wines.",
+"wines": [
+{
+"name": "Rebula Amfora",
+"type": "Amber",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "si-burja",
+"name": "Burja",
+"region": "Vipava Valley – Podnanos",
+"country": "Slovenia",
+"lat": 45.81,
+"lng": 13.96,
+"founded": "",
+"style": "white",
+"story": "Biodynamic Vipava estate.",
+"wines": [
+{
+"name": "Burja Bela",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "si-guerila",
+"name": "Guerila",
+"region": "Vipava Valley – Planina",
+"country": "Slovenia",
+"lat": 45.84,
+"lng": 13.91,
+"founded": "",
+"style": "white",
+"story": "Vipava estate for Zelen and Pinela.",
+"wines": [
+{
+"name": "Zelen",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "si-santomas",
+"name": "Santomas",
+"region": "Slovenian Istria – Šmarje",
+"country": "Slovenia",
+"lat": 45.505,
+"lng": 13.72,
+"founded": "",
+"style": "red",
+"story": "Istrian Refošk estate.",
+"wines": [
+{
+"name": "Antonius Refošk",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "si-verus",
+"name": "Verus",
+"region": "Štajerska – Ormož",
+"country": "Slovenia",
+"lat": 46.41,
+"lng": 16.15,
+"founded": "",
+"style": "white",
+"story": "Ormož estate for Furmint (Šipon).",
+"wines": [
+{
+"name": "Furmint",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "si-puklavec-family-wines",
+"name": "Puklavec Family Wines",
+"region": "Štajerska – Ormož",
+"country": "Slovenia",
+"lat": 46.42,
+"lng": 16.16,
+"founded": "",
+"style": "white",
+"story": "Jeruzalem-Ormož estate.",
+"wines": [
+{
+"name": "Gomila Furmint",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "si-dveri-pax",
+"name": "Dveri-Pax",
+"region": "Štajerska – Jarenina",
+"country": "Slovenia",
+"lat": 46.65,
+"lng": 15.66,
+"founded": "",
+"style": "white",
+"story": "Estate owned by Admont Abbey.",
+"wines": [
+{
+"name": "Šipon",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "hr-saints-hills",
+"name": "Saints Hills",
+"region": "Istria – Nova Vas",
+"country": "Croatia",
+"lat": 45.33,
+"lng": 13.72,
+"founded": "",
+"style": "red",
+"story": "Estate in Istria and Pelješac.",
+"wines": [
+{
+"name": "Dingač",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "hr-matosevic",
+"name": "Matošević",
+"region": "Istria – Krunčići",
+"country": "Croatia",
+"lat": 45.25,
+"lng": 13.765,
+"founded": "",
+"style": "white",
+"story": "Malvazija specialist.",
+"wines": [
+{
+"name": "Alba Malvazija",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "hr-clai",
+"name": "Clai",
+"region": "Istria – Krasica",
+"country": "Croatia",
+"lat": 45.4,
+"lng": 13.65,
+"founded": "",
+"style": "amber",
+"story": "Natural skin-contact Istrian wines.",
+"wines": [
+{
+"name": "Sveti Jakov Malvazija",
+"type": "Amber",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "hr-roxanich",
+"name": "Roxanich",
+"region": "Istria – Nova Vas",
+"country": "Croatia",
+"lat": 45.32,
+"lng": 13.71,
+"founded": "",
+"style": "amber",
+"story": "Long-macerated Istrian wines.",
+"wines": [
+{
+"name": "Ines u Bijelom",
+"type": "Amber",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "hr-trapan",
+"name": "Trapan",
+"region": "Istria – Šišan",
+"country": "Croatia",
+"lat": 44.85,
+"lng": 13.93,
+"founded": "",
+"style": "white",
+"story": "Southern Istrian estate.",
+"wines": [
+{
+"name": "Ponente Malvazija",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "hr-benvenuti",
+"name": "Benvenuti",
+"region": "Istria – Kaldir",
+"country": "Croatia",
+"lat": 45.33,
+"lng": 13.85,
+"founded": "",
+"style": "white",
+"story": "Motovun-area family estate.",
+"wines": [
+{
+"name": "Malvazija",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "hr-korta-katarina",
+"name": "Korta Katarina",
+"region": "Dalmatia – Orebić",
+"country": "Croatia",
+"lat": 42.975,
+"lng": 17.185,
+"founded": "",
+"style": "red",
+"story": "Pelješac estate.",
+"wines": [
+{
+"name": "Plavac Mali Reuben's Private Reserve",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "hr-bura-mrgudic",
+"name": "Bura-Mrgudić",
+"region": "Dalmatia – Dingač",
+"country": "Croatia",
+"lat": 42.99,
+"lng": 17.33,
+"founded": "",
+"style": "red",
+"story": "Dingač family estate.",
+"wines": [
+{
+"name": "Dingač",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "hr-tomic",
+"name": "Tomić",
+"region": "Dalmatia – Hvar",
+"country": "Croatia",
+"lat": 43.16,
+"lng": 16.65,
+"founded": "",
+"style": "red",
+"story": "Hvar winery in Jelsa.",
+"wines": [
+{
+"name": "Plavac Mali",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "hr-zlatan-otok",
+"name": "Zlatan Otok",
+"region": "Dalmatia – Hvar",
+"country": "Croatia",
+"lat": 43.13,
+"lng": 16.78,
+"founded": "",
+"style": "red",
+"story": "Hvar estate in Sveta Nedjelja.",
+"wines": [
+{
+"name": "Zlatan Plavac Grand Cru",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "hr-krajancic",
+"name": "Krajančić",
+"region": "Dalmatia – Korčula",
+"country": "Croatia",
+"lat": 42.95,
+"lng": 16.87,
+"founded": "",
+"style": "white",
+"story": "Pošip specialist on Korčula.",
+"wines": [
+{
+"name": "Pošip Intrada",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "hr-feravino",
+"name": "Feravino",
+"region": "Slavonia – Feričanci",
+"country": "Croatia",
+"lat": 45.53,
+"lng": 18.02,
+"founded": "",
+"style": "white",
+"story": "Slavonian estate.",
+"wines": [
+{
+"name": "Graševina",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "hr-kutjevo",
+"name": "Kutjevo",
+"region": "Slavonia – Kutjevo",
+"country": "Croatia",
+"lat": 45.425,
+"lng": 17.88,
+"founded": "1232",
+"style": "white",
+"story": "Historic Cistercian-founded cellar.",
+"wines": [
+{
+"name": "Graševina",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "hr-enjingi",
+"name": "Enjingi",
+"region": "Slavonia – Vetovo",
+"country": "Croatia",
+"lat": 45.41,
+"lng": 17.84,
+"founded": "",
+"style": "white",
+"story": "Kutjevo-area family estate.",
+"wines": [
+{
+"name": "Venje",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "hr-tomac",
+"name": "Tomac",
+"region": "Plešivica – Plešivica",
+"country": "Croatia",
+"lat": 45.73,
+"lng": 15.64,
+"founded": "",
+"style": "sparkling",
+"story": "Plešivica sparkling and amphora pioneer.",
+"wines": [
+{
+"name": "Tomac Brut",
+"type": "Sparkling",
+"price": "",
+"cur": "EUR",
+"notes": ""
+},
+{
+"name": "Amfora",
+"type": "Amber",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "ch-domaine-jean-rene-germanier",
+"name": "Domaine Jean-René Germanier",
+"region": "Valais – Vétroz",
+"country": "Switzerland",
+"lat": 46.22,
+"lng": 7.28,
+"founded": "",
+"style": "red",
+"story": "Vétroz family estate.",
+"wines": [
+{
+"name": "Cayas Syrah",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "ch-domaine-rouvinez",
+"name": "Domaine Rouvinez",
+"region": "Valais – Sierre",
+"country": "Switzerland",
+"lat": 46.295,
+"lng": 7.53,
+"founded": "",
+"style": "red",
+"story": "Sierre family estate.",
+"wines": [
+{
+"name": "Tourmentin",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "ch-simon-maye-fils",
+"name": "Simon Maye & Fils",
+"region": "Valais – Saint-Pierre-de-Clages",
+"country": "Switzerland",
+"lat": 46.195,
+"lng": 7.24,
+"founded": "",
+"style": "white",
+"story": "Valais family estate.",
+"wines": [
+{
+"name": "Fendant",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "ch-cave-caloz",
+"name": "Cave Caloz",
+"region": "Valais – Miège",
+"country": "Switzerland",
+"lat": 46.315,
+"lng": 7.55,
+"founded": "",
+"style": "red",
+"story": "Small Miège estate.",
+"wines": [
+{
+"name": "Cornalin",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "ch-domaine-blaise-duboux",
+"name": "Domaine Blaise Duboux",
+"region": "Lavaux – Épesses",
+"country": "Switzerland",
+"lat": 46.49,
+"lng": 6.74,
+"founded": "",
+"style": "white",
+"story": "Biodynamic Lavaux estate.",
+"wines": [
+{
+"name": "Calamin Grand Cru",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "ch-domaine-henri-cruchon",
+"name": "Domaine Henri Cruchon",
+"region": "La Côte – Échichens",
+"country": "Switzerland",
+"lat": 46.53,
+"lng": 6.49,
+"founded": "",
+"style": "red",
+"story": "Biodynamic La Côte estate.",
+"wines": [
+{
+"name": "Raissennaz",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "ch-weingut-donatsch",
+"name": "Weingut Donatsch",
+"region": "Graubünden – Malans",
+"country": "Switzerland",
+"lat": 46.98,
+"lng": 9.57,
+"founded": "",
+"style": "red",
+"story": "Malans Pinot Noir estate.",
+"wines": [
+{
+"name": "Unique Pinot Noir",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "ch-weingut-fromm",
+"name": "Weingut Fromm",
+"region": "Graubünden – Malans",
+"country": "Switzerland",
+"lat": 46.982,
+"lng": 9.572,
+"founded": "",
+"style": "red",
+"story": "Malans estate.",
+"wines": [
+{
+"name": "Malanser Pinot Noir",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "ch-weingut-schloss-salenegg",
+"name": "Weingut Schloss Salenegg",
+"region": "Graubünden – Maienfeld",
+"country": "Switzerland",
+"lat": 47.005,
+"lng": 9.53,
+"founded": "1068",
+"style": "red",
+"story": "Castle estate with long winemaking history.",
+"wines": [
+{
+"name": "Pinot Noir",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "ch-tenuta-castello-di-morcote",
+"name": "Tenuta Castello di Morcote",
+"region": "Ticino – Morcote",
+"country": "Switzerland",
+"lat": 45.925,
+"lng": 8.92,
+"founded": "",
+"style": "red",
+"story": "Lake Lugano estate for Merlot.",
+"wines": [
+{
+"name": "Castello di Morcote Merlot",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "ch-gialdi-vini",
+"name": "Gialdi Vini",
+"region": "Ticino – Mendrisio",
+"country": "Switzerland",
+"lat": 45.87,
+"lng": 8.98,
+"founded": "",
+"style": "red",
+"story": "Ticino Merlot producer.",
+"wines": [
+{
+"name": "Sassi Grossi",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "ch-domaine-des-balisiers",
+"name": "Domaine des Balisiers",
+"region": "Geneva – Satigny",
+"country": "Switzerland",
+"lat": 46.215,
+"lng": 6.03,
+"founded": "",
+"style": "red",
+"story": "Biodynamic Geneva estate.",
+"wines": [
+{
+"name": "Comte de Peney",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
 }
 ]

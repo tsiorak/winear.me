@@ -45947,5 +45947,1677 @@
 ],
 "events": [],
 "real": true
+},
+{
+"id": "fr-domaine-rostaing",
+"name": "Domaine Rostaing",
+"region": "Rhône – Ampuis",
+"country": "France",
+"lat": 45.488,
+"lng": 4.812,
+"founded": "",
+"style": "red",
+"story": "Côte-Rôtie domaine.",
+"wines": [
+{
+"name": "Côte Blonde",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-clusel-roch",
+"name": "Domaine Clusel-Roch",
+"region": "Rhône – Ampuis",
+"country": "France",
+"lat": 45.487,
+"lng": 4.811,
+"founded": "",
+"style": "red",
+"story": "Organic Côte-Rôtie domaine.",
+"wines": [
+{
+"name": "Les Grandes Places",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-gilles-barge",
+"name": "Domaine Gilles Barge",
+"region": "Rhône – Ampuis",
+"country": "France",
+"lat": 45.489,
+"lng": 4.81,
+"founded": "",
+"style": "red",
+"story": "Traditional Côte-Rôtie domaine.",
+"wines": [
+{
+"name": "Côte Brune",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-pierre-gaillard",
+"name": "Domaine Pierre Gaillard",
+"region": "Rhône – Malleval",
+"country": "France",
+"lat": 45.38,
+"lng": 4.76,
+"founded": "",
+"style": "white",
+"story": "Northern Rhône domaine.",
+"wines": [
+{
+"name": "Condrieu",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-andre-perret",
+"name": "Domaine André Perret",
+"region": "Rhône – Chavanay",
+"country": "France",
+"lat": 45.416,
+"lng": 4.731,
+"founded": "",
+"style": "white",
+"story": "Condrieu family domaine.",
+"wines": [
+{
+"name": "Chéry",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-pierre-gonon",
+"name": "Domaine Pierre Gonon",
+"region": "Rhône – Mauves",
+"country": "France",
+"lat": 45.035,
+"lng": 4.83,
+"founded": "",
+"style": "red",
+"story": "Saint-Joseph benchmark domaine.",
+"wines": [
+{
+"name": "Saint-Joseph Les Oliviers",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-bernard-faurie",
+"name": "Domaine Bernard Faurie",
+"region": "Rhône – Tournon",
+"country": "France",
+"lat": 45.068,
+"lng": 4.832,
+"founded": "",
+"style": "red",
+"story": "Small Hermitage and Saint-Joseph grower.",
+"wines": [
+{
+"name": "Hermitage",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-marc-sorrel",
+"name": "Domaine Marc Sorrel",
+"region": "Rhône – Tain-l'Hermitage",
+"country": "France",
+"lat": 45.07,
+"lng": 4.845,
+"founded": "",
+"style": "red",
+"story": "Tain family domaine.",
+"wines": [
+{
+"name": "Le Gréal",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-vincent-paris",
+"name": "Domaine Vincent Paris",
+"region": "Rhône – Cornas",
+"country": "France",
+"lat": 44.961,
+"lng": 4.854,
+"founded": "",
+"style": "red",
+"story": "Cornas grower.",
+"wines": [
+{
+"name": "Granit 60",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-franck-balthazar",
+"name": "Domaine Franck Balthazar",
+"region": "Rhône – Cornas",
+"country": "France",
+"lat": 44.9615,
+"lng": 4.8535,
+"founded": "",
+"style": "red",
+"story": "Small Cornas domaine.",
+"wines": [
+{
+"name": "Chaillot",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-du-coulet",
+"name": "Domaine du Coulet",
+"region": "Rhône – Cornas",
+"country": "France",
+"lat": 44.963,
+"lng": 4.851,
+"founded": "",
+"style": "red",
+"story": "Biodynamic Cornas estate.",
+"wines": [
+{
+"name": "Brise Cailloux",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-alain-voge",
+"name": "Domaine Alain Voge",
+"region": "Rhône – Cornas",
+"country": "France",
+"lat": 44.962,
+"lng": 4.856,
+"founded": "",
+"style": "red",
+"story": "Cornas and Saint-Péray domaine.",
+"wines": [
+{
+"name": "Les Vieilles Vignes",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-combier",
+"name": "Domaine Combier",
+"region": "Rhône – Pont-de-l'Isère",
+"country": "France",
+"lat": 45.0,
+"lng": 4.87,
+"founded": "",
+"style": "red",
+"story": "Organic Crozes-Hermitage pioneer.",
+"wines": [
+{
+"name": "Clos des Grives",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-chateau-de-vaudieu",
+"name": "Château de Vaudieu",
+"region": "Rhône – Châteauneuf-du-Pape",
+"country": "France",
+"lat": 44.08,
+"lng": 4.84,
+"founded": "",
+"style": "red",
+"story": "18th-century Châteauneuf château.",
+"wines": [
+{
+"name": "Château de Vaudieu",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-roger-sabon",
+"name": "Domaine Roger Sabon",
+"region": "Rhône – Châteauneuf-du-Pape",
+"country": "France",
+"lat": 44.056,
+"lng": 4.832,
+"founded": "",
+"style": "red",
+"story": "Châteauneuf family domaine.",
+"wines": [
+{
+"name": "Le Secret des Sabon",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-de-la-charbonniere",
+"name": "Domaine de la Charbonnière",
+"region": "Rhône – Châteauneuf-du-Pape",
+"country": "France",
+"lat": 44.052,
+"lng": 4.825,
+"founded": "",
+"style": "red",
+"story": "Châteauneuf family domaine.",
+"wines": [
+{
+"name": "Mourre des Perdrix",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-de-cristia",
+"name": "Domaine de Cristia",
+"region": "Rhône – Courthézon",
+"country": "France",
+"lat": 44.088,
+"lng": 4.885,
+"founded": "",
+"style": "red",
+"story": "Courthézon family estate.",
+"wines": [
+{
+"name": "Renaissance",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-de-ferrand",
+"name": "Domaine de Ferrand",
+"region": "Rhône – Châteauneuf-du-Pape",
+"country": "France",
+"lat": 44.075,
+"lng": 4.85,
+"founded": "",
+"style": "red",
+"story": "Traditional Châteauneuf domaine.",
+"wines": [
+{
+"name": "Châteauneuf-du-Pape",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-grand-veneur",
+"name": "Domaine Grand Veneur",
+"region": "Rhône – Orange",
+"country": "France",
+"lat": 44.1,
+"lng": 4.81,
+"founded": "",
+"style": "red",
+"story": "Jaume family estate.",
+"wines": [
+{
+"name": "Les Origines",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-de-la-vieille-julienne",
+"name": "Domaine de la Vieille Julienne",
+"region": "Rhône – Orange",
+"country": "France",
+"lat": 44.11,
+"lng": 4.83,
+"founded": "",
+"style": "red",
+"story": "Biodynamic estate near Orange.",
+"wines": [
+{
+"name": "Réservé",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-du-gour-de-chaule",
+"name": "Domaine du Gour de Chaulé",
+"region": "Rhône – Gigondas",
+"country": "France",
+"lat": 44.164,
+"lng": 5.004,
+"founded": "",
+"style": "red",
+"story": "Gigondas family domaine.",
+"wines": [
+{
+"name": "Gigondas",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-les-pallieres",
+"name": "Domaine les Pallières",
+"region": "Rhône – Gigondas",
+"country": "France",
+"lat": 44.15,
+"lng": 5.01,
+"founded": "",
+"style": "red",
+"story": "Gigondas estate owned by the Brunier family.",
+"wines": [
+{
+"name": "Terrasse du Diable",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-raspail-ay",
+"name": "Domaine Raspail-Ay",
+"region": "Rhône – Gigondas",
+"country": "France",
+"lat": 44.166,
+"lng": 5.002,
+"founded": "",
+"style": "red",
+"story": "Traditional Gigondas domaine.",
+"wines": [
+{
+"name": "Gigondas",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-de-la-monardiere",
+"name": "Domaine de la Monardière",
+"region": "Rhône – Vacqueyras",
+"country": "France",
+"lat": 44.141,
+"lng": 4.983,
+"founded": "",
+"style": "red",
+"story": "Vacqueyras family estate.",
+"wines": [
+{
+"name": "Vieilles Vignes",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-le-sang-des-cailloux",
+"name": "Domaine le Sang des Cailloux",
+"region": "Rhône – Sarrians",
+"country": "France",
+"lat": 44.11,
+"lng": 4.98,
+"founded": "",
+"style": "red",
+"story": "Vacqueyras estate.",
+"wines": [
+{
+"name": "Cuvée Floureto",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-des-bernardins",
+"name": "Domaine des Bernardins",
+"region": "Rhône – Beaumes-de-Venise",
+"country": "France",
+"lat": 44.12,
+"lng": 5.03,
+"founded": "",
+"style": "sweet",
+"story": "Muscat de Beaumes-de-Venise family estate.",
+"wines": [
+{
+"name": "Muscat de Beaumes-de-Venise",
+"type": "Sweet",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-de-durban",
+"name": "Domaine de Durban",
+"region": "Rhône – Beaumes-de-Venise",
+"country": "France",
+"lat": 44.135,
+"lng": 5.045,
+"founded": "",
+"style": "sweet",
+"story": "Hilltop Muscat estate.",
+"wines": [
+{
+"name": "Muscat de Beaumes-de-Venise",
+"type": "Sweet",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-rabasse-charavin",
+"name": "Domaine Rabasse Charavin",
+"region": "Rhône – Cairanne",
+"country": "France",
+"lat": 44.23,
+"lng": 4.93,
+"founded": "",
+"style": "red",
+"story": "Cairanne family domaine.",
+"wines": [
+{
+"name": "Cairanne",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-marcel-richaud",
+"name": "Domaine Marcel Richaud",
+"region": "Rhône – Cairanne",
+"country": "France",
+"lat": 44.231,
+"lng": 4.931,
+"founded": "",
+"style": "red",
+"story": "Cairanne domaine.",
+"wines": [
+{
+"name": "L'Ebrescade",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-de-l-oratoire-saint-martin",
+"name": "Domaine de l'Oratoire Saint-Martin",
+"region": "Rhône – Cairanne",
+"country": "France",
+"lat": 44.232,
+"lng": 4.929,
+"founded": "",
+"style": "red",
+"story": "Cairanne family domaine.",
+"wines": [
+{
+"name": "Haut-Coustias",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-chateau-de-segries",
+"name": "Château de Ségriès",
+"region": "Rhône – Lirac",
+"country": "France",
+"lat": 44.03,
+"lng": 4.7,
+"founded": "",
+"style": "red",
+"story": "Lirac estate.",
+"wines": [
+{
+"name": "Lirac",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-chateau-d-aqueria",
+"name": "Château d'Aquéria",
+"region": "Rhône – Tavel",
+"country": "France",
+"lat": 43.995,
+"lng": 4.71,
+"founded": "",
+"style": "rose",
+"story": "Tavel château estate.",
+"wines": [
+{
+"name": "Tavel",
+"type": "Rosé",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-chateau-de-trinquevedel",
+"name": "Château de Trinquevedel",
+"region": "Rhône – Tavel",
+"country": "France",
+"lat": 43.99,
+"lng": 4.705,
+"founded": "",
+"style": "rose",
+"story": "Tavel estate.",
+"wines": [
+{
+"name": "Tavel",
+"type": "Rosé",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-mas-champart",
+"name": "Domaine Mas Champart",
+"region": "Languedoc – Saint-Chinian",
+"country": "France",
+"lat": 43.42,
+"lng": 2.95,
+"founded": "",
+"style": "red",
+"story": "Saint-Chinian estate.",
+"wines": [
+{
+"name": "Clos de la Simonette",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-borie-la-vitarele",
+"name": "Domaine Borie La Vitarèle",
+"region": "Languedoc – Saint-Chinian",
+"country": "France",
+"lat": 43.45,
+"lng": 3.05,
+"founded": "",
+"style": "red",
+"story": "Biodynamic Saint-Chinian estate.",
+"wines": [
+{
+"name": "Les Crès",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-chateau-puech-haut",
+"name": "Château Puech-Haut",
+"region": "Languedoc – Saint-Drézéry",
+"country": "France",
+"lat": 43.73,
+"lng": 4.0,
+"founded": "",
+"style": "red",
+"story": "Estate with painted barrel art.",
+"wines": [
+{
+"name": "Tête de Bélier",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-clos-marie",
+"name": "Domaine Clos Marie",
+"region": "Languedoc – Pic Saint-Loup",
+"country": "France",
+"lat": 43.785,
+"lng": 3.82,
+"founded": "",
+"style": "red",
+"story": "Pic Saint-Loup estate.",
+"wines": [
+{
+"name": "Les Glorieuses",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-chateau-de-lascaux",
+"name": "Château de Lascaux",
+"region": "Languedoc – Vacquières",
+"country": "France",
+"lat": 43.85,
+"lng": 3.95,
+"founded": "",
+"style": "red",
+"story": "Pic Saint-Loup family estate.",
+"wines": [
+{
+"name": "Les Secrets",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-de-la-grange-des-peres",
+"name": "Domaine de la Grange des Pères",
+"region": "Languedoc – Aniane",
+"country": "France",
+"lat": 43.69,
+"lng": 3.58,
+"founded": "",
+"style": "red",
+"story": "Laurent Vaillé's cult Aniane estate.",
+"wines": [
+{
+"name": "Grange des Pères Rouge",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-alain-chabanon",
+"name": "Domaine Alain Chabanon",
+"region": "Languedoc – Lagamas",
+"country": "France",
+"lat": 43.68,
+"lng": 3.53,
+"founded": "",
+"style": "red",
+"story": "Terrasses du Larzac domaine.",
+"wines": [
+{
+"name": "Les Boissières",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-la-terrasse-d-elise",
+"name": "Domaine La Terrasse d'Élise",
+"region": "Languedoc – Saint-Jean-de-Fos",
+"country": "France",
+"lat": 43.7,
+"lng": 3.55,
+"founded": "",
+"style": "red",
+"story": "Natural Larzac grower.",
+"wines": [
+{
+"name": "Pigeonnier",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-mas-cal-demoura",
+"name": "Mas Cal Demoura",
+"region": "Languedoc – Jonquières",
+"country": "France",
+"lat": 43.655,
+"lng": 3.47,
+"founded": "",
+"style": "red",
+"story": "Terrasses du Larzac estate.",
+"wines": [
+{
+"name": "L'Infidèle",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-des-aires-hautes",
+"name": "Domaine des Aires Hautes",
+"region": "Languedoc – Siran",
+"country": "France",
+"lat": 43.32,
+"lng": 2.66,
+"founded": "",
+"style": "red",
+"story": "Minervois La Livinière estate.",
+"wines": [
+{
+"name": "Clos de l'Escandil",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-chateau-maris",
+"name": "Château Maris",
+"region": "Languedoc – La Livinière",
+"country": "France",
+"lat": 43.32,
+"lng": 2.64,
+"founded": "",
+"style": "red",
+"story": "Biodynamic Minervois estate.",
+"wines": [
+{
+"name": "La Touge Syrah",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-ledogar",
+"name": "Domaine Ledogar",
+"region": "Languedoc – Ferrals-les-Corbières",
+"country": "France",
+"lat": 43.15,
+"lng": 2.73,
+"founded": "",
+"style": "red",
+"story": "Natural Corbières grower.",
+"wines": [
+{
+"name": "La Mariole",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-maxime-magnon",
+"name": "Domaine Maxime Magnon",
+"region": "Languedoc – Villeneuve-les-Corbières",
+"country": "France",
+"lat": 42.95,
+"lng": 2.88,
+"founded": "",
+"style": "red",
+"story": "Natural Corbières grower.",
+"wines": [
+{
+"name": "Rozeta",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-chateau-ollieux-romanis",
+"name": "Château Ollieux Romanis",
+"region": "Languedoc – Montséret",
+"country": "France",
+"lat": 43.11,
+"lng": 2.83,
+"founded": "",
+"style": "red",
+"story": "Corbières Boutenac estate.",
+"wines": [
+{
+"name": "Atal Sia",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-de-l-aigle-a-deux-tetes",
+"name": "Domaine de l'Aigle à Deux Têtes",
+"region": "Jura – Le Vernois",
+"country": "France",
+"lat": 46.73,
+"lng": 5.6,
+"founded": "",
+"style": "white",
+"story": "Jura producer.",
+"wines": [
+{
+"name": "Savagnin",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-ganevat",
+"name": "Domaine Ganevat",
+"region": "Jura – Rotalier",
+"country": "France",
+"lat": 46.582,
+"lng": 5.492,
+"founded": "",
+"style": "white",
+"story": "Cult Jura producer.",
+"wines": [
+{
+"name": "Les Chalasses",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-michel-gahier",
+"name": "Domaine Michel Gahier",
+"region": "Jura – Montigny-lès-Arsures",
+"country": "France",
+"lat": 46.93,
+"lng": 5.79,
+"founded": "",
+"style": "red",
+"story": "Arbois Trousseau grower.",
+"wines": [
+{
+"name": "Trousseau Le Clousot",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-de-montbourgeau",
+"name": "Domaine de Montbourgeau",
+"region": "Jura – L'Étoile",
+"country": "France",
+"lat": 46.73,
+"lng": 5.53,
+"founded": "",
+"style": "white",
+"story": "L'Étoile family domaine.",
+"wines": [
+{
+"name": "L'Étoile",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-chateau-d-arlay",
+"name": "Château d'Arlay",
+"region": "Jura – Arlay",
+"country": "France",
+"lat": 46.772,
+"lng": 5.542,
+"founded": "",
+"style": "white",
+"story": "Castle estate with a long winemaking history.",
+"wines": [
+{
+"name": "Vin Jaune",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-jacques-puffeney",
+"name": "Domaine Jacques Puffeney",
+"region": "Jura – Montigny-lès-Arsures",
+"country": "France",
+"lat": 46.932,
+"lng": 5.792,
+"founded": "",
+"style": "red",
+"story": "Traditional Arbois grower.",
+"wines": [
+{
+"name": "Trousseau",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-dupasquier",
+"name": "Domaine Dupasquier",
+"region": "Savoie – Jongieux",
+"country": "France",
+"lat": 45.74,
+"lng": 5.81,
+"founded": "",
+"style": "white",
+"story": "Jongieux family domaine.",
+"wines": [
+{
+"name": "Marestel",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-des-ardoisieres",
+"name": "Domaine des Ardoisières",
+"region": "Savoie – Saint-Pierre-de-Soucy",
+"country": "France",
+"lat": 45.49,
+"lng": 6.11,
+"founded": "",
+"style": "white",
+"story": "Slate-terraced Savoie estate.",
+"wines": [
+{
+"name": "Argile",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-giachino",
+"name": "Domaine Giachino",
+"region": "Savoie – Chapareillan",
+"country": "France",
+"lat": 45.47,
+"lng": 5.99,
+"founded": "",
+"style": "white",
+"story": "Organic Savoie domaine.",
+"wines": [
+{
+"name": "Persan",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-chateau-de-ripaille",
+"name": "Château de Ripaille",
+"region": "Savoie – Thonon-les-Bains",
+"country": "France",
+"lat": 46.395,
+"lng": 6.48,
+"founded": "",
+"style": "white",
+"story": "Lakeside castle estate on Lake Geneva.",
+"wines": [
+{
+"name": "Ripaille",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-berthoumieu",
+"name": "Domaine Berthoumieu",
+"region": "South West – Madiran",
+"country": "France",
+"lat": 43.6,
+"lng": -0.05,
+"founded": "",
+"style": "red",
+"story": "Madiran family estate.",
+"wines": [
+{
+"name": "Charles de Batz",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-chateau-d-aydie",
+"name": "Château d'Aydie",
+"region": "South West – Madiran",
+"country": "France",
+"lat": 43.62,
+"lng": -0.11,
+"founded": "",
+"style": "red",
+"story": "Laplace family estate.",
+"wines": [
+{
+"name": "Château d'Aydie",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-labranche-laffont",
+"name": "Domaine Labranche Laffont",
+"region": "South West – Madiran",
+"country": "France",
+"lat": 43.56,
+"lng": -0.02,
+"founded": "",
+"style": "red",
+"story": "Madiran estate with pre-phylloxera vines.",
+"wines": [
+{
+"name": "Vieilles Vignes",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-clos-lapeyre",
+"name": "Clos Lapeyre",
+"region": "South West – Jurançon",
+"country": "France",
+"lat": 43.285,
+"lng": -0.38,
+"founded": "",
+"style": "white",
+"story": "Jurançon family estate.",
+"wines": [
+{
+"name": "Vitatge Vielh",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-bru-bache",
+"name": "Domaine Bru-Baché",
+"region": "South West – Jurançon",
+"country": "France",
+"lat": 43.29,
+"lng": -0.4,
+"founded": "",
+"style": "sweet",
+"story": "Jurançon family estate.",
+"wines": [
+{
+"name": "Quintessence",
+"type": "Sweet",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-arretxea",
+"name": "Domaine Arretxea",
+"region": "South West – Irouléguy",
+"country": "France",
+"lat": 43.18,
+"lng": -1.32,
+"founded": "",
+"style": "red",
+"story": "Biodynamic Irouléguy estate.",
+"wines": [
+{
+"name": "Hégoxuri",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-ilarria",
+"name": "Domaine Ilarria",
+"region": "South West – Irouléguy",
+"country": "France",
+"lat": 43.185,
+"lng": -1.325,
+"founded": "",
+"style": "red",
+"story": "Irouléguy family estate.",
+"wines": [
+{
+"name": "Irouléguy",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-clos-de-gamot",
+"name": "Clos de Gamot",
+"region": "South West – Cahors",
+"country": "France",
+"lat": 44.495,
+"lng": 1.33,
+"founded": "",
+"style": "red",
+"story": "Jouffreau family estate in Prayssac.",
+"wines": [
+{
+"name": "Clos de Gamot",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-chateau-combel-la-serre",
+"name": "Château Combel-la-Serre",
+"region": "South West – Cahors",
+"country": "France",
+"lat": 44.46,
+"lng": 1.3,
+"founded": "",
+"style": "red",
+"story": "Cahors family estate.",
+"wines": [
+{
+"name": "Le Pur Fruit du Causse",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-chateau-les-croisille",
+"name": "Château Les Croisille",
+"region": "South West – Cahors",
+"country": "France",
+"lat": 44.47,
+"lng": 1.28,
+"founded": "",
+"style": "red",
+"story": "Cahors family estate.",
+"wines": [
+{
+"name": "Divin",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-causse-marines",
+"name": "Domaine Causse Marines",
+"region": "South West – Gaillac",
+"country": "France",
+"lat": 43.96,
+"lng": 1.81,
+"founded": "",
+"style": "white",
+"story": "Natural Gaillac estate.",
+"wines": [
+{
+"name": "Zacmau",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-chateau-belingard",
+"name": "Château Bélingard",
+"region": "South West – Bergerac",
+"country": "France",
+"lat": 44.81,
+"lng": 0.55,
+"founded": "",
+"style": "red",
+"story": "Bergerac estate.",
+"wines": [
+{
+"name": "Blanche de Bosredon",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-de-l-ancienne-cure",
+"name": "Domaine de l'Ancienne Cure",
+"region": "South West – Bergerac",
+"country": "France",
+"lat": 44.79,
+"lng": 0.6,
+"founded": "",
+"style": "sweet",
+"story": "Monbazillac and Bergerac estate.",
+"wines": [
+{
+"name": "L'Extase",
+"type": "Sweet",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-chateau-haut-monplaisir",
+"name": "Château Haut-Monplaisir",
+"region": "South West – Cahors",
+"country": "France",
+"lat": 44.48,
+"lng": 1.19,
+"founded": "",
+"style": "red",
+"story": "Cahors estate.",
+"wines": [
+{
+"name": "Pur Plaisir",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-yves-leccia",
+"name": "Domaine Yves Leccia",
+"region": "Corsica – Patrimonio",
+"country": "France",
+"lat": 42.705,
+"lng": 9.365,
+"founded": "",
+"style": "white",
+"story": "Patrimonio family estate.",
+"wines": [
+{
+"name": "E Croce",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-comte-peraldi",
+"name": "Domaine Comte Peraldi",
+"region": "Corsica – Ajaccio",
+"country": "France",
+"lat": 41.97,
+"lng": 8.78,
+"founded": "",
+"style": "red",
+"story": "Ajaccio estate for Sciaccarellu.",
+"wines": [
+{
+"name": "Clos du Cardinal",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-vaccelli",
+"name": "Domaine Vaccelli",
+"region": "Corsica – Ajaccio",
+"country": "France",
+"lat": 41.88,
+"lng": 8.88,
+"founded": "",
+"style": "red",
+"story": "Ajaccio family estate.",
+"wines": [
+{
+"name": "Granit",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-domaine-de-torraccia",
+"name": "Domaine de Torraccia",
+"region": "Corsica – Porto-Vecchio",
+"country": "France",
+"lat": 41.62,
+"lng": 9.27,
+"founded": "",
+"style": "red",
+"story": "Organic estate near Porto-Vecchio.",
+"wines": [
+{
+"name": "Oriu",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "fr-clos-venturi",
+"name": "Clos Venturi",
+"region": "Corsica – Ponte-Leccia",
+"country": "France",
+"lat": 42.46,
+"lng": 9.2,
+"founded": "",
+"style": "white",
+"story": "Inland Corsican estate.",
+"wines": [
+{
+"name": "Clos Venturi Blanc",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
 }
 ]

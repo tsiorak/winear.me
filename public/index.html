@@ -342,11 +342,6 @@ path.leaflet-interactive:focus{outline:none}
 .dz-pt{display:flex;gap:10px;align-items:flex-start}.dz-pt img{flex:none;width:44px;height:44px;border-radius:50%;border:2px solid #E0BC62;background:#F7F1E6}.dz-pt p{margin:0}
 .dz-pa{display:flex;gap:8px;margin-top:10px}.dz-pa .btn{min-height:40px}
 @media(prefers-reduced-motion:reduce){.dz-here,.dz-fig,.dz-cup,.dz.talking .dz-mouth,.fab.dz-hint,.dz-bub p{animation:none!important}}
-.chh .vbtn{display:grid;place-items:center}
-.chh .vbtn .m1{display:none}.chh .vbtn.off .m1{display:inline}.chh .vbtn.off .w1{display:none}.chh .vbtn.off{opacity:.75}
-.chat.speaking .chh .ava{animation:dzBob .5s ease-in-out infinite alternate}
-@keyframes dzBob{from{transform:rotate(-6deg) translateY(0)}to{transform:rotate(6deg) translateY(-2px)}}
-@media(prefers-reduced-motion:reduce){.chat.speaking .chh .ava{animation:none}}
 /* inside the Android / iPhone app Google sign-in is not available yet */
 .inapp #gBtn{display:none!important}
 @media(prefers-reduced-motion:reduce){.panel,.toast,.bottle{transition:none}}
@@ -984,54 +979,8 @@ fetch("/api/chat").then(r=>r.ok?r.json():{}).then(d=>{chat.ai=!!d.ai}).catch(()=
 const lsGet=k=>{try{return localStorage.getItem(k)}catch{return null}},lsSet=(k,v)=>{try{localStorage.setItem(k,v)}catch{}};
 const SUGG=["Sparkling under €20 in Greece","Assyrtiko from Santorini","Events this weekend","Red wines near me","Premium French reds"];
 const FB_ASK="Share feedback about the site";
-/* ---------- Dionysus's voice: free browser speech, made merry and tipsy ---------- */
-const VOICE={on:lsGet("winear-voice")!=="off",ok:"speechSynthesis" in window,blocked:false,pending:null,gen:0,voices:[]};
-window.VOICE=VOICE;window.speakDz=(t,o)=>speak(t,o);window.hushDz=()=>hush();
-function pickVoices(){if(!VOICE.ok)return;VOICE.voices=speechSynthesis.getVoices()}
-if(VOICE.ok){pickVoices();speechSynthesis.addEventListener?.("voiceschanged",pickVoices)}
-function voiceFor(lang){
-  const vs=VOICE.voices.filter(v=>v.lang&&v.lang.toLowerCase().startsWith(lang));
-  const male=/(male|daniel|fred|alex|guy|david|george|ryan|arthur|thomas|aaron|gordon|oliver|james|nikos|stefanos)/i;
-  return vs.find(v=>male.test(v.name)&&!/female/i.test(v.name)&&/en-gb/i.test(v.lang))||vs.find(v=>male.test(v.name)&&!/female/i.test(v.name))||vs.find(v=>/en-gb/i.test(v.lang))||vs[0]||null}
-const rnd=(a,b)=>a+Math.random()*(b-a);
-function tipsy(text){
-  let t=String(text).replace(/Χαίρε/g,"Khaireh").replace(/Winear\.me/gi,"Win ear dot me").replace(/€\s?(\d+(?:[.,]\d+)?)/g,"$1 euros").replace(/\$\s?(\d+)/g,"$1 dollars")
-    .replace(/[“”"«»*_#•↗→]/g,"").replace(/\s*[·|]\s*/g,", ").replace(/\s+/g," ").trim();
-  if(/[Ͱ-Ͽ]/.test(t.replace(/Khaireh/g,"")))return t; // Greek text: keep the words clean
-  t=t.replace(/\b(wine|wines|divine|fine|sweet|so|oh|cheers)\b/gi,w=>Math.random()<.6?w.replace(/([aeiou])/i,"$1$1$1"):w);
-  t=t.replace(/\bs(?=[aeiouwlt])/g,m=>Math.random()<.4?"sh":m);
-  return t}
-function chunks(t){return t.split(/(?<=[.!?…;:])\s+/).flatMap(x=>Math.random()<.35?x.split(/,\s+(?=\S{4,})/):[x]).map(s=>s.trim()).filter(Boolean)}
-function speak(text,{onstart,onend}={}){
-  if(!VOICE.ok||!VOICE.on||!text)return onend&&onend(),false;
-  const greek=(text.match(/[Ͱ-Ͽ]/g)||[]).length>text.length*.3;
-  const lang=greek?"el":"en",voice=voiceFor(lang)||voiceFor("en");
-  speechSynthesis.cancel();const gen=++VOICE.gen;
-  let parts=chunks(tipsy(text.slice(0,700))),hics=0,queue=[];
-  if(!greek&&Math.random()<.45)parts[0]=(Math.random()<.5?"Ahh… ":"Mmm, ")+parts[0];
-  parts.forEach((p,i)=>{queue.push({t:p,pitch:rnd(.68,1.02),rate:rnd(.72,.86)});
-    if(!greek&&i<parts.length-1&&hics<2&&Math.random()<.32){hics++;queue.push({t:"hic!",pitch:rnd(1.6,1.9),rate:1.25,hic:true})}});
-  if(!greek&&!hics&&Math.random()<.5)queue.splice(Math.min(1,queue.length),0,{t:"hic!",pitch:1.75,rate:1.25,hic:true});
-  let started=false;
-  queue.forEach((c,i)=>{const u=new SpeechSynthesisUtterance(c.t);if(voice){u.voice=voice;u.lang=voice.lang}else u.lang=greek?"el-GR":"en-GB";
-    u.pitch=c.pitch;u.rate=c.rate;u.volume=1;
-    u.onstart=()=>{if(gen!==VOICE.gen)return;VOICE.blocked=false;if(!started){started=true;onstart&&onstart()}};
-    u.onerror=e=>{if(gen!==VOICE.gen)return;if(e.error==="not-allowed"){VOICE.blocked=true;VOICE.pending={text,opts:{onstart,onend}}}if(i===queue.length-1||e.error==="not-allowed")onend&&onend()};
-    if(i===queue.length-1)u.onend=()=>{if(gen===VOICE.gen)onend&&onend()};
-    speechSynthesis.speak(u)});
-  return true}
-function hush(){if(VOICE.ok){VOICE.gen++;speechSynthesis.cancel()}chatEl?.classList.remove("speaking")}
-// browsers only allow sound after the first tap or key press: replay what was blocked
-const unlock=()=>{if(VOICE.blocked&&VOICE.pending){const p=VOICE.pending;VOICE.pending=null;VOICE.blocked=false;speak(p.text,p.opts)}};
-addEventListener("pointerdown",unlock,true);addEventListener("keydown",unlock,true);
-function spokenText(d){
-  if(!d.querySelector("p:not(.note),li,.hello"))return"";
-  const ps=[...d.querySelectorAll(".hello p,:scope>p:not(.note),:scope>ul li")].map(x=>x.textContent.trim());
-  const names=[...d.querySelectorAll(".cres b,.cev>b")].slice(0,3).map(b=>b.textContent.trim());
-  return(ps.join(" ")+(names.length?" "+names.join(", ")+(d.querySelectorAll(".cres b,.cev>b").length>3?", and more.":"."):"")).replace(/:\s*$/,".")}
-
 const chatEl=document.createElement("section");chatEl.className="chat";chatEl.id="chat";chatEl.hidden=true;chatEl.setAttribute("aria-label","Chat with Dionysus");
-chatEl.innerHTML=`<div class="chh"><img class="ava" src="/icons/dionysus-face.svg" alt=""><div><h2>Dionysus</h2><small>God of wine · your guide to wineries, wines and events</small></div><button class="x vbtn" id="vBtn" aria-pressed="true" aria-label="Dionysus's voice"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9h4l5-4v14l-5-4H4z"/><path class="w1" d="M16.5 9a4 4 0 0 1 0 6M19 6.5a7.5 7.5 0 0 1 0 11"/><path class="m1" d="M17 9.5l5 5M22 9.5l-5 5"/></svg></button><button class="x" aria-label="Close chat">×</button></div>
+chatEl.innerHTML=`<div class="chh"><img class="ava" src="/icons/dionysus-face.svg" alt=""><div><h2>Dionysus</h2><small>God of wine · your guide to wineries, wines and events</small></div><button class="x" aria-label="Close chat">×</button></div>
  <div class="clog" id="clog" aria-live="polite"></div>
  <form class="cin" id="cin"><input id="cq" autocomplete="off" maxlength="200" placeholder="e.g. white wines under €15 in Crete" aria-label="Ask about wines, wineries or events"><button class="btn pri" aria-label="Send"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></form>`;
 document.body.appendChild(chatEl);
@@ -1040,20 +989,14 @@ fab.innerHTML=`<img class="ava" src="/icons/dionysus-face.svg" alt=""><span>Ask 
 document.body.appendChild(fab);
 const clog=chatEl.querySelector("#clog");
 function say(html,who="bot",keep=true){const d=document.createElement("div");d.className="msg "+who;d.innerHTML=html;clog.appendChild(d);clog.scrollTop=clog.scrollHeight;
-  if(who==="me")hush();else if(chat.open){const t=spokenText(d);if(t)speak(t,{onstart:()=>chatEl.classList.add("speaking"),onend:()=>chatEl.classList.remove("speaking")})}
   if(keep){chat.hist.push({role:who==="me"?"user":"assistant",content:d.textContent.replace(/\s+/g," ").trim().slice(0,800)});if(chat.hist.length>16)chat.hist.splice(0,chat.hist.length-16)}return d}
 const chips=list=>`<div class="csug">${list.map(s=>`<button type="button" class="chip" data-ask="${esc(s)}">${esc(s)}</button>`).join("")}</div>`;
 function openChat(){chatEl.hidden=false;chat.open=true;fab.setAttribute("aria-expanded","true");fab.hidden=true;
   if(!clog.children.length)say(`<div class="hello"><img src="/dionysus.svg" alt=""><div><p><b>Χαίρε!</b> I'm Dionysus, god of wine.</p><p>Tell me what you'd like to drink and I'll find the wineries, wines and feasts on the map. Ask about a <b>colour</b>, <b>price</b>, <b>grape</b>, <b>country</b> or <b>wine area</b>, or about <b>events</b> on certain dates.</p></div></div>${chips([...SUGG,FB_ASK])}`,"bot",false);
   if(innerWidth<=700)closeFilters();setTimeout(()=>$("#cq").focus(),50)}
-function closeChat(){hush();chatEl.hidden=true;chat.open=false;fab.hidden=false;fab.setAttribute("aria-expanded","false")}
+function closeChat(){chatEl.hidden=true;chat.open=false;fab.hidden=false;fab.setAttribute("aria-expanded","false")}
 fab.addEventListener("click",openChat);
-chatEl.querySelector(".x:not(.vbtn)").addEventListener("click",()=>{closeChat();fab.focus()});
-const vBtn=chatEl.querySelector("#vBtn");
-function showVoice(){vBtn.setAttribute("aria-pressed",String(VOICE.on));vBtn.title=VOICE.on?"Mute Dionysus":"Let Dionysus speak";vBtn.classList.toggle("off",!VOICE.on)}
-if(!VOICE.ok)vBtn.hidden=true;showVoice();
-vBtn.addEventListener("click",()=>{VOICE.on=!VOICE.on;lsSet("winear-voice",VOICE.on?"on":"off");showVoice();
-  if(!VOICE.on)hush();else speak("Ahh, my voice is back, friend!",{onstart:()=>chatEl.classList.add("speaking"),onend:()=>chatEl.classList.remove("speaking")})});
+chatEl.querySelector(".x").addEventListener("click",()=>{closeChat();fab.focus()});
 document.addEventListener("keydown",e=>{if(e.key==="Escape"&&chat.open){e.stopImmediatePropagation();closeChat();fab.focus()}},true);
 chatEl.querySelector("#cin").addEventListener("submit",e=>{e.preventDefault();const v=$("#cq").value.trim();if(!v)return;$("#cq").value="";ask(v)});
 const getLoc=()=>new Promise(ok=>{if(chat.loc)return ok(chat.loc);if(!navigator.geolocation)return ok(null);
@@ -1171,7 +1114,6 @@ function dzAsk(loc,again){
     const pop=L.popup({className:"dz-pop",offset:[0,-86],maxWidth:280,autoPanPadding:[20,80]}).setLatLng(loc)
       .setContent(`<div class="dz-pt"><img src="/icons/dionysus-face.svg" alt=""><p><b>${again?"At your service!":"Here you are!"}</b> ${near.list.length?`I know <b>${near.list.length}</b> ${near.list.length===1?"winery":"wineries"} ${near.label}.`:"There are no wineries close by on my map yet."} Shall I recommend some for you?</p></div><div class="dz-pa"><button class="btn pri" data-dzy>Yes, please</button><button class="btn" data-dzn>No, thanks</button></div>`).openOn(map);
     const el=pop.getElement();
-    speak(el.querySelector(".dz-pt p").textContent);pop.on("remove",()=>{if(!chat.open)hush()});
     el.querySelector("[data-dzy]").onclick=()=>{map.closePopup(pop);recommendNear(loc,near)};
     el.querySelector("[data-dzn]").onclick=()=>{map.closePopup(pop);toast("Enjoy! Dionysus is in the chat whenever you need him.")};
     el.querySelector("[data-dzy]").focus();
@@ -1391,12 +1333,10 @@ const DZ_SVG=`<svg class="dz-fig" viewBox="40 40 240 400" role="img" aria-label=
   let i=-1,timer=0,talk=0;
   function line(n){i=n;clearTimeout(timer);clearTimeout(talk);
     const bub=el.querySelector(".dz-bub");bub.innerHTML=`<p>${LINES[i]}</p>`;dots.forEach((d,k)=>d.classList.toggle("on",k<=i));
-    const txt=bub.textContent,cur=i,last=i===LINES.length-1;
-    const spoke=speak(txt,{onstart:()=>el.classList.add("talking"),onend:()=>{el.classList.remove("talking");if(cur===i&&!last&&el.isConnected){clearTimeout(timer);timer=setTimeout(()=>line(i+1),VOICE.blocked?2800:900)}}});
-    if(!spoke||VOICE.blocked){el.classList.add("talking");talk=setTimeout(()=>el.classList.remove("talking"),Math.min(2600,700+LINES[i].length*28))}
-    if(!last){timer=setTimeout(()=>line(i+1),spoke?9000:3600)}
+    el.classList.add("talking");talk=setTimeout(()=>el.classList.remove("talking"),Math.min(2600,700+LINES[i].length*28));
+    if(i<LINES.length-1){timer=setTimeout(()=>line(i+1),3600)}
     else{acts.innerHTML=`<button class="pri" data-dz="enjoy">Enjoy!</button><button data-dz="ask">Ask Dionysus</button>`;acts.querySelector("button").focus()}}
-  function close(openAsk){clearTimeout(timer);clearTimeout(talk);hush();lsSet("winear-welcome","1");el.remove();
+  function close(openAsk){clearTimeout(timer);clearTimeout(talk);lsSet("winear-welcome","1");el.remove();
     setTimeout(()=>{try{window.dzLocate&&window.dzLocate()}catch(e){console.error(e)}},3000);
     try{if(openAsk)openChat();else{fab.classList.add("dz-hint");setTimeout(()=>fab.classList.remove("dz-hint"),3200);fab.focus()}}catch(e){console.error(e)}}
   el.addEventListener("click",e=>{const b=e.target.closest("[data-dz],.dz-skip");if(!b)return;

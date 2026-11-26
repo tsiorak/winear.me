@@ -17,11 +17,11 @@ service cloud.firestore {
     function profileOk(d) {
       return d.keys().hasOnly(['email', 'name', 'role', 'createdAt', 'updatedAt',
           'firstName', 'lastName', 'organization', 'phone', 'place', 'about',
-          'savedWineries', 'savedWines', 'wineryId'])
+          'savedWineries', 'savedWines', 'savedEvents', 'wineryId'])
         && optStr(d, 'name', 100) && optStr(d, 'firstName', 100) && optStr(d, 'lastName', 100)
         && optStr(d, 'organization', 150) && optStr(d, 'phone', 40) && optStr(d, 'place', 100)
         && optStr(d, 'about', 1000)
-        && optList(d, 'savedWineries') && optList(d, 'savedWines');
+        && optList(d, 'savedWineries') && optList(d, 'savedWines') && optList(d, 'savedEvents');
     }
 
     // One document per signed-in person: profile, saved wineries/wines, role.
@@ -62,23 +62,41 @@ service cloud.firestore {
     }
 
     // Winery pages edited on the site (overrides a listed winery with the same id, or adds a new one).
-    // Everyone can read. The administrator can write any; an approved owner only their own (users/{uid}.wineryId).
+    // Everyone can read. Writers: the administrator; the approved owner (users/{uid}.wineryId);
+    // team members (verified Google email in the winery's "team" list, max 10).
     function ownsWinery(id) {
       let me = get(/databases/$(database)/documents/users/$(request.auth.uid)).data;
       return signedIn() && me.get('role', '') == 'winery' && me.get('wineryId', '') == id;
     }
+    function myEmail() { return request.auth.token.email.lower(); }
+    function inTeamOf(w) {
+      return signedIn() && request.auth.token.email_verified == true
+        && myEmail() in w.get('team', []);
+    }
+    function canManage(id) {
+      return isAdmin() || ownsWinery(id)
+        || inTeamOf(get(/databases/$(database)/documents/wineries/$(id)).data);
+    }
     function wineryOk(d) {
       return d.keys().hasOnly(['name', 'region', 'country', 'lat', 'lng', 'founded', 'style', 'story',
-          'hours', 'address', 'website', 'phone', 'email', 'wines', 'events', 'real', 'published',
-          'ownerUid', 'createdAt', 'updatedAt'])
+          'story_el', 'hours', 'openHours', 'bookable', 'address', 'website', 'phone', 'email',
+          'wines', 'events', 'real', 'published', 'ownerUid', 'team', 'photos', 'createdAt', 'updatedAt'])
         && d.name is string && d.name.size() > 0 && d.name.size() <= 120
         && optStr(d, 'region', 120) && optStr(d, 'country', 60) && optStr(d, 'founded', 10)
-        && optStr(d, 'story', 6000) && optStr(d, 'hours', 120) && optStr(d, 'address', 200)
-        && optStr(d, 'website', 200) && optStr(d, 'phone', 40) && optStr(d, 'email', 120)
+        && optStr(d, 'story', 6000) && optStr(d, 'story_el', 6000) && optStr(d, 'hours', 120)
+        && optStr(d, 'address', 200) && optStr(d, 'website', 200) && optStr(d, 'phone', 40)
+        && optStr(d, 'email', 120)
         && (!('wines' in d) || (d.wines is list && d.wines.size() <= 100))
         && (!('events' in d) || (d.events is list && d.events.size() <= 100))
+        && (!('team' in d) || (d.team is list && d.team.size() <= 10))
+        && (!('photos' in d) || (d.photos is map && d.photos.size() <= 110))
+        && (!('openHours' in d) || d.openHours is map)
         && (!('lat' in d) || (d.lat is number && d.lat >= -90 && d.lat <= 90))
         && (!('lng' in d) || (d.lng is number && d.lng >= -180 && d.lng <= 180));
+    }
+    function sameOwnerAndTeam() {
+      return request.resource.data.get('ownerUid', '') == resource.data.get('ownerUid', '')
+        && request.resource.data.get('team', []) == resource.data.get('team', []);
     }
     match /wineries/{id} {
       allow read: if true;
@@ -87,7 +105,63 @@ service cloud.firestore {
             && wineryOk(request.resource.data));
       allow update: if isAdmin()
         || (ownsWinery(id) && request.resource.data.get('ownerUid', '') == resource.data.get('ownerUid', '')
-            && wineryOk(request.resource.data));
+            && wineryOk(request.resource.data))
+        || (inTeamOf(resource.data) && sameOwnerAndTeam() && wineryOk(request.resource.data));
+      allow delete: if isAdmin();
+    }
+
+    // Photos (small JPEGs as data URLs), one document per photo: "{wineryId}__{slot}"
+    match /photos/{pid} {
+      allow read: if true;
+      allow create, update: if canManage(request.resource.data.wineryId)
+        && pid == request.resource.data.wineryId + '__' + request.resource.data.slot
+        && request.resource.data.keys().hasOnly(['wineryId', 'slot', 'data', 'updatedAt'])
+        && request.resource.data.slot is string && request.resource.data.slot.size() <= 40
+        && request.resource.data.data is string && request.resource.data.data.size() <= 400000
+        && request.resource.data.data.matches('data:image/(jpeg|png|webp);base64,.*');
+      allow delete: if canManage(resource.data.wineryId);
+    }
+
+    // Visit requests and event sign-ups
+    function bookingOk(d) {
+      return d.keys().hasOnly(['wineryId', 'wineryName', 'kind', 'eventId', 'eventTitle', 'date', 'time',
+          'people', 'name', 'email', 'phone', 'message', 'uid', 'status', 'reply', 'createdAt', 'updatedAt'])
+        && d.wineryId is string && d.wineryId.size() <= 100
+        && d.kind in ['visit', 'event'] && d.people is int && d.people >= 1 && d.people <= 50
+        && d.name is string && d.name.size() > 0 && d.name.size() <= 100
+        && optStr(d, 'message', 1000) && optStr(d, 'phone', 40) && optStr(d, 'eventTitle', 120)
+        && optStr(d, 'wineryName', 120) && optStr(d, 'date', 10) && optStr(d, 'time', 5);
+    }
+    match /bookings/{bid} {
+      allow read: if signedIn()
+        && (resource.data.uid == request.auth.uid || canManage(resource.data.wineryId));
+      allow create: if signedIn() && request.resource.data.uid == request.auth.uid
+        && request.resource.data.status == 'new' && request.resource.data.get('reply', '') == ''
+        && bookingOk(request.resource.data);
+      allow update: if signedIn() && (
+          (resource.data.uid == request.auth.uid
+            && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['status', 'updatedAt'])
+            && request.resource.data.status == 'cancelled')
+          || (canManage(resource.data.wineryId)
+            && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['status', 'reply', 'updatedAt'])
+            && request.resource.data.status in ['confirmed', 'declined']
+            && optStr(request.resource.data, 'reply', 500)));
+      allow delete: if isAdmin();
+    }
+
+    // Visitor counters per winery. Anyone may add 1; only the winery's managers read them.
+    function cntNew(k) { return request.resource.data.get(k, 0) is int && request.resource.data.get(k, 0) >= 0 && request.resource.data.get(k, 0) <= 1; }
+    function cntUp(k) {
+      return request.resource.data.get(k, 0) is int
+        && request.resource.data.get(k, 0) >= resource.data.get(k, 0)
+        && request.resource.data.get(k, 0) <= resource.data.get(k, 0) + 1;
+    }
+    match /stats/{id} {
+      allow read: if signedIn() && canManage(id);
+      allow create: if request.resource.data.keys().hasOnly(['views', 'saves', 'directions', 'website', 'calls', 'bookings'])
+        && cntNew('views') && cntNew('saves') && cntNew('directions') && cntNew('website') && cntNew('calls') && cntNew('bookings');
+      allow update: if request.resource.data.keys().hasOnly(['views', 'saves', 'directions', 'website', 'calls', 'bookings'])
+        && cntUp('views') && cntUp('saves') && cntUp('directions') && cntUp('website') && cntUp('calls') && cntUp('bookings');
       allow delete: if isAdmin();
     }
   }

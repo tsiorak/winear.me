@@ -144,6 +144,50 @@ button{cursor:pointer}
 .adm-body .acts{display:flex;flex-wrap:wrap;gap:8px}
 .orow{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px}
 .lnk{border:0;background:none;color:var(--wine);text-decoration:underline;padding:0 4px;font:inherit}
+.ph.cov{background-size:cover;background-position:center;min-height:210px;display:flex;flex-direction:column;justify-content:flex-end}
+.ph .czoom{position:absolute;inset:0;border:0;background:none;cursor:zoom-in}
+.ph .tt,.ph .meta{position:relative;z-index:1}.ph .x{z-index:2}
+.ph .tt{display:flex;align-items:center;gap:12px;padding-right:44px}
+.ph .logo{width:58px;height:58px;border-radius:14px;object-fit:cover;background:#fff;flex:none;box-shadow:0 4px 12px #0005}
+.ph .meta span.opn{background:#2e8b57;color:#fff}
+.hours{margin:0 0 14px;border:1px solid var(--line);border-radius:12px;padding:8px 12px}
+.hours summary{cursor:pointer;font-weight:500}.hours .opn{color:#2e8b57}.hours .cls{color:var(--mute)}
+.hours table{width:100%;border-collapse:collapse;margin:8px 0 4px;font-size:14px}
+.hours th{text-align:left;font-weight:400;padding:3px 0}.hours td{text-align:right}
+.hours tr.today th,.hours tr.today td{font-weight:700}
+.lang{display:inline-flex;border:1px solid var(--line);border-radius:999px;padding:3px;margin:0 0 12px}
+.lang button{border:0;background:none;border-radius:999px;padding:5px 14px;font-weight:500;color:var(--mute);min-height:34px}
+.lang button[aria-pressed=true]{background:var(--wine);color:#fff}
+.wine.hasimg{grid-template-columns:48px 1fr auto}.wine.hasimg.sv{grid-template-columns:48px 1fr auto auto}
+.wine .bt{grid-row:span 2;border:0;padding:0;background:none;cursor:zoom-in;width:48px;height:72px;border-radius:8px;overflow:hidden}
+.wine .bt img{width:100%;height:100%;object-fit:contain;background:var(--soft)}
+.lb{position:fixed;inset:0;z-index:2100;background:#000d;display:grid;place-items:center;padding:20px;cursor:zoom-out}
+.lb[hidden]{display:none}.lb img{max-width:100%;max-height:100%;border-radius:12px}
+.lb .x{position:absolute;top:14px;right:14px;width:44px;height:44px;border-radius:50%;border:0;background:#fff3;color:#fff;font-size:24px}
+.pslot{display:flex;gap:14px;align-items:center;padding:12px 0;border-bottom:1px solid var(--line)}
+.pslot .pprev{width:180px;height:100px;border-radius:12px;background:var(--soft);display:grid;place-items:center;overflow:hidden;flex:none;text-align:center;padding:4px}
+.pslot.logo .pprev{width:100px}
+.pprev img{width:100%;height:100%;object-fit:cover}
+.pslot .acts,.wph{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px;align-items:center}
+.wph{margin-top:12px}
+.wph .pprev.sm{width:44px;height:60px;border-radius:8px;background:var(--soft);display:grid;place-items:center;overflow:hidden}
+.wph .pprev.sm img{object-fit:contain}
+label.btn{display:inline-flex;align-items:center;cursor:pointer;margin:0;font-weight:500}
+.busy{opacity:.5;pointer-events:none}
+.hed{border-collapse:collapse;width:100%}.hed th{text-align:left;font-weight:500;padding:4px 8px 4px 0}
+.hed td{padding:4px 2px}.hed input[type=time]{min-width:100px}.hed input:disabled{opacity:.4}
+.hed .chk{display:flex;gap:8px;align-items:center;margin:0}
+.adr{display:flex;gap:8px;margin-top:10px}.adr input{flex:1}
+#adrRes{display:flex;flex-direction:column;gap:4px;margin-top:6px}
+.ares{text-align:left;border:1px solid var(--line);background:var(--bg);border-radius:10px;padding:8px 10px;font-size:14px}
+.ares:hover{border-color:var(--wine)}
+.stats{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px;margin:12px 0}
+.stat{background:var(--soft);border-radius:14px;padding:14px}.stat b{display:block;font-size:30px}.stat span{color:var(--mute);font-size:14px}
+.tlist{list-style:none;padding:0;margin:8px 0 12px}.tlist li{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:6px 0;border-bottom:1px solid var(--line)}
+.bkx{padding-top:12px}.bkx small{display:block;color:var(--mute);margin-top:4px}.bkx.cancelled,.bkx.declined{opacity:.6}
+.bst{font-weight:700}.bst.confirmed{color:#2e8b57}.bst.declined,.bst.cancelled{color:var(--mute)}.bst.new{color:var(--wine)}
+.dlg input[type=date],.dlg input[type=time],.dlg input[type=number],.dlg input[type=email],.dlg input[type=search]{width:100%;font-size:16px;padding:9px 12px;border-radius:12px;border:1px solid var(--border);background:var(--bg);min-height:44px}
+
 .adm-done{margin-top:26px}.adm-done summary{cursor:pointer;font-weight:700;font-size:18px;margin-bottom:12px}
 .dlg .acts{display:flex;justify-content:flex-end;gap:8px;margin-top:14px}
 .menu{position:fixed;top:66px;right:12px;z-index:1001;background:var(--card);border-radius:14px;box-shadow:0 12px 34px #0004;min-width:240px;padding:6px;display:none}
@@ -421,6 +465,10 @@ if(/WinearApp/.test(navigator.userAgent)) document.documentElement.classList.add
     <ul class="slist" id="acWy"></ul>
     <h3>Saved wines <span class="badge" id="acWnN">0</span></h3>
     <ul class="slist" id="acWn"></ul>
+    <h3>My plans · saved events <span class="badge" id="acEvN">0</span></h3>
+    <ul class="slist" id="acEv"></ul>
+    <h3>My bookings <span class="badge" id="acBkN">0</span></h3>
+    <ul class="slist" id="acBk"></ul>
     <div class="wbox"><p id="acWStat">Do you make wine? Ask the administrator to link your account to your winery.</p><button type="button" class="btn pri" id="acWinery">I’m a winery</button></div>
   </form>
 </div>
@@ -540,12 +588,13 @@ function wineOk(x){const f=S.f;
 function matches(w){const f=S.f;
   if(f.ids&&!f.ids.has(w.id))return false;
   if(f.countries.size&&!f.countries.has(w.country))return false;
+  if(f.openNow&&!isOpenNow(w))return false;
   if(f.areas.size&&!zonesOf(w).some(z=>f.areas.has(z.id)))return false;
   if(f.cols.size||f.prices.size){const ws=w.wines||[];
     if(!ws.length)return !f.prices.size&&(!f.cols.size||colOk(w.style));
     if(!ws.some(wineOk))return false}
   return true}
-const nActive=()=>S.f.areas.size+S.f.cols.size+S.f.prices.size+S.f.countries.size+(S.f.ids?1:0);
+const nActive=()=>S.f.areas.size+S.f.cols.size+S.f.prices.size+S.f.countries.size+(S.f.ids?1:0)+(S.f.openNow?1:0);
 function drawZones(){
   zoneLayer.clearLayers();
   const show=ZONES.filter(z=>S.f.areas.has(z.id)||(S.f.showAll&&(!S.f.countries.size||S.f.countries.has(z.country))));
@@ -582,6 +631,7 @@ function renderFilters(){
   sheet.innerHTML=`<div class="fh"><h2>Filter the map</h2><button class="x" aria-label="Close filters">×</button></div>
   <div class="fb">
    ${f.ids?`<div class="fids"><span>From the chat: <b>${esc(f.idsLabel||"selected wineries")}</b></span><button class="btn" id="fIds">Remove</button></div>`:""}
+   <h3>Visiting</h3><div class="chips"><button class="chip" data-opennow aria-pressed="${!!f.openNow}"><i style="background:#2e8b57"></i>Open now<small class="n">${list.filter(isOpenNow).length}</small></button></div>
    <h3>Wine colour</h3><div class="chips">${COLS.map(([k,l])=>`<button class="chip" data-col="${k}" aria-pressed="${f.cols.has(k)}"><i style="background:${STYLES[k][1]}"></i>${l}</button>`).join("")}</div>
    <h3>Country</h3><div class="chips">${ctry.map(c=>`<button class="chip" data-country="${esc(c)}" aria-pressed="${f.countries.has(c)}">${esc(c)}${nBy[c]?`<small class="n">${nBy[c]}</small>`:""}</button>`).join("")}</div>
    <h3>Price per bottle</h3><div class="chips">${PRICES.map(([k,l])=>`<button class="chip" data-price="${k}" aria-pressed="${f.prices.has(k)}">${l}</button>`).join("")}</div>
@@ -602,8 +652,9 @@ $("#fBtn").addEventListener("click",()=>$("#fsheet").hidden?openFilters():closeF
 $("#fsheet").addEventListener("click",e=>{
   const t=e.target;
   if(t.closest(".x")||t.closest("#fDone")){closeFilters();return}
-  if(t.closest("#fClear")){S.f.areas.clear();S.f.cols.clear();S.f.prices.clear();S.f.countries.clear();S.f.showAll=false;S.f.ids=null;applyFilters();return}
+  if(t.closest("#fClear")){S.f.areas.clear();S.f.cols.clear();S.f.prices.clear();S.f.countries.clear();S.f.showAll=false;S.f.ids=null;S.f.openNow=false;applyFilters();return}
   if(t.closest("#fIds")){S.f.ids=null;applyFilters();return}
+  if(t.closest("[data-opennow]")){S.f.openNow=!S.f.openNow;applyFilters();return}
   const c=t.closest("[data-col]");if(c){const k=c.dataset.col;S.f.cols.has(k)?S.f.cols.delete(k):S.f.cols.add(k);applyFilters();return}
   const k2=t.closest("[data-country]");if(k2){const k=k2.dataset.country,cs=S.f.countries;cs.has(k)?cs.delete(k):cs.add(k);applyFilters();fitCountries();return}
   const p=t.closest("[data-price]");if(p){const k=p.dataset.price;S.f.prices.has(k)?S.f.prices.delete(k):S.f.prices.add(k);applyFilters();return}
@@ -668,11 +719,16 @@ function evCard(w,e,showWinery){
   <div class="acts">
    <a class="btn" href="${esc(gcal(w,e))}" target="_blank" rel="noopener">＋ Google Calendar</a>
    <button class="btn ${sv?"on":""}" data-save="${esc(planKey(w,e))}" ${S.id?"":"disabled title='Sign in to save'"}>${sv?"★ Saved":"☆ Save to my plans"}</button>
+   ${w.managed&&new Date(e.end||e.start)>=NOW?`<button class="btn" data-book="${esc(w.id)}|${esc(e.id)}">✋ Sign up</button>`:""}
    ${showWinery?`<button class="btn" data-open="${esc(w.id)}">View winery</button>`:""}
   </div></div>`;
 }
 panel.addEventListener("click",async ev=>{
   const s=ev.target.closest("[data-save]");if(s){togglePlan(s.dataset.save);return}
+  const tr=ev.target.closest("[data-track]");if(tr&&S.open)track(S.open,tr.dataset.track);
+  const lg=ev.target.closest("[data-lang]");if(lg){S.lang=lg.dataset.lang;renderWinery();return}
+  const bkb=ev.target.closest("[data-book]");if(bkb){const[a,b2]=bkb.dataset.book.split("|");openBooking(a,b2);return}
+  const zm=ev.target.closest("[data-zoom]");if(zm){const[a,b2]=zm.dataset.zoom.split("|");zoomPhoto(photoUrl(a,b2),"");return}
   const ed1=ev.target.closest("[data-edit]");if(ed1){openEditor(ed1.dataset.edit);return}
   const sw=ev.target.closest("[data-svw]");if(sw){toggleSaved("savedWineries",sw.dataset.svw);return}
   const sn=ev.target.closest("[data-svwine]");if(sn){toggleSaved("savedWines",sn.dataset.svwine);return}
@@ -682,7 +738,7 @@ panel.addEventListener("click",async ev=>{
 
 function openWinery(id,fly){
   const w=find(id);if(!w)return;
-  S.open=id;S.tab="story";renderWinery();
+  S.open=id;S.tab="story";renderWinery();track(id,"views");
   if(fly)map.flyTo([+w.lat,+w.lng],Math.max(map.getZoom(),13),{duration:.8});
 }
 function priceList(x){
@@ -693,19 +749,27 @@ function priceList(x){
 function contactBlock(w){
   const web=/^https?:\/\//i.test(w.website||"")?w.website:"",tel=String(w.phone||"").replace(/[^\d+]/g,""),mail=/^[^\s@]+@[^\s@]+$/.test(w.email||"")?w.email:"";
   const dir=`https://www.google.com/maps/dir/?api=1&destination=${+w.lat},${+w.lng}`;
-  return `<div class="contact"><a class="btn" href="${esc(dir)}" target="_blank" rel="noopener">🧭 Directions</a>${web?`<a class="btn" href="${esc(web)}" target="_blank" rel="noopener">Website ↗</a>`:""}${tel?`<a class="btn" href="tel:${esc(tel)}">📞 Call</a>`:""}${mail?`<a class="btn" href="mailto:${esc(mail)}">✉ Email</a>`:""}</div>${w.address?`<p class="note" style="margin-top:-4px">${esc(w.address)}</p>`:""}`;
+  return `<div class="contact">${w.managed&&w.bookable!==false?`<button class="btn pri" data-book="${esc(w.id)}">📅 Book a visit</button>`:""}<a class="btn" href="${esc(dir)}" target="_blank" rel="noopener" data-track="directions">🧭 Directions</a>${web?`<a class="btn" href="${esc(web)}" target="_blank" rel="noopener" data-track="website">Website ↗</a>`:""}${tel?`<a class="btn" href="tel:${esc(tel)}" data-track="calls">📞 Call</a>`:""}${mail?`<a class="btn" href="mailto:${esc(mail)}">✉ Email</a>`:""}</div>${w.address?`<p class="note" style="margin-top:-4px">📍 ${esc(w.address)}</p>`:""}`;
 }
+S.lang=/^el\b/i.test(navigator.language||"")?"el":"en";
 function renderWinery(){
   const w=find(S.open);if(!w)return closePanel();
   const st=STYLES[w.style]||STYLES.red;
-  const fbS=!!S.fbUser,svW=fbS&&isSavedW(w.id);
-  const meta=`<div class="meta">${w.founded?`<span>Since ${esc(w.founded)}</span>`:""}<span>${esc(st[0])} specialist</span>${w.hours?`<span>${esc(w.hours)}</span>`:""}${w.managed?'<span title="This page is managed by the winery">✓ By the winery</span>':""}${fbS?`<button class="svw ${svW?"on":""}" data-svw="${esc(w.id)}" aria-pressed="${svW}">${svW?"★ Saved":"☆ Save winery"}</button>`:""}${canEdit(w.id)?`<button class="svw" data-edit="${esc(w.id)}">✎ Edit page</button>`:""}</div>`;
+  const fbS=!!S.fbUser,svW=fbS&&isSavedW(w.id);loadPhotos(w);
+  const ph=w.photos||{},cover=ph.cover?photoUrl(w.id,"cover"):"",logo=ph.logo?photoUrl(w.id,"logo"):"",on=openState(w);
+  const meta=`<div class="meta">${on?`<span class="${on.open?"opn":"cls"}">${esc(on.label)}</span>`:""}${w.founded?`<span>Since ${esc(w.founded)}</span>`:""}<span>${esc(st[0])} specialist</span>${!on&&w.hours?`<span>${esc(w.hours)}</span>`:""}${w.managed?'<span title="This page is managed by the winery">✓ By the winery</span>':""}${fbS?`<button class="svw ${svW?"on":""}" data-svw="${esc(w.id)}" aria-pressed="${svW}">${svW?"★ Saved":"☆ Save winery"}</button>`:""}${canEdit(w.id)?`<button class="svw" data-edit="${esc(w.id)}">✎ Edit page</button>`:""}</div>`;
   const tabs=[["story","Story"],["wines",`Wines (${(w.wines||[]).length})`],["events",`Events (${(w.events||[]).length})`]];
   let body="";
-  if(S.tab==="story")body=`${contactBlock(w)}${String(w.story||"").split(/\n+/).map(p=>`<p>${esc(p)}</p>`).join("")||'<p class="empty">No story yet.</p>'}${w.user?"":w.real?'<p class="note">Listing prepared from public information; the map pin shows the approximate area. Is this your winery? Soon you will be able to claim this page and add your own story, wines, prices and events.</p>':'<p class="note">Sample winery for the prototype.</p>'}`;
-  if(S.tab==="wines")body=(w.wines||[]).length?(w.wines).map(x=>{const k=wineKey(w,x),on=fbS&&isSavedWine(k);return`<div class="wine${fbS?" sv":""}"><i style="background:${TYPECOL[x.type]||"#999"}"></i><div><b>${esc(x.name)}</b><span class="t">${esc(x.type)}${x.vintage?" · "+esc(x.vintage):""}</span></div><div class="pr">${x.prices&&x.prices.length>1?"from ":""}${esc(money(x.price,x.cur))}</div>${fbS?`<button class="svbtn ${on?"on":""}" data-svwine="${esc(k)}" aria-pressed="${on}" aria-label="${on?"Remove from":"Save to"} my account: ${esc(x.name)}" title="${on?"Saved":"Save wine"}">${on?"★":"☆"}</button>`:""}<div class="n">${esc(x.notes)}</div>${priceList(x)}</div>`}).join(""):'<p class="empty">No wines listed yet.</p>';
+  if(S.tab==="story"){
+    const en=String(w.story||"").trim(),el=String(w.story_el||"").trim(),both=!!(en&&el),lang=both?S.lang:(el&&!en?"el":"en");
+    const txt=lang==="el"?w.story_el:w.story;
+    body=`${contactBlock(w)}${hoursBlock(w)}${both?`<div class="lang" role="group" aria-label="Language"><button data-lang="en" aria-pressed="${lang==="en"}">English</button><button data-lang="el" aria-pressed="${lang==="el"}">Ελληνικά</button></div>`:""}<div lang="${lang}">${String(txt||"").split(/\n+/).filter(p=>p.trim()).map(p=>`<p>${esc(p)}</p>`).join("")||'<p class="empty">No story yet.</p>'}</div>${w.user?"":w.real?'<p class="note">Listing prepared from public information; the map pin shows the approximate area. Is this your winery? Sign in and tap Account → I’m a winery to manage this page.</p>':'<p class="note">Sample winery for the prototype.</p>'}`;
+  }
+  if(S.tab==="wines")body=(w.wines||[]).length?(w.wines).map(x=>{const k=wineKey(w,x),sv=fbS&&isSavedWine(k),img=x.wid&&ph["w_"+x.wid]?photoUrl(w.id,"w_"+x.wid):"";
+    return`<div class="wine${fbS?" sv":""}${img?" hasimg":""}">${img?`<button class="bt" data-zoom="${esc(w.id)}|w_${esc(x.wid)}" aria-label="Bigger photo of ${esc(x.name)}"><img src="${img}" alt=""></button>`:`<i style="background:${TYPECOL[x.type]||"#999"}"></i>`}<div><b>${esc(x.name)}</b><span class="t">${esc(x.type)}${x.vintage?" · "+esc(x.vintage):""}</span></div><div class="pr">${x.prices&&x.prices.length>1?"from ":""}${esc(money(x.price,x.cur))}</div>${fbS?`<button class="svbtn ${sv?"on":""}" data-svwine="${esc(k)}" aria-pressed="${sv}" aria-label="${sv?"Remove from":"Save to"} my account: ${esc(x.name)}" title="${sv?"Saved":"Save wine"}">${sv?"★":"☆"}</button>`:""}<div class="n">${esc(x.notes)}</div>${priceList(x)}</div>`}).join(""):'<p class="empty">No wines listed yet.</p>';
   if(S.tab==="events"){const evs=[...(w.events||[])].filter(e=>e&&e.start).sort((a,b)=>new Date(a.start)-new Date(b.start));const up=evs.filter(e=>new Date(e.end||e.start)>=NOW);body=up.length?up.map(e=>evCard(w,e,false)).join(""):'<p class="empty">No upcoming events.</p>'}
-  show(head(esc(w.name),`${esc(w.region)} · ${esc(w.country)}`,meta)+`<div class="tabs" role="tablist">${tabs.map(([k,l])=>`<button role="tab" data-tab="${k}" aria-selected="${S.tab===k}">${l}</button>`).join("")}</div><div class="pb">${body}</div>`,"winery");
+  const hd=`<div class="ph${cover?" cov":""}"${cover?` style="background-image:linear-gradient(180deg,#0000 0%,#0008 50%,#000d),url('${cover}')"`:""}><button class="x" aria-label="Close">×</button>${cover?`<button class="czoom" data-zoom="${esc(w.id)}|cover" aria-label="Bigger cover photo"></button>`:""}<div class="tt">${logo?`<img class="logo" src="${logo}" alt="">`:""}<div><h2>${esc(w.name)}</h2><div class="sub">${esc(w.region)} · ${esc(w.country)}</div></div></div>${meta}</div>`;
+  show(hd+`<div class="tabs" role="tablist">${tabs.map(([k,l])=>`<button role="tab" data-tab="${k}" aria-selected="${S.tab===k}">${l}</button>`).join("")}</div><div class="pb">${body}</div>`,"winery");
 }
 
 /* ---------- events calendar ---------- */
@@ -737,6 +801,7 @@ map.on("moveend",()=>{if(S.view==="events"&&S.inView)renderEvents()});
 
 /* ---------- plans ---------- */
 async function togglePlan(key){
+  if(S.fbUser)return toggleSaved("savedEvents",key);
   if(!S.id)return toast("Sign in to save events.");if(!S.db)return toast("Saving events is coming soon.");
   const next=S.plans.includes(key)?S.plans.filter(k=>k!==key):[...S.plans,key];
   const prev=S.plans;S.plans=next;rerender();
@@ -756,9 +821,9 @@ async function renderMenu(){
   if(S.fbUser){
     const u=S.fbUser;
     const adm=isAdminUser(u),win=S.role==="winery";
-    const n=svList("savedWineries").length+svList("savedWines").length;
+    const n=svList("savedWineries").length+svList("savedWines").length+svList("savedEvents").length;
     const items=[`<button role="menuitem" data-m="account">Account${n?` <span class="badge">${n}</span>`:""}</button>`];
-    if(myWineryId())items.push(`<button role="menuitem" data-m="mywinery">My winery</button>`);
+    if(myWineryId()){const nb=inboxNew();items.push(`<button role="menuitem" data-m="mywinery">My winery${nb?` <span class="badge" title="New booking requests">${nb}</span>`:""}</button>`)}
     if(adm)items.push(`<button role="menuitem" data-m="fbadmin">Administrator</button>`);
     $("#menu").innerHTML=`<div class="who"><b></b>${adm?'<span class="role">Admin</span>':win?'<span class="role">Winery</span>':""}<small></small></div>${items.join("")}<button role="menuitem" data-m="signout">Sign out</button>`;
     $("#menu .who b").textContent=(S.profile&&S.profile.name)||u.displayName||"Signed in";$("#menu .who small").textContent=u.email||"";return;
@@ -1217,6 +1282,7 @@ async function loadRole(u){
     else{S.role="user";S.profile={email:u.email||"",name:u.displayName||"",role:"user"};await ref.set({...S.profile,createdAt:FV().serverTimestamp()})}
     S.profUnsub=ref.onSnapshot(d=>{if(!d.exists||!S.fbUser||S.fbUser.uid!==u.uid)return;const was=S.role;S.profile=d.data();S.role=S.profile.role||"user";
       if(was!=="winery"&&S.role==="winery")toast("Your winery account is approved! Open the menu → My winery.");
+      S.plans=svList("savedEvents").slice();watchInbox();
       rerender();if(!ac.hidden){renderSaved();renderWinerySection()}},()=>{});
   }catch(e){console.warn("role",e.code||e)}
   rerender();
@@ -1237,11 +1303,12 @@ const isSavedWine=key=>svList("savedWines").includes(key);
 async function toggleSaved(field,key){
   const u=S.fbUser;if(!u)return toast("Sign in to save.");if(!S.fs||!S.profile)return toast("Your account isn't ready yet, try again in a moment.");
   const had=svList(field).includes(key),prev=svList(field);
+  if(!had&&field==="savedWineries")track(key,"saves");
   if(!had&&prev.length>=500)return toast("You can save up to 500.");
-  S.profile[field]=had?prev.filter(k=>k!==key):[...prev,key];rerender();if(!ac.hidden)renderSaved();
+  S.profile[field]=had?prev.filter(k=>k!==key):[...prev,key];if(field==="savedEvents")S.plans=[...S.profile[field]];rerender();if(!ac.hidden)renderSaved();
   try{await S.fs.collection("users").doc(u.uid).update({[field]:had?FV().arrayRemove(key):FV().arrayUnion(key),updatedAt:FV().serverTimestamp()});
-    toast(had?"Removed from your account":field==="savedWines"?"Wine saved to your account":"Winery saved to your account")}
-  catch(e){console.warn(e);S.profile[field]=prev;rerender();if(!ac.hidden)renderSaved();toast("Couldn't save right now. Please try again.")}
+    toast(had?(field==="savedEvents"?"Removed from My plans":"Removed from your account"):field==="savedWines"?"Wine saved to your account":field==="savedEvents"?"Saved to My plans":"Winery saved to your account")}
+  catch(e){console.warn(e);S.profile[field]=prev;if(field==="savedEvents")S.plans=[...prev];rerender();if(!ac.hidden)renderSaved();toast("Couldn't save right now. Please try again.")}
 }
 
 /* ---------- account window ---------- */
@@ -1255,13 +1322,13 @@ function openAccount(){
   for(const [id,f] of Object.entries(AC_FIELDS))$("#"+id).value=p[f]??"";
   if(!$("#acName").value)$("#acName").value=u.displayName||"";
   if(!p.firstName&&!p.lastName&&parts[0]){$("#acFirst").value=parts[0];$("#acLast").value=parts.slice(1).join(" ")}
-  renderSaved();renderWinerySection();ac.hidden=false;$("#acName").focus();
+  renderSaved();renderWinerySection();renderMyBookings();loadMyBookings();ac.hidden=false;$("#acName").focus();
   if(S.fs)S.fs.collection("wineryRequests").doc(u.uid).get().then(d=>{S.fbReq=d.exists?d.data():null;renderWinerySection()}).catch(()=>{});
 }
 const closeAccount=()=>{ac.hidden=true};
 function renderSaved(){
   const wy=svList("savedWineries").map(id=>({id,w:find(id)}));
-  $("#acWyN").textContent=wy.length;
+  $("#acWyN").textContent=wy.length;renderSavedEvents();
   $("#acWy").innerHTML=wy.map(({id,w})=>w?`<li><i style="background:${(STYLES[w.style]||STYLES.red)[1]||"var(--wine)"}"></i><button type="button" class="go" data-go="${esc(id)}"><b>${esc(w.name)}</b><small>${esc(w.region)} · ${esc(w.country)}</small></button><button type="button" class="rm" data-rmw="${esc(id)}" aria-label="Remove ${esc(w.name)}">×</button></li>`
     :`<li><button type="button" class="go" disabled><b>Winery no longer listed</b></button><button type="button" class="rm" data-rmw="${esc(id)}" aria-label="Remove">×</button></li>`).join("")||'<li class="empty">No wineries yet. Open a winery on the map and tap “☆ Save winery”.</li>';
   const wn=svList("savedWines").map(k=>{const i=k.indexOf("|"),w=find(k.slice(0,i)),x=w&&(w.wines||[]).find(v=>v.name===k.slice(i+1));return{k,w,x}});
@@ -1269,10 +1336,18 @@ function renderSaved(){
   $("#acWn").innerHTML=wn.map(({k,w,x})=>x?`<li><i style="background:${TYPECOL[x.type]||"#999"}"></i><button type="button" class="go" data-gowine="${esc(w.id)}"><b>${esc(x.name)}</b><small>${esc(x.type)} · ${esc(w.name)}${x.price!=null&&x.price!==""?" · "+esc(money(x.price,x.cur)):""}</small></button><button type="button" class="rm" data-rmwine="${esc(k)}" aria-label="Remove ${esc(x.name)}">×</button></li>`
     :`<li><button type="button" class="go" disabled><b>${esc(k.split("|").slice(1).join("|"))}</b><small>No longer listed</small></button><button type="button" class="rm" data-rmwine="${esc(k)}" aria-label="Remove">×</button></li>`).join("")||'<li class="empty">No wines yet. In a winery’s Wines tab, tap ☆ next to a wine.</li>';
 }
+function renderSavedEvents(){
+  const ev=svList("savedEvents").map(k=>{const i=k.indexOf("|"),w=find(k.slice(0,i)),e=w&&(w.events||[]).find(x=>x.id===k.slice(i+1));return{k,w,e}});
+  $("#acEvN").textContent=ev.length;
+  $("#acEv").innerHTML=ev.map(({k,w,e})=>e?`<li><i style="background:var(--wine)"></i><button type="button" class="go" data-goev="${esc(w.id)}"><b>${esc(e.title)}</b><small>${esc(when(e))} · ${esc(w.name)}</small></button><button type="button" class="rm" data-rmev="${esc(k)}" aria-label="Remove ${esc(e.title)}">×</button></li>`
+    :`<li><button type="button" class="go" disabled><b>Event no longer listed</b></button><button type="button" class="rm" data-rmev="${esc(k)}" aria-label="Remove">×</button></li>`).join("")||'<li class="empty">No events yet. Tap “☆ Save to my plans” on any event.</li>';
+}
 function renderWinerySection(){
   const r=S.fbReq,btn=$("#acWinery"),st=$("#acWStat"),p=S.profile||{};
   btn.hidden=false;
-  if(S.role==="winery"){const w=p.wineryId&&(find(p.wineryId)||S.live[p.wineryId]);st.textContent=w?`Winery account ✓ · ${w.name}`:"Winery account ✓";btn.textContent=p.wineryId?"✎ Edit my winery":"I’m a winery";btn.hidden=!p.wineryId;return}
+  const mid=myWineryId();
+  if(mid){const w=find(mid)||S.live[mid];st.textContent=(S.role==="winery"?"Winery account ✓":"Winery team ✓")+(w?` · ${w.name}`:"");btn.textContent="✎ Edit my winery";return}
+  if(S.role==="winery"){st.textContent="Winery account ✓";btn.hidden=true;return}
   if(r&&r.status==="new"){st.textContent=`Request sent for “${r.wineryName||"your winery"}”. The administrator will link your account soon.`;btn.textContent="Edit request"}
   else if(r&&r.status==="rejected"){st.textContent="Your last winery request was not approved. You can send a new one.";btn.textContent="I’m a winery"}
   else{st.textContent="Do you make wine? Ask the administrator to link your account to your winery.";btn.textContent="I’m a winery"}
@@ -1283,6 +1358,10 @@ ac.addEventListener("click",e=>{if(e.target===ac)return closeAccount();
   const gw=e.target.closest("[data-gowine]");if(gw){closeAccount();openWinery(gw.dataset.gowine,true);S.tab="wines";renderWinery();return}
   const r1=e.target.closest("[data-rmw]");if(r1){toggleSaved("savedWineries",r1.dataset.rmw);return}
   const r2=e.target.closest("[data-rmwine]");if(r2){toggleSaved("savedWines",r2.dataset.rmwine);return}
+  const r3=e.target.closest("[data-rmev]");if(r3){toggleSaved("savedEvents",r3.dataset.rmev);return}
+  const ge=e.target.closest("[data-goev]");if(ge){closeAccount();openWinery(ge.dataset.goev,true);S.tab="events";renderWinery();return}
+  const bc=e.target.closest("[data-bkcancel]");if(bc){if(!confirm("Cancel this booking?"))return;
+    S.fs.collection("bookings").doc(bc.dataset.bkcancel).update({status:"cancelled",updatedAt:TS()}).then(()=>{toast("Booking cancelled.");loadMyBookings()}).catch(()=>toast("Couldn't cancel."));return}
 });
 $("#acWinery").onclick=()=>myWineryId()?openEditor(myWineryId()):openWineryDlg();
 $("#acctForm").onsubmit=async e=>{
@@ -1314,7 +1393,7 @@ function openWineryDlg(){
 const closeWd=()=>{wd.hidden=true};
 $("#wdCancel").onclick=closeWd;
 wd.addEventListener("click",e=>{if(e.target===wd)closeWd()});
-document.addEventListener("keydown",e=>{if(e.key==="Escape"){if(E&&!ed.hidden)closeEditor();else if(!wd.hidden)closeWd();else if(!ac.hidden)closeAccount();else if(!$("#adminPage").hidden)closeAdmin()}});
+document.addEventListener("keydown",e=>{if(e.key==="Escape"){if(!lb.hidden)lb.hidden=true;else if(BK&&!bk.hidden)closeBooking();else if(E&&!ed.hidden)closeEditor();else if(!wd.hidden)closeWd();else if(!ac.hidden)closeAccount();else if(!$("#adminPage").hidden)closeAdmin()}});
 $("#wdMsg").addEventListener("input",e=>{$("#wdCnt").textContent=e.target.value.length});
 $("#wdForm").onsubmit=async e=>{
   e.preventDefault();const u=S.fbUser,msg=$("#wdMsg").value.trim(),kind=wdKind();
@@ -1341,12 +1420,12 @@ $("#wdForm").onsubmit=async e=>{
 /* ---------- live wineries (Firestore "wineries", edited by owners and the admin) ---------- */
 function liveSub(){
   if(!S.fs||liveSub.on)return;liveSub.on=1;
-  S.fs.collection("wineries").onSnapshot(s=>{S.live={};s.docs.forEach(d=>S.live[d.id]=d.data());drawMarkers();rerender();if(!ac.hidden)renderSaved()},e=>console.warn("wineries",e.code||e));
+  S.fs.collection("wineries").onSnapshot(s=>{S.live={};s.docs.forEach(d=>S.live[d.id]=d.data());watchInbox();drawMarkers();rerender();if(!ac.hidden)renderSaved()},e=>console.warn("wineries",e.code||e));
 }
-const W_KEEP=["name","region","country","lat","lng","founded","style","story","hours","address","website","phone","email","wines","events","real","published","ownerUid"];
+const W_KEEP=["name","region","country","lat","lng","founded","style","story","story_el","hours","openHours","bookable","address","website","phone","email","wines","events","real","published","ownerUid","team","photos"];
 const pickW=c=>{const o={};for(const k of W_KEEP)if(c[k]!==undefined)o[k]=c[k];return JSON.parse(JSON.stringify(o))};
-const myWineryId=()=>S.role==="winery"&&S.profile&&S.profile.wineryId||"";
-const canEdit=id=>!!(S.fbUser&&S.fs&&id&&(isAdminUser(S.fbUser)||myWineryId()===id));
+const myWineryId=()=>myWineryIds()[0]||"";
+const canEdit=id=>!!(S.fbUser&&S.fs&&id&&(isAdminUser(S.fbUser)||myWineryIds().includes(id)));
 const clean=o=>{const r={};for(const[k,v]of Object.entries(o))if(v!==undefined)r[k]=v;return r};
 const numOr=v=>{const t=String(v??"").replace(",",".").trim();return t===""?"":(isFinite(+t)?+t:"")};
 const WTYPES=["Red","White","Rosé","Sparkling","Champagne","Sweet","Amber","Fortified"];
@@ -1357,32 +1436,36 @@ ed.setAttribute("role","dialog");ed.setAttribute("aria-modal","true");ed.setAttr
 let E=null;
 async function openEditor(id){
   if(!canEdit(id))return toast("Only the winery's owner can edit this page.");
-  let d=null;
-  try{const s=await S.fs.collection("wineries").doc(id).get();if(s.exists)d=s.data()}catch(e){console.warn(e)}
+  let d=null,exists=false;
+  try{const s=await S.fs.collection("wineries").doc(id).get();if(s.exists){d=s.data();exists=true}}catch(e){console.warn(e)}
   if(!d){const c=S.catalog.find(w=>w.id===id);d=c?pickW(c):{name:"",published:true}}
   d=JSON.parse(JSON.stringify(d));
   d.wines=Array.isArray(d.wines)?d.wines:[];d.events=Array.isArray(d.events)?d.events:[];
   d.events.forEach(x=>{x.start=String(x.start||"").slice(0,16);x.end=String(x.end||"").slice(0,16)});
-  E={id,d,tab:"details",dirty:false};hideMenu();closeAccount();renderEd();ed.hidden=false;ed.querySelector("#edX").focus();
+  d.wines.forEach(x=>{if(!x.wid)x.wid="w"+Math.random().toString(36).slice(2,9)});
+  if(!Array.isArray(d.team))d.team=[];
+  E={id,d,tab:"details",dirty:false,exists};loadPhotos({id,photos:d.photos});hideMenu();closeAccount();renderEd();ed.hidden=false;ed.querySelector("#edX").focus();
 }
 function closeEditor(force){
   if(!E)return;if(!force&&E.dirty&&!confirm("Close without saving your changes?"))return;
-  if(E.map){E.map.remove();E.map=null}ed.hidden=true;ed.innerHTML="";E=null;
+  if(E.map){try{E.map.stop();E.map.off();E.map.remove()}catch{}E.map=null}ed.hidden=true;ed.innerHTML="";E=null;
 }
 function edBody(){
+  if(["photos","hours","inbox","stats","team"].includes(E.tab))return moreTab();
   const d=E.d,v=k=>esc(d[k]??"");
   const opt=(list,cur)=>list.map(([k,l])=>`<option value="${esc(k)}" ${k===cur?"selected":""}>${esc(l)}</option>`).join("");
   if(E.tab==="details")return`
     <label for="ed-name">Winery name</label><input id="ed-name" data-k="name" maxlength="120" value="${v("name")}" required>
     <div class="row"><div><label for="ed-region">Town and region</label><input id="ed-region" data-k="region" maxlength="120" value="${v("region")}"></div><div><label for="ed-country">Country</label><input id="ed-country" data-k="country" maxlength="60" value="${v("country")}"></div></div>
     <div class="row"><div><label for="ed-founded">Founded</label><input id="ed-founded" data-k="founded" maxlength="10" inputmode="numeric" value="${v("founded")}"></div><div><label for="ed-style">Best known for</label><select id="ed-style" data-k="style">${opt(Object.entries(STYLES).map(([k,x])=>[k,x[0]]),d.style||"red")}</select></div></div>
-    <label for="ed-hours">Opening hours and visits</label><input id="ed-hours" data-k="hours" maxlength="120" value="${v("hours")}" placeholder="e.g. Mon–Sat 10:00–18:00, tastings by appointment">
     <label for="ed-address">Address</label><input id="ed-address" data-k="address" maxlength="200" value="${v("address")}">
     <div class="row"><div><label for="ed-phone">Phone</label><input id="ed-phone" type="tel" data-k="phone" maxlength="40" value="${v("phone")}"></div><div><label for="ed-email">Email</label><input id="ed-email" type="email" data-k="email" maxlength="120" value="${v("email")}"></div></div>
     <label for="ed-website">Website</label><input id="ed-website" data-k="website" maxlength="200" value="${v("website")}" placeholder="https://">
     <label for="ed-story">Your story</label><textarea id="ed-story" data-k="story" maxlength="6000" placeholder="Who you are, your vineyards, your grapes, what makes a visit special…">${v("story")}</textarea>
-    <div class="cnt"><span id="edStoryN">${String(d.story||"").length}</span>/6000 · a blank line starts a new paragraph</div>`;
+    <div class="cnt"><span id="edStoryN">${String(d.story||"").length}</span>/6000 · a blank line starts a new paragraph</div>
+    <label for="ed-story_el">Η ιστορία σας στα Ελληνικά (optional)</label><textarea id="ed-story_el" data-k="story_el" maxlength="6000" lang="el" placeholder="Visitors can switch between English and Ελληνικά.">${v("story_el")}</textarea>`;
   if(E.tab==="location")return`
+    <div class="adr"><input type="search" id="adrQ" maxlength="200" placeholder="Search an address or village" aria-label="Search an address"><button type="button" class="btn" id="adrGo">Search</button></div><div id="adrRes"></div>
     <p class="note" style="margin:6px 0 0">Tap the map where your winery is, or drag the pin. Switch to <b>Satellite</b> to find your buildings. Visitors get directions to this exact spot.</p>
     <div id="edMap" class="edmap" role="application" aria-label="Map to set the winery location"></div>
     <div class="row"><div><label for="ed-lat">Latitude</label><input id="ed-lat" data-ll="lat" inputmode="decimal" value="${v("lat")}"></div><div><label for="ed-lng">Longitude</label><input id="ed-lng" data-ll="lng" inputmode="decimal" value="${v("lng")}"></div></div>
@@ -1394,6 +1477,7 @@ function edBody(){
      <div class="row"><div><label for="w${i}p">Price per bottle</label><input id="w${i}p" data-w="${i}" data-f="price" value="${esc(x.price??"")}" inputmode="decimal"></div><div><label for="w${i}c">Currency</label><input id="w${i}c" data-w="${i}" data-f="cur" value="${esc(x.cur||"EUR")}" maxlength="3"></div></div>
      <label for="w${i}o">Tasting notes</label><textarea id="w${i}o" data-w="${i}" data-f="notes" maxlength="800">${esc(x.notes??"")}</textarea>
      <label for="w${i}u">Where to buy (link)</label><input id="w${i}u" data-w="${i}" data-f="url" value="${esc(x.url??"")}" maxlength="300" placeholder="https://your-shop…">
+     ${(()=>{const sl="w_"+x.wid,has=d.photos&&d.photos[sl],src=has?photoUrl(E.id,sl):"";return`<div class="wph"><div class="pprev sm">${src?`<img src="${src}" alt="">`:'<span class="note">🍾</span>'}</div><label class="btn"><input type="file" accept="image/*" data-photo="${esc(sl)}" hidden>${has?"Replace bottle photo":"Add bottle photo"}</label>${has?`<button type="button" class="btn" data-rmphoto="${esc(sl)}">Remove</button>`:""}</div>`})()}
    </div>`).join("")+`${d.wines.length?"":'<p class="note">No wines yet. Add your first bottle.</p>'}<p style="margin-top:12px"><button type="button" class="btn" data-add="w">＋ Add a wine</button></p>`;
   if(E.tab==="events")return d.events.map((x,i)=>`<div class="box">
      <div class="bxa"><button type="button" data-del="e,${i}">Remove</button></div>
@@ -1404,16 +1488,17 @@ function edBody(){
    </div>`).join("")+`${d.events.length?"":'<p class="note">No events yet: open days, tastings, harvest, dinners…</p>'}<p style="margin-top:12px"><button type="button" class="btn" data-add="e">＋ Add an event</button></p>`;
 }
 function renderEd(){
-  const d=E.d;if(E.map){E.map.remove();E.map=null}
-  const tabs=[["details","Details"],["location","Location"+(okLL(d)?" ✓":"")],["wines",`Wines (${d.wines.length})`],["events",`Events (${d.events.length})`]];
+  const d=E.d;if(E.map){try{E.map.stop();E.map.off();E.map.remove()}catch{}E.map=null;E.mk=null}
+  const tabs=edTabs();
   ed.innerHTML=`<form class="edf" id="edF" novalidate>
-    <div class="edh"><div><small>${isAdminUser(S.fbUser)&&myWineryId()!==E.id?"Editing as administrator":"My winery"}</small><h2 id="edTitle"></h2></div><button type="button" class="x" id="edX" aria-label="Close">×</button></div>
+    <div class="edh"><div><small>${isAdminUser(S.fbUser)&&!myWineryIds().includes(E.id)?"Editing as administrator":"My winery"}</small><h2 id="edTitle"></h2></div><button type="button" class="x" id="edX" aria-label="Close">×</button></div>
     <div class="tabs" role="tablist">${tabs.map(([k,l])=>`<button type="button" role="tab" data-edtab="${k}" aria-selected="${E.tab===k}">${esc(l)}</button>`).join("")}</div>
     <div class="edb">${edBody()}</div>
     <div class="edfoot"><label class="chk"><input type="checkbox" id="edPub" ${d.published!==false?"checked":""}> Show on the map</label><span class="sp"></span><button type="button" class="btn" id="edCancel">Cancel</button><button type="submit" class="btn pri" id="edSave">Save</button></div>
   </form>`;
   $("#edTitle").textContent=d.name||"Your winery";
   if(E.tab==="location")setTimeout(initEdMap,30);
+  ed.querySelector(".edf .tabs [aria-selected=true]")?.scrollIntoView({block:"nearest",inline:"nearest"});
 }
 function guessCenter(){
   const d=E.d;if(okLL(d))return{c:[d.lat,d.lng],z:15};
@@ -1441,11 +1526,12 @@ function edPin(){
 function setLL(lat,lng,fly){
   const d=E.d;d.lat=+(+lat).toFixed(6);d.lng=+L.Util.wrapNum(+lng,[-180,180]).toFixed(6);E.dirty=true;
   const a=$("#ed-lat"),b=$("#ed-lng");if(a&&document.activeElement!==a)a.value=d.lat;if(b&&document.activeElement!==b)b.value=d.lng;
-  if(E.map){if(E.mk&&!E.map.hasLayer(E.mk))E.mk=null;edPin();if(fly)E.map.setView([d.lat,d.lng],Math.max(E.map.getZoom(),16))}
+  if(E.map){if(E.mk&&!E.map.hasLayer(E.mk))E.mk=null;edPin();if(fly)E.map.setView([d.lat,d.lng],Math.max(E.map.getZoom(),16),{animate:false})}
   const t=ed.querySelector('[data-edtab=location]');if(t)t.textContent="Location ✓";
 }
 ed.addEventListener("input",e=>{
   if(!E)return;const t=e.target,d=E.d;E.dirty=true;
+  if(t.dataset.day||t.dataset.dayo||t.dataset.dayc||t.dataset.photo||t.id==="edBook"||t.id==="adrQ"||t.id==="tAdd"||/^rp-/.test(t.id))return;
   if(t.dataset.k){d[t.dataset.k]=t.value;if(t.dataset.k==="name")$("#edTitle").textContent=t.value||"Your winery";if(t.dataset.k==="story")$("#edStoryN").textContent=t.value.length}
   if(t.dataset.w)d.wines[+t.dataset.w][t.dataset.f]=t.value;
   if(t.dataset.e)d.events[+t.dataset.e][t.dataset.f]=t.value;
@@ -1453,23 +1539,25 @@ ed.addEventListener("input",e=>{
     if($("#ed-lat").value&&$("#ed-lng").value&&isFinite(la)&&isFinite(ln)&&Math.abs(la)<=90&&Math.abs(ln)<=180)setLL(la,ln,true)}
   if(t.id==="edPub")d.published=t.checked;
 });
-ed.addEventListener("change",e=>{if(!E)return;const t=e.target;if(t.tagName==="SELECT"){E.dirty=true;if(t.dataset.k){E.d[t.dataset.k]=t.value;if(E.mk)E.mk.setIcon(icons[t.value]||icons.red)}if(t.dataset.w)E.d.wines[+t.dataset.w].type=t.value}
+ed.addEventListener("change",e=>{if(!E)return;const t=e.target;if(moreChange(t))return;if(t.tagName==="SELECT"){E.dirty=true;if(t.dataset.k){E.d[t.dataset.k]=t.value;if(E.mk)E.mk.setIcon(icons[t.value]||icons.red)}if(t.dataset.w)E.d.wines[+t.dataset.w].type=t.value}
   if(t.id==="edPub"){E.d.published=t.checked;E.dirty=true}});
 ed.addEventListener("click",e=>{
   if(!E)return;if(e.target===ed)return closeEditor();
   const b=e.target.closest("button");if(!b)return;const d=E.d;
   if(b.id==="edX"||b.id==="edCancel")return closeEditor();
   if(b.dataset.edtab){E.tab=b.dataset.edtab;renderEd();return}
+  if(moreClick(b))return;
   if(b.id==="edGeo"){if(!navigator.geolocation)return toast("Your browser can't share its location.");b.disabled=true;b.textContent="Finding you…";
     navigator.geolocation.getCurrentPosition(p=>{if(!E)return;setLL(p.coords.latitude,p.coords.longitude,true);b.disabled=false;b.textContent="📍 Use my current location";toast("Pin moved to where you are. Drag it to fine-tune.")},
       ()=>{b.disabled=false;b.textContent="📍 Use my current location";toast("Couldn't get your location. Tap the map instead.")},{enableHighAccuracy:true,timeout:12000});return}
-  if(b.dataset.add){E.dirty=true;if(b.dataset.add==="w")d.wines.push({name:"",type:"Red",vintage:"",price:"",cur:"EUR",notes:"",url:""});
+  if(b.dataset.add){E.dirty=true;if(b.dataset.add==="w")d.wines.push({wid:"w"+Math.random().toString(36).slice(2,9),name:"",type:"Red",vintage:"",price:"",cur:"EUR",notes:"",url:""});
     else d.events.push({id:"e"+Date.now().toString(36),title:"",start:"",end:"",price:"",desc:""});
     renderEd();const bx=ed.querySelectorAll(".box");bx[bx.length-1]?.querySelector("input")?.focus();return}
   if(b.dataset.del){const[k,i]=b.dataset.del.split(","),arr=k==="w"?d.wines:d.events;const it=arr[+i];
     if((it.name||it.title)&&!confirm(`Remove “${it.name||it.title}”?`))return;arr.splice(+i,1);E.dirty=true;renderEd();return}
   if(b.dataset.mv){const[k,i,dir]=b.dataset.mv.split(","),arr=d.wines,a=+i,c=a+ +dir;if(c<0||c>=arr.length)return;[arr[a],arr[c]]=[arr[c],arr[a]];E.dirty=true;renderEd();return}
 });
+ed.addEventListener("keydown",e=>{if(e.key==="Enter"&&E){if(e.target.id==="adrQ"){e.preventDefault();addrSearch()}else if(e.target.id==="tAdd"){e.preventDefault();ed.querySelector("#tAddB").click()}else if(/^rp-/.test(e.target.id))e.preventDefault()}});
 ed.addEventListener("submit",async e=>{
   e.preventDefault();if(!E)return;const d=E.d,u=S.fbUser;
   const name=String(d.name||"").trim();if(!name){E.tab="details";renderEd();toast("Please add the winery name.");return $("#ed-name").focus()}
@@ -1477,10 +1565,13 @@ ed.addEventListener("submit",async e=>{
   const s=k=>String(d[k]??"").trim();
   let web=s("website");if(web&&!/^https?:\/\//i.test(web))web="https://"+web;
   const wines=d.wines.filter(x=>String(x.name||"").trim()).map(x=>{let url=String(x.url||"").trim();if(url&&!/^https?:\/\//i.test(url))url="https://"+url;
-    return clean({...x,name:String(x.name).trim(),type:WTYPES.includes(x.type)?x.type:"Red",vintage:String(x.vintage??"").trim(),price:numOr(x.price),cur:(String(x.cur||"EUR").trim().toUpperCase()||"EUR").slice(0,3),notes:String(x.notes??"").trim(),url})});
+    return clean({...x,wid:x.wid||"w"+Math.random().toString(36).slice(2,9),name:String(x.name).trim(),type:WTYPES.includes(x.type)?x.type:"Red",vintage:String(x.vintage??"").trim(),price:numOr(x.price),cur:(String(x.cur||"EUR").trim().toUpperCase()||"EUR").slice(0,3),notes:String(x.notes??"").trim(),url})});
   const events=d.events.filter(x=>String(x.title||"").trim()&&x.start).map(x=>({id:x.id||"e"+Math.random().toString(36).slice(2,8),title:String(x.title).trim(),start:x.start,end:x.end&&x.end>=x.start?x.end:x.start,price:numOr(x.price),desc:String(x.desc??"").trim()}));
   const doc=clean({name,region:s("region"),country:s("country"),founded:s("founded"),style:STYLES[d.style]?d.style:"red",hours:s("hours"),address:s("address"),phone:s("phone"),email:s("email"),website:web,story:s("story"),
-    wines,events,published:d.published!==false,real:d.real?true:undefined,ownerUid:d.ownerUid||(myWineryId()===E.id?u.uid:""),updatedAt:firebase.firestore.FieldValue.serverTimestamp()});
+    story_el:s("story_el"),bookable:d.bookable!==false,
+    openHours:Object.fromEntries(DAYS.map(([k])=>{const v=d.openHours&&d.openHours[k];return[k,Array.isArray(v)&&hm(v[0])!=null&&hm(v[1])!=null?[v[0],v[1]]:null]})),
+    team:isTeamOnly(E.id)?undefined:(Array.isArray(d.team)?d.team.slice(0,10):[]),
+    wines,events,published:d.published!==false,real:d.real?true:undefined,ownerUid:d.ownerUid!==undefined?d.ownerUid:(S.role==="winery"&&S.profile&&S.profile.wineryId===E.id?u.uid:""),updatedAt:firebase.firestore.FieldValue.serverTimestamp()});
   if(okLL(d)){doc.lat=d.lat;doc.lng=d.lng}
   const btn=$("#edSave");btn.disabled=true;btn.textContent="Saving…";
   try{await S.fs.collection("wineries").doc(E.id).set(doc,{merge:true});
@@ -1488,6 +1579,264 @@ ed.addEventListener("submit",async e=>{
     if(doc.published&&okLL(doc)){openWinery(id,true);toast("Saved. Your page is live on the map.")}else toast("Saved. Your winery is hidden from the map for now.");
   }catch(err){console.warn(err);btn.disabled=false;btn.textContent="Save";toast(err&&err.code==="permission-denied"?"Not allowed. Ask the administrator to check your winery access.":"Couldn't save right now. Please try again.")}
 });
+
+/* =====================================================================
+   Next steps (26 Nov 2026): photos, bookings, stats, opening hours,
+   Greek/English story, team members, address search, saved events
+   ===================================================================== */
+const TS=()=>firebase.firestore.FieldValue.serverTimestamp();
+const myEmail=()=>String(S.fbUser&&S.fbUser.emailVerified&&S.fbUser.email||"").toLowerCase();
+function myWineryIds(){
+  const out=[];if(!S.fbUser)return out;
+  if(S.role==="winery"&&S.profile&&S.profile.wineryId)out.push(S.profile.wineryId);
+  const em=myEmail();if(em)for(const[id,w]of Object.entries(S.live||{}))if(Array.isArray(w.team)&&w.team.includes(em)&&!out.includes(id))out.push(id);
+  return out;
+}
+const isTeamOnly=id=>!isAdminUser(S.fbUser)&&!(S.role==="winery"&&S.profile&&S.profile.wineryId===id);
+
+/* ---------- photos (stored as small JPEGs in Firestore "photos") ---------- */
+S.photoCache={};
+const photoKey=(id,slot)=>id+"__"+slot;
+const photoUrl=(id,slot)=>{const c=S.photoCache[photoKey(id,slot)];return c&&c.data||""};
+function loadPhotos(w){
+  if(!S.fs||!w||!w.photos)return;
+  for(const[slot,v]of Object.entries(w.photos)){
+    const k=photoKey(w.id,slot),c=S.photoCache[k];if(c&&(c.v===v||c.loading))continue;
+    S.photoCache[k]={v,loading:true,data:c&&c.data||""};
+    S.fs.collection("photos").doc(k).get().then(d=>{S.photoCache[k]={v,data:d.exists?d.data().data:""};
+      if(S.open===w.id&&S.view==="winery")renderWinery();if(E&&E.id===w.id&&(E.tab==="photos"||E.tab==="wines"))renderEd()})
+      .catch(()=>{S.photoCache[k]={v,data:""}});
+  }
+}
+function shrinkImage(file,maxW,maxH,maxBytes){
+  return new Promise((ok,no)=>{
+    if(!/^image\//.test(file.type))return no(new Error("type"));
+    const img=new Image(),url=URL.createObjectURL(file);
+    img.onload=()=>{URL.revokeObjectURL(url);
+      let s=Math.min(1,maxW/img.naturalWidth,maxH/img.naturalHeight),out="";
+      for(let tries=0;tries<6;tries++){
+        const c=document.createElement("canvas");c.width=Math.max(1,Math.round(img.naturalWidth*s));c.height=Math.max(1,Math.round(img.naturalHeight*s));
+        const g=c.getContext("2d");g.fillStyle="#fff";g.fillRect(0,0,c.width,c.height);g.drawImage(img,0,0,c.width,c.height);
+        for(const q of[.85,.75,.65,.55]){out=c.toDataURL("image/jpeg",q);if(out.length<=maxBytes)return ok(out)}
+        s*=.8;
+      }
+      out.length<=maxBytes?ok(out):no(new Error("big"));
+    };
+    img.onerror=()=>{URL.revokeObjectURL(url);no(new Error("read"))};img.src=url;
+  });
+}
+const PHOTO_SIZE={cover:[1400,800],logo:[400,400],wine:[500,700]};
+async function uploadPhoto(id,slot,file){
+  const sz=slot.startsWith("w_")?PHOTO_SIZE.wine:PHOTO_SIZE[slot];
+  let data;try{data=await shrinkImage(file,sz[0],sz[1],380000)}catch(e){toast(e.message==="type"?"Please choose a photo (JPG or PNG).":"Couldn't read that photo. Try another one.");return false}
+  const v=Date.now();
+  try{
+    await S.fs.collection("photos").doc(photoKey(id,slot)).set({wineryId:id,slot,data,updatedAt:TS()});
+    await S.fs.collection("wineries").doc(id).set({photos:{[slot]:v},updatedAt:TS()},{merge:true});
+    S.photoCache[photoKey(id,slot)]={v,data};if(E&&E.id===id){E.d.photos={...(E.d.photos||{}),[slot]:v}}
+    if(S.live[id])S.live[id].photos={...(S.live[id].photos||{}),[slot]:v};
+    toast("Photo saved.");return true;
+  }catch(err){console.warn(err);toast(err&&err.code==="permission-denied"?"Not allowed to add photos to this winery.":"Couldn't upload the photo. Please try again.");return false}
+}
+async function removePhoto(id,slot){
+  try{
+    await S.fs.collection("wineries").doc(id).update({["photos."+slot]:firebase.firestore.FieldValue.delete(),updatedAt:TS()});
+    await S.fs.collection("photos").doc(photoKey(id,slot)).delete().catch(()=>{});
+    delete S.photoCache[photoKey(id,slot)];if(E&&E.id===id&&E.d.photos)delete E.d.photos[slot];
+    if(S.live[id]&&S.live[id].photos)delete S.live[id].photos[slot];toast("Photo removed.");
+  }catch(err){console.warn(err);toast("Couldn't remove the photo.")}
+}
+// lightbox for photos
+const lb=document.createElement("div");lb.className="lb";lb.hidden=true;lb.setAttribute("role","dialog");lb.setAttribute("aria-label","Photo");
+lb.innerHTML='<img alt=""><button class="x" aria-label="Close photo">×</button>';document.body.appendChild(lb);
+lb.addEventListener("click",()=>{lb.hidden=true});
+function zoomPhoto(src,alt){if(!src)return;lb.querySelector("img").src=src;lb.querySelector("img").alt=alt||"";lb.hidden=false;lb.querySelector(".x").focus()}
+
+/* ---------- stats ---------- */
+const STAT_KEYS=[["views","Page views"],["saves","Saved by visitors"],["directions","Directions taps"],["website","Website taps"],["calls","Call taps"],["bookings","Booking requests"]];
+function track(id,k){
+  if(!S.fs||!id||!STAT_KEYS.some(x=>x[0]===k))return;
+  if(myWineryIds().includes(id))return; // owners' own visits don't count
+  if(k==="views"){const sk="winear-v-"+id;try{if(sessionStorage.getItem(sk))return;sessionStorage.setItem(sk,"1")}catch{}}
+  S.fs.collection("stats").doc(id).set({[k]:firebase.firestore.FieldValue.increment(1)},{merge:true}).catch(()=>{});
+}
+
+/* ---------- opening hours & open now ---------- */
+const DAYS=[["mon","Monday"],["tue","Tuesday"],["wed","Wednesday"],["thu","Thursday"],["fri","Friday"],["sat","Saturday"],["sun","Sunday"]];
+const TZ={Greece:"Europe/Athens",Cyprus:"Asia/Nicosia",France:"Europe/Paris",Italy:"Europe/Rome",Spain:"Europe/Madrid",Portugal:"Europe/Lisbon",Germany:"Europe/Berlin",Austria:"Europe/Vienna",Hungary:"Europe/Budapest","United Kingdom":"Europe/London",Switzerland:"Europe/Zurich",Slovenia:"Europe/Ljubljana",Croatia:"Europe/Zagreb",Romania:"Europe/Bucharest",Bulgaria:"Europe/Sofia",Moldova:"Europe/Chisinau",Czechia:"Europe/Prague",Slovakia:"Europe/Bratislava",Georgia:"Asia/Tbilisi",Armenia:"Asia/Yerevan",Lebanon:"Asia/Beirut","North Macedonia":"Europe/Skopje",Serbia:"Europe/Belgrade",Luxembourg:"Europe/Luxembourg",Malta:"Europe/Malta",Ukraine:"Europe/Kyiv",Montenegro:"Europe/Podgorica",Albania:"Europe/Tirane",Turkey:"Europe/Istanbul",Israel:"Asia/Jerusalem",Japan:"Asia/Tokyo","New Zealand":"Pacific/Auckland","South Africa":"Africa/Johannesburg",Argentina:"America/Argentina/Buenos_Aires",Chile:"America/Santiago"};
+function localNow(w){
+  const tz=TZ[w.country];
+  if(tz){try{const p=Object.fromEntries(new Intl.DateTimeFormat("en-GB",{timeZone:tz,weekday:"short",hour:"2-digit",minute:"2-digit",hourCycle:"h23"}).formatToParts(new Date()).map(x=>[x.type,x.value]));
+    return{d:["mon","tue","wed","thu","fri","sat","sun"].indexOf(p.weekday.slice(0,3).toLowerCase()),m:+p.hour*60+ +p.minute}}catch{}}
+  const t=new Date(Date.now()+Math.round(+w.lng/15)*3600e3);return{d:(t.getUTCDay()+6)%7,m:t.getUTCHours()*60+t.getUTCMinutes()};
+}
+const hm=s=>{const m=/^(\d{1,2}):(\d{2})$/.exec(s||"");return m?+m[1]*60+ +m[2]:null};
+const dayHours=(w,i)=>{const v=w.openHours&&w.openHours[DAYS[i][0]];return Array.isArray(v)&&hm(v[0])!=null&&hm(v[1])!=null?v:null};
+function openState(w){
+  if(!w.openHours||!DAYS.some((_,i)=>dayHours(w,i)))return null;
+  const n=localNow(w);if(n.d<0)return null;
+  const today=dayHours(w,n.d),prev=dayHours(w,(n.d+6)%7);
+  if(prev&&hm(prev[1])<=hm(prev[0])&&n.m<hm(prev[1]))return{open:true,label:`Open now · until ${prev[1]}`};
+  if(today){const o=hm(today[0]),c=hm(today[1]);
+    if(c>o?(n.m>=o&&n.m<c):(n.m>=o))return{open:true,label:`Open now · until ${today[1]}`};
+    if(n.m<o)return{open:false,label:`Closed · opens ${today[0]}`};}
+  for(let k=1;k<=7;k++){const i=(n.d+k)%7,h=dayHours(w,i);if(h)return{open:false,label:`Closed · opens ${k===1?"tomorrow":DAYS[i][1].slice(0,3)} ${h[0]}`}}
+  return null;
+}
+const isOpenNow=w=>{const s=openState(w);return!!(s&&s.open)};
+function hoursBlock(w){
+  if(!w.openHours||!DAYS.some((_,i)=>dayHours(w,i)))return w.hours?`<p class="note">🕑 ${esc(w.hours)}</p>`:"";
+  const n=localNow(w),st=openState(w);
+  return `<details class="hours"${st&&st.open?"":" open"}><summary><span class="${st&&st.open?"opn":"cls"}">●</span> ${esc(st?st.label:"Opening hours")}</summary><table>${DAYS.map(([k,l],i)=>{const h=dayHours(w,i);
+    return`<tr${i===n.d?' class="today"':""}><th>${l}</th><td>${h?`${esc(h[0])}–${esc(h[1])}`:"Closed"}</td></tr>`}).join("")}</table>${w.hours?`<p class="note">${esc(w.hours)}</p>`:""}<p class="note">Times are local to the winery.</p></details>`;
+}
+
+/* ---------- bookings: visits and event sign-ups ---------- */
+const bk=document.createElement("div");bk.className="dlg";bk.hidden=true;bk.setAttribute("role","dialog");bk.setAttribute("aria-modal","true");bk.setAttribute("aria-labelledby","bkTitle");document.body.appendChild(bk);
+let BK=null;
+const todayISO=()=>{const d=new Date();d.setMinutes(d.getMinutes()-d.getTimezoneOffset());return d.toISOString().slice(0,10)};
+function openBooking(wid,eid){
+  const w=find(wid);if(!w)return;
+  if(!S.fbUser)return toast("Sign in with Google (top right) to book.");
+  if(!S.fs)return toast("Booking isn't available right now.");
+  const e=eid?(w.events||[]).find(x=>x.id===eid):null;
+  BK={w,e};const p=S.profile||{},u=S.fbUser;
+  bk.innerHTML=`<form id="bkF">
+    <h2 id="bkTitle">${e?"Sign up":"Book a visit"}</h2>
+    <p>${e?`<b>${esc(e.title)}</b> · ${esc(when(e))}<br>`:""}${esc(w.name)} · ${esc(w.region)}. The winery will confirm by email or phone.</p>
+    ${e?"":`<div class="row"><div><label for="bkDate">Date</label><input type="date" id="bkDate" min="${todayISO()}" required></div><div><label for="bkTime">Time (optional)</label><input type="time" id="bkTime" step="900"></div></div>`}
+    <div class="row"><div><label for="bkPeople">People</label><input type="number" id="bkPeople" min="1" max="50" value="2" required></div><div><label for="bkPhone">Phone</label><input type="tel" id="bkPhone" maxlength="40" value="${esc(p.phone||"")}"></div></div>
+    <label for="bkName">Your name</label><input type="text" id="bkName" maxlength="100" value="${esc(p.name||u.displayName||"")}" required>
+    <p class="note" style="margin:4px 0 0">Replies go to ${esc(u.email||"your Google email")}.</p>
+    <label for="bkMsg">Message (optional)</label><textarea id="bkMsg" maxlength="1000" placeholder="${e?"Questions, dietary needs…":"Tasting, tour, languages, special requests…"}"></textarea>
+    <div class="acts"><button type="button" class="btn" id="bkCancel">Cancel</button><button type="submit" class="btn pri" id="bkSend">Send request</button></div>
+  </form>`;
+  bk.hidden=false;(bk.querySelector("#bkDate")||bk.querySelector("#bkPeople")).focus();
+}
+const closeBooking=()=>{bk.hidden=true;bk.innerHTML="";BK=null};
+bk.addEventListener("click",e=>{if(e.target===bk||e.target.id==="bkCancel")closeBooking()});
+bk.addEventListener("submit",async ev=>{
+  ev.preventDefault();if(!BK)return;const{w,e}=BK,u=S.fbUser;
+  const people=Math.round(+$("#bkPeople").value),name=$("#bkName").value.trim();
+  if(!e&&!$("#bkDate").value){toast("Choose a date.");return $("#bkDate").focus()}
+  if(!(people>=1&&people<=50)){toast("People: 1 to 50.");return $("#bkPeople").focus()}
+  if(!name){toast("Add your name.");return $("#bkName").focus()}
+  const doc={wineryId:w.id,wineryName:w.name,kind:e?"event":"visit",eventId:e?e.id:"",eventTitle:e?e.title:"",date:e?String(e.start).slice(0,10):$("#bkDate").value,time:e?String(e.start).slice(11,16):($("#bkTime").value||""),
+    people,name,email:u.email||"",phone:$("#bkPhone").value.trim(),message:$("#bkMsg").value.trim(),uid:u.uid,status:"new",reply:"",createdAt:TS(),updatedAt:TS()};
+  const b=$("#bkSend");b.disabled=true;
+  try{await S.fs.collection("bookings").add(doc);track(w.id,"bookings");closeBooking();toast("Request sent! You'll find it under Account → My bookings.")}
+  catch(err){console.warn(err);b.disabled=false;toast(err&&err.code==="permission-denied"?"Not allowed: please sign in again.":"Couldn't send. Please try again.")}
+});
+const BK_ST={new:"Waiting for the winery",confirmed:"Confirmed ✓",declined:"Declined",cancelled:"Cancelled"};
+const bkWhen=b=>{try{const d=new Date(b.date+"T"+(b.time||"12:00"));return d.toLocaleDateString(undefined,{weekday:"short",day:"numeric",month:"short",year:"numeric"})+(b.time?" · "+b.time:"")}catch{return b.date}};
+async function loadMyBookings(){
+  if(!S.fbUser||!S.fs)return;
+  try{const s=await S.fs.collection("bookings").where("uid","==",S.fbUser.uid).get();
+    S.myBookings=s.docs.map(d=>({id:d.id,...d.data()})).sort((a,b)=>String(b.date).localeCompare(String(a.date)));}catch(e){console.warn(e);S.myBookings=[]}
+  renderMyBookings();
+}
+function renderMyBookings(){
+  const el=$("#acBk");if(!el)return;const list=S.myBookings||[];$("#acBkN").textContent=list.length;
+  el.innerHTML=list.map(b=>`<li><button type="button" class="go" data-go="${esc(b.wineryId)}"><b>${esc(b.kind==="event"?b.eventTitle:"Visit")} · ${esc(b.wineryName)}</b><small>${esc(bkWhen(b))} · ${b.people} ${b.people>1?"people":"person"} · <span class="bst ${esc(b.status)}">${esc(BK_ST[b.status]||b.status)}</span></small>${b.reply?`<small>Winery: “${esc(b.reply)}”</small>`:""}</button>${b.status==="new"||b.status==="confirmed"?`<button type="button" class="rm" data-bkcancel="${esc(b.id)}" aria-label="Cancel booking" title="Cancel booking">×</button>`:""}</li>`).join("")||'<li class="empty">No bookings yet. Open a winery run by its owners and tap “📅 Book a visit”.</li>';
+}
+// winery inbox (owners, team, admin)
+S.inbox=[];let inboxFor=null,inboxUnsub=null;
+function watchInbox(){
+  const id=myWineryIds()[0]||null;if(id===inboxFor)return;
+  if(inboxUnsub){inboxUnsub();inboxUnsub=null}inboxFor=id;S.inbox=[];
+  if(!id||!S.fs)return;
+  inboxUnsub=S.fs.collection("bookings").where("wineryId","==",id).onSnapshot(s=>{
+    const before=S.inbox.filter(b=>b.status==="new").length;
+    S.inbox=s.docs.map(d=>({id:d.id,...d.data()})).sort((a,b)=>tsMs(b.createdAt)-tsMs(a.createdAt));
+    const now=S.inbox.filter(b=>b.status==="new").length;if(now>before&&before>=0&&watchInbox.ready)toast("New booking request for your winery!");watchInbox.ready=true;
+    if(E&&E.tab==="inbox")renderEd();else if(E)updEdTabs();
+  },e=>console.warn("inbox",e.code||e));
+}
+const inboxNew=()=>S.inbox.filter(b=>b.status==="new").length;
+async function setBooking(id,status,reply){
+  try{await S.fs.collection("bookings").doc(id).update({status,reply:String(reply||"").slice(0,500),updatedAt:TS()});toast(status==="confirmed"?"Confirmed. Let the guest know by email or phone too.":"Declined.")}
+  catch(e){console.warn(e);toast("Couldn't update the booking.")}
+}
+
+/* ---------- editor: extra tabs ---------- */
+function photoSlot(slot,label,hint){
+  const id=E.id,has=E.d.photos&&E.d.photos[slot],src=has?photoUrl(id,slot):"";
+  return `<div class="pslot ${slot==="logo"?"logo":""}"><div class="pprev">${src?`<img src="${src}" alt="">`:has?'<span class="note">Loading…</span>':`<span class="note">${esc(hint)}</span>`}</div>
+   <div><b>${esc(label)}</b><div class="acts"><label class="btn"><input type="file" accept="image/*" data-photo="${esc(slot)}" hidden>${has?"Replace":"Upload"}</label>${has?`<button type="button" class="btn" data-rmphoto="${esc(slot)}">Remove</button>`:""}</div></div></div>`;
+}
+function moreTab(){
+  const d=E.d,id=E.id;
+  if(E.tab==="photos")return`<p class="note" style="margin:8px 0">Photos are resized automatically. Bottle photos are added on the Wines tab.</p>
+    ${photoSlot("cover","Cover photo","Wide photo of your vineyard or cellar")}${photoSlot("logo","Logo","Square logo")}`;
+  if(E.tab==="hours"){const oh=d.openHours||{};
+    return`<p class="note" style="margin:8px 0">Tick the days you are open for visits. Times are your local time. Visitors see “Open now” and can filter for it.</p>
+    <table class="hed">${DAYS.map(([k,l])=>{const v=Array.isArray(oh[k])?oh[k]:null;return`<tr><th><label class="chk"><input type="checkbox" data-day="${k}" ${v?"checked":""}> ${l}</label></th>
+      <td><input type="time" data-dayo="${k}" value="${esc(v?v[0]:"10:00")}" ${v?"":"disabled"} aria-label="${l} opens"></td><td>–</td><td><input type="time" data-dayc="${k}" value="${esc(v?v[1]:"18:00")}" ${v?"":"disabled"} aria-label="${l} closes"></td></tr>`}).join("")}</table>
+    <p><button type="button" class="btn" id="hCopy">Copy Monday to all open days</button></p>
+    <label for="ed-hours">Extra information</label><input id="ed-hours" data-k="hours" maxlength="120" value="${esc(d.hours||"")}" placeholder="e.g. Tastings by appointment, closed in August">
+    <label class="chk" style="margin-top:14px"><input type="checkbox" id="edBook" ${d.bookable!==false?"checked":""}> Accept visit requests (“Book a visit” button)</label>`}
+  if(E.tab==="inbox"){
+    if(!S.inbox.length&&inboxFor!==id)return'<p class="note" style="margin-top:12px">The inbox shows requests for your own winery.</p>';
+    return`<p class="note" style="margin:8px 0">Visit requests and event sign-ups. Confirm or decline, and contact the guest by email or phone.</p>`+(S.inbox.map(b=>`<div class="box bkx ${esc(b.status)}">
+      <b>${esc(b.kind==="event"?"Event: "+b.eventTitle:"Visit")}</b> · ${esc(bkWhen(b))} · ${b.people} ${b.people>1?"people":"person"}
+      <small>${esc(b.name)} · <a href="mailto:${esc(b.email)}?subject=${encodeURIComponent("Your booking at "+(b.wineryName||""))}">${esc(b.email)}</a>${b.phone?` · <a href="tel:${esc(String(b.phone).replace(/[^\d+]/g,""))}">${esc(b.phone)}</a>`:""}</small>
+      ${b.message?`<p style="margin:6px 0;white-space:pre-wrap">${esc(b.message)}</p>`:""}
+      <small>Received ${esc(dShort(b.createdAt))} · <span class="bst ${esc(b.status)}">${esc(BK_ST[b.status]||b.status)}</span></small>
+      ${b.status==="new"?`<label for="rp-${esc(b.id)}">Reply to the guest (optional)</label><input type="text" id="rp-${esc(b.id)}" maxlength="500" placeholder="e.g. See you at 11:00! Parking is behind the cellar.">
+      <div class="acts" style="margin-top:8px"><button type="button" class="btn pri" data-bkok="${esc(b.id)}">Confirm</button><button type="button" class="btn" data-bkno="${esc(b.id)}">Decline</button></div>`:b.reply?`<small>Your reply: “${esc(b.reply)}”</small>`:""}
+    </div>`).join("")||'<p class="empty">No requests yet.</p>');}
+  if(E.tab==="stats"){
+    if(!E.stats){S.fs.collection("stats").doc(id).get().then(s=>{if(E&&E.id===id){E.stats=s.exists?s.data():{};if(E.tab==="stats")renderEd()}}).catch(()=>{if(E){E.stats={err:1};renderEd()}});return'<p class="note" style="margin-top:12px">Loading…</p>'}
+    if(E.stats.err)return'<p class="note" style="margin-top:12px">Stats are not available yet.</p>';
+    return`<div class="stats">${STAT_KEYS.map(([k,l])=>`<div class="stat"><b>${(+E.stats[k]||0).toLocaleString()}</b><span>${l}</span></div>`).join("")}</div>
+      <p class="note">Counted since your page went live. Your own visits are not counted.</p>`;}
+  if(E.tab==="team"){const t=Array.isArray(d.team)?d.team:[];
+    return`<p class="note" style="margin:8px 0">People you add can edit this winery and answer bookings after signing in with that Google email. They can't change the team.</p>
+    <ul class="tlist">${t.map((em,i)=>`<li><span>${esc(em)}</span><button type="button" class="btn" data-tdel="${i}">Remove</button></li>`).join("")||'<li class="note">Only you for now.</li>'}</ul>
+    <div class="row" style="align-items:end"><div><label for="tAdd">Google email</label><input type="email" id="tAdd" maxlength="120" placeholder="name@gmail.com"></div><div><button type="button" class="btn" id="tAddB">＋ Add to team</button></div></div>
+    <p class="note">Changes to the team are saved when you press Save.</p>`;}
+  return"";
+}
+function edTabs(){
+  const d=E.d,live=!!S.live[E.id]||E.exists,owner=!isTeamOnly(E.id);
+  const t=[["details","Details"],["hours","Hours"],["location","Location"+(okLL(d)?" ✓":"")],["photos","Photos"],["wines",`Wines (${d.wines.length})`],["events",`Events (${d.events.length})`]];
+  if(live&&inboxFor===E.id)t.push(["inbox","Inbox"+(inboxNew()?` (${inboxNew()})`:"")]);
+  if(live)t.push(["stats","Stats"]);
+  if(live&&owner)t.push(["team","Team"]);
+  return t;
+}
+function updEdTabs(){const b=ed.querySelector('[data-edtab=inbox]');if(b)b.textContent="Inbox"+(inboxNew()?` (${inboxNew()})`:"")}
+function moreClick(b){
+  const d=E.d,id=E.id;
+  if(b.dataset.rmphoto){if(confirm("Remove this photo?"))removePhoto(id,b.dataset.rmphoto).then(()=>E&&renderEd());return true}
+  if(b.id==="hCopy"){const oh=d.openHours||{},m=oh.mon;if(!m)return toast("Set Monday first."),true;DAYS.forEach(([k])=>{if(oh[k])oh[k]=[m[0],m[1]]});d.openHours=oh;E.dirty=true;renderEd();return true}
+  if(b.dataset.bkok){setBooking(b.dataset.bkok,"confirmed",($("#rp-"+b.dataset.bkok)||{}).value);return true}
+  if(b.dataset.bkno){if(confirm("Decline this request?"))setBooking(b.dataset.bkno,"declined",($("#rp-"+b.dataset.bkno)||{}).value);return true}
+  if(b.dataset.tdel){d.team.splice(+b.dataset.tdel,1);E.dirty=true;renderEd();return true}
+  if(b.id==="tAddB"){const em=$("#tAdd").value.trim().toLowerCase();if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(em))return toast("Type a valid email."),true;
+    d.team=Array.isArray(d.team)?d.team:[];if(d.team.includes(em))return toast("Already in the team."),true;if(d.team.length>=10)return toast("Up to 10 people."),true;
+    d.team.push(em);E.dirty=true;renderEd();toast("Added. Press Save to give them access.");return true}
+  if(b.id==="adrGo"){addrSearch();return true}
+  if(b.dataset.adr){const r=E.adr[+b.dataset.adr];setLL(+r.lat,+r.lon,true);$("#adrRes").innerHTML="";if(E.map)E.map.setView([+r.lat,+r.lon],17,{animate:false});if(!d.address)d.address=r.display_name.slice(0,200);return true}
+  return false;
+}
+function moreChange(t){
+  const d=E.d;
+  if(t.dataset.photo&&t.files&&t.files[0]){const slot=t.dataset.photo;t.closest(".pslot,.wph")?.classList.add("busy");uploadPhoto(E.id,slot,t.files[0]).then(()=>E&&renderEd());return true}
+  if(t.dataset.day){const k=t.dataset.day;d.openHours=d.openHours||{};
+    if(t.checked){d.openHours[k]=[ed.querySelector(`[data-dayo=${k}]`).value||"10:00",ed.querySelector(`[data-dayc=${k}]`).value||"18:00"]}else d.openHours[k]=null;
+    E.dirty=true;renderEd();return true}
+  if(t.dataset.dayo||t.dataset.dayc){const k=t.dataset.dayo||t.dataset.dayc;d.openHours=d.openHours||{};if(d.openHours[k]){d.openHours[k][t.dataset.dayo?0:1]=t.value;E.dirty=true}return true}
+  if(t.id==="edBook"){d.bookable=t.checked;E.dirty=true;return true}
+  return false;
+}
+async function addrSearch(){
+  const q=($("#adrQ")||{}).value?.trim();if(!q)return;const box=$("#adrRes");box.innerHTML='<p class="note">Searching…</p>';
+  try{const r=await fetch("https://nominatim.openstreetmap.org/search?format=jsonv2&limit=5&q="+encodeURIComponent(q)+"&accept-language="+encodeURIComponent(navigator.language||"en"));
+    const a=await r.json();E.adr=a;
+    box.innerHTML=a.length?a.map((x,i)=>`<button type="button" class="ares" data-adr="${i}">${esc(x.display_name)}</button>`).join(""):'<p class="note">Nothing found. Try the village or town name, or tap the map.</p>';
+  }catch{box.innerHTML='<p class="note">Search is not available right now. Tap the map instead.</p>'}
+}
 
 /* ---------- admin page: winery requests and owners ---------- */
 const tsMs=t=>t&&t.toMillis?t.toMillis():0;
@@ -1565,7 +1914,7 @@ if(!window.claude&&FB&&FB.apiKey){
       firebase.initializeApp(FB);S.fb=firebase.auth();
       try{await loadScript("https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore-compat.js");S.fs=firebase.firestore();liveSub()}catch{S.fs=null}
       S.fb.onAuthStateChanged(async u=>{S.fbUser=u;S.id=u?u.uid:null;renderAuth();
-        if(u){await loadRole(u);if(location.hash==="#admin"&&isAdminUser(u))openAdmin()}else{if(S.profUnsub){S.profUnsub();S.profUnsub=null}S.role=null;S.profile=null;S.fbReq=null;closeAdmin();closeAccount();closeWd();closeEditor(true);rerender()}});
+        if(u){await loadRole(u);if(location.hash==="#admin"&&isAdminUser(u))openAdmin()}else{if(S.profUnsub){S.profUnsub();S.profUnsub=null}S.plans=[];S.myBookings=[];S.role=null;S.profile=null;S.fbReq=null;closeAdmin();closeAccount();closeWd();closeEditor(true);closeBooking();watchInbox();rerender()}});
       $("#gBtn").hidden=false;
       $("#gBtn").onclick=()=>S.fb.signInWithPopup(new firebase.auth.GoogleAuthProvider())
         .then(r=>toast("Welcome"+(r.user.displayName?", "+r.user.displayName.split(" ")[0]:"")+"!"))

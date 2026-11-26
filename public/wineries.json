@@ -30489,5 +30489,1889 @@
 ],
 "events": [],
 "real": true
+},
+{
+"id": "it-giuseppe-mascarello-e-figlio",
+"name": "Giuseppe Mascarello e Figlio",
+"region": "Piedmont – Monchiero",
+"country": "Italy",
+"lat": 44.57,
+"lng": 7.995,
+"founded": "",
+"style": "red",
+"story": "Traditional house famous for Barolo Monprivato.",
+"wines": [
+{
+"name": "Barolo Monprivato",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-burlotto",
+"name": "Burlotto",
+"region": "Piedmont – Verduno",
+"country": "Italy",
+"lat": 44.665,
+"lng": 7.93,
+"founded": "",
+"style": "red",
+"story": "Verduno estate known for Monvigliero and Pelaverga.",
+"wines": [
+{
+"name": "Barolo Monvigliero",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+},
+{
+"name": "Verduno Pelaverga",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-castello-di-verduno",
+"name": "Castello di Verduno",
+"region": "Piedmont – Verduno",
+"country": "Italy",
+"lat": 44.667,
+"lng": 7.932,
+"founded": "",
+"style": "red",
+"story": "Castle estate in Verduno.",
+"wines": [
+{
+"name": "Barbaresco Rabajà",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-oddero",
+"name": "Oddero",
+"region": "Piedmont – La Morra",
+"country": "Italy",
+"lat": 44.645,
+"lng": 7.95,
+"founded": "",
+"style": "red",
+"story": "Historic La Morra family estate.",
+"wines": [
+{
+"name": "Barolo Rocche di Castiglione",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-luciano-sandrone",
+"name": "Luciano Sandrone",
+"region": "Piedmont – Barolo",
+"country": "Italy",
+"lat": 44.615,
+"lng": 7.935,
+"founded": "",
+"style": "red",
+"story": "Barolo estate known for Cannubi Boschis.",
+"wines": [
+{
+"name": "Aleste",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-marcarini",
+"name": "Marcarini",
+"region": "Piedmont – La Morra",
+"country": "Italy",
+"lat": 44.638,
+"lng": 7.935,
+"founded": "",
+"style": "red",
+"story": "La Morra estate for Brunate.",
+"wines": [
+{
+"name": "Barolo Brunate",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-matteo-correggia",
+"name": "Matteo Correggia",
+"region": "Piedmont – Roero",
+"country": "Italy",
+"lat": 44.8,
+"lng": 7.96,
+"founded": "",
+"style": "red",
+"story": "Roero estate of the late Matteo Correggia.",
+"wines": [
+{
+"name": "Roero Ròche d'Ampsèj",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-malvira",
+"name": "Malvirà",
+"region": "Piedmont – Canale",
+"country": "Italy",
+"lat": 44.795,
+"lng": 7.99,
+"founded": "",
+"style": "white",
+"story": "Roero Arneis pioneers.",
+"wines": [
+{
+"name": "Roero Arneis Renesio",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-giacomo-borgogno-figli",
+"name": "Giacomo Borgogno & Figli",
+"region": "Piedmont – Barolo",
+"country": "Italy",
+"lat": 44.61,
+"lng": 7.942,
+"founded": "1761",
+"style": "red",
+"story": "One of Barolo's oldest houses.",
+"wines": [
+{
+"name": "Barolo Riserva",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-prunotto",
+"name": "Prunotto",
+"region": "Piedmont – Alba",
+"country": "Italy",
+"lat": 44.69,
+"lng": 8.04,
+"founded": "",
+"style": "red",
+"story": "Antinori-owned Alba house.",
+"wines": [
+{
+"name": "Barbera d'Asti Costamiòle",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-michele-chiarlo",
+"name": "Michele Chiarlo",
+"region": "Piedmont – Calamandrana",
+"country": "Italy",
+"lat": 44.74,
+"lng": 8.33,
+"founded": "",
+"style": "red",
+"story": "Asti-area estate with art-park vineyard.",
+"wines": [
+{
+"name": "La Court Nizza",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-la-scolca",
+"name": "La Scolca",
+"region": "Piedmont – Gavi",
+"country": "Italy",
+"lat": 44.69,
+"lng": 8.81,
+"founded": "",
+"style": "white",
+"story": "Gavi's best-known estate.",
+"wines": [
+{
+"name": "Gavi dei Gavi Etichetta Nera",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-villa-sparina",
+"name": "Villa Sparina",
+"region": "Piedmont – Gavi",
+"country": "Italy",
+"lat": 44.73,
+"lng": 8.76,
+"founded": "",
+"style": "white",
+"story": "Gavi estate with a hotel.",
+"wines": [
+{
+"name": "Monterotondo",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-ottin",
+"name": "Ottin",
+"region": "Valle d'Aosta – Aosta",
+"country": "Italy",
+"lat": 45.745,
+"lng": 7.35,
+"founded": "",
+"style": "red",
+"story": "Aosta family estate for Petite Arvine and Fumin.",
+"wines": [
+{
+"name": "Fumin",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-les-cretes",
+"name": "Les Crêtes",
+"region": "Valle d'Aosta – Aymavilles",
+"country": "Italy",
+"lat": 45.705,
+"lng": 7.24,
+"founded": "",
+"style": "white",
+"story": "Leading Valle d'Aosta estate.",
+"wines": [
+{
+"name": "Chardonnay Cuvée Bois",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-cave-mont-blanc-de-morgex-et-la-salle",
+"name": "Cave Mont Blanc de Morgex et La Salle",
+"region": "Valle d'Aosta – Morgex",
+"country": "Italy",
+"lat": 45.755,
+"lng": 7.04,
+"founded": "",
+"style": "white",
+"story": "Cooperative for Prié Blanc, among Europe's highest vineyards.",
+"wines": [
+{
+"name": "Blanc de Morgex",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-bisson",
+"name": "Bisson",
+"region": "Liguria – Chiavari",
+"country": "Italy",
+"lat": 44.32,
+"lng": 9.32,
+"founded": "",
+"style": "white",
+"story": "Ligurian estate for native grapes.",
+"wines": [
+{
+"name": "Bianchetta Genovese",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-possa",
+"name": "Possa",
+"region": "Liguria – Riomaggiore",
+"country": "Italy",
+"lat": 44.105,
+"lng": 9.745,
+"founded": "",
+"style": "white",
+"story": "Cinque Terre grower.",
+"wines": [
+{
+"name": "Sciacchetrà",
+"type": "Sweet",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-terenzuola",
+"name": "Terenzuola",
+"region": "Liguria – Fosdinovo",
+"country": "Italy",
+"lat": 44.13,
+"lng": 10.02,
+"founded": "",
+"style": "white",
+"story": "Colli di Luni Vermentino estate.",
+"wines": [
+{
+"name": "Vermentino Fosso di Corsano",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-ca-dei-frati",
+"name": "Ca' dei Frati",
+"region": "Lombardy – Sirmione",
+"country": "Italy",
+"lat": 45.46,
+"lng": 10.61,
+"founded": "",
+"style": "white",
+"story": "Lugana family estate.",
+"wines": [
+{
+"name": "I Frati Lugana",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-monte-rossa",
+"name": "Monte Rossa",
+"region": "Lombardy – Franciacorta",
+"country": "Italy",
+"lat": 45.605,
+"lng": 9.98,
+"founded": "",
+"style": "sparkling",
+"story": "Franciacorta family house.",
+"wines": [
+{
+"name": "Cabochon",
+"type": "Sparkling",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-barone-pizzini",
+"name": "Barone Pizzini",
+"region": "Lombardy – Franciacorta",
+"country": "Italy",
+"lat": 45.62,
+"lng": 10.03,
+"founded": "",
+"style": "sparkling",
+"story": "Organic Franciacorta.",
+"wines": [
+{
+"name": "Animante",
+"type": "Sparkling",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-il-mosnel",
+"name": "Il Mosnel",
+"region": "Lombardy – Franciacorta",
+"country": "Italy",
+"lat": 45.6,
+"lng": 10.05,
+"founded": "",
+"style": "sparkling",
+"story": "Franciacorta family estate.",
+"wines": [
+{
+"name": "Pas Dosé",
+"type": "Sparkling",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-tenuta-mazzolino",
+"name": "Tenuta Mazzolino",
+"region": "Lombardy – Oltrepò Pavese",
+"country": "Italy",
+"lat": 44.97,
+"lng": 9.13,
+"founded": "",
+"style": "red",
+"story": "Oltrepò estate for Pinot Noir.",
+"wines": [
+{
+"name": "Noir",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-ca-di-frara",
+"name": "Ca' di Frara",
+"region": "Lombardy – Oltrepò Pavese",
+"country": "Italy",
+"lat": 45.0,
+"lng": 9.22,
+"founded": "",
+"style": "red",
+"story": "Oltrepò family estate.",
+"wines": [
+{
+"name": "Pinot Nero",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-tenuta-sette-ponti",
+"name": "Tenuta Sette Ponti",
+"region": "Tuscany – Arezzo",
+"country": "Italy",
+"lat": 43.56,
+"lng": 11.68,
+"founded": "",
+"style": "red",
+"story": "Valdarno estate known for Oreno.",
+"wines": [
+{
+"name": "Oreno",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-tenuta-di-trinoro",
+"name": "Tenuta di Trinoro",
+"region": "Tuscany – Sarteano",
+"country": "Italy",
+"lat": 42.96,
+"lng": 11.88,
+"founded": "",
+"style": "red",
+"story": "Andrea Franchetti's Val d'Orcia estate.",
+"wines": [
+{
+"name": "Tenuta di Trinoro",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-petrolo",
+"name": "Petrolo",
+"region": "Tuscany – Mercatale Valdarno",
+"country": "Italy",
+"lat": 43.52,
+"lng": 11.6,
+"founded": "",
+"style": "red",
+"story": "Valdarno estate for Merlot Galatrona.",
+"wines": [
+{
+"name": "Galatrona",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-castello-dei-rampolla",
+"name": "Castello dei Rampolla",
+"region": "Tuscany – Panzano",
+"country": "Italy",
+"lat": 43.53,
+"lng": 11.32,
+"founded": "",
+"style": "red",
+"story": "Biodynamic Panzano estate.",
+"wines": [
+{
+"name": "Sammarco",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+},
+{
+"name": "d'Alceo",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-tenuta-di-nozzole",
+"name": "Tenuta di Nozzole",
+"region": "Tuscany – Greve in Chianti",
+"country": "Italy",
+"lat": 43.59,
+"lng": 11.29,
+"founded": "",
+"style": "red",
+"story": "Ambrogio and Giovanni Folonari estate.",
+"wines": [
+{
+"name": "Il Pareto",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-castello-di-bossi",
+"name": "Castello di Bossi",
+"region": "Tuscany – Castelnuovo Berardenga",
+"country": "Italy",
+"lat": 43.36,
+"lng": 11.46,
+"founded": "",
+"style": "red",
+"story": "Southern Chianti castle estate.",
+"wines": [
+{
+"name": "Corbaia",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-monteraponi",
+"name": "Monteraponi",
+"region": "Tuscany – Radda in Chianti",
+"country": "Italy",
+"lat": 43.49,
+"lng": 11.35,
+"founded": "",
+"style": "red",
+"story": "Medieval hamlet estate in Radda.",
+"wines": [
+{
+"name": "Baron'Ugo",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-istine",
+"name": "Istine",
+"region": "Tuscany – Radda in Chianti",
+"country": "Italy",
+"lat": 43.485,
+"lng": 11.38,
+"founded": "",
+"style": "red",
+"story": "Single-vineyard Radda producer.",
+"wines": [
+{
+"name": "Vigna Istine",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-fattoria-rodano",
+"name": "Fattoria Rodano",
+"region": "Tuscany – Castellina in Chianti",
+"country": "Italy",
+"lat": 43.45,
+"lng": 11.3,
+"founded": "",
+"style": "red",
+"story": "Castellina family estate.",
+"wines": [
+{
+"name": "Viacosta",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-uccelliera",
+"name": "Uccelliera",
+"region": "Tuscany – Montalcino",
+"country": "Italy",
+"lat": 42.995,
+"lng": 11.505,
+"founded": "",
+"style": "red",
+"story": "Castelnuovo dell'Abate grower.",
+"wines": [
+{
+"name": "Brunello",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-le-potazzine",
+"name": "Le Potazzine",
+"region": "Tuscany – Montalcino",
+"country": "Italy",
+"lat": 43.03,
+"lng": 11.46,
+"founded": "",
+"style": "red",
+"story": "Montalcino family estate.",
+"wines": [
+{
+"name": "Brunello",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-sesti",
+"name": "Sesti",
+"region": "Tuscany – Montalcino",
+"country": "Italy",
+"lat": 42.99,
+"lng": 11.47,
+"founded": "",
+"style": "red",
+"story": "Castello di Argiano estate of astronomer Giuseppe Sesti.",
+"wines": [
+{
+"name": "Phenomena Brunello Riserva",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-stella-di-campalto",
+"name": "Stella di Campalto",
+"region": "Tuscany – Montalcino",
+"country": "Italy",
+"lat": 42.98,
+"lng": 11.485,
+"founded": "",
+"style": "red",
+"story": "Biodynamic Montalcino estate.",
+"wines": [
+{
+"name": "Brunello",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-lisini",
+"name": "Lisini",
+"region": "Tuscany – Montalcino",
+"country": "Italy",
+"lat": 42.985,
+"lng": 11.48,
+"founded": "",
+"style": "red",
+"story": "Sant'Angelo in Colle family estate.",
+"wines": [
+{
+"name": "Ugolaia",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-castello-romitorio",
+"name": "Castello Romitorio",
+"region": "Tuscany – Montalcino",
+"country": "Italy",
+"lat": 43.07,
+"lng": 11.42,
+"founded": "",
+"style": "red",
+"story": "Estate of artist Sandro Chia.",
+"wines": [
+{
+"name": "Brunello",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-fattoria-di-magliano",
+"name": "Fattoria di Magliano",
+"region": "Tuscany – Maremma",
+"country": "Italy",
+"lat": 42.6,
+"lng": 11.3,
+"founded": "",
+"style": "red",
+"story": "Maremma estate.",
+"wines": [
+{
+"name": "Poggio Bestiale",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-ampeleia",
+"name": "Ampeleia",
+"region": "Tuscany – Roccatederighi",
+"country": "Italy",
+"lat": 42.95,
+"lng": 11.08,
+"founded": "",
+"style": "red",
+"story": "Maremma estate for Grenache-based reds.",
+"wines": [
+{
+"name": "Ampeleia",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-duemani",
+"name": "Duemani",
+"region": "Tuscany – Riparbella",
+"country": "Italy",
+"lat": 43.37,
+"lng": 10.6,
+"founded": "",
+"style": "red",
+"story": "Biodynamic Cabernet Franc estate.",
+"wines": [
+{
+"name": "Duemani",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-petra",
+"name": "Petra",
+"region": "Tuscany – Suvereto",
+"country": "Italy",
+"lat": 43.07,
+"lng": 10.68,
+"founded": "",
+"style": "red",
+"story": "Moretti family estate with a Mario Botta winery.",
+"wines": [
+{
+"name": "Petra",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-tenuta-di-biserno",
+"name": "Tenuta di Biserno",
+"region": "Tuscany – Bibbona",
+"country": "Italy",
+"lat": 43.25,
+"lng": 10.61,
+"founded": "",
+"style": "red",
+"story": "Lodovico Antinori's Bibbona estate.",
+"wines": [
+{
+"name": "Biserno",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-podere-sapaio",
+"name": "Podere Sapaio",
+"region": "Tuscany – Bolgheri",
+"country": "Italy",
+"lat": 43.185,
+"lng": 10.615,
+"founded": "",
+"style": "red",
+"story": "Bolgheri estate.",
+"wines": [
+{
+"name": "Sapaio",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-cantina-mesa",
+"name": "Cantina Mesa",
+"region": "Sardinia – Sant'Anna Arresi",
+"country": "Italy",
+"lat": 39.0,
+"lng": 8.64,
+"founded": "",
+"style": "red",
+"story": "Sulcis estate for Carignano.",
+"wines": [
+{
+"name": "Buio Buio",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-agricola-punica",
+"name": "Agricola Punica",
+"region": "Sardinia – Santadi",
+"country": "Italy",
+"lat": 39.09,
+"lng": 8.71,
+"founded": "",
+"style": "red",
+"story": "Sardinian estate with Tenuta San Guido input.",
+"wines": [
+{
+"name": "Barrua",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-pala",
+"name": "Pala",
+"region": "Sardinia – Serdiana",
+"country": "Italy",
+"lat": 39.37,
+"lng": 9.16,
+"founded": "",
+"style": "white",
+"story": "Serdiana family estate.",
+"wines": [
+{
+"name": "Stellato Vermentino",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-tenute-dettori",
+"name": "Tenute Dettori",
+"region": "Sardinia – Sennori",
+"country": "Italy",
+"lat": 40.79,
+"lng": 8.59,
+"founded": "",
+"style": "red",
+"story": "Natural Cannonau producer.",
+"wines": [
+{
+"name": "Dettori Rosso",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-cusumano",
+"name": "Cusumano",
+"region": "Sicily – Partinico",
+"country": "Italy",
+"lat": 38.04,
+"lng": 13.12,
+"founded": "",
+"style": "white",
+"story": "Sicilian family producer.",
+"wines": [
+{
+"name": "Angimbé",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-duca-di-salaparuta",
+"name": "Duca di Salaparuta",
+"region": "Sicily – Casteldaccia",
+"country": "Italy",
+"lat": 38.05,
+"lng": 13.53,
+"founded": "1824",
+"style": "red",
+"story": "Historic Sicilian house.",
+"wines": [
+{
+"name": "Duca Enrico",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-gulfi",
+"name": "Gulfi",
+"region": "Sicily – Chiaramonte Gulfi",
+"country": "Italy",
+"lat": 37.03,
+"lng": 14.7,
+"founded": "",
+"style": "red",
+"story": "Single-contrada Nero d'Avola.",
+"wines": [
+{
+"name": "Nerobufaleffj",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-valle-dell-acate",
+"name": "Valle dell'Acate",
+"region": "Sicily – Acate",
+"country": "Italy",
+"lat": 37.03,
+"lng": 14.49,
+"founded": "",
+"style": "red",
+"story": "Cerasuolo di Vittoria estate.",
+"wines": [
+{
+"name": "Il Moro",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-girolamo-russo",
+"name": "Girolamo Russo",
+"region": "Sicily – Etna",
+"country": "Italy",
+"lat": 37.87,
+"lng": 15.01,
+"founded": "",
+"style": "red",
+"story": "Passopisciaro family estate.",
+"wines": [
+{
+"name": "San Lorenzo",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-pietradolce",
+"name": "Pietradolce",
+"region": "Sicily – Etna",
+"country": "Italy",
+"lat": 37.875,
+"lng": 15.05,
+"founded": "",
+"style": "red",
+"story": "Solicchiata estate for old-vine Nerello.",
+"wines": [
+{
+"name": "Barbagalli",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-tenuta-di-fessina",
+"name": "Tenuta di Fessina",
+"region": "Sicily – Etna",
+"country": "Italy",
+"lat": 37.875,
+"lng": 15.11,
+"founded": "",
+"style": "red",
+"story": "Rovittello estate.",
+"wines": [
+{
+"name": "Erse",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-salvo-foti-i-vigneri",
+"name": "Salvo Foti – I Vigneri",
+"region": "Sicily – Etna",
+"country": "Italy",
+"lat": 37.74,
+"lng": 15.17,
+"founded": "",
+"style": "red",
+"story": "Etna vine-dressers' guild revival.",
+"wines": [
+{
+"name": "Vinupetra",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-hauner",
+"name": "Hauner",
+"region": "Sicily – Salina",
+"country": "Italy",
+"lat": 38.565,
+"lng": 14.86,
+"founded": "",
+"style": "sweet",
+"story": "Malvasia delle Lipari pioneer.",
+"wines": [
+{
+"name": "Malvasia delle Lipari Passito",
+"type": "Sweet",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-salvatore-murana",
+"name": "Salvatore Murana",
+"region": "Sicily – Pantelleria",
+"country": "Italy",
+"lat": 36.77,
+"lng": 11.98,
+"founded": "",
+"style": "sweet",
+"story": "Pantelleria passito producer.",
+"wines": [
+{
+"name": "Martingana",
+"type": "Sweet",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-statti",
+"name": "Statti",
+"region": "Calabria – Lamezia",
+"country": "Italy",
+"lat": 38.9,
+"lng": 16.27,
+"founded": "",
+"style": "red",
+"story": "Lamezia family estate.",
+"wines": [
+{
+"name": "Gaglioppo",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-a-vita",
+"name": "'A Vita",
+"region": "Calabria – Cirò Marina",
+"country": "Italy",
+"lat": 39.36,
+"lng": 17.11,
+"founded": "",
+"style": "red",
+"story": "Natural Cirò producer.",
+"wines": [
+{
+"name": "Cirò Rosso Classico",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-polvanera",
+"name": "Polvanera",
+"region": "Apulia – Gioia del Colle",
+"country": "Italy",
+"lat": 40.8,
+"lng": 16.92,
+"founded": "",
+"style": "red",
+"story": "Primitivo estate.",
+"wines": [
+{
+"name": "Primitivo 17",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-vallone",
+"name": "Vallone",
+"region": "Apulia – Lecce",
+"country": "Italy",
+"lat": 40.35,
+"lng": 18.17,
+"founded": "",
+"style": "red",
+"story": "Salento estate known for Graticciaia.",
+"wines": [
+{
+"name": "Graticciaia",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-galardi",
+"name": "Galardi",
+"region": "Campania – Sessa Aurunca",
+"country": "Italy",
+"lat": 41.24,
+"lng": 13.93,
+"founded": "",
+"style": "red",
+"story": "Roccamonfina estate known for Terra di Lavoro.",
+"wines": [
+{
+"name": "Terra di Lavoro",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-luigi-tecce",
+"name": "Luigi Tecce",
+"region": "Campania – Paternopoli",
+"country": "Italy",
+"lat": 40.97,
+"lng": 15.03,
+"founded": "",
+"style": "red",
+"story": "Taurasi grower.",
+"wines": [
+{
+"name": "Poliphemo",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-pietracupa",
+"name": "Pietracupa",
+"region": "Campania – Montefredane",
+"country": "Italy",
+"lat": 40.96,
+"lng": 14.81,
+"founded": "",
+"style": "white",
+"story": "Fiano and Greco specialist.",
+"wines": [
+{
+"name": "Fiano di Avellino",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-ciro-picariello",
+"name": "Ciro Picariello",
+"region": "Campania – Summonte",
+"country": "Italy",
+"lat": 40.95,
+"lng": 14.75,
+"founded": "",
+"style": "white",
+"story": "Fiano di Avellino grower.",
+"wines": [
+{
+"name": "Fiano 906",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-colli-di-lapio",
+"name": "Colli di Lapio",
+"region": "Campania – Lapio",
+"country": "Italy",
+"lat": 40.98,
+"lng": 14.95,
+"founded": "",
+"style": "white",
+"story": "Lapio Fiano grower.",
+"wines": [
+{
+"name": "Fiano di Avellino",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-salvatore-molettieri",
+"name": "Salvatore Molettieri",
+"region": "Campania – Montemarano",
+"country": "Italy",
+"lat": 40.92,
+"lng": 15.03,
+"founded": "",
+"style": "red",
+"story": "Taurasi family producer.",
+"wines": [
+{
+"name": "Vigna Cinque Querce",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-cantina-di-venosa",
+"name": "Cantina di Venosa",
+"region": "Basilicata – Venosa",
+"country": "Italy",
+"lat": 40.96,
+"lng": 15.82,
+"founded": "",
+"style": "red",
+"story": "Aglianico cooperative.",
+"wines": [
+{
+"name": "Carato Venusio",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-le-vigne-di-zamo",
+"name": "Le Vigne di Zamò",
+"region": "Friuli – Rosazzo",
+"country": "Italy",
+"lat": 46.01,
+"lng": 13.41,
+"founded": "",
+"style": "white",
+"story": "Colli Orientali estate.",
+"wines": [
+{
+"name": "Friulano Vigne Cinquantanni",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-damijan-podversic",
+"name": "Damijan Podversic",
+"region": "Friuli – Gorizia",
+"country": "Italy",
+"lat": 45.95,
+"lng": 13.6,
+"founded": "",
+"style": "amber",
+"story": "Gorizia producer of macerated whites.",
+"wines": [
+{
+"name": "Ribolla Gialla",
+"type": "Amber",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-la-castellada",
+"name": "La Castellada",
+"region": "Friuli – Oslavia",
+"country": "Italy",
+"lat": 45.955,
+"lng": 13.595,
+"founded": "",
+"style": "amber",
+"story": "Oslavia family estate.",
+"wines": [
+{
+"name": "Ribolla Gialla",
+"type": "Amber",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-dario-princic",
+"name": "Dario Prinčič",
+"region": "Friuli – Gorizia",
+"country": "Italy",
+"lat": 45.945,
+"lng": 13.605,
+"founded": "",
+"style": "amber",
+"story": "Natural Ribolla producer.",
+"wines": [
+{
+"name": "Trebez",
+"type": "Amber",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-ronco-del-gnemiz",
+"name": "Ronco del Gnemiz",
+"region": "Friuli – Colli Orientali",
+"country": "Italy",
+"lat": 46.03,
+"lng": 13.37,
+"founded": "",
+"style": "white",
+"story": "Rosazzo-area estate.",
+"wines": [
+{
+"name": "Friulano",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-dorigo",
+"name": "Dorigo",
+"region": "Friuli – Premariacco",
+"country": "Italy",
+"lat": 46.06,
+"lng": 13.38,
+"founded": "",
+"style": "red",
+"story": "Colli Orientali estate.",
+"wines": [
+{
+"name": "Pignolo",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-pojer-e-sandri",
+"name": "Pojer e Sandri",
+"region": "Trentino – Faedo",
+"country": "Italy",
+"lat": 46.19,
+"lng": 11.17,
+"founded": "",
+"style": "white",
+"story": "Faedo pioneers.",
+"wines": [
+{
+"name": "Müller-Thurgau",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-cesconi",
+"name": "Cesconi",
+"region": "Trentino – Pressano",
+"country": "Italy",
+"lat": 46.135,
+"lng": 11.105,
+"founded": "",
+"style": "white",
+"story": "Lavis family estate.",
+"wines": [
+{
+"name": "Nosiola",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-elisabetta-dalzocchio",
+"name": "Elisabetta Dalzocchio",
+"region": "Trentino – Rovereto",
+"country": "Italy",
+"lat": 45.89,
+"lng": 11.04,
+"founded": "",
+"style": "red",
+"story": "Rovereto Pinot Noir grower.",
+"wines": [
+{
+"name": "Pinot Nero",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-kuenhof",
+"name": "Kuenhof",
+"region": "Alto Adige – Bressanone",
+"country": "Italy",
+"lat": 46.71,
+"lng": 11.66,
+"founded": "",
+"style": "white",
+"story": "Isarco valley estate.",
+"wines": [
+{
+"name": "Kaiton Riesling",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-gump-hof",
+"name": "Gump Hof",
+"region": "Alto Adige – Fiè allo Sciliar",
+"country": "Italy",
+"lat": 46.515,
+"lng": 11.49,
+"founded": "",
+"style": "white",
+"story": "Steep-slope estate.",
+"wines": [
+{
+"name": "Pinot Bianco Praesulis",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-franz-haas",
+"name": "Franz Haas",
+"region": "Alto Adige – Montagna",
+"country": "Italy",
+"lat": 46.33,
+"lng": 11.3,
+"founded": "",
+"style": "red",
+"story": "Montagna estate known for Pinot Nero.",
+"wines": [
+{
+"name": "Pinot Nero Schweizer",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-josephus-mayr-erbhof-unterganzner",
+"name": "Josephus Mayr – Erbhof Unterganzner",
+"region": "Alto Adige – Bolzano",
+"country": "Italy",
+"lat": 46.49,
+"lng": 11.38,
+"founded": "",
+"style": "red",
+"story": "Lagrein estate.",
+"wines": [
+{
+"name": "Lagrein Riserva",
+"type": "Red",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
+},
+{
+"id": "it-ignaz-niedrist",
+"name": "Ignaz Niedrist",
+"region": "Alto Adige – Cornaiano",
+"country": "Italy",
+"lat": 46.47,
+"lng": 11.28,
+"founded": "",
+"style": "white",
+"story": "Small Appiano grower.",
+"wines": [
+{
+"name": "Riesling",
+"type": "White",
+"price": "",
+"cur": "EUR",
+"notes": ""
+}
+],
+"events": [],
+"real": true
 }
 ]

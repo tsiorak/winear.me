@@ -384,6 +384,27 @@ path.leaflet-interactive:focus{outline:none}
  .fab span{display:none}.fab{width:56px;padding:0;justify-content:center}
 }
 @media(min-width:701px){.panel.open~.chat{right:calc(min(430px,100vw - 24px) + 24px)}}
+/* "Are you a winery?" card under the logo */
+.join{position:fixed;top:calc(70px + env(safe-area-inset-top));left:calc(12px + env(safe-area-inset-left));z-index:950;display:flex;align-items:flex-end;gap:2px;width:310px;background:#F7F1E6;border-radius:22px;padding:12px 14px 0 4px;box-shadow:0 8px 24px #0003;animation:dzIn .4s ease}
+.join[hidden]{display:none}
+.join-fig{flex:none;width:112px;height:auto;display:block;background:none;border:0;padding:0;cursor:default}
+.join-fig svg{display:block;width:100%;height:auto}
+.join-wave{transform-box:view-box;transform-origin:46px 110px;animation:joinWave 1.6s ease-in-out infinite}
+.join-talk{flex:1;align-self:center;display:flex;flex-direction:column;gap:10px;padding:22px 0 12px}
+.join-bub{position:relative;background:#fff;border:2.5px solid #B3141F;border-radius:16px;padding:9px 12px;font:600 17px/1.25 Fraunces,Georgia,serif;color:#2A1A1E}
+.join-bub b{color:#B3141F;display:block}
+.join-bub::before{content:"";position:absolute;left:-11px;bottom:16px;border:9px solid transparent;border-right-color:#B3141F;border-left:0}
+.join-btn{min-height:44px;border-radius:999px;border:0;background:#B3141F;color:#F7F1E6;font:700 14px "DM Sans",system-ui,sans-serif;padding:0 14px;cursor:pointer;box-shadow:0 4px 10px #B3141F40}
+.join-btn:hover{filter:brightness(1.1)}
+.join-x{position:absolute;z-index:2;top:4px;right:4px;width:32px;height:32px;border-radius:50%;border:0;background:#0000000d;color:#2A1A1E;font-size:18px;line-height:1;cursor:pointer}
+.join.min{width:auto;padding:0;border-radius:50%;background:none;box-shadow:none}
+.join.min .join-talk,.join.min .join-x{display:none}
+.join.min .join-fig{width:60px;height:60px;border-radius:50%;background:#F7F1E6;border:3px solid #B3141F;box-shadow:0 6px 16px #0005;overflow:hidden;cursor:pointer;animation:dzBob 2.4s ease-in-out infinite}
+.join.min .join-fig svg{width:96px;margin:-6px 0 0 -21px}
+@keyframes joinWave{0%,100%{transform:rotate(0)}30%{transform:rotate(-14deg)}60%{transform:rotate(8deg)}}
+@media(max-width:700px){.join{width:min(250px,calc(100vw - 24px));padding:8px 10px 0 2px;border-radius:18px}.join-fig{width:78px}.join-bub{font-size:14.5px;padding:7px 10px}.join-btn{min-height:40px;font-size:13px}.join-talk{gap:7px;padding:20px 0 10px}.join-x{width:28px;height:28px;font-size:16px}}
+@media (prefers-reduced-motion:reduce){.join-wave,.join.min .join-fig{animation:none}}
+.dz-skip{z-index:2}
 /* welcome by Dionysus */
 .dz{position:fixed;inset:0;z-index:4000;display:grid;place-items:center;background:#2a0a0ecc;padding:16px;animation:dzIn .4s ease}
 .dz-card{position:relative;display:flex;align-items:flex-end;gap:8px;width:min(860px,100%);background:#F7F1E6;border-radius:28px;padding:28px 28px 0 20px;box-shadow:0 24px 60px #0007;overflow:hidden}
@@ -494,6 +515,11 @@ if(/WinearApp/.test(navigator.userAgent)) document.documentElement.classList.add
   </form>
 </div>
 
+<div class="join" id="join" hidden role="complementary" aria-label="For wineries">
+  <button type="button" class="join-x" id="joinX" aria-label="Make smaller">×</button>
+  <button type="button" class="join-fig" id="joinFig" tabindex="-1" aria-label="Are you a winery? Open"><svg viewBox="0 0 140 172" role="img" aria-label="Smiling winemaker waving and holding a glass of red wine"><ellipse cx="70" cy="168" rx="46" ry="4" fill="#2A1A1E" opacity=".08"/><ellipse cx="70" cy="62" rx="31" ry="33" fill="#5A2E1E"/><path d="M40 62 Q35 98 47 108 L57 101 Q49 84 51 62 Z M100 62 Q105 98 93 108 L83 101 Q91 84 89 62 Z" fill="#5A2E1E"/><path d="M36 172 Q34 118 50 105 Q70 97 90 105 Q106 118 104 172 Z" fill="#FFFDF8" stroke="#E2D8C6" stroke-width="1.5"/><path d="M54 102 L52 120 M86 102 L88 120" stroke="#B3141F" stroke-width="4" stroke-linecap="round"/><path d="M51 119 H89 L94 172 H46 Z" fill="#B3141F"/><path d="M48 150 Q70 155 92 150" stroke="#8E1219" stroke-width="2" fill="none"/><path d="M68 128 H72 V132 C72 134 76 135 76 139 V145 H64 V139 C64 135 68 134 68 132 Z" fill="#C9A34E"/><rect x="63" y="86" width="14" height="17" rx="4" fill="#D9A07A"/><g class="join-wave"><path d="M46 110 Q29 101 25 76" stroke="#D9A07A" stroke-width="10" stroke-linecap="round" fill="none"/><path d="M47 111 Q40 107 36 99" stroke="#FFFDF8" stroke-width="14" stroke-linecap="round"/><circle cx="25" cy="70" r="7.5" fill="#D9A07A"/><path d="M19 66 L17 60 M22 64 L21 57 M26 63 L27 56 M30 65 L32 59" stroke="#D9A07A" stroke-width="3.2" stroke-linecap="round"/></g><path d="M93 111 Q113 120 113 103" stroke="#D9A07A" stroke-width="10" stroke-linecap="round" fill="none"/><path d="M93 111 Q101 114 105 118" stroke="#FFFDF8" stroke-width="14" stroke-linecap="round"/><path d="M102 74 H124 Q123 92 113 94 Q103 92 102 74 Z" fill="#fff" fill-opacity=".75" stroke="#C9A34E" stroke-width="1.5"/><path d="M103.3 83 H122.7 Q120.5 92 113 93 Q105.5 92 103.3 83 Z" fill="#B3141F"/><rect x="112" y="94" width="2.2" height="11" fill="#C9A34E"/><ellipse cx="113" cy="105.5" rx="6.5" ry="1.8" fill="#C9A34E"/><circle cx="113" cy="101" r="5.5" fill="#D9A07A"/><ellipse cx="70" cy="64" rx="22" ry="25" fill="#E8B48F"/><path d="M47 60 Q48 36 70 36 Q93 36 93 60 Q86 46 72 49 Q60 44 47 60 Z" fill="#5A2E1E"/><circle cx="70" cy="29" r="11" fill="#5A2E1E"/><path d="M79 26 Q86 18 92 24 Q86 30 79 26 Z" fill="#4E7A3A"/><circle cx="84" cy="32" r="3" fill="#5B2A6B"/><circle cx="89" cy="31" r="3" fill="#6E3A80"/><circle cx="86.5" cy="36" r="3" fill="#5B2A6B"/><path d="M57 56 Q61 53.5 65 55.5 M75 55.5 Q79 53.5 83 56" stroke="#5A2E1E" stroke-width="2" stroke-linecap="round" fill="none"/><path d="M57.5 64 Q61 59.5 64.5 64 M75.5 64 Q79 59.5 82.5 64" stroke="#2A1A1E" stroke-width="2.4" stroke-linecap="round" fill="none"/><path d="M70 66 Q67.5 72 71 73" stroke="#C48A62" stroke-width="1.8" fill="none" stroke-linecap="round"/><path d="M62 77 Q70 87 78 77 Z" fill="#8E1219"/><path d="M65 79.5 Q70 83 75 79.5" stroke="#fff" stroke-width="2" fill="none" opacity=".9"/><circle cx="57" cy="72" r="4.5" fill="#E07A6A" opacity=".35"/><circle cx="83" cy="72" r="4.5" fill="#E07A6A" opacity=".35"/><circle cx="48" cy="72" r="2.6" fill="#C9A34E"/><circle cx="92" cy="72" r="2.6" fill="#C9A34E"/></svg></button>
+  <div class="join-talk"><div class="join-bub"><b>Are you a winery?</b>Join Winear.me</div><button type="button" class="join-btn" id="joinBtn">Create your winery</button></div>
+</div>
 <div class="legend" id="legend"></div>
 <div class="fsheet" id="fsheet" role="dialog" aria-label="Filter the map" hidden></div>
 
@@ -964,7 +990,7 @@ async function decide(id,st){
   }catch{toast("Could not update.")}
 }
 
-function rerender(){updateBadge();if(S.view==="winery")renderWinery();else if(S.view==="events")renderEvents();else if(S.view==="plans")renderPlans();else if(S.view==="admin")renderAdmin();else if(S.view==="area")renderArea()}
+function rerender(){updateBadge();window.joinSync?.();if(S.view==="winery")renderWinery();else if(S.view==="events")renderEvents();else if(S.view==="plans")renderPlans();else if(S.view==="admin")renderAdmin();else if(S.view==="area")renderArea()}
 function updateBadge(){const n=Object.values(S.requests).filter(r=>r.status==="pending").length;const b=$("#adminBadge");b.hidden=!(S.owner&&n);b.textContent=n}
 
 /* ---------- search ---------- */
@@ -1387,6 +1413,26 @@ $("#acctForm").onsubmit=async e=>{
   catch(err){console.warn(err);toast(err&&err.code==="permission-denied"?"Not allowed: please sign in again.":"Couldn't save right now. Please try again.")}
   finally{btn.disabled=false}
 };
+
+/* ---------- "Are you a winery? Join Winear.me" card ---------- */
+{
+  const jl=k=>{try{return localStorage.getItem(k)}catch{return null}},js=(k,v)=>{try{localStorage.setItem(k,v)}catch{}};
+  const card=$("#join"),fig=$("#joinFig");
+  const setMin=m=>{card.classList.toggle("min",m);fig.tabIndex=m?0:-1;fig.setAttribute("aria-label",m?"Are you a winery? Join Winear.me":"Winemaker");js("winear.joinMin",m?"1":"")};
+  window.joinSync=()=>{const has=!!(S.fbUser&&(myWineryId()||S.role==="winery"));card.hidden=has};
+  setMin(jl("winear.joinMin")==="1");window.joinSync();
+  $("#joinX").onclick=()=>setMin(true);
+  fig.onclick=()=>{if(card.classList.contains("min"))setMin(false)};
+  const go=()=>myWineryId()?openEditor(myWineryId()):openWineryDlg();
+  $("#joinBtn").onclick=()=>{
+    if(S.fbUser)return go();
+    if(document.documentElement.classList.contains("inapp"))return toast("To create your winery, open winear.me in your phone's browser and sign in with Google.");
+    if(S.fb)return S.fb.signInWithPopup(new firebase.auth.GoogleAuthProvider()).then(()=>{toast("Signed in. Tell us about your winery.");setTimeout(go,900)})
+      .catch(e=>{if(e.code==="auth/popup-closed-by-user"||e.code==="auth/cancelled-popup-request")return;toast(e.code==="auth/popup-blocked"?"Allow pop-ups for this site to sign in.":"Sign-in failed, please try again.")});
+    if(window.claude&&typeof renderWineryArea==="function")return renderWineryArea();
+    toast("Sign-in is still loading. Please try again in a moment.");
+  };
+}
 
 /* ---------- "I'm a winery" request ---------- */
 const wd=$("#wineryDlg");

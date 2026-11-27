@@ -384,6 +384,30 @@ path.leaflet-interactive:focus{outline:none}
  .fab span{display:none}.fab{width:56px;padding:0;justify-content:center}
 }
 @media(min-width:701px){.panel.open~.chat{right:calc(min(430px,100vw - 24px) + 24px)}}
+/* event news guy (events within 50 km in the next 10 days) */
+.news{position:fixed;left:calc(12px + env(safe-area-inset-left));bottom:150px;z-index:960;display:flex;align-items:flex-end;gap:2px;width:350px;background:#F7F1E6;border-radius:22px;padding:12px 14px 0 2px;box-shadow:0 10px 28px #0004;animation:newsIn .5s cubic-bezier(.2,1.3,.4,1)}
+.news[hidden]{display:none}
+.news-fig{flex:none;width:104px;align-self:flex-end}
+.news-fig svg{display:block;width:100%;height:auto}
+.news-cal{transform-box:view-box;transform-origin:116px 80px;animation:newsShake 1.4s ease-in-out 3}
+.news-talk{flex:1;min-width:0;display:flex;flex-direction:column;gap:8px;padding:20px 0 12px}
+.news-bub{position:relative;background:#fff;border:2.5px solid #B3141F;border-radius:16px;padding:9px 11px;color:#2A1A1E;font:14px/1.3 "DM Sans",system-ui,sans-serif}
+.news-bub::before{content:"";position:absolute;left:-11px;bottom:18px;border:9px solid transparent;border-right-color:#B3141F;border-left:0}
+.news-bub>b{display:block;font:600 16px/1.25 Fraunces,Georgia,serif;color:#B3141F;margin-bottom:4px}
+.news-ev{display:block;width:100%;text-align:left;background:none;border:0;border-top:1px solid #eee3e5;padding:6px 0;cursor:pointer;color:inherit;font:inherit}
+.news-ev:hover b{text-decoration:underline}
+.news-ev b{display:block;font-size:13.5px;color:#2A1A1E}
+.news-ev small{display:block;font-size:12px;color:#6b5a5f}
+.news-more{font-size:12px;color:#6b5a5f;margin-top:4px}
+.news-acts{display:flex;gap:8px;flex-wrap:wrap}
+.news-acts button{min-height:40px;border-radius:999px;border:2px solid #B3141F;background:#fff;color:#B3141F;font:700 13px "DM Sans",system-ui,sans-serif;padding:0 14px;cursor:pointer}
+.news-acts button.pri{background:#B3141F;color:#F7F1E6}
+.news-x{position:absolute;z-index:2;top:4px;right:4px;width:32px;height:32px;border-radius:50%;border:0;background:#0000000d;color:#2A1A1E;font-size:18px;line-height:1;cursor:pointer}
+@keyframes newsIn{from{opacity:0;transform:translateX(-40px) scale(.9)}}
+@keyframes newsShake{0%,100%{transform:rotate(0)}20%{transform:rotate(-12deg)}40%{transform:rotate(10deg)}60%{transform:rotate(-6deg)}}
+@media(max-width:700px){.news{left:10px;right:84px;width:auto;bottom:calc(16px + env(safe-area-inset-bottom));padding:8px 10px 0 0;border-radius:18px}.news-fig{width:70px}.news-bub{font-size:13px}.news-bub>b{font-size:14.5px}.news-talk{padding:18px 0 10px}.news-x{width:28px;height:28px;font-size:16px}.news-acts button{min-height:38px}}
+@media(max-width:380px){.news-fig{display:none}.news{padding-left:10px}.news-bub::before{display:none}}
+@media (prefers-reduced-motion:reduce){.news,.news-cal{animation:none}}
 /* "Are you a winery?" card under the logo */
 .join{position:fixed;top:calc(70px + env(safe-area-inset-top));left:calc(12px + env(safe-area-inset-left));z-index:950;display:flex;align-items:flex-end;gap:2px;width:310px;background:#F7F1E6;border-radius:22px;padding:12px 14px 0 4px;box-shadow:0 8px 24px #0003;animation:dzIn .4s ease}
 .join[hidden]{display:none}
@@ -515,6 +539,11 @@ if(/WinearApp/.test(navigator.userAgent)) document.documentElement.classList.add
   </form>
 </div>
 
+<div class="news" id="news" hidden role="status" aria-live="polite">
+  <button type="button" class="news-x" id="newsX" aria-label="Close">×</button>
+  <div class="news-fig"><svg viewBox="0 0 140 172" role="img" aria-label="Cheerful young man holding up an event calendar"><ellipse cx="70" cy="168" rx="46" ry="4" fill="#2A1A1E" opacity=".08"/><path d="M36 172 Q34 118 50 105 Q70 97 90 105 Q106 118 104 172 Z" fill="#2F4F6B"/><path d="M58 101 L70 118 L82 101" fill="#FFFDF8"/><path d="M58 101 L70 118 L82 101" stroke="#24405A" stroke-width="2" fill="none"/><path d="M62 132 Q70 126 78 132 Q76 144 70 147 Q64 144 62 132 Z" fill="#C9A34E"/><circle cx="66" cy="134" r="2.4" fill="#2F4F6B"/><circle cx="71" cy="133" r="2.4" fill="#2F4F6B"/><circle cx="68.5" cy="138" r="2.4" fill="#2F4F6B"/><circle cx="73.5" cy="137.5" r="2.4" fill="#2F4F6B"/><circle cx="71" cy="142" r="2.4" fill="#2F4F6B"/><rect x="63" y="86" width="14" height="17" rx="4" fill="#C98F6A"/><path d="M47 111 Q33 124 40 142" stroke="#2F4F6B" stroke-width="13" stroke-linecap="round" fill="none"/><path d="M41 134 Q38 142 45 147" stroke="#D9A07A" stroke-width="9" stroke-linecap="round" fill="none"/><circle cx="47" cy="147" r="5.5" fill="#D9A07A"/><path d="M93 111 Q107 106 110 94" stroke="#2F4F6B" stroke-width="13" stroke-linecap="round" fill="none"/><path d="M109 99 Q113 90 116 82" stroke="#D9A07A" stroke-width="9" stroke-linecap="round" fill="none"/><g class="news-cal"><rect x="99" y="42" width="34" height="34" rx="4" fill="#fff" stroke="#C9A34E" stroke-width="2"/><rect x="99" y="42" width="34" height="10" rx="3" fill="#B3141F"/><rect x="106" y="38" width="3" height="8" rx="1.5" fill="#C9A34E"/><rect x="123" y="38" width="3" height="8" rx="1.5" fill="#C9A34E"/><g fill="#d8cfd2"><circle cx="106" cy="58" r="2"/><circle cx="113" cy="58" r="2"/><circle cx="120" cy="58" r="2"/><circle cx="127" cy="58" r="2"/><circle cx="106" cy="65" r="2"/><circle cx="120" cy="65" r="2"/><circle cx="127" cy="65" r="2"/><circle cx="106" cy="71" r="2"/><circle cx="113" cy="71" r="2"/></g><circle cx="113" cy="65" r="4.2" fill="#B3141F"/><path d="M111 65 L112.6 66.8 L115.4 63.4" stroke="#fff" stroke-width="1.6" fill="none" stroke-linecap="round"/></g><circle cx="116" cy="80" r="6.5" fill="#D9A07A"/><circle cx="49.5" cy="67" r="5" fill="#D9A07A"/><circle cx="90.5" cy="67" r="5" fill="#D9A07A"/><ellipse cx="70" cy="65" rx="21" ry="24" fill="#E3A982"/><path d="M48 62 Q45 36 68 33 Q94 31 92 62 Q90 50 82 47 Q84 42 76 42 Q70 47 61 45 Q52 49 48 62 Z" fill="#3B2418"/><path d="M50 46 Q52 22 76 20 Q96 20 94 40 Q88 30 76 33 Q64 31 50 46 Z" fill="#3B2418"/><path d="M66 24 Q78 14 92 22" stroke="#3B2418" stroke-width="5" stroke-linecap="round" fill="none"/><path d="M57 55 Q61 52 66 54 M74 54 Q79 52 83 55" stroke="#3B2418" stroke-width="2.8" stroke-linecap="round" fill="none"/><circle cx="61.5" cy="63" r="2.8" fill="#2A1A1E"/><circle cx="78.5" cy="63" r="2.8" fill="#2A1A1E"/><circle cx="62.5" cy="62" r=".9" fill="#fff"/><circle cx="79.5" cy="62" r=".9" fill="#fff"/><path d="M70 66 Q67.5 72 71 73" stroke="#B87A54" stroke-width="1.8" fill="none" stroke-linecap="round"/><path d="M61 77 Q70 89 79 77 Z" fill="#8E1219"/><path d="M63 78.5 H77 Q76 81 70 81 Q64 81 63 78.5 Z" fill="#fff"/><circle cx="57" cy="73" r="4.5" fill="#E07A6A" opacity=".3"/><circle cx="83" cy="73" r="4.5" fill="#E07A6A" opacity=".3"/></svg></div>
+  <div class="news-talk"><div class="news-bub" id="newsBub"></div><div class="news-acts"><button type="button" class="pri" id="newsCal">See them on the map</button></div></div>
+</div>
 <div class="join" id="join" hidden role="complementary" aria-label="For wineries">
   <button type="button" class="join-x" id="joinX" aria-label="Make smaller">×</button>
   <button type="button" class="join-fig" id="joinFig" tabindex="-1" aria-label="Are you a winery? Open"><svg viewBox="0 0 140 172" role="img" aria-label="Smiling winemaker waving and holding a glass of red wine"><ellipse cx="70" cy="168" rx="46" ry="4" fill="#2A1A1E" opacity=".08"/><ellipse cx="70" cy="62" rx="31" ry="33" fill="#5A2E1E"/><path d="M40 62 Q35 98 47 108 L57 101 Q49 84 51 62 Z M100 62 Q105 98 93 108 L83 101 Q91 84 89 62 Z" fill="#5A2E1E"/><path d="M36 172 Q34 118 50 105 Q70 97 90 105 Q106 118 104 172 Z" fill="#FFFDF8" stroke="#E2D8C6" stroke-width="1.5"/><path d="M54 102 L52 120 M86 102 L88 120" stroke="#B3141F" stroke-width="4" stroke-linecap="round"/><path d="M51 119 H89 L94 172 H46 Z" fill="#B3141F"/><path d="M48 150 Q70 155 92 150" stroke="#8E1219" stroke-width="2" fill="none"/><path d="M68 128 H72 V132 C72 134 76 135 76 139 V145 H64 V139 C64 135 68 134 68 132 Z" fill="#C9A34E"/><rect x="63" y="86" width="14" height="17" rx="4" fill="#D9A07A"/><g class="join-wave"><path d="M46 110 Q29 101 25 76" stroke="#D9A07A" stroke-width="10" stroke-linecap="round" fill="none"/><path d="M47 111 Q40 107 36 99" stroke="#FFFDF8" stroke-width="14" stroke-linecap="round"/><circle cx="25" cy="70" r="7.5" fill="#D9A07A"/><path d="M19 66 L17 60 M22 64 L21 57 M26 63 L27 56 M30 65 L32 59" stroke="#D9A07A" stroke-width="3.2" stroke-linecap="round"/></g><path d="M93 111 Q113 120 113 103" stroke="#D9A07A" stroke-width="10" stroke-linecap="round" fill="none"/><path d="M93 111 Q101 114 105 118" stroke="#FFFDF8" stroke-width="14" stroke-linecap="round"/><path d="M102 74 H124 Q123 92 113 94 Q103 92 102 74 Z" fill="#fff" fill-opacity=".75" stroke="#C9A34E" stroke-width="1.5"/><path d="M103.3 83 H122.7 Q120.5 92 113 93 Q105.5 92 103.3 83 Z" fill="#B3141F"/><rect x="112" y="94" width="2.2" height="11" fill="#C9A34E"/><ellipse cx="113" cy="105.5" rx="6.5" ry="1.8" fill="#C9A34E"/><circle cx="113" cy="101" r="5.5" fill="#D9A07A"/><ellipse cx="70" cy="64" rx="22" ry="25" fill="#E8B48F"/><path d="M47 60 Q48 36 70 36 Q93 36 93 60 Q86 46 72 49 Q60 44 47 60 Z" fill="#5A2E1E"/><circle cx="70" cy="29" r="11" fill="#5A2E1E"/><path d="M79 26 Q86 18 92 24 Q86 30 79 26 Z" fill="#4E7A3A"/><circle cx="84" cy="32" r="3" fill="#5B2A6B"/><circle cx="89" cy="31" r="3" fill="#6E3A80"/><circle cx="86.5" cy="36" r="3" fill="#5B2A6B"/><path d="M57 56 Q61 53.5 65 55.5 M75 55.5 Q79 53.5 83 56" stroke="#5A2E1E" stroke-width="2" stroke-linecap="round" fill="none"/><path d="M57.5 64 Q61 59.5 64.5 64 M75.5 64 Q79 59.5 82.5 64" stroke="#2A1A1E" stroke-width="2.4" stroke-linecap="round" fill="none"/><path d="M70 66 Q67.5 72 71 73" stroke="#C48A62" stroke-width="1.8" fill="none" stroke-linecap="round"/><path d="M62 77 Q70 87 78 77 Z" fill="#8E1219"/><path d="M65 79.5 Q70 83 75 79.5" stroke="#fff" stroke-width="2" fill="none" opacity=".9"/><circle cx="57" cy="72" r="4.5" fill="#E07A6A" opacity=".35"/><circle cx="83" cy="72" r="4.5" fill="#E07A6A" opacity=".35"/><circle cx="48" cy="72" r="2.6" fill="#C9A34E"/><circle cx="92" cy="72" r="2.6" fill="#C9A34E"/></svg></button>
@@ -990,7 +1019,7 @@ async function decide(id,st){
   }catch{toast("Could not update.")}
 }
 
-function rerender(){updateBadge();window.joinSync?.();if(S.view==="winery")renderWinery();else if(S.view==="events")renderEvents();else if(S.view==="plans")renderPlans();else if(S.view==="admin")renderAdmin();else if(S.view==="area")renderArea()}
+function rerender(){updateBadge();window.joinSync?.();window.newsCheck?.();if(S.view==="winery")renderWinery();else if(S.view==="events")renderEvents();else if(S.view==="plans")renderPlans();else if(S.view==="admin")renderAdmin();else if(S.view==="area")renderArea()}
 function updateBadge(){const n=Object.values(S.requests).filter(r=>r.status==="pending").length;const b=$("#adminBadge");b.hidden=!(S.owner&&n);b.textContent=n}
 
 /* ---------- search ---------- */
@@ -1253,12 +1282,12 @@ async function dzLocate(){
   dzHere.on("click",()=>dzAsk(loc,true));
   closePanel();
   map.flyTo(loc,10,{duration:2.2});
-  map.once("moveend",()=>setTimeout(()=>dzAsk(loc,false),300));
+  map.once("moveend",()=>{setTimeout(()=>dzAsk(loc,false),300);setTimeout(()=>window.newsCheck?.(loc),2600)});
 }
 function dzAsk(loc,again){
     if(dzHere){const i=dzHere.getElement();if(i){i.classList.remove("dz-talking");void i.offsetWidth;i.classList.add("dz-talking");setTimeout(()=>i.classList.remove("dz-talking"),1800)}}
     const near=nearbyWineries(loc);
-    const pop=L.popup({className:"dz-pop",offset:[0,-86],maxWidth:280,autoPanPadding:[20,80]}).setLatLng(loc)
+    const pop=L.popup({className:"dz-pop",offset:[0,-86],maxWidth:280,autoPanPaddingTopLeft:[20,innerWidth<=700&&!$("#join").hidden&&!$("#join").classList.contains("min")?240:80],autoPanPaddingBottomRight:[20,80]}).setLatLng(loc)
       .setContent(`<div class="dz-pt"><img src="/icons/dionysus-face.svg" alt=""><p><b>${again?"At your service!":"Here you are!"}</b> ${near.list.length?`I know <b>${near.list.length}</b> ${near.list.length===1?"winery":"wineries"} ${near.label}.`:"There are no wineries close by on my map yet."} Shall I recommend some for you?</p></div><div class="dz-pa"><button class="btn pri" data-dzy>Yes, please</button><button class="btn" data-dzn>No, thanks</button></div>`).openOn(map);
     const el=pop.getElement();
     el.querySelector("[data-dzy]").onclick=()=>{map.closePopup(pop);recommendNear(loc,near)};
@@ -1413,6 +1442,39 @@ $("#acctForm").onsubmit=async e=>{
   catch(err){console.warn(err);toast(err&&err.code==="permission-denied"?"Not allowed: please sign in again.":"Couldn't save right now. Please try again.")}
   finally{btn.disabled=false}
 };
+
+/* ---------- event news: young guy announces events within 50 km in the next 10 days ---------- */
+{
+  const RADIUS=50,DAYS=10,DEMO=/[?&]eventsguy\b/.test(location.search);
+  const lsG=k=>{try{return JSON.parse(localStorage.getItem(k)||"[]")}catch{return[]}},lsS=(k,v)=>{try{localStorage.setItem(k,JSON.stringify(v))}catch{}};
+  const card=$("#news"),bub=$("#newsBub");let last=null,shownNow=[];
+  const key=x=>x.w.id+"|"+x.e.start+"|"+(x.e.title||"");
+  function nearEvents(loc){
+    const now=Date.now(),until=now+DAYS*864e5;
+    return allEvents().filter(({e})=>new Date(e.end||e.start)>=now&&new Date(e.start)<=until)
+      .map(x=>({...x,d:distKm(loc[0],loc[1],+x.w.lat,+x.w.lng)})).filter(x=>x.d<=RADIUS)
+      .sort((a,b)=>new Date(a.e.start)-new Date(b.e.start));
+  }
+  const hide=()=>{card.hidden=true;const seen=lsG("winear.newsSeen");lsS("winear.newsSeen",[...new Set(seen.concat(shownNow))].slice(-300))};
+  window.newsCheck=loc=>{
+    if(loc)last=loc;if(!last||!card.hidden&&!loc)return;
+    const evs=nearEvents(last),seen=new Set(lsG("winear.newsSeen"));
+    const fresh=evs.filter(x=>!seen.has(key(x)));
+    if(!fresh.length&&!(DEMO&&!card._demo))return;
+    card._demo=true;
+    shownNow=evs.map(key);
+    const n=evs.length;
+    bub.innerHTML=n?`<b>Hey! ${n===1?"A wine event is":n+" wine events are"} coming up near you</b>${evs.slice(0,3).map((x,i)=>`<button type="button" class="news-ev" data-nev="${i}"><b>${esc(x.e.title||"Wine event")}</b><small>${esc(when(x.e))}</small><small>${esc(x.w.name)} · ${x.d<1?"under 1":Math.round(x.d)} km away</small></button>`).join("")}${n>3?`<div class="news-more">+ ${n-3} more in the next ${DAYS} days</div>`:""}`
+      :`<b>Hey! No wine events near you yet</b>Nothing within ${RADIUS} km in the next ${DAYS} days. I'll pop up as soon as there is one!`;
+    $("#newsCal").hidden=!n;
+    card._evs=evs;card.hidden=false;
+  };
+  $("#newsX").onclick=hide;
+  card.addEventListener("click",e=>{const b=e.target.closest("[data-nev]");if(!b)return;const x=card._evs[+b.dataset.nev];hide();openWinery(x.w.id,true);S.tab="events";renderWinery()});
+  $("#newsCal").onclick=()=>{const evs=card._evs||[];hide();if(!evs.length)return;
+    const b=L.latLngBounds(evs.map(x=>[+x.w.lat,+x.w.lng]));if(last)b.extend(last);
+    map.flyToBounds(b.pad(.3),{maxZoom:11,duration:1.2});S.calDay=null;renderEvents()};
+}
 
 /* ---------- "Are you a winery? Join Winear.me" card ---------- */
 {

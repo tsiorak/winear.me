@@ -1457,7 +1457,11 @@ $("#acctForm").onsubmit=async e=>{
   }
   const hide=()=>{card.hidden=true;const seen=lsG("winear.newsSeen");lsS("winear.newsSeen",[...new Set(seen.concat(shownNow))].slice(-300))};
   window.newsCheck=loc=>{
-    if(loc)last=loc;if(!last||!card.hidden&&!loc)return;
+    if(loc)last=loc;
+    if(!last){if(DEMO&&loc===false&&!card._demo){card._demo=true;card._evs=[];
+      bub.innerHTML=`<b>Hey! I can't see where you are</b>Allow location for winear.me in your browser (the 📍 or 🔒 icon next to the address), then reload. I'll tell you about wine events within ${RADIUS} km in the next ${DAYS} days.`;
+      $("#newsCal").hidden=true;card.hidden=false}return}
+    if(!card.hidden&&!loc)return;
     const evs=nearEvents(last),seen=new Set(lsG("winear.newsSeen"));
     const fresh=evs.filter(x=>!seen.has(key(x)));
     if(!fresh.length&&!(DEMO&&!card._demo))return;
@@ -1470,6 +1474,7 @@ $("#acctForm").onsubmit=async e=>{
     card._evs=evs;card.hidden=false;
   };
   $("#newsX").onclick=hide;
+  if(DEMO)setTimeout(()=>window.newsCheck(false),20000); // preview: show him even if location never arrives
   card.addEventListener("click",e=>{const b=e.target.closest("[data-nev]");if(!b)return;const x=card._evs[+b.dataset.nev];hide();openWinery(x.w.id,true);S.tab="events";renderWinery()});
   $("#newsCal").onclick=()=>{const evs=card._evs||[];hide();if(!evs.length)return;
     const b=L.latLngBounds(evs.map(x=>[+x.w.lat,+x.w.lng]));if(last)b.extend(last);
